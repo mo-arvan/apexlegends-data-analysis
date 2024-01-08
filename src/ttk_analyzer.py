@@ -74,7 +74,7 @@ def get_effective_ttk(accuracy, total_health, weapon_primary, weapon_secondary):
         shots_with_disruptor_damage = 125 / disruptor_damage
         disruptor_shots = math.ceil(shots_with_disruptor_damage)
         overshoot_damage = (disruptor_shots - shots_with_disruptor_damage) * primary_effective_damage
-        health_left = total_health - 125 + overshoot_damage
+        health_left = total_health - 125 - overshoot_damage
         normal_shots = math.ceil(health_left / primary_effective_damage)
         primary_shots = disruptor_shots + normal_shots
     else:
@@ -90,7 +90,15 @@ def get_effective_ttk(accuracy, total_health, weapon_primary, weapon_secondary):
     if primary_shots > weapon_primary[f"magazine_{attachment_rarity + 1}"]:
         deploy_lower_sum_time = 0.35 + 0.2
 
-        remaining_health = total_health - primary_mag_size * primary_effective_damage
+        if weapon_name == "Alternator Disruptor":
+            disruptor_damage = (damage_primary * 1.2) * accuracy
+            shots_with_disruptor_damage = 125 / disruptor_damage
+            disruptor_shots = math.ceil(shots_with_disruptor_damage)
+            overshoot_damage = (disruptor_shots - shots_with_disruptor_damage) * primary_effective_damage
+            health_left = total_health - 125 - overshoot_damage
+            remaining_health = health_left - (primary_mag_size - disruptor_shots) * primary_effective_damage
+        else:
+            remaining_health = total_health - primary_mag_size * primary_effective_damage
         primary_shots = primary_mag_size
         secondary_shots = math.ceil(remaining_health / secondary_effective_damage)
 
@@ -163,7 +171,7 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     ).properties(
         title=chart_title,
         width=800,
-        height=800,
+        height=600,
     )
     # Create a selection that chooses the nearest point & selects based on x-value
     nearest = alt.selection_point(nearest=True, on='mouseover',
@@ -297,13 +305,13 @@ def plot_using_altair_damage(damage_over_peak_time_df):
         x=alt.X('time', axis=alt.Axis(title='Time (ms)')),
         y=alt.Y('damage', axis=alt.Axis(title='Damage')),
         color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
-        shape=alt.Shape('weapon', legend=alt.Legend(title="Weapon")),
+        shape=alt.Shape('weapon', legend=None),
         tooltip=['weapon', 'damage', 'time'],
         # strokeDash="symbol",
     ).properties(
         title=chart_title,
         width=800,
-        height=800,
+        height=600,
     ).add_params(
         accuracy_param
     ).transform_filter(
