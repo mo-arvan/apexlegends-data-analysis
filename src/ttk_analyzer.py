@@ -1,14 +1,15 @@
-import math
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-import streamlit as st
 import sys
-import plotly
+
+# import plotly
 import altair as alt
-import bokeh
-import bokeh.plotting
-import plotly.express
+import math
+# import matplotlib.pyplot as plt
+import pandas as pd
+# import seaborn as sns
+import streamlit as st
+# import bokeh
+# import bokeh.plotting
+# import plotly.express
 from altair import datum
 
 
@@ -73,7 +74,7 @@ def get_effective_ttk(accuracy, total_health, weapon_primary, weapon_secondary):
         shots_with_disruptor_damage = 125 / disruptor_damage
         disruptor_shots = math.ceil(shots_with_disruptor_damage)
         overshoot_damage = (disruptor_shots - shots_with_disruptor_damage) * primary_effective_damage
-        health_left = total_health - 125 + overshoot_damage 
+        health_left = total_health - 125 + overshoot_damage
         normal_shots = math.ceil(health_left / primary_effective_damage)
         primary_shots = disruptor_shots + normal_shots
     else:
@@ -137,58 +138,6 @@ def get_ttk_over_accuracy(gun_df, shield_rarity, attachment_rarity, shot_locatio
                 last_ttk = ttk
 
     return ttk_over_accuracy
-
-
-def plot_using_seaborn(ttk_over_accuracy, shield_attachment_rarity):
-    sns.set(style="darkgrid")
-
-    shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
-    attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
-
-    # Plotting ttk over accuracy with different colors for each weapon
-    fig = plt.figure(figsize=(6, 6))
-    sns.lineplot(x='ttk', y='accuracy', data=ttk_over_accuracy, hue='weapon', palette='Set2',
-                 style='weapon', markers=True, dashes=True, err_style=None, drawstyle="steps-pre")
-    plt.title(
-        f'Scenario: 1v1 close range, {shield_name[shield_attachment_rarity]} Health, {attachment_name[shield_attachment_rarity]} Mag, Body Shots')
-    plt.ylabel('Accuracy')
-    plt.xlabel('Effective TTK (ms)')
-    plt.legend(bbox_to_anchor=(.75, 1), loc='upper left')
-
-    # set the font
-    plt.savefig(f'plots/seaborn_effective_ttk_rarity_{shield_attachment_rarity}.svg')
-    st.pyplot(fig)
-
-
-def plot_using_plotly(ttk_over_accuracy, shield_attachment_rarity):
-    ttk_over_accuracy = pd.DataFrame(ttk_over_accuracy, columns=["weapon", "accuracy", "ttk"])
-
-    ttk_over_accuracy["miss rate"] = 100 - ttk_over_accuracy["accuracy"]
-    ttk_over_accuracy["ttk"] = ttk_over_accuracy["ttk"].astype(int)
-
-    shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
-    attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
-
-    # Plotting ttk over accuracy with different colors for each weapon
-    fig = plotly.express.line(ttk_over_accuracy, x='miss rate', y='ttk', color='weapon',
-                              title=f'Scenario: 1v1 close range, {shield_name[shield_attachment_rarity]} Health, {attachment_name[shield_attachment_rarity]} Mag, Body Shots',
-                              markers=True,
-                              line_shape='hv', render_mode='svg', template='plotly_dark')
-    fig.update_traces(mode="markers+lines", hovertemplate="%{x:i}%")
-    fig.update_layout(
-        xaxis_title="Miss Rate (%)",
-        yaxis_title="Effective TTK (ms)",
-        legend_title="Weapon",
-        hovermode="y unified",
-
-    )
-    # fig.update_xaxes(showspikes=True)
-    fig.update_yaxes(showspikes=True, spikesnap="cursor")
-    # setting x axis range min
-
-    fig.write_html('plots/plotly_effective_ttk_rarity_3.html')
-
-    st.plotly_chart(fig)
 
 
 def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
@@ -256,25 +205,6 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     fig.save(f'plots/altair_effective_ttk_rarity_{shield_attachment_rarity}.html')
 
     st.altair_chart(fig, use_container_width=False)
-
-
-def plot_using_bokeh(ttk_over_accuracy, shield_attachment_rarity):
-    ttk_over_accuracy = pd.DataFrame(ttk_over_accuracy, columns=["weapon", "accuracy", "ttk"])
-
-    shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
-    attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
-
-    # Plotting ttk over accuracy with different colors for each weapon
-    fig = bokeh.plotting.figure(
-        title=f'Scenario: 1v1 close range, {shield_name[shield_attachment_rarity]} Health, {attachment_name[shield_attachment_rarity]} Mag, Body Shots')
-
-    fig.line(ttk_over_accuracy["ttk"], ttk_over_accuracy["accuracy"], legend_label="accuracy", line_width=2)
-
-    fig.legend.location = "top_left"
-
-    bokeh.plotting.output_file("plots/bokeh_effective_ttk_rarity_3.html")
-    bokeh.plotting.save(fig)
-    st.bokeh_chart(fig)
 
 
 def plot_ttk_over_accuracy(gun_df, shield_attachment_rarity=3):
