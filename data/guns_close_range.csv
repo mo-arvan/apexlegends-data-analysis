@@ -1,0 +1,8 @@
+weapon_name,damage,magazine_1,magazine_2,magazine_3,magazine_4,rpm,reload_time_1,reload_time_2,reload_time_3,reload_time_4
+R99,11,17,20,23,26,1080,2.45,2.37,2.29,2.21
+C.A.R.,12,19,21,23,26,900,2.13,2.06,1.99,1.92
+Volt,15,19,21,23,26,720,2.03,1.96,1.89,1.83
+Alternator,16,19,22,25,27,600,2.23,2.16,2.08,2.01
+Alternator Disruptor,16,19,22,25,27,600,2.23,2.16,2.08,2.01
+Prowler CP S18,16,35,35,35,35,795,2.34,2.34,2.34,2.34
+Prowler Burst CP S18,16,35,35,35,35,627,2.34,2.34,2.34,2.34
