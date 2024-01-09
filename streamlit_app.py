@@ -31,7 +31,7 @@ def main():
     close_gun_df = pd.read_csv("data/guns_close_range.csv")
 
     ttk_analyzer.plot_ttk_over_accuracy(close_gun_df)
-    ttk_analyzer.plot_damage_over_peak_time(close_gun_df)
+    ttk_analyzer.plot_damage_over_peek_time(close_gun_df)
 
 
 

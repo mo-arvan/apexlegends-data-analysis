@@ -161,18 +161,42 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     chart_title = f'Scenario: 1v1 close range, {shield_name[shield_attachment_rarity]} Health, {attachment_name[shield_attachment_rarity]} Mag, Body Shots'
     #
     # Plotting ttk over accuracy with different colors for each weapon
-    line = alt.Chart(ttk_over_accuracy).mark_line().encode(
+    # weapon_to_stroke_dash = {}
+    #
+    # for i, weapon in enumerate(ttk_over_accuracy["weapon"].unique()):
+    #     if i % 2 == 0:
+    #         weapon_to_stroke_dash[weapon] = [i * 2, i * 2]
+    #     else:
+    #         weapon_to_stroke_dash[weapon] = [i * 2, i ]
+
+    line = alt.Chart(ttk_over_accuracy).mark_line(
+        # point=alt.OverlayMarkDef(filled=False, fill="white")
+        # point=True,
+    ).encode(
         x=alt.X('miss rate', axis=alt.Axis(title='Miss Rate (%)')),
         y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms) - Lower is Better'), scale=alt.Scale(zero=False)),
-        color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
-        shape=alt.Shape('weapon', legend=None),
+        color=alt.Color('weapon:N', legend=alt.Legend(title="Weapon")),
+        # shape=alt.Shape('weapon'),
         tooltip=['weapon', 'accuracy', 'ttk'],
+        # strokeDash=alt.StrokeDash("weapon", scale=alt.Scale(domain=list(weapon_to_stroke_dash.keys()),
+        #                                                     range=list(weapon_to_stroke_dash.values())),
+        #                           legend=alt.Legend(title="Weapon")),
+        strokeDash=alt.StrokeDash("weapon", legend=alt.Legend(title="Weapon")),
+        # strokeWidth=alt.value(3),
         # strokeDash="symbol",
     ).properties(
         title=chart_title,
         width=800,
         height=600,
     )
+
+    points_on_line = alt.Chart(ttk_over_accuracy).mark_point().encode(
+        x=alt.X('miss rate', axis=alt.Axis(title='Miss Rate (%)')),
+        y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms) - Lower is Better'), scale=alt.Scale(zero=False)),
+        shape=alt.Shape('weapon', legend=alt.Legend(title="Weapon")),
+        color=alt.Color('weapon:N', legend=alt.Legend(title="Weapon")),
+    )
+
     # Create a selection that chooses the nearest point & selects based on x-value
     nearest = alt.selection_point(nearest=True, on='mouseover',
                                   fields=['ttk'], empty=False)
@@ -192,10 +216,10 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     )
     #
     # # Draw text labels near the points, and highlight based on selection
-    text = line.mark_text(align='left', dx=-5, dy=10).encode(
-        text=alt.condition(nearest, 'miss rate', alt.value(' ')),
-
-    )
+    # text = line.mark_text(align='left', dx=-5, dy=10).encode(
+    #     text=alt.condition(nearest, 'miss rate', alt.value(' ')),
+    #     # shape=alt.Shape('weapon', legend=None),
+    # )
     #
     # # Draw a rule at the location of the selection
     rules = alt.Chart(ttk_over_accuracy).mark_rule(color='gray').encode(
@@ -205,9 +229,13 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     )
     #
     # # Put the five layers into a chart and bind the data
-    fig = alt.layer(
-        line, selectors, points, rules, text
-    )
+    fig = (alt.layer(
+        line, points_on_line,  # rules   , selectors, #points, rules,  # text
+    ).resolve_scale(
+        shape='independent',
+        color='independent',
+        strokeDash='independent',
+    ))
     fig = fig.interactive()
     # saving the plot as html file
     fig.save(f'plots/altair_effective_ttk_rarity_{shield_attachment_rarity}.html')
@@ -285,9 +313,9 @@ def plot_ttk_over_accuracy(gun_df, shield_attachment_rarity=3):
 #     plt.savefig(f'health_over_time_{accuracy}.svg')
 
 
-def plot_using_altair_damage(damage_over_peak_time_df):
+def plot_using_altair_damage(damage_over_peek_time_df):
     # ttk_over_accuracy["miss rate"] = 100 - ttk_over_accuracy["accuracy"]
-    damage_over_peak_time_df["time"] = damage_over_peak_time_df["time"].astype(int)
+    damage_over_peek_time_df["time"] = damage_over_peek_time_df["time"].astype(int)
 
     slider = alt.binding_range(min=1, max=100, step=1, name='Accuracy (%):')
     # accuracy = alt.selection_point(name="accuracy", fields=["accuracy"], bind=slider)
@@ -298,15 +326,18 @@ def plot_using_altair_damage(damage_over_peak_time_df):
     # shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
     # attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
     #
-    chart_title = f'Scenario: Jiggle Peak, Purple Mag, Body Shots'
+    chart_title = f'Scenario: Jiggle Peek, Purple Mag, Body Shots'
     #
     # Plotting ttk over accuracy with different colors for each weapon
-    line = alt.Chart(damage_over_peak_time_df).mark_line().encode(
+    line = alt.Chart(damage_over_peek_time_df).mark_line().encode(
         x=alt.X('time', axis=alt.Axis(title='Time (ms)')),
         y=alt.Y('damage', axis=alt.Axis(title='Damage')),
         color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
-        shape=alt.Shape('weapon', legend=None),
+        # shape=alt.Shape('weapon', legend=None),
         tooltip=['weapon', 'damage', 'time'],
+        strokeDash=alt.StrokeDash("weapon", legend=alt.Legend(title="Weapon")),
+        # strokeWidth=alt.value(2),
+        # strokeDashOffset="weapon",
         # strokeDash="symbol",
     ).properties(
         title=chart_title,
@@ -317,13 +348,32 @@ def plot_using_altair_damage(damage_over_peak_time_df):
     ).transform_filter(
         datum.accuracy == accuracy_param
     )
+    points_on_line = alt.Chart(damage_over_peek_time_df).mark_point().encode(
+        x=alt.X('time', axis=alt.Axis(title='Time (ms)')),
+        y=alt.Y('damage', axis=alt.Axis(title='Damage')),
+        shape=alt.Shape('weapon', legend=alt.Legend(title="Weapon")),
+        color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
+    ).add_params(
+        accuracy_param
+    ).transform_filter(
+        datum.accuracy == accuracy_param
+    )
 
-    fig = line.interactive()
+    fig = (alt.layer(
+        line, points_on_line,
+    )
+    .resolve_scale(
+        shape='independent',
+        color='independent',
+        strokeDash='independent', )
+    )
+
+    fig = fig.interactive()
 
     st.altair_chart(fig, )
 
 
-def get_damage_over_peak_time(gun_df):
+def get_damage_over_peek_time(gun_df):
     head_multiplier = 1.25
     leg_multiplier = 0.8
     head_body_leg_distribution = [0.15, 0.7, 0.15]
@@ -358,12 +408,12 @@ def get_damage_over_peak_time(gun_df):
     return weapon_health_time_list
 
 
-def plot_damage_over_peak_time(gun_df):
-    damage_over_peak_time = get_damage_over_peak_time(gun_df)
+def plot_damage_over_peek_time(gun_df):
+    damage_over_peek_time = get_damage_over_peek_time(gun_df)
 
-    damage_over_peak_time_df = pd.DataFrame(damage_over_peak_time, columns=["weapon", "damage", "accuracy", "time"])
+    damage_over_peek_time_df = pd.DataFrame(damage_over_peek_time, columns=["weapon", "damage", "accuracy", "time"])
 
-    plot_using_altair_damage(damage_over_peak_time_df)
+    plot_using_altair_damage(damage_over_peek_time_df)
     # the slower the rpm, the more punishing missed shots are
     # missing Kraber shots is more punishing than missing R99 shots
 
@@ -380,7 +430,7 @@ def main():
 
     plot_ttk_over_accuracy(close_gun_df, 3)
 
-    plot_damage_over_peak_time(close_gun_df)
+    plot_damage_over_peek_time(close_gun_df)
 
     # plot_ttk_over_accuracy(close_gun_df, 2)
     # plot_ttk_over_accuracy(close_gun_df, 1)
