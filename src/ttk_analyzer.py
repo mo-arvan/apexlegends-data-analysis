@@ -88,7 +88,7 @@ def get_effective_ttk(accuracy, total_health, weapon_primary, weapon_secondary):
     reload_time = 0.
 
     if primary_shots > weapon_primary[f"magazine_{attachment_rarity + 1}"]:
-        deploy_lower_sum_time = 0.35 + 0.2
+        deploy_lower_sum_time = 0.35 + 0.3
 
         if weapon_name == "Alternator Disruptor":
             disruptor_damage = (damage_primary * 1.2) * accuracy
