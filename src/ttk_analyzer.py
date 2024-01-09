@@ -186,7 +186,7 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
         # strokeDash="symbol",
     ).properties(
         title=chart_title,
-        width=800,
+        # width=800,
         height=600,
     )
 
@@ -240,7 +240,7 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     # saving the plot as html file
     fig.save(f'plots/altair_effective_ttk_rarity_{shield_attachment_rarity}.html')
 
-    st.altair_chart(fig, use_container_width=False)
+    st.altair_chart(fig, use_container_width=True)
 
 
 def plot_ttk_over_accuracy(gun_df, shield_attachment_rarity=3):
@@ -341,7 +341,7 @@ def plot_using_altair_damage(damage_over_peek_time_df):
         # strokeDash="symbol",
     ).properties(
         title=chart_title,
-        width=800,
+        # width=800,
         height=600,
     ).add_params(
         accuracy_param
@@ -370,7 +370,7 @@ def plot_using_altair_damage(damage_over_peek_time_df):
 
     fig = fig.interactive()
 
-    st.altair_chart(fig, )
+    st.altair_chart(fig, use_container_width=True)
 
 
 def get_damage_over_peek_time(gun_df):
