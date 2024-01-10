@@ -198,12 +198,15 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     )
 
     # Create a selection that chooses the nearest point & selects based on x-value
-    nearest = alt.selection_point(nearest=True, on='mouseover',
-                                  fields=['ttk'], empty=False)
+    nearest = alt.selection_point(nearest=True,
+                                  on='mouseover',
+                                  fields=['ttk'],
+                                  empty=False)
     # # Transparent selectors across the chart. This is what tells us
     # # the x-value of the cursor
     selectors = alt.Chart(ttk_over_accuracy).mark_point().encode(
         y=alt.Y('ttk'),
+        tooltip=alt.value(None),
         opacity=alt.value(0),
     ).add_params(
         nearest
@@ -224,13 +227,14 @@ def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
     # # Draw a rule at the location of the selection
     rules = alt.Chart(ttk_over_accuracy).mark_rule(color='gray').encode(
         y=alt.Y('ttk'),
+        # tooltip=None,
     ).transform_filter(
         nearest
     )
     #
     # # Put the five layers into a chart and bind the data
     fig = (alt.layer(
-        line, points_on_line,  # rules   , selectors, #points, rules,  # text
+        selectors, line, points_on_line, rules,  # points, ,  # , rules,  # text
     ).resolve_scale(
         shape='independent',
         color='independent',
