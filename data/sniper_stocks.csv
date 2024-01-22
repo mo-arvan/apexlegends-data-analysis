@@ -1,0 +1,7 @@
+﻿Statistic,Sniper Stock (Gray),Sniper Stock (Blue),Sniper Stock (Purple),Description
+Reload Time,-330.0,-6.7,-10.0,Time required to reload the magazine.
+Deploy/Holster Time,-15.0,-20.0,-25.0,Time required to switch from this weapon to another.
+Raise/Lower Time,-10.0,-15.0,-20.0,Time required to put away or ready the weapon when using abilities healing items etc.
+ADS Time,-10.0,-15.0,-20.0,Time required to enter or exit ADS.
+Aim Drift,-30.0,-50.0,-80.0,Amount that the weapon will sway while holding ADS.
+Drift Speed,-10.0,-15.0,-20.0,Speed that the weapon will sway while holding ADS

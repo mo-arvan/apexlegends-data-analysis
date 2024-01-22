@@ -1,380 +1,206 @@
-import sys
-
-# import plotly
-import altair as alt
 import math
-# import matplotlib.pyplot as plt
 import pandas as pd
-# import seaborn as sns
 import streamlit as st
-# import bokeh
-# import bokeh.plotting
-# import plotly.express
-from altair import datum
+
+import src.chart_config as chart_config
 
 
 # https://fonts.google.com/specimen/Saira+Extra+Condensed
 # https://www.reddit.com/r/apexlegends/comments/13rtny9/the_foundational_flaw_of_apex_legends/
 # https://apexlegendsstatus.com/algs/Y3-Split2/ALGS-Championships/Global/Overview#weaponsStats
-# https://apexlegends.fandom.com/wiki/R-99_SMG
-# The Alternator can be enhanced with Disruptor Rounds Disruptor Rounds, which increases damage dealt against shielded targets by 20%.
-# level 1 against sheild 1
 # https://docs.google.com/spreadsheets/d/1ipBvNmgK7-u2VJGlbNzsPvqydXhoRGM7Zxf6OBMvkpc/edit#gid=0
-# https://docs.streamlit.io/library/api-reference/charts
-# https://docs.streamlit.io/library/api-reference/charts/st.bokeh_chart
-# https://blog.streamlit.io/host-your-streamlit-app-for-free/
-# https://mybinder.org/
-
 # tracking time over damage
 # https://www.reddit.com/r/CrucibleGuidebook/comments/vrfvfb/ttk_simulator_based_on_your_weapon_and_estimated/
-# high skill, requires high accuracy for lower ttk
-# slow rpm, causes missed shots to be more punishing, hence has the highest skill ceiling
+# https://www.reddit.com/r/CompetitiveApex/comments/mir49b/apex_legends_data_visualizations/
+# https://public.tableau.com/app/profile/connor.murphy2369/viz/TSMCompetitiveAnalysis/TSMTeamAnalysis?publish=yes
 
-def get_effective_ttk(accuracy, total_health, weapon_primary, weapon_secondary):
-    # effective accuracy is the accuracy of the weapon
-    # if the weapon is the primary weapon
-    # else it is the accuracy of the weapon if it is the secondary weapon
-    attachment_rarity = 3
 
-    weapon_name = weapon_primary["weapon_name"]
-    # primary_damage = weapon_primary["damage"]
-    # primary_rpm = weapon_primary["rpm"]
-    # primary_mag = weapon_primary[f"magazine_{attachment_rarity + 1}"]
-    # primary_reload_time = weapon_primary[f"reload_time_{attachment_rarity + 1}"]
-    # primary_shot_interval = 60 / primary_rpm
-    primary_head_multiplier = 1.25
-    primary_leg_multiplier = 0.8
-    # primary_lower_time = 0.35
-    # secondary_raise_time = 0.35
+def get_gun_effective_ttk(weapon_primary,
+                          weapon_secondary,
+                          sniper_stocks_df, standard_stocks_df,
+                          conditions):
+    ttk_dict_list = []
 
-    head_body_leg_distribution = [0.15, 0.7, 0.15]
+    weapon_raw_damage = weapon_primary["damage"]
 
-    damage_primary = weapon_primary["damage"]
-    damage_secondary = weapon_secondary["damage"]
-    # primary_combination_damage = damage_primary * head_body_leg_distribution[0] * primary_head_multiplier + \
-    #                              damage_primary * head_body_leg_distribution[1] + \
-    #                              damage_primary * head_body_leg_distribution[2] * primary_leg_multiplier
+    mag_index = chart_config.mag_list.index(conditions["mag"])
+    current_mag_size = weapon_primary[f"magazine_{mag_index + 1}"]
 
-    primary_effective_damage = damage_primary * accuracy
+    # stock_index = chart_config.stock_list.index(conditions["stock"])
+    # current_stock = weapon_primary[f"stock_{stock_index + 1}"]
 
-    # secondary_combination_damage = damage_secondary * head_body_leg_distribution[0] * primary_head_multiplier + \
-    #                                damage_secondary * head_body_leg_distribution[1] + \
-    #                                damage_secondary * head_body_leg_distribution[2] * primary_leg_multiplier
 
-    secondary_effective_damage = damage_secondary * accuracy
-    # effective ttk is tkk given the accuracy
-    # when accuracy is 100, the effective ttk is equal to the ttk
-    # however, when accuracy decreases, the effective ttk increases
+    helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
+    shot_location = chart_config.shot_location_dict[conditions["shot_location"]]
 
-    # number of reloads + number of shots required to kill
+    evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
+    health_amount = chart_config.health_values_dict[conditions["health"]]
 
-    if weapon_name == "Alternator Disruptor":
-        # the first 125 damage has a 1.2 multiplier
-        disruptor_damage = (damage_primary * 1.2) * accuracy
-        shots_with_disruptor_damage = 125 / disruptor_damage
-        disruptor_shots = math.ceil(shots_with_disruptor_damage)
-        overshoot_damage = (disruptor_shots - shots_with_disruptor_damage) * primary_effective_damage
-        health_left = total_health - 125 - overshoot_damage
-        normal_shots = math.ceil(health_left / primary_effective_damage)
-        primary_shots = disruptor_shots + normal_shots
+    if conditions["ability_modifier"] == "Amped Cover (Rampart)":
+        # Amped Cover boosts the damage of outgoing shots by 20%.
+        # Source https://apexlegends.fandom.com/wiki/Rampart#Amped_Cover
+        weapon_raw_damage = weapon_raw_damage * 1.2
+    head_damage = weapon_raw_damage * shot_location[0] * (
+            helmet_modifier + (1 - helmet_modifier) * weapon_primary["head_multiplier"])
+    body_damage = weapon_raw_damage * shot_location[1]
+    leg_damage = weapon_raw_damage * shot_location[2] * weapon_primary["leg_multiplier"]
+
+    if conditions["ability_modifier"] == "Fortified (Gibby, Caustic, Newcastle)":
+        body_damage = body_damage * 0.85
+        leg_damage = leg_damage * 0.85
+
+    damage = head_damage + body_damage + leg_damage
+
+    # potential_accuracies_list = []
+
+    # for shots in range(1, current_mag_size + 1):
+    #     for miss_shots in range(0, shots):
+    #         accuracy = 100 - miss_shots * 100 / shots
+    #         potential_accuracies_list.append((shots, miss_shots, accuracy))
+    #
+    # accuracy_df = pd.DataFrame(potential_accuracies_list, columns=["shots", "miss_shots", "accuracy"])
+    #
+    # accuracy_df = accuracy_df.groupby(["accuracy"]).agg({"shots": "max", "miss_shots": "min"}).reset_index()
+    #
+    # accuracy_df = accuracy_df.sort_values(by=["accuracy", "miss_shots", "shots"], ascending=False)
+
+    effective_damage = damage
+
+    evo_shield_effective_damage = effective_damage * weapon_primary["evo_damage_multiplier"]
+    non_evo_shield_effective_damage = effective_damage * weapon_primary["non_evo_damage_multiplier"]
+
+    if conditions["ability_modifier"] == "Forged Shadows (Revenant)":
+        health_amount += 75
+
+    if weapon_primary["class"] == "Shotgun":
+        current_bolt = chart_config.mag_list.index(conditions["bolt"])
+        primary_rpm = weapon_primary[f"rpm_{current_bolt + 1}"]
     else:
-        primary_shots = math.ceil(total_health / primary_effective_damage)
+        primary_rpm = weapon_primary["rpm_1"]
 
-    primary_mag_size = weapon_primary[f"magazine_{attachment_rarity + 1}"]
-    secondary_mag_size = weapon_secondary[f"magazine_{attachment_rarity + 1}"]
+    if pd.isna(evo_shield_effective_damage):
+        print(weapon_primary)
 
-    secondary_shots = 0
-    deploy_lower_sum_time = 0.
-    reload_time = 0.
+    # if weapon_primary["class"] == "Marksman" or weapon_primary["class"] == "Sniper":
+    #     reload_time_modifier = weapon_primary["reload_time_4"]
+    # elif weapon_primary["class"] == "Shotgun" or weapon_primary["class"] == "SMG" or weapon_primary["class"] == "AR":
+    #     reload_time_modifier = weapon_primary["reload_time_4"]
+    # else:
+    #     reload_time_modifier =weapon_primary["reload_time_4"]
 
-    if primary_shots > weapon_primary[f"magazine_{attachment_rarity + 1}"]:
-        deploy_lower_sum_time = 0.35 + 0.3
+    shots_to_evo_shield = math.ceil(evo_shield_amount / evo_shield_effective_damage)
+    shots_to_evo_shield = min(shots_to_evo_shield, current_mag_size)
+    remaining_bullets = current_mag_size - shots_to_evo_shield
 
-        if weapon_name == "Alternator Disruptor":
-            disruptor_damage = (damage_primary * 1.2) * accuracy
-            shots_with_disruptor_damage = 125 / disruptor_damage
-            disruptor_shots = math.ceil(shots_with_disruptor_damage)
-            overshoot_damage = (disruptor_shots - shots_with_disruptor_damage) * primary_effective_damage
-            health_left = total_health - 125 - overshoot_damage
-            remaining_health = health_left - (primary_mag_size - disruptor_shots) * primary_effective_damage
-        else:
-            remaining_health = total_health - primary_mag_size * primary_effective_damage
-        primary_shots = primary_mag_size
-        secondary_shots = math.ceil(remaining_health / secondary_effective_damage)
+    evo_minus_dealt_damage = evo_shield_amount - shots_to_evo_shield * evo_shield_effective_damage
 
-        if secondary_shots > secondary_mag_size:
-            reload_time = weapon_primary[f"reload_time_{attachment_rarity + 1}"]
-            if secondary_shots > 2 * secondary_mag_size:
-                raise Exception("Not enough ammo")
+    health_left = health_amount + evo_minus_dealt_damage
 
-    primary_rpm = weapon_primary["rpm"]
-    primary_shot_interval = 60 / primary_rpm
-    secondary_rpm = weapon_secondary["rpm"]
-    secondary_shot_interval = 60 / secondary_rpm
+    health_left = max(health_left, 0)
+    shots_to_body = math.ceil(health_left / non_evo_shield_effective_damage)
+    shots_to_body = min(shots_to_body, remaining_bullets)
+    remaining_health = max(health_left - shots_to_body * non_evo_shield_effective_damage, 0)
 
-    ttk = (primary_shot_interval * (
-            primary_shots - 1) + secondary_shot_interval * secondary_shots + deploy_lower_sum_time +
-           reload_time)
+    total_shots = shots_to_body + shots_to_evo_shield
 
-    ttk = ttk * 1000
+    if remaining_health != 0:
+        return ttk_dict_list
 
-    return ttk
+    for miss_shots in range(0, current_mag_size - total_shots + 1):
+        miss_rate = round(miss_shots / (total_shots + miss_shots) * 100, 0)
+        accuracy = round(100 - miss_rate, 0)
+
+        hit_and_miss_shots = total_shots + miss_shots
+
+        primary_shot_interval = 60 / primary_rpm
+        ttk = primary_shot_interval * (hit_and_miss_shots - 1)
+        ttk = round(ttk * 1000, 0)
+        # TODO include raise and holster time
+
+        gun_ttk_dict = {
+            "miss_rate": miss_rate,
+            "accuracy": accuracy,
+            "weapon_name": weapon_primary["weapon_name"],
+            # "remaining_health": remaining_health,
+            "ttk": ttk,
+            "how": f"shots hit: {total_shots}, shots missed: {miss_shots}",
+            # "reload time": reload_time_modifier,
+        }
+        gun_ttk_dict.update(conditions)
+        ttk_dict_list.append(gun_ttk_dict)
+
+        # if len(ttk_dict_list) > 0:
+        #     if gun_ttk_dict["ttk"] == ttk_dict_list[-1]["ttk"]:
+        #         continue
+        #     else:
+        #         last_ettk = ttk_dict_list[-1].copy()
+        #         last_ettk["accuracy"] = row["accuracy"] + 1
+        #         ttk_dict_list.append(last_ettk)
+
+    ttk_dict_list = sorted(ttk_dict_list, key=lambda k: k['ttk'], reverse=True)
+
+    return ttk_dict_list
 
 
-def get_ttk_over_accuracy(gun_df, shield_rarity, attachment_rarity, shot_location):
-    health = 100
-    shield_values = [50, 75, 100, 125]
+# def get_gun_effective_ttk(weapon_primary,
+#                           weapon_secondary):
+#     """
+#     effective accuracy is the accuracy of the weapon
+#     if the weapon is the primary weapon
+#     else it is the accuracy of the weapon if it is the secondary weapon
+#
+#     :param weapon_primary:
+#     :param weapon_secondary:
+#     :return:
+#     """
+#     weapon_name = weapon_primary["weapon_name"]
 
-    head_multiplier = 1.25
-    leg_multiplier = 0.8
-    head_body_leg_distribution = [0.15, 0.7, 0.15]
+#     #     st.sidebar.selectbox('Legend Modifier:', ["None", 'Rev (+75 Evo)', 'Fortified (0.8 body shots)', 'Rampart (0.2'],
+#     ability_modifier_list = ["None",
+#                             'Forged Shadows (Revenant)',
+#                             'Amped Cover (Rampart)',
+#                             'Fortified (Gibby, Caustic, Newcastle)']
+#
+#     ttk_dict_list = []
+#
+#     weapon_raw_damage = weapon_primary["damage"]
+#
+#     for shield_tuple, shot_location_tuple, mag_tuple, stock_tuple, helmet_tuple, health_tuple, \
+#             ability_modifier in itertools.product(
+#         *[evo_shield_dict.items(),
+#           shot_location_dict.items(),
+#           enumerate(mag_list),
+#           enumerate(stock_list),
+#           helmet_dict.items(),
+#           chart_type_dict.items(),
+#           ability_modifier_list
+#           ]):
+#
+#
+#             # ttk = (primary_shot_interval * (
+#             #         total_shots - 1) + secondary_shot_interval * secondary_shots + deploy_lower_sum_time +
+#             #        reload_time)
+#     return ttk_dict_list
 
-    # effective_accuracy = 0.75
-    ttk_over_accuracy = []
-    total_health = health + shield_values[shield_rarity]
-    for idx, row in gun_df.iterrows():
 
-        weapon = row["weapon_name"]
-        # if weapon == "Alternator Disruptor":
-        #     continue
-        current_gun_ttk = []
-        last_ttk = -1
-        for accuracy in range(100, 39, -1):
-            ttk = get_effective_ttk(accuracy / 100, total_health, row.to_dict(), row.to_dict())
-            if ttk != last_ttk:
-                ttk_over_accuracy.append((weapon, accuracy, ttk))
-                last_ttk = ttk
+def get_ttk_over_accuracy(guns_slice_df, sniper_stocks_df, standard_stocks_df, conditions):
+    ttk_dict_list = []
+
+    for idx, row in guns_slice_df.iterrows():
+        gun_ttk_dict_list = get_gun_effective_ttk(row.to_dict(), row.to_dict(),
+                                                  sniper_stocks_df, standard_stocks_df,
+                                                  conditions)
+        ttk_dict_list = ttk_dict_list + gun_ttk_dict_list
+
+    return ttk_dict_list
+
+
+def get_close_range_effective_ttk_df(gun_df):
+    ttk_over_accuracy = get_ttk_over_accuracy(gun_df)
+
+    ttk_over_accuracy = pd.DataFrame(ttk_over_accuracy)
 
     return ttk_over_accuracy
-
-
-def plot_using_altair(ttk_over_accuracy, shield_attachment_rarity):
-    ttk_over_accuracy = pd.DataFrame(ttk_over_accuracy, columns=["weapon", "accuracy", "ttk"])
-    ttk_over_accuracy["miss rate"] = 100 - ttk_over_accuracy["accuracy"]
-    ttk_over_accuracy["ttk"] = ttk_over_accuracy["ttk"].astype(int)
-
-    # ttk_over_accuracy["symbol"] =
-
-    shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
-    attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
-
-    chart_title = f'Scenario: 1v1 close range, {shield_name[shield_attachment_rarity]} Health, {attachment_name[shield_attachment_rarity]} Mag, Body Shots'
-    #
-    # Plotting ttk over accuracy with different colors for each weapon
-    # weapon_to_stroke_dash = {}
-    #
-    # for i, weapon in enumerate(ttk_over_accuracy["weapon"].unique()):
-    #     if i % 2 == 0:
-    #         weapon_to_stroke_dash[weapon] = [i * 2, i * 2]
-    #     else:
-    #         weapon_to_stroke_dash[weapon] = [i * 2, i ]
-
-    line = alt.Chart(ttk_over_accuracy).mark_line(
-        # point=alt.OverlayMarkDef(filled=False, fill="white")
-        # point=True,
-    ).encode(
-        x=alt.X('miss rate', axis=alt.Axis(title='Miss Rate (%)')),
-        y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms) - Lower is Better'), scale=alt.Scale(zero=False)),
-        color=alt.Color('weapon:N', legend=alt.Legend(title="Weapon")),
-        # shape=alt.Shape('weapon'),
-        tooltip=['weapon', 'accuracy', 'ttk'],
-        # strokeDash=alt.StrokeDash("weapon", scale=alt.Scale(domain=list(weapon_to_stroke_dash.keys()),
-        #                                                     range=list(weapon_to_stroke_dash.values())),
-        #                           legend=alt.Legend(title="Weapon")),
-        strokeDash=alt.StrokeDash("weapon", legend=alt.Legend(title="Weapon")),
-        # strokeWidth=alt.value(3),
-        # strokeDash="symbol",
-    ).properties(
-        title=chart_title,
-        # width=800,
-        height=600,
-    )
-
-    points_on_line = alt.Chart(ttk_over_accuracy).mark_point().encode(
-        x=alt.X('miss rate', axis=alt.Axis(title='Miss Rate (%)')),
-        y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms) - Lower is Better'), scale=alt.Scale(zero=False)),
-        shape=alt.Shape('weapon', legend=alt.Legend(title="Weapon")),
-        color=alt.Color('weapon:N', legend=alt.Legend(title="Weapon")),
-    )
-
-    # Create a selection that chooses the nearest point & selects based on x-value
-    nearest = alt.selection_point(nearest=True,
-                                  on='mouseover',
-                                  fields=['ttk'],
-                                  empty=False)
-    # # Transparent selectors across the chart. This is what tells us
-    # # the x-value of the cursor
-    selectors = alt.Chart(ttk_over_accuracy).mark_point().encode(
-        y=alt.Y('ttk'),
-        tooltip=alt.value(None),
-        opacity=alt.value(0),
-    ).add_params(
-        nearest
-    )
-    #
-    # # Draw points on the line, and highlight based on selection
-    points = line.mark_point().encode(
-        # y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms)')),
-        opacity=alt.condition(nearest, alt.value(1), alt.value(0)),
-    )
-    #
-    # # Draw text labels near the points, and highlight based on selection
-    # text = line.mark_text(align='left', dx=-5, dy=10).encode(
-    #     text=alt.condition(nearest, 'miss rate', alt.value(' ')),
-    #     # shape=alt.Shape('weapon', legend=None),
-    # )
-    #
-    # # Draw a rule at the location of the selection
-    rules = alt.Chart(ttk_over_accuracy).mark_rule(color='gray').encode(
-        y=alt.Y('ttk'),
-        # tooltip=None,
-    ).transform_filter(
-        nearest
-    )
-    #
-    # # Put the five layers into a chart and bind the data
-    fig = (alt.layer(
-        selectors, line, points_on_line, rules,  # points, ,  # , rules,  # text
-    ).resolve_scale(
-        shape='independent',
-        color='independent',
-        strokeDash='independent',
-    ))
-    fig = fig.interactive()
-    # saving the plot as html file
-    fig.save(f'plots/altair_effective_ttk_rarity_{shield_attachment_rarity}.html')
-
-    st.altair_chart(fig, use_container_width=True)
-
-
-def plot_ttk_over_accuracy(gun_df, shield_attachment_rarity=3):
-    ttk_over_accuracy = get_ttk_over_accuracy(gun_df, shield_attachment_rarity, shield_attachment_rarity, "body")
-
-    ttk_over_accuracy = pd.DataFrame(ttk_over_accuracy, columns=["weapon", "accuracy", "ttk"])
-
-    # plot_using_seaborn(ttk_over_accuracy, shield_attachment_rarity)
-    # plot_using_plotly(ttk_over_accuracy, shield_attachment_rarity)
-    plot_using_altair(ttk_over_accuracy, shield_attachment_rarity)
-    # plot_using_bokeh(ttk_over_accuracy, shield_attachment_rarity)
-    # Set Seaborn style
-
-
-# def plot_remaining_health_over_time(gun_df, shield_rarity, attachment_rarity, shot_location, accuracy):
-#     health = 100
-#     shield_values = [50, 75, 100, 125]
-#
-#     head_multiplier = 1.25
-#     leg_multiplier = 0.8
-#     head_body_leg_distribution = [0.15, 0.7, 0.15]
-#
-#     # effective_accuracy = 0.75
-#     weapon_health_time_list = []
-#
-#     for idx, row in gun_df.iterrows():
-#
-#         weapon = row["weapon_name"]
-#         damage = row["damage"]
-#         rpm = row["rpm"]
-#         mag = row[f"magazine_{attachment_rarity + 1}"]
-#         reload_time = row[f"reload_time_{attachment_rarity + 1}"]
-#         shield = shield_values[shield_rarity]
-#         shot_interval = 60 / rpm
-#
-#         total_health = health + shield
-#
-#         effective_damage = damage * accuracy
-#
-#         if weapon == "Alternator Disruptor":
-#             continue
-#         weapon_health_time_list.append([weapon, total_health, 0])
-#
-#         for i in range(1, mag + 1):
-#             remaining_health = max(total_health - effective_damage * i, 0)
-#             weapon_health_time_list.append([weapon, remaining_health, shot_interval * i * 1000])
-#
-#         # for accuracy in range(50, 100):
-#         #     effective_shot_to_kill = math.ceil(number_of_hits_to_kill / (accuracy / 100))
-#         #     number_of_reloads = math.ceil(max(effective_shot_to_kill / mag - 1, 0))
-#         #     ttk = shot_interval * effective_shot_to_kill + reload_time * number_of_reloads
-#         #     ttk_over_accuracy.append([weapon, accuracy, ttk])
-#     weapon_health_time_df = pd.DataFrame(weapon_health_time_list, columns=["weapon", "health", "time"])
-#
-#     # Set Seaborn style
-#     sns.set(style="darkgrid")
-#
-#     # Plotting ttk over accuracy with different colors for each weapon
-#     plt.figure(figsize=(8, 8))
-#     sns.lineplot(x='time', y='health', data=weapon_health_time_df, hue='weapon', palette='Set2',
-#                  style='weapon', markers=False, dashes=True, drawstyle="steps-post")
-#     plt.title('Health over Time')
-#     plt.xlabel('Time (ms)')
-#     plt.ylabel('Remaining Health')
-#     plt.legend(bbox_to_anchor=(.75, 1), loc='upper left')
-#
-#     # set the font
-#     plt.rcParams['font.family'] = 'sans-serif'
-#
-#     plt.savefig(f'health_over_time_{accuracy}.svg')
-
-
-def plot_using_altair_damage(damage_over_peek_time_df):
-    # ttk_over_accuracy["miss rate"] = 100 - ttk_over_accuracy["accuracy"]
-    damage_over_peek_time_df["time"] = damage_over_peek_time_df["time"].astype(int)
-
-    slider = alt.binding_range(min=1, max=100, step=1, name='Accuracy (%):')
-    # accuracy = alt.selection_point(name="accuracy", fields=["accuracy"], bind=slider)
-    accuracy_param = alt.param(bind=slider, value=50)
-
-    # ttk_over_accuracy["symbol"] =
-
-    # shield_name = {0: "150", 1: "175", 2: "200", 3: "225"}
-    # attachment_name = {0: "No", 1: "White", 2: "Blue", 3: "Purple"}
-    #
-    chart_title = f'Scenario: Jiggle Peek, Purple Mag, Body Shots'
-    #
-    # Plotting ttk over accuracy with different colors for each weapon
-    line = alt.Chart(damage_over_peek_time_df).mark_line().encode(
-        x=alt.X('time', axis=alt.Axis(title='Time (ms)')),
-        y=alt.Y('damage', axis=alt.Axis(title='Damage')),
-        color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
-        # shape=alt.Shape('weapon', legend=None),
-        tooltip=['weapon', 'damage', 'time'],
-        strokeDash=alt.StrokeDash("weapon", legend=alt.Legend(title="Weapon")),
-        # strokeWidth=alt.value(2),
-        # strokeDashOffset="weapon",
-        # strokeDash="symbol",
-    ).properties(
-        title=chart_title,
-        # width=800,
-        height=600,
-    ).add_params(
-        accuracy_param
-    ).transform_filter(
-        datum.accuracy == accuracy_param
-    )
-    points_on_line = alt.Chart(damage_over_peek_time_df).mark_point().encode(
-        x=alt.X('time', axis=alt.Axis(title='Time (ms)')),
-        y=alt.Y('damage', axis=alt.Axis(title='Damage')),
-        shape=alt.Shape('weapon', legend=alt.Legend(title="Weapon")),
-        color=alt.Color('weapon', legend=alt.Legend(title="Weapon")),
-    ).add_params(
-        accuracy_param
-    ).transform_filter(
-        datum.accuracy == accuracy_param
-    )
-
-    fig = (alt.layer(
-        line, points_on_line,
-    )
-    .resolve_scale(
-        shape='independent',
-        color='independent',
-        strokeDash='independent', )
-    )
-
-    fig = fig.interactive()
-
-    st.altair_chart(fig, use_container_width=True)
 
 
 def get_damage_over_peek_time(gun_df):
@@ -417,24 +243,23 @@ def plot_damage_over_peek_time(gun_df):
 
     damage_over_peek_time_df = pd.DataFrame(damage_over_peek_time, columns=["weapon", "damage", "accuracy", "time"])
 
-    plot_using_altair_damage(damage_over_peek_time_df)
-    # the slower the rpm, the more punishing missed shots are
-    # missing Kraber shots is more punishing than missing R99 shots
 
-    # I prefer to
+def visualize_gun_df(gun_df):
+    st.write("Raw Data")
+    st.dataframe(gun_df)
 
 
 def main():
-    print(sys.argv)
     close_gun_df = pd.read_csv("data/guns_close_range.csv")
     long_gun_df = pd.read_csv("data/guns_long_range.csv")
 
+    get_close_range_effective_ttk_df(close_gun_df)
+
     # for accuracy in range(50, 101, 10):
     #     plot_remaining_health_over_time(close_gun_df, 3, 3, 1, accuracy / 100)
-
-    plot_ttk_over_accuracy(close_gun_df, 3)
-
-    plot_damage_over_peek_time(close_gun_df)
+    #
+    # plot_ttk_over_accuracy(close_gun_df, 3)
+    # plot_damage_over_peek_time(close_gun_df)
 
     # plot_ttk_over_accuracy(close_gun_df, 2)
     # plot_ttk_over_accuracy(close_gun_df, 1)
