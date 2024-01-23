@@ -1,32 +1,18 @@
-import math
-
-import streamlit as st
-import pandas as pd
-from src import ttk_analyzer
 import altair as alt
+import pandas as pd
+import streamlit as st
 from altair import datum
-import functools
+
 import src.chart_config as chart_config
+from src import ttk_analyzer
+from src.dynamic_filters import DynamicFilters
 
-
-# https://apexlegends-data-analysis.streamlit.app/
 
 def plot_effective_ttk(effective_ttk_df, plot_container):
     chart_title = f'Effective TTK (eTTK)'
-    #
-    # Plotting ttk over accuracy with different colors for each weapon
-    # weapon_to_stroke_dash = {}
-    #
-    # for i, weapon in enumerate(ttk_over_accuracy["weapon"].unique()):
-    #     if i % 2 == 0:
-    #         weapon_to_stroke_dash[weapon] = [i * 2, i * 2]
-    #     else:
-    #         weapon_to_stroke_dash[weapon] = [i * 2, i ]
+
 
     line = alt.Chart(effective_ttk_df).mark_line(
-        # point=alt.OverlayMarkDef(filled=False, fill="white")
-        # point=True,
-        # interpolate="step-before",
     ).encode(
         x=alt.X('accuracy',
                 axis=alt.Axis(title='Accuracy (%)'), sort=None),
@@ -48,12 +34,13 @@ def plot_effective_ttk(effective_ttk_df, plot_container):
         height=900,
     )
 
+
     points_on_line = alt.Chart(effective_ttk_df).mark_point().encode(
         x=alt.X('accuracy', axis=alt.Axis(title='Accuracy (%)'), sort=None),
         y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms) - Lower is Better'), scale=alt.Scale(zero=False)),
         shape=alt.Shape('weapon_name', legend=alt.Legend(title="Weapon")),
         color=alt.Color('weapon_name', legend=alt.Legend(title="Weapon"), scale=alt.Scale(scheme='category20')),
-        tooltip=['weapon_name', 'accuracy', 'ttk', "how"],
+        tooltip=['weapon_name', 'accuracy', 'ttk', "how", "damage_dealt"],
     )
 
     # Create a selection that chooses the nearest point & selects based on x-value
@@ -110,44 +97,52 @@ def plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stoc
 
     guns_slice_df = gun_stats_df
 
-    class_filter_names = ["All"] + guns_slice_df["class"].unique().tolist()
+    order_dict = {
+        # "tournament_full_name": [
+        #     'Pro League - Year 4, Split 1',
+        #     'ALGS Championship - Year 3, Split 2',
+        #     'LCQ - Year 3, Split 2',
+        #     'ALGS Playoffs - Year 3, Split 2',
+        #     'Pro League - Year 3, Split 2',
+        #     'ALGS Playoffs - Year 3, Split 1',
+        #     'Pro League - Year 3, Split 1',
+        # ],
+    }
 
-    class_filter_names = sorted(class_filter_names, key=lambda x: chart_config.class_filter_order_dict[x])
+    default_selection = {
+        # "tournament_full_name": [order_dict["tournament_full_name"][0]],
+        # "tournament_region": ["NA"],
+        "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG"],
+    }
+    # st.session_state["filters"] = default_selection
 
-    st.sidebar.selectbox('Class Filter:',
-                         class_filter_names,
-                         key='benchmark')
+    filters_dict = {
+        "class": "Class",
+        "weapon_name": "Weapons",
+    }
 
-    selected_benchmark = st.session_state["benchmark"]
+    dynamic_filters = DynamicFilters(guns_slice_df,
+                                     filters_name="weapons_filters",
+                                     filters_dict=filters_dict,
+                                     order_dict=order_dict,
+                                     default_filters=default_selection, )
 
-    if selected_benchmark != "All":
-        current_guns = gun_stats_df[gun_stats_df["class"] == selected_benchmark]["weapon_name"].unique().tolist()
-    else:
-        current_guns = gun_stats_df["weapon_name"].unique().tolist()
+    st.sidebar.write("Apply the filters in any order")
+    dynamic_filters.display_filters(location="sidebar")
 
-    if "guns" in st.session_state:
-        selected_guns = st.session_state["guns"]
-    else:
-        selected_guns = ["R-99 SMG", "Volt SMG"]
-    #
-    # pre_selected_gun_names = st.session_state["added_guns"]
-    #
-    # plot_container.multiselect('Added Guns:',
-    #                            pre_selected_gun_names,
-    #                            pre_selected_gun_names,
-    #                            key='added_guns', )
+    weapons_filtered = dynamic_filters.filter_df()
 
-    current_guns = set(current_guns + selected_guns)
+    # st.sidebar.write("Batch Add:")
+    # class_columns = st.sidebar.columns(2)
+    # class_columns[0].button("SMG", use_container_width=True)
+    # class_columns[1].button("AR", use_container_width=True)
+    # class_columns[2].button("Marksman", use_container_width=True)
+    # class_columns[3].button("Sniper")
 
-    st.sidebar.multiselect('Guns:',
-                           current_guns,
-                           selected_guns,
-                           key='guns', )
-
-    st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=4,
+    st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=0,
                          key='health')
-    st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4, key='evo')
-    st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=2, key='helmet')
+    st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=2, key='evo')
+    st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=1, key='helmet')
     st.sidebar.selectbox('Shot Location:', chart_config.shot_location_dict.keys(), index=0, key='shot_location')
     st.sidebar.selectbox('Mag (if applicable):',
                          chart_config.mag_list,
@@ -162,7 +157,7 @@ def plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stoc
     # columns[1].button("Add", key="add_to_comparison", use_container_width=True)
 
     selected_health = st.session_state["health"]
-    selected_guns = st.session_state["guns"]
+    selected_guns = st.session_state.weapons_filters["weapon_name"]
     selected_helmet = st.session_state["helmet"]
     selected_evo = st.session_state["evo"]
     selected_mag = st.session_state["mag"]
@@ -190,22 +185,23 @@ def plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stoc
     #     (effective_ttk_slice_df["ability_modifier"] == selected_ability_modifier)
     #     ]
 
-    guns_slice_df = guns_slice_df[guns_slice_df["weapon_name"].isin(selected_guns)]
-
-    guns_data_df = pd.DataFrame(
-        ttk_analyzer.get_ttk_over_accuracy(guns_slice_df, sniper_stocks_df, standard_stocks_df, conditions_dict))
-
-    if len(guns_data_df) == 0:
-        plot_container.write("Select a scenario to plot")
+    if selected_health == "0 - No Health" and selected_evo == "0 - No Shield":
+        plot_container.write("Health and Evo Shield cannot be both 0.")
         return
+
+    guns_data_df = ttk_analyzer.get_ttk_df(weapons_filtered, sniper_stocks_df, standard_stocks_df,
+                                           conditions_dict)
+    # if len(guns_data_df) == 0:
+    #     plot_container.write("Select a scenario to plot")
+    #     return
 
     plot_effective_ttk(guns_data_df, plot_container)
     #
 
     expander = plot_container.expander(label='Raw Data')
     expander.dataframe(guns_slice_df)
-    with open("data/README.md", "r") as f:
-        expander.markdown(f.read())
+    # with open("data/README.md", "r") as f:
+    #     expander.markdown(f.read())
 
     # on_change()
     # st.button('Hit me')
@@ -291,7 +287,7 @@ def plot_accuracy_histogram(weapons_data_df):
     weapons_data_df["accuracy"] = weapons_data_df["accuracy"].apply(lambda x: int(x))
 
     altair_chart = alt.Chart(weapons_data_df).mark_bar().encode(
-        alt.X('accuracy', bin=alt.Bin(maxbins=100), axis=alt.Axis(title='Accuracy (%)')),
+        alt.X('accuracy', bin=alt.Bin(maxbins=100), axis=alt.Axis(title='Accuracy (%)'), scale=alt.Scale(zero=True)),
         y='count()',
         color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
         tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
@@ -324,16 +320,24 @@ def plot_accuracy_histogram(weapons_data_df):
     top_20 = weapons_data_df[weapons_data_df["order"] <= 30]
     print(len(top_20))
 
-    box_plot = alt.Chart(top_20).mark_boxplot(extent="min-max").encode(
+    box_plot_color = "red"  # if st.theme() == 'Dark' else "black"
+
+    box_plot = (alt.Chart(top_20).mark_boxplot(
+        extent="min-max",
+        color=box_plot_color,
+    ).encode(
         alt.X("player_name:N", axis=alt.Axis(title='Player Name'), sort=None),
         alt.Y("accuracy:Q", axis=alt.Axis(title='Accuracy (%)'), scale=alt.Scale(zero=False)),
         # alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
         # tooltip=alt.Tooltip(['player_name', "weapon_name", 'shots', 'hits', "accuracy"]),
+        color=alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
+        fill=alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
+
     ).properties(
         title=f"Accuracy Box Plot{chart_title_info}",
         # width=800,
         # height=700,
-    )
+    ))
 
     # weapons_data_df = weapons_data_df.sort_values(by=["count"], ascending=False)
     top_20 = top_20.sort_values(by=["count"], ascending=False)
@@ -357,17 +361,25 @@ def plot_accuracy_histogram(weapons_data_df):
 def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
     weapons_slice = weapons_data_df
 
-    tournament_menu_order_list = ["Pro League", "ALGS Championship", "ALGS Playoffs", "LCQ"]
+    # tournament_menu_order_list = ["Pro League", "ALGS Championship", "ALGS Playoffs", "LCQ"]
     region_menu_order_list = ["NA", "EMEA", "APAC_N", "APAC_S", "SA", "Global"]
     # class_menu_order = ["SMG", "Marksman", "AR", "Sniper", "LMG", "Pistol"]
+    tournament_full_name_menu_order_list = [
+        'Pro League - Year 4, Split 1',
+        'ALGS Championship - Year 3, Split 2',
+        'LCQ - Year 3, Split 2',
+        'ALGS Playoffs - Year 3, Split 2',
+        'Pro League - Year 3, Split 2',
+        'ALGS Playoffs - Year 3, Split 1',
+        'Pro League - Year 3, Split 1',
+    ]
+    if "tournament_full_name" not in st.session_state:
+        st.session_state["tournament_full_name"] = tournament_full_name_menu_order_list[0]
+    selected_tournament_full_name = st.session_state["tournament_full_name"]
 
-    if "tournament" not in st.session_state:
-        st.session_state["tournament"] = tournament_menu_order_list[0]
-    selected_tournament = st.session_state["tournament"]
-
-    tournament_list = weapons_slice["tournament_name"].unique().tolist()
-    tournament_list = sorted(tournament_list, key=lambda x: tournament_menu_order_list.index(x))
-    weapons_slice = weapons_slice[weapons_slice["tournament_name"] == selected_tournament]
+    tournament_list = weapons_slice["tournament_full_name"].unique().tolist()
+    tournament_list = sorted(tournament_list, key=lambda x: tournament_full_name_menu_order_list.index(x))
+    weapons_slice = weapons_slice[weapons_slice["tournament_full_name"] == selected_tournament_full_name]
 
     if "region" not in st.session_state:
         st.session_state["region"] = region_menu_order_list[0]
@@ -381,28 +393,28 @@ def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
 
     weapons_slice = weapons_slice[weapons_slice["tournament_region"] == selected_region]
 
-    if "year" not in st.session_state:
-        st.session_state["year"] = 3
-    selected_year = st.session_state["year"]
+    # if "year" not in st.session_state:
+    #     st.session_state["year"] = 3
+    # selected_year = st.session_state["year"]
+    #
+    # tournament_years = sorted(weapons_slice["tournament_year"].unique().tolist(), reverse=True)
+    #
+    # if selected_year not in tournament_years:
+    #     selected_year = tournament_years[0]
 
-    tournament_years = sorted(weapons_slice["tournament_year"].unique().tolist(), reverse=True)
+    # weapons_slice = weapons_slice[weapons_slice["tournament_year"] == selected_year]
 
-    if selected_year not in tournament_years:
-        selected_year = tournament_years[0]
+    # if "split" not in st.session_state:
+    #     st.session_state["split"] = weapons_slice["tournament_split"].max()
+    # selected_split = st.session_state["split"]
+    #
+    # tournament_splits = weapons_slice["tournament_split"].unique().tolist()
+    # tournament_splits = sorted(tournament_splits, reverse=True)
+    #
+    # if selected_split not in tournament_splits:
+    #     selected_split = tournament_splits[0]
 
-    weapons_slice = weapons_slice[weapons_slice["tournament_year"] == selected_year]
-
-    if "split" not in st.session_state:
-        st.session_state["split"] = weapons_slice["tournament_split"].max()
-    selected_split = st.session_state["split"]
-
-    tournament_splits = weapons_slice["tournament_split"].unique().tolist()
-    tournament_splits = sorted(tournament_splits, reverse=True)
-
-    if selected_split not in tournament_splits:
-        selected_split = tournament_splits[0]
-
-    weapons_slice = weapons_slice[weapons_slice["tournament_split"] == selected_split]
+    # weapons_slice = weapons_slice[weapons_slice["tournament_split"] == selected_split]
 
     if "day" not in st.session_state:
         st.session_state["day"] = weapons_slice["game_day"].max()
@@ -416,12 +428,12 @@ def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
 
     weapons_slice = weapons_slice[weapons_slice["game_day"] == selected_day]
 
-    st.sidebar.selectbox("Tournament:", tournament_list, index=tournament_list.index(selected_tournament),
+    st.sidebar.selectbox("Tournament:", tournament_list, index=tournament_list.index(selected_tournament_full_name),
                          key="tournament")
     st.sidebar.selectbox("Region:", region_list, index=region_list.index(selected_region), key="region")
-    st.sidebar.selectbox("Year:", tournament_years, key="year", index=tournament_years.index(selected_year))
-    st.sidebar.selectbox("Split:", tournament_splits, key="split", index=tournament_splits.index(selected_split))
-    st.sidebar.selectbox("Day:", tournament_days, key="day", index=tournament_days.index(selected_split))
+    # st.sidebar.selectbox("Year:", tournament_years, key="year", index=tournament_years.index(selected_year))
+    # st.sidebar.selectbox("Split:", tournament_splits, key="split", index=tournament_splits.index(selected_split))
+    st.sidebar.selectbox("Day:", tournament_days, key="day", index=tournament_days.index(selected_day))
 
     if "players" not in st.session_state:
         st.session_state["players"] = ["All"]
@@ -517,7 +529,7 @@ def load_data():
     sniper_stocks_df = pd.read_csv("data/sniper_stocks.csv")
     standard_stocks_df = pd.read_csv("data/standard_stocks.csv")
     weapons_data_df = pd.read_csv("data/weapons_data.csv")
-    algs_game_list_df = pd.read_csv("data/algs_game_list.csv")
+    algs_games_df = pd.read_csv("data/algs_games.csv")
 
     gun_stats_df = gun_stats_df.sort_values(by=["weapon_name", "class"])
     # gun_stats_df.to_csv("data/guns_stats.csv", index=False)
@@ -543,11 +555,11 @@ def load_data():
     weapons_data_df = weapons_data_df[~weapons_data_df["weapon_name"].isin(invalid_weapon_names)]
     weapons_data_df["weapon_name"] = weapons_data_df["weapon_name"].apply(map_weapon_name)
 
-    algs_game_list_df.loc[pd.isna(algs_game_list_df["tournament_region"]), "tournament_region"] = "NA"
+    algs_games_df.loc[pd.isna(algs_games_df["tournament_region"]), "tournament_region"] = "NA"
 
-    weapons_data_df = weapons_data_df.merge(algs_game_list_df, on=["game_id"], how="inner")
+    weapons_data_df = weapons_data_df.merge(algs_games_df, on=["game_id"], how="inner")
 
-    return gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_game_list_df
+    return gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_games_df
 
 
 def main():
@@ -565,16 +577,27 @@ def main():
     )
     gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_game_list_df = load_data()
 
-    st.sidebar.selectbox("Visualization Type:", ["Effective TTK", "Fights Accuracy Breakdown"], index=1, key='analysis_type')
+    # st.sidebar.selectbox("Visualization Type:", ["Effective TTK", "Fights Accuracy Breakdown"], index=1,
+    #                      key='analysis_type')
+    # if "analysis_type" not in st.session_state:
+    #     st.session_state["analysis_type"] = "Fights Accuracy Breakdown"
+    #
+    # st.sidebar.write("Visualization Type:")
+    # st.sidebar.button("Effective TTK", key="effective_ttk", on_click=lambda: st.session_state.update(
+    #     {"analysis_type": "Effective TTK"}), use_container_width=True)
+    # st.sidebar.button("Fights Accuracy Breakdown", key="accuracy_breakdown", on_click=lambda: st.session_state.update(
+    #     {"analysis_type": "Fights Accuracy Breakdown"}), use_container_width=True)
+    # st.sidebar.divider()
 
-    analysis_type = st.session_state["analysis_type"]
+    # analysis_type = st.session_state["analysis_type"]
 
     # gun_stats_df.to_csv("data/guns_stats.csv", index=False)
 
-    if analysis_type == "Effective TTK":
-        plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stocks_df)
-    else:
-        plot_accuracy_interactive(weapons_data_df, gun_stats_df)
+    plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stocks_df)
+
+    # if analysis_type == "Effective TTK":
+    # else:
+    #     plot_accuracy_interactive(weapons_data_df, gun_stats_df)
 
     # ttk_analyzer.plot_damage_over_peek_time(gun_stats_df)
     # st.divider()
