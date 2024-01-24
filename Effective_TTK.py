@@ -11,7 +11,6 @@ from src.dynamic_filters import DynamicFilters
 def plot_effective_ttk(effective_ttk_df, plot_container):
     chart_title = f'Effective TTK (eTTK)'
 
-
     line = alt.Chart(effective_ttk_df).mark_line(
     ).encode(
         x=alt.X('accuracy',
@@ -33,7 +32,6 @@ def plot_effective_ttk(effective_ttk_df, plot_container):
         # width=800,
         height=750,
     )
-
 
     points_on_line = alt.Chart(effective_ttk_df).mark_point().encode(
         x=alt.X('accuracy', axis=alt.Axis(title='Accuracy (%)'), sort=None),
@@ -91,135 +89,6 @@ def plot_effective_ttk(effective_ttk_df, plot_container):
 
     plot_container.altair_chart(fig, use_container_width=True)
 
-
-def plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stocks_df):
-    plot_container = st.container()
-
-    guns_slice_df = gun_stats_df
-
-    order_dict = {
-        # "tournament_full_name": [
-        #     'Pro League - Year 4, Split 1',
-        #     'ALGS Championship - Year 3, Split 2',
-        #     'LCQ - Year 3, Split 2',
-        #     'ALGS Playoffs - Year 3, Split 2',
-        #     'Pro League - Year 3, Split 2',
-        #     'ALGS Playoffs - Year 3, Split 1',
-        #     'Pro League - Year 3, Split 1',
-        # ],
-    }
-
-    default_selection = {
-        # "tournament_full_name": [order_dict["tournament_full_name"][0]],
-        # "tournament_region": ["NA"],
-        "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG"],
-    }
-    # st.session_state["filters"] = default_selection
-
-    filters_dict = {
-        "class": "Class",
-        "weapon_name": "Weapons",
-    }
-
-    dynamic_filters = DynamicFilters(guns_slice_df,
-                                     filters_name="weapons_filters",
-                                     filters_dict=filters_dict,
-                                     order_dict=order_dict,
-                                     default_filters=default_selection, )
-
-    st.sidebar.write("Apply the filters in any order")
-    dynamic_filters.display_filters(location="sidebar")
-
-    weapons_filtered = dynamic_filters.filter_df()
-
-    # st.sidebar.write("Batch Add:")
-    # class_columns = st.sidebar.columns(2)
-    # class_columns[0].button("SMG", use_container_width=True)
-    # class_columns[1].button("AR", use_container_width=True)
-    # class_columns[2].button("Marksman", use_container_width=True)
-    # class_columns[3].button("Sniper")
-
-    st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=0,
-                         key='health')
-    st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=2, key='evo')
-    st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=1, key='helmet')
-    st.sidebar.selectbox('Shot Location:', chart_config.shot_location_dict.keys(), index=0, key='shot_location')
-    st.sidebar.selectbox('Mag (if applicable):',
-                         chart_config.mag_list,
-                         index=2, key='mag')
-    st.sidebar.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
-    st.sidebar.selectbox('Stock:', ['White', 'Blue', 'Purple'], index=2, key='stock')
-    st.sidebar.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
-                         key='ability_modifier')
-    #
-    # columns = st.sidebar.columns(2)
-    # columns[0].button("Clear", key="clear_comparison", use_container_width=True)
-    # columns[1].button("Add", key="add_to_comparison", use_container_width=True)
-
-    selected_health = st.session_state["health"]
-    selected_guns = st.session_state.weapons_filters["weapon_name"]
-    selected_helmet = st.session_state["helmet"]
-    selected_evo = st.session_state["evo"]
-    selected_mag = st.session_state["mag"]
-    selected_stock = st.session_state["stock"]
-    selected_shot_location = st.session_state["shot_location"]
-    selected_ability_modifier = st.session_state["ability_modifier"]
-    selected_bolt = st.session_state["bolt"]
-
-    conditions_dict = {"helmet": selected_helmet,
-                       "shield": selected_evo,
-                       "shot_location": selected_shot_location,
-                       "mag": selected_mag,
-                       "stock": selected_stock,
-                       "health": selected_health,
-                       "ability_modifier": selected_ability_modifier,
-                       "bolt": selected_bolt}
-
-    # effective_ttk_slice_df = effective_ttk_slice_df[
-    #     (effective_ttk_slice_df["helmet"] == selected_helmet) &
-    #     (effective_ttk_slice_df["shield"] == selected_evo) &
-    #     (effective_ttk_slice_df["mag"] == selected_mag) &
-    #     (effective_ttk_slice_df["stock"] == selected_stock) &
-    #     (effective_ttk_slice_df["shot_location"] == selected_shot_location) &
-    #     (effective_ttk_slice_df["chart_type"] == chart_type) &
-    #     (effective_ttk_slice_df["ability_modifier"] == selected_ability_modifier)
-    #     ]
-
-    if selected_health == "0 - No Health" and selected_evo == "0 - No Shield":
-        plot_container.write("Health and Evo Shield cannot be both 0.")
-        return
-
-    guns_data_df = ttk_analyzer.get_ttk_df(weapons_filtered, sniper_stocks_df, standard_stocks_df,
-                                           conditions_dict)
-    # if len(guns_data_df) == 0:
-    #     plot_container.write("Select a scenario to plot")
-    #     return
-
-    plot_effective_ttk(guns_data_df, plot_container)
-    #
-
-    expander = plot_container.expander(label='Raw Data')
-    expander.dataframe(guns_slice_df)
-    # with open("data/README.md", "r") as f:
-    #     expander.markdown(f.read())
-
-    # on_change()
-    # st.button('Hit me')
-    # # st.data_editor('Edit data', data)
-    # st.checkbox('Check me out')
-    # st.selectbox('Select', [1, 2, 3])
-    # st.multiselect('Multiselect', [1, 2, 3])
-    # st.slider('Slide me', min_value=0, max_value=10)
-    # st.select_slider('Slide to select', options=[1, '2'])
-    # st.text_input('Enter some text')
-    # st.number_input('Enter a number')
-    # st.text_area('Area for textual entry')
-    # st.date_input('Date input')
-    # st.time_input('Time entry')
-    # st.file_uploader('File uploader')
-    # # st.download_button('On the dl', data)
-    # st.camera_input("一二三,茄子!")
-    # st.color_picker('Pick a color')
 
 
 def plot_using_altair_damage(damage_over_peek_time_df):
@@ -523,7 +392,7 @@ def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
         plot_accuracy_histogram(weapons_slice)
 
 
-# @st.cache_data
+@st.cache_data
 def load_data():
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
     sniper_stocks_df = pd.read_csv("data/sniper_stocks.csv")
@@ -562,68 +431,97 @@ def load_data():
     return gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_games_df
 
 
-def main():
-    st.set_page_config(
-        page_title="Effective TTK",
-        page_icon="🧊",
-        layout="wide",
-        initial_sidebar_state="expanded",
-        menu_items={
-            # 'Get Help': 'https://www.extremelycoolapp.com/help',
-            # 'Report a bug': "https://www.extremelycoolapp.com/bug",
-            # 'About': "# This is a header. This is an *extremely* cool app!"
-        }
-    )
-    gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_game_list_df = load_data()
+st.set_page_config(
+    page_title="Effective TTK",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+    }
+)
+gun_stats_df, sniper_stocks_df, standard_stocks_df, weapons_data_df, algs_game_list_df = load_data()
 
-    # st.sidebar.selectbox("Visualization Type:", ["Effective TTK", "Fights Accuracy Breakdown"], index=1,
-    #                      key='analysis_type')
-    # if "analysis_type" not in st.session_state:
-    #     st.session_state["analysis_type"] = "Fights Accuracy Breakdown"
-    #
-    # st.sidebar.write("Visualization Type:")
-    # st.sidebar.button("Effective TTK", key="effective_ttk", on_click=lambda: st.session_state.update(
-    #     {"analysis_type": "Effective TTK"}), use_container_width=True)
-    # st.sidebar.button("Fights Accuracy Breakdown", key="accuracy_breakdown", on_click=lambda: st.session_state.update(
-    #     {"analysis_type": "Fights Accuracy Breakdown"}), use_container_width=True)
-    # st.sidebar.divider()
+plot_container = st.container()
 
-    # analysis_type = st.session_state["analysis_type"]
+guns_slice_df = gun_stats_df
 
-    # gun_stats_df.to_csv("data/guns_stats.csv", index=False)
+order_dict = {
+    # "tournament_full_name": [
+    #     'Pro League - Year 4, Split 1',
+    #     'ALGS Championship - Year 3, Split 2',
+    #     'LCQ - Year 3, Split 2',
+    #     'ALGS Playoffs - Year 3, Split 2',
+    #     'Pro League - Year 3, Split 2',
+    #     'ALGS Playoffs - Year 3, Split 1',
+    #     'Pro League - Year 3, Split 1',
+    # ],
+}
 
-    plot_effective_ttk_interactive(gun_stats_df, sniper_stocks_df, standard_stocks_df)
+default_selection = {
+    # "tournament_full_name": [order_dict["tournament_full_name"][0]],
+    # "tournament_region": ["NA"],
+    "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG"],
+}
+# st.session_state["filters"] = default_selection
 
-    # if analysis_type == "Effective TTK":
-    # else:
-    #     plot_accuracy_interactive(weapons_data_df, gun_stats_df)
+filters_dict = {
+    "class": "Class",
+    "weapon_name": "Weapons",
+}
 
-    # ttk_analyzer.plot_damage_over_peek_time(gun_stats_df)
-    # st.divider()
-    #
-    # ttk_analyzer.visualize_gun_df(gun_stats_df)
+dynamic_filters = DynamicFilters(guns_slice_df,
+                                 filters_name="weapons_filters",
+                                 filters_dict=filters_dict,
+                                 order_dict=order_dict,
+                                 default_filters=default_selection, )
+
+st.sidebar.write("Apply the filters in any order")
+dynamic_filters.display_filters(location="sidebar")
+
+weapons_filtered = dynamic_filters.filter_df()
+
+st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=0,
+                     key='health')
+st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=2, key='evo')
+st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=1, key='helmet')
+st.sidebar.selectbox('Shot Location:', chart_config.shot_location_dict.keys(), index=0, key='shot_location')
+st.sidebar.selectbox('Mag (if applicable):',
+                     chart_config.mag_list,
+                     index=2, key='mag')
+st.sidebar.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
+st.sidebar.selectbox('Stock:', ['White', 'Blue', 'Purple'], index=2, key='stock')
+st.sidebar.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
+                     key='ability_modifier')
+
+selected_health = st.session_state["health"]
+selected_guns = st.session_state.weapons_filters["weapon_name"]
+selected_helmet = st.session_state["helmet"]
+selected_evo = st.session_state["evo"]
+selected_mag = st.session_state["mag"]
+selected_stock = st.session_state["stock"]
+selected_shot_location = st.session_state["shot_location"]
+selected_ability_modifier = st.session_state["ability_modifier"]
+selected_bolt = st.session_state["bolt"]
+
+conditions_dict = {"helmet": selected_helmet,
+                   "shield": selected_evo,
+                   "shot_location": selected_shot_location,
+                   "mag": selected_mag,
+                   "stock": selected_stock,
+                   "health": selected_health,
+                   "ability_modifier": selected_ability_modifier,
+                   "bolt": selected_bolt}
+
+if selected_health == "0 - No Health" and selected_evo == "0 - No Shield":
+    plot_container.write("Health and Evo Shield cannot be both 0.")
+else:
+    guns_data_df = ttk_analyzer.get_ttk_df(weapons_filtered, sniper_stocks_df, standard_stocks_df,
+                                           conditions_dict)
+
+    plot_effective_ttk(guns_data_df, plot_container)
+
+    expander = plot_container.expander(label='Raw Data')
+    expander.dataframe(guns_slice_df)
 
 
-if __name__ == "__main__":
-    main()
-    # st.title('Apex Legends Data Analysis')
-    # st.subheader('SMGs In-depth Analysis')
-    # st.write(
-    #     'This analysis aims to provide a deeper understanding of the SMGs in Apex Legends. By the end of this analysis, we will have a better understanding of the SMGs in Apex Legends.')
-    # st.latex(r''' e^{i\pi} + 1 = 0 ''')
-    # tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
-    # intro = """
-    # Ultimately in a fight, a player who deals the most damage wins.
-    #
-    # Time-to-kill (TTK) is the amount of time it takes to kill an enemy, is a common term in FPS games and is used to describe the amount of time it takes to kill an enemy.
-    # The problem is in reality, the actual TTK differs from the theoretical TTK, since no one can hit all their shots.
-    #
-    # This leaves players to decide which weapon is the best based on "the feel"of the weapon.
-    # This works fine for the most part, except it is not based on concrete data.
-    # My current findings match the Pro Players' opinions, R99 is the best weapon in the game.
-    #
-    # But, let's try to figure out why.
-    # """
-    # # tab1.write(intro)
-    # tab1.markdown(intro)  # see #*
-    # tab2.write("this is tab 2")
+print(f"Done")

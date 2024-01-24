@@ -79,11 +79,7 @@ class DynamicFilters:
         filtered_df = self.df.copy()
         for key, values in st.session_state[self.filters_name].items():
             if key != except_filter and values:
-                if key == "accuracy":
-                    filtered_df = filtered_df[round(filtered_df[key]).astype(int) >= values[0]]
-                    filtered_df = filtered_df[round(filtered_df[key]).astype(int) <= values[1]]
-                else:
-                    filtered_df = filtered_df[filtered_df[key].isin(values)]
+                filtered_df = filtered_df[filtered_df[key].isin(values)]
         return filtered_df
 
     def display_filters(self, location=None, num_columns=0, gap="small"):
@@ -176,13 +172,8 @@ class DynamicFilters:
 
             if location == 'sidebar':
                 with st.sidebar:
-                    if filter_name == "accuracy":
-                        min_selected = st.session_state[self.filters_name][filter_name]
-                        st.sidebar.slider(f"Select {filter_displayed_name}", min_value=0, max_value=100,
-                                          value=tuple(min_selected))
-                    else:
-                        selected = st.multiselect(f"Select {filter_displayed_name}", options,
-                                                  default=st.session_state[self.filters_name][filter_name])
+                    selected = st.multiselect(f"Select {filter_displayed_name}", options,
+                                              default=st.session_state[self.filters_name][filter_name])
             elif location == 'columns' and num_columns > 0:
                 with col_list[counter - 1]:
                     selected = st.multiselect(f"Select {filter_displayed_name}", options,
