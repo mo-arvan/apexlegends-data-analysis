@@ -5,7 +5,7 @@ import streamlit as st
 from src.dynamic_filters import DynamicFilters
 
 
-def plot_accuracy_histogram(weapons_data_df):
+def plot_accuracy_histogram(weapons_data_df, top_k):
     weapons_data_df["accuracy"] = weapons_data_df["accuracy"].apply(lambda x: int(x))
 
     grouped_df = weapons_data_df.groupby(["player_name"]).agg(
@@ -48,12 +48,11 @@ def plot_accuracy_histogram(weapons_data_df):
                                             how="inner")
     weapons_data_df = weapons_data_df.sort_values(by=["median_accuracy_rank"], ascending=True)
 
-    k_top = min(30, len(players_median_accuracy))
-
-    top_30 = weapons_data_df[weapons_data_df["median_accuracy_rank"] <= k_top]
+    median_accuracy_rank_top_k = weapons_data_df[
+        weapons_data_df["median_accuracy_rank"] <= min(top_k, len(players_median_accuracy))]
     box_plot_color = "gray"  # if st.theme() == 'Dark' else "black"
 
-    box_plot = (alt.Chart(top_30).mark_boxplot(
+    box_plot = (alt.Chart(median_accuracy_rank_top_k).mark_boxplot(
         extent="min-max",
         color=box_plot_color,
     ).encode(
@@ -87,29 +86,41 @@ def plot_accuracy_histogram(weapons_data_df):
 
     high_accuracy_fights = high_accuracy_fights.merge(high_accuracy_count_rank, on="player_name", how="inner")
 
-    high_accuracy_top_30 = high_accuracy_fights[high_accuracy_fights["high_accuracy_count_rank"] <= 30]
+    high_accuracy_top_k = high_accuracy_fights[high_accuracy_fights["high_accuracy_count_rank"] <= top_k]
 
-    high_accuracy_top_30 = high_accuracy_top_30.sort_values(by=["high_accuracy_count"], ascending=False)
+    high_accuracy_top_k = high_accuracy_top_k.sort_values(by=["high_accuracy_count"], ascending=False)
 
-    high_accuracy_top_30["one"] = 1
+    high_accuracy_top_k["one"] = 1
     # weapons_data_df = weapons_data_df.sort_values(by=["count"], ascending=False)
     # top_30 = top_30.sort_values(by=["count"], ascending=False)
 
-    bar_plot = alt.Chart(high_accuracy_top_30).mark_bar().encode(
-        alt.X("player_name:N", axis=alt.Axis(title='Player Name'), sort=None),
-        alt.Y("one:Q", axis=alt.Axis(title='Count'), scale=alt.Scale(zero=False)),
-        alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
+    bar_plot = alt.Chart(high_accuracy_top_k).mark_bar().encode(
+        alt.Y("player_name:N", axis=alt.Axis(title=''), sort=None),
+        alt.X("one:Q", axis=alt.Axis(title="Count"), scale=alt.Scale(zero=False)),
+        alt.Color("damage_dealt:N", legend=None, scale=alt.Scale(scheme='yelloworangered')),
         tooltip=alt.Tooltip(
             ['player_name', "weapon_name", "damage_dealt", 'shots', 'hits', "accuracy", "high_accuracy_count"]),
     ).properties(
+
         title={"text": f"Number of Fights with Higher than Median Accuracy ({median_overall_accuracy:.2f})%",
-               # "subtitle": f"Median Accuracy: {median_overall_accuracy:.2f}%",
-               # "subtitleColor": "gray",
+               "subtitle": f"Text and color encode the damage dealt in the fight",
+               "subtitleColor": "gray",
                },
 
-        # width=800,
-        # height=700,
+        # width=100,
+        # height=500,
     )
+
+    bar_plot_text = bar_plot.mark_text(align="left",
+                                       baseline="middle",
+                                       color="white",
+                                       dx=-20).encode(
+        alt.X("one:Q", stack="zero"),
+        text="damage_dealt:Q",
+        color=alt.value("black")
+    )
+
+    bar_plot = bar_plot + bar_plot_text
 
     altair_scatter_2 = alt.Chart(weapons_data_df).mark_circle(size=25).encode(
         alt.Y("shots", axis=alt.Axis(title='Shots'), scale=alt.Scale(zero=True)),
@@ -196,6 +207,9 @@ def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
     fights_per_player = fights_per_player[fights_per_player["count"] >= fights_slider[0]]
     fights_per_player = fights_per_player[fights_per_player["count"] <= fights_slider[1]]
 
+    top_k_slider = st.sidebar.slider("Top K Players", min_value=1, max_value=100,
+                                     value=9, key="top_k")
+
     players_withing_fights_range = fights_per_player["player_name"].tolist()
 
     weapons_filtered = weapons_filtered[weapons_filtered["player_name"].isin(players_withing_fights_range)]
@@ -212,13 +226,13 @@ def plot_accuracy_interactive(weapons_data_df, gun_stats_df):
             force_load_button = False
 
         if force_load_button:
-            plot_accuracy_histogram(weapons_filtered)
+            plot_accuracy_histogram(weapons_filtered, top_k_slider)
         else:
             for m in markdown_message_list:
                 st.markdown(m, unsafe_allow_html=True)
             st.button("Force Load Data", key="force_load_button")
     else:
-        plot_accuracy_histogram(weapons_filtered)
+        plot_accuracy_histogram(weapons_filtered, top_k_slider)
 
 
 @st.cache_data
