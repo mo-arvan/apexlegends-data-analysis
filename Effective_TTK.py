@@ -31,7 +31,7 @@ def plot_effective_ttk(effective_ttk_df, plot_container):
     ).properties(
         title=chart_title,
         # width=800,
-        height=900,
+        height=750,
     )
 
 
@@ -564,10 +564,9 @@ def load_data():
 
 def main():
     st.set_page_config(
-        page_title="Apex Legends Data Analysis",
+        page_title="Effective TTK",
         page_icon="🧊",
         layout="wide",
-
         initial_sidebar_state="expanded",
         menu_items={
             # 'Get Help': 'https://www.extremelycoolapp.com/help',

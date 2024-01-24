@@ -123,8 +123,8 @@ def plot_accuracy_histogram(weapons_data_df):
         # height=700,
     )
 
-    st.altair_chart(box_plot, use_container_width=True)
     st.altair_chart(bar_plot, use_container_width=True)
+    st.altair_chart(box_plot, use_container_width=True)
     st.altair_chart(altair_scatter_2, use_container_width=True)
 
     expander = st.expander(label='Raw Data')
@@ -259,6 +259,18 @@ def load_data():
 
     return gun_stats_df, weapons_data_df  # , algs_games_df
 
+
+st.set_page_config(
+    page_title="Fights Accuracy",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        # 'Get Help': 'https://www.extremelycoolapp.com/help',
+        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
+        # 'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 
 main_gun_stats_df, main_weapons_data_df = load_data()
 plot_accuracy_interactive(main_weapons_data_df, main_gun_stats_df)
