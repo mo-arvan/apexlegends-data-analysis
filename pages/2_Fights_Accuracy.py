@@ -203,16 +203,16 @@ def accuracy_plots_builder(weapons_data_df, top_k):
 
     )
 
-    bar_plot_text_2 = bar_plot_2.mark_text(align="left",
-                                           baseline="middle",
-                                           color="white",
-                                           dx=-25).encode(
+    sum_opening_damage_text = bar_plot_2.mark_text(align="left",
+                                                   baseline="middle",
+                                                   color="white",
+                                                   dx=-25).encode(
         alt.X("high_accuracy_percent:Q", stack="zero"),
         text="sum_opening_damage:Q",
         color=alt.value("black")
     )
 
-    bar_plot_2 = bar_plot_2 + bar_plot_text_2
+    bar_plot_2 = bar_plot_2 + sum_opening_damage_text
 
     altair_scatter_2 = alt.Chart(weapons_data_df).mark_circle(size=25).encode(
         alt.Y("shots", axis=alt.Axis(title='Shots'), scale=alt.Scale(zero=True)),
@@ -245,16 +245,6 @@ st.set_page_config(
 main_gun_stats_df, main_weapons_data_df = load_data()
 
 weapons_slice = main_weapons_data_df  # .head(1000)
-
-fights_per_player = main_weapons_data_df.groupby(["player_name",
-                                                  "tournament_full_name",
-                                                  "tournament_region",
-                                                  "game_title",
-                                                  "game_day"]).agg(
-    count=("accuracy", "count"),
-).reset_index()
-
-max_fights_per_player = fights_per_player["count"].max()
 
 order_dict = {
     "tournament_full_name": [
@@ -307,25 +297,32 @@ accuracy_slider = st.sidebar.slider("Accuracy Range", min_value=0, max_value=100
 weapons_filtered = weapons_filtered[weapons_filtered["accuracy"] >= accuracy_slider[0]]
 weapons_filtered = weapons_filtered[weapons_filtered["accuracy"] <= accuracy_slider[1]]
 
-fights_slider = st.sidebar.slider("Fights Range", min_value=1, max_value=max_fights_per_player, key="fights")
+fights_min_input = st.sidebar.number_input("Minimum # Fights", min_value=1, key="fights")
 
-fights_per_player = fights_per_player[fights_per_player["count"] >= fights_slider]
+fights_per_player = weapons_filtered.groupby(["player_name",
+                                              "player_hash"
+                                              # "tournament_full_name",
+                                              # "tournament_region",
+                                              # "game_title",
+                                              # "game_day"
+                                              ]).agg(
+    count=("accuracy", "count"),
+).reset_index()
+
+fights_per_player = fights_per_player[fights_per_player["count"] >= fights_min_input]
 
 # if "top_k" not in st.session_state:
 #     st.session_state["top_k"] = 19
-
-top_k_slider = st.sidebar.slider("Top K Players", min_value=1, max_value=100,
-                                 value=19,
-                                 key="top_k")
-
 players_withing_fights_range = weapons_filtered.merge(fights_per_player, on=["player_name",
-                                                                             "tournament_full_name",
-                                                                             "tournament_region",
-                                                                             "game_title",
-                                                                             "game_day"],
+                                                                             "player_hash",
+                                                                             ],
                                                       how="inner")["player_name"].unique().tolist()
 
 weapons_filtered = weapons_filtered[weapons_filtered["player_name"].isin(players_withing_fights_range)]
+
+top_k_slider = st.sidebar.number_input("Top K Players", min_value=1, max_value=len(players_withing_fights_range),
+                                       value=20,
+                                       key="top_k")
 
 markdown_message_list = [f"**Warning**: attempting to load {len(weapons_filtered)} rows. \n",
                          "Loading this many rows may take a long time. Please apply more filters to reduce the number of rows.\n",
@@ -363,5 +360,5 @@ st.altair_chart(plots[4], use_container_width=True)
 # for p in plots:
 # st.altair_chart(p, use_container_width=True)
 #
-# expander = st.expander(label='Raw Data')
-# expander.dataframe(raw_data, use_container_width=True)
+expander = st.expander(label='Raw Data')
+expander.dataframe(raw_data, use_container_width=True)
