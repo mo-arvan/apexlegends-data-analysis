@@ -3,7 +3,7 @@ import streamlit as st
 fights_breakdown_info = ""
 
 docs_file_path_list = [
-    "README.md",
+    # "README.md",
     "docs/why.md",
     "docs/fights_breakdown.md",
     "docs/limitations.md",
