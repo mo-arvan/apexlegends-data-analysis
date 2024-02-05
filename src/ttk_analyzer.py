@@ -136,6 +136,190 @@ def get_ttk_df(guns_slice_df,
     return ttk_df
 
 
+def get_e_dps_df(selected_weapons,
+                 guns_df,
+                 sniper_stocks_df,
+                 standard_stocks_df,
+                 fights_df,
+                 conditions):
+    dps_dict_list = []
+    single_shot_weapons = []
+    single_shot_weapons.extend(guns_df[guns_df["class"] == "Sniper"]["weapon_name"].tolist())
+    single_shot_weapons.extend(guns_df[guns_df["class"] == "Marksman"]["weapon_name"].tolist())
+    single_shot_weapons.extend(guns_df[guns_df["class"] == "Pistol"]["weapon_name"].tolist())
+    single_shot_weapons.extend(["Wingman", "Mastiff Shotgun", "Kraber .50-Cal Sniper", "Bocek Compound Bow",
+                                "Mozambique Shotgun", "Peacekeeper",
+                                "Peacekeeper Disruptor", "Prowler Burst PDW", "Hemlok Burst AR",
+                                "Prowler Burst",
+                                ])
+    single_shot_weapons.remove("RE-45 Auto")
+    single_shot_weapons.remove("RE-45 Hammerpoint")
+
+    rest_of_the_weapons = guns_df[~guns_df["weapon_name"].isin(single_shot_weapons)]["weapon_name"].unique().tolist()
+    rest_of_the_weapons.extend(["Devotion LMG"])
+    single_shot_fights_df = fights_df.loc[fights_df["weapon_name"].isin(single_shot_weapons)].copy()
+    remaining_fights_df = fights_df.loc[~fights_df["weapon_name"].isin(single_shot_weapons)]
+    auto_weapon_fights_df = remaining_fights_df.loc[remaining_fights_df["weapon_name"].isin(rest_of_the_weapons)].copy()
+    remaining_fights_df = remaining_fights_df.loc[~remaining_fights_df["weapon_name"].isin(rest_of_the_weapons)]
+
+    accuracy_bins = list(range(0, 101, 5))
+
+    single_shot_fights_df["binned"] = pd.cut(single_shot_fights_df["accuracy"], accuracy_bins)
+    auto_weapon_fights_df["binned"] = pd.cut(auto_weapon_fights_df["accuracy"], accuracy_bins)
+
+    single_shot_accuracy_df = single_shot_fights_df[["binned"]].groupby("binned", observed=False).agg(
+        frequency=("binned", "size")).reset_index()
+    single_shot_accuracy_df["pdf"] = single_shot_accuracy_df["frequency"] / single_shot_accuracy_df["frequency"].sum()
+    single_shot_accuracy_df["cdf"] = single_shot_accuracy_df["pdf"].cumsum()
+
+    auto_weapon_accuracy_df = auto_weapon_fights_df[["binned"]].groupby("binned", observed=False).agg(
+        frequency=("binned", "size")).reset_index()
+    auto_weapon_accuracy_df["pdf"] = auto_weapon_accuracy_df["frequency"] / auto_weapon_accuracy_df["frequency"].sum()
+    auto_weapon_accuracy_df["cdf"] = auto_weapon_accuracy_df["pdf"].cumsum()
+
+    auto_weapon_accuracy_df["accuracy"] = auto_weapon_accuracy_df["binned"].apply(lambda x: x.right)
+    single_shot_accuracy_df["accuracy"] = single_shot_accuracy_df["binned"].apply(lambda x: x.right)
+
+    auto_weapon_accuracy_df["accuracy"] = auto_weapon_accuracy_df["accuracy"].astype(int)
+    single_shot_accuracy_df["accuracy"] = single_shot_accuracy_df["accuracy"].astype(int)
+
+    selected_weapons_df = guns_df[guns_df["weapon_name"].isin(selected_weapons)]
+
+    mag_index = chart_config.mag_list.index(conditions["mag"])
+    helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
+    shot_location = chart_config.shot_location_dict["Body"]
+    evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
+
+    peek_time = conditions["peek_time"]
+
+    for idx, weapon_primary in selected_weapons_df.iterrows():
+        if weapon_primary["weapon_name"] in single_shot_weapons:
+            accuracy_df = single_shot_accuracy_df
+            accuracy_model = "single_shot"
+        elif weapon_primary["weapon_name"] in rest_of_the_weapons:
+            accuracy_df = auto_weapon_accuracy_df
+            accuracy_model = "auto_weapon"
+        else:
+            print(f"weapon {weapon_primary['name']} not found")
+            continue
+
+        weapon_raw_damage = weapon_primary["damage"]
+        current_mag_size = weapon_primary[f"magazine_{mag_index + 1}"]
+
+        # stock_index = chart_config.stock_list.index(conditions["stock"])
+        # current_stock = weapon_primary[f"stock_{stock_index + 1}"]
+
+        # evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
+        # health_amount = chart_config.health_values_dict[conditions["health"]]
+
+        if conditions["ability_modifier"] == "Amped Cover (Rampart)":
+            # Amped Cover boosts the damage of outgoing shots by 20%.
+            # Source https://apexlegends.fandom.com/wiki/Rampart#Amped_Cover
+            weapon_raw_damage = weapon_raw_damage * 1.2
+        head_damage = weapon_raw_damage * shot_location[0] * (
+                helmet_modifier + (1 - helmet_modifier) * weapon_primary["head_multiplier"])
+        body_damage = weapon_raw_damage * shot_location[1]
+        leg_damage = weapon_raw_damage * shot_location[2] * weapon_primary["leg_multiplier"]
+
+        if conditions["ability_modifier"] == "Fortified (Gibby, Caustic, Newcastle)":
+            body_damage = body_damage * 0.85
+            leg_damage = leg_damage * 0.85
+
+        damage = head_damage + body_damage + leg_damage
+
+        effective_damage = damage
+
+        evo_shield_effective_damage = effective_damage * weapon_primary["evo_damage_multiplier"]
+        non_evo_shield_effective_damage = effective_damage * weapon_primary["non_evo_damage_multiplier"]
+
+        # if conditions["ability_modifier"] == "Forged Shadows (Revenant)":
+        #     health_amount += 75
+        if weapon_primary["class"] == "Shotgun":
+            current_bolt = chart_config.mag_list.index(conditions["bolt"])
+            primary_rpm = weapon_primary[f"rpm_{current_bolt + 1}"]
+        else:
+            primary_rpm = weapon_primary["rpm_1"]
+
+        # if pd.isna(evo_shield_effective_damage):
+        #     print(weapon_primary)
+
+        # if weapon_primary["class"] == "Marksman" or weapon_primary["class"] == "Sniper":
+        #     reload_time_modifier = weapon_primary["reload_time_4"]
+        # elif weapon_primary["class"] == "Shotgun" or weapon_primary["class"] == "SMG" or weapon_primary["class"] == "AR":
+        #     reload_time_modifier = weapon_primary["reload_time_4"]
+        # else:
+        #     reload_time_modifier =weapon_primary["reload_time_4"]
+
+        primary_shot_interval = 60 / primary_rpm
+
+        shots_during_peek = math.floor(peek_time / 1000 / primary_shot_interval) + 1
+
+        shots_during_peek = min(shots_during_peek, current_mag_size)
+
+        for miss_shots in range(shots_during_peek):
+            miss_rate = round(miss_shots / shots_during_peek * 100, 0)
+            hit_shots = shots_during_peek - miss_shots
+            accuracy = round(100 - miss_rate, 0)
+
+            hit_and_miss_shots = shots_during_peek
+            damage_dealt = hit_shots * evo_shield_effective_damage
+
+            if damage_dealt > evo_shield_amount:
+                shots_to_evo_shield = math.ceil(evo_shield_amount / evo_shield_effective_damage)
+                remaining_bullets = hit_shots - shots_to_evo_shield
+
+                evo_shield_damage_dealt = shots_to_evo_shield * evo_shield_effective_damage
+
+                evo_minus_dealt_damage = evo_shield_amount - evo_shield_damage_dealt
+
+                health_left = 100 + evo_minus_dealt_damage
+
+                health_left = max(health_left, 0)
+                shots_to_body = math.ceil(health_left / non_evo_shield_effective_damage)
+                shots_to_body = min(shots_to_body, remaining_bullets)
+
+                non_evo_damage_dealt = shots_to_body * non_evo_shield_effective_damage
+
+                damage_dealt = evo_shield_damage_dealt + non_evo_damage_dealt
+
+            cdf = accuracy_df[accuracy_df["accuracy"] <= accuracy]["cdf"].max()
+
+            dps = damage_dealt / peek_time * 1000
+
+            # TODO include raise and holster time
+            gun_ttk_dict = {
+                "miss_rate": miss_rate,
+                "accuracy": accuracy,
+                "weapon_name": weapon_primary["weapon_name"],
+                # "remaining_health": remaining_health,
+                "damage_dealt": damage_dealt,
+                "dps": dps,
+                "cdf": cdf,
+                "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
+                "accuracy_model": accuracy_model,
+                # "reload time": reload_time_modifier,
+            }
+            gun_ttk_dict.update(conditions)
+            dps_dict_list.append(gun_ttk_dict)
+
+            # if len(ttk_dict_list) > 0:
+            #     if gun_ttk_dict["ttk"] == ttk_dict_list[-1]["ttk"]:
+            #         continue
+            #     else:
+            #         last_ettk = ttk_dict_list[-1].copy()
+            #         last_ettk["accuracy"] = row["accuracy"] + 1
+            #         ttk_dict_list.append(last_ettk)
+
+    dps_dict_list = sorted(dps_dict_list, key=lambda k: k['dps'], reverse=True)
+    dps_df = pd.DataFrame(dps_dict_list)
+    plot_dict = {
+        "auto_weapon_accuracy_df": auto_weapon_accuracy_df,
+        "single_shot_accuracy_df": single_shot_accuracy_df,
+        "dps_df": dps_df,
+    }
+    return plot_dict
+
+
 # def get_gun_effective_ttk(weapon_primary,
 #                           weapon_secondary):
 #     """

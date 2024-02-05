@@ -1,7 +1,7 @@
 helmet_dict = {
     "20% - White": 0.2, "50 % - Blue": 0.5, "65 % Purple": 0.65}
 evo_shield_dict = {
-    "0 - No Shield": 0, "25 - Half White": 0, "50 - White": 50, "75 - Blue": 75, "100 - Purple": 100, "125 - Red": 125}
+    "0 - No Shield": 0, "25 - Half White": 25, "50 - White": 50, "75 - Blue": 75, "100 - Purple": 100, "125 - Red": 125}
 health_values_dict = {
     "0 - No Health": 0, "25 - Health": 25, "50 - Health": 50, "75 - Health": 75, "100 - Health": 100}
 mag_list = [

@@ -87,8 +87,7 @@ def plot_effective_ttk(effective_ttk_df, plot_container):
     fig = fig.interactive()
     # saving the plot as html file
 
-    plot_container.altair_chart(fig, use_container_width=True)
-
+    return fig
 
 
 def plot_using_altair_damage(damage_over_peek_time_df):
@@ -480,28 +479,21 @@ dynamic_filters.display_filters(location="sidebar")
 
 weapons_filtered = dynamic_filters.filter_df()
 
-st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=0,
-                     key='health')
-st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=2, key='evo')
-st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=1, key='helmet')
-st.sidebar.selectbox('Shot Location:', chart_config.shot_location_dict.keys(), index=0, key='shot_location')
-st.sidebar.selectbox('Mag (if applicable):',
-                     chart_config.mag_list,
-                     index=2, key='mag')
-st.sidebar.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
-st.sidebar.selectbox('Stock:', ['White', 'Blue', 'Purple'], index=2, key='stock')
-st.sidebar.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
-                     key='ability_modifier')
+selected_health = st.sidebar.selectbox("Health", chart_config.health_values_dict.keys(), index=0,
+                                       key='health')
+selected_evo = st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=2, key='evo')
+selected_helmet = st.sidebar.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=1, key='helmet')
+selected_shot_location = st.sidebar.selectbox('Shot Location:', chart_config.shot_location_dict.keys(), index=0,
+                                              key='shot_location')
+selected_mag = st.sidebar.selectbox('Mag (if applicable):',
+                                    chart_config.mag_list,
+                                    index=2, key='mag')
+selected_bolt = st.sidebar.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
+selected_stock = st.sidebar.selectbox('Stock:', ['White', 'Blue', 'Purple'], index=2, key='stock')
+selected_ability_modifier = st.sidebar.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
+                                                 key='ability_modifier')
 
-selected_health = st.session_state["health"]
 selected_guns = st.session_state.weapons_filters["weapon_name"]
-selected_helmet = st.session_state["helmet"]
-selected_evo = st.session_state["evo"]
-selected_mag = st.session_state["mag"]
-selected_stock = st.session_state["stock"]
-selected_shot_location = st.session_state["shot_location"]
-selected_ability_modifier = st.session_state["ability_modifier"]
-selected_bolt = st.session_state["bolt"]
 
 conditions_dict = {"helmet": selected_helmet,
                    "shield": selected_evo,
@@ -515,13 +507,16 @@ conditions_dict = {"helmet": selected_helmet,
 if selected_health == "0 - No Health" and selected_evo == "0 - No Shield":
     plot_container.write("Health and Evo Shield cannot be both 0.")
 else:
+    print(selected_evo)
+
     guns_data_df = ttk_analyzer.get_ttk_df(weapons_filtered, sniper_stocks_df, standard_stocks_df,
                                            conditions_dict)
 
-    plot_effective_ttk(guns_data_df, plot_container)
+    altair_plot = plot_effective_ttk(guns_data_df, plot_container)
 
-    expander = plot_container.expander(label='Raw Data')
-    expander.dataframe(guns_slice_df)
-
+    plot_container.altair_chart(altair_plot, use_container_width=True)
+    #
+    # expander = plot_container.expander(label='Raw Data')
+    # expander.dataframe(guns_slice_df)
 
 print(f"Done")

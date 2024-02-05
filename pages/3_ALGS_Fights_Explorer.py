@@ -1,6 +1,7 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
+import csv
 
 from src.dynamic_filters import DynamicFilters
 
@@ -11,10 +12,21 @@ for k, v in st.session_state.items():
 @st.cache_data
 def load_data():
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
+
+    # pd interprets "NA" as NaN (Not a Number) and removes it, therefore we need to use na_filter=False to avoid this
+    algs_games_df = pd.read_csv("data/algs_games.csv", na_filter=False)
+
+    # algs_games_df["game_timestamp"] = pd.to_datetime(algs_games_df["game_timestamp"], unit="s")
+    #
+    # tournament_first_days = algs_games_df[["tournament_url", "game_timestamp"]].groupby("tournament_url").agg(
+    #     first_day=("game_timestamp", "min")).reset_index()
+    #
+    # algs_games_df = algs_games_df.merge(tournament_first_days, on="tournament_url", how="left")
+    #
+    # algs_games_df["game_day"] = (algs_games_df["game_timestamp"] - algs_games_df["first_day"]).dt.days + 1
     # sniper_stocks_df = pd.read_csv("data/sniper_stocks.csv")
     # standard_stocks_df = pd.read_csv("data/standard_stocks.csv")
     weapons_data_df = pd.read_csv("data/weapons_data.csv")
-    algs_games_df = pd.read_csv("data/algs_games.csv")
 
     gun_stats_df = gun_stats_df.sort_values(by=["weapon_name", "class"])
     # gun_stats_df.to_csv("data/guns_stats.csv", index=False)
@@ -25,23 +37,21 @@ def load_data():
 
     weapons_data_df["accuracy"] = weapons_data_df["hits"] / weapons_data_df["shots"] * 100
 
-    def map_weapon_name(name):
-        relpace_dict = {
-            # "R-99": "R99",
-            "HAVOC": "HAVOC Turbo",
-        }
-        if name != "Charge Rifle":
-            if name in relpace_dict:
-                name = relpace_dict[name]
-        return name
+    # def map_weapon_name(name):
+    #     relpace_dict = {
+    #         # "R-99": "R99",
+    #         "HAVOC": "HAVOC Turbo",
+    #     }
+    #     if name != "Charge Rifle":
+    #         if name in relpace_dict:
+    #             name = relpace_dict[name]
+    #     return name
+    # weapons_data_df["weapon_name"] = weapons_data_df["weapon_name"].apply(map_weapon_name)
 
-    invalid_weapon_names = ["Smoke Launcher", "Thermite Grenade", "Arc Star", "Frag Grenade", "Melee"]
+    invalid_weapon_names = ["Smoke Launcher", "Thermite Grenade", "Arc Star", "Frag Grenade", "Melee",
+                            'Perimeter Security', 'Knuckle Cluster', 'Riot Drill', 'Defensive Bombardment']
 
     weapons_data_df = weapons_data_df[~weapons_data_df["weapon_name"].isin(invalid_weapon_names)]
-    weapons_data_df["weapon_name"] = weapons_data_df["weapon_name"].apply(map_weapon_name)
-
-    algs_games_df.loc[pd.isna(algs_games_df["tournament_region"]), "tournament_region"] = "NA"
-
     weapons_data_df = weapons_data_df.merge(algs_games_df, on=["game_id"], how="inner")
 
     return gun_stats_df, weapons_data_df  # , algs_games_df
@@ -151,7 +161,8 @@ def accuracy_plots_builder(weapons_data_df, top_k):
         alt.Color("damage_dealt:N", legend=None, scale=alt.Scale(scheme='yelloworangered')),
         tooltip=alt.Tooltip(
             ['player_name', "weapon_name", "damage_dealt", 'shots', 'hits', "accuracy", "high_accuracy_count",
-             "tournament_full_name", "tournament_region", "game_title"
+             "total_fights",
+             "tournament_full_name", "tournament_region", "tournament_day", "game_title"
              ]),
     ).properties(
 
@@ -226,7 +237,7 @@ def accuracy_plots_builder(weapons_data_df, top_k):
         # height=700,
     )
 
-    plot_list = [histogram_plot, bar_plot, bar_plot_2, box_plot, altair_scatter_2]
+    plot_list = [histogram_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
     return plot_list, weapons_data_df
 
 
@@ -271,7 +282,7 @@ default_selection = {
 filters_dict = {
     "tournament_full_name": "Tournament",
     "tournament_region": "Region",
-    "game_day": "Day",
+    "tournament_day": "Day",
     "player_name": "Player",
     "weapon_name": "Weapon",
     # "shots": "Shots",
@@ -320,7 +331,9 @@ players_withing_fights_range = weapons_filtered.merge(fights_per_player, on=["pl
 
 weapons_filtered = weapons_filtered[weapons_filtered["player_name"].isin(players_withing_fights_range)]
 
-top_k_slider = st.sidebar.number_input("Top K Players", min_value=1, max_value=len(players_withing_fights_range),
+max_value = max(20, len(players_withing_fights_range))
+
+top_k_slider = st.sidebar.number_input("Top K Players", min_value=1, max_value=max_value,
                                        value=20,
                                        key="top_k")
 
@@ -362,3 +375,6 @@ st.altair_chart(plots[4], use_container_width=True)
 #
 expander = st.expander(label='Raw Data')
 expander.dataframe(raw_data, use_container_width=True)
+
+# TODO query params
+# https://docs.streamlit.io/library/api-reference/utilities/st.query_params
