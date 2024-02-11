@@ -496,7 +496,7 @@ def load_data():
 
 
 st.set_page_config(
-    page_title="Effective TTK",
+    page_title="Gun Meta Analysis",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -619,6 +619,7 @@ mag_button_list = [{"label": name, "value": name} for name in chart_config.mag_l
 
 with options_container:
     options_row_1_cols = st.columns(6)
+    options_row_2_cols = st.columns(6)
 
     with options_row_1_cols[0]:
         selected_mag = st.selectbox('Mag (if applicable):',
@@ -639,8 +640,6 @@ with options_container:
         selected_evo_shield = st.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4,
                                            key='evo_shield')
 
-    options_row_2_cols = st.columns(6)
-
     with options_row_2_cols[0]:
         selected_peek_time = st.slider("Peek Time (ms):", min_value=500, max_value=5000, value=1000, step=500,
                                        key="peek_time")
@@ -650,7 +649,11 @@ with options_container:
         selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
                                                   index=0,
                                                   key='estimation_method')
-
+    with options_row_2_cols[2]:
+        selected_health = st.selectbox("Health",
+                                       chart_config.health_values_dict.keys(),
+                                       index=0,
+                                       key='zhealth')
 conditions_dict = {
     "mag": selected_mag,
     "stock": selected_stock,
@@ -660,6 +663,7 @@ conditions_dict = {
     "shield": selected_evo_shield,
     "estimation_method": selected_estimation_method,
     "peek_time": selected_peek_time,
+    "health": selected_health,
 }
 
 # selected_guns = st.session_state.weapons_filters["weapon_name"]
