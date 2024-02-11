@@ -516,7 +516,7 @@ else:
 
     plot_container.altair_chart(altair_plot, use_container_width=True)
     #
-    # expander = plot_container.expander(label='Raw Data')
-    # expander.dataframe(guns_slice_df)
+    expander = plot_container.expander(label='Raw Data')
+    expander.dataframe(guns_slice_df)
 
 print(f"Done")
