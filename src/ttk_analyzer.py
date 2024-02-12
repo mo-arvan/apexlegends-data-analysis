@@ -221,14 +221,14 @@ def get_e_dps_df(selected_weapons,
 
     estimation_dict, accuracy_plots = get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons_df)
 
-    for idx, weapon_primary in selected_weapons_df.iterrows():
+    for idx, weapon in selected_weapons_df.iterrows():
 
-        accuracy_model, accuracy_df = estimation_dict[weapon_primary["weapon_name"]]
-        weapon_raw_damage = weapon_primary["damage"]
-        current_mag_size = weapon_primary[f"magazine_{mag_index + 1}"]
+        accuracy_model, accuracy_df = estimation_dict[weapon["weapon_name"]]
+        weapon_raw_damage = weapon["damage"]
+        current_mag_size = weapon[f"magazine_{mag_index + 1}"]
 
         stock_index = chart_config.stock_list.index(conditions["stock"])
-        # current_stock = weapon_primary[f"stock_{stock_index + 1}"]
+        # current_stock = weapon[f"stock_{stock_index + 1}"]
 
         evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
         health_amount = chart_config.health_values_dict[conditions["health"]]
@@ -238,9 +238,9 @@ def get_e_dps_df(selected_weapons,
             # Source https://apexlegends.fandom.com/wiki/Rampart#Amped_Cover
             weapon_raw_damage = weapon_raw_damage * 1.2
         head_damage = weapon_raw_damage * shot_location[0] * (
-                helmet_modifier + (1 - helmet_modifier) * weapon_primary["head_multiplier"])
+                helmet_modifier + (1 - helmet_modifier) * weapon["head_multiplier"])
         body_damage = weapon_raw_damage * shot_location[1]
-        leg_damage = weapon_raw_damage * shot_location[2] * weapon_primary["leg_multiplier"]
+        leg_damage = weapon_raw_damage * shot_location[2] * weapon["leg_multiplier"]
 
         if conditions["ability_modifier"] == "Fortified (Gibby, Caustic, Newcastle)":
             body_damage = body_damage * 0.85
@@ -250,25 +250,27 @@ def get_e_dps_df(selected_weapons,
 
         effective_damage = damage
 
-        evo_shield_effective_damage = effective_damage * weapon_primary["evo_damage_multiplier"]
-        non_evo_shield_effective_damage = effective_damage * weapon_primary["non_evo_damage_multiplier"]
+        evo_shield_effective_damage = effective_damage * weapon["evo_damage_multiplier"]
+        non_evo_shield_effective_damage = effective_damage * weapon["non_evo_damage_multiplier"]
 
         if conditions["ability_modifier"] == "Forged Shadows (Revenant)":
             health_amount += 75
-        if weapon_primary["class"] == "Shotgun":
+        if weapon["class"] == "Shotgun":
             current_bolt = chart_config.mag_list.index(conditions["bolt"])
-            primary_rpm = weapon_primary[f"rpm_{current_bolt + 1}"]
+            gun_rpm = weapon[f"rpm_{current_bolt + 1}"]
         else:
-            primary_rpm = weapon_primary["rpm_1"]
+            gun_rpm = weapon["rpm_1"]
 
-        # if weapon_primary["class"] == "Marksman" or weapon_primary["class"] == "Sniper":
-        #     reload_time_modifier = weapon_primary["reload_time_4"]
-        # elif weapon_primary["class"] == "Shotgun" or weapon_primary["class"] == "SMG" or weapon_primary["class"] == "AR":
-        #     reload_time_modifier = weapon_primary["reload_time_4"]
+        bullets_per_shots = weapon.get("bullets_per_shot", 1)
+
+        # if weapon["class"] == "Marksman" or weapon["class"] == "Sniper":
+        #     reload_time_modifier = weapon["reload_time_4"]
+        # elif weapon["class"] == "Shotgun" or weapon["class"] == "SMG" or weapon["class"] == "AR":
+        #     reload_time_modifier = weapon["reload_time_4"]
         # else:
-        #     reload_time_modifier =weapon_primary["reload_time_4"]
+        #     reload_time_modifier =weapon["reload_time_4"]
 
-        primary_shot_interval = 60 / primary_rpm
+        primary_shot_interval = 60 / gun_rpm
         shots_during_peek = math.floor(peek_time / 1000 / primary_shot_interval) + 1
         shots_during_peek = min(shots_during_peek, current_mag_size)
 
@@ -306,7 +308,7 @@ def get_e_dps_df(selected_weapons,
             gun_ttk_dict = {
                 "miss_rate": miss_rate,
                 "accuracy": accuracy,
-                "weapon_name": weapon_primary["weapon_name"],
+                "weapon_name": weapon["weapon_name"],
                 # "remaining_health": remaining_health,
                 "damage_dealt": damage_dealt,
                 "dps": dps,
