@@ -3,16 +3,18 @@ import pandas as pd
 import streamlit as st
 from altair import datum
 
+from functools import partial
 import src.chart_config as chart_config
 from src import ttk_analyzer
 from src.dynamic_filters import DynamicFilters
+import numpy as np
 
 # from st_btn_group import st_btn_group
 
 print(f"Running {__file__}")
 
 
-def plot_effective_dps(e_dps_plots):
+def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     single_shot_accuracy_df = e_dps_plots["single_shot_accuracy_df"]
     auto_weapon_accuracy_df = e_dps_plots["auto_weapon_accuracy_df"]
     dps_df = e_dps_plots["dps_df"]
@@ -55,13 +57,25 @@ def plot_effective_dps(e_dps_plots):
 
     dps_df["accuracy_quantile"] = dps_df["cdf"].apply(lambda x: round(x * 100, 2))
 
+    if chart_x_axis == "Accuracy Quantile (%)":
+        x_axis = alt.X('accuracy_quantile',
+                       axis=alt.Axis(title='Accuracy Quantile (%)'), sort=None)
+    elif chart_x_axis == "Accuracy (%)":
+        x_axis = alt.X('accuracy',
+                       axis=alt.Axis(title='Accuracy (%)'), sort=None)
+    if chart_y_axis == "eDPS":
+        y_axis = alt.Y('dps',
+                       axis=alt.Axis(title='eDPS'),
+                       scale=alt.Scale(zero=False))
+    elif chart_y_axis == "Damage Dealt":
+        y_axis = alt.Y('damage_dealt',
+                       axis=alt.Axis(title='Damage Dealt'),
+                       scale=alt.Scale(zero=False))
+
     dps_line = alt.Chart(dps_df).mark_line(
     ).encode(
-        x=alt.X('accuracy_quantile',
-                axis=alt.Axis(title='Accuracy Quantile (%)'), sort=None),
-        y=alt.Y('dps',
-                axis=alt.Axis(title='eDPS'),
-                scale=alt.Scale(zero=False)),
+        x=x_axis,
+        y=y_axis,
         color=alt.Color('weapon_name:N', legend=alt.Legend(title="Weapon"), scale=alt.Scale(scheme='category20')),
         # shape=alt.Shape('weapon'),
         tooltip=alt.value(None),
@@ -78,8 +92,8 @@ def plot_effective_dps(e_dps_plots):
     )
 
     dps_points_line = alt.Chart(dps_df).mark_point().encode(
-        x=alt.X('accuracy_quantile', axis=alt.Axis(title='Accuracy Quantile (%)'), sort=None),
-        y=alt.Y('dps', axis=alt.Axis(title='eDPS'), scale=alt.Scale(zero=False)),
+        x=x_axis,
+        y=y_axis,
         shape=alt.Shape('weapon_name', legend=alt.Legend(title="Weapon")),
         color=alt.Color('weapon_name', legend=alt.Legend(title="Weapon"), scale=alt.Scale(scheme='category20')),
         tooltip=['weapon_name',
@@ -509,7 +523,12 @@ pre_selected_weapons = []
 default_selection = {
     # "tournament_full_name": [order_dict["tournament_full_name"][0]],
     # "tournament_region": ["NA"],
-    "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG"],
+    "weapon_name": ["R-99 SMG",
+                    "Volt SMG",
+                    "Alternator SMG",
+                    "C.A.R. SMG",
+                    "Prowler Burst PDW",
+                    "Alternator SMG - Disruptor", ]
 }
 
 if "selected_weapons" in st.session_state:
@@ -519,10 +538,13 @@ else:
 
 guns_slice_df = gun_df
 
+guns_slice_df = guns_slice_df[np.logical_or(pd.isna(guns_slice_df["secondary_class"]),
+                                            guns_slice_df["secondary_class"] == "Care Package")]
+
 class_name_list = gun_df["class"].unique().tolist()
 class_name_list = sorted(class_name_list, key=lambda x: chart_config.class_filter_order_dict.get(x, 0))
 
-row_1_cols = st.columns([6, 85, 8])
+row_1_cols = st.columns([10, 85, 10])
 row_2_class_columns = st.columns(len(class_name_list) + 1)
 
 buttons = [
@@ -552,7 +574,7 @@ for i, class_name in enumerate(class_name_list):
                                       ))
 
     if buttons_list[i]:
-        weapons_to_add = gun_df[gun_df["class"] == class_name]["weapon_name"].unique().tolist()
+        weapons_to_add = guns_slice_df[guns_slice_df["class"] == class_name]["weapon_name"].unique().tolist()
         pre_selected_weapons.extend(weapons_to_add)
         pre_selected_weapons = list(set(pre_selected_weapons))
 
@@ -618,42 +640,76 @@ options_container = st.expander(label="Configuration")
 mag_button_list = [{"label": name, "value": name} for name in chart_config.mag_list]
 
 with options_container:
-    options_row_1_cols = st.columns(6)
-    options_row_2_cols = st.columns(6)
+    options_rows = []
 
-    with options_row_1_cols[0]:
-        selected_mag = st.selectbox('Mag (if applicable):',
-                                    chart_config.mag_list,
-                                    index=2, key='mag')
+    options_rows.append(st.columns(4))
+    options_rows.append(st.columns(4))
+    options_rows.append(st.columns(4))
 
-    with options_row_1_cols[1]:
-        selected_bolt = st.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
-
-    with options_row_1_cols[2]:
-        selected_stock = st.selectbox('Stock:', ['White', 'Blue', 'Purple'], index=2, key='stock')
-    with options_row_1_cols[3]:
-        selected_ability_modifier = st.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
-                                                 key='ability_modifier')
-    with options_row_1_cols[4]:
-        selected_helmet = st.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=0, key='helmet')
-    with options_row_1_cols[5]:
-        selected_evo_shield = st.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4,
-                                           key='evo_shield')
-
-    with options_row_2_cols[0]:
-        selected_peek_time = st.slider("Peek Time (ms):", min_value=500, max_value=5000, value=1000, step=500,
+    with options_rows[0][0]:
+        selected_peek_time = st.slider("Peek Time (ms):",
+                                       min_value=500,
+                                       max_value=5000,
+                                       value=2000,
+                                       step=250,
                                        key="peek_time")
 
-    with options_row_2_cols[1]:
-        estimation_method_list = ["Expected Value"]
-        selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
-                                                  index=0,
-                                                  key='estimation_method')
-    with options_row_2_cols[2]:
+    with options_rows[0][1]:
         selected_health = st.selectbox("Health",
                                        chart_config.health_values_dict.keys(),
-                                       index=0,
-                                       key='zhealth')
+                                       index=4,
+                                       key='health')
+
+    with options_rows[0][2]:
+        selected_evo_shield = st.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4,
+                                           key='evo_shield')
+    with options_rows[0][3]:
+        selected_mag = st.selectbox('Mag (if applicable):',
+                                    chart_config.mag_list,
+                                    index=3,
+                                    key='mag')
+
+    with options_rows[1][3]:
+        selected_helmet = st.selectbox('Helmet:', chart_config.helmet_dict.keys(), index=0, key='helmet')
+    # with options_rows[0][5]:
+
+    with options_rows[1][0]:
+        selected_bolt = st.selectbox('Shotgun Bolt (if applicable):', ['White', 'Blue', 'Purple'], index=2, key='bolt')
+
+    # with options_rows[1][1]:
+    #     estimation_method_list = ["Expected Value"]
+    #     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
+    #                                               index=0,
+    #                                               key='estimation_method')
+
+    # with options_rows[1][1]:
+    #     estimation_method_list = ["Expected Value"]
+    #     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
+    #                                               index=0,
+    #                                               key='estimation_method')
+    selected_estimation_method = "Expected Value"
+    with options_rows[1][1]:
+        selected_ability_modifier = st.selectbox('Ability Modifier:', chart_config.ability_modifier_list, index=0,
+                                                 key='ability_modifier')
+
+    with options_rows[1][2]:
+        selected_shot_location = st.selectbox('Shot Location:',
+                                              chart_config.shot_location_dict.keys(),
+                                              index=0,
+                                              key='shot_location')
+    with options_rows[2][0]:
+        chart_x_axis = st.selectbox('X Axis:', ["Accuracy Quantile (%)",
+                                                "Accuracy (%)",
+                                                ],
+                                    index=0, key='x_axis')
+    with options_rows[2][1]:
+        chart_y_axis = st.selectbox('Y Axis:', ["eDPS",
+                                                "Damage Dealt", ],
+                                    index=0, key='y_axis')
+    with options_rows[2][1]:
+        # selected_stock = st.selectbox('Stock:', chart_config.stock_list, index=2, key='stock')
+        selected_stock = "Purple"
+
 conditions_dict = {
     "mag": selected_mag,
     "stock": selected_stock,
@@ -661,6 +717,7 @@ conditions_dict = {
     "bolt": selected_bolt,
     "helmet": selected_helmet,
     "shield": selected_evo_shield,
+    "shot_location": selected_shot_location,
     "estimation_method": selected_estimation_method,
     "peek_time": selected_peek_time,
     "health": selected_health,
@@ -680,7 +737,7 @@ else:
                                             fights_df,
                                             conditions_dict)
     #
-    altair_plot = plot_effective_dps(e_dps_plots)
+    altair_plot = plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis)
 
     #
     with chart_container:

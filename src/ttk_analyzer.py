@@ -213,10 +213,10 @@ def get_e_dps_df(selected_weapons,
 
     mag_index = chart_config.mag_list.index(conditions["mag"])
     helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
-    shot_location = chart_config.shot_location_dict["Body"]
+    shot_location = chart_config.shot_location_dict[conditions["shot_location"]]
     evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
 
-    peek_time = conditions["peek_time"]
+    peek_time_in_ms = conditions["peek_time"]
     estimation_method = conditions["estimation_method"]
 
     estimation_dict, accuracy_plots = get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons_df)
@@ -261,8 +261,6 @@ def get_e_dps_df(selected_weapons,
         else:
             gun_rpm = weapon["rpm_1"]
 
-        bullets_per_shots = weapon.get("bullets_per_shot", 1)
-
         # if weapon["class"] == "Marksman" or weapon["class"] == "Sniper":
         #     reload_time_modifier = weapon["reload_time_4"]
         # elif weapon["class"] == "Shotgun" or weapon["class"] == "SMG" or weapon["class"] == "AR":
@@ -270,21 +268,53 @@ def get_e_dps_df(selected_weapons,
         # else:
         #     reload_time_modifier =weapon["reload_time_4"]
 
-        primary_shot_interval = 60 / gun_rpm
-        shots_during_peek = math.floor(peek_time / 1000 / primary_shot_interval) + 1
-        shots_during_peek = min(shots_during_peek, current_mag_size)
+        charge_time = weapon.get("charge_time")
+        if pd.isna(charge_time):
+            charge_time = 0
+
+        charge_time_in_ms = charge_time * 1000
+
+        shot_interval = 60 / gun_rpm
+
+        burst_fire_delay = weapon.get("burst_fire_delay")
+        bullets_per_burst = weapon.get("bullets_per_burst")
+        if pd.isna(burst_fire_delay) or pd.isna(bullets_per_burst):
+            shots_during_peek = math.floor((peek_time_in_ms - charge_time_in_ms) / 1000 / shot_interval) + 1
+            shots_during_peek = min(shots_during_peek, current_mag_size)
+        else:
+            bullets_per_burst = int(bullets_per_burst)
+            max_burst = current_mag_size // bullets_per_burst
+            max_shot_burst = -1
+            for i in range(1, max_burst + 1):
+                max_possible_shots = bullets_per_burst * i
+                burst_time = burst_fire_delay * (i - 1)
+                burst_time_in_ms = burst_time * 1000
+                remaining_peek_time_ms = peek_time_in_ms - charge_time_in_ms - burst_time_in_ms
+                if remaining_peek_time_ms < 0:
+                    break
+                shots_during_peek = math.floor(remaining_peek_time_ms / 1000 / shot_interval) + 1
+                shots_during_peek = min(shots_during_peek, max_possible_shots)
+                if shots_during_peek > max_shot_burst:
+                    max_shot_burst = shots_during_peek
+            shots_during_peek = max_shot_burst
+
+        pellets_per_shot = weapon.get("pellets_per_shot")
+        if pd.isna(pellets_per_shot):
+            pellets_per_shot = 1
 
         for miss_shots in range(shots_during_peek):
             miss_rate = round(miss_shots / shots_during_peek * 100, 0)
             hit_shots = shots_during_peek - miss_shots
             accuracy = round(100 - miss_rate, 0)
 
+            hit_pellets = hit_shots * pellets_per_shot
+
             hit_and_miss_shots = shots_during_peek
-            damage_dealt = hit_shots * evo_shield_effective_damage
+            damage_dealt = hit_pellets * evo_shield_effective_damage
 
             if damage_dealt > evo_shield_amount:
                 shots_to_evo_shield = math.ceil(evo_shield_amount / evo_shield_effective_damage)
-                remaining_bullets = hit_shots - shots_to_evo_shield
+                remaining_bullets = hit_pellets - shots_to_evo_shield
 
                 evo_shield_damage_dealt = shots_to_evo_shield * evo_shield_effective_damage
 
@@ -302,7 +332,7 @@ def get_e_dps_df(selected_weapons,
 
             cdf = accuracy_df[accuracy_df["accuracy"] <= accuracy]["cdf"].max()
 
-            dps = damage_dealt / peek_time * 1000
+            dps = damage_dealt / peek_time_in_ms * 1000
 
             # TODO include raise and holster time
             gun_ttk_dict = {

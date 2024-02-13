@@ -9,10 +9,12 @@ mag_list = [
 stock_list = [
     "White", "Blue", "Purple"]
 shot_location_dict = {
-    "Body": [0, 1, 0], "Head": [1, 0, 0], "Leg": [0, 0, 1],
-    "Combination (70% Body, 15% Head, 15% Leg)": [0.15, 0.7, 0.15],
-    "Combination (50% Body, 50% Head, 0% Leg)": [0.5, 0.5, 0],
-    "Combination (33% Body, 66% Head, 0% Leg)": [0.5, 0.5, 0],
+    "All Body": [0, 1, 0],
+    "All Head": [1, 0, 0],
+    "All Leg": [0, 0, 1],
+    "70% Body, 15% Head, 15% Leg": [0.15, 0.7, 0.15],
+    "50% Body, 50% Head": [0.5, 0.5, 0],
+    "33% Body, 66% Head": [0.33, 0.66, 0],
 }
 ability_modifier_list = ["None",
                          'Forged Shadows (Revenant)',
