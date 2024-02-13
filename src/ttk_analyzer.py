@@ -144,9 +144,17 @@ def get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons
         single_shot_weapons.extend(guns_df[guns_df["class"] == "Sniper"]["weapon_name"].tolist())
         single_shot_weapons.extend(guns_df[guns_df["class"] == "Marksman"]["weapon_name"].tolist())
         single_shot_weapons.extend(guns_df[guns_df["class"] == "Pistol"]["weapon_name"].tolist())
-        single_shot_weapons.extend(["Wingman", "Mastiff Shotgun", "Kraber .50-Cal Sniper", "Bocek Compound Bow",
-                                    "Mozambique Shotgun", "Peacekeeper",
-                                    "Peacekeeper Disruptor", "Prowler Burst PDW", "Hemlok Burst AR",
+        single_shot_weapons.extend(["Wingman",
+                                    "Mastiff Shotgun",
+                                    "Kraber .50-Cal Sniper",
+                                    "Bocek Compound Bow",
+                                    "Mozambique Shotgun",
+                                    "Peacekeeper",
+                                    "Peacekeeper Disruptor",
+                                    "Prowler Burst PDW",
+                                    "Hemlok Burst AR - Burst",
+                                    "Nemesis Burst AR",
+                                    "Nemesis Burst AR - Charged",
                                     "Prowler Burst",
                                     ])
         single_shot_weapons.remove("RE-45 Auto")
