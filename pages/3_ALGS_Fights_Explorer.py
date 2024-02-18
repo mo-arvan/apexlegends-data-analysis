@@ -1,60 +1,30 @@
-import altair as alt
-import pandas as pd
-import streamlit as st
-import csv
+import logging
 
+import altair as alt
+import streamlit as st
+
+import src.data_helper as data_helper
 from src.dynamic_filters import DynamicFilters
 
-for k, v in st.session_state.items():
-    print(k, v)
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
+logger.info(f"Running {__file__}")
 
-@st.cache_data
-def load_data():
-    gun_stats_df = pd.read_csv("data/guns_stats.csv")
+st.set_page_config(
+    page_title="Fights Accuracy",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        # 'Get Help': 'https://www.extremelycoolapp.com/help',
+        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
+        # 'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 
-    # pd interprets "NA" as NaN (Not a Number) and removes it, therefore we need to use na_filter=False to avoid this
-    algs_games_df = pd.read_csv("data/algs_games.csv", na_filter=False)
-
-    # algs_games_df["game_timestamp"] = pd.to_datetime(algs_games_df["game_timestamp"], unit="s")
-    #
-    # tournament_first_days = algs_games_df[["tournament_url", "game_timestamp"]].groupby("tournament_url").agg(
-    #     first_day=("game_timestamp", "min")).reset_index()
-    #
-    # algs_games_df = algs_games_df.merge(tournament_first_days, on="tournament_url", how="left")
-    #
-    # algs_games_df["game_day"] = (algs_games_df["game_timestamp"] - algs_games_df["first_day"]).dt.days + 1
-    # sniper_stocks_df = pd.read_csv("data/sniper_stocks.csv")
-    # standard_stocks_df = pd.read_csv("data/standard_stocks.csv")
-    weapons_data_df = pd.read_csv("data/weapons_data.csv")
-
-    gun_stats_df = gun_stats_df.sort_values(by=["weapon_name", "class"])
-    # gun_stats_df.to_csv("data/guns_stats.csv", index=False)
-
-    weapons_data_df = weapons_data_df[~pd.isna(weapons_data_df["weapon_name"])]
-    # filter when hits > shots
-    weapons_data_df = weapons_data_df[weapons_data_df["hits"] <= weapons_data_df["shots"]]
-
-    weapons_data_df["accuracy"] = weapons_data_df["hits"] / weapons_data_df["shots"] * 100
-
-    # def map_weapon_name(name):
-    #     relpace_dict = {
-    #         # "R-99": "R99",
-    #         "HAVOC": "HAVOC Turbo",
-    #     }
-    #     if name != "Charge Rifle":
-    #         if name in relpace_dict:
-    #             name = relpace_dict[name]
-    #     return name
-    # weapons_data_df["weapon_name"] = weapons_data_df["weapon_name"].apply(map_weapon_name)
-
-    invalid_weapon_names = ["Smoke Launcher", "Thermite Grenade", "Arc Star", "Frag Grenade", "Melee",
-                            'Perimeter Security', 'Knuckle Cluster', 'Riot Drill', 'Defensive Bombardment']
-
-    weapons_data_df = weapons_data_df[~weapons_data_df["weapon_name"].isin(invalid_weapon_names)]
-    weapons_data_df = weapons_data_df.merge(algs_games_df, on=["game_id"], how="inner")
-
-    return gun_stats_df, weapons_data_df  # , algs_games_df
+with st.spinner("Loading data..."):
+    fights_df = data_helper.get_fights_data()
 
 
 def accuracy_plots_builder(weapons_data_df, top_k):
@@ -241,21 +211,7 @@ def accuracy_plots_builder(weapons_data_df, top_k):
     return plot_list, weapons_data_df
 
 
-st.set_page_config(
-    page_title="Fights Accuracy",
-    page_icon="🧊",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-        # 'Get Help': 'https://www.extremelycoolapp.com/help',
-        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
-        # 'About': "# This is a header. This is an *extremely* cool app!"
-    }
-)
-
-main_gun_stats_df, main_weapons_data_df = load_data()
-
-weapons_slice = main_weapons_data_df  # .head(1000)
+fights_df_slice = fights_df  # .head(1000)
 
 order_dict = {
     "tournament_full_name": [
@@ -291,7 +247,7 @@ filters_dict = {
     "game_num": "Game #",
 }
 
-dynamic_filters = DynamicFilters(weapons_slice,
+dynamic_filters = DynamicFilters(fights_df_slice,
                                  filters_name="algs_filters",
                                  filters_dict=filters_dict,
                                  order_dict=order_dict,

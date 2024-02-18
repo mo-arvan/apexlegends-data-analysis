@@ -1,6 +1,3 @@
-﻿Statistic,Standard Stock (Gray),Standard Stock (Blue),Standard Stock (Purple),Description
-Reload Time,-3.3,-6.7,-10.0,Time required to reload the magazine.
-Deploy/Holster Time,-15.0,-20.0,-25.0,Time required to switch from this weapon to another.
-Raise/Lower Time,-10.0,-15.0,-20.0,Time required to put away or ready the weapon when using abilities healing items etc.
-ADS Time,-15.0,-20.0,-25.0,Time required to enter or exit ADS.
-Aim Drift,-15.0,-25.0,-45.0,Amount that the weapon will sway while holding ADS.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d55c70cecac14b5cd688dd8ba63ea907fd27b7668d1a8c3ae2c65b89d16cdd4d
+size 513
