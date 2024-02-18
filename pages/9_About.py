@@ -1,4 +1,12 @@
+import logging
+
 import streamlit as st
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info(f"Running {__file__}")
+
 
 fights_breakdown_info = ""
 
