@@ -1,161 +1,13 @@
-import json
-import os
-import re
+import csv
 import time
 from argparse import ArgumentParser
-import csv
-
-from datetime import datetime
-
-import bs4
+import os
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from tqdm.auto import tqdm
 
-DGS_API_URL = "https://algs-public-outbound.apexlegendsstatus.com/"
-ALS_URL = "https://apexlegendsstatus.com/"
-
-
-def get_game_data(game_df, init_dict, algs_games_dir):
-    # with open(dgs_token_file, "r") as f:
-    #     dgs_auth = f.read()
-
-    headers = {
-        "Content-Type": "application/json",
-        # "DGS-Authorization": dgs_auth
-    }
-    # API Endpoints with names
-    game_endpoints = {
-        "init": "qt=init",
-        "getFights": "qt=getFights",
-        "getReplay": "getReplay",
-
-        # "getRankings": "qt=getRankings&rankingsBy=some_value&statsType=some_value",
-        # "getRings": "qt=getRings&stage=some_value",
-        # "getAllRings": "qt=getAllRings&stage=some_value",
-        # "getStateAtTime": "qt=getStateAtTime&time=some_value",
-        # "getHeatmap": "qt=getHeatmap&et=some_value",
-        # "getWeaponsUsage": "qt=getWeaponsUsage",
-        # "getAbilitiesUsage": "qt=getAbilitiesUsage",
-        # "getPlayerEvents": "qt=getPlayerEvents&nucleusHash=",
-    }
-
-    players_endpoints = ["getPlayerEvents"]
-
-    algs_data = []
-
-    # downloaded_replay_file = "data/algs_downloaded_replays.csv"
-    # replays_dir = algs_games_dir + "/getReplay"
-    # downloaded_replays = []
-    # if os.path.exists(replays_dir):
-    #     downloaded_replays = os.listdir(algs_games_dir + "/getReplay")
-    #
-    # downloaded_replays = [replay.replace(".json", "") for replay in downloaded_replays]
-    # downloaded_replays_df = pd.DataFrame(downloaded_replays, columns=["game_id"])
-    #
-    # if os.path.exists(downloaded_replay_file):
-    #     current_downloaded_replays = pd.read_csv(downloaded_replay_file)
-    #     downloaded_replays_df = pd.concat([current_downloaded_replays, downloaded_replays_df], ignore_index=True)
-    # downloaded_replays_df = downloaded_replays_df.drop_duplicates(subset=["game_id"])
-    # downloaded_replays_df.to_csv(downloaded_replay_file, index=False)
-
-    game_df = game_df[game_df["game_id"] != "#"]
-    game_df["game_timestamp"] = game_df["game_id"].apply(
-        lambda x: datetime.fromtimestamp(int(init_dict[x]["timestamp"])))
-    game_df = game_df.sort_values(by=["game_timestamp"], ascending=False)
-
-    if not os.path.exists(algs_games_dir):
-        os.makedirs(algs_games_dir)
-    all_api_names = list(game_endpoints.keys()) + list(players_endpoints)
-    for api_name in all_api_names:
-        if not os.path.exists(f"{algs_games_dir}/{api_name}"):
-            os.makedirs(f"{algs_games_dir}/{api_name}")
-
-    # games_sorted_by_timestamp = game_df.sort_values(by=["game_timestamp"], ascending=True)
-    results_dict = {}
-    for api_name, endpoint in game_endpoints.items():
-        api_download_dir = f"{algs_games_dir}/{api_name}"
-        downloaded_files = [f.split(".")[0] for f in os.listdir(api_download_dir)]
-
-        missing_games = game_df[~game_df["game_id"].isin(downloaded_files)]
-        if len(missing_games) == 0:
-            continue
-        print(f"Downloading {api_name} data")
-        progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
-        for index, row in missing_games.iterrows():
-            game_id = row["game_id"]
-            game_data_file = f"{algs_games_dir}/{api_name}/{game_id}.json"
-            if not os.path.exists(game_data_file):
-                if api_name == "getReplay":
-                    full_endpoint_url = DGS_API_URL + f"{endpoint}?gameID={row['game_id']}"
-                elif api_name == "init" or api_name == "getFights":
-                    full_endpoint_url = DGS_API_URL + f"api?gameID={game_id}&{endpoint}"
-                else:
-                    print(f"Unknown API: {api_name}")
-                    continue
-
-                response = requests.get(full_endpoint_url, headers=headers)
-                # time for debugging purposes
-                if response.status_code == 200:
-                    result_json = {}
-                    if len(response.text) > 0:
-                        result_json = response.json()
-                    file_name = f"{algs_games_dir}/{api_name}/{game_id}.json"
-                    with open(file_name, "w") as file:
-                        json.dump(result_json, file, indent=2)
-                time.sleep(1)
-
-            # sleep for 1 second
-            progress_bar.update(1)
-            # Check the response status and save to file
-
-    for api_name in players_endpoints:
-
-        api_download_dir = f"{algs_games_dir}/{api_name}"
-        downloaded_files = [f.split(".")[0] for f in os.listdir(api_download_dir)]
-        missing_games = game_df[~game_df["game_id"].isin(downloaded_files)]
-        if len(missing_games) == 0:
-            continue
-        print(f"Downloading {api_name} data")
-        progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
-        for index, row in missing_games.iterrows():
-            game_id = row["game_id"]
-            players_hash_list = [player["nucleusHash"] for player in init_dict[row["game_id"]]["players"]]
-            file_name = f"{algs_games_dir}/{api_name}/{row['game_id']}.json"
-            all_players_list = []
-            for i in range(0, len(players_hash_list), 3):
-                player_hash_str = ",".join(players_hash_list[i:i + 3])
-                # DGS_API_URL+"api?gameID="+gameId+"&qt=getPlayerEvents&nucleusHash="+e
-                full_endpoint_url = (DGS_API_URL +
-                                     f"api?gameID={game_id}&qt={api_name}&nucleusHash={player_hash_str}")
-                response = requests.get(full_endpoint_url, headers=headers)
-                if response.status_code == 200:
-                    if len(response.text) > 0:
-                        result_json = response.json()
-                        all_players_list.append(result_json)
-                time.sleep(1)
-            with open(file_name, "w") as file:
-                json.dump(all_players_list, file, indent=2)
-            progress_bar.update(1)
-
-    # with open(f"{algs_games_dir}/init/{row['game_id']}.json", "r") as file:
-    #     init_data = json.load(file)
-    # players_hash_list = [player["nucleusHash"] for player in init_data["players"]]
-    #
-    # full_endpoint_list = [DGS_API_URL + f"api?gameID={row['game_id']}&{endpoint}{h}" for h in
-    #                       players_hash_list]
-
-    # for name, player_endpoint_api in players_endpoints.items():
-
-    # if response.status_code == 200 and len(response.text) > 0:
-    #     result_json = response.json()
-    #     with open(game_data_file, "w") as file:
-    #         json.dump(result_json, file, indent=2)
-    # else:
-    #     print(f"Error: {response.status_code} for {row['game_id']}")
-
-    return algs_data
+import json
 
 
 def filter_country_representation_table(table):
@@ -166,64 +18,76 @@ def filter_player_info_box(table):
     return any(["Player Information" in i.text for i in table])
 
 
+def request_from_liquipedia(url):
+    header = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
+    # "apex-legends-data-analysis"}
+    response = requests.get(url, headers=header)
+    time.sleep(2)
+    return response
+
+
 def get_players_esports_profile():
-    # tournament_columns = ["tournament_full_name", "tournament_name", "tournament_year", "tournament_split",
-    #                       "tournament_region", "tournament_url", "tournament_day"]
-    #
-    # game_columns = tournament_columns + ["game_title", "game_map", "game_timestamp", "game_num", "game_id"]
-    #
-    # if os.path.exists("data/algs_games.csv"):
-    #     current_game_df = pd.read_csv("data/algs_games.csv", na_filter=False)
-    # else:
-    #     current_game_df = pd.DataFrame(columns=game_columns)
+    latest_tournament_base_url = "https://liquipedia.net/apexlegends/Apex_Legends_Global_Series/2024/Split_1/Pro_League"
+    regions_list = ["North_America", "EMEA", "APAC_North", "APAC_South"]
 
-    liquipedia_pages = "https://liquipedia.net/apexlegends/Apex_Legends_Global_Series/2024/Split_1/Pro_League/North_America"
+    players_info_list = []
 
-    dgs_algs_page_html = requests.get(liquipedia_pages)
+    for region in regions_list:
+        region_url = latest_tournament_base_url + "/" + region
 
-    soup = BeautifulSoup(dgs_algs_page_html.text, 'html.parser')
+        tournament_page = request_from_liquipedia(region_url)
 
-    all_tables = soup.find_all(class_='wikitable')
+        soup = BeautifulSoup(tournament_page.text, 'html.parser')
 
-    players_table = next(filter(filter_country_representation_table, all_tables), None)
+        all_tables = soup.find_all(class_='wikitable')
 
-    if players_table is None:
-        print("No players table found")
+        players_table = next(filter(filter_country_representation_table, all_tables), None)
 
-    players_list = players_table.find_all("a")
+        if players_table is None:
+            print("No players table found")
 
-    url_set = sorted(set([p["href"] for p in players_list if "index.php" not in p["href"]]))
+        players_list = players_table.find_all("a")
 
-    base_url = "https://liquipedia.net"
+        url_set = sorted(set([p["href"] for p in players_list if "index.php" not in p["href"]]))
 
-    players_into_list = []
-    for url in tqdm(url_set):
-        player_page = requests.get(base_url + url)
-        player_soup = BeautifulSoup(player_page.text, 'html.parser')
-        info_type = player_soup.find_all(class_="infobox-header-2")
-        header = player_soup.find_all(class_="infobox-header")
-        if len(info_type) == 0 or info_type[0].text != 'Player Information':
-            continue
+        base_url = "https://liquipedia.net"
 
-        info_box_list = player_soup.find_all(class_="fo-nttax-infobox")
+        for url in tqdm(url_set):
+            file_name = f"data/players/{url.split('/')[2]}.json"
+            player_info_dict = {}
+            if os.path.exists(file_name):
+                with open(file_name, "r") as file:
+                    player_info_dict = json.load(file)
+            else:
+                player_page = request_from_liquipedia(base_url + url)
+                player_soup = BeautifulSoup(player_page.text, 'html.parser')
+                info_type = player_soup.find_all(class_="infobox-header-2")
+                header = player_soup.find_all(class_="infobox-header")
+                if len(info_type) == 0 or info_type[0].text != 'Player Information':
+                    continue
 
-        player_info = next(filter(filter_player_info_box, info_box_list), None)
+                info_box_list = player_soup.find_all(class_="fo-nttax-infobox")
 
-        player_info_dict = {}
+                player_info = next(filter(filter_player_info_box, info_box_list), None)
 
-        player_info_dict["Player ID"] = player_info.find(class_="infobox-header").text.replace("[e][h]", "").replace(
-            "\xa0", "").strip()
+                player_info_dict["Player ID"] = (player_info.find(class_="infobox-header").text.
+                                                 replace("[e][h]", "").replace("\xa0", "").strip())
 
-        for info in player_info.find_all(class_="infobox-description"):
-            key = info.text.replace(":", "").strip()
-            value = info.find_next_sibling().text.strip()
-            player_info_dict[key] = value
+                for info in player_info.find_all(class_="infobox-description"):
+                    key = info.text.replace(":", "").strip()
+                    value = info.find_next_sibling().text.strip()
+                    player_info_dict[key] = value
 
-        if len(list(header[0].children)) < 3:
-            continue
-        players_into_list.append(player_info_dict)
+                if len(list(header[0].children)) < 3:
+                    continue
+                with open(file_name, "w") as file:
+                    json.dump(player_info_dict, file, indent=2)
 
-    players_df = pd.DataFrame(players_into_list)
+            players_info_list.append(player_info_dict)
+
+
+    players_df = pd.DataFrame(players_info_list)
     players_df.to_csv("data/algs_players.csv", index=False, quoting=csv.QUOTE_ALL)
 
 
