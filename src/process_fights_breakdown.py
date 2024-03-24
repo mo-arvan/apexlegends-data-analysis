@@ -1,8 +1,14 @@
 import json
+import logging
 import os
 from argparse import ArgumentParser
 
 import pandas as pd
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info(f"Running {__file__}")
 
 
 def get_fights_data(algs_fights_data_dict, players_in_games):
@@ -17,15 +23,20 @@ def get_fights_data(algs_fights_data_dict, players_in_games):
 
         for fights in fights_list:
 
-            start_fight_time = fights["startEventTimestamp"]
+            start_fight_time = int(fights["startEventTimestamp"])
 
             for player, data in fights["players"].items():
                 player_name = data["playerName"]
-                player_info = next(filter(lambda x: x["playerName"] == player_name, players_in_current_game))
+                player_info = next(filter(lambda x: x["playerName"] == player_name, players_in_current_game), None)
+
+                if player_info is None:
+                    logger.info(f"Player {player_name} not found in players_in_current_game")
+                    continue
+
                 player_hash = player_info["nucleusHash"][:32]
                 # player_team = player_info["team"]
                 if len(data["weaponsDamage"]["dealt"]) == 0 or "weaponsUsed" not in data:
-                    # print(f"No weapons used for {player_name}")
+                    # logger.info(f"No weapons used for {player_name}")
                     no_weapon_used_count += 1
                     continue
 
@@ -34,10 +45,10 @@ def get_fights_data(algs_fights_data_dict, players_in_games):
                     weapon_used = next(
                         filter(lambda x: x["name"] == weapon_name, data["weaponsUsed"]), None)
                     if weapon_used is not None:
-                        shots = weapon_used["ammoUsed"]
-                        damage_dealt = weapon_damage["damage"]
-                        hits = weapon_damage["hits"]
-                        time = weapon_used["time"]
+                        shots = int(weapon_used["ammoUsed"])
+                        damage_dealt = int(weapon_damage["damage"])
+                        hits = int(weapon_damage["hits"])
+                        time = int(weapon_used["time"])
 
                         if hits > shots:
                             hits_more_than_used_count += 1
@@ -48,12 +59,12 @@ def get_fights_data(algs_fights_data_dict, players_in_games):
                                  game_id, start_fight_time))
                     else:
                         # invalid_weapon_used = ['Piercing Spikes']
-                        # print(f"No weapon used for {weapon_name}")
+                        # logger.info(f"No weapon used for {weapon_name}")
                         no_damage_dealt_count += 1
                     total_count += 1
 
-    print(f"Missing Weapons Used Info %: {no_weapon_used_count / total_count * 100:.2f}")
-    print(f"Hits > Shots %: {hits_more_than_used_count / total_count * 100:.2f}")
+    logger.info(f"Missing Weapons Used Info %: {no_weapon_used_count / total_count * 100:.2f}")
+    logger.info(f"Hits > Shots %: {hits_more_than_used_count / total_count * 100:.2f}")
 
     weapons_df = pd.DataFrame(weapons_data,
                               columns=["player_name", "player_hash",
@@ -100,9 +111,9 @@ def main():
 
     players_in_games = {k: v["players"] for k, v in init_dict.items()}
 
-    weapons_df = get_fights_data(get_fights_dict, players_in_games)
+    fights_data_df = get_fights_data(get_fights_dict, players_in_games)
 
-    weapons_df.to_csv("data/weapons_data.csv", index=False)
+    fights_data_df.to_parquet("data/fights_data.parquet")
 
 
 if __name__ == "__main__":
