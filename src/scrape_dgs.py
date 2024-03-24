@@ -1,11 +1,9 @@
 import json
+import logging
 import os
 import re
 import time
 from argparse import ArgumentParser
-import csv
-
-from datetime import datetime
 
 import bs4
 import pandas as pd
@@ -13,14 +11,16 @@ import requests
 from bs4 import BeautifulSoup
 from tqdm.auto import tqdm
 
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info(f"Running {__file__}")
+
 DGS_API_URL = "https://algs-public-outbound.apexlegendsstatus.com/"
 ALS_URL = "https://apexlegendsstatus.com/"
 
 
-def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
-    # with open(dgs_token_file, "r") as f:
-    #     dgs_auth = f.read()
-
+def scrape_games_data(game_df, init_dict, algs_games_dir):
     headers = {
         "Content-Type": "application/json",
         # "DGS-Authorization": dgs_auth
@@ -41,7 +41,9 @@ def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
         # "getPlayerEvents": "qt=getPlayerEvents&nucleusHash=",
     }
 
-    players_endpoints = ["getPlayerEvents"]
+    players_endpoints = [
+        # "getPlayerEvents"
+    ]
 
     algs_data = []
 
@@ -60,28 +62,26 @@ def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
     # downloaded_replays_df = downloaded_replays_df.drop_duplicates(subset=["game_id"])
     # downloaded_replays_df.to_csv(downloaded_replay_file, index=False)
 
-    game_df = game_df[game_df["game_id"] != "#"]
-    game_df["game_timestamp"] = game_df["game_id"].apply(
-        lambda x: datetime.fromtimestamp(int(init_dict[x]["timestamp"])))
-    game_df = game_df.sort_values(by=["game_timestamp"], ascending=False)
+    # game_df = game_df.sort_values(by=["game_timestamp"], ascending=False)
 
     if not os.path.exists(algs_games_dir):
         os.makedirs(algs_games_dir)
+
     all_api_names = list(game_endpoints.keys()) + list(players_endpoints)
     for api_name in all_api_names:
         if not os.path.exists(f"{algs_games_dir}/{api_name}"):
             os.makedirs(f"{algs_games_dir}/{api_name}")
 
-    # games_sorted_by_timestamp = game_df.sort_values(by=["game_timestamp"], ascending=True)
-    results_dict = {}
     for api_name, endpoint in game_endpoints.items():
         api_download_dir = f"{algs_games_dir}/{api_name}"
         downloaded_files = [f.split(".")[0] for f in os.listdir(api_download_dir)]
+        logger.info(f"Downloading {api_name} data")
 
         missing_games = game_df[~game_df["game_id"].isin(downloaded_files)]
         if len(missing_games) == 0:
+            logger.info(f"No missing games for {api_name}")
             continue
-        print(f"Downloading {api_name} data")
+
         progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
         for index, row in missing_games.iterrows():
             game_id = row["game_id"]
@@ -92,7 +92,7 @@ def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
                 elif api_name == "init" or api_name == "getFights":
                     full_endpoint_url = DGS_API_URL + f"api?gameID={game_id}&{endpoint}"
                 else:
-                    print(f"Unknown API: {api_name}")
+                    logger.info(f"Unknown API: {api_name}")
                     continue
 
                 response = requests.get(full_endpoint_url, headers=headers)
@@ -117,7 +117,7 @@ def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
         missing_games = game_df[~game_df["game_id"].isin(downloaded_files)]
         if len(missing_games) == 0:
             continue
-        print(f"Downloading {api_name} data")
+        logger.info(f"Downloading {api_name} data")
         progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
         for index, row in missing_games.iterrows():
             game_id = row["game_id"]
@@ -153,22 +153,12 @@ def get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir):
     #     with open(game_data_file, "w") as file:
     #         json.dump(result_json, file, indent=2)
     # else:
-    #     print(f"Error: {response.status_code} for {row['game_id']}")
+    #     logger.info(f"Error: {response.status_code} for {row['game_id']}")
 
     return algs_data
 
 
-def get_game_list(algs_game_list_file):
-    tournament_columns = ["tournament_full_name", "tournament_name", "tournament_year", "tournament_split",
-                          "tournament_region", "tournament_url", "tournament_day"]
-
-    game_columns = tournament_columns + ["game_title", "game_map", "game_timestamp", "game_num", "game_id"]
-
-    if os.path.exists("data/algs_games.csv"):
-        current_game_df = pd.read_csv("data/algs_games.csv", na_filter=False)
-    else:
-        current_game_df = pd.DataFrame(columns=game_columns)
-
+def scrape_tournaments():
     dgs_algs_page_url = "https://apexlegendsstatus.com/algs/"
 
     dgs_algs_page_html = requests.get(dgs_algs_page_url)
@@ -192,16 +182,31 @@ def get_game_list(algs_game_list_file):
             tournament_split = tournament_match.group("split_num").strip()
             tournament_region = tournament_url.split("/")[-2]
 
-            r = (tournament_full_name, tournament_name, tournament_year,
-                 tournament_split, tournament_region, tournament_url, "")
-            tournament_list.append(r)
-        else:
-            print(f"Error: {tournament_full_name}")
+            tournament_row = (tournament_full_name, tournament_name, tournament_year, tournament_split,
+                              tournament_region, tournament_url)
 
+            tournament_list.append(tournament_row)  # type: ignore
+        else:
+            logger.info(f"Error: {tournament_full_name}")
+    tournament_columns = ["tournament_full_name", "tournament_name", "tournament_year", "tournament_split",
+                          "tournament_region", "tournament_url"]
     tournament_df = pd.DataFrame(tournament_list, columns=tournament_columns)
+
+    return tournament_df
+
+
+def scrape_games(tournament_df, current_game_df):
+    tournament_columns = tournament_df.columns.tolist()
+    game_columns = tournament_columns + ["tournament_day",
+                                         "game_title",
+                                         "game_map",
+                                         "game_timestamp",
+                                         "game_num",
+                                         "game_id"]
 
     game_list = []
     for index, row in tournament_df.iterrows():
+
         tournament_full_name = row["tournament_full_name"]
         tournament_name = row["tournament_name"]
         tournament_year = row["tournament_year"]
@@ -209,11 +214,8 @@ def get_game_list(algs_game_list_file):
         tournament_region = row["tournament_region"]
         tournament_url = row["tournament_url"]
 
-        # if tournament_url == "/algs/Y4-Split1/Pro-League/NA/Overview":
-        #     print(f"NA Pro League: {tournament_full_name} - {tournament_url}")
-
         if tournament_region == "" or pd.isna(tournament_region):
-            print(f"Error: {tournament_full_name} - {tournament_url}")
+            logger.info(f"Invalid region: {tournament_full_name} - {tournament_url}")
 
         tournament_page_url = ALS_URL + tournament_url
 
@@ -222,9 +224,7 @@ def get_game_list(algs_game_list_file):
         tournament_page_html = requests.get(tournament_page_url)
 
         if tournament_page_html.status_code != 200 or "No games found for this region" in tournament_page_html.text:
-            # or \
-            #     "No scores available yet" in tournament_page_html.text:
-            game_day = 0
+            logger.error(f"Error: {tournament_full_name} - {tournament_url}")
             continue
 
         soup = BeautifulSoup(tournament_page_html.text, 'html.parser')
@@ -244,7 +244,7 @@ def get_game_list(algs_game_list_file):
                 day_page_url = ALS_URL + day_href
                 day_page_html = requests.get(day_page_url)
                 if day_page_html.status_code != 200:
-                    print(f"Error: {tournament_full_name} - {tournament_url} - {day_href}")
+                    logger.info(f"Error: {tournament_full_name} - {tournament_url} - {day_href}")
                     continue
                 # all algsGameElem elements
                 algs_game_elems = BeautifulSoup(day_page_html.text, 'html.parser').find_all(
@@ -261,7 +261,7 @@ def get_game_list(algs_game_list_file):
                     if game_title.text == "All games":
                         continue
                     if game_title is None or game_map is None:
-                        print(f"Error: {tournament_full_name} - {tournament_url} ")
+                        logger.info(f"Error: {tournament_full_name} - {tournament_url} ")
                         continue
                     game_title = game_title.text.strip()
                     game_map = game_map.text.strip()
@@ -278,8 +278,6 @@ def get_game_list(algs_game_list_file):
                             game_title, game_map, game_timestamp, game_num, game_id)
                         game_list.append(r)
 
-        # algsGameElem
-
     game_df = pd.DataFrame(game_list, columns=game_columns)
 
     old_size = len(current_game_df)
@@ -292,44 +290,51 @@ def get_game_list(algs_game_list_file):
 
     game_df.drop_duplicates(["game_id"], inplace=True)
 
+    game_df = game_df[game_df["game_id"] != "#"]
+
     new_size = len(game_df)
 
     if new_size > old_size:
-        print(f"Founds {new_size - old_size} new games")
+        logger.info(f"Founds {new_size - old_size} new games")
 
-    print(f"Total games: {len(game_df)}")
-
-    game_df.to_csv("data/algs_games.csv", index=False, quoting=csv.QUOTE_ALL)
+    logger.info(f"Total games: {len(game_df)}")
 
     return game_df
 
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument("--dgs_token_file", default="data/local/dgs_token.txt", help="DGS Token File")
-    parser.add_argument("--algs_game_list_file", default="data/algs_game_list.csv", help="ALGS Game List File")
+    parser.add_argument("--algs_game_list_file", default="data/algs_game_list.parquet", help="ALGS Game List File")
     parser.add_argument("--algs_games_dir", default="data/algs_games", help="ALGS Games Directory")
     parser.add_argument("--init_data_dir", default="data/algs_games/init")
+    parser.add_argument("--init_data", default="data/init_dict.pbz2")
 
     args = parser.parse_args()
-    dgs_token_file = args.dgs_token_file
+
     algs_game_list_file = args.algs_game_list_file
     algs_games_dir = args.algs_games_dir
     init_data_dir = args.init_data_dir
+    init_data = args.init_data
 
-    init_dict = {}
+    if os.path.exists(algs_game_list_file):
+        current_game_df = pd.read_parquet(algs_game_list_file)
+    else:
+        current_game_df = None
+
+    tournament_df = scrape_tournaments()
+
+    game_df = scrape_games(tournament_df, current_game_df)
+
+    game_df.to_parquet(algs_game_list_file, index=False, compression="gzip")
+
+    games_init_dict = {}
     for game_init in os.listdir(init_data_dir):
         game_init_file_path = f"{algs_games_dir}/init/{game_init}"
         with open(game_init_file_path, "r") as file:
-            init_dict[game_init.replace(".json", "")] = json.load(file)
-    game_df = get_game_list(algs_game_list_file)
-    game_data = get_game_data(game_df, init_dict, dgs_token_file, algs_games_dir)
+            games_init_dict[game_init.replace(".json", "")] = json.load(file)
 
-    # game_data = get_game_data(game_df)
+    scrape_games_data(game_df, games_init_dict, algs_games_dir)
 
-    # file_name = f"data/algs_data.json"
-    # with open(file_name, "w") as file:
-    #     json.dump(game_data, file, indent=2)
 
 
 if __name__ == "__main__":
