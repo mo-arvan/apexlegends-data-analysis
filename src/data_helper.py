@@ -15,7 +15,8 @@ logger.info(f"Running {__file__}")
 def get_fights_data():
     logger.info("Loading fights data")
     algs_games_df = get_algs_games()
-    fights_df = pd.read_csv("data/weapons_data.csv")
+    # fights_df = pd.read_csv("data/weapons_data.csv")
+    fights_df = pd.read_parquet("data/fights_data.parquet")
 
     fights_df = fights_df[~pd.isna(fights_df["weapon_name"])]
     # filter when hits > shots
