@@ -1,6 +1,8 @@
 data/local
 /data/algs_games/getFights
 /data/algs_games/init
+/data/algs_games/getReplay
+/data/algs_games/getPlayerEvents
 
 
 # Byte-compiled / optimized / DLL files
