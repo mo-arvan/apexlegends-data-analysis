@@ -47,7 +47,7 @@ def get_fights_data():
 @st.cache_data
 def get_algs_games():
     logger.info("Loading algs games data")
-    algs_games_df = pd.read_csv("data/algs_games.csv", na_filter=False)
+    algs_games_df = pd.read_parquet("data/algs_game_list.parquet")
 
     return algs_games_df
 

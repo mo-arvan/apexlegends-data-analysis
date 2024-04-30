@@ -38,7 +38,9 @@ def process_events(game_data_tuple, init_data_dict):
                                 "Energy": ["Triple Take", "L-Star", "Volt", "Havoc", "Devotion"],
                                 "Shotgun": ["Mastiff", "EVA-8", "Peacekeeper", "Mozambique"],
                                 "Sniper": ["Kraber", "Sentinel", "Wingman", "Longbow", "Charge Rifle", ]}
-    invalid_weapons = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"']
+    invalid_weapons = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"', 'War Club Melee',
+                       'Rolling Thunder', 'Defensive Bombardment', 'Frag Grenade', 'Missile Swarm',
+                       'Energy Barricade', 'Thermite Grenade', 'Arc Star', ]
 
     # Used x26  Energy Ammo (137 ➟ 111)
     # player id, event id, event name, event time, event detail, event x, event y, event time in minutes and seconds
@@ -63,7 +65,7 @@ def process_events(game_data_tuple, init_data_dict):
         # ammo_used_events = player_events_df[player_events_df["event_type"] == "ammoUsed"]
 
 
-        max_damage_time_diff = 5
+        max_damage_time_diff = 10
         max_ammo_used_time_diff = 10
         merged_damage_events = []
         for i, row in used_damaged_events.iterrows():
@@ -143,25 +145,21 @@ def process_events(game_data_tuple, init_data_dict):
                                 logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
 
         game_damage_events.extend(merged_damage_events)
-        # player_damaged_events.sort(key=lambda x: x[3])w
-        #
-        # ammo_used_events = ammo_used_events.sort_values("event_timestamp", ascending=False)
-        # for i, row in ammo_used_events.iterrows():
-        #     damage_dealt["time_diff"] = abs(damage_dealt["event_timestamp"] - row["event_timestamp"])
-        #     damage_dealt = damage_dealt.sort_values("time_diff")
-        # print("")
-    #     damaged_close_in_time = [e for e in player_damaged_events if
-    #                              abs(e[3] - ammo_usage[3]) < 1]
-    #     break
-    #     print("")
-    #
-    game_damage_events = pd.DataFrame(game_damage_events)
 
-    ammo_not_available = game_damage_events[game_damage_events["ammo_used"].isnull()]
-    ratio_ammo_not_available = len(ammo_not_available) / len(game_damage_events)
-    logger.info(f"Ratio of ammo not available: {ratio_ammo_not_available}")
+    # game_damage_events = pd.DataFrame(game_damage_events)
+    #
+    # ammo_not_available = game_damage_events[game_damage_events["ammo_used"].isnull()]
+    # ratio_ammo_not_available = len(ammo_not_available) / len(game_damage_events)
+    # logger.info(f"Ratio of ammo not available: {ratio_ammo_not_available}")
+    #
+    # player_hash = "bee67822cdff6f11440cdf58bda0c60f"
+    #
+    # player_data_index = [p["player_hash"][0] for p in game_events].index(player_hash)
+    #
+    # player_data = game_events[player_data_index]
 
     logger.info(f"weapon_set: {weapon_set}")
+    return game_damage_events
 
 
 def main():

@@ -170,7 +170,7 @@ class_name_list = guns_slice_df["class"].unique().tolist()
 print(f"Class Name List: {class_name_list}")
 class_name_list = sorted(class_name_list, key=lambda x: chart_config.class_filter_order_dict.get(x, 0))
 
-row_1_cols = st.columns([10, 85, 10])
+row_1_cols = st.columns([90, 10])
 row_2_class_columns = st.columns(len(class_name_list) + 1)
 
 buttons = [
@@ -190,24 +190,24 @@ for class_name in class_name_list:
                     # "style": {"border-radius": "22px", "padding": "1px"}
                     })
 
-buttons_list = []
-for i, class_name in enumerate(class_name_list):
-    with row_2_class_columns[i + 1]:
-        if pd.isna(class_name):
-            print(f"Skipping {class_name}")
-            continue
-        buttons_list.append(st.button(class_name,
-                                      key=f"class_{class_name}_button",
-                                      help=f"Select all the weapons in the {class_name} class",
-                                      use_container_width=True
-                                      ))
+# buttons_list = []
+# for i, class_name in enumerate(class_name_list):
+#     with row_2_class_columns[i + 1]:
+#         if pd.isna(class_name):
+#             print(f"Skipping {class_name}")
+#             continue
+#         buttons_list.append(st.button(class_name,
+#                                       key=f"class_{class_name}_button",
+#                                       help=f"Select all the weapons in the {class_name} class",
+#                                       use_container_width=True
+#                                       ))
+#
+#     if buttons_list[i]:
+#         weapons_to_add = guns_slice_df[guns_slice_df["class"] == class_name]["weapon_name"].unique().tolist()
+#         pre_selected_weapons.extend(weapons_to_add)
+#         pre_selected_weapons = list(set(pre_selected_weapons))
 
-    if buttons_list[i]:
-        weapons_to_add = guns_slice_df[guns_slice_df["class"] == class_name]["weapon_name"].unique().tolist()
-        pre_selected_weapons.extend(weapons_to_add)
-        pre_selected_weapons = list(set(pre_selected_weapons))
-
-with row_1_cols[2]:
+with row_1_cols[1]:
     container = st.container()
     with container:
         # st.write("Z")
@@ -218,9 +218,9 @@ with row_1_cols[2]:
                               )
     if clear_all:
         pre_selected_weapons = []
+# with row_1_cols[0]:
+#     st.write("Weapons:")
 with row_1_cols[0]:
-    st.write("Weapons:")
-with row_1_cols[1]:
     pre_selected_weapons = sorted(pre_selected_weapons)
     selected_weapons = st.multiselect("Weapons:",
                                       guns_slice_df["weapon_name"].unique().tolist(),
@@ -327,9 +327,10 @@ with options_container:
                                               index=0,
                                               key='shot_location')
     with options_rows[2][0]:
-        chart_x_axis = st.selectbox('X Axis:', ["Accuracy Quantile (%)",
-                                                "Accuracy (%)",
-                                                ],
+        chart_x_axis = st.selectbox('X Axis:', [
+            # "Accuracy Quantile (%)",
+            "Accuracy (%)",
+        ],
                                     index=0, key='x_axis')
     with options_rows[2][1]:
         chart_y_axis = st.selectbox('Y Axis:', ["eDPS",
