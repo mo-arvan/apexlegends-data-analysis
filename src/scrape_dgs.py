@@ -20,7 +20,7 @@ DGS_API_URL = "https://algs-public-outbound.apexlegendsstatus.com/"
 ALS_URL = "https://apexlegendsstatus.com/"
 
 
-def scrape_games_data(game_df, init_dict, algs_games_dir):
+def scrape_game_endpoints(game_df, init_dict, algs_games_dir):
     headers = {
         "Content-Type": "application/json",
         # "DGS-Authorization": dgs_auth
@@ -41,33 +41,12 @@ def scrape_games_data(game_df, init_dict, algs_games_dir):
         # "getPlayerEvents": "qt=getPlayerEvents&nucleusHash=",
     }
 
-    players_endpoints = [
-        # "getPlayerEvents"
-    ]
-
     algs_data = []
-
-    # downloaded_replay_file = "data/algs_downloaded_replays.csv"
-    # replays_dir = algs_games_dir + "/getReplay"
-    # downloaded_replays = []
-    # if os.path.exists(replays_dir):
-    #     downloaded_replays = os.listdir(algs_games_dir + "/getReplay")
-    #
-    # downloaded_replays = [replay.replace(".json", "") for replay in downloaded_replays]
-    # downloaded_replays_df = pd.DataFrame(downloaded_replays, columns=["game_id"])
-    #
-    # if os.path.exists(downloaded_replay_file):
-    #     current_downloaded_replays = pd.read_csv(downloaded_replay_file)
-    #     downloaded_replays_df = pd.concat([current_downloaded_replays, downloaded_replays_df], ignore_index=True)
-    # downloaded_replays_df = downloaded_replays_df.drop_duplicates(subset=["game_id"])
-    # downloaded_replays_df.to_csv(downloaded_replay_file, index=False)
-
-    # game_df = game_df.sort_values(by=["game_timestamp"], ascending=False)
 
     if not os.path.exists(algs_games_dir):
         os.makedirs(algs_games_dir)
 
-    all_api_names = list(game_endpoints.keys()) + list(players_endpoints)
+    all_api_names = list(game_endpoints.keys())
     for api_name in all_api_names:
         if not os.path.exists(f"{algs_games_dir}/{api_name}"):
             os.makedirs(f"{algs_games_dir}/{api_name}")
@@ -110,13 +89,29 @@ def scrape_games_data(game_df, init_dict, algs_games_dir):
             progress_bar.update(1)
             # Check the response status and save to file
 
-    for api_name in players_endpoints:
 
+def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
+    headers = {
+        "Content-Type": "application/json",
+        # "DGS-Authorization": dgs_auth
+    }
+
+    players_endpoints = [
+        "getPlayerEvents"
+    ]
+
+    all_api_names = list(players_endpoints)
+    for api_name in all_api_names:
+        if not os.path.exists(f"{algs_games_dir}/{api_name}"):
+            os.makedirs(f"{algs_games_dir}/{api_name}")
+
+    for api_name in players_endpoints:
         api_download_dir = f"{algs_games_dir}/{api_name}"
         downloaded_files = [f.split(".")[0] for f in os.listdir(api_download_dir)]
-        missing_games = game_df[~game_df["game_id"].isin(downloaded_files)]
+        missing_games = game_df.loc[~game_df["game_id"].isin(downloaded_files)]
         if len(missing_games) == 0:
             continue
+        missing_games.sort_values("game_timestamp", inplace=True, ascending=False)
         logger.info(f"Downloading {api_name} data")
         progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
         for index, row in missing_games.iterrows():
@@ -139,23 +134,10 @@ def scrape_games_data(game_df, init_dict, algs_games_dir):
                 json.dump(all_players_list, file, indent=2)
             progress_bar.update(1)
 
-    # with open(f"{algs_games_dir}/init/{row['game_id']}.json", "r") as file:
-    #     init_data = json.load(file)
-    # players_hash_list = [player["nucleusHash"] for player in init_data["players"]]
-    #
-    # full_endpoint_list = [DGS_API_URL + f"api?gameID={row['game_id']}&{endpoint}{h}" for h in
-    #                       players_hash_list]
 
-    # for name, player_endpoint_api in players_endpoints.items():
-
-    # if response.status_code == 200 and len(response.text) > 0:
-    #     result_json = response.json()
-    #     with open(game_data_file, "w") as file:
-    #         json.dump(result_json, file, indent=2)
-    # else:
-    #     logger.info(f"Error: {response.status_code} for {row['game_id']}")
-
-    return algs_data
+def scrape_games_data(game_df, init_dict, algs_games_dir):
+    scrape_game_endpoints(game_df, init_dict, algs_games_dir)
+    scrape_players_endpoints(game_df, init_dict, algs_games_dir)
 
 
 def scrape_tournaments():
@@ -334,7 +316,6 @@ def main():
             games_init_dict[game_init.replace(".json", "")] = json.load(file)
 
     scrape_games_data(game_df, games_init_dict, algs_games_dir)
-
 
 
 if __name__ == "__main__":
