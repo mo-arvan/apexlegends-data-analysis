@@ -1287,3 +1287,4 @@ cython_debug/
 /src/local/scratch.py
 /src/local/woven.py
 /src/local/zenodo_upload.py
+/data/events.pkl
