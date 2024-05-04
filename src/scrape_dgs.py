@@ -1,3 +1,4 @@
+import csv
 import json
 import logging
 import os
@@ -20,7 +21,7 @@ DGS_API_URL = "https://algs-public-outbound.apexlegendsstatus.com/"
 ALS_URL = "https://apexlegendsstatus.com/"
 
 
-def scrape_game_endpoints(game_df, init_dict, algs_games_dir):
+def scrape_game_endpoints(game_df, algs_games_dir):
     headers = {
         "Content-Type": "application/json",
         # "DGS-Authorization": dgs_auth
@@ -28,8 +29,8 @@ def scrape_game_endpoints(game_df, init_dict, algs_games_dir):
     # API Endpoints with names
     game_endpoints = {
         "init": "qt=init",
-        "getFights": "qt=getFights",
-        "getReplay": "getReplay",
+        # "getFights": "qt=getFights",
+        # "getReplay": "getReplay",
 
         # "getRankings": "qt=getRankings&rankingsBy=some_value&statsType=some_value",
         # "getRings": "qt=getRings&stage=some_value",
@@ -83,7 +84,7 @@ def scrape_game_endpoints(game_df, init_dict, algs_games_dir):
                     file_name = f"{algs_games_dir}/{api_name}/{game_id}.json"
                     with open(file_name, "w") as file:
                         json.dump(result_json, file, indent=2)
-                time.sleep(1)
+                time.sleep(2)
 
             # sleep for 1 second
             progress_bar.update(1)
@@ -129,15 +130,22 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
                     if len(response.text) > 0:
                         result_json = response.json()
                         all_players_list.append(result_json)
-                time.sleep(1)
+                time.sleep(2)
             with open(file_name, "w") as file:
                 json.dump(all_players_list, file, indent=2)
             progress_bar.update(1)
 
 
-def scrape_games_data(game_df, init_dict, algs_games_dir):
-    scrape_game_endpoints(game_df, init_dict, algs_games_dir)
-    scrape_players_endpoints(game_df, init_dict, algs_games_dir)
+def scrape_games_data(game_df, algs_games_dir, init_data_dir):
+    scrape_game_endpoints(game_df, algs_games_dir)
+
+    games_init_dict = {}
+    for game_init in os.listdir(init_data_dir):
+        game_init_file_path = f"{algs_games_dir}/init/{game_init}"
+        with open(game_init_file_path, "r") as file:
+            games_init_dict[game_init.replace(".json", "")] = json.load(file)
+
+    scrape_players_endpoints(game_df, games_init_dict, algs_games_dir)
 
 
 def scrape_tournaments():
@@ -185,7 +193,6 @@ def scrape_games(tournament_df, current_game_df):
                                          "game_timestamp",
                                          "game_num",
                                          "game_id"]
-
     game_list = []
     for index, row in tournament_df.iterrows():
 
@@ -308,14 +315,10 @@ def main():
     game_df = scrape_games(tournament_df, current_game_df)
 
     game_df.to_parquet(algs_game_list_file, index=False, compression="gzip")
+    game_df.to_csv(algs_game_list_file.replace(".parquet", ".csv"), index=False,
+                   quoting=csv.QUOTE_NONNUMERIC)
 
-    games_init_dict = {}
-    for game_init in os.listdir(init_data_dir):
-        game_init_file_path = f"{algs_games_dir}/init/{game_init}"
-        with open(game_init_file_path, "r") as file:
-            games_init_dict[game_init.replace(".json", "")] = json.load(file)
-
-    scrape_games_data(game_df, games_init_dict, algs_games_dir)
+    scrape_games_data(game_df, algs_games_dir, init_data_dir)
 
 
 if __name__ == "__main__":

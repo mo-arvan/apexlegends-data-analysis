@@ -2,9 +2,11 @@ import json
 import logging
 import os
 import pickle
+import time
 from argparse import ArgumentParser
 
 import pandas as pd
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 
 import parallel_helper
@@ -15,7 +17,9 @@ logger = logging.getLogger(__name__)
 logger.info(f"Running {__file__}")
 
 
-def parse_events_html(players_hash_list, game_events_html):
+def parse_events_html(players_hash_events_html_tuple):
+    players_hash_list, game_events_html = players_hash_events_html_tuple
+
     soup = BeautifulSoup(game_events_html, "html.parser")
     # <p class="eventsFeedPlayerName universalLeftMargin">
     players = soup.find_all("p", class_="eventsFeedPlayerName universalLeftMargin")
@@ -56,19 +60,36 @@ def parse_events_html(players_hash_list, game_events_html):
 
 def parse_events(game_data_tuple):
     game_id, game_events = game_data_tuple
+
+    file_name = f"data/events/{game_id}.pkl"
+
+    if os.path.exists(file_name):
+        # logger.info(f"Skipping {game_id}")
+        return
+
     game_events_merged = {}
     game_events_merged["lastEventId"] = {k: v for g in game_events for k, v in g["lastEventId"].items()}
     game_events_merged["eventsLocations"] = {k: v for g in game_events for k, v in g["eventsLocations"].items()}
 
-    game_events_merged["events"] = [player_event for g in game_events for player_event in
-                                    parse_events_html(list(g["lastEventId"].keys()), g["html"])]
+    game_events_tuple_list = [(list(g["lastEventId"].keys()), g["html"]) for g in game_events]
 
-    row = (game_id,
-           game_events_merged["events"],
-           game_events_merged["lastEventId"],
-           game_events_merged["eventsLocations"])
+    game_events = parallel_helper.run_in_parallel_cpu_bound(parse_events_html,
+                                                            game_events_tuple_list,
+                                                            max_workers=12,
+                                                            total=len(game_events),
+                                                            disable=True)
 
-    return row
+    game_events_merged["events"] = game_events
+
+    with open(f"data/events/{game_id}.pkl", "wb") as f:
+        pickle.dump(game_events_merged, f)
+
+    # row = (game_id,
+    #        game_events_merged["events"],
+    #        game_events_merged["lastEventId"],
+    #        game_events_merged["eventsLocations"])
+    #
+    # return row
 
 
 def read_event(base_dir_file_name_tuple):
@@ -92,12 +113,17 @@ def main():
     aug_parser = ArgumentParser()
     aug_parser.add_argument("--events_data_dir", default="data/algs_games/getPlayerEvents")
     aug_parser.add_argument("--init_data_dir", default="data/algs_games/init")
+    aug_parser.add_argument("--output_dir", default="data/events")
     aug_parser.add_argument("--debug", action="store_true", default=True)
 
     args = aug_parser.parse_args()
+
+    start_time = time.perf_counter()
+
     events_data_dir = args.events_data_dir
 
     debug = args.debug
+    output_dir = args.output_dir
 
     init_dict = {}
 
@@ -107,7 +133,11 @@ def main():
     #     if len(game_events_dict) > 10:
     #         break
     #
-    event_file_path_list = [(events_data_dir, file_name) for file_name in os.listdir(events_data_dir)]
+    existing_files = os.listdir(output_dir)
+    existing_files = [f[:-4] for f in existing_files if f.endswith(".pkl")]
+
+    event_file_path_list = [(events_data_dir, file_name) for file_name in os.listdir(events_data_dir) if
+                            file_name[:-5] not in existing_files]
     events_total = len(event_file_path_list)
     logger.info(f"Building events generator")
     # game_events_dict = parallel_helper.run_in_parallel_io_bound(read_event,
@@ -123,15 +153,20 @@ def main():
     #
     # init_df = pd.DataFrame(init_dict.values())
     logger.info(f"Processing {events_total} games")
-    events_list = parallel_helper.run_in_parallel_cpu_bound(parse_events,
-                                                            game_events_list,
-                                                            total=events_total,
-                                                            max_workers=12)
-    logger.info(f"Processed {len(events_list)} games")
-    logger.info(f"Saving events to data/events.pkl")
-    with open("data/events.pkl", "wb") as f:
-        pickle.dump(events_list, f)
+    # events_list = parallel_helper.run_in_parallel_cpu_bound(parse_events,
+    #                                                         game_events_list,
+    #                                                         total=events_total,
+    #                                                         max_workers=12)
 
+    # logger.info(f"Processed {len(events_list)} games")
+    for game_events in tqdm(game_events_list, total=events_total):
+        parse_events(game_events)
 
-if __name__ == "__main__":
-    main()
+    end_time = time.perf_counter()
+    logger.info(f"Finished in {end_time - start_time:0.2f} seconds")
+    # logger.info(f"Saving events to data/events.pkl")
+    # with open("data/events.pkl", "wb") as f:
+    #     pickle.dump(events_list, f)
+
+    if __name__ == "__main__":
+        main()

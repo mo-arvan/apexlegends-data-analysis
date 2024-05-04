@@ -4,8 +4,10 @@ import os
 import pickle
 import re
 from argparse import ArgumentParser
+
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
@@ -24,23 +26,57 @@ def merge_damage(event_text):
         distance = float(match.group("distance"))
         return damage, target, weapon, distance
     else:
-        logger.warning(f"Event text {event_text} did not match the pattern")
+        logger.debug(f"Event text {event_text} did not match the pattern")
         return None, None, None, None
 
 
-def process_events(game_data_tuple, init_data_dict):
-    game_id, game_events, last_event_id, events_location = game_data_tuple
+def normalize_weapon_name(weapon):
+    return weapon.lower().replace(" ", "")
+
+
+def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
+    game_events = game_data_dict["events"]
+    last_event_id = game_data_dict["lastEventId"]
+    events_location = game_data_dict["eventsLocations"]
+
+    if len(game_events) != len(events_location):
+        game_events = [p for g in game_events for p in g]
+
+        if len(game_events) != len(events_location):
+            logger.debug(f"Mismatch in the number of events and events location for {game_hash}")
 
     weapon_set = set()
 
-    ammo_type_to_weapon_dict = {"Light": ["P2020", "RE-45", "Alternator", "R-99", "C.A.R.", "R-301"],
-                                "Heavy": ["Hemlok", "Flatline", "G7", "Spitfire", "C.A.R.", "30-30"],
-                                "Energy": ["Triple Take", "L-Star", "Volt", "Havoc", "Devotion"],
-                                "Shotgun": ["Mastiff", "EVA-8", "Peacekeeper", "Mozambique"],
-                                "Sniper": ["Kraber", "Sentinel", "Wingman", "Longbow", "Charge Rifle", ]}
-    invalid_weapons = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"', 'War Club Melee',
-                       'Rolling Thunder', 'Defensive Bombardment', 'Frag Grenade', 'Missile Swarm',
-                       'Energy Barricade', 'Thermite Grenade', 'Arc Star', ]
+    #
+
+    ammo_type_to_weapon_dict_base = {"Light": ["P2020", "RE-45", "Alternator", "R-99", "CAR", "R-301", 'G7 Scout'],
+                                     "Heavy": ["Hemlok", "Flatline", "Spitfire", "CAR", "30-30", 'Rampage', "Prowler"],
+                                     "Energy": ["Triple Take", "L-Star", "Volt", 'HAVOC', "Devotion", 'Nemesis',
+                                                'L-STAR'],
+                                     "Shotgun": ["Mastiff", "EVA-8", "Peacekeeper", "Mozambique"],
+                                     "Sniper": ["Kraber", "Sentinel", "Wingman", "Longbow", "Charge Rifle"],
+                                     "Special": ["Kraber", 'Bocek', 'Minigun', "Sniper's Mark"]
+                                     }
+    invalid_weapons_base = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"', 'War Club Melee',
+                            'Rolling Thunder', 'Defensive Bombardment', 'Frag Grenade', 'Missile Swarm',
+                            'Energy Barricade', 'Thermite Grenade', 'Arc Star', 'Smoke Launcher', 'Creeping Barrage',
+                            'Smoke Launcher', 'Suzaku Melee', 'Perimeter Security', 'Piercing Spikes', 'The Motherlode',
+                            'Knuckle Cluster', 'Cold Steel Melee', 'Melee', 'Gravity Maw', 'Riot Drill',
+                            'Wrecking Ball', 'Castle Wall', 'Biwon Blade Melee', 'Showstoppers Melee', 'Killed',
+                            'Garra De Alanza Melee', 'Problem Solver Melee', "Arc Snare", "Raven's Bite Melee",
+                            'Gravity Maw Melee', "Showstoppers", 'Silence', 'Mobile Shield', 'Strongest Link']
+
+    invalid_weapons = []
+    for i_w in invalid_weapons_base:
+        invalid_weapons.append(i_w)
+        invalid_weapons.append(normalize_weapon_name(i_w))
+
+    ammo_type_to_weapon_dict = {}
+    for ammo_type, weapons in ammo_type_to_weapon_dict_base.items():
+        ammo_type_to_weapon_dict[ammo_type] = []
+        for weapon in weapons:
+            ammo_type_to_weapon_dict[ammo_type].append(weapon)
+            ammo_type_to_weapon_dict[ammo_type].append(normalize_weapon_name(weapon))
 
     # Used x26  Energy Ammo (137 ➟ 111)
     # player id, event id, event name, event time, event detail, event x, event y, event time in minutes and seconds
@@ -64,7 +100,6 @@ def process_events(game_data_tuple, init_data_dict):
         #
         # ammo_used_events = player_events_df[player_events_df["event_type"] == "ammoUsed"]
 
-
         max_damage_time_diff = 10
         max_ammo_used_time_diff = 10
         merged_damage_events = []
@@ -80,7 +115,8 @@ def process_events(game_data_tuple, init_data_dict):
 
                     merge_with_last = False
 
-                    if weapon in invalid_weapons:
+                    if weapon in invalid_weapons or normalize_weapon_name(
+                            weapon) in invalid_weapons or "Melee" in weapon:
                         continue
                     weapon_set.add(weapon)
 
@@ -96,7 +132,8 @@ def process_events(game_data_tuple, init_data_dict):
                                 if time_diff <= max_damage_time_diff:
                                     merge_with_last = True
                                 elif time_diff < 2 * max_damage_time_diff:
-                                    logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                                    # logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                                    pass
                             else:
                                 # logger.warning(f"Last event is not a damage event for {weapon}")
                                 pass
@@ -142,9 +179,16 @@ def process_events(game_data_tuple, init_data_dict):
                             if time_diff <= max_ammo_used_time_diff:
                                 last_damage_event["ammo_used"] = ammo_count
                             else:
-                                logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
+                                # logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
+                                pass
 
         game_damage_events.extend(merged_damage_events)
+
+    game_damage_df = pd.DataFrame(game_damage_events)
+
+    game_damage_df["game_hash"] = game_hash
+
+    game_damage_df.to_parquet(os.path.join(output_dir, f"{game_hash}.parquet"))
 
     # game_damage_events = pd.DataFrame(game_damage_events)
     #
@@ -158,41 +202,77 @@ def process_events(game_data_tuple, init_data_dict):
     #
     # player_data = game_events[player_data_index]
 
-    logger.info(f"weapon_set: {weapon_set}")
-    return game_damage_events
+    all_weapons = [w for ww in ammo_type_to_weapon_dict.values() for w in ww]
+    weapon_set = list(
+        filter(lambda x: x not in all_weapons and normalize_weapon_name(x) not in all_weapons, weapon_set))
+    if len(weapon_set) > 0:
+        logger.debug(f"weapon_set: {weapon_set}")
+    # return game_damage_events
+
+
+def read_events(event_files, events_dir):
+    for file_name in event_files:
+        with open(os.path.join(events_dir, file_name), "rb") as f:
+            yield file_name[:-4], pickle.load(f)
 
 
 def main():
     aug_parser = ArgumentParser()
-    aug_parser.add_argument("--events_path", default="data/events.pkl")
+    aug_parser.add_argument("--events_dir", default="data/events")
     aug_parser.add_argument("--init_data_dir", default="data/algs_games/init")
+    aug_parser.add_argument("--output_dir", default="data/events_processed")
+    aug_parser.add_argument("--damage_events_file", default="data/damage_events.parquet")
     aug_parser.add_argument("--debug", action="store_true", default=True)
 
     args = aug_parser.parse_args()
-    events_path = args.events_path
+    events_dir = args.events_dir
+    output_dir = args.output_dir
+    damage_events_file = args.damage_events_file
     debug = args.debug
 
-    logger.info(f"Reading events from {events_path}")
-    with open(events_path, "rb") as f:
-        events_list = pickle.load(f)
-    logger.info(f"Read {len(events_list)} events")
+    event_files = os.listdir(events_dir)
+    logger.info(f"Reading events from {events_dir}")
 
-    logger.info(f"Reading init data from {args.init_data_dir}")
-    init_dict = {}
-    for file_name in os.listdir(args.init_data_dir):
-        with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-            init_dict[file_name[:-5]] = json.load(f)
-    #
-    # init_df = pd.DataFrame(init_dict.values())
+    existing_files = os.listdir(output_dir)
+    existing_files = [f.split(".")[0] for f in existing_files]
 
-    logger.info(f"Read {len(init_dict)} init files")
+    event_files = [f for f in event_files if f[:-4] not in existing_files]
+    num_events = len(event_files)
 
-    events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
+    if num_events > 0:
+        events_gen = read_events(event_files, events_dir)
 
-    logger.info("Processing events")
-    for e in events_list:
-        if e[0] in init_dict:
-            process_events(e, init_dict[e[0]])
+        logger.info(f"Read {num_events} events")
+
+        logger.info(f"Reading init data from {args.init_data_dir}")
+        init_dict = {}
+        for file_name in os.listdir(args.init_data_dir):
+            with open(os.path.join(args.init_data_dir, file_name), "r") as f:
+                init_dict[file_name[:-5]] = json.load(f)
+        #
+        # init_df = pd.DataFrame(init_dict.values())
+
+        logger.info(f"Read {len(init_dict)} init files")
+
+        # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
+
+        logger.info("Processing events")
+        for e in tqdm(events_gen, total=num_events):
+            if e[0] in init_dict:
+                game_hash, game_data_tuple = e
+                process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
+
+    logger.info("Merging all the parquet files into a single file")
+
+    # merging all the parquet files into a single file
+    all_files = os.listdir(output_dir)
+    all_files = [f for f in all_files if f.endswith(".parquet")]
+    all_files = [os.path.join(output_dir, f) for f in all_files]
+    all_files = [pd.read_parquet(f) for f in all_files]
+    damage_df = pd.concat(all_files)
+    damage_df.to_parquet(damage_events_file, index=False)
+
+    logger.info("Done")
 
 
 if __name__ == "__main__":
