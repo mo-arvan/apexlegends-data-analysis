@@ -108,7 +108,7 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
     for api_name in players_endpoints:
         api_download_dir = f"{algs_games_dir}/{api_name}"
         downloaded_files = [f.split(".")[0] for f in os.listdir(api_download_dir)]
-        missing_games = game_df.loc[~game_df["game_id"].isin(downloaded_files)]
+        missing_games = game_df.loc[~game_df["game_id"].isin(downloaded_files)].copy()
         if len(missing_games) == 0:
             continue
         missing_games.sort_values("game_timestamp", inplace=True, ascending=False)
