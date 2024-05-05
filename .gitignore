@@ -5,6 +5,8 @@ data/local
 /data/algs_games/getPlayerEvents
 /docs/local/
 /data/events_processed/
+/*/local
+/pages/local
 /data/events/
 
 
@@ -175,3 +177,4 @@ cython_debug/
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+/pages/local/
