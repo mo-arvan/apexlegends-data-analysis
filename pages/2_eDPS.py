@@ -19,10 +19,11 @@ st.set_page_config(
     page_title="Gun Meta Analysis",
     page_icon="🧊",
     layout="wide",
-    # initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
     menu_items={
     }
 )
+st.sidebar.title("Gun Meta Analysis")
 with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df = data_helper.load_data()
 
@@ -33,6 +34,8 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     chart_title = f'Effective DPS'
 
     dps_df["accuracy_quantile"] = dps_df["cdf"].apply(lambda x: round(x * 100, 2))
+
+    x_axis, y_axis = None, None
 
     if chart_x_axis == "Accuracy Quantile (%)":
         x_axis = alt.X('accuracy_quantile',
@@ -49,7 +52,7 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
                        axis=alt.Axis(title='Damage Dealt'),
                        scale=alt.Scale(zero=False))
 
-    dps_line = alt.Chart(dps_df).mark_line(
+    dps_line = alt.Chart(dps_df).mark_line(interpolate='step-before'
     ).encode(
         x=x_axis,
         y=y_axis,
@@ -334,7 +337,8 @@ with options_container:
                                     index=0, key='x_axis')
     with options_rows[2][1]:
         chart_y_axis = st.selectbox('Y Axis:', ["eDPS",
-                                                "Damage Dealt", ],
+                                                "Damage Dealt",
+                                                "Rank"],
                                     index=0, key='y_axis')
     with options_rows[2][1]:
         # selected_stock = st.selectbox('Stock:', chart_config.stock_list, index=2, key='stock')

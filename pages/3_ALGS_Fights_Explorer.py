@@ -213,21 +213,20 @@ def accuracy_plots_builder(weapons_data_df, top_k):
 
 fights_df_slice = fights_df  # .head(1000)
 
+tournaments = (fights_df[['tournament_full_name', "tournament_region", 'game_timestamp']]
+               .groupby(['tournament_full_name', "tournament_region"]).
+               agg(max_timestamp=('game_timestamp', 'max'))).reset_index()
+tournaments = tournaments.sort_values(by="max_timestamp", ascending=False)
+
+tournaments_order = tournaments["tournament_full_name"].tolist()
+
 order_dict = {
-    "tournament_full_name": [
-        'Pro League - Year 4, Split 1',
-        'ALGS Championship - Year 3, Split 2',
-        'LCQ - Year 3, Split 2',
-        'ALGS Playoffs - Year 3, Split 2',
-        'Pro League - Year 3, Split 2',
-        'ALGS Playoffs - Year 3, Split 1',
-        'Pro League - Year 3, Split 1',
-    ],
+    "tournament_full_name": tournaments_order,
 }
 
 default_selection = {
-    "tournament_full_name": [order_dict["tournament_full_name"][0]],
-    "tournament_region": ["NA"],
+    "tournament_full_name": [tournaments_order[0]],
+    # "tournament_region": ["NA"],
     "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG"],
     "accuracy": (0, 100),
     "top_k": 20,
@@ -237,7 +236,7 @@ default_selection = {
 
 filters_dict = {
     "tournament_full_name": "Tournament",
-    "tournament_region": "Region",
+    # "tournament_region": "Region",
     "tournament_day": "Day",
     "player_name": "Player",
     "weapon_name": "Weapon",
