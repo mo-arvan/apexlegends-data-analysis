@@ -136,7 +136,7 @@ def main():
     existing_files = os.listdir(output_dir)
     existing_files = [f[:-4] for f in existing_files if f.endswith(".pkl")]
 
-    event_file_path_list = [(events_data_dir, file_name) for file_name in os.listdir(events_data_dir) if
+    event_file_path_list = [file_name for file_name in os.listdir(events_data_dir) if
                             file_name[:-5] not in existing_files]
     events_total = len(event_file_path_list)
     if events_total != 0:
@@ -146,7 +146,7 @@ def main():
         #                                                             event_file_path_list,
         #                                                             max_workers=16)
 
-        game_events_list = read_events(events_data_dir)
+        game_events_list = read_events(event_file_path_list, events_data_dir)
 
         # init_dict = {}
         # for file_name in os.listdir(args.init_data_dir):
@@ -169,6 +169,7 @@ def main():
     # logger.info(f"Saving events to data/events.pkl")
     # with open("data/events.pkl", "wb") as f:
     #     pickle.dump(events_list, f)
+
 
 if __name__ == "__main__":
     main()

@@ -4,3 +4,4 @@ altair
 streamlit-extras
 streamlit-dynamic-filters
 st-btn-group
+numpy
