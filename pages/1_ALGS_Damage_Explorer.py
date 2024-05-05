@@ -1,9 +1,8 @@
 import logging
 
 import altair as alt
-import numpy as np
-import streamlit as st
 import plotly.express as px
+import streamlit as st
 
 import src.data_helper as data_helper
 
@@ -23,13 +22,6 @@ st.set_page_config(
         # 'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
-
-
-@st.cache_data
-def get_data():
-    logger.info("Cache miss. Loading data from disk...")
-    return data_helper.get_damage_data()
-
 
 logger.info("Loading data...")
 # with st.spinner("Loading data..."):
@@ -252,19 +244,8 @@ tournaments = (algs_games_df[['tournament_full_name', "tournament_region", 'game
                agg(max_timestamp=('game_timestamp', 'max'))).reset_index()
 tournaments = tournaments.sort_values(by="max_timestamp", ascending=False)
 
-tournaments_order = tournaments["tournament_full_name"].tolist()
+tournaments_order = tournaments["tournament_full_name"].unique().tolist()
 
-# order_dict = {
-#     "tournament_full_name": [
-#         'Pro League - Year 4, Split 1',
-#         'ALGS Championship - Year 3, Split 2',
-#         'LCQ - Year 3, Split 2',
-#         'ALGS Playoffs - Year 3, Split 2',
-#         'Pro League - Year 3, Split 2',
-#         'ALGS Playoffs - Year 3, Split 1',
-#         'Pro League - Year 3, Split 1',
-#     ],
-# }
 weapon_class_list = sorted(gun_stats_df["class"].unique().tolist())
 
 default_selection = {
@@ -289,14 +270,7 @@ filters_dict = {
     "game_num": "Game #",
 }
 
-# dynamic_filters = DynamicFilters(fights_df_slice,
-#                                  filters_name="algs_filters",
-#                                  filters_dict=filters_dict,
-#                                  order_dict=order_dict,
-#                                  default_filters=default_selection, )
-
 st.sidebar.write("Apply the filters in any order")
-# dynamic_filters.display_filters(location="sidebar")
 
 selected_tournament = st.sidebar.selectbox("Tournament",
                                            tournaments_order,
@@ -308,6 +282,15 @@ if selected_tournament is None:
     st.stop()
 
 damage_events_df = data_helper.get_damage_data(selected_tournament)
+
+region_list = algs_games_df[algs_games_df["tournament_full_name"] == selected_tournament][
+    "tournament_region"].unique().tolist()
+
+region_list = sorted(region_list)
+
+selected_region = st.sidebar.multiselect("Region",
+                                         region_list,
+                                         key="selected_region")
 
 game_days = sorted(damage_events_df["tournament_day"].unique().tolist())
 
@@ -396,17 +379,9 @@ if len(selected_weapons) == 0:
 
 damage_events_filtered_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]
 
-
-
-markdown_message_list = [f"**Warning**: attempting to load {len(damage_events_filtered_df)} rows. \n",
-                         "Loading this many rows may take a long time. Please apply more filters to reduce the number of rows.\n",
-                         "Alternatively, check the 'Force Load Data' checkbox to load the data."]
-
-
 plots, raw_data = damage_plot_builder(damage_events_filtered_df)
 
 st.altair_chart(plots[1], use_container_width=True)
-
 
 expander = st.expander(label='Raw Data')
 expander.dataframe(raw_data[[
