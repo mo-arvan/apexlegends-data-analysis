@@ -221,13 +221,13 @@ def main():
     aug_parser.add_argument("--events_dir", default="data/events")
     aug_parser.add_argument("--init_data_dir", default="data/algs_games/init")
     aug_parser.add_argument("--output_dir", default="data/events_processed")
-    aug_parser.add_argument("--damage_events_file", default="data/damage_events.parquet")
+    aug_parser.add_argument("--damage_events_dir", default="data/tournament_damage_events")
     aug_parser.add_argument("--debug", action="store_true", default=True)
 
     args = aug_parser.parse_args()
     events_dir = args.events_dir
     output_dir = args.output_dir
-    damage_events_file = args.damage_events_file
+    damage_events_dir = args.damage_events_dir
     debug = args.debug
 
     event_files = os.listdir(events_dir)
@@ -238,6 +238,12 @@ def main():
 
     event_files = [f for f in event_files if f[:-4] not in existing_files]
     num_events = len(event_files)
+    # 52dd387d9d52ec001940a8c175437335
+
+    init_dict = {}
+    for file_name in os.listdir(args.init_data_dir):
+        with open(os.path.join(args.init_data_dir, file_name), "r") as f:
+            init_dict[file_name[:-5]] = json.load(f)
 
     if num_events > 0:
         events_gen = read_events(event_files, events_dir)
@@ -262,7 +268,7 @@ def main():
                 game_hash, game_data_tuple = e
                 process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
 
-    logger.info("Merging all the parquet files into a single file")
+    logger.info("Merging all the parquet files into one file per tournament")
 
     # merging all the parquet files into a single file
     all_files = os.listdir(output_dir)
@@ -270,7 +276,88 @@ def main():
     all_files = [os.path.join(output_dir, f) for f in all_files]
     all_files = [pd.read_parquet(f) for f in all_files]
     damage_df = pd.concat(all_files)
-    damage_df.to_parquet(damage_events_file, index=False)
+
+    algs_games_df = pd.read_parquet("data/algs_game_list.parquet")
+    gun_stats_df = pd.read_csv("data/guns_stats.csv")
+
+    def fix_weapon_name(name):
+        relpace_dict = {
+            # "R-99": "R99",
+            "Alternator": "Alternator SMG",
+            'EVA-8': "EVA-8 Auto",
+            'CAR': "C.A.R. SMG",
+            "Prowler": "Prowler Burst PDW",
+            "Volt": "Volt SMG",
+            "R-99": "R-99 SMG",
+            '30-30': "30-30 Repeater",
+            'Hemlok': "Hemlok Burst AR",
+            'R-301': "R-301 Carbine",
+            'Flatline': "VK-47 Flatline",
+            'Mastiff': "Mastiff Shotgun",
+            'Mozambique': "Mozambique Shotgun",
+            'Rampage': "Rampage LMG",
+            'RE-45': "RE-45 Auto",
+            "Spitfire": "M600 Spitfire",
+            'HAVOC': "HAVOC Rifle",
+            'Nemesis': 'Nemesis Burst AR',
+            'Bocek': 'Bocek Compound Bow',
+            "Longbow": "Longbow DMR",
+            "Kraber": "Kraber .50-Cal Sniper",
+            "Devotion": "Devotion LMG",
+            'ChargeRifle': "Charge Rifle",
+            "TripleTake": "Triple Take",
+            "L-STAR": "L-STAR EMG",
+            "G7Scout": "G7 Scout",
+            "Sniper'sMark": "Sniper's Mark",
+        }
+        if name in relpace_dict:
+            name = relpace_dict[name]
+        return name
+
+    damage_df["weapon"] = damage_df["weapon"].apply(fix_weapon_name)
+
+    damage_weapon_names = damage_df["weapon"].unique().tolist()
+
+    stats_weapon_names = gun_stats_df["weapon_name"].unique().tolist()
+
+    missing_weapon_names = [w for w in damage_weapon_names if w not in stats_weapon_names]
+
+    logger.debug(f"Missing weapon names: {missing_weapon_names}")
+    # print(missing_weapon_names)
+    # print(stats_weapon_names)
+
+    damage_df.rename(columns={"weapon": "weapon_name",
+                              "game_hash": "game_id"},
+                     inplace=True)
+
+    damage_df["distance_median"] = damage_df["distance"].apply(lambda x: np.median(x))
+    damage_df["hit_count"] = damage_df["damage"].apply(lambda x: len(x))
+    damage_df["damage_sum"] = damage_df["damage"].apply(lambda x: sum(x))
+
+    player_hash_to_name = [(game["gameID"],
+                            player["nucleusHash"][:32],
+                            player["playerName"],
+                            player["teamName"],
+                            # game["timestamp"]
+                            ) for
+                           game in init_dict.values() for player in game["players"]]
+    player_hash_df = pd.DataFrame(player_hash_to_name, columns=["game_id", "player_hash", "player_name", "team_name",
+                                                                # "timestamp"
+                                                                ])
+
+    damage_df = damage_df.merge(algs_games_df,
+                                on=["game_id"], how="inner")
+
+    damage_df = damage_df.merge(player_hash_df,
+                                on=["game_id", "player_hash"], how="inner")
+
+    tournaments_list = damage_df["tournament_full_name"].unique().tolist()
+    for tournament in tournaments_list:
+        normalized_name = tournament.lower().replace(" ", "_")
+        tournament_df = damage_df[damage_df["tournament_full_name"] == tournament]
+        tournament_df.to_parquet(os.path.join(damage_events_dir, f"{normalized_name}.parquet"))
+
+    # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
 
     logger.info("Done")
 

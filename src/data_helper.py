@@ -1,9 +1,8 @@
 import csv
+import logging
 
 import pandas as pd
 import streamlit as st
-
-import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -42,6 +41,16 @@ def get_fights_data():
     fights_df = fights_df.merge(algs_games_df, on=["game_id"], how="inner")
 
     return fights_df
+
+
+@st.cache_data
+def get_damage_data(selected_tournament):
+    logger.info("Loading damage data")
+    normalized_name = selected_tournament.lower().replace(" ", "_")
+
+    damage_events_df = pd.read_parquet(f"data/tournament_damage_events/{normalized_name}.parquet")
+
+    return damage_events_df
 
 
 @st.cache_data

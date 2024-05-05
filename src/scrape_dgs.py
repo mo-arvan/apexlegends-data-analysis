@@ -29,7 +29,7 @@ def scrape_game_endpoints(game_df, algs_games_dir):
     # API Endpoints with names
     game_endpoints = {
         "init": "qt=init",
-        # "getFights": "qt=getFights",
+        "getFights": "qt=getFights",
         # "getReplay": "getReplay",
 
         # "getRankings": "qt=getRankings&rankingsBy=some_value&statsType=some_value",

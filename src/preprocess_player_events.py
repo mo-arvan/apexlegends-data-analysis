@@ -103,9 +103,9 @@ def read_event(base_dir_file_name_tuple):
     return base_file_name, file_content
 
 
-def read_events(events_data_dir):
-    for file_name in os.listdir(events_data_dir):
-        with open(os.path.join(events_data_dir, file_name), "r") as f:
+def read_events(event_files, events_dir):
+    for file_name in event_files:
+        with open(os.path.join(events_dir, file_name), "r") as f:
             yield file_name[:-5], json.load(f)
 
 
@@ -139,28 +139,30 @@ def main():
     event_file_path_list = [(events_data_dir, file_name) for file_name in os.listdir(events_data_dir) if
                             file_name[:-5] not in existing_files]
     events_total = len(event_file_path_list)
-    logger.info(f"Building events generator")
-    # game_events_dict = parallel_helper.run_in_parallel_io_bound(read_event,
-    #                                                             event_file_path_list,
-    #                                                             max_workers=16)
+    if events_total != 0:
+        logger.info(f"Processing {events_total} games")
+        logger.info(f"Building events generator")
+        # game_events_dict = parallel_helper.run_in_parallel_io_bound(read_event,
+        #                                                             event_file_path_list,
+        #                                                             max_workers=16)
 
-    game_events_list = read_events(events_data_dir)
+        game_events_list = read_events(events_data_dir)
 
-    # init_dict = {}
-    # for file_name in os.listdir(args.init_data_dir):
-    #     with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-    #         init_dict[file_name[:-5]] = json.load(f)
-    #
-    # init_df = pd.DataFrame(init_dict.values())
-    logger.info(f"Processing {events_total} games")
-    # events_list = parallel_helper.run_in_parallel_cpu_bound(parse_events,
-    #                                                         game_events_list,
-    #                                                         total=events_total,
-    #                                                         max_workers=12)
+        # init_dict = {}
+        # for file_name in os.listdir(args.init_data_dir):
+        #     with open(os.path.join(args.init_data_dir, file_name), "r") as f:
+        #         init_dict[file_name[:-5]] = json.load(f)
+        #
+        # init_df = pd.DataFrame(init_dict.values())
+        logger.info(f"Processing {events_total} games")
+        # events_list = parallel_helper.run_in_parallel_cpu_bound(parse_events,
+        #                                                         game_events_list,
+        #                                                         total=events_total,
+        #                                                         max_workers=12)
 
-    # logger.info(f"Processed {len(events_list)} games")
-    for game_events in tqdm(game_events_list, total=events_total):
-        parse_events(game_events)
+        # logger.info(f"Processed {len(events_list)} games")
+        for game_events in tqdm(game_events_list, total=events_total):
+            parse_events(game_events)
 
     end_time = time.perf_counter()
     logger.info(f"Finished in {end_time - start_time:0.2f} seconds")
@@ -168,5 +170,5 @@ def main():
     # with open("data/events.pkl", "wb") as f:
     #     pickle.dump(events_list, f)
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
