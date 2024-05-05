@@ -55,11 +55,12 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
                                                 'L-STAR'],
                                      "Shotgun": ["Mastiff", "EVA-8", "Peacekeeper", "Mozambique"],
                                      "Sniper": ["Kraber", "Sentinel", "Wingman", "Longbow", "Charge Rifle"],
-                                     "Special": ["Kraber", 'Bocek', 'Minigun', "Sniper's Mark"]
+                                     "Special": ["Kraber", 'Bocek', 'Minigun', "Sniper's Mark"],
+                                     "Ordinance": ["Frag Grenade", "Thermite Grenade", "Arc Star",]
                                      }
     invalid_weapons_base = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"', 'War Club Melee',
-                            'Rolling Thunder', 'Defensive Bombardment', 'Frag Grenade', 'Missile Swarm',
-                            'Energy Barricade', 'Thermite Grenade', 'Arc Star', 'Smoke Launcher', 'Creeping Barrage',
+                            'Rolling Thunder', 'Defensive Bombardment', 'Missile Swarm',
+                            'Energy Barricade',  'Smoke Launcher', 'Creeping Barrage',
                             'Smoke Launcher', 'Suzaku Melee', 'Perimeter Security', 'Piercing Spikes', 'The Motherlode',
                             'Knuckle Cluster', 'Cold Steel Melee', 'Melee', 'Gravity Maw', 'Riot Drill',
                             'Wrecking Ball', 'Castle Wall', 'Biwon Blade Melee', 'Showstoppers Melee', 'Killed',
