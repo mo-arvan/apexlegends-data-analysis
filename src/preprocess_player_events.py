@@ -79,7 +79,7 @@ def parse_events(game_data_tuple):
                                                             total=len(game_events),
                                                             disable=True)
 
-    game_events_merged["events"] = game_events
+    game_events_merged["events"] = [gg for g in game_events for gg in g]
 
     with open(f"data/events/{game_id}.pkl", "wb") as f:
         pickle.dump(game_events_merged, f)

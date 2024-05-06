@@ -1,6 +1,7 @@
 import logging
 
 import streamlit as st
+
 import src.data_helper as data_helper
 
 logging.basicConfig(level=logging.INFO)
@@ -55,6 +56,7 @@ def common_filters(algs_games_df, gun_stats_df):
 
     damage_events_df = data_helper.get_damage_data(selected_tournament)
 
+
     region_list = algs_games_df[algs_games_df["tournament_full_name"] == selected_tournament][
         "tournament_region"].unique().tolist()
 
@@ -63,6 +65,9 @@ def common_filters(algs_games_df, gun_stats_df):
     selected_region = st.sidebar.multiselect("Region",
                                              region_list,
                                              key="selected_region")
+
+    if len(selected_region) != 0:
+        damage_events_df = damage_events_df[damage_events_df["tournament_region"].isin(selected_region)]
 
     game_days = sorted(damage_events_df["tournament_day"].unique().tolist())
 
@@ -148,10 +153,7 @@ def common_filters(algs_games_df, gun_stats_df):
                                               default=preselected_weapons,
                                               key="selected_weapons")
 
-    if len(selected_weapons) == 0:
-        st.error("Please select at least one weapon.")
-        st.stop()
+    if len(selected_weapons) != 0:
+        damage_events_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]
 
-    damage_events_filtered_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]
-
-    return damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons
+    return damage_events_df, selected_tournament, selected_region, selected_days, selected_weapons

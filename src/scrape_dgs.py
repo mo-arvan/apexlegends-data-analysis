@@ -29,7 +29,7 @@ def scrape_game_endpoints(game_df, algs_games_dir):
     # API Endpoints with names
     game_endpoints = {
         "init": "qt=init",
-        "getFights": "qt=getFights",
+        # "getFights": "qt=getFights",
         # "getReplay": "getReplay",
 
         # "getRankings": "qt=getRankings&rankingsBy=some_value&statsType=some_value",
@@ -117,11 +117,14 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
         progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
         for index, row in missing_games.iterrows():
             game_id = row["game_id"]
+
+            if len(init_dict[game_id]) == 0:
+                continue
+
             players_hash_list = [player["nucleusHash"] for player in init_dict[row["game_id"]]["players"]]
             file_name = f"{algs_games_dir}/{api_name}/{row['game_id']}.json"
             all_players_list = []
-            for i in range(0, len(players_hash_list), 3):
-                player_hash_str = ",".join(players_hash_list[i:i + 3])
+            for player_hash_str in players_hash_list:
                 # DGS_API_URL+"api?gameID="+gameId+"&qt=getPlayerEvents&nucleusHash="+e
                 full_endpoint_url = (DGS_API_URL +
                                      f"api?gameID={game_id}&qt={api_name}&nucleusHash={player_hash_str}")
