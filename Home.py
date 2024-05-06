@@ -10,4 +10,4 @@ st.set_page_config(
 with st.spinner("Redirecting to the Gun Meta in 3 seconds..."):
     time.sleep(3)
 
-    st.switch_page("pages/1_ALGS_Fights_Explorer.py")
+    st.switch_page("pages/1_ALGS_Damage_Explorer.py")
