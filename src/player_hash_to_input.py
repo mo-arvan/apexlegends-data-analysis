@@ -38,9 +38,15 @@ def main():
     else:
         hash_to_name_dict = {}
 
+    init_dict = dict(sorted(init_dict.items(), key=lambda x: int(x[1]["timestamp"]), reverse=True))
+
     hash_to_player_dict = {pp["nucleusHash"][:32]: pp["playerName"] for p in init_dict.values() for pp in p["players"]}
 
     hash_to_player_dict = {k: v for k, v in hash_to_player_dict.items() if k not in hash_to_name_dict}
+
+    hash_to_player_dict = dict(sorted(hash_to_player_dict.items(), key=lambda x: x[1]))
+
+    approximate_hash_to_player = []
 
     players_df = pd.read_csv(algs_players_file)
 
@@ -62,13 +68,18 @@ def main():
 
             if len(matching_players) == 1:
                 print(f"Matched {player_name} to {matching_players['Player ID'].values[0]}")
-                input_choice = input("Is this correct? (y/n): ")
-                if input_choice == "y":
-                    hash_to_name_dict[player_hash] = matching_players["Player ID"].values[0]
-                    with open(hash_to_name_file, "w") as f:
-                        json.dump(hash_to_name_dict, f, indent=2)
+                # input_choice = input("Is this correct? (y/n): ")
+                # if input_choice == "y":
+                # row = (player_hash, matching_players["Player ID"].values[0], player_name)
+                # approximate_hash_to_player.append(row)
+                hash_to_name_dict[player_hash] = matching_players["Player ID"].values[0]
+
+            elif len(matching_players) == 0:
+                print(f'"{player_hash}":"{player_name}",')
             else:
-                continue
+                print(f"Found {len(matching_players)} matching players for {player_name}")
+                for i, row in matching_players.iterrows():
+                    print(f"{i}: {row['Player ID']}")
                 # print(f"Found {len(matching_players)} matching players for {player_name}")
                 # for i, row in matching_players.iterrows():
                 #     print(f"{i}: {row['Player ID']}")
@@ -78,8 +89,13 @@ def main():
                 # else:
                 #     print("Skipping")
 
+    hash_to_name_dict = dict(sorted(hash_to_name_dict.items(), key=lambda x: x[1]))
     with open(hash_to_name_file, "w") as f:
         json.dump(hash_to_name_dict, f, indent=2)
+
+    app_df = pd.DataFrame(approximate_hash_to_player, columns=["hash", "player_name", "orig_player_name"])
+
+    app_df.to_csv("data/approximate_hash_to_player.csv", index=False)
 
     print("")
 
