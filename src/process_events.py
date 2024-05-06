@@ -38,12 +38,24 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
     game_events = game_data_dict["events"]
     last_event_id = game_data_dict["lastEventId"]
     events_location = game_data_dict["eventsLocations"]
+    player_hash_game_dict = {}
+    for i, player_event in enumerate(game_events):
+        player_hash = player_event["player_hash"][0][:32]
+
+        if player_hash in player_hash_game_dict:
+            if len(player_event) > len(player_hash_game_dict[player_hash]):
+                player_hash_game_dict[player_hash] = player_event
+            else:
+                continue
+        else:
+            player_hash_game_dict[player_hash] = player_event
 
     if len(game_events) != len(events_location):
-        game_events = [p for g in game_events for p in g]
+        logger.debug(f"Mismatch in the number of events and events location for {game_hash}")
 
-        if len(game_events) != len(events_location):
-            logger.debug(f"Mismatch in the number of events and events location for {game_hash}")
+    game_id = init_data_dict["gameID"]
+
+    players_hash_to_name_dict = {p["nucleusHash"][:32]: p["playerName"] for p in init_data_dict["players"]}
 
     weapon_set = set()
 
@@ -56,11 +68,11 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
                                      "Shotgun": ["Mastiff", "EVA-8", "Peacekeeper", "Mozambique"],
                                      "Sniper": ["Kraber", "Sentinel", "Wingman", "Longbow", "Charge Rifle"],
                                      "Special": ["Kraber", 'Bocek', 'Minigun', "Sniper's Mark"],
-                                     "Ordinance": ["Frag Grenade", "Thermite Grenade", "Arc Star",]
+                                     "Ordinance": ["Frag Grenade", "Thermite Grenade", "Arc Star", ]
                                      }
     invalid_weapons_base = ["Drone EMP", "Caustic Gas", 'Mobile Minigun "Sheila"', 'War Club Melee',
                             'Rolling Thunder', 'Defensive Bombardment', 'Missile Swarm',
-                            'Energy Barricade',  'Smoke Launcher', 'Creeping Barrage',
+                            'Energy Barricade', 'Smoke Launcher', 'Creeping Barrage',
                             'Smoke Launcher', 'Suzaku Melee', 'Perimeter Security', 'Piercing Spikes', 'The Motherlode',
                             'Knuckle Cluster', 'Cold Steel Melee', 'Melee', 'Gravity Maw', 'Riot Drill',
                             'Wrecking Ball', 'Castle Wall', 'Biwon Blade Melee', 'Showstoppers Melee', 'Killed',
@@ -87,11 +99,32 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
 
     game_damage_events = []
 
-    for player_events_df in game_events:
+    # hao_right_hash_id = "e8708d6c9f5cc598c97556fd2ec26091"
+    # dup_hashes = ["f72b99ddd0331ba9b6e8a62ead8560f1",
+    #               "db044f64168fd3cdb5372e81e1abafe5",
+    #               "0f7fa9ba55559a43d58327bf0661170a"]
+    #
+    # concat_events = pd.concat(game_events)
+    # concat_events = concat_events[concat_events["event_type"] == "playerDamaged"]
+    # concat_events = concat_events[concat_events["player_hash"].isin(dup_hashes)]
+    # concat_events.sort_values("event_id", inplace=True)
+    # concat_events.reset_index(drop=True, inplace=True)
+
+    for player_hash, player_events_df in player_hash_game_dict.items():
+        player_name = players_hash_to_name_dict[player_events_df["player_hash"][0][:32]]
+        # if player_hash == hao_right_hash_id:
+        #     logger.info(f"Processing events for {player_name}")
+
         used_damaged_events = player_events_df[
             np.logical_or(np.logical_and(player_events_df["event_type"] == "playerDamaged",
                                          player_events_df["target"] == "attacker"),
-                          player_events_df["event_type"] == "ammoUsed")]
+                          player_events_df["event_type"] == "ammoUsed")
+        ].copy()
+
+        # if player_hash in dup_hashes:
+        #     pass
+
+        used_damaged_events.drop_duplicates(subset=["event_id"], inplace=True)
 
         used_damaged_events = used_damaged_events.sort_values("event_timestamp")
         used_damaged_events = used_damaged_events.reset_index(drop=True)
@@ -113,6 +146,10 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
                     target = match.group("target")
                     weapon = match.group("weapon")
                     distance = float(match.group("distance"))
+
+                    if player_name == target:
+                        # logger.debug(f"Player {player_name} is the target of the damage event")
+                        continue
 
                     merge_with_last = False
 
@@ -161,7 +198,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
 
                         merged_damage_events.append(damage_dict)
                 else:
-                    logger.warning(f"Event text {event_text} did not match the pattern")
+                    logger.debug(f"Event text {event_text} did not match the pattern")
 
             elif row["event_type"] == "ammoUsed":
 
@@ -186,6 +223,8 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
         game_damage_events.extend(merged_damage_events)
 
     game_damage_df = pd.DataFrame(game_damage_events)
+
+    game_damage_df.sort_values(by=["event_timestamp"], inplace=True)
 
     game_damage_df["game_hash"] = game_hash
 
@@ -342,15 +381,36 @@ def main():
                             # game["timestamp"]
                             ) for
                            game in init_dict.values() for player in game["players"]]
-    player_hash_df = pd.DataFrame(player_hash_to_name, columns=["game_id", "player_hash", "player_name", "team_name",
+    player_hash_df = pd.DataFrame(player_hash_to_name, columns=["game_id",
+                                                                "player_hash",
+                                                                "player_name",
+                                                                "team_name",
                                                                 # "timestamp"
                                                                 ])
+
+    player_hash_df = player_hash_df.sort_values(by=["player_hash", "player_name", "team_name", "game_id"])
+
+    player_hash_df = player_hash_df.drop_duplicates(subset=["game_id", "player_hash"], keep="first")
 
     damage_df = damage_df.merge(algs_games_df,
                                 on=["game_id"], how="inner")
 
+    damage_df["player_hash"] = damage_df["player_hash"].apply(lambda x: x[:32])
+
+    # left = damage_df.merge(player_hash_df,
+    #                        on=["game_id", "player_hash"], how="left")
+    #
+    # left_missing = left[left["player_name"].isnull()]
+
     damage_df = damage_df.merge(player_hash_df,
                                 on=["game_id", "player_hash"], how="inner")
+
+    # damage_df["target_unique"] = damage_df["target"].apply(lambda x: set(x))
+    #
+    # # finding items that player is in the target list
+    # damage_df["is_target"] = damage_df.apply(lambda x: x["player_name"] in x["target_unique"], axis=1)
+    #
+    # incorrect_target = damage_df[damage_df["is_target"]]
 
     tournaments_list = damage_df["tournament_full_name"].unique().tolist()
     for tournament in tournaments_list:

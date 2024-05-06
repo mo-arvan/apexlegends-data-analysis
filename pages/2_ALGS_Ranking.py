@@ -35,21 +35,23 @@ damage_events_filtered_df, selected_tournament, selected_region, selected_days, 
 
 hit_count_median = int(damage_events_filtered_df["hit_count"].median())
 
-high_hit_threshold = st.sidebar.number_input("Ranking Minimum Hit Count",
-                                             min_value=1,
-                                             max_value=100,
-                                             value=hit_count_median,
-                                             key="high_hit_count")
+# median_damage_dealt = int(damage_events_filtered_df["damage_sum"].median())
 
-higher_than_threshold_data = damage_events_filtered_df.loc[damage_events_filtered_df["hit_count"] >= high_hit_threshold]
+minimum_damage = st.sidebar.number_input("Minimum Damage Dealt",
+                                         min_value=1,
+                                         max_value=1000,
+                                         value=100,
+                                         key="high_hit_count")
 
-player_ranking_data = damage_events_filtered_df[["player_name", "team_name", "hit_count"]]
+higher_than_threshold_data = damage_events_filtered_df.loc[damage_events_filtered_df["damage_sum"] >= minimum_damage]
+
+player_ranking_data = damage_events_filtered_df[["player_name", "team_name", "hit_count", "damage_sum"]]
 
 player_hit_count = player_ranking_data.groupby(["player_name", "team_name"]).agg(
     total_fights=("hit_count", "count"),
 ).reset_index()
 
-high_hit_count_players = player_ranking_data.loc[player_ranking_data["hit_count"] >= high_hit_threshold]
+high_hit_count_players = player_ranking_data.loc[player_ranking_data["damage_sum"] >= minimum_damage]
 
 high_hit_count_players_ranking = high_hit_count_players.groupby(["player_name", "team_name"]).agg(
     high_hit_count=("hit_count", "count"),
