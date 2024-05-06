@@ -27,66 +27,90 @@ def request_from_liquipedia(url):
     return response
 
 
+def filter_invalid_url(url):
+    if not url.startswith("/apexlegends/"):
+        return False
+
+    if "index.php" in url:
+        return False
+
+    invalid_starts = ["/apexlegends/File:", "/apexlegends/Category:", "/apexlegends/Template:", "/apexlegends/Help:", ]
+
+    if any([url.startswith(start) for start in invalid_starts]):
+        return False
+
+    return True
+
+
 def get_players_esports_profile():
-    latest_tournament_base_url = "https://liquipedia.net/apexlegends/Apex_Legends_Global_Series/2024/Split_1/Pro_League"
-    regions_list = ["North_America", "EMEA", "APAC_North", "APAC_South"]
+    data_dir = "data/liquidpedia"
+    # regions_list = ["North_America", "EMEA", "APAC_North", "APAC_South"]
+
+    url_set = []
+
+    for data_file in os.listdir(data_dir):
+        with open(os.path.join(data_dir, data_file), "r") as file:
+            players_table = file.read()
+
+        # <span class="mw-headline" id="Participants">Participants</span>
+        soup = BeautifulSoup(players_table, 'html.parser')
+
+        all_items = soup.find_all("a")
+
+        all_urls = [p["href"] for p in all_items if "href" in p.attrs]
+
+        all_urls = list(filter(filter_invalid_url, all_urls))
+
+        url_set.extend(all_urls)
+
+    url_set = sorted(list(set(url_set)))
 
     players_info_list = []
+    base_url = "https://liquipedia.net"
 
-    for region in regions_list:
-        region_url = latest_tournament_base_url + "/" + region
+    if os.path.exists("data/misc_urls.csv"):
+        misc_url_df = pd.read_csv("data/misc_urls.csv")
+        misc_url_list = misc_url_df["url"].tolist()
+    else:
+        misc_url_list = []
 
-        tournament_page = request_from_liquipedia(region_url)
+    url_set = list(filter(lambda x: x not in misc_url_list, url_set))
 
-        soup = BeautifulSoup(tournament_page.text, 'html.parser')
+    for url in tqdm(url_set):
+        file_name = f"data/players/{url.split('/')[2]}.json"
+        player_info_dict = {}
+        if os.path.exists(file_name):
+            with open(file_name, "r") as file:
+                player_info_dict = json.load(file)
+        else:
+            player_page = request_from_liquipedia(base_url + url)
+            player_soup = BeautifulSoup(player_page.text, 'html.parser')
+            # info_type = player_soup.find_all(class_="infobox-header-2")
+            # header = player_soup.find_all(class_="infobox-header")
+            info_box_list = player_soup.find_all(class_="fo-nttax-infobox")
+            player_info = next(filter(filter_player_info_box, info_box_list), None)
 
-        all_tables = soup.find_all(class_='wikitable')
+            if player_info is None:
+                misc_url_list.append(url)
+                continue
 
-        players_table = next(filter(filter_country_representation_table, all_tables), None)
+            player_info_dict["Player ID"] = (player_info.find(class_="infobox-header").text.
+                                             replace("[e][h]", "").replace("\xa0", "").strip())
 
-        if players_table is None:
-            print("No players table found")
+            for info in player_info.find_all(class_="infobox-description"):
+                key = info.text.replace(":", "").strip()
+                value = info.find_next_sibling().text.strip()
+                player_info_dict[key] = value
 
-        players_list = players_table.find_all("a")
+            # if len(list(header[0].children)) < 3:
+            #     continue
+            with open(file_name, "w") as file:
+                json.dump(player_info_dict, file, indent=2)
 
-        url_set = sorted(set([p["href"] for p in players_list if "index.php" not in p["href"]]))
+        players_info_list.append(player_info_dict)
 
-        base_url = "https://liquipedia.net"
-
-        for url in tqdm(url_set):
-            file_name = f"data/players/{url.split('/')[2]}.json"
-            player_info_dict = {}
-            if os.path.exists(file_name):
-                with open(file_name, "r") as file:
-                    player_info_dict = json.load(file)
-            else:
-                player_page = request_from_liquipedia(base_url + url)
-                player_soup = BeautifulSoup(player_page.text, 'html.parser')
-                info_type = player_soup.find_all(class_="infobox-header-2")
-                header = player_soup.find_all(class_="infobox-header")
-                if len(info_type) == 0 or info_type[0].text != 'Player Information':
-                    continue
-
-                info_box_list = player_soup.find_all(class_="fo-nttax-infobox")
-
-                player_info = next(filter(filter_player_info_box, info_box_list), None)
-
-                player_info_dict["Player ID"] = (player_info.find(class_="infobox-header").text.
-                                                 replace("[e][h]", "").replace("\xa0", "").strip())
-
-                for info in player_info.find_all(class_="infobox-description"):
-                    key = info.text.replace(":", "").strip()
-                    value = info.find_next_sibling().text.strip()
-                    player_info_dict[key] = value
-
-                if len(list(header[0].children)) < 3:
-                    continue
-                with open(file_name, "w") as file:
-                    json.dump(player_info_dict, file, indent=2)
-
-            players_info_list.append(player_info_dict)
-
-
+    misc_url_df = pd.DataFrame({"url": misc_url_list})
+    misc_url_df.to_csv("data/misc_urls.csv", index=False)
     players_df = pd.DataFrame(players_info_list)
     players_df.to_csv("data/algs_players.csv", index=False, quoting=csv.QUOTE_ALL)
 
