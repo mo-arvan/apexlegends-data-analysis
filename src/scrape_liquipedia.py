@@ -65,7 +65,6 @@ def get_players_esports_profile():
 
     url_set = sorted(list(set(url_set)))
 
-    players_info_list = []
     base_url = "https://liquipedia.net"
 
     if os.path.exists("data/misc_urls.csv"):
@@ -76,13 +75,15 @@ def get_players_esports_profile():
 
     url_set = list(filter(lambda x: x not in misc_url_list, url_set))
 
+    players_info_list = []
+    for file in os.listdir("data/players"):
+        with open(os.path.join("data/players", file), "r") as f:
+            players_info_list.append(json.load(f))
+
     for url in tqdm(url_set):
         file_name = f"data/players/{url.split('/')[2]}.json"
         player_info_dict = {}
-        if os.path.exists(file_name):
-            with open(file_name, "r") as file:
-                player_info_dict = json.load(file)
-        else:
+        if not os.path.exists(file_name):
             player_page = request_from_liquipedia(base_url + url)
             player_soup = BeautifulSoup(player_page.text, 'html.parser')
             # info_type = player_soup.find_all(class_="infobox-header-2")
@@ -107,7 +108,7 @@ def get_players_esports_profile():
             with open(file_name, "w") as file:
                 json.dump(player_info_dict, file, indent=2)
 
-        players_info_list.append(player_info_dict)
+            players_info_list.append(player_info_dict)
 
     misc_url_df = pd.DataFrame({"url": misc_url_list})
     misc_url_df.to_csv("data/misc_urls.csv", index=False)
