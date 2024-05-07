@@ -4,6 +4,8 @@ import logging
 import pandas as pd
 import streamlit as st
 
+import src.data_loader as data_loader
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -125,3 +127,27 @@ def load_data():
     gun_stats_df, sniper_stocks_df, standard_stocks_df = get_gun_stats()
 
     return gun_stats_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df
+
+
+@st.cache_data
+def get_hash_to_input_dict():
+    liquipedia_players_df = data_loader.get_liquipedia_players_df()
+    players_df = liquipedia_players_df[["Player ID", "Input"]]
+    esports_list = data_loader.get_esports_list()
+
+    desired_hash = "c47c3a177fce49fc512d3edffcd6fa99"
+
+    player_id_to_hash = [(p["esport_name"].lower(), hash) for p in esports_list for hash in
+                         p["hash"] if isinstance(p["esport_name"], str)]
+
+    player_id_to_hash_df = pd.DataFrame(player_id_to_hash, columns=["player_name", "hash"])
+
+    players_df["player_name"] = players_df["Player ID"].apply(lambda x: x.lower())
+
+    hash_to_input = player_id_to_hash_df.merge(players_df, on="player_name", how="left")
+
+    hash_to_input_dict = hash_to_input.set_index("hash")["Input"].to_dict()
+
+    # match = next((e for e in player_id_to_hash if desired_hash in e[1]), None)
+
+    return hash_to_input_dict
