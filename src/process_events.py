@@ -373,6 +373,7 @@ def main():
     damage_df["distance_median"] = damage_df["distance"].apply(lambda x: np.median(x))
     damage_df["hit_count"] = damage_df["damage"].apply(lambda x: len(x))
     damage_df["damage_sum"] = damage_df["damage"].apply(lambda x: sum(x))
+    damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
 
     player_hash_to_name = [(game["gameID"],
                             player["nucleusHash"][:32],
