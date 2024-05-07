@@ -118,8 +118,9 @@ expander.dataframe(higher_than_threshold_data[[
     "tournament_day",
     "game_title",
     "game_map",
+    "event_start_time",
     "weapon_name",
-    "class",
+    # "class",
     "target",
     "distance_median",
     "hit_count",
@@ -128,9 +129,7 @@ expander.dataframe(higher_than_threshold_data[[
     "distance",
     "damage",
     "event_time",
-
     "player_hash",
     "game_id",
-
 ]]
                    )

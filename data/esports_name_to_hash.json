@@ -1,0 +1,9307 @@
+[
+  {
+    "esport_name": "1Worst",
+    "hash": [
+      "42427c9d2a72bdb300659334eda33f7e",
+      "79ad093645add56ad3fb24c17776c27d",
+      "64b5e702cb7b2ddb46058d6de619f199"
+    ],
+    "alias_list": [
+      "1Worst",
+      "1Worst NOC",
+      "GFR_1Worst"
+    ]
+  },
+  {
+    "esport_name": "1ron",
+    "hash": [
+      "c3961fdace23b219e95f2a60db6cb4f0"
+    ],
+    "alias_list": [
+      "TIE 1ron",
+      "WL_1ron"
+    ]
+  },
+  {
+    "esport_name": "1tappy",
+    "hash": [
+      "4284f9cd97808a1d6f29c2463db726a6",
+      "1b11d17cbda4a859565d1af9e4dbf522"
+    ],
+    "alias_list": [
+      "1tappy",
+      "1tappy RID",
+      "KN 1tappy",
+      "Riddle 1tappy"
+    ]
+  },
+  {
+    "esport_name": "3Mz",
+    "hash": [
+      "9fe1d7e222f721f4174fe550cc10cdac",
+      "7b39b5afaf69db57adb841dbb56833f5"
+    ],
+    "alias_list": [
+      "3Mz",
+      "3Mz_o",
+      "3Mz_o DF",
+      "DF_3Mz",
+      "DF_3Mz_o"
+    ]
+  },
+  {
+    "esport_name": "4Miskam",
+    "hash": [
+      "b87d30320227717aa23ab1c496b26bd9"
+    ],
+    "alias_list": [
+      "2o2 4Miskam"
+    ]
+  },
+  {
+    "esport_name": "4rmy",
+    "hash": [
+      "132eb958ec62c74ba0c2178d65530d61"
+    ],
+    "alias_list": [
+      "4rmy",
+      "4rmy_o"
+    ]
+  },
+  {
+    "esport_name": "4rufa",
+    "hash": [
+      "081e1c11fe1f1d8086a3f93aebcec767",
+      "7b8efb2b80550ca1905753fcdbb7eb2e"
+    ],
+    "alias_list": [
+      "KN 4rufa",
+      "NK 4rufa",
+      "UL 4rufa",
+      "UL 4rufa NK"
+    ]
+  },
+  {
+    "esport_name": "5CG",
+    "hash": [
+      "fc9594ce833ba64ba1e8018931678883",
+      "db044f64168fd3cdb5372e81e1abafe5"
+    ],
+    "alias_list": [
+      "HAO 5CG",
+      "HAO_5CG",
+      "ORW_5CG"
+    ]
+  },
+  {
+    "esport_name": "788",
+    "hash": [
+      "112263bd6e30c2a2f9dca834a392133f"
+    ],
+    "alias_list": [
+      "DSK_788",
+      "RIG_788"
+    ]
+  },
+  {
+    "esport_name": "983kuma",
+    "hash": [
+      "18b66602d1b915a7ede3ffb77c9bf83e"
+    ],
+    "alias_list": [
+      "Vor_983kuma"
+    ]
+  },
+  {
+    "esport_name": "9impulse",
+    "hash": [
+      "903a5f7f8572685d123f197a087f813c",
+      "58c4ccf999b54f1aaf8c1d7fe72c2917"
+    ],
+    "alias_list": [
+      "9impulse",
+      "9impulse FRBV",
+      "AUR 9impulse",
+      "AURORA 9impulse",
+      "FIRE BEAVERS 9impulse",
+      "FIRE BEAVERS 9im\u0444ulse",
+      "FIRE BEAVERS Jokerge",
+      "FIREBEAVERS9impulse"
+    ]
+  },
+  {
+    "esport_name": "AJXNTHI",
+    "hash": [
+      "c94c4b2e15a0c091917de355b61ef698"
+    ],
+    "alias_list": [
+      "AJXNTHI",
+      "Adept AJXNTHI",
+      "SH AJXNTHI"
+    ]
+  },
+  {
+    "esport_name": "ASIAZXD",
+    "hash": [
+      "45719c93df7be843bd9dcc42fc038288",
+      "43583f1398cbb7025b410a8cb003605b"
+    ],
+    "alias_list": [
+      "ASIAZXD",
+      "ASlAZXD",
+      "IBG_ASIAZXD",
+      "TYK ASIAZXD",
+      "Twitch_ASIAZXD"
+    ]
+  },
+  {
+    "esport_name": "AZu",
+    "hash": [
+      "65fdcb72a668ad9044935263cf9b8dd7"
+    ],
+    "alias_list": [
+      "VK_AZu1997",
+      "WMFB_AZu"
+    ]
+  },
+  {
+    "esport_name": "Ail3iS",
+    "hash": [
+      "5659b7103007eb462ac574809e467f73"
+    ],
+    "alias_list": [
+      "xTs AIl3iS",
+      "xTs Ail3iS"
+    ]
+  },
+  {
+    "esport_name": "Aimbot",
+    "hash": [
+      "8e44223acaec402835046510abd64090",
+      "c6f47a69f0e7f125592b3da3cd9f9949",
+      "691029e470a77c968c0404d041b17fc6"
+    ],
+    "alias_list": [
+      "Aimbot",
+      "E36 Aimbot",
+      "E36_Aimbot"
+    ]
+  },
+  {
+    "esport_name": "AimbotP",
+    "hash": [
+      "c17522c0cb99465cbfc44127fe995658",
+      "fe71690e6f3d6625d5a049e42dfa4c91",
+      "d14e4132b750e8ba0c14aaaef0f88465"
+    ],
+    "alias_list": [
+      "AimbootP",
+      "AimbotP",
+      "GWAimbotP",
+      "GW_AimbotP",
+      "INF AimbotP"
+    ]
+  },
+  {
+    "esport_name": "AiriKannaLoveTi",
+    "hash": [
+      "f3692d6e80975c5f4a710a172826518e"
+    ],
+    "alias_list": [
+      "POS_AiriKannaLoveTi"
+    ]
+  },
+  {
+    "esport_name": "Akimboh",
+    "hash": [
+      "5235cf3a1d13733e1add63bc1a2d8c36"
+    ],
+    "alias_list": [
+      "Akimboh"
+    ]
+  },
+  {
+    "esport_name": "Akwaintance",
+    "hash": [
+      "2a0c460f2a944985775c8acee14ce842"
+    ],
+    "alias_list": [
+      "Akwaintance",
+      "GH Akwaintance",
+      "GHAkwaintance"
+    ]
+  },
+  {
+    "esport_name": "Albralelie",
+    "hash": [
+      "fc7d2e6f7a2860a5b13d62dbf7ee8aba"
+    ],
+    "alias_list": [
+      "Albralelie",
+      "FURIA_Albralelie",
+      "LAN Albralelie"
+    ]
+  },
+  {
+    "esport_name": "AlphaDraft",
+    "hash": [
+      "b58495991465195db8219da4b93bcceb"
+    ],
+    "alias_list": [
+      "ALPHADRAFT_",
+      "AlphaDraft",
+      "AlphaDraft_"
+    ]
+  },
+  {
+    "esport_name": "Amphy",
+    "hash": [
+      "65a3b123df546c46464f86d669a7380b",
+      "652c5bc243c2d9093a8f51101972d700",
+      "f4904db99e86237ee32a5cc9ab6324f2"
+    ],
+    "alias_list": [
+      "Amphy",
+      "E6_Amphy",
+      "FUT Amphy",
+      "o7 Amphy"
+    ]
+  },
+  {
+    "esport_name": "Anaya",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "AndyJax",
+    "hash": [
+      "cf5c0333a54177c768c6d5327d45e375"
+    ],
+    "alias_list": [
+      "OP AndyJax",
+      "OP AndyJaxx"
+    ]
+  },
+  {
+    "esport_name": "Anemone",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "AoHaru",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "AochasoN",
+    "hash": [
+      "17cef887f0d63d034583232afb1b0d3d"
+    ],
+    "alias_list": [
+      "Vor_AochasoN"
+    ]
+  },
+  {
+    "esport_name": "Aono",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Archery",
+    "hash": [
+      "6a2b330ab357e033ac6472d6d673ec34"
+    ],
+    "alias_list": [
+      "LFT_Archery",
+      "O2 Archery",
+      "SOL_Archery"
+    ]
+  },
+  {
+    "esport_name": "Arkology",
+    "hash": [
+      "cf28ebc28b243ad2e764ea24a7690c44"
+    ],
+    "alias_list": [
+      "Arkology"
+    ]
+  },
+  {
+    "esport_name": "Artyco",
+    "hash": [
+      "5e46035ca294d3657fe4b19398b58d81",
+      "968d523727972d5a927d066c2d259b19"
+    ],
+    "alias_list": [
+      "Arty",
+      "Artyco",
+      "GG Artyco",
+      "GGArtyco",
+      "PUA Artyco"
+    ]
+  },
+  {
+    "esport_name": "AugustDream",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Avexys",
+    "hash": [
+      "b2cbcc0905be1d58a65ec7b1cf942a96"
+    ],
+    "alias_list": [
+      "Avexys",
+      "AvexysNXS",
+      "FURY Avexys",
+      "KingAvexys",
+      "MPIRE Avexys"
+    ]
+  },
+  {
+    "esport_name": "Awakening",
+    "hash": [
+      "76a8f5b12372d38655001e81a99900fe"
+    ],
+    "alias_list": [
+      "awakeningfps"
+    ]
+  },
+  {
+    "esport_name": "Awons",
+    "hash": [
+      "8d6d73b05c1bd6de120cc92676113f72"
+    ],
+    "alias_list": [
+      "Awons",
+      "Rise Awons"
+    ]
+  },
+  {
+    "esport_name": "Awope",
+    "hash": [
+      "709078a4af446e0bf8f7f3499fef9544"
+    ],
+    "alias_list": [
+      "AwopeTV",
+      "N9LAwope",
+      "cbAwope"
+    ]
+  },
+  {
+    "esport_name": "Axis",
+    "hash": [
+      "14f825383c043a405d79f01b17386b7d"
+    ],
+    "alias_list": [
+      "NSD Axis",
+      "NSD axis"
+    ]
+  },
+  {
+    "esport_name": "Azazel",
+    "hash": [
+      "4e92ab968479f41d2bbc01e09d1b7e8c",
+      "7f5252e60953bb720f054772561b8f74",
+      "5dfbdcffe954c2001a65d10ea3d8ccbe"
+    ],
+    "alias_list": [
+      "BRD Azazel",
+      "NC Azazel",
+      "NC_Azazel"
+    ]
+  },
+  {
+    "esport_name": "B1N",
+    "hash": [
+      "27635a623a4efeab73fa341789ddc209",
+      "49c84f9acafa11a8783cdbb31fb27c14",
+      "6cdab12853030d4f161f0405966cee33"
+    ],
+    "alias_list": [
+      "B1Nn",
+      "GFR_B1Nn",
+      "SNG B1Nn"
+    ]
+  },
+  {
+    "esport_name": "B4mbino",
+    "hash": [
+      "77bb41490507122e6439706f6d0efc75",
+      "6ca2edd89d9dbe618fd838e4cc29f1d3"
+    ],
+    "alias_list": [
+      "B4mbino",
+      "B4mbino GN",
+      "ETH B4mbino",
+      "GoNext B4mbino",
+      "SAFB4mbino"
+    ]
+  },
+  {
+    "esport_name": "Bard\u00f3",
+    "hash": [
+      "7baeb762aa613045365fc0eccee5e6f0"
+    ],
+    "alias_list": [
+      "Bardo",
+      "Bard\u00f3",
+      "EKOBardo",
+      "PLR Bard\u00f3"
+    ]
+  },
+  {
+    "esport_name": "Barroth",
+    "hash": [
+      "d7595181ccbbd91660291cc92a133772"
+    ],
+    "alias_list": [
+      "Barroth",
+      "KhonEsanEli"
+    ]
+  },
+  {
+    "esport_name": "Bastiaan",
+    "hash": [
+      "8ebfa7294287cc07500e81873ac2ed39",
+      "302973f71fc31a3b4207fd8cd7e68fe9"
+    ],
+    "alias_list": [
+      "Bastiaan0Z",
+      "DEWA BasJW",
+      "HEROEZ Bastiaan0Z",
+      "HRZ Bastiaan0Z"
+    ]
+  },
+  {
+    "esport_name": "Bavis",
+    "hash": [
+      "7e7638658da8a116274a83eff7f42c7f"
+    ],
+    "alias_list": [
+      "BLEHHH",
+      "EMBERBavis",
+      "EXO BAVIS",
+      "EmberBavis(LFGOTHGIRL)",
+      "EmberBavis<3",
+      "HPBavis",
+      "aM bavis",
+      "bavis",
+      "bavis @kick",
+      "bavis ttv",
+      "emberbavis",
+      "rot"
+    ]
+  },
+  {
+    "esport_name": "Bellkun",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Besk9",
+    "hash": [
+      "ef3bdac2888851273b95ecab3b1810b3",
+      "1836f2786f40fb98492aecbd0783d648"
+    ],
+    "alias_list": [
+      "SNG Besk9",
+      "SNG_Besk9"
+    ]
+  },
+  {
+    "esport_name": "Bible",
+    "hash": [
+      "7ec8efb34df9cbc8ea8fe326173a81e0"
+    ],
+    "alias_list": [
+      "KPG Bible"
+    ]
+  },
+  {
+    "esport_name": "Bieyun",
+    "hash": [
+      "0ae7dd3bb9f0ef62b5f63fd58ff6f91b"
+    ],
+    "alias_list": [
+      "MDY_Bieyun"
+    ]
+  },
+  {
+    "esport_name": "Bigzzy",
+    "hash": [
+      "0454e4a17f6c03b0309f958934901d13"
+    ],
+    "alias_list": [
+      "OE BigzzyX"
+    ]
+  },
+  {
+    "esport_name": "Blasts",
+    "hash": [
+      "3f9c578f76925531ca3c2bc968d7447e",
+      "9887009dc2765f626d505d11250c35dc"
+    ],
+    "alias_list": [
+      "ESG Blasts",
+      "OMIT Blasts",
+      "OMiT Blasts",
+      "SAF Blasts",
+      "SAFBlasts"
+    ]
+  },
+  {
+    "esport_name": "Blinkzr",
+    "hash": [
+      "be280900256ba9e83b5589dc5ab26d3a"
+    ],
+    "alias_list": [
+      "Blinkzr"
+    ]
+  },
+  {
+    "esport_name": "BoLin",
+    "hash": [
+      "579acbddd9ed75c66d1bd234b8a3ade3",
+      "886cf1a2c70594c010301a3351655be1",
+      "ff447744cb1c7405419b73a5881588a6"
+    ],
+    "alias_list": [
+      "AGL_BoLin",
+      "AGL_\u6700\u5f37\u6ce2\u7206\u9748",
+      "Boring",
+      "DF_BoLin",
+      "DNZ_B0Lin",
+      "KD_BoLin",
+      "WMN BoLin"
+    ]
+  },
+  {
+    "esport_name": "Boring",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Buegy",
+    "hash": [
+      "a1fab688b7ae4b2bda1cc1b628f0e155",
+      "4503a7f6d53588f211e081d3eae267ff"
+    ],
+    "alias_list": [
+      "Buegy",
+      "Buegy HVND",
+      "HVND Buegy",
+      "SRN Buegy"
+    ]
+  },
+  {
+    "esport_name": "Bursty",
+    "hash": [
+      "fb29742da4e5c71d2b138c2fd224b402"
+    ],
+    "alias_list": [
+      "Bursty",
+      "BurstyOnKick"
+    ]
+  },
+  {
+    "esport_name": "CallSpades",
+    "hash": [
+      "fb06d0978fe2cdde04794008f1b1c72b"
+    ],
+    "alias_list": [
+      "TMPR CallSpades"
+    ]
+  },
+  {
+    "esport_name": "Carter",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "ChaoticMuch",
+    "hash": [
+      "cb3a766e957858a490eb8408245b91fd",
+      "97073ed09ce2091abe0ce499b4178456",
+      "e51f1ad63a966ea24031eddd59992150"
+    ],
+    "alias_list": [
+      "C9 Chaotic",
+      "C9 ChaoticMuch",
+      "ChaoticMuch",
+      "E8 Chaotic",
+      "G2_Chaotic"
+    ]
+  },
+  {
+    "esport_name": "Charmander",
+    "hash": [
+      "5aec3cb9f555a145d16bf6f832f92fa5"
+    ],
+    "alias_list": [
+      "Charmander",
+      "OVER Charmander",
+      "OVER_Charmander"
+    ]
+  },
+  {
+    "esport_name": "Cinap",
+    "hash": [
+      "894b1a5c2f0cec1a015aee6bdcaaa352"
+    ],
+    "alias_list": [
+      "Cinap"
+    ]
+  },
+  {
+    "esport_name": "Cjracked",
+    "hash": [
+      "0fe48cb9409ca9b7807b1ec156821f02"
+    ],
+    "alias_list": [
+      "BFG_Cjracked",
+      "E6_Cjracked"
+    ]
+  },
+  {
+    "esport_name": "Clane",
+    "hash": [
+      "beba53b44ab1dedb98f5ad8ab407d858"
+    ],
+    "alias_list": [
+      "Clane",
+      "ClaneSZN",
+      "N8V Clane",
+      "N8V_Clane"
+    ]
+  },
+  {
+    "esport_name": "CloNeZERA",
+    "hash": [
+      "ed18b18ee3b3d8aaa0cc98ceecc55fdc",
+      "e463d94e62d78b554d29eddc55ca569d"
+    ],
+    "alias_list": [
+      "CloNeZERA",
+      "K1CK CloNeZERA"
+    ]
+  },
+  {
+    "esport_name": "Cloaked",
+    "hash": [
+      "7d7e0931a500f79c4d27f6c1d615b373"
+    ],
+    "alias_list": [
+      "TMPR Cloaked"
+    ]
+  },
+  {
+    "esport_name": "Coce",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Cody",
+    "hash": [
+      "f81f17a70531b928c0d7a1f8cb25bfb0",
+      "0b159a0007e3cdf28feea0360e3a7dc2",
+      "48aaa4a56208d77eb6756f67943dbc08"
+    ],
+    "alias_list": [
+      "COL Codddy",
+      "Codddy",
+      "Codddy COL",
+      "ESA_Codddy"
+    ]
+  },
+  {
+    "esport_name": "Corn",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "CrazyCong",
+    "hash": [
+      "6bedf5d9c057d2ec4f38e83236f3a539",
+      "825260b32eac09cd9a1c7fce2628432a"
+    ],
+    "alias_list": [
+      "Crazycong",
+      "LG_CrazyCong",
+      "SWQ CrazyCong",
+      "SWQ_CrazyCong"
+    ]
+  },
+  {
+    "esport_name": "Crook",
+    "hash": [
+      "9a16207889f7bef77a73d00d4db21f88",
+      "ce2464fca36d10d71a641fe36a1831a1"
+    ],
+    "alias_list": [
+      "Crook",
+      "Cr\u00f8\u00f8k",
+      "DIG Crook",
+      "DIG Cr\u00f8\u00f8k",
+      "DIG crook",
+      "OXG_Crook",
+      "crook"
+    ]
+  },
+  {
+    "esport_name": "Crust",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Crxsadxr",
+    "hash": [
+      "f3404396e183d27ce9f8c4518b676150",
+      "03d642299b6ddf431c31a42819b6c2f8"
+    ],
+    "alias_list": [
+      "Crxsadxr"
+    ]
+  },
+  {
+    "esport_name": "Curihara",
+    "hash": [
+      "86514f0353a8255a8bd9290a2949b806"
+    ],
+    "alias_list": [
+      "FL_Curihara",
+      "RIG_Curihara"
+    ]
+  },
+  {
+    "esport_name": "Cyqop",
+    "hash": [
+      "d2a8eac2cd316aca68385df7b15b9e10",
+      "39ac5f1d38bcbb0b47f271affece2b7f",
+      "157a184cac2ec73c38decbd156d36ff9"
+    ],
+    "alias_list": [
+      "CyqBot",
+      "Cyqop",
+      "GWCyqop",
+      "GW_Cyqop",
+      "iiTzCyqop"
+    ]
+  },
+  {
+    "esport_name": "DANMANNTIC",
+    "hash": [
+      "f566d5ea8c22cfed599d6ef50f1200ed"
+    ],
+    "alias_list": [
+      "DANMANNTIC",
+      "LTC DANMANNTIC",
+      "LTC DANMANNTIC LIVE",
+      "twitch DANMANNTIC"
+    ]
+  },
+  {
+    "esport_name": "Datch",
+    "hash": [
+      "e643ab6fa06daa9ac0f431838bd8848f",
+      "8cfe7db5003bdcbbcb63847d8d4ef00e"
+    ],
+    "alias_list": [
+      "LFT_Datch",
+      "MOZE Datch",
+      "RR Datch"
+    ]
+  },
+  {
+    "esport_name": "DcTzr",
+    "hash": [
+      "555f3e8ee7bb12e5dc7ba526318a9223",
+      "513baa02689536ae13e236b9dae42ff9"
+    ],
+    "alias_list": [
+      "DcTzr",
+      "DcTzr GN",
+      "ETH josh",
+      "ETH joshh",
+      "JOSHH THE D3STR0Y3R",
+      "SAFDcTzr",
+      "SAFdctzr",
+      "escaped the asylum joshh",
+      "josh",
+      "joshh-v-"
+    ]
+  },
+  {
+    "esport_name": "Denzaay",
+    "hash": [
+      "79ca80e3ebb881d794eb157ba123dbe4",
+      "3c3dac9919e1d7d26bb7dfe459b261fc"
+    ],
+    "alias_list": [
+      "Denzaay",
+      "NM Denzaay",
+      "NMDenzaay",
+      "myztro Denzaay"
+    ]
+  },
+  {
+    "esport_name": "Dexter",
+    "hash": [
+      "e7ced9588e0f3a586cdbe3b5fa098d7e",
+      "fed620c21c8539cbfa86ca579c368aea",
+      "7144d2df7c50d4d23a58c3d300c9df0b"
+    ],
+    "alias_list": [
+      "DEXTER",
+      "EXO_DEXTER",
+      "IBG DEXTER",
+      "TYK DEXTER"
+    ]
+  },
+  {
+    "esport_name": "Dezignful",
+    "hash": [
+      "2aabacf7071d145cbd4c4286a4e04a87",
+      "de1b60e8b27f79ff96acbf761509aca1"
+    ],
+    "alias_list": [
+      "DSG Dezignful",
+      "DSG_Dezignful",
+      "Dezignful",
+      "E8_Dezign",
+      "G2_Dezign",
+      "G2_Dezignful"
+    ]
+  },
+  {
+    "esport_name": "DieNastied",
+    "hash": [
+      "1736030d514a35c9cd687da9a2093502"
+    ],
+    "alias_list": [
+      "DieNastied",
+      "N9L DieNastied",
+      "N9L_DieNastied"
+    ]
+  },
+  {
+    "esport_name": "Dogma",
+    "hash": [
+      "fd1f736fbea5660d52e87968cf279cb1",
+      "f7bb762f5a7a1906a38d81a15d201fd4",
+      "e618693536aee97a22de4c7f62633f8a"
+    ],
+    "alias_list": [
+      "CR Dogma",
+      "CR_Dogma",
+      "Dogma",
+      "Dogma GO",
+      "Dogmaaa",
+      "GO_Dogma"
+    ]
+  },
+  {
+    "esport_name": "Dolgoran",
+    "hash": [
+      "a4cab9c3ca0df36bf04b6347b08ad2aa"
+    ],
+    "alias_list": [
+      "Dolgoran"
+    ]
+  },
+  {
+    "esport_name": "Dropped",
+    "hash": [
+      "94cdbbde6995e7589f5e423a9c4fdf71",
+      "c2b5c035244f65500cb41a880e264a3c"
+    ],
+    "alias_list": [
+      "OpTic Dropped",
+      "SSGDROPPED",
+      "SSG_DROPPED"
+    ]
+  },
+  {
+    "esport_name": "Effect",
+    "hash": [
+      "cce9a3c68b4b9e11bb1fffb8ddae8ea1",
+      "12656755e59981e1219d39e39ec985d5"
+    ],
+    "alias_list": [
+      "ALL Effect",
+      "Alliance_Effect",
+      "Effect",
+      "Effect ALL"
+    ]
+  },
+  {
+    "esport_name": "Elonzy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Elysium",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Emtee",
+    "hash": [
+      "36ca66d53f727a3962db00eb0610a1fb",
+      "418c6a6d94c1ca4fca470db939b8ff82",
+      "048aab78ac8b11b362da4f6bc9384158"
+    ],
+    "alias_list": [
+      "Emtee",
+      "Emtee MST",
+      "MST Emtee",
+      "MST_Emtee"
+    ]
+  },
+  {
+    "esport_name": "Enemy",
+    "hash": [
+      "b7a07134e766989f4a964628aeb6db0a",
+      "4c8a716046d82d369382849d444fab42",
+      "2a1ee9636c3b8b522be7a6a8d1b80cec"
+    ],
+    "alias_list": [
+      "DSG Enemy",
+      "DSG Trenemy",
+      "Enemy",
+      "OXG Enemy",
+      "OXG Enemyyy / kick",
+      "OXG_Enemy",
+      "TwitchEnemyAPEX"
+    ]
+  },
+  {
+    "esport_name": "Euriece",
+    "hash": [
+      "560cb83f07699e3a5313d64d1d280276"
+    ],
+    "alias_list": [
+      "SZ Euriece"
+    ]
+  },
+  {
+    "esport_name": "EzFlash",
+    "hash": [
+      "bef61220efe2aef043566d1519327b41",
+      "1a51dc0c80d883704cc4b984b2fafbdc",
+      "0208787a90cca99c8dc3b0e2bba5fa66",
+      "44474a725cbaf33a3b9fb643235df2b2"
+    ],
+    "alias_list": [
+      "EzFlashKIDZ",
+      "EzFlashKIDZ HVND",
+      "HVND EzFlashKIDZ",
+      "HVND_EzFlashKIDZ",
+      "LGND_EzFlashKlDZ"
+    ]
+  },
+  {
+    "esport_name": "FFx BaByLoNs",
+    "hash": [
+      "0992a62cc36249fa86b051a675db23a2"
+    ],
+    "alias_list": [
+      "Heroez_FFx BaByLoNs",
+      "VexX BaByLoNs"
+    ]
+  },
+  {
+    "esport_name": "Faco",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Faenex",
+    "hash": [
+      "79085ece0457fd2d63bd408637841718",
+      "263def03250bb4b81335f8a8e526b2fe"
+    ],
+    "alias_list": [
+      "Faenex",
+      "HRZN Faenex",
+      "HRZN_Faenex"
+    ]
+  },
+  {
+    "esport_name": "Famas",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "FeiJu",
+    "hash": [
+      "12a0124a04b91b2e72b39e01df1991a7",
+      "92c2aedb25ffaf137b66f6c2148e5b0e"
+    ],
+    "alias_list": [
+      "FeiJu",
+      "FeiJu MDYW",
+      "MDYW FeiJu",
+      "MDYw_FeiJu"
+    ]
+  },
+  {
+    "esport_name": "Feuda",
+    "hash": [
+      "452362fe015c673b83d67b80f338afc0"
+    ],
+    "alias_list": [
+      "Twitch | Feuda"
+    ]
+  },
+  {
+    "esport_name": "FlashSSV",
+    "hash": [
+      "a2c7a61943f26da7b9001777caf2348f"
+    ],
+    "alias_list": [
+      "Twitch.tv/FlashSSV",
+      "aM Flash"
+    ]
+  },
+  {
+    "esport_name": "Frexs",
+    "hash": [
+      "6b5f13c0b2870f79ab1e780ccb401104",
+      "00e37b13c1c681713f426173116e3426",
+      "7c0fef2f6a108c5cdad02415b04e8140"
+    ],
+    "alias_list": [
+      "FaZe Frexs",
+      "Frexs",
+      "Frexs FAZE",
+      "SSG Frexs",
+      "SSGFrexs",
+      "SSG_Frexs"
+    ]
+  },
+  {
+    "esport_name": "Friqz",
+    "hash": [
+      "c9695e76701b453500cf42c5aa3bf0cf"
+    ],
+    "alias_list": [
+      "EXO Friqz",
+      "EmberFriqz",
+      "EmberFriqz(LFLEGOGirl)",
+      "Friqz",
+      "HPFriqz"
+    ]
+  },
+  {
+    "esport_name": "Frogz",
+    "hash": [
+      "9d27912ef26f9295f87a76561bd04a3f"
+    ],
+    "alias_list": [
+      "NC_Frogz"
+    ]
+  },
+  {
+    "esport_name": "Ftyan",
+    "hash": [
+      "ee38851b17f0ca0990bb7e97a8301369",
+      "955c5ac2e522beaa818f4952e6874ed1",
+      "413614e6934c24e781f5ffc553eea2d2"
+    ],
+    "alias_list": [
+      "Ftyan",
+      "Ftyan PVX",
+      "PVX_Ftyan"
+    ]
+  },
+  {
+    "esport_name": "Fuhhnq",
+    "hash": [
+      "3353378e4ebb9a37d52929a12a95c1c0",
+      "06d198ede58deb89f337433fc6abc9e8"
+    ],
+    "alias_list": [
+      "Fuhhnq",
+      "LG Fuhhnq",
+      "MEAT Fuhhnq"
+    ]
+  },
+  {
+    "esport_name": "FunFPS",
+    "hash": [
+      "db01d8ba3102a82cf95f0e9a2196946e",
+      "f7fa34073c117395138cf0d9014c0a05",
+      "17b1ad21773948f47cb7938914068ad7"
+    ],
+    "alias_list": [
+      "FunFPS",
+      "FunFPS XSET",
+      "TLFunFPS",
+      "XSET FunFPS",
+      "XSETFunFPS",
+      "XSET_FunFPS"
+    ]
+  },
+  {
+    "esport_name": "Fussy",
+    "hash": [
+      "bc88a5d66eae1dc3282b7e19f99357a1",
+      "cfb849277b5013024f893d3690961742",
+      "8b133a2368b0d0dbc3e2860adc36a706"
+    ],
+    "alias_list": [
+      "44 Fussy",
+      "BGB Fussy",
+      "Fussy",
+      "Fussy ONIC",
+      "ONIC Fussy",
+      "ONIC_Fussy"
+    ]
+  },
+  {
+    "esport_name": "G0PGAP",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Genburten",
+    "hash": [
+      "fdfb4782647a0bbe26eb080cfd82c788",
+      "1219eb20e2b1685ca0d64fb4fdaaad4f",
+      "6b72bfec34487289ff248ddc8388efda"
+    ],
+    "alias_list": [
+      "DZ Genburten",
+      "DZGenburten",
+      "DZ_Genburten",
+      "Genburten",
+      "Genburten DZ"
+    ]
+  },
+  {
+    "esport_name": "Gild",
+    "hash": [
+      "63ae91a60fe2563b24d75c5fffbf61e2",
+      "9e7e6b5f4a92327a8706ebde205b86c8",
+      "b56403cd2f3af75eef26cbaf76f3ed58"
+    ],
+    "alias_list": [
+      "Gild",
+      "Gild NRG",
+      "MST Gild",
+      "MST_Gild",
+      "NRGGild",
+      "NRG_Gild"
+    ]
+  },
+  {
+    "esport_name": "Gnaske",
+    "hash": [
+      "bf29029180a625809c2271400268de3a",
+      "31fe15f8474289f731eb37c65e4c8b15",
+      "0f9e376479a0d1744faf2138fc1884dc"
+    ],
+    "alias_list": [
+      "Gnaske",
+      "Gnaske KCP",
+      "KCP Gnaske",
+      "KCPGnaske",
+      "KCP_Gnaske",
+      "o7 Gnaske"
+    ]
+  },
+  {
+    "esport_name": "Graceful",
+    "hash": [
+      "a29e20513793c0705d80d133971550ba",
+      "2fc065290ba43ebc0c6e7c4cecab5965"
+    ],
+    "alias_list": [
+      "COLD Graceful",
+      "E6 Graceful",
+      "Graceful \u30c4",
+      "iGGraceful",
+      "iG_Graceful"
+    ]
+  },
+  {
+    "esport_name": "Gsnkryu",
+    "hash": [
+      "42bc0d10f352504dde785a974015d5a1",
+      "532a1ad23cb144a71b59c4119ba4e651"
+    ],
+    "alias_list": [
+      "Gsnkryu",
+      "SBI_Gsnkryu"
+    ]
+  },
+  {
+    "esport_name": "GuGu",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Gxnjy",
+    "hash": [
+      "04d621df8dc3cc0a03fc95453dab515b",
+      "89b1de126c38e241c26108c2389e164a"
+    ],
+    "alias_list": [
+      "Gxnjy | Twitch",
+      "HRZN_Gxnjy",
+      "UTFT Gxnjy | Twitch"
+    ]
+  },
+  {
+    "esport_name": "Hakis",
+    "hash": [
+      "92dd212a19ae1fe066545af9ba916a33",
+      "6c5e0715b2e69be1c9b375e9069531f3",
+      "33bb05c7a36da19d9abba818cf0046c3"
+    ],
+    "alias_list": [
+      "ALL Hakis",
+      "ALL_Hakis",
+      "Alliance_Hakis",
+      "Hakis",
+      "Hakis ALL"
+    ]
+  },
+  {
+    "esport_name": "Hambino",
+    "hash": [
+      "03f644d20ff6586af7565250e8e300dc"
+    ],
+    "alias_list": [
+      "CCE Hambino",
+      "HambinOwO",
+      "Hambino"
+    ]
+  },
+  {
+    "esport_name": "HammerDrill",
+    "hash": [
+      "3881571bc98502875f71b288603f3d97",
+      "71cab02e2b33e0e5346285dfcf13ed48",
+      "f8216864693e3db6271e05a71a546cd6"
+    ],
+    "alias_list": [
+      "FC_HammerDril",
+      "FC_HammerDrill",
+      "HammerDrill",
+      "HammerDrill FC",
+      "PVX_HammerDrill"
+    ]
+  },
+  {
+    "esport_name": "Hardecki",
+    "hash": [
+      "cf8cb68e9404ac2721e1acecefe8381c",
+      "9125f89c48280c3521098e0a4d570c89"
+    ],
+    "alias_list": [
+      "AUR Hardecki",
+      "AURORA Hardecki",
+      "AURORA Hard\u00ebcki",
+      "GG Hardecki",
+      "GG Hardwigg",
+      "GG Hard\u00ebcki",
+      "GGHardecki"
+    ]
+  },
+  {
+    "esport_name": "Heckk",
+    "hash": [
+      "14646a0a07afa257fa5f625d53306d66"
+    ],
+    "alias_list": [
+      "ADL Heckk",
+      "Heckk"
+    ]
+  },
+  {
+    "esport_name": "HeiHua",
+    "hash": [
+      "81a7843b07e99b009661725bf9097bcf"
+    ],
+    "alias_list": [
+      "KD_HeiHua",
+      "KD_HeiHua  \u5927\u7802\u54d4",
+      "\u5929\u9053\u4e4b\u4eba"
+    ]
+  },
+  {
+    "esport_name": "Hiarka",
+    "hash": [
+      "2da6d0451628309b1de51346e6f71a5f",
+      "080bcafdfa285353d490b90ff17ea5a8"
+    ],
+    "alias_list": [
+      "2R1C Hiarka",
+      "EIQ Hiarka",
+      "Hiarka",
+      "Hiarka EIQ",
+      "SZHiarka"
+    ]
+  },
+  {
+    "esport_name": "Hill",
+    "hash": [
+      "42677be9f0e388688a95f5f00fdd106d",
+      "e40ef66e8e25d6ddfc918c09ee2f998e"
+    ],
+    "alias_list": [
+      "APHILL",
+      "HILLCST",
+      "OXG Hill",
+      "OXG-Hill",
+      "OXG_Hill"
+    ]
+  },
+  {
+    "esport_name": "HisWattson",
+    "hash": [
+      "e57aed7e71228706f77428bdc6d84476",
+      "59daf54d04ef3686d59fa3f5172989f5"
+    ],
+    "alias_list": [
+      "FURIA HisWattson",
+      "FURIAHisWattson",
+      "HisWattson",
+      "HisWattson FUR",
+      "HisWattson | Twitch",
+      "HisWattson | Youtube"
+    ]
+  },
+  {
+    "esport_name": "Hunto",
+    "hash": [
+      "a2200404d35bfc41f5d3788a20fc2a29"
+    ],
+    "alias_list": [
+      "NeS Hunto"
+    ]
+  },
+  {
+    "esport_name": "ILY",
+    "hash": [
+      "04f5bdf52aef9cfe6b6f889cc7e428c8"
+    ],
+    "alias_list": [
+      "E36 ILY"
+    ]
+  },
+  {
+    "esport_name": "ImMadness",
+    "hash": [
+      "4c7c63f761b5217ba0f8ea015a9eeaf5",
+      "e5a8c43494c99f0a4e84f6df04f7e240"
+    ],
+    "alias_list": [
+      "FUR ImMadness",
+      "FURIA ImMadness",
+      "ImMadness",
+      "WC_ImMadness"
+    ]
+  },
+  {
+    "esport_name": "ImMikeyyyz",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "ImperialHal",
+    "hash": [
+      "c19ae59040e8a5d649a1df7ea6a5a21e",
+      "7fcd13c5004035a0fa456f4e177baa03",
+      "726259f9ec1daff4456d3f26c98f64ae",
+      "90cc5dab9c83ff49f3cd4a37ba9b7aa1"
+    ],
+    "alias_list": [
+      "FTXImperialHal",
+      "ImperialHal",
+      "ImperialHal TSM",
+      "TSM ImperialHal",
+      "TSM Imperialhal",
+      "TSMImperialHal",
+      "TSM_ImperialHal"
+    ]
+  },
+  {
+    "esport_name": "JP",
+    "hash": [
+      "c35a5124ae3006677dd9457510d5fa65"
+    ],
+    "alias_list": [
+      "OVER JP"
+    ]
+  },
+  {
+    "esport_name": "JR",
+    "hash": [
+      "a341053e1d213f5b3bc9d80aa9d39073"
+    ],
+    "alias_list": [
+      "JonnyR",
+      "Xny_JR"
+    ]
+  },
+  {
+    "esport_name": "JSavageW",
+    "hash": [
+      "46282a902860e54fba7726e697f1edb8"
+    ],
+    "alias_list": [
+      "HRZN JSavageW",
+      "JSavageW"
+    ]
+  },
+  {
+    "esport_name": "JackCute",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Jacky1",
+    "hash": [
+      "fbd51c528634127e2d1cc23dc9640a95"
+    ],
+    "alias_list": [
+      "AGL Jacky1",
+      "AGL_Jacky1",
+      "Jacky AGL"
+    ]
+  },
+  {
+    "esport_name": "Jaguares",
+    "hash": [
+      "54a560da7d3b7208395a92830d1727ee",
+      "415b2072fd0eb8d4ac97f698c471f569",
+      "960934dccecb1966f629a76b4951e1db"
+    ],
+    "alias_list": [
+      "LG_jaguares",
+      "LGjaguares",
+      "TLAW jaguaresl",
+      "jaguaresl"
+    ]
+  },
+  {
+    "esport_name": "Jesko",
+    "hash": [
+      "27b1a9bbf1efb851d9dddabad7c01b25",
+      "d828d7da91aa479b2275faa48dcb36d3"
+    ],
+    "alias_list": [
+      "Jesko",
+      "SRN Jeskoesk"
+    ]
+  },
+  {
+    "esport_name": "Jinqs",
+    "hash": [
+      "ed76619310d6c33a07e5d3607358140b",
+      "adc7b12adbf4cb922a3bab90da376892"
+    ],
+    "alias_list": [
+      "Jinqs",
+      "Jinqs SAF"
+    ]
+  },
+  {
+    "esport_name": "Jmw",
+    "hash": [
+      "271e4fc0aab53a86bf7879ab89653f05",
+      "47490a7bed304802a61d152a460c59ee",
+      "9577e3a2bab6b14a1e9fcdd353a3195a"
+    ],
+    "alias_list": [
+      "COLD JMW",
+      "JL Jmw",
+      "JL jmw",
+      "JMW",
+      "Jmw",
+      "Jmw JL",
+      "iGJmw",
+      "iG_Jmw"
+    ]
+  },
+  {
+    "esport_name": "JoJo3y",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Joker",
+    "hash": [
+      "15f7d85f82da9cd6c64ed74cf4427c95"
+    ],
+    "alias_list": [
+      "DNZ_Joker"
+    ]
+  },
+  {
+    "esport_name": "Joker_o",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Jubjibbib",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Jukes",
+    "hash": [
+      "f35bd6693b6209286bcf6ad28e8e9339"
+    ],
+    "alias_list": [
+      "Jukes",
+      "RD Jukes"
+    ]
+  },
+  {
+    "esport_name": "JungHee",
+    "hash": [
+      "4256c3c945b4de3816c2f11797f452ef",
+      "93d5ee4e18c7ddb161dc76880eb3af84",
+      "c57099a74c2d6873bb7cabbfa032bde2"
+    ],
+    "alias_list": [
+      "CR jungHee",
+      "CR_JungHee",
+      "GO_JungHee",
+      "JungHee",
+      "JungHee GO",
+      "JungHeeee",
+      "jhjhjhjhjhjh",
+      "\u30b8\u30e7\u30f3\u30d2"
+    ]
+  },
+  {
+    "esport_name": "Jusna",
+    "hash": [
+      "bc095624b0952db4a4b48d63ee866d53",
+      "f6017f371d99fc9758fa05eedfa439ba",
+      "c94ec9d951e7e0156bd86da7d6561ed3"
+    ],
+    "alias_list": [
+      "CR Jusna",
+      "CR_Jusna",
+      "GO Jusna",
+      "GO_Jusna",
+      "Jusna",
+      "Jusna GO"
+    ]
+  },
+  {
+    "esport_name": "Jyakusya",
+    "hash": [
+      "e43f2ec7c68dec21e394ecab16db745c"
+    ],
+    "alias_list": [
+      "CCG_Jyakusya"
+    ]
+  },
+  {
+    "esport_name": "KIMCHILEE",
+    "hash": [
+      "59e45a2ba3e96108857d82d343d1294b",
+      "6123ab1fb22d74009d8c7a21f227e754"
+    ],
+    "alias_list": [
+      "COL KIMCHI",
+      "COL Trenchi",
+      "COL \uae40\uce58"
+    ]
+  },
+  {
+    "esport_name": "KIND4",
+    "hash": [
+      "1aa9230cde13c94866c64b4750ae5a47",
+      "5d9f651042e7ca4ba2fa7ed8990cdfd2"
+    ],
+    "alias_list": [
+      "E6 KIND4",
+      "KIND4_",
+      "KIND4_ E6",
+      "NAVI KIND4",
+      "OAH KIND4"
+    ]
+  },
+  {
+    "esport_name": "KSWINNIIE",
+    "hash": [
+      "3d7265f32571b6bdb1153aed1d7e9faa",
+      "35c9e43473250b5dc8fcc533d0430c3d",
+      "72f544929af6a33793faa02d9ca2fbe8"
+    ],
+    "alias_list": [
+      "E6 KSWINNIIE",
+      "E6KSWINNIIE",
+      "E6_KSWINNIIE",
+      "KSWINNIIE",
+      "KSWINNIIE E6"
+    ]
+  },
+  {
+    "esport_name": "KaishiHaa",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Karaaju",
+    "hash": [
+      "e6c090666ce7e528a90a106136d55246",
+      "71775ae423aa4c89a8f6e13dff2070c2"
+    ],
+    "alias_list": [
+      "GHS Karaaju",
+      "GHS_Karaaju"
+    ]
+  },
+  {
+    "esport_name": "KaronPe",
+    "hash": [
+      "aef5e3f4471113457b9fbcb0c775f9a4",
+      "be9e5389e8bd6c2b3902538263953c2a",
+      "8bd449027716648fb3dd818657a3234a"
+    ],
+    "alias_list": [
+      "FUN_KaronPe",
+      "KaronPe",
+      "KaronPe RLZ",
+      "KaronPe-iwnl-",
+      "RC KaronPe",
+      "REJECT_KaronPe"
+    ]
+  },
+  {
+    "esport_name": "Kasssa",
+    "hash": [
+      "bf74e0d345804c2ee67b4ee08031d7bf"
+    ],
+    "alias_list": [
+      "VK Kassa",
+      "VKG Kasssa"
+    ]
+  },
+  {
+    "esport_name": "Keon",
+    "hash": [
+      "34ee6cb04a25013ada91ee37b3676c2c",
+      "aa933d769b794442a424b286832f1a15",
+      "9c3df01bf225f973fc961fb519abddf2"
+    ],
+    "alias_list": [
+      "FUR Keon",
+      "FURIA Keon",
+      "GUARDKeon",
+      "Keon | Twitch",
+      "SEN Keon",
+      "TGRD_Keon"
+    ]
+  },
+  {
+    "esport_name": "KiingZ",
+    "hash": [
+      "9ff3e2ef2983604d8f3b1b09b98f2d3f",
+      "fbff3860e8b22c9312ba66a53e577d47",
+      "f1a5126257106a450d9a46d937804eeb"
+    ],
+    "alias_list": [
+      "FA KiingZ",
+      "K1CK_KiingZ",
+      "KiingZ",
+      "KiingZ NOC",
+      "KiingZ \u30c4",
+      "VQ KIINGZ"
+    ]
+  },
+  {
+    "esport_name": "Killoposz",
+    "hash": [
+      "fa12d30ee8f4e4ace3b605c95dc61bfd",
+      "cebf6af6e4e7eb35a37f60beae003bbf",
+      "81a2b2e168f093aa873463e055c0b313"
+    ],
+    "alias_list": [
+      "Cheater_Killoposz",
+      "EXO_Killoposz",
+      "Killoposz",
+      "Police_Killoposz"
+    ]
+  },
+  {
+    "esport_name": "KinokoGenji",
+    "hash": [
+      "b890592cb306ca2128d3e997899e5009"
+    ],
+    "alias_list": [
+      "GHS_KinokoGenji"
+    ]
+  },
+  {
+    "esport_name": "Kisanss",
+    "hash": [
+      "36c7eac408fb30e04ea39a6a18f5de23",
+      "358bb023ba422ea364ccdbff8472412d"
+    ],
+    "alias_list": [
+      "DEWA Kisanss",
+      "HEROEZ Kisanss",
+      "HRZ Kisanss",
+      "Kisanss"
+    ]
+  },
+  {
+    "esport_name": "Kizaron",
+    "hash": [
+      "cda55c4de4ac4cf42185e04fa218a434",
+      "2df6cc435f1c00a8119ec2aaee306e28"
+    ],
+    "alias_list": [
+      "INF Kizaron",
+      "KIZARON",
+      "Kizaron"
+    ]
+  },
+  {
+    "esport_name": "Klemmy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Knoqd",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Koba",
+    "hash": [
+      "45b4dd0b4d81f7ed605e24d9518e165d"
+    ],
+    "alias_list": [
+      "KN Koba",
+      "KN_Koba",
+      "O2KOTAMAN"
+    ]
+  },
+  {
+    "esport_name": "Koyful",
+    "hash": [
+      "6bb08fd3ab239ff5c773716a24852329",
+      "640f6dcb7ab65b664c5032fdf638493b",
+      "3b97e735ccfeb5215a752e9a7310a431"
+    ],
+    "alias_list": [
+      "Koyful",
+      "LGND Koyful",
+      "XSET_Koy"
+    ]
+  },
+  {
+    "esport_name": "Kurev",
+    "hash": [
+      "2bbe4ea837ab27203941168fa677562c",
+      "2b13f85aeb4dcc855f29fb6809597074"
+    ],
+    "alias_list": [
+      "Kurev",
+      "LNW KUREVVV_Twitch",
+      "LNW Kurev",
+      "aM Kurev"
+    ]
+  },
+  {
+    "esport_name": "Kuroton",
+    "hash": [
+      "ccb7f60942a6ca8be940ce53c5df44cd"
+    ],
+    "alias_list": [
+      "Meteor Kuroton"
+    ]
+  },
+  {
+    "esport_name": "Kyner",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Kyri",
+    "hash": [
+      "c320e5c39e83c4d13786833ae609f4d6"
+    ],
+    "alias_list": [
+      "Kyri",
+      "TSM Kyri"
+    ]
+  },
+  {
+    "esport_name": "Kz",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "KzyyX",
+    "hash": [
+      "32bbf3cf93e84395bc50e85f70c19c5f"
+    ],
+    "alias_list": [
+      "Johnny Dang",
+      "KzyyX"
+    ]
+  },
+  {
+    "esport_name": "L1ng",
+    "hash": [
+      "e13745a9ab481d52f2deca0ec2413b19",
+      "28d3d9c8b2d75e4db3614640c880d216"
+    ],
+    "alias_list": [
+      "FL L1ng",
+      "L1ng"
+    ]
+  },
+  {
+    "esport_name": "LKarma",
+    "hash": [
+      "8f80b0115410efad3556fc3c73a23f79",
+      "73d00ba0f05f74f70336ee12c19af5f3",
+      "6203edd0e7a0f2cfb52032fe80e3baa3"
+    ],
+    "alias_list": [
+      "@LKarma",
+      "Jaeyeon",
+      "Jaeyeon <3",
+      "Jaeyeon <3 twitch"
+    ]
+  },
+  {
+    "esport_name": "Lalab4ng",
+    "hash": [
+      "62bd941aab3cb481010ed91474c34166"
+    ],
+    "alias_list": [
+      "BRU Lalab4ng",
+      "Lalab4ng"
+    ]
+  },
+  {
+    "esport_name": "Lanxi",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Ld",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Legacy",
+    "hash": [
+      "52e8b040a63b54001a6d813d5f72c91d",
+      "9e633cb7560e2189687ec919ae8d81f1"
+    ],
+    "alias_list": [
+      "ADL Legacy",
+      "Legacy",
+      "SRN Legacy"
+    ]
+  },
+  {
+    "esport_name": "Lemon",
+    "hash": [
+      "ce1e7540fcc287b99e6e07315672d9c6"
+    ],
+    "alias_list": [
+      "310 Lemon"
+    ]
+  },
+  {
+    "esport_name": "Lewda",
+    "hash": [
+      "9679a243e95ad4e8b2fc92b92bf2769a",
+      "a4e8f9c2751139d08cc605410670ebb9",
+      "fd947a92be245127f0e5655b4d110113"
+    ],
+    "alias_list": [
+      "COL Lewda",
+      "COLewda",
+      "ESA_Lewdatv",
+      "LewdaTV",
+      "Lewdatv",
+      "Lewdatv COL",
+      "THELewda"
+    ]
+  },
+  {
+    "esport_name": "Liphnn",
+    "hash": [
+      "b29597a35e7ab3eca2a427b8d5446578"
+    ],
+    "alias_list": [
+      "E6Liphnn",
+      "FUT_Liphnn",
+      "Liphn"
+    ]
+  },
+  {
+    "esport_name": "Lufka",
+    "hash": [
+      "7629f99f77fdf0319ccf1747d78fcef7",
+      "f4dc42cbcc4354791d12e6549faa1dae",
+      "6c8afeca3da2651db412389c01836545"
+    ],
+    "alias_list": [
+      "ACE_Lufka",
+      "ESG lufka",
+      "Lufka",
+      "Lufka ACE",
+      "OMIT Lufka",
+      "OMiT Lufka"
+    ]
+  },
+  {
+    "esport_name": "LuoHan",
+    "hash": [
+      "c56a99d826d57c4912ea3768e06bee83"
+    ],
+    "alias_list": [
+      "KD_LuoHanX",
+      "KD_LuoHan_ink"
+    ]
+  },
+  {
+    "esport_name": "Lusquinn",
+    "hash": [
+      "49cee60cbe82cc13ca8c6791f5779e68",
+      "2b9b82cbbc06783c8119d9ead81edfcc"
+    ],
+    "alias_list": [
+      "Lusquinn",
+      "Lusquinn SAF",
+      "Lusquinn l twitch"
+    ]
+  },
+  {
+    "esport_name": "Luxford",
+    "hash": [
+      "a64f1759c55fd7f6b6b4a64c2cf68277"
+    ],
+    "alias_list": [
+      "COLLux",
+      "Luxford",
+      "Luxfordy"
+    ]
+  },
+  {
+    "esport_name": "Lvvy",
+    "hash": [
+      "0969610211839d07f6cf483461091ac5"
+    ],
+    "alias_list": [
+      "KD Lvvy"
+    ]
+  },
+  {
+    "esport_name": "Lykq",
+    "hash": [
+      "e054dbd17ba8e999faebc6d08e67d855",
+      "ab004edc92c73a6186a39c2413933fe4",
+      "5effdb3e70ad8951c1350ece82331a07"
+    ],
+    "alias_list": [
+      "FNC Lykq",
+      "FNC_Lykq",
+      "FNC_Lykqs",
+      "Lykq8don",
+      "Lykq8don NK",
+      "NK Lykq"
+    ]
+  },
+  {
+    "esport_name": "Lymo",
+    "hash": [
+      "f3e4e0288d809c5bffc8b49396b3d666"
+    ],
+    "alias_list": [
+      "Lymo"
+    ]
+  },
+  {
+    "esport_name": "M4XY",
+    "hash": [
+      "13c90f86444cabe6e0b1bbaf793b46c3"
+    ],
+    "alias_list": [
+      "GoNext M4XY"
+    ]
+  },
+  {
+    "esport_name": "MaTaFe",
+    "hash": [
+      "87cd7adc9aa5943b60be9c6255f2061f",
+      "6a646689b4be5898f6f1a3cfda435b44",
+      "e8fc2b4c9d4475b510c146e2562510b7"
+    ],
+    "alias_list": [
+      "MaTaFe",
+      "MaTaFe VXD",
+      "NAVI MaTaFe",
+      "OAH MaTaFe",
+      "VEXED MaTaFe",
+      "VEXEDMaTaFe",
+      "VXD_MaTaFe"
+    ]
+  },
+  {
+    "esport_name": "Mainy",
+    "hash": [
+      "cbb9bf199800bb00beddc76d4a3b7aba",
+      "2d4a6d2ed939673db8a1340c112c97ad",
+      "ee26ee9c184849ce25dac2963fd18865"
+    ],
+    "alias_list": [
+      "CR Mainy",
+      "CR_Mainy",
+      "Mainy",
+      "Mainy CR",
+      "Milim"
+    ]
+  },
+  {
+    "esport_name": "Maker",
+    "hash": [
+      "793aa5ab09d49f44951d6f7629f04c40"
+    ],
+    "alias_list": [
+      "Maker_v"
+    ]
+  },
+  {
+    "esport_name": "Maliwan",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Mamba",
+    "hash": [
+      "7901ec15bce17f76a17fc3a7c631337b"
+    ],
+    "alias_list": [
+      "CLG Mamba",
+      "CLGMamba",
+      "MaliceMamba",
+      "Mambalicious",
+      "N8V Mamba"
+    ]
+  },
+  {
+    "esport_name": "Mande",
+    "hash": [
+      "6770a9f291255bc790fda079a35e4da8",
+      "ab44fa3401f18b62c3ba270bceb08ba3",
+      "13f6592830de4e20192d866157db3bd6"
+    ],
+    "alias_list": [
+      "ALL_Mande",
+      "MaNde",
+      "Mande",
+      "TSM MaNde",
+      "TSM Mande"
+    ]
+  },
+  {
+    "esport_name": "Mansi",
+    "hash": [
+      "2e6fe7332f7ab0fbfaf993bd3045c484"
+    ],
+    "alias_list": [
+      "CCS Mansi",
+      "Mansi"
+    ]
+  },
+  {
+    "esport_name": "MatsuTasu",
+    "hash": [
+      "b5102f0a651be838846588e4e1de0a5c",
+      "ce1069cf0b89d9688b1b103a323498c9"
+    ],
+    "alias_list": [
+      "FNC_MatsuTash",
+      "GHS_MatsuTash",
+      "RIG MatsuTash"
+    ]
+  },
+  {
+    "esport_name": "Max-Strafe",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "McLovin",
+    "hash": [
+      "5423cfbdb47a6c507cd48a62d747b7ab"
+    ],
+    "alias_list": [
+      "LTC McLovin",
+      "LTC McLovinFPS | Twitch",
+      "McLoViN",
+      "mcLovin",
+      "mclovin"
+    ]
+  },
+  {
+    "esport_name": "MeXiouS",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Mea",
+    "hash": [
+      "deb661a521755cacd42fee6178ff5dc5"
+    ],
+    "alias_list": [
+      "CCG_Mea"
+    ]
+  },
+  {
+    "esport_name": "Melltage",
+    "hash": [
+      "63e097c2001f885d119cd344bdeccff8"
+    ],
+    "alias_list": [
+      "DSK_Melltage",
+      "Melltage"
+    ]
+  },
+  {
+    "esport_name": "Meltstera",
+    "hash": [
+      "8593677f942ea3646480f3d06591c9ad",
+      "9762efdb6e478432f16550c0c8534d9e",
+      "5e9689b0e1116b6eefb3592bef3f7ff3"
+    ],
+    "alias_list": [
+      "FNC_Meltstera",
+      "Meltstera",
+      "Meltstera FNC",
+      "RID Meltstera",
+      "Riddle Meltstera",
+      "Riddle Meltstera\u30c3"
+    ]
+  },
+  {
+    "esport_name": "Mesuko",
+    "hash": [
+      "66e77c6103a41e513adf5eb4eba4ba8a"
+    ],
+    "alias_list": [
+      "Adept Mesuko",
+      "Mesuko",
+      "SH Mesuko"
+    ]
+  },
+  {
+    "esport_name": "MiaK",
+    "hash": [
+      "3d043b64c7e2ba0895b56013d501588d",
+      "44f9d7235d137a5684eef2e43f5b1c68",
+      "c7acb3f7068a4f45ae44ab8531f4d7d5"
+    ],
+    "alias_list": [
+      "FLR_MiaK",
+      "KN MiaK",
+      "MiaK",
+      "MiaK RID",
+      "Riddle MiaK"
+    ]
+  },
+  {
+    "esport_name": "Milim",
+    "hash": [
+      "76c1e3280043df1d37032a7e5262e798"
+    ],
+    "alias_list": [
+      "310 Milim"
+    ]
+  },
+  {
+    "esport_name": "Mimu",
+    "hash": [
+      "457031f9d33642211f9b04f23585cea7",
+      "ff36eb623f43f98646b632e2d0169c38"
+    ],
+    "alias_list": [
+      "HRZNMimu",
+      "PS_Mimu"
+    ]
+  },
+  {
+    "esport_name": "MingYue",
+    "hash": [
+      "d2ab138786b6f1833042ab7cf87bdc74",
+      "236f0cf22667f82f35189fc4cc4e1486"
+    ],
+    "alias_list": [
+      "MDYW MingYue",
+      "MDYw_MingYue",
+      "MingYue",
+      "MingYue MDYW"
+    ]
+  },
+  {
+    "esport_name": "Mitarashi",
+    "hash": [
+      "a9058e063644ee8827bb172bea6f95d0"
+    ],
+    "alias_list": [
+      "310 Mitarashi",
+      "Meteor_Mitarashi"
+    ]
+  },
+  {
+    "esport_name": "Monsoon",
+    "hash": [
+      "4da50814948c00a7960b7c0a42eecc50",
+      "9387ef9b210b4c53ffa6e42690d145ad"
+    ],
+    "alias_list": [
+      "COL Monsoon",
+      "COLMonday",
+      "COLMonsoon",
+      "Monsoon",
+      "Monsoon COL"
+    ]
+  },
+  {
+    "esport_name": "Mysi",
+    "hash": [
+      "d0bec8332254a070a160f2f41ceb7828",
+      "9b0047e994b69ab719b859e33e10d8bc"
+    ],
+    "alias_list": [
+      "2R1C Mysi",
+      "GoNext Mysi",
+      "Mysi"
+    ]
+  },
+  {
+    "esport_name": "N3LAS",
+    "hash": [
+      "227e0f5aa4e7309804974e818c904856",
+      "e1f506d9d6a7dd27d5520eacb0388d17",
+      "9bf5d15c8065d326bc4f886b1d78be69"
+    ],
+    "alias_list": [
+      "GFR_N3LAS",
+      "N3LAS",
+      "N3LAS NOC"
+    ]
+  },
+  {
+    "esport_name": "NEWKU",
+    "hash": [
+      "64aea79fefe396c5a720d2b101f6bb02",
+      "493492b9399d8d03f7d6db71a32b91bc"
+    ],
+    "alias_list": [
+      "NEWKU"
+    ]
+  },
+  {
+    "esport_name": "Nafen",
+    "hash": [
+      "133837af44460c245979db09921c2a1d",
+      "f3c8107e2bff088c7d50be0cb18379a4",
+      "8c7af75fa8427c5d5f7054d0164abbc4"
+    ],
+    "alias_list": [
+      "NAFEN",
+      "NAFEN NRG",
+      "NRG NAFEN",
+      "NRG Nafen",
+      "NRGNAFEN",
+      "NRGNafen",
+      "NRG_NAFEN"
+    ]
+  },
+  {
+    "esport_name": "Naghz",
+    "hash": [
+      "19619419c39bc5b50f428d6a98626662",
+      "454c66d66637d93934730442580f84d8",
+      "aef4ab6d984e5826f5d1af201aef7181"
+    ],
+    "alias_list": [
+      "JL Naghz",
+      "JL naghz",
+      "JZ_Naghz",
+      "Naghz",
+      "Naghz JL",
+      "o7 Naghz",
+      "o7 naghz",
+      "o7_Naghz"
+    ]
+  },
+  {
+    "esport_name": "Nano",
+    "hash": [
+      "aa01754c0e1ceafa3388fc83c6fd7612"
+    ],
+    "alias_list": [
+      "CLG Nano",
+      "CLGNano",
+      "GG Nano",
+      "Nano",
+      "nano"
+    ]
+  },
+  {
+    "esport_name": "Neazul",
+    "hash": [
+      "ed07927b533ab818be511fa0b2b49bb7",
+      "1fd234d1b36205e8f36f9c8e77ce449a",
+      "5c42f54bf25340c1634419d5ba9f1adc",
+      "cfe3b5491d8ed546a4480e7bb71f5ad5"
+    ],
+    "alias_list": [
+      "LGNeazul",
+      "LGNeazul:3",
+      "LG_Neazul",
+      "NeazuI",
+      "Neazul",
+      "Neazul LG",
+      "Neazul?",
+      "TLAW NeazuI"
+    ]
+  },
+  {
+    "esport_name": "NefuDoll",
+    "hash": [
+      "5f0c85b988a499853106cc0c5f0671c0"
+    ],
+    "alias_list": [
+      "NSD NefuDoll"
+    ]
+  },
+  {
+    "esport_name": "Nemu",
+    "hash": [
+      "ee45d41d0f044d7a83eb1707179e48b0"
+    ],
+    "alias_list": [
+      "Meteor_Nemu"
+    ]
+  },
+  {
+    "esport_name": "Noelsang",
+    "hash": [
+      "9b539d29e0b4b84786a3283fefd21405"
+    ],
+    "alias_list": [
+      "Noelsang",
+      "Noelsang | Twitch"
+    ]
+  },
+  {
+    "esport_name": "Noiises",
+    "hash": [
+      "852366d6c1e0c0cb41492398c45037b7",
+      "d689cc9e04d82b2a9a33ee998a1dbec0",
+      "5f81944ddd8725411947d2a13d139c1e"
+    ],
+    "alias_list": [
+      "JL noiises",
+      "iG_noiises",
+      "iGnoiises",
+      "noiises",
+      "noiises JL"
+    ]
+  },
+  {
+    "esport_name": "Obly",
+    "hash": [
+      "10f94f43d42e2417519f3dc16dd9cb93",
+      "c87d8034364948c5bd0a79bb6dd72fe8",
+      "ad3eaad914c87fc413db470acca927d3"
+    ],
+    "alias_list": [
+      "FUN obly",
+      "FUN_obly",
+      "RC obly",
+      "REJECT_obly",
+      "obly",
+      "obly RLZ"
+    ]
+  },
+  {
+    "esport_name": "Onmuu",
+    "hash": [
+      "c1baf91fbbf238bf26d68a28118b5f93",
+      "1dc5b74a41c8b65abd574740ccfd2308",
+      "d89ba9ea4e69baae655568b9807c462b"
+    ],
+    "alias_list": [
+      "100T Onmuu",
+      "100TOnmuu",
+      "100T_Onmuu",
+      "Onmuu",
+      "Onmuu 100T"
+    ]
+  },
+  {
+    "esport_name": "Orioles",
+    "hash": [
+      "6f381023d3b6c62525382e177ff01e38"
+    ],
+    "alias_list": [
+      "DIGOrioles",
+      "OriolesAPEX",
+      "OriolesHD",
+      "OriolesOnKick",
+      "Oriolessss",
+      "lOriolesl"
+    ]
+  },
+  {
+    "esport_name": "OuOKh",
+    "hash": [
+      "da5ee86de0a87d9e14e52520e161a25b"
+    ],
+    "alias_list": [
+      "KPG_OuOKh"
+    ]
+  },
+  {
+    "esport_name": "OzieOwl",
+    "hash": [
+      "95ccd780e96a089c018df06e86078e23"
+    ],
+    "alias_list": [
+      "2o2 OzieOwl"
+    ]
+  },
+  {
+    "esport_name": "PANIC",
+    "hash": [
+      "9b230dd449a9ce80298faa6a74eef707",
+      "b3901eef62ffacc1714e90c78c5b9c19",
+      "44ea99d6285cd46171d4a9b5072a0d66"
+    ],
+    "alias_list": [
+      "GRD PANIC",
+      "LNW_PANIC",
+      "PANIC",
+      "PANIC GE"
+    ]
+  },
+  {
+    "esport_name": "PP",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Panayie",
+    "hash": [
+      "f6cfa5e635d98450a6ff8074820f1db2",
+      "16b61025dcc00f1aa853164879863040",
+      "1731ac83ce7d7871a83f4741f2e075f2"
+    ],
+    "alias_list": [
+      "BGB Panayie",
+      "IBG PANayie",
+      "IBG PanPan",
+      "IBG Panayie",
+      "IBG \u5f6d\u4e8e\u664f",
+      "IBG_Panayie",
+      "Panayie",
+      "Panayie \u30c4"
+    ]
+  },
+  {
+    "esport_name": "Pandxrz",
+    "hash": [
+      "fec9fd0b68541b0d7107370129415ff7"
+    ],
+    "alias_list": [
+      "FURIA Pandxrz",
+      "FURIAPandxrz",
+      "FURIA_Pandxrz",
+      "FUR_Pandxrz",
+      "FaZe_Pandxrz",
+      "FaZe_pandxrz"
+    ]
+  },
+  {
+    "esport_name": "Parkha",
+    "hash": [
+      "9dfa065411ed2c9c6b7a43df6455e72c",
+      "60f7f1e1a614b4d90478472a25a9b146",
+      "a5eb1aedc9986b309eb067a84355211d"
+    ],
+    "alias_list": [
+      "Ail3iS",
+      "CR_Parkha",
+      "Parkha",
+      "Parkha CR"
+    ]
+  },
+  {
+    "esport_name": "Peace",
+    "hash": [
+      "10fe387d2ec5be2e691da8d1c5ee2e10"
+    ],
+    "alias_list": [
+      "SOL_Peace"
+    ]
+  },
+  {
+    "esport_name": "Phony",
+    "hash": [
+      "6d3d39239b92ae18cf7d32d4be5299e8",
+      "6e066ed0211c8a203eab4a86f43e79da",
+      "e0da704856f7d32c107f4bf314eaaa2e"
+    ],
+    "alias_list": [
+      "ESAPhonyhead",
+      "ESA_Phonyhead",
+      "ESAphony",
+      "FaZe phony",
+      "PLP_Phony",
+      "Phonyhead",
+      "Phonyhead FAZE",
+      "SSG Phony",
+      "SSG_Phony"
+    ]
+  },
+  {
+    "esport_name": "Pinky",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Pinotr",
+    "hash": [
+      "48ef942e1484e8bbeb7669eaad033ff7",
+      "639c7433f2ae4ed528050100161d1fe4",
+      "3c07ec6b2ae79d5445a8bda55b2edcce"
+    ],
+    "alias_list": [
+      "FC_Pinotr",
+      "FLR_Pinotr",
+      "FL_Pinotr",
+      "Pinotr",
+      "Pinotr FC"
+    ]
+  },
+  {
+    "esport_name": "Pirrus",
+    "hash": [
+      "7c566df2beadfe8ec57c67ba833fe4bd",
+      "61b6260988c0cbb2c75b080fb7fcb72d"
+    ],
+    "alias_list": [
+      "LNW Pirrus",
+      "LnW Pirrus",
+      "Pirrus",
+      "Pirrus LNW",
+      "lPirrus"
+    ]
+  },
+  {
+    "esport_name": "Pite",
+    "hash": [
+      "dab637939d04c38f46927ae662e83a5f",
+      "fb5fe194f4148cc3257262e08aa628b3"
+    ],
+    "alias_list": [
+      "DF Pite174",
+      "DF_Pite",
+      "DF_Pite174",
+      "DF_Pite_o",
+      "Pite",
+      "Pite DF"
+    ]
+  },
+  {
+    "esport_name": "PlayerKay",
+    "hash": [
+      "0d88a8c09696f0886bb9521ab27b16fe",
+      "0e1b63d44d1a5c6e4e335fa7da28eedd"
+    ],
+    "alias_list": [
+      "IBG PlayerKay",
+      "LGND PlayerKay",
+      "PlayerKay"
+    ]
+  },
+  {
+    "esport_name": "Plexez",
+    "hash": [
+      "0e19ddae848c8a3fcba808147462b360"
+    ],
+    "alias_list": [
+      "Plexez"
+    ]
+  },
+  {
+    "esport_name": "PostKiLL",
+    "hash": [
+      "23d8d02d11aa57ddd621b1b79c317e42",
+      "7216541ae6d4951dbef417a36091bb4e",
+      "d917f9f4c5f9504e84e4a2f5c8aad27e"
+    ],
+    "alias_list": [
+      "ACE_PostKiLL",
+      "PostKiLL",
+      "PostKiLL ACE",
+      "PostKill"
+    ]
+  },
+  {
+    "esport_name": "Preslyy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Prota",
+    "hash": [
+      "08107e67546d100a31ad0b28d265f651"
+    ],
+    "alias_list": [
+      "WF_Prota"
+    ]
+  },
+  {
+    "esport_name": "Prycyy",
+    "hash": [
+      "937fa20463f425d4b3ab86d0c89ab778",
+      "7548080e091637d17246c3cb07806302",
+      "013a91891d15192769af859b45ec4f99"
+    ],
+    "alias_list": [
+      "MST Prycyy",
+      "MST_Prycyy",
+      "Prycyy",
+      "Prycyy MST",
+      "VP Prycyy"
+    ]
+  },
+  {
+    "esport_name": "QQ",
+    "hash": [
+      "ae53986cab7baa2edb080dccbd006f55"
+    ],
+    "alias_list": [
+      "NTC AGL_QQ"
+    ]
+  },
+  {
+    "esport_name": "RANCHES",
+    "hash": [
+      "e8af8a69027c654ab485a9e7c10d63c1",
+      "bf723742c42be4bdb47439ec56f19f78"
+    ],
+    "alias_list": [
+      "AURORA RANCHES",
+      "AURORARANCHES",
+      "CATS RANCHES",
+      "RANCHES",
+      "RANCHES AUR"
+    ]
+  },
+  {
+    "esport_name": "RakaFaka",
+    "hash": [
+      "5176f18d6e0074f591c3d781b5b4d7ac"
+    ],
+    "alias_list": [
+      "2o2 RakaFaka",
+      "Twitch RakaFaka"
+    ]
+  },
+  {
+    "esport_name": "Rakiiii",
+    "hash": [
+      "f4f1170bcb1f6afcc22bc6bcd64b3197",
+      "6c656dac320f12954da14bf3083ec95c",
+      "980e277a3b2a8a86ec0b686db3278de4"
+    ],
+    "alias_list": [
+      "BGB rakiiii",
+      "ONIC Rakiiii",
+      "ONIC_Rakiiii",
+      "Rakiiii",
+      "Rakiiii ONIC"
+    ]
+  },
+  {
+    "esport_name": "RamBeau",
+    "hash": [
+      "a971eac491d9f8f9765d571158ee6564",
+      "26f89810228e4a00ef1c0e41b425cd28"
+    ],
+    "alias_list": [
+      "GUARDRamBeau",
+      "N8V RamBeau",
+      "RamBeau",
+      "SEN RamBeau",
+      "TGRD_RamBeau"
+    ]
+  },
+  {
+    "esport_name": "Ras",
+    "hash": [
+      "ef88c42dc95b5e156286d78a548f08bf",
+      "a45d5262a690d9873645b45f5e55969e",
+      "e33d503c5caa47ed66d740c1ae2c7b0a"
+    ],
+    "alias_list": [
+      "CR_Ras",
+      "Lemon",
+      "Ras",
+      "Ras CR"
+    ]
+  },
+  {
+    "esport_name": "Raygh",
+    "hash": [
+      "d8a3781cbbbb6e002e6b29972ce4126e",
+      "88042bfd64be60c79945474240766fe6"
+    ],
+    "alias_list": [
+      "GHS Raygh",
+      "GHS_Raygh",
+      "Raygh"
+    ]
+  },
+  {
+    "esport_name": "Rchwert",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Reedz",
+    "hash": [
+      "bf0f78ca27fc1bc6e41d462a81443f44",
+      "9f04afa97aee38c71635e2d2e34ae53a"
+    ],
+    "alias_list": [
+      "GE Reedz",
+      "OXG Reedz",
+      "OXG_Reedz",
+      "Reedz",
+      "Reedz OXG"
+    ]
+  },
+  {
+    "esport_name": "Reps",
+    "hash": [
+      "c0f6d11b8b535d9889a310e345c1f635",
+      "7436c378ce1d8fd58e58a25bea46c669",
+      "72ef62088185a9c7a1cd6277c321c175",
+      "501962e398672d5bb3306da16a4ac6ad"
+    ],
+    "alias_list": [
+      "FTXReps",
+      "Reps",
+      "Reps TSM",
+      "TSM Reps",
+      "TSMReps",
+      "TSM_MNK",
+      "TSM_Reps"
+    ]
+  },
+  {
+    "esport_name": "ReyzyGG",
+    "hash": [
+      "2966af57093f7ddafeb974e87bc80333",
+      "57ab000f4c103ad54ef9528530cbb3a0",
+      "1ec99b083d416e0719aa8633cfae8053"
+    ],
+    "alias_list": [
+      "NTH ReyzyGG",
+      "NTH_ReyzyGG",
+      "Nth_ReyzyGG",
+      "ReyzyGG",
+      "ReyzyGG NTH"
+    ]
+  },
+  {
+    "esport_name": "Right",
+    "hash": [
+      "e46a6a7308cde18452ca1a305b3bf6ca",
+      "e8708d6c9f5cc598c97556fd2ec26091"
+    ],
+    "alias_list": [
+      "HAO Right",
+      "HAO_Right",
+      "WL_Right"
+    ]
+  },
+  {
+    "esport_name": "Rkn",
+    "hash": [
+      "003bc203b998c7f967ef78a00bda3d19",
+      "2239f70799476478ed6278243d8e6ef5",
+      "74260e1c9b3b3505d02aaac4a18fe4df"
+    ],
+    "alias_list": [
+      "GUARDRkn",
+      "Rkn",
+      "SEN Rkn",
+      "TGRD_Rkn",
+      "rkn",
+      "sen rkn",
+      "twitch rknhd | SEN"
+    ]
+  },
+  {
+    "esport_name": "Roieee",
+    "hash": [
+      "9bfbb95246bd421e4e63eeca3a13ce38",
+      "5f44577e3a0de50a1310a8a1b4bb956e"
+    ],
+    "alias_list": [
+      "DF_Roieee",
+      "DF_Roieee_o",
+      "Roieee",
+      "Roieee_o",
+      "Roieee_o DF"
+    ]
+  },
+  {
+    "esport_name": "Rossoful",
+    "hash": [
+      "84817f7fc0825e717006f59ecc628e12"
+    ],
+    "alias_list": [
+      "TW_Rossoful"
+    ]
+  },
+  {
+    "esport_name": "Rowhai",
+    "hash": [
+      "a03799d4dbbe1a264d10a64a88734eb8"
+    ],
+    "alias_list": [
+      "Rowhai NeS"
+    ]
+  },
+  {
+    "esport_name": "Rudenayyyyy",
+    "hash": [
+      "b876b338836b509b7946bf0a944b9981"
+    ],
+    "alias_list": [
+      "BCG_Rudenayyyyy"
+    ]
+  },
+  {
+    "esport_name": "Rukoko",
+    "hash": [
+      "e9c2b17e1890a893cd4a0f94ea8586d5"
+    ],
+    "alias_list": [
+      "ASH_Rukoko",
+      "WF Rukoko",
+      "WF_Rukoko"
+    ]
+  },
+  {
+    "esport_name": "S1Naq",
+    "hash": [
+      "436aea6881dc26b3020cd3baa38909b3"
+    ],
+    "alias_list": [
+      "O2_S1Naq",
+      "O2_\u304a\u3055\u304b\u306a\u5929\u56fd",
+      "S1naq",
+      "\u30d1\u30fc\u30b7\u30fc\u3084\u307e\u3060"
+    ]
+  },
+  {
+    "esport_name": "SA",
+    "hash": [
+      "121f30b31c6e36d33784b0879f390ce2"
+    ],
+    "alias_list": [
+      "DNZ_SA"
+    ]
+  },
+  {
+    "esport_name": "SIZU",
+    "hash": [
+      "9244c96ce28cc53f47829e3af5a5db75"
+    ],
+    "alias_list": [
+      "MKN_SIZU",
+      "xTs SIZU"
+    ]
+  },
+  {
+    "esport_name": "Sabz",
+    "hash": [
+      "e912359dfc062cb60d5099b38c5e1955"
+    ],
+    "alias_list": [
+      "Sabz",
+      "Sabz_Bear",
+      "Sabz_BearonTwitch",
+      "TSM Sabz"
+    ]
+  },
+  {
+    "esport_name": "Sami",
+    "hash": [
+      "c1e93de7234e5f19461fd20bdfb4fe25"
+    ],
+    "alias_list": [
+      "BT_Sami",
+      "Vor_Sami"
+    ]
+  },
+  {
+    "esport_name": "SangJoon",
+    "hash": [
+      "6c7690cd9fb4c78572d7b56239d6dea9",
+      "192ef5341e248250451da9a5a6496706",
+      "af1a2caf9dab5f386960e8e345423593"
+    ],
+    "alias_list": [
+      "FUN SangJoon",
+      "FUN_SangJoon",
+      "RC SangJoon",
+      "REJECT SangJoon",
+      "SangJoon",
+      "SangJoon RLZ"
+    ]
+  },
+  {
+    "esport_name": "Sanka",
+    "hash": [
+      "6672a383b1fbdfd653eb9c0a2241f04d"
+    ],
+    "alias_list": [
+      "Sanka_LIBRE",
+      "sanka_hj"
+    ]
+  },
+  {
+    "esport_name": "Sanya",
+    "hash": [
+      "7b67ad405a6d4269e133c706597d0200",
+      "960afb8ce83961cdfe4272af38699dc4",
+      "639d70b25c6a0d136e59a0a41aad804b"
+    ],
+    "alias_list": [
+      "NAVISAYNYA",
+      "PUA Sanya",
+      "myztro lionel pepsi",
+      "myztro sanya",
+      "myztro saynya",
+      "sanya"
+    ]
+  },
+  {
+    "esport_name": "Sauceror",
+    "hash": [
+      "754a1486a72ec406641094b2e3713815",
+      "b39fe3cd354bbc9a4cacea5ff335bf31"
+    ],
+    "alias_list": [
+      "C9 sauceror",
+      "sauceror"
+    ]
+  },
+  {
+    "esport_name": "SaviourHeavier",
+    "hash": [
+      "a82965cae545ce35623084caaa88c34b"
+    ],
+    "alias_list": [
+      "SaviourHeavier"
+    ]
+  },
+  {
+    "esport_name": "SeNa",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Selka",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Seno9L",
+    "hash": [
+      "629f1af7f785318d0d2a9d3754734cbe"
+    ],
+    "alias_list": [
+      "FS_Seno9L",
+      "Seno999LLL"
+    ]
+  },
+  {
+    "esport_name": "Senzz",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Shark",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Sharky",
+    "hash": [
+      "0eb80444ef28d6458238a5019649ca8d",
+      "23187704b3b97e46114fe352a7bbaa59",
+      "dbddbd7e1bfd56ab066bde2c75856c7d"
+    ],
+    "alias_list": [
+      "DZ Sharky",
+      "DZSharky",
+      "DZ_Sharky",
+      "Sharky",
+      "VP Sharky"
+    ]
+  },
+  {
+    "esport_name": "Shex",
+    "hash": [
+      "79df5bbde0a39bc0e9938faee6ac52b5"
+    ],
+    "alias_list": [
+      "OP Shex"
+    ]
+  },
+  {
+    "esport_name": "ShivFPS",
+    "hash": [
+      "5e5d50d1d7b430962dc829f39f8e5494"
+    ],
+    "alias_list": [
+      "LG_ShivFPS"
+    ]
+  },
+  {
+    "esport_name": "Shooby",
+    "hash": [
+      "de3953ef7a75c7a9f2893262452247bc",
+      "795d51440d4ff93426d5aef06452b8c1",
+      "13f9c71edd154259fb2dd18d260ee341"
+    ],
+    "alias_list": [
+      "E8 Shooby",
+      "E8_Shooby",
+      "HVNDShooby",
+      "LFO_Shooby",
+      "Shooby",
+      "WC_Shooby",
+      "shoobytoobyTV"
+    ]
+  },
+  {
+    "esport_name": "ShunMi",
+    "hash": [
+      "1d5be61712257731c121b13c4f692214",
+      "67634217580ee296c31eb8cd9e13864e",
+      "d1a585b69ec3f993a78c754f851efaca"
+    ],
+    "alias_list": [
+      "PVX_ShunMi",
+      "RIG ShunMi",
+      "ShunMi",
+      "ShunMi PVX"
+    ]
+  },
+  {
+    "esport_name": "ShynkChan",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Sikezz",
+    "hash": [
+      "f24e7260a3f3c93a188a568d60e56653",
+      "652ae22a3e608259c76928dd4caff182",
+      "ef7ac2d1cd366745fe8b5c83646a5cc2"
+    ],
+    "alias_list": [
+      "DZ Sikezz",
+      "DZ_Sikezz",
+      "Sikezz",
+      "Sikezz XSET",
+      "TLSikezz",
+      "XSET Sikezz",
+      "XSETSikezz",
+      "XSET_Sikezz"
+    ]
+  },
+  {
+    "esport_name": "Sinetic",
+    "hash": [
+      "d3eb96fda0ef0052560f9b3d95bc07df",
+      "43f458e0bcec1b24d143ba4cf965e5eb"
+    ],
+    "alias_list": [
+      "MIH Sinetic",
+      "Sinetic"
+    ]
+  },
+  {
+    "esport_name": "SirDel",
+    "hash": [
+      "71ccd86581ce5d1b08886a4cb5663fc5",
+      "3faa464073249ff1db6be6b053852fd4",
+      "3169d298d6a82934ee3961fdb790c801"
+    ],
+    "alias_list": [
+      "KCP SirDel",
+      "KCPSirDel",
+      "KCP_SirDel",
+      "SirDel",
+      "SirDel KCP",
+      "sirdel"
+    ]
+  },
+  {
+    "esport_name": "SkittleCakes",
+    "hash": [
+      "f6fc1f2e54a0e4ed185b53465a2f33fd"
+    ],
+    "alias_list": [
+      "OpTic SkittleCakes",
+      "OpTicSkittleCakes"
+    ]
+  },
+  {
+    "esport_name": "Slab",
+    "hash": [
+      "6085e0d5e296ad9adf6d58baab52180a",
+      "4f9986a1991d6ba54e1296e0b2b19d1c"
+    ],
+    "alias_list": [
+      "E6 Slab",
+      "E6_Slab",
+      "ETH Slab",
+      "GoNext Slab",
+      "OhSlab",
+      "OhSlab GN",
+      "Slab"
+    ]
+  },
+  {
+    "esport_name": "Slayers",
+    "hash": [
+      "f45c35c8061ccc4d30ac5f612dac3074",
+      "223f79d62f5dcec040a051942942208d",
+      "05bb3a8abb0449858c12ebf6183bd09b"
+    ],
+    "alias_list": [
+      "E6 Slayers",
+      "E6Slayers",
+      "E6_Slayers",
+      "Slayers",
+      "Slayers E6"
+    ]
+  },
+  {
+    "esport_name": "Slayr",
+    "hash": [
+      "b42633fefd2eea0fe218c19489d81cab",
+      "63e72f578583f8391f0569e9eb4a7759",
+      "351547bcdc2d9489adfd742462373be2"
+    ],
+    "alias_list": [
+      "LG Slayr",
+      "LG_SIayr",
+      "Slayr",
+      "SlayrSZN",
+      "Slayr_LG",
+      "slayr"
+    ]
+  },
+  {
+    "esport_name": "Sleep",
+    "hash": [
+      "7c59df52ac30727843baaeba8207cd80"
+    ],
+    "alias_list": [
+      "Sleep"
+    ]
+  },
+  {
+    "esport_name": "SleepyPanda",
+    "hash": [
+      "8a3b8b970ebd13eb306c5b6d12003a68"
+    ],
+    "alias_list": [
+      "ISleepyPanda",
+      "TD ISleepyPanda"
+    ]
+  },
+  {
+    "esport_name": "Snip3down",
+    "hash": [
+      "0e60b761f7f66a717d59b304db62bc63",
+      "f95be5edd932f7d73b775565cab9831c"
+    ],
+    "alias_list": [
+      "FaZe Snip3down",
+      "FaZeSnip3down",
+      "Snip3down",
+      "Snip3down FAZE"
+    ]
+  },
+  {
+    "esport_name": "Stalizy",
+    "hash": [
+      "d7a9073c61702fc81a8e54fc511ba5bf",
+      "a74d56cba138261c79c6b896e32b21c8",
+      "c9b70e2f59bf039d8a16384aa19f2eed"
+    ],
+    "alias_list": [
+      "K1CK Stal",
+      "K1CK_stalizy",
+      "Stal",
+      "aM Stal",
+      "aM stalizy"
+    ]
+  },
+  {
+    "esport_name": "StayNaughty",
+    "hash": [
+      "5f61f7bbf7acb67791181beade05dd7a",
+      "acf91a8c655b21f18ad9a12d9f48dbc2"
+    ],
+    "alias_list": [
+      "C9 Naughty",
+      "C9Naughty",
+      "C9_StayNaughty",
+      "C9naughty",
+      "LAN NAUGHTY",
+      "LAN_Naughty",
+      "StayNaughty",
+      "StayNaughtyC9",
+      "naughty"
+    ]
+  },
+  {
+    "esport_name": "StrafingFlame",
+    "hash": [
+      "9d46a5365230723a056fa4fb468779c3",
+      "993f4213b7a9d999cd7a2987f8e47435"
+    ],
+    "alias_list": [
+      "HVND StrafingFlame",
+      "LGND StrafingFlame",
+      "StrafingFlame",
+      "StrafingFlame HVND"
+    ]
+  },
+  {
+    "esport_name": "Stuhni",
+    "hash": [
+      "e31aff22d20c1cf705ac34223022e421"
+    ],
+    "alias_list": [
+      "DIG Stuhni",
+      "Stuhni"
+    ]
+  },
+  {
+    "esport_name": "SudetakiN",
+    "hash": [
+      "67b85daf8bc92bd72d7559df3dec2279"
+    ],
+    "alias_list": [
+      "MKN_SudetakiN",
+      "RIG_SudetakiN"
+    ]
+  },
+  {
+    "esport_name": "Sum1yoshii",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Sunny",
+    "hash": [
+      "c27c48d9021456217c1b3cf62938f3ad"
+    ],
+    "alias_list": [
+      "SOL_Sunny"
+    ]
+  },
+  {
+    "esport_name": "Sunset",
+    "hash": [
+      "6691dae32e9b0407b5836ccee00adbf9",
+      "6b4f3e971e7e03849c7d784903816847",
+      "a139b8dbed3f6bfce2bd0be2c1197248"
+    ],
+    "alias_list": [
+      "AURORA SUNSET",
+      "Maliwan AUR",
+      "Sunset",
+      "Sunset AUR"
+    ]
+  },
+  {
+    "esport_name": "SurpriZee",
+    "hash": [
+      "8e521add2cc703b23b8540584641efc4",
+      "10f19c7543443e0b29a5d8841ccf7a5c"
+    ],
+    "alias_list": [
+      "OE SurpriZee",
+      "SurpriZee",
+      "SurpriZee_OE",
+      "surprizee"
+    ]
+  },
+  {
+    "esport_name": "Sweetdreams",
+    "hash": [
+      "3ef28df142b1ca5aa5b0fe524d1189ce",
+      "9ec60020827b2f34a6d6e97df413b076",
+      "42f61fcfc16cb7c1124b162467b495ff"
+    ],
+    "alias_list": [
+      "LG Sweet",
+      "NRG Sweet",
+      "NRGSWEET",
+      "NRGSweet",
+      "NRG_Sweet",
+      "Sweet",
+      "Sweet LG",
+      "Sweet NRG"
+    ]
+  },
+  {
+    "esport_name": "TANO",
+    "hash": [
+      "386bb123e11ef6be25f310adf738c24f"
+    ],
+    "alias_list": [
+      "DSK_TANO_MASTER",
+      "GOD_TANO_MASTER"
+    ]
+  },
+  {
+    "esport_name": "THONNE",
+    "hash": [
+      "61323e82977f406f75d0d1ea8d96d6a2"
+    ],
+    "alias_list": [
+      "INF THONNE",
+      "THONNE"
+    ]
+  },
+  {
+    "esport_name": "Taida",
+    "hash": [
+      "63332fe670c5351aedb7ca4c90300da6",
+      "f55a0db4e703c620c8b8ad1a1c2b040a",
+      "076a0051525b84f108ce555b19cdebbd"
+    ],
+    "alias_list": [
+      "NTH Taida",
+      "NTH_Taida",
+      "Nth Taida",
+      "Nth_Taida",
+      "Taida",
+      "Taida NTH"
+    ]
+  },
+  {
+    "esport_name": "Tao",
+    "hash": [
+      "c6355677d071c0fa85e1b2b94e31797e"
+    ],
+    "alias_list": [
+      "DF_Tao"
+    ]
+  },
+  {
+    "esport_name": "Tapstrafewithyou",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Tax",
+    "hash": [
+      "ce01415192f038f41b1c7e031a33bab4"
+    ],
+    "alias_list": [
+      "MIH Tax",
+      "Tax",
+      "myztro Tax"
+    ]
+  },
+  {
+    "esport_name": "TeQ",
+    "hash": [
+      "2c510471199590d9f9257abcfbbf1d30",
+      "d305c3c58a5e5ac8f318bfe0dcda3ada"
+    ],
+    "alias_list": [
+      "MEAT TeQ",
+      "MEAT Teq",
+      "SENCOACH",
+      "SENTeQ",
+      "SENTeq",
+      "Teq",
+      "TeqApex"
+    ]
+  },
+  {
+    "esport_name": "TenTen",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Tico",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Tolkien",
+    "hash": [
+      "e1cbb0a59a28c67dca43301ed00f7c82"
+    ],
+    "alias_list": [
+      "DYN Tolkien",
+      "GoNext Tolkien",
+      "Tolkien"
+    ]
+  },
+  {
+    "esport_name": "TreeCleaner",
+    "hash": [
+      "eb4b12871de3cfcd1ca515d0df0dc374"
+    ],
+    "alias_list": [
+      "TheTreeCleaner",
+      "TreeCleaner"
+    ]
+  },
+  {
+    "esport_name": "TriNITYz",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "TrixX",
+    "hash": [
+      "fac27e3d4470d01f1b7bee0fc1c57fce",
+      "631853a0474824477df5651d2ef41831"
+    ],
+    "alias_list": [
+      "3TrixX",
+      "BFG TrixX",
+      "BFG_TrixX"
+    ]
+  },
+  {
+    "esport_name": "Tyler",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Tzuyu1st",
+    "hash": [
+      "05aef0f3582b3a111641e4d0ae07e188"
+    ],
+    "alias_list": [
+      "O2_Tzuyu1st"
+    ]
+  },
+  {
+    "esport_name": "UmichanLoveti",
+    "hash": [
+      "748303a60f17055093c8b5b65f415750",
+      "c9e3f4aa3723b37a4a13d03592b820a9",
+      "7e9737c94c65f13609cb9de14ad62a99"
+    ],
+    "alias_list": [
+      "FC_UmichanLoveti",
+      "FNC_UmichanLoveti",
+      "PVX_UmichanLoveti",
+      "UmichanLoveti",
+      "UmichanLoveti FNC"
+    ]
+  },
+  {
+    "esport_name": "Unlucky",
+    "hash": [
+      "1c6b473b88f25fa53c75fc813edb6dbd",
+      "c47c3a177fce49fc512d3edffcd6fa99",
+      "35bdea6fc054e831a2c67eab3f8a7ceb"
+    ],
+    "alias_list": [
+      "ALL Unlucky",
+      "Alliance_Unlucky",
+      "OAH Unlucky",
+      "Unlucky",
+      "Unlucky VXD",
+      "VEXED NotUnlucky",
+      "VEXED Unlucky",
+      "VEXEDUnlucky",
+      "VXD_Unlucky"
+    ]
+  },
+  {
+    "esport_name": "Uxako",
+    "hash": [
+      "4e7d4a39a4f0cf9c477f774b49935454",
+      "ed13d9122c40e0048426e461a77df28e"
+    ],
+    "alias_list": [
+      "2R1C Uxako",
+      "2R1C Uxako \u60aa\u9b54",
+      "EIQ Uxako \u60aa\u9b54",
+      "Uxako",
+      "Uxako EIQ",
+      "Uxako-sama"
+    ]
+  },
+  {
+    "esport_name": "VJEIX",
+    "hash": [
+      "701a11aba6de5e5888308864cbec9ee6",
+      "4e0cec932d6789cd60f08b5f71e32740"
+    ],
+    "alias_list": [
+      "JZ_VJEIX",
+      "VJEIX",
+      "Vjeix"
+    ]
+  },
+  {
+    "esport_name": "Vaifs",
+    "hash": [
+      "481d51fd2c1d21215d9e7446409d574c"
+    ],
+    "alias_list": [
+      "Alliance_Vaifs"
+    ]
+  },
+  {
+    "esport_name": "Vanglorioso",
+    "hash": [
+      "7627099f74d9f9631553aebe21e4f17e",
+      "73ff484c70e451e63e412ec104e8e3f0"
+    ],
+    "alias_list": [
+      "K1CK Vanglorioso",
+      "Vanglorioso"
+    ]
+  },
+  {
+    "esport_name": "Vaxlon",
+    "hash": [
+      "b091cda25facea14b9efbb38ab26b2cb",
+      "c7f1c2e1c77111a0169f959ae850f7fc",
+      "f310fbafc334e9727a079c48d000f67b"
+    ],
+    "alias_list": [
+      "100T Vaxlon",
+      "100TVaxlon",
+      "100T_Vaxlon",
+      "FUR Vaxlon",
+      "Vaxlon",
+      "Vaxlon 100T"
+    ]
+  },
+  {
+    "esport_name": "Veeycy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Vein",
+    "hash": [
+      "434fd5ffed5a899502659077f7be70bf",
+      "ade310e5b62fa6d324da2efd85282dea"
+    ],
+    "alias_list": [
+      "GE Vein",
+      "OXG Vein",
+      "OXG_Vein",
+      "Vein",
+      "Vein OXG"
+    ]
+  },
+  {
+    "esport_name": "Verhulst",
+    "hash": [
+      "ae1f8fcd780fbcf746175d9b16f49bb0",
+      "ea5969993e141117a1bb0a4e2014694f",
+      "869a03b77a39da01df39b227f45f177a",
+      "4a602943fd8c60700cb6713451083e3a"
+    ],
+    "alias_list": [
+      "FTXVerhulst",
+      "TSM Verhulst",
+      "TSMEvanVerhulst",
+      "TSMVerhulst",
+      "TSM_Verhulst",
+      "Verhulst",
+      "Verhulst TSM",
+      "verhulstBURNER"
+    ]
+  },
+  {
+    "esport_name": "Vlatow",
+    "hash": [
+      "de308d5546e0f155625862f7aef20790"
+    ],
+    "alias_list": [
+      "BRD Vlatow",
+      "Vlatow",
+      "Vlatow ATH"
+    ]
+  },
+  {
+    "esport_name": "Vodery",
+    "hash": [
+      "b5defd0136a15b720db60d26178fe53c"
+    ],
+    "alias_list": [
+      "OVER Vodery",
+      "OVER vod",
+      "over vod"
+    ]
+  },
+  {
+    "esport_name": "Vooshii",
+    "hash": [
+      "e5b9cfc8958f5bce04498e412e1ee32d"
+    ],
+    "alias_list": [
+      "INF Vooshii",
+      "VCGO Vooshii",
+      "Vooshii"
+    ]
+  },
+  {
+    "esport_name": "Vor3z",
+    "hash": [
+      "6a0773080141bd82e374523d7a36cf4e",
+      "366a322bdeeeae8c64552bb6492a8d7e"
+    ],
+    "alias_list": [
+      "E36 Vor3z",
+      "KN Vor3z",
+      "Vor3z",
+      "foff"
+    ]
+  },
+  {
+    "esport_name": "Vudo",
+    "hash": [
+      "f34dfe4ac4e8b0636fc55ef0c3cc32f7",
+      "aa000df9693ac154da83c4a405c527ff"
+    ],
+    "alias_list": [
+      "Vudo"
+    ]
+  },
+  {
+    "esport_name": "WenXx",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Wey",
+    "hash": [
+      "060e4f1b379fb8f1ef82b2de67591dd8"
+    ],
+    "alias_list": [
+      "VP Wey",
+      "Wey"
+    ]
+  },
+  {
+    "esport_name": "Whisper",
+    "hash": [
+      "0f85938d4715ae0aaf34189c0a4b133d",
+      "16fa76f4fafb757774c3deaf83222612"
+    ],
+    "alias_list": [
+      "CR_Whisper",
+      "Whisper"
+    ]
+  },
+  {
+    "esport_name": "Willemkh",
+    "hash": [
+      "2ecec4582d6892eaa7634a4a6409adaf"
+    ],
+    "alias_list": [
+      "OP Willemkh"
+    ]
+  },
+  {
+    "esport_name": "Wxltzy",
+    "hash": [
+      "0f7fa9ba55559a43d58327bf0661170a",
+      "4593a251d9ad4858fa187d353f68f9a8",
+      "5d0079f28e67d6f5f83d0b30e9064f0e"
+    ],
+    "alias_list": [
+      "MST Waltzy",
+      "MST Wxltzy",
+      "MST_Wxltzy",
+      "Wxltzy",
+      "Wxltzy MST",
+      "Wxltzy_MST"
+    ]
+  },
+  {
+    "esport_name": "XX",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Xenial",
+    "hash": [
+      "a98396ed0bec4dea8a862bc6441f8662",
+      "a6b6b7022966dd4605e368eac0a76a5b"
+    ],
+    "alias_list": [
+      "OXG xenial",
+      "SEN xen",
+      "SEN xenial",
+      "SSG_xenial",
+      "SSGxenial",
+      "x"
+    ]
+  },
+  {
+    "esport_name": "Xeratricky",
+    "hash": [
+      "20965d7094ec95f25e3bb26b79ef4659"
+    ],
+    "alias_list": [
+      "Xeratricky",
+      "Xeratricky FUR"
+    ]
+  },
+  {
+    "esport_name": "XiaoKai",
+    "hash": [
+      "a85d677581913393a65194df45630f12"
+    ],
+    "alias_list": [
+      "VKG XiaoKai"
+    ]
+  },
+  {
+    "esport_name": "XoyoBda",
+    "hash": [
+      "2e2a683b6208f604e02325b4243c92e5"
+    ],
+    "alias_list": [
+      "ASH_XoyoBda",
+      "WF Xoyo",
+      "WF XoyoBda"
+    ]
+  },
+  {
+    "esport_name": "Xynew",
+    "hash": [
+      "1bbb33f3133032bf4bb8f3b39b4de9ac",
+      "f562641d6405135cffd170b93ff3027b"
+    ],
+    "alias_list": [
+      "MEAT Xynew",
+      "SSG Xynew",
+      "SSG_Xynew",
+      "Twitch.tv/Xynew_",
+      "Xynew",
+      "Xynew DZ",
+      "twitch.tv/Xynew_",
+      "xynew"
+    ]
+  },
+  {
+    "esport_name": "Xzz",
+    "hash": [
+      "9af04b309411bcb68079561c0e096670",
+      "1a022ee215e220376837373dbebef079"
+    ],
+    "alias_list": [
+      "DDOS",
+      "JackieChan_WTD",
+      "WTD XZZ",
+      "Xzz",
+      "\u53c9\u70e7\u996d",
+      "\u6211\u60f3"
+    ]
+  },
+  {
+    "esport_name": "YUKIO",
+    "hash": [
+      "3e2571df81f8abb209827912862f661f",
+      "e05fba9823513b93fa34e68e6c8a7427"
+    ],
+    "alias_list": [
+      "RID Yukio",
+      "Riddle YUKIO",
+      "YUKIO",
+      "YUKIO RID"
+    ]
+  },
+  {
+    "esport_name": "YaSe",
+    "hash": [
+      "d85301bddc10e564b04288edcc9331f6"
+    ],
+    "alias_list": [
+      "ASH YaSe",
+      "ASH_YaSe"
+    ]
+  },
+  {
+    "esport_name": "YanYa",
+    "hash": [
+      "a4a92e6e0047cf53bed6e3822768b5cb",
+      "f2e54563e9c109744200dd1b4a3501b1",
+      "2e2e4dc3b756e3eb7160578f0248400f",
+      "3b488cb8ca626dd4b790f7bd0f2d9a39"
+    ],
+    "alias_list": [
+      "LGYanYa",
+      "LG_YanYa",
+      "TLAW lYanYal",
+      "YanYa",
+      "YanYa LG",
+      "lYanYal"
+    ]
+  },
+  {
+    "esport_name": "Yaztoh",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Yc",
+    "hash": [
+      "ae04850f44f052a6c84b77b1c36d9ad1"
+    ],
+    "alias_list": [
+      "Xny_Yc",
+      "Xny_yc",
+      "yeah"
+    ]
+  },
+  {
+    "esport_name": "Ye Qiu",
+    "hash": [
+      "1ddc0ea8001673f533fb1f094f226f0b"
+    ],
+    "alias_list": [
+      "POR YeQiu",
+      "VCGO YeQiuApex",
+      "Ye Qiu",
+      "YeQiuApex"
+    ]
+  },
+  {
+    "esport_name": "Yesh_weewoo",
+    "hash": [
+      "c2c31bd7e9079408fd252e61fd7f6a07"
+    ],
+    "alias_list": [
+      "GH Yesh_weewooBda",
+      "GHYesh_weewoo",
+      "Yesh_weewooBda"
+    ]
+  },
+  {
+    "esport_name": "Yoloo_y",
+    "hash": [
+      "7d60ad3681e98d27b3310ea16b4e97a9",
+      "ac4ce1a5c00d87bc858eca9817e59e18"
+    ],
+    "alias_list": [
+      "GWYoloo_y",
+      "GW_Yoloo_y",
+      "Yoloo_y",
+      "Yoloo_y On Fire ( literally )"
+    ]
+  },
+  {
+    "esport_name": "You66",
+    "hash": [
+      "b76a1441e023c3ca6b2e010668345e4f"
+    ],
+    "alias_list": [
+      "CCG_You66"
+    ]
+  },
+  {
+    "esport_name": "YouL1ng",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Yudu",
+    "hash": [
+      "a0722ca2cb8ed6337782282cfe56bbca",
+      "3df3ddfa5bffcec18249175e4a5713cb"
+    ],
+    "alias_list": [
+      "FLR_Yudu",
+      "xTs Yudu"
+    ]
+  },
+  {
+    "esport_name": "YukaF",
+    "hash": [
+      "32ce22a2eb9560fec8baea5f7c468608",
+      "4122068afbac5cf8c41e9c8f61825c0b",
+      "6099692ac6f350fc7e7e8faed298a468"
+    ],
+    "alias_list": [
+      "FNC YukaF",
+      "FNC_YukaF",
+      "YukaF",
+      "YukaF FNC"
+    ]
+  },
+  {
+    "esport_name": "Yuki",
+    "hash": [
+      "c65e116fe512b7e558bdc314c65ff9c5",
+      "288a19712bd63bf430e0058745221e06",
+      "e9268514b4b3965d2062cd5ecf22ecc3"
+    ],
+    "alias_list": [
+      "ALL_Yuki",
+      "Alliance_Yuki",
+      "Yuki",
+      "Yuki ALL"
+    ]
+  },
+  {
+    "esport_name": "Yukoi",
+    "hash": [
+      "062c9f1528a8b7e962a687e3b0979fc7"
+    ],
+    "alias_list": [
+      "Yukoi",
+      "yukoi"
+    ]
+  },
+  {
+    "esport_name": "YunD",
+    "hash": [
+      "a0fafbf9a166bde00ad1dc3f118a3145",
+      "60bd93f988574d5c65700570d16c0969"
+    ],
+    "alias_list": [
+      "E36 YunD",
+      "E36_YunD"
+    ]
+  },
+  {
+    "esport_name": "YungHongKong",
+    "hash": [
+      "334c6ea97455ddd3353605723a62ac26"
+    ],
+    "alias_list": [
+      "EXO YungHongKong",
+      "EmberYungHongKong",
+      "HPYungHongKong(LFEgirl)",
+      "YungHongKong"
+    ]
+  },
+  {
+    "esport_name": "Z1CKKY",
+    "hash": [
+      "7d32f1b1b507cf48f343124eceadf60a",
+      "f0ece6571c3957d423ee292c25d6b5f7",
+      "37aefe55adeb0bbd5fee90342d854f25"
+    ],
+    "alias_list": [
+      "EXO_Z1CKKY",
+      "IBG Z1CKKY",
+      "TYK Z1CKKY",
+      "Z1CKKY",
+      "Z1CKKY \u30c5"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a827034f4fdf05121a6a20b02c22222b"
+    ],
+    "alias_list": [
+      "#757",
+      "Unix"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1390f4f1a79342410f9fe1f264aab727"
+    ],
+    "alias_list": [
+      "1GregoM"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "acd3b381cfd3e823553a1354e272849f"
+    ],
+    "alias_list": [
+      "1Kr0noz",
+      "LYE Kr0noz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "67e2787643049b2c1f55e84296674580"
+    ],
+    "alias_list": [
+      "1NDRAKING",
+      "1ndraking"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "80ae414b042e978e20f881d532612e49"
+    ],
+    "alias_list": [
+      "1Shikaa",
+      "LYE Shikaa"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3a5ebc496edf482fb67661c620293292"
+    ],
+    "alias_list": [
+      "1crust1",
+      "SENcrust",
+      "crust"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cb02b9c45e577b6aacee60381cecd8fe"
+    ],
+    "alias_list": [
+      "1kuush"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "887e0d28bdebd001db59f944330b4794"
+    ],
+    "alias_list": [
+      "23Tikss"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3a1bd031baf7909329072d9ba5d561ab"
+    ],
+    "alias_list": [
+      "3S P1NPXN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "37e83b2e133585a6f3066321fa0a9a58"
+    ],
+    "alias_list": [
+      "3s-Shynk",
+      "3s-ShynkCh"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4dc1d5114a2fe02c62926d4f161df8d7"
+    ],
+    "alias_list": [
+      "3s/\u3066\u3093\u3066\u3093",
+      "3s/\u3066\u3093\u3066\u3093Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "59a750ec1f3fbf8cfe6b093e5dc82a7c"
+    ],
+    "alias_list": [
+      "4SeTz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1332dc1377c8750249ee9c2ab3fd2d45"
+    ],
+    "alias_list": [
+      "5S UchihaSasuke321",
+      "UchihaSasuke321"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f35887b036edb214f446e73c0f64b802"
+    ],
+    "alias_list": [
+      "5S iceesannn",
+      "iceesannn"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3fda13d58b98096287b8f9d302df11eb"
+    ],
+    "alias_list": [
+      "5S \u0161hifu",
+      "shifu."
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8428c55c1b5f32ed1fd7b6a7b1d3a174"
+    ],
+    "alias_list": [
+      "7512gnirob_DTW",
+      "WTD_Boring2157",
+      "obi7r51n2g WTD"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c965b2e2394c956feb681c0daad3ca01"
+    ],
+    "alias_list": [
+      "7Hyperz",
+      "7Hyperz Twitch",
+      "7Hyperz on Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c6de5f07e275e15a5ddfad35a84770e0"
+    ],
+    "alias_list": [
+      "9bongo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "72086c2a5947f79d061709f74f31a1ce"
+    ],
+    "alias_list": [
+      ":(",
+      "Guilt tripping",
+      "Noname",
+      "Twitch Cheater",
+      "WHYWASIBORN",
+      "caijiuduolian"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b9dd26f8073d550c7b46cebf6d886d36"
+    ],
+    "alias_list": [
+      "?"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4feb0f1d0c95f363993ceafa49599075"
+    ],
+    "alias_list": [
+      "@hiPSYCHOttv"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0aa988e38c223fbeaefeafa4ad3d51a3"
+    ],
+    "alias_list": [
+      "ADL You'reXP"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "adb5a8dad217ec94c85510adc0022f38"
+    ],
+    "alias_list": [
+      "AGL-XXfps",
+      "AGL_XXfps"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5f62b6db3c8a3204526699308ad84104"
+    ],
+    "alias_list": [
+      "AGL_QQ-R-",
+      "AGL_QQ-w-"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c3b842fceb86eb6667765ba9ac0c2e4b"
+    ],
+    "alias_list": [
+      "AIK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "18b83dd98a9efd3c32c425f1fa4540fb"
+    ],
+    "alias_list": [
+      "AMFury",
+      "ESAFury"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c1377af47c3736161f09dc20064db1d9"
+    ],
+    "alias_list": [
+      "ATHXHVY_ASLEEP"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "af1d96563a1d3444d14a21124d0a5b5d"
+    ],
+    "alias_list": [
+      "ATHXHVY_TRINITYZY"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5e287068bf177d039d59c3264faf36b3"
+    ],
+    "alias_list": [
+      "ATHXHVY_VLATOW"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "afa99e6268f558106f4460274101e186"
+    ],
+    "alias_list": [
+      "AURORA CLEAVEEE",
+      "AURORACLEAVEEE"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b891fd7a6bd50f16595b7344e8bee353"
+    ],
+    "alias_list": [
+      "AURORA MALIWAN",
+      "AURORAMALIWAN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "552e744b334f0bd8bbf99e378f4eae6c"
+    ],
+    "alias_list": [
+      "Accnv"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dd6083ef730465e41a17ee5f36778ad4"
+    ],
+    "alias_list": [
+      "AdaM_zZ | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "94c384dba44aac7a0819c7c58551f555"
+    ],
+    "alias_list": [
+      "Adayum"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e48b15402dff7ea6d9b02cb888a699f4"
+    ],
+    "alias_list": [
+      "Adept LiNkzr"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b936ca67e2d118d169fb2dc0f12a8aa3"
+    ],
+    "alias_list": [
+      "AdrianZLuis"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7dce66a632fcf3ffd03f48961b371a07"
+    ],
+    "alias_list": [
+      "AeoFps"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "302112b94089b765a7e60c6529319547"
+    ],
+    "alias_list": [
+      "Alejote",
+      "ELN_Alejote",
+      "zlAlejote"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8ca3f5d1bca72aa86a3b83b2e21404ef"
+    ],
+    "alias_list": [
+      "Amaazz",
+      "TotemAmaazz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c4276bf6e0ccc86f989b86503f81f24a"
+    ],
+    "alias_list": [
+      "Andresito"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bf91b627e4e3d717a04bc54e418b4de4"
+    ],
+    "alias_list": [
+      "Anemone3rd"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ed2c9e73a20d2ce74f9f8f00851c0c40"
+    ],
+    "alias_list": [
+      "AnibalJz_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1062d795b930c46805ccb4ea804992dc"
+    ],
+    "alias_list": [
+      "Asura",
+      "PrideAsura"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "85ec478e3e93557b2f40a0484b6a37c0"
+    ],
+    "alias_list": [
+      "Atinum"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "748efa4b854d4b664979a1ca97322e21"
+    ],
+    "alias_list": [
+      "AwKare45",
+      "awk",
+      "awkchan45"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e83fd9b6791b0e7a939e69274c51794f"
+    ],
+    "alias_list": [
+      "BFG M47",
+      "Lil_Max47",
+      "\u041b\u0438\u043b \u041c\u0430\u043a\u0441"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8e74059e122c007091cdcc2fc1dabfec"
+    ],
+    "alias_list": [
+      "BFG_Creeping"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bbd0d6cfb97b4ba8621b11f0dd56796c"
+    ],
+    "alias_list": [
+      "BFG_Mjoz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d6b65692f59b857a8d935db95cd5b579"
+    ],
+    "alias_list": [
+      "BIILLFPS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "131465f5567020adab1c3e64f931f303"
+    ],
+    "alias_list": [
+      "BRU GOPGAPz",
+      "BRU G\u0424PGAPz",
+      "GOPGAPz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b975e4078c36a904d1fe185b232e6575"
+    ],
+    "alias_list": [
+      "BRZ Einw"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8068893c2e9755260c3fec423be33fa1"
+    ],
+    "alias_list": [
+      "BRZ_ANAYA",
+      "TW_ANAYA Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e99dc1f917bdd8ec5acb9cdd4a6e6715"
+    ],
+    "alias_list": [
+      "BRZ_HoNoSuu",
+      "HoNoSuu"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "344ddc127722e2e585d493830bd8c29c"
+    ],
+    "alias_list": [
+      "BSExStrongest",
+      "xStrongest"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "26e55fb46e1f4e2515504a514b79acae"
+    ],
+    "alias_list": [
+      "BT_ToshiChan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2cd5b0e98c68bf3b5d877773237dd3a4"
+    ],
+    "alias_list": [
+      "BangFaFaFIF_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e40bf10a95c9a35b2582a72beb31a669"
+    ],
+    "alias_list": [
+      "Bazaar"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "68e0c5ea7591a6bc4a5b73f51b605ea7"
+    ],
+    "alias_list": [
+      "BellkunX_",
+      "SmurfyBellkunX_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8f35e35baa5490849fdbd7bae62ba417"
+    ],
+    "alias_list": [
+      "Blaeku\u30c3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b644013d0969f96a12bb810a731a7436"
+    ],
+    "alias_list": [
+      "Bronzey"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7fc0dd567ffdf5f6fc56a35e9b0cac71"
+    ],
+    "alias_list": [
+      "BucK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "73c660973d29e29f95e71b5545e75df6"
+    ],
+    "alias_list": [
+      "C9rocker",
+      "rocker"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ecffe50dd6ee4114183f5656c89f9599"
+    ],
+    "alias_list": [
+      "CATS ELONZY"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dda968cfc294b270d2305d0c8a65dc19"
+    ],
+    "alias_list": [
+      "CATS XANIYA"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7f45065081972834ea318299c3084e35"
+    ],
+    "alias_list": [
+      "CCE CcobraxX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "569ca0e6336924edb65e78c31edfb18b"
+    ],
+    "alias_list": [
+      "CCE IttzProphet",
+      "CCE | IttzProphet | Twitch",
+      "N8V ProphetVM"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7994185202f757c94b8b69a28c686ca4"
+    ],
+    "alias_list": [
+      "CCE Kap3",
+      "Twitch_Kap3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "66ca5e49d9ace0599a2d092ab6506544"
+    ],
+    "alias_list": [
+      "CCE Trevstacks",
+      "Twitch | Trevstacks"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "67051998624c33166c17aeb1588789d1"
+    ],
+    "alias_list": [
+      "CCE sauz",
+      "CCE sauz!",
+      "cce sauz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "38eef33c8d5525376449fdc1b443bb91"
+    ],
+    "alias_list": [
+      "CCE shini",
+      "WVE MNK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "32c7f8b8fff1fbba33e6901900a8a2e4"
+    ],
+    "alias_list": [
+      "CCS Cheok",
+      "Cheok"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9db360c3f05b0d3b74301bfb755391e3"
+    ],
+    "alias_list": [
+      "CCS J1_KR",
+      "J1_KR"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8d19105a92cb9f9d1fca71876cdd4393"
+    ],
+    "alias_list": [
+      "CLG iShiny",
+      "COL_iShiny",
+      "COLiShiny"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0ecbd4caa64a7b230264103fd3189aa6"
+    ],
+    "alias_list": [
+      "CLGdimi"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b035d4d461534dd7eddc360f30937a5d",
+      "a623e12b75fca7beeeb4a86bc528ecaf",
+      "f5e1512dda89e2198349d0cebaebebd9"
+    ],
+    "alias_list": [
+      "COLD Tylerfps",
+      "NAVI TYLER",
+      "NAVI Tylerfps",
+      "NAVI tyler",
+      "OAH TYLER",
+      "Tylerfps",
+      "Tylerfps VXD",
+      "VEXED TYLERFPS",
+      "VEXED Tylerfps",
+      "VEXEDTYLERFPS",
+      "VEXEDTylerfps",
+      "VXD_Tylerfps"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "43d994e3bdfd25313bd7c6453fd8acae"
+    ],
+    "alias_list": [
+      "Calamitous"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2ba6a37ac43e62ed4b762c84f2d530e7"
+    ],
+    "alias_list": [
+      "Caprah",
+      "Caprah6969",
+      "Caprah^v^",
+      "caprah"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b7742912800d7cb5c3f586510fdc3a4f"
+    ],
+    "alias_list": [
+      "CatSleepingTTV"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bee67822cdff6f11440cdf58bda0c60f"
+    ],
+    "alias_list": [
+      "Chase NXS",
+      "Chasemob"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "399ec13cd65f0ac2836b33814ff61297"
+    ],
+    "alias_list": [
+      "Clever-TAKEO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9f773e3b2911649e51bfb71929b1481a"
+    ],
+    "alias_list": [
+      "Cleysaa"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ebf6d033099beae3df09ac58ef6e2f5b"
+    ],
+    "alias_list": [
+      "Comig12"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3fe7d57fecabe6baa879c0c8044487cc"
+    ],
+    "alias_list": [
+      "Crow very washed",
+      "Crowzjo (Retired and Washed)"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cd12ffc37fcc2d1b782d704f1a72567b"
+    ],
+    "alias_list": [
+      "Cubski",
+      "NXS Cubski",
+      "NXS cubski",
+      "OXGCubski"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3d4b123badf8354cdfb0c45b13a98014"
+    ],
+    "alias_list": [
+      "DETH-SEIYA"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "722074bdfe7ed301df22532ddc7c24c3"
+    ],
+    "alias_list": [
+      "DF_3Mz4090"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "112761590a3d833ce3f6f6ee551e8144"
+    ],
+    "alias_list": [
+      "DF_Roiee"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "904a8b00d07c1ab685313e42d10edfdf"
+    ],
+    "alias_list": [
+      "DIG JayeCue",
+      "JayeCue"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b13b3acbbee10197c65acd8c41c9b76f"
+    ],
+    "alias_list": [
+      "DIG Stompez",
+      "Stompez"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "19e009205269d0e6448db8d7762a7da5"
+    ],
+    "alias_list": [
+      "DK",
+      "Dkzeera"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fdeff530416cdc7a02641008663a2933"
+    ],
+    "alias_list": [
+      "DNZ-zaoyin"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "15017e7f3f727462f1ce68ae3809f4cc"
+    ],
+    "alias_list": [
+      "DNZ_KenTunG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f1560b06689f7df6961dc27642dbe0bb"
+    ],
+    "alias_list": [
+      "DNZ_PAPA"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2630ebb9cdb6d98dc2f3713d4095bab1"
+    ],
+    "alias_list": [
+      "DNZ_Xq"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e7b146d11009dc681e9df42519701965"
+    ],
+    "alias_list": [
+      "DROPPED",
+      "DROPPED OG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "81fc19588f4ff33d31176637fd1be120"
+    ],
+    "alias_list": [
+      "DYN Mania"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2c6e4c2bca36e65649dda06e2087c76d"
+    ],
+    "alias_list": [
+      "DYN Sorbenq"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "35b9c39b645672adae89e2a9b3bf4a41"
+    ],
+    "alias_list": [
+      "Dazoh",
+      "dazoh"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "34c9d2a858f637b2754ccd9562b28102"
+    ],
+    "alias_list": [
+      "DeLucca",
+      "delucca",
+      "deluccaFPS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7bbd55e81168add79e603ec83914faae"
+    ],
+    "alias_list": [
+      "DeToX",
+      "FURY DeToX",
+      "Rise DeToX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b9b13ab69d50e8e48e2c242adcdb7091"
+    ],
+    "alias_list": [
+      "Deeds",
+      "TRI Deeds"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "62b1cfc0d22eec882fb0b6b2644cb638"
+    ],
+    "alias_list": [
+      "Digi",
+      "digi"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1ab0307a35f0616cfa3a66d27369a113"
+    ],
+    "alias_list": [
+      "DonutOvO",
+      "SWQ_Donut"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "346d1074b5c1d2188a947c5400bde900"
+    ],
+    "alias_list": [
+      "Dramah",
+      "Dramah twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "23ace528362d27b35013aab4bf4f30eb"
+    ],
+    "alias_list": [
+      "Draugr"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "167a87caea7ed6374f7691649c4546c8"
+    ],
+    "alias_list": [
+      "Droseeef"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "10f3c27ae0bc79eaea9e22806addf7a1"
+    ],
+    "alias_list": [
+      "E8Golden",
+      "e8Coalden",
+      "e8Colden",
+      "e8Golden"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "984934fd88dee648ce5414724aa50629"
+    ],
+    "alias_list": [
+      "E8MERCY"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "803cb8d233c2b6ac8c10ad5397267d7f"
+    ],
+    "alias_list": [
+      "E8PRESLYY",
+      "depreslyy",
+      "preslyy",
+      "preslyyNXS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "49e65e3af7c69b6a36a94e06b34dbd09"
+    ],
+    "alias_list": [
+      "EEC carter"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "678eb600f6175220762218e411ac0fed"
+    ],
+    "alias_list": [
+      "EEC coce"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c5b935c7a6906bba06460b2cdda8df8"
+    ],
+    "alias_list": [
+      "EGOIST NPC1"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b77ef511b6ab8a3c65c2ec46588d79e3"
+    ],
+    "alias_list": [
+      "EKOHTPHarold"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "99ef8be3aef94f6ed1741e4f297bae52"
+    ],
+    "alias_list": [
+      "EKOZuni",
+      "EKOZuniUKtwitch",
+      "PLR ZuniUK | Twitch",
+      "ZuniUK | Twitch",
+      "ZuniUK|Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "751aca65dfde54274ce4afe073e3b542"
+    ],
+    "alias_list": [
+      "EMILIAZII"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "660b43fd51630fb30372d7ddc2ec86ff"
+    ],
+    "alias_list": [
+      "EP_H1kisz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1319adffd88b326f64e28274dd6f6dbb"
+    ],
+    "alias_list": [
+      "EP_Holiday"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "58edeca63449d96d96138d844e119940"
+    ],
+    "alias_list": [
+      "EP_JieLun"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2e9e6365516d324584efa469a2d3ffdb"
+    ],
+    "alias_list": [
+      "EShadowGG l Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b7c308d5d82c314d88a66fe15bd7b6ab",
+      "34ceffc4db2297e03786c05abb2f8869"
+    ],
+    "alias_list": [
+      "EVoiyC_",
+      "Gusenpai",
+      "PEEKG0D",
+      "WTD Peekgod",
+      "peek god",
+      "peekgod",
+      "\u0427\u0435\u0308\u0440\u0442 \u0432\u043e\u0437\u044c\u043c\u0438!",
+      "\u53ef\u662f\u96ea\u25a1 \u98d8\u8fdb\u53cc\u773c",
+      "\u79c1\u306exim\u306f\u672c\u5f53\u306b\u7d20\u6674\u3089"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c841ad6669804fdfdd9495fe2931b337"
+    ],
+    "alias_list": [
+      "EXO TryhardThor"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "161d8cf3e1b67442646826214e872bef"
+    ],
+    "alias_list": [
+      "Eccio"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c854d7a5f213eb1f2b7831229c5978bc"
+    ],
+    "alias_list": [
+      "Entity-Apex"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "31e25ce904ab7ab2100642ea8fc08d61"
+    ],
+    "alias_list": [
+      "FG_akku"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "780c274323037dbc81a39ab333926570"
+    ],
+    "alias_list": [
+      "FL Hesiko"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ea42f155a95ea4b2d7da767df7e9e33f"
+    ],
+    "alias_list": [
+      "FL mo-mon_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "adb198ef8aaeb526edae864eb94dcafe"
+    ],
+    "alias_list": [
+      "FLAK3SS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "573ebe5e050ba3378f71b672e3764463"
+    ],
+    "alias_list": [
+      "FNX Rhythm",
+      "FNX rhythm",
+      "Rhythm"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d43d6d0b409485f9c80529d21bf14477"
+    ],
+    "alias_list": [
+      "FNX iWorth",
+      "iWorth"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fa3d2fcd6ac1f891b75a074dca2c8fae"
+    ],
+    "alias_list": [
+      "FNX khalef1"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6de787b7778e4d4f65c561d2fb3850f8"
+    ],
+    "alias_list": [
+      "FNX_FuinhaFPS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6adb13508a22a8f5a9a6666d56e2a6e3"
+    ],
+    "alias_list": [
+      "FRATIS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "91e1bc62baef92fce6335d3441f03b7d"
+    ],
+    "alias_list": [
+      "FURIA Xera",
+      "FURIAXera",
+      "FaZe Xera",
+      "Xeratricky1|Twitch",
+      "twitch.tv/Xera"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5282a0ee89ca0075c2e684f190258b04"
+    ],
+    "alias_list": [
+      "FUT Noth",
+      "FUT_Noth"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c44333eaa478b0a5271ac1a84d0c832b"
+    ],
+    "alias_list": [
+      "FUTTaylor",
+      "FUT_TayIor",
+      "FUT_Taylor"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3e02363d2b1f6ef9a52aa3a608b11764"
+    ],
+    "alias_list": [
+      "FUT_Kouhia"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d221235c97d0e4155a374cacd414cf4c"
+    ],
+    "alias_list": [
+      "FaZeSlurp"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9f87b8240c07880cdae0a5434fa48216"
+    ],
+    "alias_list": [
+      "Falcons"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "062206279870530bdbf05ee76a9bba58"
+    ],
+    "alias_list": [
+      "Fangs-K98"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4bb0c3f127c2dc82f5f3aaf745c63561"
+    ],
+    "alias_list": [
+      "Fantasy"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2f59e209a0248ee7529753e6fabf33af"
+    ],
+    "alias_list": [
+      "Flinzar",
+      "inter flinzar"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "17237629e9259cf7d243280457273674"
+    ],
+    "alias_list": [
+      "Folti"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6f614913074322f6fe0422b5b6d36cf1"
+    ],
+    "alias_list": [
+      "Funk"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8011081fafc30b24cebb108ba210a7b1"
+    ],
+    "alias_list": [
+      "G2_Resultuh"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7787863b31a320b734b2f0e4750f254f"
+    ],
+    "alias_list": [
+      "GG Leogri3x6",
+      "GGLeogri3x6"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "670fc77ace46a17e40588585970f8dc4"
+    ],
+    "alias_list": [
+      "GG Qzier",
+      "GG_Qzier",
+      "qzierr"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0ad904eeda88ab70709377fc93d747d0"
+    ],
+    "alias_list": [
+      "GH iDracois",
+      "GHiDracois",
+      "iDracois"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cdd68e1b23c45cbefa6c435e3387ddec"
+    ],
+    "alias_list": [
+      "GRD Zillxch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fe4f7052f417850b2378b0c46dfd33a4"
+    ],
+    "alias_list": [
+      "GROW_TenoriN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0a4767563826019161b28fb82bcec081"
+    ],
+    "alias_list": [
+      "GROW_\u3061\u3053\u3061\u3083\u3093",
+      "MOZE \u3061\u3053\u3061\u3083\u3093\u3060\u304a",
+      "\u3061\u3053\u3061\u3083\u3093\u3060\u304a"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "afcee4821ac6d4270fb63c1f16492ce5"
+    ],
+    "alias_list": [
+      "GROW_\u30a4\u30d6\u305e\u3046\u3055\u3093"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "995dbe219a369e552172c92a02207471"
+    ],
+    "alias_list": [
+      "Gambit\u30c3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bd092a18c3e1fbeba5335819d46ebc70"
+    ],
+    "alias_list": [
+      "Genos"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "975a17304cd212c35fa9d42b81e92d10"
+    ],
+    "alias_list": [
+      "Gerovic12",
+      "SZGerovic12"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3621c36028f6df82aa71a5e726ccf028"
+    ],
+    "alias_list": [
+      "GoNext_1Kaishi"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a6d9c64d81878150fd40f2bffcfc3464"
+    ],
+    "alias_list": [
+      "GoatPS",
+      "boat",
+      "goat"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "aba91bc1738f8d3f3d14dbce896ead2b"
+    ],
+    "alias_list": [
+      "Gody"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b9b707c2033de5e42c9769375c97e950"
+    ],
+    "alias_list": [
+      "Gs_MobiuS",
+      "MobiuS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "855872ee387ba600d4ab01a217aae197"
+    ],
+    "alias_list": [
+      "Gs_Phoenix",
+      "MDY_Augenstern"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c3bc7681227c79322ab3b2772907df46"
+    ],
+    "alias_list": [
+      "GuhDaaym"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ea621caaa6c420a3ea22514fbd5c0b05"
+    ],
+    "alias_list": [
+      "H1yaAbbang"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c0a760b8b21d79e36f4627711cdd0b4"
+    ],
+    "alias_list": [
+      "HAO_Fzr",
+      "ORW_Fzr"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "014e6beb411266ad980b32acf80a4928"
+    ],
+    "alias_list": [
+      "HATS Jimo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b66e79d689d8627d74fbff90c6c5c5d9"
+    ],
+    "alias_list": [
+      "HATS Khronnos"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "40d35f0ddcd01280a95ebe0365f1e064"
+    ],
+    "alias_list": [
+      "HATS felipiant"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3cc08899e39d5e6d07d3bf2256ef50d1",
+      "da7744ecbbb6ca663aff805df6a3a2c5"
+    ],
+    "alias_list": [
+      "HEROEZ laheemx_",
+      "HRZ laheemx_",
+      "laheemx_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ceb044cf44aa3bf62ccac0ab85738570"
+    ],
+    "alias_list": [
+      "HRZN_JSavage"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f22ff012d634bd6ccedf2d62feffd8b8"
+    ],
+    "alias_list": [
+      "HYK P4NicK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4e51ba345b0393f43354e0c570d5eed1"
+    ],
+    "alias_list": [
+      "HYK_E\u0438d\u0435r"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8f4f5210127b93f0f78964d42fa4e434"
+    ],
+    "alias_list": [
+      "HYK_SABUESO",
+      "SABUESO",
+      "Sabusannn",
+      "\u0416HYK_SabuesoUwU\u0416"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "62eac16c828caa4f7c2178d15f6655f1"
+    ],
+    "alias_list": [
+      "HeeGak"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a4b87938cc568d4a11dc6691614ecd28"
+    ],
+    "alias_list": [
+      "Henchman",
+      "iHenchman1"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "11087644fc399f5b441e4f652108b423"
+    ],
+    "alias_list": [
+      "Heroez_ASKYY"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2305b68e8b4696e460c3e0498346778d"
+    ],
+    "alias_list": [
+      "Heroez_Facoooooo",
+      "VexX Facoooooo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "335b88225175c91152007ecea6ffdae3"
+    ],
+    "alias_list": [
+      "Heroez_KlemmyGG",
+      "VexX KlemmyGG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dc90f8fc63d6fd48896d16be17826c14"
+    ],
+    "alias_list": [
+      "Heroez_VVrathLk",
+      "Heroez_VVrathLk>.<",
+      "Heroez_WrathLk"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c9d8e12d52009885ee1275f0f3919e09"
+    ],
+    "alias_list": [
+      "HeroezrowbbeN",
+      "VCGO_rowbbeN",
+      "rowbbeN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a68c42b2214ac46bbd55c52c22d4a29d"
+    ],
+    "alias_list": [
+      "HoodyS15"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c3070e6ec22cbe88450eaf87f3b7530f"
+    ],
+    "alias_list": [
+      "HorizXon",
+      "Twitch_HorizXon"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6cb27d1afc744af0d65400854198f3d3"
+    ],
+    "alias_list": [
+      "Hyzeq"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ad7829d4c09385ef8d86b8a5a6100093"
+    ],
+    "alias_list": [
+      "IBG Jaro"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8fca707c7988317e97bb23e4d6954afb"
+    ],
+    "alias_list": [
+      "IBG_PlayerK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "140edd3389b40f3773752b788838b362"
+    ],
+    "alias_list": [
+      "IBG_Strafing"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "839da295af6d2c8ee26b7fbe6f11e42b"
+    ],
+    "alias_list": [
+      "INF LiivaiiB"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "be5ca39f2b42a164d0124dd0730a579a"
+    ],
+    "alias_list": [
+      "ISkyee"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2c69a0e3515bccb93b3497f013e90fef"
+    ],
+    "alias_list": [
+      "IcyRvR",
+      "inter IcyRvR"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1468faaaef910a8b693330d0bffb43d8"
+    ],
+    "alias_list": [
+      "ImNiceW",
+      "Nice"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ae981a76d83297eff7d51d9011f8a753"
+    ],
+    "alias_list": [
+      "Imp"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "22a44dcdfb542727c0bab21b08ad11f0"
+    ],
+    "alias_list": [
+      "Impulse"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "79f74638b01f20c70b4ac6e25c81973f"
+    ],
+    "alias_list": [
+      "JDT_GURAN34"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c3958b2b805f2206ebd7db9532603179"
+    ],
+    "alias_list": [
+      "JDT_Regalia"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b2df89ad973442d037018495a5a79787"
+    ],
+    "alias_list": [
+      "JDT_\u57fc\u7389\u304b\u3074\u3070\u3089"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8e850f2672406f367987eab1d413739a"
+    ],
+    "alias_list": [
+      "JELOAN",
+      "Jeloan",
+      "jeloan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7eaa7b8c2954525a5dad9466ab0ff54d"
+    ],
+    "alias_list": [
+      "JET",
+      "inter JET"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "127f24e126a141a0f9003547e5464da1"
+    ],
+    "alias_list": [
+      "JaM"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "569788972502a6c38e6a77f59d5e1a73"
+    ],
+    "alias_list": [
+      "JamesFearless"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "35d15b47c76922de56038d203eb1a929"
+    ],
+    "alias_list": [
+      "Jaspah"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "657a767f9016e591ee279da9a275b8b5"
+    ],
+    "alias_list": [
+      "JayceeTower"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "abf0c3ca50ea81deb3b86738fb100bc5"
+    ],
+    "alias_list": [
+      "Johwny"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f1096725fe0ae13e3251c244996f4504"
+    ],
+    "alias_list": [
+      "Jojo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f2e1ca68470feb13442192a31da3b7ab"
+    ],
+    "alias_list": [
+      "JokeeV2"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b066f0423be754556f0f8b6d32ce7eaa"
+    ],
+    "alias_list": [
+      "Julez"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f3bbc46c141346fb582ab116ae1f2f33"
+    ],
+    "alias_list": [
+      "Juuso"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6b2f27e82ecba56c5004c1b919f4893d"
+    ],
+    "alias_list": [
+      "K R Y Z E N"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7d6398e7ee6aed0603dd27e6647af835"
+    ],
+    "alias_list": [
+      "K1CK_VanVan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c58f1536beaadca0e83accb187bf3442",
+      "b4d6bfce584e5fee939a0448c064b3b0"
+    ],
+    "alias_list": [
+      "KCP_MaxStrafe",
+      "MaxStrafe",
+      "PUA MaxStrafe"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "23780829af233c38034945458f4b513a"
+    ],
+    "alias_list": [
+      "KCP_pandrxz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dc120ca8c164f887b32feba9777c87e4"
+    ],
+    "alias_list": [
+      "KDLince",
+      "KDlince",
+      "KDlince | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "71d9404a3eea958a5e02bd39a62a0792"
+    ],
+    "alias_list": [
+      "KD_5A"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d095a08043ac7a2195cfca06f5c59a0a"
+    ],
+    "alias_list": [
+      "KILLMETEDESUWA",
+      "KillMeTe_Kudasai"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7fd25825e7951529dd8e2d607d5e02d3"
+    ],
+    "alias_list": [
+      "KN ZipmanBanana"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1a7843b87c5a3d132196c8a05cf09f16"
+    ],
+    "alias_list": [
+      "KPG_Lan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c901b6da363adbcd38321f21bfd91e39"
+    ],
+    "alias_list": [
+      "KangRchwerht",
+      "wwww"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a2577a8b6116e6408810154240c1fa76"
+    ],
+    "alias_list": [
+      "Kasellos",
+      "OXGKasellos",
+      "OXGWattsonMain"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ff0bbae63ce99d86d19aea254efe323c"
+    ],
+    "alias_list": [
+      "KeniSZN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "660f532c38f0a0cd6844542627ba03f3"
+    ],
+    "alias_list": [
+      "Kiciks"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d5223b0cfafc17d2f513dccd3b46bafb"
+    ],
+    "alias_list": [
+      "King Viktor"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b00407847559b182d1ad1ebd4cdef786"
+    ],
+    "alias_list": [
+      "Ko0mbra"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "37e4c9d8248435855871151d329fcd8e"
+    ],
+    "alias_list": [
+      "Koreru"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7dfb8f95dd818bbc726e313db1826805"
+    ],
+    "alias_list": [
+      "Kralex"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a31294af59170a8edc837f7b12e5f8d4"
+    ],
+    "alias_list": [
+      "KrimNN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "688760305ec685b98df3be73412eecb6"
+    ],
+    "alias_list": [
+      "Kuku_LG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4cbfa3673447a2defa093ccfc4ec560e"
+    ],
+    "alias_list": [
+      "Kurevv",
+      "Kurevv LNW"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2459be925b5d46f977d0d5b531694cd8"
+    ],
+    "alias_list": [
+      "Kuzmei",
+      "Kuzmei\u30c3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c97a3a4d4f31c05c198c380a414413b"
+    ],
+    "alias_list": [
+      "LDG WariP3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "66cd6b058b02e7a806fa00631b1f3407"
+    ],
+    "alias_list": [
+      "LDG Wizzz",
+      "Wizzz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cd6b7939729184ee850fae1a95a6692a"
+    ],
+    "alias_list": [
+      "LDG deinsat",
+      "deinsat"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "17601d5fa3f75ddd110402c131f3c27e"
+    ],
+    "alias_list": [
+      "LEODKAI"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "88070fe98114f26bacf6e465b49fda26"
+    ],
+    "alias_list": [
+      "LFT_Rizq",
+      "LFT_RizqLt",
+      "RizqLt"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "feed46e547e154be7dc572af330d75d8"
+    ],
+    "alias_list": [
+      "LOTR31"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d48f3121aed60ad1e106f0bdbf7c4cc7"
+    ],
+    "alias_list": [
+      "LQDuD",
+      "LQDuD MDYW",
+      "MDYW LqDuD"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6e9fde68bb81fff0917a48c463e14299"
+    ],
+    "alias_list": [
+      "LTC NotDaniel",
+      "maybedaniel twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dc348dc6e3f286b3a762ab5357ad4039"
+    ],
+    "alias_list": [
+      "LU J4ckCute"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0051a9ca38435db5a2c3c7731b21ea47"
+    ],
+    "alias_list": [
+      "LYE Conshuu",
+      "conshuu"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1ce0802d9180171ec19b64578b5cd87a"
+    ],
+    "alias_list": [
+      "Laakki",
+      "SAF Laakki",
+      "SAF Laakki | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7b21e8b628df82bab317f76a86dd14f8"
+    ],
+    "alias_list": [
+      "Lazurr",
+      "N9L Lazurr"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "05f23f2db076b542ae394123921448eb"
+    ],
+    "alias_list": [
+      "Lible_Ace"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "251bff7a43485354c76160218af742fe"
+    ],
+    "alias_list": [
+      "Liivaiibounia"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b492b7f442ffa9a1345d760af29511c4"
+    ],
+    "alias_list": [
+      "MDY_JoJo3yOuO",
+      "SWQ_JoJo3yOuO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "39a5314c80adf3fb55e6c2a491206cdf"
+    ],
+    "alias_list": [
+      "MDY_XiaMan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "36931252e1fb565e803d27e4deea8728"
+    ],
+    "alias_list": [
+      "MDYw_LqDuD"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a7ab638c49bd5840593873deeab85e06"
+    ],
+    "alias_list": [
+      "MIH Taxington"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d1f5db8b6eb2895eeb7f44cd46fc1509"
+    ],
+    "alias_list": [
+      "MILEZ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "149f419bf8a7ff5a58c1e3f2b2f38af2"
+    ],
+    "alias_list": [
+      "MKN_Mukai"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "58e907b9eda09a21a74d5dee901aec7e"
+    ],
+    "alias_list": [
+      "MKN_kawase"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c240775f9d35ce45c04aa9fcf6312ea"
+    ],
+    "alias_list": [
+      "MXF_Artoriasb"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cef9c0fa070959674887318126fd7429"
+    ],
+    "alias_list": [
+      "MXF_Asaran"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8527f38216d7335a9527d941e67a5c95"
+    ],
+    "alias_list": [
+      "MXF_NBXSJ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5dc90287688d030f07cfedffe57d84b8"
+    ],
+    "alias_list": [
+      "MXF_wjxggg"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b72674f2f4244829016139f5a5c5f2b4"
+    ],
+    "alias_list": [
+      "MadFrax \u30c4"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5054dd105e0d985f7a935c0d9f6e03d4"
+    ],
+    "alias_list": [
+      "MeX",
+      "MeXiouSx"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1587af505f39d01a6cad9b270b551f65"
+    ],
+    "alias_list": [
+      "MeXiouSx24"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "577af110ec07c17a2f517432e98714b5"
+    ],
+    "alias_list": [
+      "Mereelj",
+      "Mereeljful"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "402913e2729c69b106a163c041be2641"
+    ],
+    "alias_list": [
+      "Meteor_AvadoN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4dc13fc685587c24e9e941c4f2e62510"
+    ],
+    "alias_list": [
+      "Meteor_Brasidian"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2ee796ec28b8ccb344aff55202313d5b"
+    ],
+    "alias_list": [
+      "MgCiutch|Twitch",
+      "MgClutch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5429dbc808ef1a40306ec2da1624bf3b"
+    ],
+    "alias_list": [
+      "Mike",
+      "MikeDark"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6697625e1a9531d62ded951631f1579e"
+    ],
+    "alias_list": [
+      "Mir4nha"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cdbf9062f5ff959dd05df4cc12e216c5"
+    ],
+    "alias_list": [
+      "Mqty"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "16b95d27899d09c3e87c80370c9a2199"
+    ],
+    "alias_list": [
+      "MrHundor"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "eea40743f8f378baf0d1ea004c644f06"
+    ],
+    "alias_list": [
+      "N8V BulletL"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "270901ab44f9b98ab1c302e2d4fe2ac4"
+    ],
+    "alias_list": [
+      "N8V_MNK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "291c27ff6bb6d8b62fd52456a5bcb946"
+    ],
+    "alias_list": [
+      "N8V_Osivien",
+      "Osivien"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ca234c7476e987a90ff605fe43314128"
+    ],
+    "alias_list": [
+      "NAVIWrugb",
+      "myztro Wrugb"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4aae6d648f01a170cd6182f8a56d10c3"
+    ],
+    "alias_list": [
+      "NAVIXron"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "012ed0314491482d8ee8a240156ba24c"
+    ],
+    "alias_list": [
+      "NC Fr\u00f8gz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9bb8202c5c37cfd28262889556de8989"
+    ],
+    "alias_list": [
+      "ND1 Skyzo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7a472393820a5b3e7a399df03a2713a1"
+    ],
+    "alias_list": [
+      "NICKMERCS",
+      "Nickmercs",
+      "TRI Nickmercs"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e4905d1431d57574422181c26140262a",
+      "8417f28c9c7a2ca359009841b23bb671"
+    ],
+    "alias_list": [
+      "NK p1nky",
+      "p1nky",
+      "p1nky NK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f8f8a7a98439d148a4d19bd642b7ddda",
+      "cd3052d49bd66987ed6ecfce02e2400d"
+    ],
+    "alias_list": [
+      "NM liemek",
+      "NMliemek",
+      "liemek"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6aa8a3fa91ff99dd5e280bb838049b4c"
+    ],
+    "alias_list": [
+      "NM seven",
+      "NMseven",
+      "seven"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "19c5aff6e9e4b28d5e1577035cdfa2fe"
+    ],
+    "alias_list": [
+      "NME21586063497go",
+      "NMEgo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "06baf57ec57aec0cdfc99994c9dd41a8"
+    ],
+    "alias_list": [
+      "NOOBICYDE"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "677e55fbedfa4031dc7b5445472b5f5f"
+    ],
+    "alias_list": [
+      "NPU_Mask",
+      "SMS Mask"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2b90a80c168231249cc3e30f90caa5cf"
+    ],
+    "alias_list": [
+      "NSD Sumiyoshii"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "41f6cd893e15e7c932a8cbcd07c2fd3a"
+    ],
+    "alias_list": [
+      "NTC corn"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "636e4d84df73e0195e3018c15da4f2ad"
+    ],
+    "alias_list": [
+      "NTC joker_o"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8592d9ea5666333760e44eb28e5c4125",
+      "05329b59e45a20d54991a3697ada677e"
+    ],
+    "alias_list": [
+      "Nan2",
+      "nan2",
+      "twitch.tv/nan2i"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ed677124ca084076933908ab1b360275"
+    ],
+    "alias_list": [
+      "Neokox"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "33c7a09a9a2ed26e1ba24d3f3d947b6a"
+    ],
+    "alias_list": [
+      "Neyazaimaddict\u041b\u0435\u0433\u0435\u043d\u0434\u0430"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e49bee49ff763c06da94665b8a336c67"
+    ],
+    "alias_list": [
+      "Ngx"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "306317d21f665ccc70ddc702e59ef8c4"
+    ],
+    "alias_list": [
+      "Nirvana",
+      "a n a v r i n",
+      "anavrin",
+      "\u5e0c\u671b\u5927\u5bb6\u5929\u5929\u5f00\u5fc3",
+      "\uff1f\uff1f\uff1f"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "871d35bdd2472ed7381845080c8173d4"
+    ],
+    "alias_list": [
+      "Nisa",
+      "SMS Nisa"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6bc6ace1836d909006fbe6ff08487e41"
+    ],
+    "alias_list": [
+      "Nocturnal",
+      "Nocturnal XSET"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b6772134d72baba5862190d9d4a887c0"
+    ],
+    "alias_list": [
+      "NomoneyXI",
+      "NomoneyXI Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fd4c22e8338017975ab3c878a1247fc9"
+    ],
+    "alias_list": [
+      "NotNutzz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c9c3072d03a092e72feb6bd9e4186154"
+    ],
+    "alias_list": [
+      "Not_PainX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6fec11d568bdf93a62f1d8afbf76c494"
+    ],
+    "alias_list": [
+      "Number 48: Shadow Lich"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0204a010bfcaf6a9c8306afec3ac8501"
+    ],
+    "alias_list": [
+      "NxT_Noxi"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1a3755cc81be2731339f800ed1c9f776"
+    ],
+    "alias_list": [
+      "NxT_Re1qz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e439bbf00f84d95587f9c30cbb6ea2ad"
+    ],
+    "alias_list": [
+      "NxT_SyanaMu"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "daa352f7707e3065d6d382e83d5e680f"
+    ],
+    "alias_list": [
+      "OE veeycy",
+      "vee",
+      "veee"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9779c134054f2d188c54d37736f7f574"
+    ],
+    "alias_list": [
+      "OR9 KENOX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ec7427178d01ddd4248359291960cab7"
+    ],
+    "alias_list": [
+      "OR9 MaybornXD"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e73c4fcfd63ce8ea262c7ce68a39d173"
+    ],
+    "alias_list": [
+      "OR9 Nez ^_^",
+      "UTFT Nez"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1512720da8c094edb5275684991f0720"
+    ],
+    "alias_list": [
+      "OXGProtectful",
+      "Protectful"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "575e6d6c8fe9e70bb64ce1d028b0cc59"
+    ],
+    "alias_list": [
+      "OpTic knoqd",
+      "OpTicknoqd"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6adf1065eb21a7e8cc034d271d5fd446"
+    ],
+    "alias_list": [
+      "Oudee"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6a532b8151f41029f348090112dc649f"
+    ],
+    "alias_list": [
+      "OxyAres",
+      "OxyBerries"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "11c52e03bec6008f229d4c564e5724aa"
+    ],
+    "alias_list": [
+      "OzoraariSe"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d4bba91cb2dc8866a8429d33848db737"
+    ],
+    "alias_list": [
+      "PALETTE_we"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a34b23c38a416ae95c71de0fb4a636bc"
+    ],
+    "alias_list": [
+      "POS_ATRI"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e771f3df1797e622fe779dd20553c0b4"
+    ],
+    "alias_list": [
+      "POS_watage\u306a\u3045"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5c225753b6d9967d0cba5484fa4b3203"
+    ],
+    "alias_list": [
+      "PS_Urban"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "811f4ad8155c8029d5d27ea09bb171b6"
+    ],
+    "alias_list": [
+      "PeerlessPina"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b2f79fb9c5d25bdfecd5b0defbd3a007"
+    ],
+    "alias_list": [
+      "Piwd"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "73031d1bf04bad2d5387b09c07d56e1a"
+    ],
+    "alias_list": [
+      "Plomme"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "59e1b6e6e7241c3d29a9cd65130cac5e"
+    ],
+    "alias_list": [
+      "PonnyMVP"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "df6d15f257691971d7d3e15c6121663d"
+    ],
+    "alias_list": [
+      "PowPow"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1047dc3196321cd9b2b62f0bd0bb7316"
+    ],
+    "alias_list": [
+      "ProdigyAces <3",
+      "ProdigyAces<3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9358b33c6cd7e9f4b67f5dedd58d0456"
+    ],
+    "alias_list": [
+      "Purgics | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a4f1ec9942d782f9e7cab8d2198ef2ed"
+    ],
+    "alias_list": [
+      "QPMS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bf6576b25c804b076719091bccf6f4c6"
+    ],
+    "alias_list": [
+      "RD kazakh",
+      "RD kazakh v0.4",
+      "kazakh"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f3845c64f4c8cec0eeaf027e691c0959"
+    ],
+    "alias_list": [
+      "RD_7ozzzus"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d50e2e58db88d124af38b20d5f171d9b"
+    ],
+    "alias_list": [
+      "RD_PrestisX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c99895d39cb96473209b1e54fe37191e"
+    ],
+    "alias_list": [
+      "REALIZE_\u3042\u304a\u306f\u308b"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2a1cf45179b69a63d3d2fa65a2e562a7"
+    ],
+    "alias_list": [
+      "REALIZE_\u3042\u304a\u306f\u308b"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fce24f5e3d674455a48cbd2273556920"
+    ],
+    "alias_list": [
+      "REALIZE_\u3068\u3082\u308d\u3046\u3002"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "18c904e2e3125a5b94b5b68b310a3028"
+    ],
+    "alias_list": [
+      "REALIZE_\u30ab\u30dc\u30c1\u30e3\u306e\u738b\u30bb\u30ca"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "eb31fc12998cc63e8a423a6044fb72a0"
+    ],
+    "alias_list": [
+      "RIG_DizzyMizLizy"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "27d25ea6d8f8c358aef74487e85c10d5"
+    ],
+    "alias_list": [
+      "RR Tikochan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "538064ba604627a2d23e9221794a328e"
+    ],
+    "alias_list": [
+      "RYNEX"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "68d5bd521811a5dcc89fb0ce7db470f6"
+    ],
+    "alias_list": [
+      "Rakkinishu"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6dc9b60ece7a14afad73ce466f79b1bf"
+    ],
+    "alias_list": [
+      "Rattycakes - LFT"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c39f13392e4212f6f2d81d78eb5c21b"
+    ],
+    "alias_list": [
+      "ReconTW"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c226c18ce6ec1294a4d47c9fa5b7f1e7"
+    ],
+    "alias_list": [
+      "Recoson"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e132505d34502ca5ae063ab626f5f0c4"
+    ],
+    "alias_list": [
+      "RemixPowers | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "95e4e3104893fcce9a94b54e10510cd5"
+    ],
+    "alias_list": [
+      "Reptar",
+      "ReptarRB",
+      "WC_Reptar"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6ecb2b5a06072939fd088c944b7353a1"
+    ],
+    "alias_list": [
+      "Resh_ND"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ea7895a0aaee70f3c043560e7394e652"
+    ],
+    "alias_list": [
+      "RexOMG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "02c999517b6530b45506933e522092a7"
+    ],
+    "alias_list": [
+      "Rice_o",
+      "rice"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d5b10b90bd6fae61d2ed458b2b7a0e11"
+    ],
+    "alias_list": [
+      "Rileymekinac",
+      "Rileymekinac | kick"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "783cb031f1f84495490c130ab39a18e2"
+    ],
+    "alias_list": [
+      "Robin",
+      "Robin FTW",
+      "RobinFTW"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d804ecf3c003e5f34fb7f533e0a8d50e"
+    ],
+    "alias_list": [
+      "SBI mikey",
+      "SBI_mikey"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dc9eae80158a7483f9a5bf35992c387c"
+    ],
+    "alias_list": [
+      "SBI_hikuman"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3194a1edb7243c75380cb6f3c9cdcfcf"
+    ],
+    "alias_list": [
+      "SMS SiveN",
+      "SMS SiveNTheWasp"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "182cc164ac9500a9269303629fb297f1",
+      "5241e22768c85f6158b324a8a1841e60",
+      "65f47ce6ef511ae3d24a4b7947bc7e0e"
+    ],
+    "alias_list": [
+      "SNG_elysium",
+      "elysium"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e35fedb09bed3494e9023c6aaccf538f"
+    ],
+    "alias_list": [
+      "SWQ YouL1ngTxT",
+      "VK_QYouL1ngQ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4a9c2e67d472ddf8b3782acb0556a5d8"
+    ],
+    "alias_list": [
+      "SWQ_Aimbot2199"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bfe29501f9e33d667bdbc624de43b695"
+    ],
+    "alias_list": [
+      "SZTaisheen"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a550c6a7dfa5ba4a2f3943cd455f9362"
+    ],
+    "alias_list": [
+      "SaiyajinGODzilla",
+      "TRUTH SaiyajinGODzilla"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3fcca3cc35a5fe14e34b5f9bd89c2162"
+    ],
+    "alias_list": [
+      "Sang",
+      "Sang\u30c3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "cfdab14ae5eb3e19e8b16a3649849e49"
+    ],
+    "alias_list": [
+      "Satiability"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a71acc975da73e302c2180ac7ff3ebca"
+    ],
+    "alias_list": [
+      "Senzz77",
+      "VQ SENZZ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "31daa0e1ce981729602b866e7317dd62"
+    ],
+    "alias_list": [
+      "ShRP",
+      "Totem ShRP",
+      "TotemShRP"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "33c20547abd5bde2e961c55efe974251"
+    ],
+    "alias_list": [
+      "Shadez"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f2e550e42b098c0194292341c6805d4f"
+    ],
+    "alias_list": [
+      "ShiSuan"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d3f84b7d7fc938873d8195bb9bd35489"
+    ],
+    "alias_list": [
+      "Siackinq.tv"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7cc81f1fdfb0e762a45c9d307df5342a"
+    ],
+    "alias_list": [
+      "SkittleCake",
+      "SkittleCake OG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a7ac7e6339c2218cbcec71aa0ea1041f"
+    ],
+    "alias_list": [
+      "Sleeepola",
+      "Sleeepola SAF"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1a03421f9a091e44f18fde146cc1b29e"
+    ],
+    "alias_list": [
+      "Southpaw45 on Kick"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b5bdf66833d1d8418e389f9a90b728ec"
+    ],
+    "alias_list": [
+      "TBG_3KKO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "65dd74e0a6b8e5a5c7f08edef03f4830"
+    ],
+    "alias_list": [
+      "TBG_Changer"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e557b4b4b23e796dfc07b4ae47fd15c8"
+    ],
+    "alias_list": [
+      "TBG_Dark-Coss"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "652d860bdfa9569041ee1ea91bc0b4c3"
+    ],
+    "alias_list": [
+      "TBG_David"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ce0996e17e37199d39c2935a02a18a07"
+    ],
+    "alias_list": [
+      "TD ajnassudah"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5804e7ebd74b050d697e55d81730a8ce"
+    ],
+    "alias_list": [
+      "TD_GsBird"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1a598505264875a494f5caa6ac544c5c"
+    ],
+    "alias_list": [
+      "THaless"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "20646d038358b282ca7631c11c9d70e0"
+    ],
+    "alias_list": [
+      "TIE Infamous",
+      "WL_Infamous"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "64f6cc7c153879a08b56e6c515866cc2"
+    ],
+    "alias_list": [
+      "TL Rogue"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "89ad5884ab2467ad170be51ac89be327"
+    ],
+    "alias_list": [
+      "TMPR Adiuvant"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2710cb50dcffb1a5e57e83953d54bc30"
+    ],
+    "alias_list": [
+      "TRI Gent",
+      "gent"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "af84e337eec7efc111fe05a98173bd61"
+    ],
+    "alias_list": [
+      "TRK Chik1s_"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "8a7dc034bedd685257235239c5d9c712"
+    ],
+    "alias_list": [
+      "TRK Denpride"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9dca355ee0ee28e23e7669016d1ad2e4"
+    ],
+    "alias_list": [
+      "TRK Gyozey"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b4cf46be7614317c2022a29041fa4466"
+    ],
+    "alias_list": [
+      "TRUTH NutsuruSama"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6e51f3216f81b1d4595a09e681964054"
+    ],
+    "alias_list": [
+      "TRUTH mosu",
+      "TRUTH mosuwu!",
+      "truth mosu",
+      "truth mosudesu!"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "288d9db818f920137dc072b30181349d"
+    ],
+    "alias_list": [
+      "TW_ibuo-youtube"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b3e109065c82630b6da3c58d9c192a41"
+    ],
+    "alias_list": [
+      "TaykoTKI"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e6855098bc831775e7ddd33f9d1e0df2"
+    ],
+    "alias_list": [
+      "Teddypnq"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "979547cc90e2fd2ae26cf748ae4579fc"
+    ],
+    "alias_list": [
+      "TempestND",
+      "TempestND|Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4921e0f67d35e8d897421e142dd65e6b"
+    ],
+    "alias_list": [
+      "Teylaah",
+      "VCGO Teylaah"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e8937df32fd3b2291ffb351f767ef03d"
+    ],
+    "alias_list": [
+      "TheTerroday  /  Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "088cd3d9facdd723ff861aa9a061272a"
+    ],
+    "alias_list": [
+      "Thief",
+      "umdongjun"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5e6c29a88c39a30afc5d31a8f4af7dab"
+    ],
+    "alias_list": [
+      "Thiirtyy"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d208a1772b47a200e03a6d73fc9087c2"
+    ],
+    "alias_list": [
+      "Ticcle-w-"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "af496f8438f0a8e49e1062560c82ec92"
+    ],
+    "alias_list": [
+      "TimmyTiiimE"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d04d098bfcb85f6dd7a1927026c950e2"
+    ],
+    "alias_list": [
+      "Totem jaazzaz",
+      "TotemJaazzaz",
+      "Totemjaazzaz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "39a9e46e78210c1371a942b0d51bedfb"
+    ],
+    "alias_list": [
+      "Trabz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "54e84b5144aded1286ede6c24c137f10"
+    ],
+    "alias_list": [
+      "TrackingBAD"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ff73b1fb7fac0160c94899132c54c5af"
+    ],
+    "alias_list": [
+      "Trent"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d9691ec4d421f01fc6e78f553a51275b"
+    ],
+    "alias_list": [
+      "TriNITYzy",
+      "TriNITYzy ATH"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a6dcd19b980203784a8d6ab954e23b6e"
+    ],
+    "alias_list": [
+      "Truman"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9aaf6420001edc45c4606a01f5c933b1"
+    ],
+    "alias_list": [
+      "Twitch - Botge"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7233b7dafa77228250993119ceef8881"
+    ],
+    "alias_list": [
+      "Twitch.tv/MidWolveZ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "aa43e5692529efa75db583179a9509d7"
+    ],
+    "alias_list": [
+      "Twitch_H4ya"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c0a01bfc58a78df44c9ed4fb28b5fae4"
+    ],
+    "alias_list": [
+      "UTFT RxAngie | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "89213355b7e674c00fad69c3239034db"
+    ],
+    "alias_list": [
+      "UTFT iJackmc"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b0a742168fa61cf2b842d982e8e814d3"
+    ],
+    "alias_list": [
+      "UnKnowNToXinStv"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7b265dd047652ff5b39b5caa2cf78fb7"
+    ],
+    "alias_list": [
+      "VKG 951"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6cbdae3f30c5d0c45196c3f7078c2083"
+    ],
+    "alias_list": [
+      "VT Torje",
+      "VTTorje"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a37d92b5e74e894eb42ca778ccf05080"
+    ],
+    "alias_list": [
+      "Vem"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fd69a777869a774e156b36025f9e9a79"
+    ],
+    "alias_list": [
+      "VeryCheekyIndeed"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "23a0bc1bc52fbc9a6911f78cbaf8c3dd"
+    ],
+    "alias_list": [
+      "WL_LeeYun"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1331da5854cdeb1a7e6e3aac044d80c7"
+    ],
+    "alias_list": [
+      "WMFB SHARK",
+      "WMFB_SHARK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "960586e2316b68e5c45974ded8994c73"
+    ],
+    "alias_list": [
+      "WMFB_LKgodwomen",
+      "WMFB_LKgodwomen1"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "56a15399d7cf3e8a3f21148bdeedfbd6"
+    ],
+    "alias_list": [
+      "WMFB_junZzzz",
+      "\u5b81\u6ce2\u5305\u9510\u5927\u9b54\u738b"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f50b21c855f5929b06445fb522801fa0"
+    ],
+    "alias_list": [
+      "WMN Mr.K"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a4f7677a4d87fe7a1e192075ae90240c"
+    ],
+    "alias_list": [
+      "WMN SHARK"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "030fa97f527257ca19bfd362f369cfdd"
+    ],
+    "alias_list": [
+      "WTD bobo2157"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "97b496d12889f83097f26be36e848714"
+    ],
+    "alias_list": [
+      "Walkud10"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "278270a67e13fbdca36c9c4db7de87a9"
+    ],
+    "alias_list": [
+      "Wheyorn",
+      "wey"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "40cee608203cee2399bac9d7a9901bf2"
+    ],
+    "alias_list": [
+      "Wr4th",
+      "sWr4th"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "17fb0fafb4366daf0542fcd8950e0961"
+    ],
+    "alias_list": [
+      "XFiRAZOR@TWiTCH"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c0cba949b916ca4a2855406778d08063"
+    ],
+    "alias_list": [
+      "YT_Forgotten"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0e8aad467e72f624456410f0a14ef81e"
+    ],
+    "alias_list": [
+      "aimbotmachin3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b840ad523d3186077fc66336f5cbd85a"
+    ],
+    "alias_list": [
+      "akaColorz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ee17a01c128b198a414ceb0b23236fdf"
+    ],
+    "alias_list": [
+      "akuma"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d2a0e6e3b3858dfa0cfc909d0fe4c725"
+    ],
+    "alias_list": [
+      "angelo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "71b751655da4e76fa192a2c1123ee539"
+    ],
+    "alias_list": [
+      "asleepk1ng",
+      "asleepk1ng ATH"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1d80f4a6545539c5da570c31305a1fd6"
+    ],
+    "alias_list": [
+      "bowswer"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "94d437e131f9888d78c6d9fb869c3945"
+    ],
+    "alias_list": [
+      "dani3p"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2a1c38b62c546b52977a91652d4f6299"
+    ],
+    "alias_list": [
+      "eeth"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1ccc1de24dc4173b2c392b1a78bccdb1"
+    ],
+    "alias_list": [
+      "egoist222"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c67581d5faf60c3eb70e1d9649f0dd9c"
+    ],
+    "alias_list": [
+      "feehzera"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "75a145b444821295469d6acde49b9971"
+    ],
+    "alias_list": [
+      "fl1zon"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b3f7b3d66c73d46fddef9aab7f500ee5"
+    ],
+    "alias_list": [
+      "foZej"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1f37af93649c580b43fc0309b1a5c7eb"
+    ],
+    "alias_list": [
+      "gdolphn",
+      "gdolphn on twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e48e83cd56acce9f1a0d25a93b0d1838"
+    ],
+    "alias_list": [
+      "hannzi"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "472f47fd2a0926a840873cf968ec4771"
+    ],
+    "alias_list": [
+      "hayden"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "3b010b577ad91d2e5ea65df603d41197"
+    ],
+    "alias_list": [
+      "hmm"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1f8ff8ee6a5036ddf82d1ae5cdf3ab3c"
+    ],
+    "alias_list": [
+      "iLaziness"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1a3d8fff7a927aa2b60800db67f04152"
+    ],
+    "alias_list": [
+      "iProficiency"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2e1e495275b4b1b91f1d9eed80a3eefd"
+    ],
+    "alias_list": [
+      "ily_v"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "00ee921578b2ba4a9897515c9a403589"
+    ],
+    "alias_list": [
+      "j2nuary"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "37b3a7b7d914447183fc3b9b39b63a78"
+    ],
+    "alias_list": [
+      "jaguares",
+      "jaguares LG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e6e2672b7ec2df3e47cfc8fb768024e9"
+    ],
+    "alias_list": [
+      "jubjibbib02"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1c021316f937d749f9045256e8ed1b6f"
+    ],
+    "alias_list": [
+      "jubjibbib1"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1d5a2e259d82444f391a3fc8ddc4a65d"
+    ],
+    "alias_list": [
+      "keep star"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6d40efd471569a5704fc04bd69159751"
+    ],
+    "alias_list": [
+      "keniru7"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "2453374c1f0ba52b6c1935a0ef1fffde"
+    ],
+    "alias_list": [
+      "knoqdgg",
+      "knoqdgg OG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "89ed817f4da9b318d01b572ef9106ece"
+    ],
+    "alias_list": [
+      "koesO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1370b4635f2f50dbd15793a961085041"
+    ],
+    "alias_list": [
+      "kyner"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f1f1d71b524a967fea46acb9c50fba90"
+    ],
+    "alias_list": [
+      "lDraconiaN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7aa86cef9e30b0f46e9f5da002727449"
+    ],
+    "alias_list": [
+      "lief"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0bd371ce70b0b2a62260fcf05236db97"
+    ],
+    "alias_list": [
+      "mioseNN"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f3f145651b8a997d95b22247a12c1284"
+    ],
+    "alias_list": [
+      "mohziin"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1b0b680bf26a63a5711a69c87a1ae150"
+    ],
+    "alias_list": [
+      "mrhackulo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "55f223cc1a7dee3d79f46de67a5384e4"
+    ],
+    "alias_list": [
+      "myAntu"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0b3506022e0dcd0adc65587f75678699"
+    ],
+    "alias_list": [
+      "naxo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "88f3c18bf1245f1237033e3bc3b75cf7"
+    ],
+    "alias_list": [
+      "ninexT"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "24482b9510a2673e8fe0136318d82e58"
+    ],
+    "alias_list": [
+      "oArtSstx"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f692036980eccefeeb7a77f8d1f049a6"
+    ],
+    "alias_list": [
+      "oPESADELO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "01ab19541142a8670012f2bd9c7731c1"
+    ],
+    "alias_list": [
+      "pandxrz",
+      "pandxrz FUR"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "24d77e89d6539701780002eceee00a00"
+    ],
+    "alias_list": [
+      "pos_TANPOPO"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c429cf2c3d41faf260ba7b400fe75a4f"
+    ],
+    "alias_list": [
+      "pucaaboy"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "95f3304ec9c43636e6ec4fc82e036afe"
+    ],
+    "alias_list": [
+      "rBlackVenom | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f984e097a91d7de1796286c28cf59ab5"
+    ],
+    "alias_list": [
+      "rondonstreams",
+      "rondonstreams-twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a56e50ecc1759c254db7a59dbeb29ef9"
+    ],
+    "alias_list": [
+      "row"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "563ad4aae94bb5758d1a429db5765a35"
+    ],
+    "alias_list": [
+      "sYnceDez"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "53a18bb530e20f835a95cda65328a729"
+    ],
+    "alias_list": [
+      "sat"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c2ba1f237e38c6637cbffa6ccc4217c4"
+    ],
+    "alias_list": [
+      "selka2k"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "297674d9fcb7c530cfb223745d102980"
+    ],
+    "alias_list": [
+      "serialcat"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a66bead70c7fb20dfa8609cd2273dc19"
+    ],
+    "alias_list": [
+      "sherb",
+      "sherbert"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f4722121899a2e1248f22a2d5e066ba2"
+    ],
+    "alias_list": [
+      "snoooopy1950"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4a74a4e8412531f98f1493507e077c6e"
+    ],
+    "alias_list": [
+      "snvw"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f815c2ce44b44776606490d21296ecd6"
+    ],
+    "alias_list": [
+      "spacesoda"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d30607e193d302b41b1d9a45e1471c35"
+    ],
+    "alias_list": [
+      "sung"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "07fa073a99a2fe111a3c27d45d00f1e6"
+    ],
+    "alias_list": [
+      "sw4y",
+      "sway"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6dc857bcfba1b4ca66e60bd9e49fbb32"
+    ],
+    "alias_list": [
+      "tapstrafeW"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "746b2bb8c796128659602244b761a996"
+    ],
+    "alias_list": [
+      "tripz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ad1e656f6d76a4e9f42f6d149a051593"
+    ],
+    "alias_list": [
+      "twitch-tzolikoo",
+      "twitch/tzolikoo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "32e70a4a82b6dde1981ca4142e1b76d3"
+    ],
+    "alias_list": [
+      "undRcL"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f5bc4092fb2a50619886d30cb734eec4"
+    ],
+    "alias_list": [
+      "viz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5580fc6c3a4b1ceda534783b78771ff2"
+    ],
+    "alias_list": [
+      "wave"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f1e69a0a76efd5226ff5175c453af1ca"
+    ],
+    "alias_list": [
+      "with"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "19b2fb4971007743865cb1b5a789033c"
+    ],
+    "alias_list": [
+      "wraiLs"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ff734d73757139c8c45c56f46a615b3d"
+    ],
+    "alias_list": [
+      "xJoelus"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e9fce7b97c2da9b65ee4f15c56148361"
+    ],
+    "alias_list": [
+      "xWinkler"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "10be971f57e21580c3f26491e2be0a83"
+    ],
+    "alias_list": [
+      "xenial"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "44850eb5f83bd46b2789a8859ecda8dc"
+    ],
+    "alias_list": [
+      "y",
+      "y a z",
+      "yaz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0f0f37832fc4a88c41c1210f7c4d1bf2"
+    ],
+    "alias_list": [
+      "y1Pwdn"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "515755bb8c5f39717e7f37d70594037d"
+    ],
+    "alias_list": [
+      "ziksoi"
+    ]
+  },
+  {
+    "esport_name": "Zach",
+    "hash": [
+      "64a53e5e7920ba3ad6ec2bf376ca1386",
+      "32446dfa2dad1d3cada27df1506fd4d4",
+      "50ba1bf17a04ad696126f86d06e99b4c"
+    ],
+    "alias_list": [
+      "C9Zachmazer",
+      "E8 Zachmazer",
+      "Zachmazer",
+      "Zan",
+      "zachy",
+      "zzz"
+    ]
+  },
+  {
+    "esport_name": "Zaine",
+    "hash": [
+      "91a6d7df782e10be3f9fcfa3fe610522",
+      "17837807e286c2e6fea985fe0cf354b0",
+      "d4d64a80d6e2c3389171f8d75c345e49"
+    ],
+    "alias_list": [
+      "JZ_Zaine",
+      "KCP Zaine",
+      "KCP zaine",
+      "Zaine",
+      "Zaine KCP"
+    ]
+  },
+  {
+    "esport_name": "Zap",
+    "hash": [
+      "1bbd7c7d5bec24d0cb28f1b24d704496",
+      "f6896062703ad54496d57d7e78afaa1f"
+    ],
+    "alias_list": [
+      "E8 zap",
+      "E8_zap",
+      "zap"
+    ]
+  },
+  {
+    "esport_name": "Zer0",
+    "hash": [
+      "ebb81458a29f44e9c2c30c75008e3223",
+      "34a24927b4ed0332a30c1f5c854c00b6",
+      "a70600ba17c5fb8a9222a4856165d6ff"
+    ],
+    "alias_list": [
+      "DZ Zer0",
+      "DZZer0",
+      "DZ_Zer0",
+      "Zer0",
+      "Zer0 DZ"
+    ]
+  },
+  {
+    "esport_name": "ZeroNothing",
+    "hash": [
+      "917f67db9113102c8074c822b96a452f",
+      "c8f8ad38afe9870b61ac862492a221d3"
+    ],
+    "alias_list": [
+      "HRZNZeroNothing",
+      "PS_ZeroNothing",
+      "ZeroNothing",
+      "ZeroNothing.",
+      "myztro ZeroNothing"
+    ]
+  },
+  {
+    "esport_name": "Zillach",
+    "hash": [
+      "08c56fa4ccea1c8228b3661758d3cc8b",
+      "6f18fb515a8bba102f8430f2e63ace80",
+      "5dbd17029fe1f81a89757fbb13c1377a"
+    ],
+    "alias_list": [
+      "LNW_Zillach",
+      "Zillach",
+      "Zillach GE"
+    ]
+  },
+  {
+    "esport_name": "aflow",
+    "hash": [
+      "ac12445a52993903d293950b4f5fa2e9"
+    ],
+    "alias_list": [
+      "AFLOW",
+      "aflow",
+      "aflowwww"
+    ]
+  },
+  {
+    "esport_name": "ahn2e",
+    "hash": [
+      "dbd00f1cd8b34f999f90d9a1329471d4"
+    ],
+    "alias_list": [
+      "E36_ahn2e"
+    ]
+  },
+  {
+    "esport_name": "aidanthedestroye",
+    "hash": [
+      "49a57edde05921868e4cde212928e0a0",
+      "ce9b0da33897e72e62922937b7607261",
+      "0485fbd1371d5992e9dc29e42b438635"
+    ],
+    "alias_list": [
+      "GE Aidan",
+      "OXG Aidan",
+      "aidanthedestroye",
+      "aidanthedestroye OXG"
+    ]
+  },
+  {
+    "esport_name": "arctic",
+    "hash": [
+      "a68b43ba955548711af5876d2265e003",
+      "e8f935bc20f7d329d7d3ba3b2fc34a8c"
+    ],
+    "alias_list": [
+      "MIH arctic",
+      "PLR arctic",
+      "Totem arctic",
+      "arctic"
+    ]
+  },
+  {
+    "esport_name": "artiNN1",
+    "hash": [
+      "3ad2b1dd0b2a7df7265589f8e39e83f0",
+      "cf6b51f5080e244477786413aeedb915",
+      "fa5fd28b8b50448c0d5a8cefd9bec0c7"
+    ],
+    "alias_list": [
+      "BRD artiNN1",
+      "SNG artiNN1",
+      "SNG_artiNN1",
+      "artiNN1"
+    ]
+  },
+  {
+    "esport_name": "asleep",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "bigluie",
+    "hash": [
+      "bd539d2273e50398d07dc02b6c83fefd"
+    ],
+    "alias_list": [
+      "Bigluie",
+      "GG Luie",
+      "bigluie"
+    ]
+  },
+  {
+    "esport_name": "brtus_o",
+    "hash": [
+      "dca9aa1888fb5804bc2ad3a01d0a6f5f",
+      "c4239a0f48c3143c9219f13e9b1e54fc"
+    ],
+    "alias_list": [
+      "LNW brtus_o",
+      "LnW brtus_o",
+      "brtus_o",
+      "brtus_o LNW"
+    ]
+  },
+  {
+    "esport_name": "brynn",
+    "hash": [
+      "7dc372487d77d2fa5642db728297e4aa"
+    ],
+    "alias_list": [
+      "brynn"
+    ]
+  },
+  {
+    "esport_name": "cleaveee",
+    "hash": [
+      "2d3ff2f3ead9594912f23d1eecc7bfd4"
+    ],
+    "alias_list": [
+      "cleaveee",
+      "cleaveee AUR"
+    ]
+  },
+  {
+    "esport_name": "dooplex",
+    "hash": [
+      "2f4bb9fee157e2743b0f84d41f77e199",
+      "836be43c9bc654e02bf19d76a59502ed"
+    ],
+    "alias_list": [
+      "DNODOOPLEX",
+      "N8V_dooplex",
+      "OpTicdooplex",
+      "TTV_dooplex",
+      "dooplex"
+    ]
+  },
+  {
+    "esport_name": "fitoo",
+    "hash": [
+      "e7648d9b4999c69917f2898512897dcf"
+    ],
+    "alias_list": [
+      "F1ToO!",
+      "RD fitoo"
+    ]
+  },
+  {
+    "esport_name": "fras",
+    "hash": [
+      "84fd94e2bd9d994b60380d0b60637009"
+    ],
+    "alias_list": [
+      "fras"
+    ]
+  },
+  {
+    "esport_name": "gucci",
+    "hash": [
+      "527491d5e6b5e93cf8f0f4df8da6b76f"
+    ],
+    "alias_list": [
+      "TW gucci",
+      "TW_gucci"
+    ]
+  },
+  {
+    "esport_name": "hyzeq",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "iHenchman",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "ibuo",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "iiTzTimmy",
+    "hash": [
+      "73fe5f19570c21c67103c2554db0a803",
+      "060d3bf2ab149ef2a8bb978c19dd15e3"
+    ],
+    "alias_list": [
+      "100T iiTzTimmy",
+      "DSG iiTzTimmy",
+      "iiTzTimmy"
+    ]
+  },
+  {
+    "esport_name": "jayHANZO",
+    "hash": [
+      "fceca509680b3bcb44140c9720cdfcd8"
+    ],
+    "alias_list": [
+      "jayHANZ0",
+      "jayHANZO"
+    ]
+  },
+  {
+    "esport_name": "k4shera",
+    "hash": [
+      "04d3630937123b52c58d91456a33e711",
+      "9ac17484a27bfd219c6bbc24ae9e7147",
+      "79ba475c46a1d4ecd451078bf624f4b2"
+    ],
+    "alias_list": [
+      "ACE K4SHERA",
+      "ACE KICK.COM/K4SHERA",
+      "ACEK4SHERA",
+      "ACE_K4SHERA",
+      "ACE_K4SHERA KICK",
+      "K4SHERA",
+      "K4SHERA ACE",
+      "KICK.COM/K4SHERA",
+      "POR K4shera",
+      "VQ K4SHERA",
+      "se\u00f1or k4sh"
+    ]
+  },
+  {
+    "esport_name": "kanata",
+    "hash": [
+      "d265d77701d65c1b1b58f8300f491ab2"
+    ],
+    "alias_list": [
+      "AG_kanata",
+      "BT_kanata",
+      "kanata"
+    ]
+  },
+  {
+    "esport_name": "kazakh boi",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "laheem",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "lighT",
+    "hash": [
+      "35544e118ec0a7dad32917ec694e23ca",
+      "8822569187555e7c5e8f46981d41244b"
+    ],
+    "alias_list": [
+      "ESG lighT",
+      "OMIT lighT",
+      "OMiT lighT",
+      "SAF lighT",
+      "lighT"
+    ]
+  },
+  {
+    "esport_name": "lkgodwomen",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "lou",
+    "hash": [
+      "7627e74e3dffad025b904852ac113b9f",
+      "cc4b7bb2c34fc649040ac0ea5c2f606b",
+      "65bc9b2a64187b7e98123a0bc541beef"
+    ],
+    "alias_list": [
+      "COL Lou",
+      "COL lou",
+      "COL_louis",
+      "LAN Lou",
+      "Lou",
+      "SENlou",
+      "lou"
+    ]
+  },
+  {
+    "esport_name": "mo-mon",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "oh Nocturnal",
+    "hash": [
+      "346913b6e46197c24cccb7311154bf68",
+      "c4af29b7d0135d07ec115ccf9e12ce71"
+    ],
+    "alias_list": [
+      "TLNocturnal",
+      "XSET 9N\u0444c",
+      "XSET N\u0444cturnal",
+      "XSETNocturnal",
+      "XSET_Nocturnal"
+    ]
+  },
+  {
+    "esport_name": "oisenpai",
+    "hash": [
+      "18a534f09d14aad1010e0d8ef651cd9f"
+    ],
+    "alias_list": [
+      "OXGoisenpai",
+      "oisenpai"
+    ]
+  },
+  {
+    "esport_name": "ojrein",
+    "hash": [
+      "3b03b1b6d7d065ec414996ee2c8c17d2",
+      "f72b99ddd0331ba9b6e8a62ead8560f1"
+    ],
+    "alias_list": [
+      "AUR ojrein",
+      "AURORA ojrein",
+      "FIRE BEAVERS 2ojrein6",
+      "FIRE BEAVERS ojrein",
+      "FIREBEAVERSojrein",
+      "ojrein",
+      "ojrein FRBV"
+    ]
+  },
+  {
+    "esport_name": "p1npxn",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "qzier",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "renatricky",
+    "hash": [
+      "e49a9c7415eccb66b61bcb0ee0717660",
+      "5ec9bc719ea2e62fab4defb41e5c9c7b",
+      "eef800e1337f53aea0146e74a63e6259"
+    ],
+    "alias_list": [
+      "GRD renatricky",
+      "LNW_renatricky",
+      "renatricky",
+      "renatricky GE",
+      "renatricky | Twitch"
+    ]
+  },
+  {
+    "esport_name": "retzi",
+    "hash": [
+      "c63855837ba5cd06fae8cbe3a394b2ff"
+    ],
+    "alias_list": [
+      "STALLIONS_MNK",
+      "retzi"
+    ]
+  },
+  {
+    "esport_name": "roki",
+    "hash": [
+      "8839f52d1c99e5adc4db932307461ce8"
+    ],
+    "alias_list": [
+      "Meteor roki",
+      "fps_roki",
+      "\u308d\u30fc\u304d"
+    ]
+  },
+  {
+    "esport_name": "saku",
+    "hash": [
+      "7447b928a808ab904ecec5e7ee465b8e",
+      "e2775deb0a9f354e58206f72509ca0a8",
+      "23997b3bd2502a7609536eff8f66e841"
+    ],
+    "alias_list": [
+      "PVX_saku",
+      "RID saku",
+      "Riddle saku",
+      "saku",
+      "saku PVX"
+    ]
+  },
+  {
+    "esport_name": "sato_kohai",
+    "hash": [
+      "d554744046c018e8d067e062c19751af"
+    ],
+    "alias_list": [
+      "sato_kohai"
+    ]
+  },
+  {
+    "esport_name": "satuki",
+    "hash": [
+      "b8a39ad6c65d9e6565becc2408eebc69",
+      "9e87b21d305014b7ce7b831ab5e0f7df",
+      "fdfc6ca5e166952b69e244bcdc9bce98"
+    ],
+    "alias_list": [
+      "FNC satuki",
+      "FNC_Satuki",
+      "NTH_satuki",
+      "Nth_satuki",
+      "satuki",
+      "satuki NTH"
+    ]
+  },
+  {
+    "esport_name": "scuwry",
+    "hash": [
+      "2377583ab85e432c8aee7b867e2735da",
+      "d1447fbeb64441551842d53a410607d7",
+      "d1ccb68d824deb685efbaf71f3b6eeb2"
+    ],
+    "alias_list": [
+      "100T scuwry",
+      "100T_scuwry",
+      "100Tscuwry",
+      "scuwry",
+      "scuwry 100T"
+    ]
+  },
+  {
+    "esport_name": "senoxe",
+    "hash": [
+      "c50940a4586d482a49d51436cb2dc153",
+      "1bee89e95b5a1d0f44efe39c6bdcd0cb"
+    ],
+    "alias_list": [
+      "DNOSENOXE",
+      "OXG SENOXE",
+      "SENOXE",
+      "SENsenoxe",
+      "senoxe"
+    ]
+  },
+  {
+    "esport_name": "shadi",
+    "hash": [
+      "d3a6b74189692a50ba730e0d26c64065",
+      "04ea7b3597ed093203abbe1cb65b4912",
+      "fd15ae1605b2640e02f67b47d5c3bf4f"
+    ],
+    "alias_list": [
+      "ONIC shadi",
+      "ONIC_shadi",
+      "shadi",
+      "shadi ONIC"
+    ]
+  },
+  {
+    "esport_name": "silentHNL",
+    "hash": [
+      "ba6178b661259477e627a7be7db70b73"
+    ],
+    "alias_list": [
+      "FURY_silentHNL",
+      "MPIRE_silentHNL",
+      "silentHNL"
+    ]
+  },
+  {
+    "esport_name": "sweetdreams",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "taskmast33r",
+    "hash": [
+      "a94b3ed0b63e00422d43c9443f74c56c",
+      "13bad827972a29fce8d8efff200ee878"
+    ],
+    "alias_list": [
+      "FIRE BEAVERS taskmast33r",
+      "FIREBEAVERStaskmast33r",
+      "RD_taskmast33r",
+      "taskmast33r",
+      "taskmast33r FRBV"
+    ]
+  },
+  {
+    "esport_name": "th0rfinnnnn",
+    "hash": [
+      "25631028dcca5378a8f7a1707e1bc34c",
+      "0adb633619f1e8fc6e70c96c9740e2c8"
+    ],
+    "alias_list": [
+      "2R1C th0rfinnnnn",
+      "EIQ th0rfinnnnn",
+      "EXO th0rfinnnnn",
+      "Totem th0rfinnnnn",
+      "th0rfinnnnn",
+      "th0rfinnnnn EIQ"
+    ]
+  },
+  {
+    "esport_name": "theesaar",
+    "hash": [
+      "ebb50edbe8c2443aeacd8fe030dfa95f",
+      "a1eab3bc31268909095055863fb31005"
+    ],
+    "alias_list": [
+      "NC theesaar",
+      "NC_theesaar"
+    ]
+  },
+  {
+    "esport_name": "tomorow",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "unlucky",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "urban",
+    "hash": [
+      "2c790061e0db252caa12b38637d6b76f"
+    ],
+    "alias_list": [
+      "HORIZON .",
+      "HORIZON BILALJAMIN",
+      "HORIZON URBAN",
+      "HRZN Urban",
+      "HRZN urban",
+      "HRZNurban",
+      "twitch-urbanapex",
+      "urban"
+    ]
+  },
+  {
+    "esport_name": "voiid",
+    "hash": [
+      "35463562c22c0212c5ccc15d34761440"
+    ],
+    "alias_list": [
+      "EEC VOIID",
+      "EEC voiid"
+    ]
+  },
+  {
+    "esport_name": "watage",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "wayachang",
+    "hash": [
+      "9b757facaa3643c1788741841031ed0b",
+      "029e792c11a4f57d412093857a91172c"
+    ],
+    "alias_list": [
+      "LFT_wayachang",
+      "MOZE wayachang",
+      "RR wayachang",
+      "wayachang"
+    ]
+  },
+  {
+    "esport_name": "wifi 0",
+    "hash": [
+      "f64b0d665df09d75c8d5bfb2ae1ea89c"
+    ],
+    "alias_list": [
+      "wifi 0"
+    ]
+  },
+  {
+    "esport_name": "wqtagashi",
+    "hash": [
+      "fc3d5c1302c399dcfad950419ddc28c8",
+      "eb39f3a03a4587eb39c4b5e6aea3c0e5"
+    ],
+    "alias_list": [
+      "HAO wqtagashi",
+      "HAO_wqtagashi",
+      "ORW_wqtagashi"
+    ]
+  },
+  {
+    "esport_name": "xVolx",
+    "hash": [
+      "228c435169643e0dea19962700641a3a"
+    ],
+    "alias_list": [
+      "NeS xVolx"
+    ]
+  },
+  {
+    "esport_name": "xaniya",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "xd",
+    "hash": [
+      "8c71f10d9282fe28cbb0d27e94fda286"
+    ],
+    "alias_list": [
+      "OuOdia",
+      "Xny_xd",
+      "xd"
+    ]
+  },
+  {
+    "esport_name": "xeriffer",
+    "hash": [
+      "84fa43450c22dfa6a3c9e7421280ef18",
+      "a7c31ccf9efcd105f9a2e9d9b154288f"
+    ],
+    "alias_list": [
+      "BFG xeriffer",
+      "BFG_xeriffer",
+      "twitch-xeriffer"
+    ]
+  },
+  {
+    "esport_name": "yubn",
+    "hash": [
+      "f69d7f890560238855ac579aad9c44d6"
+    ],
+    "alias_list": [
+      "MPIRE y",
+      "MPIRE yubn",
+      "yu bn",
+      "yubn",
+      "yubn_o"
+    ]
+  },
+  {
+    "esport_name": "yukaPEROdator",
+    "hash": [
+      "9e275cb34a724b8525f7d051e280bb90",
+      "6a4af3d2346be8f4962569ea77f2982c",
+      "3c69380cb77ddbc81fb17b757bb1c0ed"
+    ],
+    "alias_list": [
+      "FC_yukaPEROdator",
+      "NTH YukaPEROdator",
+      "NTH_YukaPEROdator",
+      "NTH_yukaPEROdator",
+      "yukaPEROdator",
+      "yukaPEROdator FC"
+    ]
+  },
+  {
+    "esport_name": "zRXMz",
+    "hash": [
+      "fceff349a2f6210cfcfdaf6b6b4fb541"
+    ],
+    "alias_list": [
+      ".",
+      "Iz7_REALzRXMz",
+      "RXMZ",
+      "iz7_REALzRXMz"
+    ]
+  },
+  {
+    "esport_name": "zhidan",
+    "hash": [
+      "3537ade4a86494e87b7bc9091834d98e"
+    ],
+    "alias_list": [
+      "lzhidan"
+    ]
+  },
+  {
+    "esport_name": "zkYuTa",
+    "hash": [
+      "da3b3127299cb23965e9d792d695a644"
+    ],
+    "alias_list": [
+      "TIE zkYuTa"
+    ]
+  }
+]
