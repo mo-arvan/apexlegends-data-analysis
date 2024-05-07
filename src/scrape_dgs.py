@@ -21,7 +21,7 @@ DGS_API_URL = "https://algs-public-outbound.apexlegendsstatus.com/"
 ALS_URL = "https://apexlegendsstatus.com/"
 
 
-def scrape_game_endpoints(game_df, algs_games_dir):
+def scrape_game_endpoints(game_df, algs_games_dir, sleep_duration=2):
     headers = {
         "Content-Type": "application/json",
         # "DGS-Authorization": dgs_auth
@@ -84,14 +84,14 @@ def scrape_game_endpoints(game_df, algs_games_dir):
                     file_name = f"{algs_games_dir}/{api_name}/{game_id}.json"
                     with open(file_name, "w") as file:
                         json.dump(result_json, file, indent=2)
-                time.sleep(2)
+                time.sleep(sleep_duration)
 
             # sleep for 1 second
             progress_bar.update(1)
             # Check the response status and save to file
 
 
-def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
+def scrape_players_endpoints(game_df, init_dict, algs_games_dir, sleep_duration=2):
     headers = {
         "Content-Type": "application/json",
         # "DGS-Authorization": dgs_auth
@@ -133,7 +133,7 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir):
                     if len(response.text) > 0:
                         result_json = response.json()
                         all_players_list.append(result_json)
-                time.sleep(2)
+                time.sleep(sleep_duration)
             with open(file_name, "w") as file:
                 json.dump(all_players_list, file, indent=2)
             progress_bar.update(1)
