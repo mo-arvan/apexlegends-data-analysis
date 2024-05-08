@@ -1,7 +1,7 @@
 import logging
 
 import altair as alt
-import plotly.express as px
+# import plotly.express as px
 import streamlit as st
 
 import src.data_helper as data_helper
@@ -66,24 +66,24 @@ def damage_plot_builder(damage_data_df):
     )
     # , color_continuous_scale="Viridis"
     #  nbinsx=20, nbinsy=20
-    density_heatmap_plotly = px.density_heatmap(damage_data_df,
-                                                x="distance_median",
-                                                y="hit_count",
-                                                marginal_x="histogram",
-                                                marginal_y="histogram",
-                                                # color_continuous_scale="Viridis",
-                                                color_continuous_scale=px.colors.sequential.Plasma,
-                                                nbinsx=10,
-                                                nbinsy=12,
-                                                # color="count()",
-                                                title="Hit Count vs Distance Heatmap",
-                                                labels={"distance_median": "Distance (m)", "hit_count": "Hit Count"},
-                                                histfunc="sum",
-                                                width=800,
-                                                height=800,
-                                                )
+    # density_heatmap_plotly = px.density_heatmap(damage_data_df,
+    #                                             x="distance_median",
+    #                                             y="hit_count",
+    #                                             marginal_x="histogram",
+    #                                             marginal_y="histogram",
+    #                                             # color_continuous_scale="Viridis",
+    #                                             color_continuous_scale=px.colors.sequential.Plasma,
+    #                                             nbinsx=10,
+    #                                             nbinsy=12,
+    #                                             # color="count()",
+    #                                             title="Hit Count vs Distance Heatmap",
+    #                                             labels={"distance_median": "Distance (m)", "hit_count": "Hit Count"},
+    #                                             histfunc="sum",
+    #                                             width=800,
+    #                                             height=800,
+    #                                             )
 
-    return [histogram_plot, heatmap, density_heatmap_plotly], damage_data_df
+    return [histogram_plot, heatmap], damage_data_df
 
     plot_df = players_grouped_df.sort_values(by="median_accuracy", ascending=False)
     plot_df["median_accuracy_rank"] = range(1, len(plot_df) + 1)
@@ -245,6 +245,12 @@ damage_events_filtered_df, selected_tournament, selected_region, selected_days, 
 plots, raw_data = damage_plot_builder(damage_events_filtered_df)
 
 st.altair_chart(plots[1], use_container_width=True)
+
+# TODO:
+# interval selection
+# - ePDF of damage dealt
+# - eCDF of damage dealt
+# - color per input
 
 expander = st.expander(label='Raw Data')
 expander.dataframe(raw_data[[
