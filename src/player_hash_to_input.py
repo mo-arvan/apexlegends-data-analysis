@@ -127,6 +127,8 @@ def main():
 
     match_hash_to_player(player_name_hash_to_match, esports_list)
 
+    approximate_match(esports_list)
+
     check_for_duplicate_hashes(esports_list)
 
     data_loader.save_esports_list(esports_list)
