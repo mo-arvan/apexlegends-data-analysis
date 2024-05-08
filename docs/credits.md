@@ -1,9 +1,11 @@
 #### Credits
 
-Hi, I'm Mo, I'm a Computer Scientist, I work on data science problems from time to time. I'm also a gamer, I play Apex
+Hi, I'm Mo, I'm a Computer Scientist working in the field of Machine Learning.
+I'm also a gamer, I play Apex
 Legends. This was a fun project I started during the holidays due to boredom. Everything is free, open source, and
 available on [Github](https://github.com/mo-arvan/apexlegends-data-analysis). I hope this analysis helps the scene to 
 grow. 
+
 
 - Weapons data from [Apex Legends Wiki](https://apexlegends.fandom.com/wiki/Apex_Legends_Wiki)
 - Tournament data are thanks
