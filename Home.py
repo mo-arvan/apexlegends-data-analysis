@@ -2,7 +2,7 @@ import streamlit as st
 import time
 st.set_page_config(
     page_title="Apex Legends Data Analysis",
-    page_icon="🎮",
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
