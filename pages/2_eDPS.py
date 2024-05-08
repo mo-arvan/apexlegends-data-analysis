@@ -17,13 +17,12 @@ logger.info(f"Running {__file__}")
 
 st.set_page_config(
     page_title="Gun Meta Analysis",
-    page_icon="🧊",
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
     }
 )
-st.sidebar.title("Gun Meta Analysis")
 with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df = data_helper.load_data()
 
