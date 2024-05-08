@@ -6,8 +6,15 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from tqdm.auto import tqdm
+import logging
 
 import json
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info(f"Running {__file__}")
 
 
 def filter_country_representation_table(table):
