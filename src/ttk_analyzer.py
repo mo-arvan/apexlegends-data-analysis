@@ -210,6 +210,22 @@ def get_e_dps_df(selected_weapons,
             gun_ttk_dict.update(conditions)
             dps_dict_list.append(gun_ttk_dict)
 
+    # # adding ranking for weapons based on eDPS for each accuracy value
+    # accuracy_value = sorted(set([dps_dict["accuracy"] for dps_dict in dps_dict_list]), reverse=True)
+    # weapons_set  =  set([dps_dict["weapon_name"] for dps_dict in dps_dict_list])
+    #
+    # ranking_dict = {}
+    # matching_weapons = [dps_dict for dps_dict in dps_dict_list if dps_dict["accuracy"] == 100]
+    # matching_weapons = sorted(matching_weapons, key=lambda k: k['dps'], reverse=True)
+    # weapon_names = [dps_dict["weapon_name"] for dps_dict in matching_weapons]
+    # for i, weapon in enumerate(weapon_names):
+    #     ranking_dict[weapon] = i + 1
+    # #
+    # for accuracy in accuracy_value:
+    #     matching_weapons = [dps_dict for dps_dict in dps_dict_list if dps_dict["accuracy"] == accuracy]
+    #     matching_weapons = sorted(matching_weapons, key=lambda k: k['dps'], reverse=True)
+    #     for weapon in weapons_set:
+
     dps_dict_list = sorted(dps_dict_list, key=lambda k: k['dps'], reverse=True)
     dps_df = pd.DataFrame(dps_dict_list)
     plot_dict = {

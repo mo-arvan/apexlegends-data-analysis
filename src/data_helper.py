@@ -14,7 +14,7 @@ logger.info(f"Running {__file__}")
 
 @st.cache_data
 def get_fights_data():
-    logger.info("Loading fights data")
+    logger.debug("Loading fights data")
     algs_games_df = get_algs_games()
     # fights_df = pd.read_csv("data/weapons_data.csv")
     fights_df = pd.read_parquet("data/fights_data.parquet")
@@ -47,7 +47,7 @@ def get_fights_data():
 
 @st.cache_data
 def get_damage_data(selected_tournament):
-    logger.info("Loading damage data")
+    logger.debug("Loading damage data")
     normalized_name = selected_tournament.lower().replace(" ", "_")
 
     damage_events_df = pd.read_parquet(f"data/tournament_damage_events/{normalized_name}.parquet")
@@ -57,7 +57,7 @@ def get_damage_data(selected_tournament):
 
 @st.cache_data
 def get_algs_games():
-    logger.info("Loading algs games data")
+    logger.debug("Loading algs games data")
     algs_games_df = pd.read_parquet("data/algs_game_list.parquet")
 
     return algs_games_df
@@ -98,7 +98,7 @@ def get_algs_games():
 
 
 def get_gun_stats():
-    logger.info("Loading gun stats data")
+    logger.debug("Loading gun stats data")
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
     sniper_stocks_df = pd.read_csv("data/sniper_stocks.csv")
     standard_stocks_df = pd.read_csv("data/standard_stocks.csv")

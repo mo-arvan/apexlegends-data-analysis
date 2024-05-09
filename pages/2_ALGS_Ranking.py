@@ -198,7 +198,7 @@ def get_player_ranking(input_df, minimum_damage, top_k):
             orient='bottom',
             anchor='start',
             fontWeight='normal',
-            fontSize=12,
+            fontSize=10,
             dx=15,
             dy=15
         ),
@@ -253,12 +253,10 @@ def get_team_ranking():
                                       "high_hit_count_percentage": "Percentage"}, inplace=True)
 
 
-logger.info("Loading data...")
 # with st.spinner("Loading data..."):
 algs_games_df = data_helper.get_algs_games()
 gun_stats_df, _, _ = data_helper.get_gun_stats()
 
-logger.info("Data loaded.")
 
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.common_filters(
     algs_games_df, gun_stats_df)

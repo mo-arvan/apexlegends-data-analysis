@@ -139,7 +139,7 @@ def common_filters(algs_games_df, gun_stats_df):
                     "weapon_name"].unique().tolist()
 
     preselected_weapons = list(set(preselected_weapons))
-    logger.info(f"Preselected Weapons: {preselected_weapons}")
+    logger.debug(f"Preselected Weapons: {preselected_weapons}")
 
     all_weapons = damage_events_df["weapon_name"].unique().tolist()
 
