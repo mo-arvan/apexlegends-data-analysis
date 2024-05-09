@@ -76,13 +76,15 @@ def get_e_dps_df(selected_weapons,
     peek_time_in_ms = conditions["peek_time"]
     estimation_method = conditions["estimation_method"]
 
-    accuracy_model_df = get_estimation_model(guns_df, fights_df, estimation_method,
-                                                               selected_weapons_df)
+    # accuracy_model_df = get_estimation_model(selected_weapons_df,
+    #                                          fights_df,
+    #                                          estimation_method,
+    #                                          selected_weapons_df)
 
     for idx, weapon in selected_weapons_df.iterrows():
 
         # if weapon["weapon_name"] in accuracy_model_df["guns"]
-        gun_accuracy_model_df = accuracy_model_df[accuracy_model_df["guns"].apply(lambda x: weapon["weapon_name"] in x)]
+        # gun_accuracy_model_df = accuracy_model_df[accuracy_model_df["guns"].apply(lambda x: weapon["weapon_name"] in x)]
         weapon_raw_damage = weapon["damage"]
         current_mag_size = weapon[f"magazine_{mag_index + 1}"]
 
@@ -186,11 +188,12 @@ def get_e_dps_df(selected_weapons,
 
                 damage_dealt = evo_shield_damage_dealt + non_evo_damage_dealt
 
-            cdf = gun_accuracy_model_df[gun_accuracy_model_df["accuracy"] <= accuracy]["cdf"].max()
-
-            model_name = gun_accuracy_model_df["model_name"].unique().tolist()
-            assert len(model_name) == 1
-            accuracy_model = model_name[0]
+            ammo_left = current_mag_size - hit_shots - miss_shots
+            # cdf = gun_accuracy_model_df[gun_accuracy_model_df["accuracy"] <= accuracy]["cdf"].max()
+            #
+            # model_name = gun_accuracy_model_df["model_name"].unique().tolist()
+            # assert len(model_name) == 1
+            # accuracy_model = model_name[0]
 
             dps = damage_dealt / peek_time_in_ms * 1000
 
@@ -202,9 +205,10 @@ def get_e_dps_df(selected_weapons,
                 # "remaining_health": remaining_health,
                 "damage_dealt": damage_dealt,
                 "dps": dps,
-                "cdf": cdf,
+                # "cdf": cdf,
                 "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
-                "accuracy_model": accuracy_model,
+                "ammo_left": ammo_left,
+                # "accuracy_model": accuracy_model,
                 # "reload time": reload_time_modifier,
             }
             gun_ttk_dict.update(conditions)

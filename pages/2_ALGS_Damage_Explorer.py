@@ -239,7 +239,7 @@ def damage_plot_builder(damage_data_df):
     return plot_list, weapons_data_df
 
 
-damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.common_filters(
+damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
     algs_games_df, gun_stats_df)
 
 plots, raw_data = damage_plot_builder(damage_events_filtered_df)

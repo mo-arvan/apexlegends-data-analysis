@@ -7,7 +7,6 @@ logger = logging.getLogger(__name__)
 
 logger.info(f"Running {__file__}")
 
-
 fights_breakdown_info = ""
 
 docs_file_path_list = [

@@ -6,8 +6,8 @@ import time
 from argparse import ArgumentParser
 
 import pandas as pd
-from tqdm import tqdm
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 import parallel_helper
 

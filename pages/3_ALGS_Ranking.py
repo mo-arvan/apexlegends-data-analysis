@@ -1,8 +1,8 @@
 import logging
 
+import altair as alt
 import numpy as np
 import streamlit as st
-import altair as alt
 
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
@@ -77,9 +77,8 @@ def get_player_ranking(input_df, minimum_damage, top_k):
 
     high_hit_count_players_ranking_head = high_hit_count_players_ranking.head(top_k)
 
-    height = 800
-    if top_k > 20:
-        height = 800 + (top_k - 20) * 30
+    # height = 800
+    height = 40 + top_k * 40
 
     title = alt.TitleParams(f"Top Players Ranked based on # High Damage Encounters",
                             subtitle=[f"Minimum Damage Dealt: {minimum_damage}, color is input type.",
@@ -257,8 +256,7 @@ def get_team_ranking():
 algs_games_df = data_helper.get_algs_games()
 gun_stats_df, _, _ = data_helper.get_gun_stats()
 
-
-damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.common_filters(
+damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
     algs_games_df, gun_stats_df)
 
 hit_count_median = int(damage_events_filtered_df["hit_count"].median())
