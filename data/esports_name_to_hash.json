@@ -989,12 +989,15 @@
     "esport_name": "Dropped",
     "hash": [
       "94cdbbde6995e7589f5e423a9c4fdf71",
-      "c2b5c035244f65500cb41a880e264a3c"
+      "c2b5c035244f65500cb41a880e264a3c",
+      "e7b146d11009dc681e9df42519701965"
     ],
     "alias_list": [
       "OpTic Dropped",
       "SSGDROPPED",
-      "SSG_DROPPED"
+      "SSG_DROPPED",
+      "DROPPED",
+      "DROPPED OG"
     ]
   },
   {
@@ -1017,8 +1020,15 @@
   },
   {
     "esport_name": "Elysium",
-    "hash": [],
-    "alias_list": []
+    "hash": [
+      "182cc164ac9500a9269303629fb297f1",
+      "5241e22768c85f6158b324a8a1841e60",
+      "65f47ce6ef511ae3d24a4b7947bc7e0e"
+    ],
+    "alias_list": [
+      "SNG_elysium",
+      "elysium"
+    ]
   },
   {
     "esport_name": "Emtee",
@@ -1511,10 +1521,12 @@
   {
     "esport_name": "ILY",
     "hash": [
-      "04f5bdf52aef9cfe6b6f889cc7e428c8"
+      "04f5bdf52aef9cfe6b6f889cc7e428c8",
+      "2e1e495275b4b1b91f1d9eed80a3eefd"
     ],
     "alias_list": [
-      "E36 ILY"
+      "E36 ILY",
+      "ily_v"
     ]
   },
   {
@@ -1603,13 +1615,16 @@
     "hash": [
       "54a560da7d3b7208395a92830d1727ee",
       "415b2072fd0eb8d4ac97f698c471f569",
-      "960934dccecb1966f629a76b4951e1db"
+      "960934dccecb1966f629a76b4951e1db",
+      "37b3a7b7d914447183fc3b9b39b63a78"
     ],
     "alias_list": [
       "LG_jaguares",
       "LGjaguares",
       "TLAW jaguaresl",
-      "jaguaresl"
+      "jaguaresl",
+      "jaguares",
+      "jaguares LG"
     ]
   },
   {
@@ -1938,8 +1953,16 @@
   },
   {
     "esport_name": "Knoqd",
-    "hash": [],
-    "alias_list": []
+    "hash": [
+      "575e6d6c8fe9e70bb64ce1d028b0cc59",
+      "2453374c1f0ba52b6c1935a0ef1fffde"
+    ],
+    "alias_list": [
+      "OpTic knoqd",
+      "OpTicknoqd",
+      "knoqdgg",
+      "knoqdgg OG"
+    ]
   },
   {
     "esport_name": "Koba",
@@ -1969,13 +1992,16 @@
     "esport_name": "Kurev",
     "hash": [
       "2bbe4ea837ab27203941168fa677562c",
-      "2b13f85aeb4dcc855f29fb6809597074"
+      "2b13f85aeb4dcc855f29fb6809597074",
+      "4cbfa3673447a2defa093ccfc4ec560e"
     ],
     "alias_list": [
       "Kurev",
       "LNW KUREVVV_Twitch",
       "LNW Kurev",
-      "aM Kurev"
+      "aM Kurev",
+      "Kurevv",
+      "Kurevv LNW"
     ]
   },
   {
@@ -2745,7 +2771,8 @@
   {
     "esport_name": "Pandxrz",
     "hash": [
-      "fec9fd0b68541b0d7107370129415ff7"
+      "fec9fd0b68541b0d7107370129415ff7",
+      "01ab19541142a8670012f2bd9c7731c1"
     ],
     "alias_list": [
       "FURIA Pandxrz",
@@ -2753,7 +2780,9 @@
       "FURIA_Pandxrz",
       "FUR_Pandxrz",
       "FaZe_Pandxrz",
-      "FaZe_pandxrz"
+      "FaZe_pandxrz",
+      "pandxrz",
+      "pandxrz FUR"
     ]
   },
   {
@@ -3442,11 +3471,14 @@
   {
     "esport_name": "SkittleCakes",
     "hash": [
-      "f6fc1f2e54a0e4ed185b53465a2f33fd"
+      "f6fc1f2e54a0e4ed185b53465a2f33fd",
+      "7cc81f1fdfb0e762a45c9d307df5342a"
     ],
     "alias_list": [
       "OpTic SkittleCakes",
-      "OpTicSkittleCakes"
+      "OpTicSkittleCakes",
+      "SkittleCake",
+      "SkittleCake OG"
     ]
   },
   {
@@ -3499,10 +3531,13 @@
   {
     "esport_name": "Sleep",
     "hash": [
-      "7c59df52ac30727843baaeba8207cd80"
+      "7c59df52ac30727843baaeba8207cd80",
+      "a7ac7e6339c2218cbcec71aa0ea1041f"
     ],
     "alias_list": [
-      "Sleep"
+      "Sleep",
+      "Sleeepola",
+      "Sleeepola SAF"
     ]
   },
   {
@@ -3999,12 +4034,14 @@
   {
     "esport_name": "Vlatow",
     "hash": [
-      "de308d5546e0f155625862f7aef20790"
+      "de308d5546e0f155625862f7aef20790",      "5e287068bf177d039d59c3264faf36b3"
+
     ],
     "alias_list": [
       "BRD Vlatow",
       "Vlatow",
-      "Vlatow ATH"
+      "Vlatow ATH",
+      "ATHXHVY_VLATOW"
     ]
   },
   {
@@ -4117,7 +4154,8 @@
     "esport_name": "Xenial",
     "hash": [
       "a98396ed0bec4dea8a862bc6441f8662",
-      "a6b6b7022966dd4605e368eac0a76a5b"
+      "a6b6b7022966dd4605e368eac0a76a5b",
+      "10be971f57e21580c3f26491e2be0a83"
     ],
     "alias_list": [
       "OXG xenial",
@@ -4125,17 +4163,24 @@
       "SEN xenial",
       "SSG_xenial",
       "SSGxenial",
-      "x"
+      "x",
+      "xenial"
     ]
   },
   {
     "esport_name": "Xeratricky",
     "hash": [
-      "20965d7094ec95f25e3bb26b79ef4659"
+      "20965d7094ec95f25e3bb26b79ef4659",
+      "91e1bc62baef92fce6335d3441f03b7d"
     ],
     "alias_list": [
       "Xeratricky",
-      "Xeratricky FUR"
+      "Xeratricky FUR",
+      "FURIA Xera",
+      "FURIAXera",
+      "FaZe Xera",
+      "Xeratricky1|Twitch",
+      "twitch.tv/Xera"
     ]
   },
   {
@@ -4654,34 +4699,9 @@
       "ATHXHVY_ASLEEP"
     ]
   },
-  {
-    "esport_name": null,
-    "hash": [
-      "af1d96563a1d3444d14a21124d0a5b5d"
-    ],
-    "alias_list": [
-      "ATHXHVY_TRINITYZY"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "5e287068bf177d039d59c3264faf36b3"
-    ],
-    "alias_list": [
-      "ATHXHVY_VLATOW"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "afa99e6268f558106f4460274101e186"
-    ],
-    "alias_list": [
-      "AURORA CLEAVEEE",
-      "AURORACLEAVEEE"
-    ]
-  },
+
+
+
   {
     "esport_name": null,
     "hash": [
@@ -5241,16 +5261,6 @@
   {
     "esport_name": null,
     "hash": [
-      "e7b146d11009dc681e9df42519701965"
-    ],
-    "alias_list": [
-      "DROPPED",
-      "DROPPED OG"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "81fc19588f4ff33d31176637fd1be120"
     ],
     "alias_list": [
@@ -5559,19 +5569,6 @@
     ],
     "alias_list": [
       "FRATIS"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "91e1bc62baef92fce6335d3441f03b7d"
-    ],
-    "alias_list": [
-      "FURIA Xera",
-      "FURIAXera",
-      "FaZe Xera",
-      "Xeratricky1|Twitch",
-      "twitch.tv/Xera"
     ]
   },
   {
@@ -6370,16 +6367,6 @@
   {
     "esport_name": null,
     "hash": [
-      "4cbfa3673447a2defa093ccfc4ec560e"
-    ],
-    "alias_list": [
-      "Kurevv",
-      "Kurevv LNW"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "7c97a3a4d4f31c05c198c380a414413b"
     ],
     "alias_list": [
@@ -6901,16 +6888,6 @@
   {
     "esport_name": null,
     "hash": [
-      "6bc6ace1836d909006fbe6ff08487e41"
-    ],
-    "alias_list": [
-      "Nocturnal",
-      "Nocturnal XSET"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "b6772134d72baba5862190d9d4a887c0"
     ],
     "alias_list": [
@@ -7019,16 +6996,6 @@
     "alias_list": [
       "OXGProtectful",
       "Protectful"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "575e6d6c8fe9e70bb64ce1d028b0cc59"
-    ],
-    "alias_list": [
-      "OpTic knoqd",
-      "OpTicknoqd"
     ]
   },
   {
@@ -7360,18 +7327,6 @@
   {
     "esport_name": null,
     "hash": [
-      "182cc164ac9500a9269303629fb297f1",
-      "5241e22768c85f6158b324a8a1841e60",
-      "65f47ce6ef511ae3d24a4b7947bc7e0e"
-    ],
-    "alias_list": [
-      "SNG_elysium",
-      "elysium"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "e35fedb09bed3494e9023c6aaccf538f"
     ],
     "alias_list": [
@@ -7462,26 +7417,6 @@
     ],
     "alias_list": [
       "Siackinq.tv"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "7cc81f1fdfb0e762a45c9d307df5342a"
-    ],
-    "alias_list": [
-      "SkittleCake",
-      "SkittleCake OG"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "a7ac7e6339c2218cbcec71aa0ea1041f"
-    ],
-    "alias_list": [
-      "Sleeepola",
-      "Sleeepola SAF"
     ]
   },
   {
@@ -7718,14 +7653,17 @@
       "Trent"
     ]
   },
+
   {
     "esport_name": null,
     "hash": [
-      "d9691ec4d421f01fc6e78f553a51275b"
+      "d9691ec4d421f01fc6e78f553a51275b",      "af1d96563a1d3444d14a21124d0a5b5d"
+
     ],
     "alias_list": [
       "TriNITYzy",
-      "TriNITYzy ATH"
+      "TriNITYzy ATH",
+      "ATHXHVY_TRINITYZY"
     ]
   },
   {
@@ -8072,29 +8010,10 @@
   {
     "esport_name": null,
     "hash": [
-      "2e1e495275b4b1b91f1d9eed80a3eefd"
-    ],
-    "alias_list": [
-      "ily_v"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "00ee921578b2ba4a9897515c9a403589"
     ],
     "alias_list": [
       "j2nuary"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "37b3a7b7d914447183fc3b9b39b63a78"
-    ],
-    "alias_list": [
-      "jaguares",
-      "jaguares LG"
     ]
   },
   {
@@ -8131,16 +8050,6 @@
     ],
     "alias_list": [
       "keniru7"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "2453374c1f0ba52b6c1935a0ef1fffde"
-    ],
-    "alias_list": [
-      "knoqdgg",
-      "knoqdgg OG"
     ]
   },
   {
@@ -8249,16 +8158,6 @@
     ],
     "alias_list": [
       "oPESADELO"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "01ab19541142a8670012f2bd9c7731c1"
-    ],
-    "alias_list": [
-      "pandxrz",
-      "pandxrz FUR"
     ]
   },
   {
@@ -8479,15 +8378,6 @@
     ],
     "alias_list": [
       "xWinkler"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "10be971f57e21580c3f26491e2be0a83"
-    ],
-    "alias_list": [
-      "xenial"
     ]
   },
   {
@@ -8715,13 +8605,17 @@
   {
     "esport_name": "cleaveee",
     "hash": [
-      "2d3ff2f3ead9594912f23d1eecc7bfd4"
+      "2d3ff2f3ead9594912f23d1eecc7bfd4",
+      "afa99e6268f558106f4460274101e186"
     ],
     "alias_list": [
       "cleaveee",
-      "cleaveee AUR"
+      "cleaveee AUR",
+      "AURORA CLEAVEEE",
+      "AURORACLEAVEEE"
     ]
   },
+
   {
     "esport_name": "dooplex",
     "hash": [
@@ -8915,14 +8809,17 @@
     "esport_name": "oh Nocturnal",
     "hash": [
       "346913b6e46197c24cccb7311154bf68",
-      "c4af29b7d0135d07ec115ccf9e12ce71"
+      "c4af29b7d0135d07ec115ccf9e12ce71",
+      "6bc6ace1836d909006fbe6ff08487e41"
     ],
     "alias_list": [
       "TLNocturnal",
       "XSET 9N\u0444c",
       "XSET N\u0444cturnal",
       "XSETNocturnal",
-      "XSET_Nocturnal"
+      "XSET_Nocturnal",
+      "Nocturnal",
+      "Nocturnal XSET"
     ]
   },
   {
