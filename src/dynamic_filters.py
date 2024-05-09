@@ -2,7 +2,6 @@
 
 import streamlit as st
 from streamlit.errors import StreamlitAPIException
-import pandas as pd
 
 
 class DynamicFilters:

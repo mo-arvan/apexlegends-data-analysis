@@ -1,15 +1,14 @@
 import csv
+import json
+import logging
+import os
 import time
 from argparse import ArgumentParser
-import os
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from tqdm.auto import tqdm
-import logging
-
-import json
-
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
