@@ -2,6 +2,7 @@ import logging
 
 import numpy as np
 import streamlit as st
+import altair as alt
 
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
@@ -24,7 +25,7 @@ st.set_page_config(
 )
 
 
-def get_player_ranking(input_df, minimum_damage):
+def get_player_ranking(input_df, minimum_damage, top_k):
     higher_than_threshold_data = input_df.loc[
         damage_events_filtered_df["damage_sum"] >= minimum_damage]
 
@@ -53,23 +54,180 @@ def get_player_ranking(input_df, minimum_damage):
     high_hit_count_players_ranking["high_hit_count_percentage"] = high_hit_count_players_ranking[
         "high_hit_count_percentage"].apply(
         lambda x: np.round(x, 2))
+
+    high_hit_count_players_ranking["high_hit_count_percentage_str"] = high_hit_count_players_ranking[
+        "high_hit_count_percentage"].apply(
+        lambda x: f"{x:.2f} %")
+
     high_hit_count_players_ranking = high_hit_count_players_ranking.sort_values(by=["high_hit_count",
                                                                                     "high_hit_count_percentage"
                                                                                     ],
                                                                                 ascending=False)
+    input_to_emoji_dict = {
+        "Mouse & Keyboard": "💻",
+        "Controller": "🎮",
+    }
+    keyboard_emoji = "⌨️"
+    controller_emoji = "🎮"
+
+    high_hit_count_players_ranking["input"] = high_hit_count_players_ranking["input"].apply(
+        lambda x: input_to_emoji_dict.get(x, "?"))
 
     high_hit_count_players_ranking["high_hit_count_rank"] = range(1, len(high_hit_count_players_ranking) + 1)
 
-    high_hit_count_players_ranking.rename(columns={"player_name": "Name",
-                                                   "team_name": "Team",
-                                                   "input": "Input",
-                                                   "high_hit_count_rank": "Rank",
-                                                   "high_hit_count": "Count",
-                                                   "total_fights": "Total",
-                                                   "high_hit_count_percentage": "Percentage"}, inplace=True)
+    high_hit_count_players_ranking_head = high_hit_count_players_ranking.head(top_k)
 
-    return high_hit_count_players_ranking[
-        ["Rank", "Name", "Input", "Count", "Total", "Percentage"]], higher_than_threshold_data
+    height = 800
+    if top_k > 20:
+        height = 800 + (top_k - 20) * 30
+
+    title = alt.TitleParams(f"Top Players Ranked based on # High Damage Encounters",
+                            subtitle=[f"Minimum Damage Dealt: {minimum_damage}, color is input type.",
+                                      ""],
+                            subtitleColor="#FFFFFF",
+                            fontSize=24,
+                            subtitleFontSize=16,
+                            anchor='start',
+                            dx=50,
+                            dy=25)
+
+    rank_bar_plot = alt.Chart(high_hit_count_players_ranking_head,
+                              title=title).mark_bar().encode(
+        x=alt.X("high_hit_count:Q",
+                # axis=alt.Axis(title="Count"),
+                axis=None,
+                scale=alt.Scale(zero=False)),
+        y=alt.Y("player_name:N",
+                axis=alt.Axis(title='',
+                              offset=35,
+                              ticks=False,
+                              domain=False
+                              ),
+                sort=None,
+                ),
+        color=alt.Color("input:N",
+                        legend=None,
+                        # scale=alt.Scale(scheme='yelloworangered')
+                        # use category10 for colors
+                        scale=alt.Scale(scheme='dark2')
+
+                        ),
+        tooltip=alt.Tooltip(
+            [
+                'player_name',
+                # "weapon_name",
+                # "damage_sum:Q",
+                # 'shots',
+                # 'hits',
+                # "accuracy",
+                # "high_accuracy_count",
+                # "total_fights",
+                # "tournament_full_name",
+                # "tournament_region",
+                # "tournament_day",
+                # "game_title"
+            ]),
+    ).properties(
+        # width=100,
+        width=600,
+
+        height=height,
+    )
+
+    # rank_bar_plot = rank_bar_plot.interactive()
+
+    #
+    bar_plot_input_text = rank_bar_plot.mark_text(align="center",
+                                                  baseline="middle",
+                                                  # color="white",
+                                                  fontStyle="bold",
+                                                  fontSize=20,
+                                                  dx=-20).encode(
+        x=alt.value(-5),
+        text="input:N",
+        # text="damage_dealt:Q",
+        # color=alt.value("black")
+    )
+
+    bar_plot_count_text = rank_bar_plot.mark_text(align="center",
+                                                  baseline="middle",
+                                                  # color="white",
+                                                  fontStyle="bold",
+                                                  fontSize=20,
+                                                  dx=-20).encode(
+        x=alt.X("high_hit_count:Q"),
+        # y=alt.Y("player_name:N"),
+        text="high_hit_count:Q",
+        color=alt.value("white")
+    )
+
+    bar_plot_percentage_text = rank_bar_plot.mark_text(align="center",
+                                                       baseline="middle",
+                                                       # color="white",
+                                                       fontStyle="bold",
+                                                       fontSize=12,
+                                                       dx=0).encode(
+        x=alt.value(35),
+        # text="high_hit_count_percentage:Q",
+        # add percentage sign
+        text=alt.Text("high_hit_count_percentage_str:N",
+                      # format=".2 %",
+                      ),
+
+        color=alt.value("white")
+    ).transform_calculate(label='datum.text + " %"')
+
+    # bottom_title = alt.TitleParams(
+    #     ['This is a fake footer.', 'If you want multiple lines,', 'you can put them in a list.'],
+    #     baseline='bottom',
+    #     orient='bottom',
+    #     anchor='end',
+    #     fontWeight='normal',
+    #     fontSize=10
+    # )
+
+    # + bar_plot_count_text
+    rank_bar_plot = rank_bar_plot + bar_plot_input_text
+    rank_bar_plot = rank_bar_plot + bar_plot_count_text
+    rank_bar_plot = rank_bar_plot + bar_plot_percentage_text
+
+    rank_bar_plot = alt.concat(rank_bar_plot).properties(
+        title=alt.TitleParams(
+            ['Source: apexlegends-data-analysis.streamlit.app'],
+            baseline='bottom',
+            orient='bottom',
+            anchor='start',
+            fontWeight='normal',
+            fontSize=12,
+            dx=15,
+            dy=15
+        ),
+    )
+
+    # rank_bar_plot = alt.concat(rank_bar_plot).properties(
+    #     title=alt.TitleParams(
+    #         ['This is a fake footer.', 'If you want multiple lines,', 'you can put them in a list.'],
+    #         baseline='bottom',
+    #         orient='bottom',
+    #         anchor='end',
+    #         fontWeight='normal',
+    #         fontSize=10
+    #     ))
+    # rank_bar_plot = alt.concat([rank_bar_plot, bottom_attribution])
+
+    selected_df = high_hit_count_players_ranking.rename(columns={"player_name": "Name",
+                                                                 "team_name": "Team",
+                                                                 "input": "Input",
+                                                                 "high_hit_count_rank": "Rank",
+                                                                 "high_hit_count": "Count",
+                                                                 "total_fights": "Total",
+                                                                 "high_hit_count_percentage": "Percentage"})
+
+    selected_df = selected_df[["Rank", "Name", "Input", "Count", "Total", "Percentage"]]
+
+    response = (rank_bar_plot, selected_df, higher_than_threshold_data)
+
+    return response
 
 
 def get_team_ranking():
@@ -115,6 +273,12 @@ minimum_damage = st.sidebar.number_input("Minimum Damage Dealt",
                                          value=100,
                                          key="high_hit_count")
 
+top_k = st.sidebar.number_input("Top K Players",
+                                min_value=1,
+                                max_value=100,
+                                value=20,
+                                key="top_k")
+
 hash_to_input_dict = data_helper.get_hash_to_input_dict()
 
 damage_events_filtered_df["input"] = damage_events_filtered_df["player_hash"].apply(
@@ -130,12 +294,11 @@ filter_input_nan_grouped = filter_input_nan_grouped.sort_values(by="count", asce
 
 print(filter_input_nan_grouped[["player_name", "team_name", "count"]][:10])
 
-high_hit_count_players_ranking, higher_than_threshold_data = get_player_ranking(damage_events_filtered_df,
-                                                                                minimum_damage)
+bar_plot, high_hit_count_players_ranking, higher_than_threshold_data = get_player_ranking(damage_events_filtered_df,
+                                                                                          minimum_damage,
+                                                                                          top_k)
 
-st.write("Player Rankings")
-st.dataframe(high_hit_count_players_ranking,
-             hide_index=True, use_container_width=True)
+st.altair_chart(bar_plot, use_container_width=True)
 
 #
 # st.write("Team Rankings")
@@ -167,3 +330,5 @@ expander.dataframe(higher_than_threshold_data[[
     "game_id",
 ]]
                    )
+expander.dataframe(high_hit_count_players_ranking,
+                   hide_index=True, use_container_width=True)
