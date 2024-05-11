@@ -7,6 +7,18 @@ logger = logging.getLogger(__name__)
 
 logger.info(f"Running {__file__}")
 
+st.set_page_config(
+    page_title="About",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        # 'Get Help': 'https://www.extremelycoolapp.com/help',
+        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
+        # 'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
+
 fights_breakdown_info = ""
 
 docs_file_path_list = [
