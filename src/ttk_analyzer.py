@@ -76,6 +76,8 @@ def get_e_dps_df(selected_weapons,
     peek_time_in_ms = conditions["peek_time"]
     estimation_method = conditions["estimation_method"]
 
+    total_health = health_amount + evo_shield_amount
+
     # accuracy_model_df = get_estimation_model(selected_weapons_df,
     #                                          fights_df,
     #                                          estimation_method,
@@ -187,6 +189,8 @@ def get_e_dps_df(selected_weapons,
                 non_evo_damage_dealt = shots_to_body * non_evo_shield_effective_damage
 
                 damage_dealt = evo_shield_damage_dealt + non_evo_damage_dealt
+
+                damage_dealt = min(damage_dealt, total_health)
 
             ammo_left = current_mag_size - hit_shots - miss_shots
             # cdf = gun_accuracy_model_df[gun_accuracy_model_df["accuracy"] <= accuracy]["cdf"].max()

@@ -379,6 +379,7 @@ def main():
                             player["nucleusHash"][:32],
                             player["playerName"],
                             player["teamName"],
+                            player["character"],
                             # game["timestamp"]
                             ) for
                            game in init_dict.values() for player in game["players"]]
@@ -386,6 +387,7 @@ def main():
                                                                 "player_hash",
                                                                 "player_name",
                                                                 "team_name",
+                                                                "character",
                                                                 # "timestamp"
                                                                 ])
 

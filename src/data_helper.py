@@ -1,8 +1,12 @@
+import base64
 import csv
 import logging
+import os
+from io import BytesIO
 
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
 import src.data_loader as data_loader
 
@@ -130,7 +134,7 @@ def load_data():
 
 
 @st.cache_data
-def get_hash_to_input_dict():
+def get_hash_to_input_df():
     liquipedia_players_df = data_loader.get_liquipedia_players_df()
     players_df = liquipedia_players_df[["Player ID", "Input"]]
     esports_list = data_loader.get_esports_list()
@@ -144,10 +148,39 @@ def get_hash_to_input_dict():
 
     players_df["player_name"] = players_df["Player ID"].apply(lambda x: x.lower())
 
-    hash_to_input = player_id_to_hash_df.merge(players_df, on="player_name", how="left")
+    hash_to_input_df = player_id_to_hash_df.merge(players_df, on="player_name", how="left")
 
-    hash_to_input_dict = hash_to_input.set_index("hash")["Input"].to_dict()
+    hash_to_input_df.rename(columns={"hash": "player_hash",
+                                     "Input": "player_input",
+                                     "Player ID": "player_id",
+                                     }, inplace=True)
+    hash_to_input_df.drop(columns=["player_name"], inplace=True)
+    # hash_to_input_dict = hash_to_input.set_index("hash")["Input"].to_dict()
 
     # match = next((e for e in player_id_to_hash if desired_hash in e[1]), None)
 
-    return hash_to_input_dict
+    return hash_to_input_df
+
+
+@st.cache_data
+def get_legends_data(resource_dir="resources"):
+    logger.debug("Loading legends data")
+
+    image_path_list = [f"{resource_dir}/{x}" for x in os.listdir(resource_dir) if x.endswith(".png")]
+
+    def get_image(image_path):
+        pil_image = Image.open(image_path)
+        output = BytesIO()
+        pil_image.save(output, format='PNG')
+
+        legend_name = os.path.basename(image_path).replace("-transparent.png", "")
+
+        data = "data:image/png;base64," + base64.b64encode(output.getvalue()).decode()
+
+        return legend_name, data
+
+    legends_data_list = list(map(get_image, image_path_list))
+
+    legends_data_df = pd.DataFrame(legends_data_list, columns=["character", "image"])
+
+    return legends_data_df
