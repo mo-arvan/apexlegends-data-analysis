@@ -3,6 +3,7 @@ import logging
 import os
 from argparse import ArgumentParser
 
+import src.data_loader as data_loader
 import pandas as pd
 
 logging.basicConfig(level=logging.INFO)
@@ -105,9 +106,7 @@ def main():
         with open(os.path.join(get_fights_data_dir, file_name), "r") as f:
             get_fights_dict[file_name[:-5]] = json.load(f)
 
-    for file_name in os.listdir(args.init_data_dir):
-        with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-            init_dict[file_name[:-5]] = json.load(f)
+    init_dict = data_loader.get_game_init(args.init_data_dir)
 
     players_in_games = {k: v["players"] for k, v in init_dict.items()}
 

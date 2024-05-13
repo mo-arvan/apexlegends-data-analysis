@@ -62,7 +62,10 @@ def get_damage_data(selected_tournament):
 @st.cache_data
 def get_algs_games():
     logger.debug("Loading algs games data")
-    algs_games_df = pd.read_parquet("data/algs_game_list.parquet")
+    algs_games_df = pd.read_csv("data/algs_game_list.csv",
+                                # ignore NA values
+                                na_filter=False,
+                                )
 
     return algs_games_df
 
