@@ -8,7 +8,9 @@ def get_game_init(init_data_dir="data/algs_games/init"):
     init_dict = {}
     for file_name in os.listdir(init_data_dir):
         with open(os.path.join(init_data_dir, file_name), "r") as f:
-            init_dict[file_name[:-5]] = json.load(f)
+            json_data = json.load(f)
+            if isinstance(json_data, dict) and len(json_data) > 0:
+                init_dict[file_name[:-5]] = json_data
     return init_dict
 
 

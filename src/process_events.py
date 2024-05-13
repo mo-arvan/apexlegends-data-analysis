@@ -5,6 +5,8 @@ import pickle
 import re
 from argparse import ArgumentParser
 
+import src.data_helper as data_helper
+import src.data_loader as data_loader
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -222,6 +224,10 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
 
         game_damage_events.extend(merged_damage_events)
 
+    if len(game_damage_events) == 0:
+        logger.warning(f"No damage events found for {game_hash}")
+        return
+
     game_damage_df = pd.DataFrame(game_damage_events)
 
     game_damage_df.sort_values(by=["event_timestamp"], inplace=True)
@@ -256,60 +262,7 @@ def read_events(event_files, events_dir):
             yield file_name[:-4], pickle.load(f)
 
 
-def main():
-    aug_parser = ArgumentParser()
-    aug_parser.add_argument("--events_dir", default="data/events")
-    aug_parser.add_argument("--init_data_dir", default="data/algs_games/init")
-    aug_parser.add_argument("--output_dir", default="data/events_processed")
-    aug_parser.add_argument("--damage_events_dir", default="data/tournament_damage_events")
-    aug_parser.add_argument("--debug", action="store_true", default=True)
-
-    args = aug_parser.parse_args()
-    events_dir = args.events_dir
-    output_dir = args.output_dir
-    damage_events_dir = args.damage_events_dir
-    debug = args.debug
-
-    event_files = os.listdir(events_dir)
-    logger.info(f"Reading events from {events_dir}")
-
-    existing_files = os.listdir(output_dir)
-    existing_files = [f.split(".")[0] for f in existing_files]
-
-    event_files = [f for f in event_files if f[:-4] not in existing_files]
-    num_events = len(event_files)
-    # 52dd387d9d52ec001940a8c175437335
-
-    init_dict = {}
-    for file_name in os.listdir(args.init_data_dir):
-        with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-            init_dict[file_name[:-5]] = json.load(f)
-
-    if num_events > 0:
-        events_gen = read_events(event_files, events_dir)
-
-        logger.info(f"Read {num_events} events")
-
-        logger.info(f"Reading init data from {args.init_data_dir}")
-        init_dict = {}
-        for file_name in os.listdir(args.init_data_dir):
-            with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-                init_dict[file_name[:-5]] = json.load(f)
-        #
-        # init_df = pd.DataFrame(init_dict.values())
-
-        logger.info(f"Read {len(init_dict)} init files")
-
-        # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
-
-        logger.info("Processing events")
-        for e in tqdm(events_gen, total=num_events):
-            if e[0] in init_dict:
-                game_hash, game_data_tuple = e
-                process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
-
-    logger.info("Merging all the parquet files into one file per tournament")
-
+def post_process(damage_events_dir, output_dir, init_dict):
     # merging all the parquet files into a single file
     all_files = os.listdir(output_dir)
     all_files = [f for f in all_files if f.endswith(".parquet")]
@@ -317,7 +270,7 @@ def main():
     all_files = [pd.read_parquet(f) for f in all_files]
     damage_df = pd.concat(all_files)
 
-    algs_games_df = pd.read_parquet("data/algs_game_list.parquet")
+    algs_games_df = data_helper.get_algs_games()
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
 
     def fix_weapon_name(name):
@@ -421,9 +374,59 @@ def main():
         tournament_df = damage_df[damage_df["tournament_full_name"] == tournament]
         tournament_df.to_parquet(os.path.join(damage_events_dir, f"{normalized_name}.parquet"))
 
-    # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
 
-    logger.info("Done")
+def main():
+    aug_parser = ArgumentParser()
+    aug_parser.add_argument("--events_dir", default="data/events")
+    aug_parser.add_argument("--init_data_dir", default="data/algs_games/init")
+    aug_parser.add_argument("--output_dir", default="data/events_processed")
+    aug_parser.add_argument("--damage_events_dir", default="data/tournament_damage_events")
+    aug_parser.add_argument("--debug", action="store_true", default=True)
+
+    args = aug_parser.parse_args()
+    events_dir = args.events_dir
+    output_dir = args.output_dir
+    damage_events_dir = args.damage_events_dir
+    debug = args.debug
+
+    event_files = os.listdir(events_dir)
+    logger.info(f"Reading events from {events_dir}")
+
+    existing_files = os.listdir(output_dir)
+    existing_files = [f.split(".")[0] for f in existing_files]
+
+    event_files = [f for f in event_files if f[:-4] not in existing_files]
+    num_events = len(event_files)
+    # 52dd387d9d52ec001940a8c175437335
+
+
+    if num_events > 0:
+        events_gen = read_events(event_files, events_dir)
+
+        logger.info(f"Read {num_events} events")
+
+        logger.info(f"Reading init data from {args.init_data_dir}")
+        # os.path.join(args.init_data_dir, file_name)
+        init_dict = data_loader.get_game_init(args.init_data_dir)
+        #
+        # init_df = pd.DataFrame(init_dict.values())
+
+        logger.info(f"Read {len(init_dict)} init files")
+
+        # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
+
+        logger.info("Processing events")
+        for e in tqdm(events_gen, total=num_events):
+            if e[0] in init_dict:
+                game_hash, game_data_tuple = e
+                process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
+
+        logger.info("Merging all the parquet files into one file per tournament")
+
+        # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
+        post_process(damage_events_dir, output_dir, init_dict)
+
+        logger.info("Done")
 
 
 if __name__ == "__main__":

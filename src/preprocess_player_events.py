@@ -148,12 +148,6 @@ def main():
 
         game_events_list = read_events(event_file_path_list, events_data_dir)
 
-        # init_dict = {}
-        # for file_name in os.listdir(args.init_data_dir):
-        #     with open(os.path.join(args.init_data_dir, file_name), "r") as f:
-        #         init_dict[file_name[:-5]] = json.load(f)
-        #
-        # init_df = pd.DataFrame(init_dict.values())
         logger.info(f"Processing {events_total} games")
         # events_list = parallel_helper.run_in_parallel_cpu_bound(parse_events,
         #                                                         game_events_list,
