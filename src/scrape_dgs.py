@@ -156,6 +156,10 @@ def scrape_tournaments():
 
     dgs_algs_page_html = requests.get(dgs_algs_page_url)
 
+    if dgs_algs_page_html.status_code != 200:
+        logger.error(f"Error: {dgs_algs_page_url}, {dgs_algs_page_html.status_code}, {dgs_algs_page_html.text}")
+        return None
+
     soup = BeautifulSoup(dgs_algs_page_html.text, 'html.parser')
 
     # all algsRegionElem elements
@@ -210,6 +214,9 @@ def scrape_games(tournament_df, current_game_df):
             logger.info(f"Invalid region: {tournament_full_name} - {tournament_url}")
 
         tournament_page_url = ALS_URL + tournament_url
+
+        if "plq" in tournament_url.lower():
+            pass
 
         current_tournament_df = current_game_df[current_game_df["tournament_url"] == tournament_url]
 
@@ -296,7 +303,7 @@ def scrape_games(tournament_df, current_game_df):
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument("--algs_game_list_file", default="data/algs_game_list.parquet", help="ALGS Game List File")
+    parser.add_argument("--algs_game_list_file", default="data/algs_game_list.csv", help="ALGS Game List File")
     parser.add_argument("--algs_games_dir", default="data/algs_games", help="ALGS Games Directory")
     parser.add_argument("--init_data_dir", default="data/algs_games/init")
     parser.add_argument("--init_data", default="data/init_dict.pbz2")
@@ -309,16 +316,19 @@ def main():
     init_data = args.init_data
 
     if os.path.exists(algs_game_list_file):
-        current_game_df = pd.read_parquet(algs_game_list_file)
+        current_game_df = pd.read_csv(algs_game_list_file)
     else:
         current_game_df = None
 
     tournament_df = scrape_tournaments()
 
+    if tournament_df is None:
+        return
+
     game_df = scrape_games(tournament_df, current_game_df)
 
-    game_df.to_parquet(algs_game_list_file, index=False, compression="gzip")
-    game_df.to_csv(algs_game_list_file.replace(".parquet", ".csv"), index=False,
+    game_df.to_csv(algs_game_list_file,
+                   index=False,
                    quoting=csv.QUOTE_NONNUMERIC)
 
     scrape_games_data(game_df, algs_games_dir, init_data_dir)
