@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 logger.info(f"Running {__file__}")
 
 st.set_page_config(
-    page_title="Gun Meta Analysis",
+    page_title="eDPS Calculator",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -356,11 +356,11 @@ if len(selected_weapons) == 0:
     st.write(f"Select at least one weapon.")
 else:
     e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons,
-                                            gun_df,
-                                            sniper_stocks_df,
-                                            standard_stocks_df,
-                                            fights_df,
-                                            conditions_dict)
+                                               gun_df,
+                                               sniper_stocks_df,
+                                               standard_stocks_df,
+                                               fights_df,
+                                               conditions_dict)
     altair_plot = plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis)
 
     with chart_container:
