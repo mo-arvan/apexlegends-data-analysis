@@ -171,6 +171,7 @@ def get_e_dps_df(selected_weapons,
 
             hit_and_miss_shots = shots_during_peek
             damage_dealt = hit_pellets * evo_shield_effective_damage
+            uncapped_damage_dealt = damage_dealt
 
             if damage_dealt > evo_shield_amount:
                 shots_to_evo_shield = math.ceil(evo_shield_amount / evo_shield_effective_damage)
@@ -190,6 +191,9 @@ def get_e_dps_df(selected_weapons,
 
                 damage_dealt = evo_shield_damage_dealt + non_evo_damage_dealt
 
+                second_target_bullets = remaining_bullets - shots_to_body
+                uncapped_damage_dealt = damage_dealt + second_target_bullets * evo_shield_effective_damage
+
                 damage_dealt = min(damage_dealt, total_health)
 
             ammo_left = current_mag_size - hit_shots - miss_shots
@@ -200,6 +204,7 @@ def get_e_dps_df(selected_weapons,
             # accuracy_model = model_name[0]
 
             dps = damage_dealt / peek_time_in_ms * 1000
+            uncapped_dps = uncapped_damage_dealt / peek_time_in_ms * 1000
 
             # TODO include raise and holster time, reload time
             gun_ttk_dict = {
@@ -208,7 +213,9 @@ def get_e_dps_df(selected_weapons,
                 "weapon_name": weapon["weapon_name"],
                 # "remaining_health": remaining_health,
                 "damage_dealt": damage_dealt,
+                "uncapped_damage_dealt": uncapped_damage_dealt,
                 "dps": dps,
+                "uncapped_dps": uncapped_dps,
                 # "cdf": cdf,
                 "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
                 "ammo_left": ammo_left,
@@ -240,3 +247,68 @@ def get_e_dps_df(selected_weapons,
         "dps_df": dps_df,
     }
     return plot_dict
+
+
+def get_gun_meta_df(selected_weapons,
+                    guns_df,
+                    sniper_stocks_df,
+                    standard_stocks_df,
+                    fights_df,
+                    conditions):
+    dps_list = []
+
+    peek_time_list = [1]
+    peek_time_list += [(t + 1) * 500 for t in range(10)]
+
+    for peek_time in peek_time_list:
+        conditions["peek_time"] = peek_time
+        plot_dict = get_e_dps_df(selected_weapons,
+                                 guns_df,
+                                 sniper_stocks_df,
+                                 standard_stocks_df,
+                                 fights_df,
+                                 conditions)
+        dps_df = plot_dict["dps_df"]
+        dps_df["peek_time"] = peek_time
+        dps_list.append(dps_df)
+
+    dps_df = pd.concat(dps_list)
+
+    accuracy_list = [a * 10 for a in range(3, 11)]
+
+    weapon_list = selected_weapons
+
+    best_dps_list = []
+    # for each accuracy and peek time, find the worst dps for each weapon
+    for max_accuracy in accuracy_list:
+        accuracy_df = dps_df[dps_df["accuracy"] <= max_accuracy]
+        for peek_time in peek_time_list:
+            peek_time_df = accuracy_df[accuracy_df["peek_time"] == peek_time]
+            # for weapon in weapon_list:
+
+            best_dps = peek_time_df.groupby("weapon_name", observed=False).agg(
+                uncapped_dps=("uncapped_dps", "max"),
+                uncapped_damage_dealt=("uncapped_damage_dealt", "max"),
+            ).reset_index()
+
+            best_dps = best_dps.sort_values(by=["uncapped_dps"], ascending=False).reset_index(drop=True)
+
+            # rank the weapons based on the worst dps, use the same rank for weapons with the same dps
+            last_rank = 0
+            last_dps = None
+            for i, row in best_dps.iterrows():
+                if row["uncapped_dps"] != last_dps:
+                    rank = i + 1
+                    last_dps = row["uncapped_dps"]
+                else:
+                    rank = last_rank
+                best_dps.at[i, "rank"] = rank
+                last_rank = rank
+            best_dps["peek_time"] = peek_time
+            best_dps["max_accuracy"] = max_accuracy
+
+            best_dps_list.append(best_dps)
+
+    dps_grid_df = pd.concat(best_dps_list)
+
+    return dps_grid_df
