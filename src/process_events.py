@@ -421,7 +421,7 @@ def main():
                 game_hash, game_data_tuple = e
                 process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
 
-        logger.info("Merging all the parquet files into one file per tournament")
+        logger.info("Performing post processing")
 
         # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
         post_process(damage_events_dir, output_dir, init_dict)
