@@ -257,7 +257,7 @@ def get_gun_meta_df(selected_weapons,
                     conditions):
     dps_list = []
 
-    peek_time_list = [1]
+    peek_time_list = [50]
     peek_time_list += [(t + 1) * 500 for t in range(10)]
 
     for peek_time in peek_time_list:
