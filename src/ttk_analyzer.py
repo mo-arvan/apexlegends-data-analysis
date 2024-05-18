@@ -72,11 +72,10 @@ def get_e_dps_df(selected_weapons,
     helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
     shot_location = chart_config.shot_location_dict[conditions["shot_location"]]
     evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
-    health_amount = chart_config.health_values_dict[conditions["health"]]
+    base_health_amount = chart_config.health_values_dict[conditions["health"]]
     peek_time_in_ms = conditions["peek_time"]
     estimation_method = conditions["estimation_method"]
 
-    total_health = health_amount + evo_shield_amount
 
     # accuracy_model_df = get_estimation_model(selected_weapons_df,
     #                                          fights_df,
@@ -114,12 +113,16 @@ def get_e_dps_df(selected_weapons,
         non_evo_shield_effective_damage = effective_damage * weapon["non_evo_damage_multiplier"]
 
         if conditions["ability_modifier"] == "Forged Shadows (Revenant)":
-            health_amount += 75
+            health_amount = base_health_amount + 75
+        else:
+            health_amount = base_health_amount
         if weapon["class"] == "Shotgun":
             current_bolt = chart_config.mag_list.index(conditions["bolt"])
             gun_rpm = weapon[f"rpm_{current_bolt + 1}"]
         else:
             gun_rpm = weapon["rpm_1"]
+
+        total_health = health_amount + evo_shield_amount
 
         # if weapon["class"] == "Marksman" or weapon["class"] == "Sniper":
         #     reload_time_modifier = weapon["reload_time_4"]
@@ -205,6 +208,9 @@ def get_e_dps_df(selected_weapons,
 
             dps = damage_dealt / peek_time_in_ms * 1000
             uncapped_dps = uncapped_damage_dealt / peek_time_in_ms * 1000
+
+            if damage_dealt > 275:
+                pass
 
             # TODO include raise and holster time, reload time
             gun_ttk_dict = {
