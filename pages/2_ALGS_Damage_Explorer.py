@@ -34,22 +34,8 @@ logger.info("Data loaded.")
 
 def damage_plot_builder(damage_data_df):
     bin_count = int(len(damage_data_df["hit_count"].unique()) / 2)
-    histogram_plot = alt.Chart(damage_data_df).mark_bar().encode(
-        x=alt.X('hit_count',
-                bin=alt.Bin(maxbins=bin_count),
-                axis=alt.Axis(title='Hit Count'),
-                scale=alt.Scale(zero=False)),
-        y='count()',
-        # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
-        # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
-    ).properties(
-        title={"text": f"Hit Count Histogram",
-               # "subtitle": f"Median Fight Count: {fights_count_median}",
-               "subtitleColor": "gray",
-               },
-        # height=700,
-    )
-    point = alt.selection_point(encodings=['x', 'y'])
+
+    interval = alt.selection_interval(encodings=['x', 'y'])
     heatmap = alt.Chart(damage_data_df).mark_rect().encode(
         x=alt.X('distance_median:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
         y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
@@ -62,8 +48,76 @@ def damage_plot_builder(damage_data_df):
         height=700,
 
     ).add_params(
-        point
+        interval
     )
+
+    epdf_plot = (alt.Chart(damage_data_df)
+    .transform_filter(
+        interval
+    )
+    .transform_density(
+        density='hit_count',
+        groupby=['player_input'],
+        as_=['hit_count', 'epdf'],
+
+    )
+    .mark_line()
+    .encode(
+        x=alt.X('hit_count',
+                # bin=alt.Bin(maxbins=bin_count),
+                axis=alt.Axis(title='Hit Count'),
+                scale=alt.Scale(zero=False)),
+        y='epdf:Q',
+        color=alt.Color('player_input:N'),
+        # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
+        # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
+    ).properties(
+        title={"text": f"ePDF of Hit Count",
+               # "subtitle": f"Median Fight Count: {fights_count_median}",
+               "subtitleColor": "gray",
+               },
+        # height=700,
+    )
+    )
+
+    ecdf_plot = (alt.Chart(damage_data_df)
+    .transform_filter(
+        interval
+    )
+    .transform_density(
+        density='hit_count',
+        groupby=['player_input'],
+        as_=['hit_count', 'ecdf'],
+        cumulative=True,
+    )
+    # .transform_window(
+    #     ecdf='cume_dist()',
+    #     # as_=['hit_count', 'density'],
+    #     groupby=['player_input'],
+    #     sort=[{'field': 'hit_count'}],
+    #     # cumulative=True
+    # )
+    .mark_line()
+    .encode(
+        x=alt.X('hit_count',
+                # bin=alt.Bin(maxbins=bin_count),
+                axis=alt.Axis(title='Hit Count'),
+                scale=alt.Scale(zero=False)),
+        y='ecdf:Q',
+        color=alt.Color('player_input:N'),
+        # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
+        # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
+    ).properties(
+        title={"text": f"eCDF of Hit Count",
+               # "subtitle": f"Median Fight Count: {fights_count_median}",
+               "subtitleColor": "gray",
+               },
+        # height=700,
+    )
+    )
+
+    main_plot = alt.vconcat(heatmap, epdf_plot, ecdf_plot, )
+    print("")
     # , color_continuous_scale="Viridis"
     #  nbinsx=20, nbinsy=20
     # density_heatmap_plotly = px.density_heatmap(damage_data_df,
@@ -83,7 +137,7 @@ def damage_plot_builder(damage_data_df):
     #                                             height=800,
     #                                             )
 
-    return [histogram_plot, heatmap], damage_data_df
+    return [main_plot], damage_data_df
 
     plot_df = players_grouped_df.sort_values(by="median_accuracy", ascending=False)
     plot_df["median_accuracy_rank"] = range(1, len(plot_df) + 1)
@@ -235,7 +289,7 @@ def damage_plot_builder(damage_data_df):
         # height=700,
     )
 
-    plot_list = [histogram_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
+    plot_list = [epdf_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
     return plot_list, weapons_data_df
 
 
@@ -244,7 +298,7 @@ damage_events_filtered_df, selected_tournament, selected_region, selected_days, 
 
 plots, raw_data = damage_plot_builder(damage_events_filtered_df)
 
-st.altair_chart(plots[1], use_container_width=True)
+st.altair_chart(plots[0], use_container_width=True)
 
 # TODO:
 # interval selection
