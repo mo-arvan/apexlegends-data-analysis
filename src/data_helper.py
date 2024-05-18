@@ -51,10 +51,33 @@ def get_fights_data():
 
 @st.cache_data
 def get_damage_data(selected_tournament):
-    logger.debug("Loading damage data")
+    logger.debug(f"Loading damage data for {selected_tournament}")
     normalized_name = selected_tournament.lower().replace(" ", "_")
 
     damage_events_df = pd.read_parquet(f"data/tournament_damage_events/{normalized_name}.parquet")
+
+
+    return damage_events_df
+
+
+@st.cache_data
+def get_full_damage_data(selected_tournament):
+    damage_events_df = get_damage_data(selected_tournament)
+    hash_to_input_df = get_hash_to_player_info_df()
+
+    damage_events_df = damage_events_df.merge(hash_to_input_df,
+                                              on="player_hash",
+                                              how="left")
+
+    def get_id_or_name(x):
+        id = x["player_id"]
+        name = x["player_name"]
+        if not pd.isna(id):
+            return id
+        else:
+            return name
+
+    damage_events_df["player_id"] = damage_events_df.apply(get_id_or_name, axis=1)
 
     return damage_events_df
 
@@ -137,9 +160,9 @@ def load_data():
 
 
 @st.cache_data
-def get_hash_to_input_df():
+def get_hash_to_player_info_df():
     liquipedia_players_df = data_loader.get_liquipedia_players_df()
-    players_df = liquipedia_players_df[["Player ID", "Input"]]
+    players_df = liquipedia_players_df[["Player ID", "Input"]].copy()
     esports_list = data_loader.get_esports_list()
 
     desired_hash = "c47c3a177fce49fc512d3edffcd6fa99"
