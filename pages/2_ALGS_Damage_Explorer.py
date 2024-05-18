@@ -6,7 +6,6 @@ import streamlit as st
 
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -68,7 +67,9 @@ def damage_plot_builder(damage_data_df):
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)),
         y='epdf:Q',
-        color=alt.Color('player_input:N'),
+        color=alt.Color('player_input:N',
+                        scale=alt.Scale(scheme='dark2'),
+                        )
         # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
         # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
     ).properties(
@@ -104,7 +105,12 @@ def damage_plot_builder(damage_data_df):
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)),
         y='ecdf:Q',
-        color=alt.Color('player_input:N'),
+        color=alt.Color(
+            'player_input:N',
+            # legend=None,
+            scale=alt.Scale(scheme='dark2'),
+
+        ),
         # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
         # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
     ).properties(
@@ -291,7 +297,6 @@ def damage_plot_builder(damage_data_df):
 
     plot_list = [epdf_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
     return plot_list, weapons_data_df
-
 
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
     algs_games_df, gun_stats_df)
