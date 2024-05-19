@@ -298,8 +298,10 @@ def damage_plot_builder(damage_data_df):
     plot_list = [epdf_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
     return plot_list, weapons_data_df
 
+filters_container = st.sidebar.container()
+
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
-    algs_games_df, gun_stats_df)
+    algs_games_df, gun_stats_df, filters_container)
 
 plots, raw_data = damage_plot_builder(damage_events_filtered_df)
 

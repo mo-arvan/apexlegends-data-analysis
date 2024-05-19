@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+import src.chart_config as chart_config
 import src.data_helper as data_helper
 
 logging.basicConfig(level=logging.INFO)
@@ -12,7 +13,14 @@ logger = logging.getLogger(__name__)
 logger.info(f"Running {__file__}")
 
 
-def get_gun_filters(gun_stats_df, include_hop_ups=False):
+def get_gun_filters(gun_stats_df,
+                    filter_container,
+                    select_text="Weapon",
+                    mag_bolt_selection=False,
+                    include_hop_ups=False,
+                    include_ordnance=False,
+                    include_reworks=False,
+                    ):
     default_selection = {
         "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG", "Prowler Burst PDW"],
     }
@@ -21,6 +29,10 @@ def get_gun_filters(gun_stats_df, include_hop_ups=False):
                                           gun_stats_df["secondary_class"] == "Care Package")
     if include_hop_ups:
         base_weapon_condition = np.logical_or(base_weapon_condition, gun_stats_df["secondary_class"] == "Hop-Up")
+    if include_reworks:
+        base_weapon_condition = np.logical_or(base_weapon_condition,
+                                              gun_stats_df["secondary_class"] == "Future Reworks")
+
     base_weapons_df = gun_stats_df[base_weapon_condition]
 
     weapon_class_list = sorted(base_weapons_df["class"].unique().tolist())
@@ -30,7 +42,7 @@ def get_gun_filters(gun_stats_df, include_hop_ups=False):
     else:
         preselected_weapons = st.session_state["selected_weapons"]
 
-    with st.sidebar.container():
+    with filter_container.container():
         st.write("Batch Add Weapon Class")
         row_0_cols = st.columns(3)
         with row_0_cols[0]:
@@ -83,20 +95,38 @@ def get_gun_filters(gun_stats_df, include_hop_ups=False):
 
     all_weapons = base_weapons_df["weapon_name"].unique().tolist()
 
+    if include_ordnance:
+        ordnance_list = ["Frag Grenade", "Arc Star", "Thermite Grenade"]
+        all_weapons += ordnance_list
+
     for w in preselected_weapons:
         if w not in all_weapons:
             logger.warning(f"Preselected weapon {w} not found in the dataset. Removing from preselected weapons.")
             preselected_weapons.remove(w)
 
-    selected_weapons = st.sidebar.multiselect("Weapon",
-                                              all_weapons,
-                                              default=preselected_weapons,
-                                              key="selected_weapons")
+    selected_weapons = filter_container.multiselect(select_text,
+                                                    all_weapons,
+                                                    default=preselected_weapons,
+                                                    key="selected_weapons")
 
-    return selected_weapons
+    if mag_bolt_selection:
+        selected_mag = filter_container.selectbox('Mag (if applicable):',
+                                                  chart_config.mag_list,
+                                                  index=3,
+                                                  key='mag')
+
+        selected_bolt = filter_container.selectbox('Shotgun Bolt (if applicable):',
+                                                   ['White', 'Blue', 'Purple'],
+                                                   index=2,
+                                                   key='bolt')
+    else:
+        selected_mag = None
+        selected_bolt = None
+
+    return selected_weapons, selected_mag, selected_bolt
 
 
-def get_tournament_filters(algs_games_df, gun_stats_df):
+def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
     # find the largest timestamp for each tournament
     tournaments = (algs_games_df[['tournament_full_name', "tournament_region", 'game_timestamp']]
                    .groupby(['tournament_full_name', "tournament_region"]).
@@ -129,9 +159,9 @@ def get_tournament_filters(algs_games_df, gun_stats_df):
         "game_num": "Game #",
     }
 
-    st.sidebar.write("Apply the filters in any order")
+    filters_container.write("Apply the filters in any order")
 
-    selected_tournament = st.sidebar.selectbox("Tournament",
+    selected_tournament = filters_container.selectbox("Tournament",
                                                tournaments_order,
                                                index=0,
                                                key="selected_tournaments")
@@ -147,7 +177,7 @@ def get_tournament_filters(algs_games_df, gun_stats_df):
 
     region_list = sorted(region_list)
 
-    selected_region = st.sidebar.multiselect("Region",
+    selected_region = filters_container.multiselect("Region",
                                              region_list,
                                              key="selected_region")
 
@@ -156,7 +186,7 @@ def get_tournament_filters(algs_games_df, gun_stats_df):
 
     game_days = sorted(damage_events_df["tournament_day"].unique().tolist())
 
-    selected_days = st.sidebar.multiselect("Day",
+    selected_days = filters_container.multiselect("Day",
                                            game_days,
                                            key="selected_days")
 
@@ -164,11 +194,14 @@ def get_tournament_filters(algs_games_df, gun_stats_df):
         damage_events_df = damage_events_df[damage_events_df["tournament_day"].isin(selected_days)]
 
     weapon_info = gun_stats_df[["weapon_name", "class"]].sort_values(by="weapon_name")
-    damage_events_df = damage_events_df.merge(weapon_info, on=["weapon_name"], how="inner")
+    damage_events_df = damage_events_df.merge(weapon_info, on=["weapon_name"], how="left")
 
     weapon_list = damage_events_df["weapon_name"].unique().tolist()
 
-    selected_weapons = get_gun_filters(gun_stats_df)
+    selected_weapons, selected_mag, selected_bolt = get_gun_filters(gun_stats_df,
+                                                                    filters_container,
+                                                                    include_ordnance=True,
+                                                                    )
 
     if len(selected_weapons) != 0:
         damage_events_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]

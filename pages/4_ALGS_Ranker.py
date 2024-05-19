@@ -652,8 +652,10 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit
 algs_games_df = data_helper.get_algs_games()
 gun_stats_df, _, _ = data_helper.get_gun_stats()
 
+filters_container = st.sidebar.container()
+
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
-    algs_games_df, gun_stats_df)
+    algs_games_df, gun_stats_df, filters_container)
 
 minimum_damage = st.sidebar.number_input("Minimum Damage Dealt",
                                          min_value=1,
