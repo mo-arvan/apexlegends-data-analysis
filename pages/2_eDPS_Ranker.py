@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 logger.info(f"Running {__file__}")
 
 st.set_page_config(
-    page_title="eDPS Calculator",
+    page_title="Gun Meta Analysis",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -25,7 +25,80 @@ with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df = data_helper.load_data()
 
 
-def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
+def plot_dps_grid(dps_grid, main_weapon):
+    # dps_grid
+
+    # histogram_plot = alt.Chart(dps_grid).mark_bar().encode(
+    #     x=alt.X('hit_count',
+    #             bin=alt.Bin(maxbins=bin_count),
+    #             axis=alt.Axis(title='Hit Count'),
+    #             scale=alt.Scale(zero=False)),
+    #     y='count()',
+    #     # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
+    #     # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
+    # ).properties(
+    #     title={"text": f"Hit Count Histogram",
+    #            # "subtitle": f"Median Fight Count: {fights_count_median}",
+    #            "subtitleColor": "gray",
+    #            },
+    #     # height=700,
+    # )
+    # point = alt.selection_point(encodings=['x', 'y'])
+    accuracy_bins = dps_grid["max_accuracy"].nunique()
+    peek_time_bins = dps_grid["peek_time"].nunique()
+
+    main_weapon_grid = dps_grid[dps_grid["weapon_name"] == main_weapon].copy().reset_index()
+
+    main_grouped = main_weapon_grid.groupby(["peek_time", "max_accuracy"]).agg(
+        count=("rank", "count"),
+    ).reset_index()
+
+    rank_max = main_weapon_grid["rank"].max()
+    # color scale for rank, red is bad, green is good
+    color_scale = alt.Scale(domainMin=1, domainMax=rank_max, range=["darkgreen", "darkorange", "darkred"])
+
+    heatmap = (alt.Chart(main_weapon_grid).mark_rect(
+    ).encode(
+        x=alt.X('peek_time:Q',
+                bin=alt.Bin(maxbins=peek_time_bins),
+                # bin=alt.Bin(maxbins=peek_time_bins),
+                axis=alt.Axis(title='Peek Time (ms)')),
+        y=alt.Y('max_accuracy:Q',
+                bin=alt.Bin(maxbins=accuracy_bins ),
+                axis=alt.Axis(title='Accuracy (%)')),
+        color=alt.Color('rank:Q',
+                        scale=color_scale  # alt.Scale(scheme='plasma')
+                        ),
+        tooltip=['weapon_name', 'max_accuracy', 'peek_time', 'uncapped_damage_dealt', "rank"],
+        # text=alt.Text('weapon_name:N', format=".2f"),
+    ).properties(
+        title={"text": f"{main_weapon} eDPS Grid Rank",
+               # "subtitle": f"Median Fight Count: {fights_count_median}",
+               "subtitleColor": "gray",
+               },
+        height=700,
+
+    ))
+    # .add_params(
+    #     point
+    # ))
+    text_mark = heatmap.mark_text(baseline='middle',
+                                    align='center',
+                                  fontSize=18,
+                                  ).encode(
+        text='rank:N',
+        color=alt.value("white")
+        # color=alt.condition(
+        #     # alt.datum.damage_dealt > 200,
+        #     # alt.value('black'),
+        #     # alt.value('white')
+        # )
+    )
+
+    heatmap = heatmap + text_mark
+
+    return [heatmap]
+
     dps_df = e_dps_plots["dps_df"]
 
     chart_title = f'Effective DPS'
@@ -80,8 +153,6 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
                  # alt.Tooltip("accuracy_quantile", format=",.2f"),
                  alt.Tooltip('dps', format=",.2f"),
                  alt.Tooltip("damage_dealt", format=",.2f"),
-                 alt.Tooltip("uncapped_dps", format=",.2f"),
-                 alt.Tooltip("uncapped_damage_dealt", format=",.2f"),
                  "how",
                  # "accuracy_model"
                  "ammo_left"
@@ -167,77 +238,46 @@ if "selected_weapons" in st.session_state:
 else:
     pre_selected_weapons = default_selection["weapon_name"]
 
-filter_container = st.sidebar.container()
+weapon_list = sorted(gun_df["weapon_name"].unique().tolist())
+
+havoc_turbo_index = weapon_list.index("HAVOC Rifle - Turbo")
+
+main_weapon = st.sidebar.selectbox("Weapon to Rank",
+                                   weapon_list,
+                                   index=havoc_turbo_index,
+                                   key="main_weapon")
+
+filters_container = st.sidebar.container()
 
 selected_weapons, selected_mag, selected_bolt = st_helper.get_gun_filters(gun_df,
-                                                                          filter_container,
+                                                                          filters_container,
+                                                                          select_text="Weapon Pool",
                                                                           mag_bolt_selection=True,
-                                                                          include_hop_ups=True,
-                                                                          include_reworks=True,
-                                                                          )
+                                                                          include_hop_ups=True)
 
-filters_dict = {
-    "class": "Class",
-    "weapon_name": "Weapons",
-}
+selected_evo_shield = st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4,
+                                           key='evo_shield')
 
-selected_peek_time = filter_container.slider("Peek Time (ms):",
-                                             min_value=500,
-                                             max_value=5000,
-                                             value=2000,
-                                             step=250,
-                                             key="peek_time")
+selected_health = st.sidebar.selectbox("Health",
+                                       chart_config.health_values_dict.keys(),
+                                       index=4,
+                                       key='health')
 
-selected_health = filter_container.selectbox("Health",
-                                             chart_config.health_values_dict.keys(),
-                                             index=4,
-                                             key='health')
+selected_helmet = st.sidebar.selectbox('Helmet:',
+                                       chart_config.helmet_dict.keys(),
+                                       index=0,
+                                       key='helmet')
 
-selected_evo_shield = filter_container.selectbox('Evo Shield:',
-                                                 chart_config.evo_shield_dict.keys(),
-                                                 index=4,
-                                                 key='evo_shield')
+selected_ability_modifier = st.sidebar.selectbox('Ability Modifier:',
+                                                 chart_config.ability_modifier_list,
+                                                 index=0,
+                                                 key='ability_modifier')
 
-selected_helmet = filter_container.selectbox('Helmet:',
-                                             chart_config.helmet_dict.keys(),
-                                             index=0,
-                                             key='helmet')
+selected_shot_location = st.sidebar.selectbox('Shot Location:',
+                                              chart_config.shot_location_dict.keys(),
+                                              index=0,
+                                              key='shot_location')
 
-selected_ability_modifier = filter_container.selectbox('Ability Modifier:',
-                                                       chart_config.ability_modifier_list,
-                                                       index=0,
-                                                       key='ability_modifier')
-
-selected_shot_location = filter_container.selectbox('Shot Location:',
-                                                    chart_config.shot_location_dict.keys(),
-                                                    index=0,
-                                                    key='shot_location')
-chart_x_axis = filter_container.selectbox('X Axis:',
-                                          [
-                                              # "Accuracy Quantile (%)",
-                                              "Accuracy (%)",
-                                          ],
-                                          index=0,
-                                          key='x_axis')
-
-chart_y_axis = filter_container.selectbox('Y Axis:',
-                                          [
-                                              "eDPS",
-                                              "Damage Dealt",
-                                              # "Rank"
-                                          ],
-                                          index=0,
-                                          key='y_axis')
-#     estimation_method_list = ["Expected Value"]
-#     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
-#                                               index=0,
-#                                               key='estimation_method')
-
-#     estimation_method_list = ["Expected Value"]
-#     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
-#                                               index=0,
-#                                               key='estimation_method')
-selected_estimation_method = "Expected Value"
 selected_stock = "Purple"
 
 conditions_dict = {
@@ -248,8 +288,6 @@ conditions_dict = {
     "helmet": selected_helmet,
     "shield": selected_evo_shield,
     "shot_location": selected_shot_location,
-    "estimation_method": selected_estimation_method,
-    "peek_time": selected_peek_time,
     "health": selected_health,
 }
 
@@ -260,13 +298,14 @@ chart_container = st.container()
 if len(selected_weapons) == 0:
     st.write(f"Select at least one weapon.")
 else:
-    e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons,
-                                            gun_df,
-                                            sniper_stocks_df,
-                                            standard_stocks_df,
-                                            fights_df,
-                                            conditions_dict)
-    altair_plot = plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis)
+    main_and_pool = [main_weapon] + selected_weapons
+    dps_grid_df = ttk_analyzer.get_gun_meta_df(main_and_pool,
+                                               gun_df,
+                                               sniper_stocks_df,
+                                               standard_stocks_df,
+                                               fights_df,
+                                               conditions_dict)
+    altair_plot = plot_dps_grid(dps_grid_df, main_weapon)
 
     with chart_container:
         st.altair_chart(altair_plot[0], use_container_width=True)

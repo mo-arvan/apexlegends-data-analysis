@@ -74,8 +74,7 @@ def get_e_dps_df(selected_weapons,
     evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
     base_health_amount = chart_config.health_values_dict[conditions["health"]]
     peek_time_in_ms = conditions["peek_time"]
-    estimation_method = conditions["estimation_method"]
-
+    # estimation_method = conditions.get("estimation_method", "Expected Value")
 
     # accuracy_model_df = get_estimation_model(selected_weapons_df,
     #                                          fights_df,
@@ -263,8 +262,8 @@ def get_gun_meta_df(selected_weapons,
                     conditions):
     dps_list = []
 
-    peek_time_list = [50]
-    peek_time_list += [(t + 1) * 500 for t in range(10)]
+    peek_time_list = [100]
+    peek_time_list += [t * 500 + 250 for t in range(1, 10)]
 
     for peek_time in peek_time_list:
         conditions["peek_time"] = peek_time
@@ -280,7 +279,7 @@ def get_gun_meta_df(selected_weapons,
 
     dps_df = pd.concat(dps_list)
 
-    accuracy_list = [a * 10 for a in range(3, 11)]
+    accuracy_list = [a * 10 + 25 for a in range(7)] + [100]
 
     weapon_list = selected_weapons
 
