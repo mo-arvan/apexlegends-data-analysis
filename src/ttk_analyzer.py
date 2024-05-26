@@ -246,8 +246,10 @@ def get_e_dps_df(selected_weapons,
     #     matching_weapons = sorted(matching_weapons, key=lambda k: k['dps'], reverse=True)
     #     for weapon in weapons_set:
 
-    dps_dict_list = sorted(dps_dict_list, key=lambda k: k['dps'], reverse=True)
+    # dps_dict_list = sorted(dps_dict_list, key=lambda k: k['dps'], reverse=True)
     dps_df = pd.DataFrame(dps_dict_list)
+    dps_df = dps_df.sort_values(by=["weapon_name", "accuracy"], ascending=False).reset_index(drop=True)
+
     plot_dict = {
         "dps_df": dps_df,
     }
@@ -263,7 +265,7 @@ def get_gun_meta_df(selected_weapons,
     dps_list = []
 
     peek_time_list = [100]
-    peek_time_list += [t * 500 + 250 for t in range(1, 10)]
+    peek_time_list += [t * 500 + 250 for t in range(1, 15)]
 
     for peek_time in peek_time_list:
         conditions["peek_time"] = peek_time
