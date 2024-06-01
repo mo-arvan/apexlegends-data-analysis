@@ -31,35 +31,60 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     chart_title = f'Effective DPS'
 
     # dps_df["accuracy_quantile"] = dps_df["cdf"].apply(lambda x: round(x * 100, 2))
+    datum_to_name_dict = {
+        "accuracy": "Accuracy (%)",
+        "damage_dealt": "Damage Dealt",
+        "dps": "eDPS",
+        "uncapped_dps": "Uncapped eDPS",
+        "uncapped_damage_dealt": "Uncapped Damage Dealt",
+        "accuracy_quantile": "Accuracy Quantile (%)",
+    }
+    name_to_datum_dict = {v: k for k, v in datum_to_name_dict.items()}
+
+
 
     x_axis, y_axis = None, None
 
-    if chart_x_axis == "Accuracy Quantile (%)":
-        x_axis = alt.X('accuracy_quantile',
-                       axis=alt.Axis(title='Accuracy Quantile (%)'),
-                       sort=None)
+    if chart_x_axis not in name_to_datum_dict:
+        return None
 
-    elif chart_x_axis == "Accuracy (%)":
-        x_axis = alt.X('accuracy:Q',
-                       axis=alt.Axis(title='Accuracy (%)'),
-                       sort=None)
+    data_x_name = name_to_datum_dict[chart_x_axis]
 
-    if chart_y_axis == "eDPS":
-        y_axis = alt.Y('dps',
-                       axis=alt.Axis(title='eDPS'),
-                       scale=alt.Scale(zero=False))
-    elif chart_y_axis == "Damage Dealt":
-        y_axis = alt.Y('damage_dealt',
-                       axis=alt.Axis(title='Damage Dealt'),
-                       scale=alt.Scale(zero=False))
-    elif chart_y_axis == "Uncapped eDPS":
-        y_axis = alt.Y('uncapped_dps',
-                       axis=alt.Axis(title='Uncapped eDPS'),
-                       scale=alt.Scale(zero=False))
-    elif chart_y_axis == "Uncapped Damage Dealt":
-        y_axis = alt.Y('uncapped_damage_dealt',
-                       axis=alt.Axis(title='Uncapped Damage Dealt'),
-                       scale=alt.Scale(zero=False))
+    x_axis = alt.X(data_x_name,
+                   axis=alt.Axis(title=chart_x_axis),
+                   sort=None)
+    data_y_name = name_to_datum_dict[chart_y_axis]
+
+    y_axis = alt.Y(data_y_name,
+                   axis=alt.Axis(title=chart_y_axis),
+                   scale=alt.Scale(zero=False))
+
+    # if chart_x_axis == "Accuracy Quantile (%)":
+    #     x_axis = alt.X('accuracy_quantile',
+    #                    axis=alt.Axis(title='Accuracy Quantile (%)'),
+    #                    sort=None)
+    #
+    # elif chart_x_axis == "Accuracy (%)":
+    #     x_axis = alt.X('accuracy:Q',
+    #                    axis=alt.Axis(title='Accuracy (%)'),
+    #                    sort=None)
+    #
+    # if chart_y_axis == "eDPS":
+    #     y_axis = alt.Y('dps',
+    #                    axis=alt.Axis(title='eDPS'),
+    #                    scale=alt.Scale(zero=False))
+    # elif chart_y_axis == "Damage Dealt":
+    #     y_axis = alt.Y('damage_dealt',
+    #                    axis=alt.Axis(title='Damage Dealt'),
+    #                    scale=alt.Scale(zero=False))
+    # elif chart_y_axis == "Uncapped eDPS":
+    #     y_axis = alt.Y('uncapped_dps',
+    #                    axis=alt.Axis(title='Uncapped eDPS'),
+    #                    scale=alt.Scale(zero=False))
+    # elif chart_y_axis == "Uncapped Damage Dealt":
+    #     y_axis = alt.Y('uncapped_damage_dealt',
+    #                    axis=alt.Axis(title='Uncapped Damage Dealt'),
+    #                    scale=alt.Scale(zero=False))
 
     dps_line = alt.Chart(dps_df).mark_line(
         interpolate='step-before',
@@ -171,7 +196,7 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
 
     # fig = dps_line
     fig = (alt.layer(
-        dps_line,  selectors, rules, dps_points_plot, h_line_text, # points, ,  # , ,  # , rules,  # text selectors,
+        dps_line, selectors, rules, dps_points_plot, #h_line_text,  # points, ,  # , ,  # , rules,  # text selectors,
     )
     .resolve_scale(
         shape='independent',
@@ -261,24 +286,29 @@ selected_shot_location = filter_container.selectbox('Shot Location:',
 chart_x_axis = filter_container.selectbox('X Axis:',
                                           [
                                               # "Accuracy Quantile (%)",
+                                              "Uncapped eDPS",
+                                              "eDPS",
+                                              "Damage Dealt",
+                                              "Uncapped Damage Dealt",
                                               "Accuracy (%)",
+
                                           ],
                                           index=0,
                                           key='x_axis')
 
-
-
 chart_y_axis = filter_container.selectbox('Y Axis:',
-                                                 [
-                                                        "eDPS",
-                                                        "Damage Dealt",
-                                                        "Uncapped eDPS",
-                                                        "Uncapped Damage Dealt",
-                                                 ]
+                                          [
+                                              # "Accuracy Quantile (%)",
+                                              "Accuracy (%)",
+                                              "eDPS",
+                                              "Damage Dealt",
+                                              "Uncapped eDPS",
+                                              "Uncapped Damage Dealt",
+                                          ]
 
-                                                 ,
-                                                 index=0,
-                                                 key='y_axis')
+                                          ,
+                                          index=0,
+                                          key='y_axis')
 
 #     estimation_method_list = ["Expected Value"]
 #     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,

@@ -266,7 +266,7 @@ def get_player_ranking_plot(input_df, minimum_damage, ranking_top_k, rank_column
             ]),
     ).properties(
         # width=100,
-        width=600,
+        width=800,
         height=height,
     )
 
