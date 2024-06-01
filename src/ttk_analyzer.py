@@ -154,7 +154,7 @@ def get_e_dps_df(selected_weapons,
                 remaining_peek_time_ms = peek_time_in_ms - charge_time_in_ms - burst_time_in_ms
                 if remaining_peek_time_ms < 0:
                     break
-                shots_during_peek = math.floor(remaining_peek_time_ms / 1000 / shot_interval) + 1
+                shots_during_peek = math.floor(remaining_peek_time_ms / 1000 / shot_interval) + bullets_per_burst
                 shots_during_peek = min(shots_during_peek, max_possible_shots)
                 if shots_during_peek > max_shot_burst:
                     max_shot_burst = shots_during_peek
