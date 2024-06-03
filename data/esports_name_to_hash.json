@@ -31,6 +31,7 @@
     "alias_list": [
       "1tappy",
       "1tappy RID",
+      "GHS 1tappy",
       "KN 1tappy",
       "Riddle 1tappy"
     ]
@@ -75,6 +76,7 @@
       "7b8efb2b80550ca1905753fcdbb7eb2e"
     ],
     "alias_list": [
+      "GHS 4rufa",
       "KN 4rufa",
       "NK 4rufa",
       "UL 4rufa",
@@ -102,6 +104,11 @@
       "DSK_788",
       "RIG_788"
     ]
+  },
+  {
+    "esport_name": "7ozzzus",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "983kuma",
@@ -150,6 +157,7 @@
       "ASIAZXD",
       "ASlAZXD",
       "IBG_ASIAZXD",
+      "MKS_ASIAZXD",
       "TYK ASIAZXD",
       "Twitch_ASIAZXD"
     ]
@@ -161,7 +169,8 @@
     ],
     "alias_list": [
       "VK_AZu1997",
-      "WMFB_AZu"
+      "WMFB_AZu",
+      "WMFB_AZu2tap"
     ]
   },
   {
@@ -170,6 +179,7 @@
       "5659b7103007eb462ac574809e467f73"
     ],
     "alias_list": [
+      "XFZ Ail3iS",
       "xTs AIl3iS",
       "xTs Ail3iS"
     ]
@@ -186,6 +196,11 @@
       "E36 Aimbot",
       "E36_Aimbot"
     ]
+  },
+  {
+    "esport_name": "Aimbot2199",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "AimbotP",
@@ -217,7 +232,8 @@
       "5235cf3a1d13733e1add63bc1a2d8c36"
     ],
     "alias_list": [
-      "Akimboh"
+      "Akimboh",
+      "Akimbohh"
     ]
   },
   {
@@ -227,6 +243,7 @@
     ],
     "alias_list": [
       "Akwaintance",
+      "FSLD Akwaintance",
       "GH Akwaintance",
       "GHAkwaintance"
     ]
@@ -264,7 +281,8 @@
       "Amphy",
       "E6_Amphy",
       "FUT Amphy",
-      "o7 Amphy"
+      "o7 Amphy",
+      "o7_Amphy"
     ]
   },
   {
@@ -298,6 +316,7 @@
       "17cef887f0d63d034583232afb1b0d3d"
     ],
     "alias_list": [
+      "AochasoN",
       "Vor_AochasoN"
     ]
   },
@@ -323,8 +342,14 @@
       "cf28ebc28b243ad2e764ea24a7690c44"
     ],
     "alias_list": [
-      "Arkology"
+      "Arkology",
+      "MPIRE Ark"
     ]
+  },
+  {
+    "esport_name": "Artoriasb",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Artyco",
@@ -338,6 +363,20 @@
       "GG Artyco",
       "GGArtyco",
       "PUA Artyco"
+    ]
+  },
+  {
+    "esport_name": "Asaran",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Atinum",
+    "hash": [
+      "85ec478e3e93557b2f40a0484b6a37c0"
+    ],
+    "alias_list": [
+      "Atinum"
     ]
   },
   {
@@ -395,7 +434,8 @@
     ],
     "alias_list": [
       "NSD Axis",
-      "NSD axis"
+      "NSD axis",
+      "TIE axis"
     ]
   },
   {
@@ -433,6 +473,7 @@
     "alias_list": [
       "B4mbino",
       "B4mbino GN",
+      "B4mbinoo",
       "ETH B4mbino",
       "GoNext B4mbino",
       "SAFB4mbino"
@@ -494,6 +535,11 @@
     ]
   },
   {
+    "esport_name": "BeiBeiS",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Bellkun",
     "hash": [],
     "alias_list": []
@@ -515,7 +561,8 @@
       "7ec8efb34df9cbc8ea8fe326173a81e0"
     ],
     "alias_list": [
-      "KPG Bible"
+      "KPG Bible",
+      "KPG_OuOBible"
     ]
   },
   {
@@ -524,6 +571,7 @@
       "0ae7dd3bb9f0ef62b5f63fd58ff6f91b"
     ],
     "alias_list": [
+      "MDY_B1eyun",
       "MDY_Bieyun"
     ]
   },
@@ -537,6 +585,11 @@
     ]
   },
   {
+    "esport_name": "BlackRoad",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Blasts",
     "hash": [
       "3f9c578f76925531ca3c2bc968d7447e",
@@ -544,6 +597,7 @@
     ],
     "alias_list": [
       "ESG Blasts",
+      "GG Blasts",
       "OMIT Blasts",
       "OMiT Blasts",
       "SAF Blasts",
@@ -610,7 +664,8 @@
     ],
     "alias_list": [
       "Bursty",
-      "BurstyOnKick"
+      "BurstyOnKick",
+      "MPIRE Bursty"
     ]
   },
   {
@@ -687,7 +742,8 @@
       "894b1a5c2f0cec1a015aee6bdcaaa352"
     ],
     "alias_list": [
-      "Cinap"
+      "Cinap",
+      "E36 Cinap"
     ]
   },
   {
@@ -775,6 +831,7 @@
       "Crazycong",
       "LG_CrazyCong",
       "SWQ CrazyCong",
+      "SWQ Crazycong",
       "SWQ_CrazyCong"
     ]
   },
@@ -841,6 +898,7 @@
     ],
     "alias_list": [
       "DANMANNTIC",
+      "EEC DANMANNTIC",
       "LTC DANMANNTIC",
       "LTC DANMANNTIC LIVE",
       "twitch DANMANNTIC"
@@ -931,6 +989,7 @@
       "DEXTER",
       "EXO_DEXTER",
       "IBG DEXTER",
+      "MKS DEXTER",
       "TYK DEXTER"
     ]
   },
@@ -993,11 +1052,21 @@
       "e7b146d11009dc681e9df42519701965"
     ],
     "alias_list": [
+      "DROPPED",
+      "DROPPED OG",
       "OpTic Dropped",
       "SSGDROPPED",
-      "SSG_DROPPED",
-      "DROPPED",
-      "DROPPED OG"
+      "SSG_DROPPED"
+    ]
+  },
+  {
+    "esport_name": "EMILIAZII",
+    "hash": [
+      "751aca65dfde54274ce4afe073e3b542",
+      "e52f6f4f9ca005bba02e82ea085b2a11"
+    ],
+    "alias_list": [
+      "EMILIAZII"
     ]
   },
   {
@@ -1012,6 +1081,16 @@
       "Effect",
       "Effect ALL"
     ]
+  },
+  {
+    "esport_name": "Egoist222",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Ein",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Elonzy",
@@ -1097,6 +1176,11 @@
     ]
   },
   {
+    "esport_name": "FaFaFIF",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Faco",
     "hash": [],
     "alias_list": []
@@ -1114,6 +1198,15 @@
     ]
   },
   {
+    "esport_name": "Falcons",
+    "hash": [
+      "9f87b8240c07880cdae0a5434fa48216"
+    ],
+    "alias_list": [
+      "Falcons"
+    ]
+  },
+  {
     "esport_name": "Famas",
     "hash": [],
     "alias_list": []
@@ -1127,6 +1220,7 @@
     "alias_list": [
       "FeiJu",
       "FeiJu MDYW",
+      "LGD_FeiJu",
       "MDYW FeiJu",
       "MDYw_FeiJu"
     ]
@@ -1137,6 +1231,7 @@
       "452362fe015c673b83d67b80f338afc0"
     ],
     "alias_list": [
+      "Feuda",
       "Twitch | Feuda"
     ]
   },
@@ -1161,6 +1256,7 @@
       "FaZe Frexs",
       "Frexs",
       "Frexs FAZE",
+      "OXG Frexs",
       "SSG Frexs",
       "SSGFrexs",
       "SSG_Frexs"
@@ -1198,7 +1294,8 @@
     "alias_list": [
       "Ftyan",
       "Ftyan PVX",
-      "PVX_Ftyan"
+      "PVX_Ftyan",
+      "RIG_Ftyan"
     ]
   },
   {
@@ -1223,10 +1320,21 @@
     "alias_list": [
       "FunFPS",
       "FunFPS XSET",
+      "NRG Fun",
       "TLFunFPS",
       "XSET FunFPS",
       "XSETFunFPS",
       "XSET_FunFPS"
+    ]
+  },
+  {
+    "esport_name": "Funk",
+    "hash": [
+      "6f614913074322f6fe0422b5b6d36cf1"
+    ],
+    "alias_list": [
+      "Funk",
+      "KNC Funk"
     ]
   },
   {
@@ -1238,6 +1346,7 @@
     ],
     "alias_list": [
       "44 Fussy",
+      "44Fussy",
       "BGB Fussy",
       "Fussy",
       "Fussy ONIC",
@@ -1261,6 +1370,7 @@
       "DZ Genburten",
       "DZGenburten",
       "DZ_Genburten",
+      "FLCN Genburten",
       "Genburten",
       "Genburten DZ"
     ]
@@ -1328,10 +1438,16 @@
     "alias_list": [
       "COLD Graceful",
       "E6 Graceful",
+      "Graceful",
       "Graceful \u30c4",
       "iGGraceful",
       "iG_Graceful"
     ]
+  },
+  {
+    "esport_name": "GrannyySmith",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Gsnkryu",
@@ -1359,6 +1475,7 @@
       "EVoiyC_",
       "Gusenpai",
       "PEEKG0D",
+      "WBG peekgod",
       "WTD Peekgod",
       "peek god",
       "peekgod",
@@ -1375,6 +1492,7 @@
     ],
     "alias_list": [
       "Gxnjy | Twitch",
+      "Gxnjy \u30c4",
       "HRZN_Gxnjy",
       "UTFT Gxnjy | Twitch"
     ]
@@ -1439,6 +1557,7 @@
       "AUR Hardecki",
       "AURORA Hardecki",
       "AURORA Hard\u00ebcki",
+      "AURORA arizona green tea",
       "GG Hardecki",
       "GG Hardwigg",
       "GG Hard\u00ebcki",
@@ -1474,6 +1593,7 @@
     ],
     "alias_list": [
       "2R1C Hiarka",
+      "BLCK Hiarka",
       "EIQ Hiarka",
       "Hiarka",
       "Hiarka EIQ",
@@ -1515,7 +1635,8 @@
       "a2200404d35bfc41f5d3788a20fc2a29"
     ],
     "alias_list": [
-      "NeS Hunto"
+      "NeS Hunto",
+      "RRX Hunto"
     ]
   },
   {
@@ -1528,6 +1649,11 @@
       "E36 ILY",
       "ily_v"
     ]
+  },
+  {
+    "esport_name": "IeNaGa",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "ImMadness",
@@ -1556,6 +1682,7 @@
       "90cc5dab9c83ff49f3cd4a37ba9b7aa1"
     ],
     "alias_list": [
+      "FLCN ImperialHal",
       "FTXImperialHal",
       "ImperialHal",
       "ImperialHal TSM",
@@ -1622,9 +1749,10 @@
       "LG_jaguares",
       "LGjaguares",
       "TLAW jaguaresl",
-      "jaguaresl",
+      "TLAW_jaguares",
       "jaguares",
-      "jaguares LG"
+      "jaguares LG",
+      "jaguaresl"
     ]
   },
   {
@@ -1635,6 +1763,11 @@
     "alias_list": [
       "JamesFearless"
     ]
+  },
+  {
+    "esport_name": "Jaspah",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Jeloan",
@@ -1738,6 +1871,7 @@
       "c57099a74c2d6873bb7cabbfa032bde2"
     ],
     "alias_list": [
+      "CR JungHee",
       "CR jungHee",
       "CR_JungHee",
       "GO_JungHee",
@@ -1810,6 +1944,7 @@
       "E6 KSWINNIIE",
       "E6KSWINNIIE",
       "E6_KSWINNIIE",
+      "EXO KSWINNIIE",
       "KSWINNIIE",
       "KSWINNIIE E6"
     ]
@@ -1863,6 +1998,7 @@
     ],
     "alias_list": [
       "VK Kassa",
+      "VKG Kaaasa",
       "VKG Kasssa"
     ]
   },
@@ -1876,11 +2012,17 @@
     "alias_list": [
       "FUR Keon",
       "FURIA Keon",
+      "FURIA_Keon",
       "GUARDKeon",
       "Keon | Twitch",
       "SEN Keon",
       "TGRD_Keon"
     ]
+  },
+  {
+    "esport_name": "Kernel garcia",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "KiingZ",
@@ -1899,6 +2041,11 @@
     ]
   },
   {
+    "esport_name": "KillMete",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Killoposz",
     "hash": [
       "fa12d30ee8f4e4ace3b605c95dc61bfd",
@@ -1911,6 +2058,11 @@
       "Killoposz",
       "Police_Killoposz"
     ]
+  },
+  {
+    "esport_name": "KingMSG",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "KinokoGenji",
@@ -1958,6 +2110,7 @@
       "2453374c1f0ba52b6c1935a0ef1fffde"
     ],
     "alias_list": [
+      "KNOQD",
       "OpTic knoqd",
       "OpTicknoqd",
       "knoqdgg",
@@ -1985,6 +2138,7 @@
     "alias_list": [
       "Koyful",
       "LGND Koyful",
+      "SSG_Koy",
       "XSET_Koy"
     ]
   },
@@ -1997,11 +2151,11 @@
     ],
     "alias_list": [
       "Kurev",
+      "Kurevv",
+      "Kurevv LNW",
       "LNW KUREVVV_Twitch",
       "LNW Kurev",
-      "aM Kurev",
-      "Kurevv",
-      "Kurevv LNW"
+      "aM Kurev"
     ]
   },
   {
@@ -2010,7 +2164,8 @@
       "ccb7f60942a6ca8be940ce53c5df44cd"
     ],
     "alias_list": [
-      "Meteor Kuroton"
+      "Meteor Kuroton",
+      "Meteor_Kuroton"
     ]
   },
   {
@@ -2157,6 +2312,11 @@
     ]
   },
   {
+    "esport_name": "Lible_Ace",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Liphnn",
     "hash": [
       "b29597a35e7ab3eca2a427b8d5446578"
@@ -2168,6 +2328,11 @@
     ]
   },
   {
+    "esport_name": "LowKey",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Lufka",
     "hash": [
       "7629f99f77fdf0319ccf1747d78fcef7",
@@ -2177,11 +2342,17 @@
     "alias_list": [
       "ACE_Lufka",
       "ESG lufka",
+      "GG Lufka",
       "Lufka",
       "Lufka ACE",
       "OMIT Lufka",
       "OMiT Lufka"
     ]
+  },
+  {
+    "esport_name": "Lully",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "LuoHan",
@@ -2213,6 +2384,7 @@
     "alias_list": [
       "COLLux",
       "Luxford",
+      "Luxford3",
       "Luxfordy"
     ]
   },
@@ -2247,7 +2419,8 @@
       "f3e4e0288d809c5bffc8b49396b3d666"
     ],
     "alias_list": [
-      "Lymo"
+      "Lymo",
+      "lymo(real)"
     ]
   },
   {
@@ -2256,7 +2429,9 @@
       "13c90f86444cabe6e0b1bbaf793b46c3"
     ],
     "alias_list": [
-      "GoNext M4XY"
+      "GoNext M4XY",
+      "M4XY",
+      "M4xy"
     ]
   },
   {
@@ -2357,6 +2532,7 @@
     "alias_list": [
       "FNC_MatsuTash",
       "GHS_MatsuTash",
+      "MatsuTash",
       "RIG MatsuTash"
     ]
   },
@@ -2386,6 +2562,7 @@
       "LTC McLovin",
       "LTC McLovinFPS | Twitch",
       "McLoViN",
+      "N8V McLovin",
       "mcLovin",
       "mclovin"
     ]
@@ -2401,7 +2578,8 @@
       "deb661a521755cacd42fee6178ff5dc5"
     ],
     "alias_list": [
-      "CCG_Mea"
+      "CCG_Mea",
+      "MeaChandayooo"
     ]
   },
   {
@@ -2453,6 +2631,7 @@
       "KN MiaK",
       "MiaK",
       "MiaK RID",
+      "MiaKnightley",
       "Riddle MiaK"
     ]
   },
@@ -2483,6 +2662,7 @@
       "236f0cf22667f82f35189fc4cc4e1486"
     ],
     "alias_list": [
+      "LGD_MingYue",
       "MDYW MingYue",
       "MDYw_MingYue",
       "MingYue",
@@ -2514,6 +2694,11 @@
     ]
   },
   {
+    "esport_name": "Mqty",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Mysi",
     "hash": [
       "d0bec8332254a070a160f2f41ceb7828",
@@ -2521,6 +2706,7 @@
     ],
     "alias_list": [
       "2R1C Mysi",
+      "BLCK Mysi",
       "GoNext Mysi",
       "Mysi"
     ]
@@ -2547,6 +2733,11 @@
     "alias_list": [
       "NEWKU"
     ]
+  },
+  {
+    "esport_name": "NIRU",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Nafen",
@@ -2576,6 +2767,7 @@
       "JL Naghz",
       "JL naghz",
       "JZ_Naghz",
+      "NXT Naghz",
       "Naghz",
       "Naghz JL",
       "o7 Naghz",
@@ -2612,7 +2804,8 @@
       "Neazul",
       "Neazul LG",
       "Neazul?",
-      "TLAW NeazuI"
+      "TLAW NeazuI",
+      "TLAW_Neazul"
     ]
   },
   {
@@ -2621,6 +2814,7 @@
       "5f0c85b988a499853106cc0c5f0671c0"
     ],
     "alias_list": [
+      "KN NefuDoll",
       "NSD NefuDoll"
     ]
   },
@@ -2630,7 +2824,8 @@
       "ee45d41d0f044d7a83eb1707179e48b0"
     ],
     "alias_list": [
-      "Meteor_Nemu"
+      "Meteor_Nemu",
+      "TTV_Nemuuu"
     ]
   },
   {
@@ -2657,6 +2852,27 @@
       "noiises",
       "noiises JL"
     ]
+  },
+  {
+    "esport_name": "Noname",
+    "hash": [
+      "72086c2a5947f79d061709f74f31a1ce"
+    ],
+    "alias_list": [
+      ":(",
+      "Guilt tripping",
+      "Noname",
+      "Twitch Cheater",
+      "WHYWASIBORN",
+      "caijiuduolian",
+      "iHateTheWorld",
+      "iHtw"
+    ]
+  },
+  {
+    "esport_name": "Noxi",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Obly",
@@ -2765,7 +2981,8 @@
       "IBG \u5f6d\u4e8e\u664f",
       "IBG_Panayie",
       "Panayie",
-      "Panayie \u30c4"
+      "Panayie \u30c4",
+      "Panayie_FA"
     ]
   },
   {
@@ -2805,6 +3022,7 @@
       "10fe387d2ec5be2e691da8d1c5ee2e10"
     ],
     "alias_list": [
+      "LFT_Peace",
       "SOL_Peace"
     ]
   },
@@ -2841,6 +3059,7 @@
     ],
     "alias_list": [
       "FC_Pinotr",
+      "FL Pinotr",
       "FLR_Pinotr",
       "FL_Pinotr",
       "Pinotr",
@@ -2894,6 +3113,7 @@
       "0e19ddae848c8a3fcba808147462b360"
     ],
     "alias_list": [
+      "FG_Plexez",
       "Plexez"
     ]
   },
@@ -2913,6 +3133,11 @@
   },
   {
     "esport_name": "Preslyy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Prestis",
     "hash": [],
     "alias_list": []
   },
@@ -2947,17 +3172,27 @@
       "MST_Prycyy",
       "Prycyy",
       "Prycyy MST",
-      "VP Prycyy"
+      "VP Prycyy",
+      "VP_Prycyy"
     ]
   },
   {
     "esport_name": "QQ",
     "hash": [
+      "5f62b6db3c8a3204526699308ad84104",
       "ae53986cab7baa2edb080dccbd006f55"
     ],
     "alias_list": [
-      "NTC AGL_QQ"
+      "AGL_QQ-R-",
+      "AGL_QQ-w-",
+      "NTC AGL_QQ",
+      "VKG_QQ"
     ]
+  },
+  {
+    "esport_name": "R1sk7",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "RANCHES",
@@ -2969,8 +3204,10 @@
       "AURORA RANCHES",
       "AURORARANCHES",
       "CATS RANCHES",
+      "CATS RANCHESSTR",
       "RANCHES",
-      "RANCHES AUR"
+      "RANCHES AUR",
+      "cats ra"
     ]
   },
   {
@@ -2980,6 +3217,7 @@
     ],
     "alias_list": [
       "2o2 RakaFaka",
+      "9L RakaFaka",
       "Twitch RakaFaka"
     ]
   },
@@ -2995,7 +3233,8 @@
       "ONIC Rakiiii",
       "ONIC_Rakiiii",
       "Rakiiii",
-      "Rakiiii ONIC"
+      "Rakiiii ONIC",
+      "rakiiii"
     ]
   },
   {
@@ -3011,6 +3250,11 @@
       "SEN RamBeau",
       "TGRD_RamBeau"
     ]
+  },
+  {
+    "esport_name": "Ransacker",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Ras",
@@ -3040,6 +3284,11 @@
   },
   {
     "esport_name": "Rchwert",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "Re1qz",
     "hash": [],
     "alias_list": []
   },
@@ -3076,6 +3325,18 @@
     ]
   },
   {
+    "esport_name": "Reptar",
+    "hash": [
+      "95e4e3104893fcce9a94b54e10510cd5"
+    ],
+    "alias_list": [
+      "NRG Reptar",
+      "Reptar",
+      "ReptarRB",
+      "WC_Reptar"
+    ]
+  },
+  {
     "esport_name": "ReyzyGG",
     "hash": [
       "2966af57093f7ddafeb974e87bc80333",
@@ -3085,6 +3346,7 @@
     "alias_list": [
       "NTH ReyzyGG",
       "NTH_ReyzyGG",
+      "Nth ReyzyGG",
       "Nth_ReyzyGG",
       "ReyzyGG",
       "ReyzyGG NTH"
@@ -3098,6 +3360,7 @@
     ],
     "alias_list": [
       "HAO Right",
+      "HAO_RIGHT",
       "HAO_Right",
       "WL_Right"
     ]
@@ -3121,6 +3384,7 @@
     ],
     "alias_list": [
       "GUARDRkn",
+      "N8V Rkn",
       "Rkn",
       "SEN Rkn",
       "TGRD_Rkn",
@@ -3167,6 +3431,7 @@
       "a03799d4dbbe1a264d10a64a88734eb8"
     ],
     "alias_list": [
+      "RRX Rowhai",
       "Rowhai NeS"
     ]
   },
@@ -3218,6 +3483,7 @@
     ],
     "alias_list": [
       "MKN_SIZU",
+      "XFZ SIZU",
       "xTs SIZU"
     ]
   },
@@ -3292,7 +3558,8 @@
       "myztro lionel pepsi",
       "myztro sanya",
       "myztro saynya",
-      "sanya"
+      "sanya",
+      "sanya from passionua"
     ]
   },
   {
@@ -3366,7 +3633,8 @@
       "DZSharky",
       "DZ_Sharky",
       "Sharky",
-      "VP Sharky"
+      "VP Sharky",
+      "VP_Sharky"
     ]
   },
   {
@@ -3400,6 +3668,7 @@
       "HVNDShooby",
       "LFO_Shooby",
       "Shooby",
+      "Shoobyyyyyy",
       "WC_Shooby",
       "shoobytoobyTV"
     ]
@@ -3414,6 +3683,7 @@
     "alias_list": [
       "PVX_ShunMi",
       "RIG ShunMi",
+      "RIG_ShunMi",
       "ShunMi",
       "ShunMi PVX"
     ]
@@ -3435,6 +3705,7 @@
       "DZ_Sikezz",
       "Sikezz",
       "Sikezz XSET",
+      "Sikezz_LG",
       "TLSikezz",
       "XSET Sikezz",
       "XSETSikezz",
@@ -3449,6 +3720,7 @@
     ],
     "alias_list": [
       "MIH Sinetic",
+      "NXT Sinetic",
       "Sinetic"
     ]
   },
@@ -3492,6 +3764,7 @@
       "E6_Slab",
       "ETH Slab",
       "GoNext Slab",
+      "GoNext_Slab",
       "OhSlab",
       "OhSlab GN",
       "Slab"
@@ -3508,6 +3781,7 @@
       "E6 Slayers",
       "E6Slayers",
       "E6_Slayers",
+      "EXO Slayers",
       "Slayers",
       "Slayers E6"
     ]
@@ -3525,7 +3799,8 @@
       "Slayr",
       "SlayrSZN",
       "Slayr_LG",
-      "slayr"
+      "slayr",
+      "slayr123"
     ]
   },
   {
@@ -3535,9 +3810,9 @@
       "a7ac7e6339c2218cbcec71aa0ea1041f"
     ],
     "alias_list": [
-      "Sleep",
       "Sleeepola",
-      "Sleeepola SAF"
+      "Sleeepola SAF",
+      "Sleep"
     ]
   },
   {
@@ -3549,6 +3824,11 @@
       "ISleepyPanda",
       "TD ISleepyPanda"
     ]
+  },
+  {
+    "esport_name": "Smallfish",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "Snip3down",
@@ -3689,6 +3969,21 @@
     ]
   },
   {
+    "esport_name": "SyanaMu",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "TAKEO",
+    "hash": [
+      "399ec13cd65f0ac2836b33814ff61297"
+    ],
+    "alias_list": [
+      "310 Clever-TAKEO",
+      "Clever-TAKEO"
+    ]
+  },
+  {
     "esport_name": "TANO",
     "hash": [
       "386bb123e11ef6be25f310adf738c24f"
@@ -3697,6 +3992,11 @@
       "DSK_TANO_MASTER",
       "GOD_TANO_MASTER"
     ]
+  },
+  {
+    "esport_name": "TANPOPO",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "THONNE",
@@ -3784,6 +4084,11 @@
     ]
   },
   {
+    "esport_name": "Teddy",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "TenTen",
     "hash": [],
     "alias_list": []
@@ -3810,6 +4115,7 @@
     "alias_list": [
       "DYN Tolkien",
       "GoNext Tolkien",
+      "KNC Tolkien",
       "Tolkien"
     ]
   },
@@ -3851,6 +4157,21 @@
     ]
   },
   {
+    "esport_name": "TryhardThor",
+    "hash": [
+      "c841ad6669804fdfdd9495fe2931b337"
+    ],
+    "alias_list": [
+      "ATLAS EXO Thor",
+      "EXO TryhardThor"
+    ]
+  },
+  {
+    "esport_name": "Turtle",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Tyler",
     "hash": [],
     "alias_list": []
@@ -3883,7 +4204,8 @@
       "05aef0f3582b3a111641e4d0ae07e188"
     ],
     "alias_list": [
-      "O2_Tzuyu1st"
+      "O2_Tzuyu1st",
+      "SBI Tzuyu1st"
     ]
   },
   {
@@ -3897,6 +4219,7 @@
       "FC_UmichanLoveti",
       "FNC_UmichanLoveti",
       "PVX_UmichanLoveti",
+      "Riddle UmichanLoveti",
       "UmichanLoveti",
       "UmichanLoveti FNC"
     ]
@@ -3934,6 +4257,7 @@
     "alias_list": [
       "2R1C Uxako",
       "2R1C Uxako \u60aa\u9b54",
+      "BLCK Uxako \u60aa\u9b54",
       "EIQ Uxako \u60aa\u9b54",
       "Uxako",
       "Uxako EIQ",
@@ -3953,11 +4277,17 @@
     ]
   },
   {
+    "esport_name": "VOL_zZ",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "Vaifs",
     "hash": [
       "481d51fd2c1d21215d9e7446409d574c"
     ],
     "alias_list": [
+      "9L Vaifs",
       "Alliance_Vaifs"
     ]
   },
@@ -3984,6 +4314,7 @@
       "100TVaxlon",
       "100T_Vaxlon",
       "FUR Vaxlon",
+      "FURIA LC Vaxlon",
       "Vaxlon",
       "Vaxlon 100T"
     ]
@@ -4034,14 +4365,14 @@
   {
     "esport_name": "Vlatow",
     "hash": [
-      "de308d5546e0f155625862f7aef20790",      "5e287068bf177d039d59c3264faf36b3"
-
+      "de308d5546e0f155625862f7aef20790",
+      "5e287068bf177d039d59c3264faf36b3"
     ],
     "alias_list": [
+      "ATHXHVY_VLATOW",
       "BRD Vlatow",
       "Vlatow",
-      "Vlatow ATH",
-      "ATHXHVY_VLATOW"
+      "Vlatow ATH"
     ]
   },
   {
@@ -4073,6 +4404,7 @@
       "366a322bdeeeae8c64552bb6492a8d7e"
     ],
     "alias_list": [
+      "310 Vor3z",
       "E36 Vor3z",
       "KN Vor3z",
       "Vor3z",
@@ -4121,6 +4453,7 @@
       "2ecec4582d6892eaa7634a4a6409adaf"
     ],
     "alias_list": [
+      "OP Will",
       "OP Willemkh"
     ]
   },
@@ -4137,6 +4470,7 @@
       "5d0079f28e67d6f5f83d0b30e9064f0e"
     ],
     "alias_list": [
+      "CA_Wxltzy",
       "MST Waltzy",
       "MST Wxltzy",
       "MST_Wxltzy",
@@ -4164,6 +4498,7 @@
       "SSG_xenial",
       "SSGxenial",
       "x",
+      "xen",
       "xenial"
     ]
   },
@@ -4174,11 +4509,11 @@
       "91e1bc62baef92fce6335d3441f03b7d"
     ],
     "alias_list": [
-      "Xeratricky",
-      "Xeratricky FUR",
       "FURIA Xera",
       "FURIAXera",
       "FaZe Xera",
+      "Xeratricky",
+      "Xeratricky FUR",
       "Xeratricky1|Twitch",
       "twitch.tv/Xera"
     ]
@@ -4228,6 +4563,7 @@
     ],
     "alias_list": [
       "DDOS",
+      "JackieChan_WBG",
       "JackieChan_WTD",
       "WTD XZZ",
       "Xzz",
@@ -4270,6 +4606,7 @@
       "LGYanYa",
       "LG_YanYa",
       "TLAW lYanYal",
+      "TLAW_YanYa",
       "YanYa",
       "YanYa LG",
       "lYanYal"
@@ -4297,6 +4634,7 @@
       "1ddc0ea8001673f533fb1f094f226f0b"
     ],
     "alias_list": [
+      "INF_YeQiuApex",
       "POR YeQiu",
       "VCGO YeQiuApex",
       "Ye Qiu",
@@ -4325,6 +4663,15 @@
       "GW_Yoloo_y",
       "Yoloo_y",
       "Yoloo_y On Fire ( literally )"
+    ]
+  },
+  {
+    "esport_name": "You'reXP",
+    "hash": [
+      "0aa988e38c223fbeaefeafa4ad3d51a3"
+    ],
+    "alias_list": [
+      "ADL You'reXP"
     ]
   },
   {
@@ -4423,6 +4770,7 @@
     "alias_list": [
       "EXO_Z1CKKY",
       "IBG Z1CKKY",
+      "MKS Z1CKKY",
       "TYK Z1CKKY",
       "Z1CKKY",
       "Z1CKKY \u30c5"
@@ -4527,7 +4875,8 @@
     ],
     "alias_list": [
       "3s-Shynk",
-      "3s-ShynkCh"
+      "3s-ShynkCh",
+      "LfT_ShynkCh"
     ]
   },
   {
@@ -4537,7 +4886,8 @@
     ],
     "alias_list": [
       "3s/\u3066\u3093\u3066\u3093",
-      "3s/\u3066\u3093\u3066\u3093Twitch"
+      "3s/\u3066\u3093\u3066\u3093Twitch",
+      "\u3066\u3093\u3066\u3093"
     ]
   },
   {
@@ -4586,6 +4936,7 @@
     ],
     "alias_list": [
       "7512gnirob_DTW",
+      "WBG_Bo3o2157",
       "WTD_Boring2157",
       "obi7r51n2g WTD"
     ]
@@ -4613,20 +4964,6 @@
   {
     "esport_name": null,
     "hash": [
-      "72086c2a5947f79d061709f74f31a1ce"
-    ],
-    "alias_list": [
-      ":(",
-      "Guilt tripping",
-      "Noname",
-      "Twitch Cheater",
-      "WHYWASIBORN",
-      "caijiuduolian"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "b9dd26f8073d550c7b46cebf6d886d36"
     ],
     "alias_list": [
@@ -4645,30 +4982,11 @@
   {
     "esport_name": null,
     "hash": [
-      "0aa988e38c223fbeaefeafa4ad3d51a3"
-    ],
-    "alias_list": [
-      "ADL You'reXP"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "adb5a8dad217ec94c85510adc0022f38"
     ],
     "alias_list": [
       "AGL-XXfps",
       "AGL_XXfps"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "5f62b6db3c8a3204526699308ad84104"
-    ],
-    "alias_list": [
-      "AGL_QQ-R-",
-      "AGL_QQ-w-"
     ]
   },
   {
@@ -4699,9 +5017,6 @@
       "ATHXHVY_ASLEEP"
     ]
   },
-
-
-
   {
     "esport_name": null,
     "hash": [
@@ -4727,7 +5042,8 @@
       "dd6083ef730465e41a17ee5f36778ad4"
     ],
     "alias_list": [
-      "AdaM_zZ | Twitch"
+      "AdaM_zZ | Twitch",
+      "RTS AdaM_zZ"
     ]
   },
   {
@@ -4763,7 +5079,8 @@
       "7dce66a632fcf3ffd03f48961b371a07"
     ],
     "alias_list": [
-      "AeoFps"
+      "AeoFps",
+      "Twitch 3Aeo"
     ]
   },
   {
@@ -4822,15 +5139,6 @@
     "alias_list": [
       "Asura",
       "PrideAsura"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "85ec478e3e93557b2f40a0484b6a37c0"
-    ],
-    "alias_list": [
-      "Atinum"
     ]
   },
   {
@@ -4899,7 +5207,8 @@
       "b975e4078c36a904d1fe185b232e6575"
     ],
     "alias_list": [
-      "BRZ Einw"
+      "BRZ Einw",
+      "insane man"
     ]
   },
   {
@@ -4909,6 +5218,7 @@
     ],
     "alias_list": [
       "BRZ_ANAYA",
+      "GHS ANAYA",
       "TW_ANAYA Twitch"
     ]
   },
@@ -4956,7 +5266,8 @@
       "e40bf10a95c9a35b2582a72beb31a669"
     ],
     "alias_list": [
-      "Bazaar"
+      "Bazaar",
+      "RTS Bazaar"
     ]
   },
   {
@@ -5012,16 +5323,8 @@
       "ecffe50dd6ee4114183f5656c89f9599"
     ],
     "alias_list": [
-      "CATS ELONZY"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "dda968cfc294b270d2305d0c8a65dc19"
-    ],
-    "alias_list": [
-      "CATS XANIYA"
+      "CATS ELONZY",
+      "CATS ELONZYSTR"
     ]
   },
   {
@@ -5092,7 +5395,8 @@
       "43d994e3bdfd25313bd7c6453fd8acae"
     ],
     "alias_list": [
-      "Calamitous"
+      "Calamitous",
+      "FG_Calamitous"
     ]
   },
   {
@@ -5114,15 +5418,6 @@
     ],
     "alias_list": [
       "CatSleepingTTV"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "399ec13cd65f0ac2836b33814ff61297"
-    ],
-    "alias_list": [
-      "Clever-TAKEO"
     ]
   },
   {
@@ -5405,28 +5700,6 @@
   {
     "esport_name": null,
     "hash": [
-      "99ef8be3aef94f6ed1741e4f297bae52"
-    ],
-    "alias_list": [
-      "EKOZuni",
-      "EKOZuniUKtwitch",
-      "PLR ZuniUK | Twitch",
-      "ZuniUK | Twitch",
-      "ZuniUK|Twitch"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "751aca65dfde54274ce4afe073e3b542"
-    ],
-    "alias_list": [
-      "EMILIAZII"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "660b43fd51630fb30372d7ddc2ec86ff"
     ],
     "alias_list": [
@@ -5463,19 +5736,11 @@
   {
     "esport_name": null,
     "hash": [
-      "c841ad6669804fdfdd9495fe2931b337"
-    ],
-    "alias_list": [
-      "EXO TryhardThor"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "161d8cf3e1b67442646826214e872bef"
     ],
     "alias_list": [
-      "Eccio"
+      "Eccio",
+      "RTS_ECCIO"
     ]
   },
   {
@@ -5485,15 +5750,6 @@
     ],
     "alias_list": [
       "Entity-Apex"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "31e25ce904ab7ab2100642ea8fc08d61"
-    ],
-    "alias_list": [
-      "FG_akku"
     ]
   },
   {
@@ -5613,15 +5869,6 @@
   {
     "esport_name": null,
     "hash": [
-      "9f87b8240c07880cdae0a5434fa48216"
-    ],
-    "alias_list": [
-      "Falcons"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
       "062206279870530bdbf05ee76a9bba58"
     ],
     "alias_list": [
@@ -5654,15 +5901,6 @@
     ],
     "alias_list": [
       "Folti"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "6f614913074322f6fe0422b5b6d36cf1"
-    ],
-    "alias_list": [
-      "Funk"
     ]
   },
   {
@@ -5723,6 +5961,7 @@
     "alias_list": [
       "GROW_\u3061\u3053\u3061\u3083\u3093",
       "MOZE \u3061\u3053\u3061\u3083\u3093\u3060\u304a",
+      "RR \u3061\u3053\u3061\u3083\u3093\u3060\u304a",
       "\u3061\u3053\u3061\u3083\u3093\u3060\u304a"
     ]
   },
@@ -5769,7 +6008,8 @@
       "3621c36028f6df82aa71a5e726ccf028"
     ],
     "alias_list": [
-      "GoNext_1Kaishi"
+      "GoNext_1Kaishi",
+      "GoNext_Kai"
     ]
   },
   {
@@ -6202,7 +6442,8 @@
       "6b2f27e82ecba56c5004c1b919f4893d"
     ],
     "alias_list": [
-      "K R Y Z E N"
+      "K R Y Z E N",
+      "KNC Kryzen"
     ]
   },
   {
@@ -6478,6 +6719,7 @@
       "05f23f2db076b542ae394123921448eb"
     ],
     "alias_list": [
+      "310 Lible_Ace",
       "Lible_Ace"
     ]
   },
@@ -6515,6 +6757,7 @@
       "36931252e1fb565e803d27e4deea8728"
     ],
     "alias_list": [
+      "LGD_LqDuD",
       "MDYw_LqDuD"
     ]
   },
@@ -6672,7 +6915,8 @@
       "cdbf9062f5ff959dd05df4cc12e216c5"
     ],
     "alias_list": [
-      "Mqty"
+      "Mqty",
+      "Mqty_33"
     ]
   },
   {
@@ -6820,6 +7064,7 @@
       "2b90a80c168231249cc3e30f90caa5cf"
     ],
     "alias_list": [
+      "KN Sumiyoshii",
       "NSD Sumiyoshii"
     ]
   },
@@ -6919,7 +7164,8 @@
       "6fec11d568bdf93a62f1d8afbf76c494"
     ],
     "alias_list": [
-      "Number 48: Shadow Lich"
+      "Number 48: Shadow Lich",
+      "WizardCoin23"
     ]
   },
   {
@@ -6928,7 +7174,8 @@
       "0204a010bfcaf6a9c8306afec3ac8501"
     ],
     "alias_list": [
-      "NxT_Noxi"
+      "NxT_Noxi",
+      "SRZ Noxi"
     ]
   },
   {
@@ -6937,7 +7184,8 @@
       "1a3755cc81be2731339f800ed1c9f776"
     ],
     "alias_list": [
-      "NxT_Re1qz"
+      "NxT_Re1qz",
+      "SRZ Re1qz"
     ]
   },
   {
@@ -6946,7 +7194,8 @@
       "e439bbf00f84d95587f9c30cbb6ea2ad"
     ],
     "alias_list": [
-      "NxT_SyanaMu"
+      "NxT_SyanaMu",
+      "SRZ SyanaMu"
     ]
   },
   {
@@ -7041,6 +7290,7 @@
       "a34b23c38a416ae95c71de0fb4a636bc"
     ],
     "alias_list": [
+      "BiliBili_\u5929\u624d\u7f8e\u5c11\u5973\u4e9a\u6258\u8389 3s",
       "POS_ATRI"
     ]
   },
@@ -7050,6 +7300,7 @@
       "e771f3df1797e622fe779dd20553c0b4"
     ],
     "alias_list": [
+      "3s_watage\u306a\u3045",
       "POS_watage\u306a\u3045"
     ]
   },
@@ -7142,6 +7393,7 @@
       "f3845c64f4c8cec0eeaf027e691c0959"
     ],
     "alias_list": [
+      "DMS_7ozzzus",
       "RD_7ozzzus"
     ]
   },
@@ -7151,6 +7403,7 @@
       "d50e2e58db88d124af38b20d5f171d9b"
     ],
     "alias_list": [
+      "DMS_PrestisX",
       "RD_PrestisX"
     ]
   },
@@ -7242,18 +7495,8 @@
       "e132505d34502ca5ae063ab626f5f0c4"
     ],
     "alias_list": [
+      "RemixPowers",
       "RemixPowers | Twitch"
-    ]
-  },
-  {
-    "esport_name": null,
-    "hash": [
-      "95e4e3104893fcce9a94b54e10510cd5"
-    ],
-    "alias_list": [
-      "Reptar",
-      "ReptarRB",
-      "WC_Reptar"
     ]
   },
   {
@@ -7331,6 +7574,7 @@
     ],
     "alias_list": [
       "SWQ YouL1ngTxT",
+      "SWQ_YouL1ngTxT",
       "VK_QYouL1ngQ"
     ]
   },
@@ -7340,6 +7584,7 @@
       "4a9c2e67d472ddf8b3782acb0556a5d8"
     ],
     "alias_list": [
+      "FD Aimbot SWQ",
       "SWQ_Aimbot2199"
     ]
   },
@@ -7489,6 +7734,7 @@
     ],
     "alias_list": [
       "TIE Infamous",
+      "TIE infamous",
       "WL_Infamous"
     ]
   },
@@ -7653,17 +7899,16 @@
       "Trent"
     ]
   },
-
   {
     "esport_name": null,
     "hash": [
-      "d9691ec4d421f01fc6e78f553a51275b",      "af1d96563a1d3444d14a21124d0a5b5d"
-
+      "d9691ec4d421f01fc6e78f553a51275b",
+      "af1d96563a1d3444d14a21124d0a5b5d"
     ],
     "alias_list": [
+      "ATHXHVY_TRINITYZY",
       "TriNITYzy",
-      "TriNITYzy ATH",
-      "ATHXHVY_TRINITYZY"
+      "TriNITYzy ATH"
     ]
   },
   {
@@ -7820,6 +8065,7 @@
       "278270a67e13fbdca36c9c4db7de87a9"
     ],
     "alias_list": [
+      "VP_Wey",
       "Wheyorn",
       "wey"
     ]
@@ -7995,6 +8241,7 @@
       "3b010b577ad91d2e5ea65df603d41197"
     ],
     "alias_list": [
+      "MJ",
       "hmm"
     ]
   },
@@ -8166,6 +8413,7 @@
       "24d77e89d6539701780002eceee00a00"
     ],
     "alias_list": [
+      "3s_TANPOPO",
       "pos_TANPOPO"
     ]
   },
@@ -8184,6 +8432,7 @@
       "95f3304ec9c43636e6ec4fc82e036afe"
     ],
     "alias_list": [
+      "ATLAS rBlackVenom",
       "rBlackVenom | Twitch"
     ]
   },
@@ -8410,6 +8659,395 @@
     ]
   },
   {
+    "esport_name": null,
+    "hash": [
+      "7e44de8754bd9111c973a00fbc4ce18f"
+    ],
+    "alias_list": [
+      "Lux"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d210b25857e3ff142141c83ecc9f93ae"
+    ],
+    "alias_list": [
+      "WMFB_Kano"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6e093dfc0c581a93d83156402aceceb7"
+    ],
+    "alias_list": [
+      "FD Moku SWQ",
+      "MKK_Moku"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "ba1f63e1a7e000400db61b68e9579b82"
+    ],
+    "alias_list": [
+      "NewJeans_KingMSG"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fbaa4050f34b0a9dda2ec651ffd00d28"
+    ],
+    "alias_list": [
+      "Kernel garcia"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "35abef18367198e58ee6fc6858a85496"
+    ],
+    "alias_list": [
+      "STY_\u90aa\u795e\u7167\u308c\u305f\u3041"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f43a02f2a611c2c6dbc5e0d4acdbebd6"
+    ],
+    "alias_list": [
+      "STY_Ouzia"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "bc95708bb1da8ebce8c9317087a52b4d"
+    ],
+    "alias_list": [
+      "Gran"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a567f54885891770931b5d46066da2fa"
+    ],
+    "alias_list": [
+      "VOLzZ_XFZ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "adca6c7e8f5e634d1e10e0caf03a1012"
+    ],
+    "alias_list": [
+      "MXF_Smallfishovo"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7a24dcaa2d075b54741cb802e53c89b3"
+    ],
+    "alias_list": [
+      "Funny_Rost3"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "dee919aff2e6cd360b8e450609c773bc"
+    ],
+    "alias_list": [
+      "RRX 7ne"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "5f12cee45f803a93cbe00b37e1ca15ad"
+    ],
+    "alias_list": [
+      "KN Lully"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "7c0aaff96fb641ebc36681f465b6a698"
+    ],
+    "alias_list": [
+      "FSLD Scholar"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "e37df7c08b8820d580d3eea0288542cf"
+    ],
+    "alias_list": [
+      "MDY_BeiBeiS"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "528b6ec3b0bba66756bfafb8274f7dbe"
+    ],
+    "alias_list": [
+      "Ransacker",
+      "Ransacker\u9501\u6211\u6302DC"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c2cd43d34a20ff1e5bd104439c89c877"
+    ],
+    "alias_list": [
+      "Meteor yL"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "caae34fb2c22c0d8c5f9304adc5eeb94"
+    ],
+    "alias_list": [
+      "N1ks"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "0ac2af38c91be108b76a86c37260294c"
+    ],
+    "alias_list": [
+      "\u5bb6\u9577"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "c0043316302dfb9d42ced05ef6844819"
+    ],
+    "alias_list": [
+      "HAO_H8sak"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "d7b3177bd00d7aa5db43fbdceec8d19a"
+    ],
+    "alias_list": [
+      "LowKey"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f7ec08fd9923a3608bd1dab1a5cb6777"
+    ],
+    "alias_list": [
+      "\u6211\u62e5\u6709 DF fenfuu xd_o"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4f16b2a7e7acc2996779b4fbe1a2a27f"
+    ],
+    "alias_list": [
+      "Funny_e2"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "826824474583ad28c015a17d2bead967"
+    ],
+    "alias_list": [
+      "KD_BoLin"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6060b9637d237c124463aa0116517cab"
+    ],
+    "alias_list": [
+      "yrvz72"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a821ba8b5924b2d8b6c45965ada14628"
+    ],
+    "alias_list": [
+      "KZzcc"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1efd2971efecae52c60991a58fafb44d"
+    ],
+    "alias_list": [
+      "BlackRoad Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "28147fe56ec0943f62deebeae18365b2"
+    ],
+    "alias_list": [
+      "Nikoluas"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9219807d5ddfb6c6b3542c867df8cb1d"
+    ],
+    "alias_list": [
+      "FSLD byULLR"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "17ff07287042a0f11cd03d8be8b896bf"
+    ],
+    "alias_list": [
+      "FD7EDD9SWQ"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "a223a7857ec2d1d2ea1073821ab5a2bc"
+    ],
+    "alias_list": [
+      "Vixeria"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "4b91c1a26e9fbfb7ee69abb957314e71"
+    ],
+    "alias_list": [
+      "Rogers"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b1baa79fb225513ca077e7ae7b21bdb6"
+    ],
+    "alias_list": [
+      "Qllapz | Twitch"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "74d2d7320a93ee330ef74b5e759d8e10"
+    ],
+    "alias_list": [
+      "N8V_Osivien"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "34962e197ab9fb209adf0ccfe03f7fdd"
+    ],
+    "alias_list": [
+      "Nyanmerry"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "02f8650710ff901ffae6f5fd237a163d"
+    ],
+    "alias_list": [
+      "RTG_sky12"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "fe3a65b703fc5bde0c337d8cf14b302b"
+    ],
+    "alias_list": [
+      "HKUF_vicliao10q"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "f97008f8f6bb8bda089b35693d42ceae"
+    ],
+    "alias_list": [
+      "Funny_N1ght"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "6afd0670bb60141dc57270304a5102a2"
+    ],
+    "alias_list": [
+      "STY_doramin"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "1bc9120d6e8c9be0b92d452b147060bf"
+    ],
+    "alias_list": [
+      "NIRUi7"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "9978f17df6b63698564f6a71f72573db"
+    ],
+    "alias_list": [
+      "RTG_ckkongbai"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "b8eccd57fbd6ee2a6e480bb7751f55e0"
+    ],
+    "alias_list": [
+      "Tyg_Roninzz"
+    ]
+  },
+  {
+    "esport_name": null,
+    "hash": [
+      "07915f454de5a31a235da61f67cb0837"
+    ],
+    "alias_list": [
+      "BBQ secret 4th man  [mascot]"
+    ]
+  },
+  {
     "esport_name": "Zach",
     "hash": [
       "64a53e5e7920ba3ad6ec2bf376ca1386",
@@ -8419,6 +9057,7 @@
     "alias_list": [
       "C9Zachmazer",
       "E8 Zachmazer",
+      "E8 zachmazer",
       "Zachmazer",
       "Zan",
       "zachy",
@@ -8437,7 +9076,8 @@
       "KCP Zaine",
       "KCP zaine",
       "Zaine",
-      "Zaine KCP"
+      "Zaine KCP",
+      "o7_Zaine"
     ]
   },
   {
@@ -8449,6 +9089,7 @@
     "alias_list": [
       "E8 zap",
       "E8_zap",
+      "TSM_zap",
       "zap"
     ]
   },
@@ -8463,6 +9104,7 @@
       "DZ Zer0",
       "DZZer0",
       "DZ_Zer0",
+      "FLCN Zer0",
       "Zer0",
       "Zer0 DZ"
     ]
@@ -8504,6 +9146,20 @@
     ]
   },
   {
+    "esport_name": "Zuni",
+    "hash": [
+      "99ef8be3aef94f6ed1741e4f297bae52"
+    ],
+    "alias_list": [
+      "ATLAS Zuni",
+      "EKOZuni",
+      "EKOZuniUKtwitch",
+      "PLR ZuniUK | Twitch",
+      "ZuniUK | Twitch",
+      "ZuniUK|Twitch"
+    ]
+  },
+  {
     "esport_name": "aflow",
     "hash": [
       "ac12445a52993903d293950b4f5fa2e9"
@@ -8538,6 +9194,15 @@
     ]
   },
   {
+    "esport_name": "akku",
+    "hash": [
+      "31e25ce904ab7ab2100642ea8fc08d61"
+    ],
+    "alias_list": [
+      "FG_akku"
+    ]
+  },
+  {
     "esport_name": "arctic",
     "hash": [
       "a68b43ba955548711af5876d2265e003",
@@ -8545,6 +9210,7 @@
     ],
     "alias_list": [
       "MIH arctic",
+      "NXT arctic",
       "PLR arctic",
       "Totem arctic",
       "arctic"
@@ -8599,8 +9265,14 @@
       "7dc372487d77d2fa5642db728297e4aa"
     ],
     "alias_list": [
+      "EXO brynn",
       "brynn"
     ]
+  },
+  {
+    "esport_name": "ckkongbai",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "cleaveee",
@@ -8609,13 +9281,13 @@
       "afa99e6268f558106f4460274101e186"
     ],
     "alias_list": [
-      "cleaveee",
-      "cleaveee AUR",
       "AURORA CLEAVEEE",
-      "AURORACLEAVEEE"
+      "AURORACLEAVEEE",
+      "CATS CLEAVEEESTR",
+      "cleaveee",
+      "cleaveee AUR"
     ]
   },
-
   {
     "esport_name": "dooplex",
     "hash": [
@@ -8637,7 +9309,9 @@
     ],
     "alias_list": [
       "F1ToO!",
-      "RD fitoo"
+      "RD fitoo",
+      "bitcoin",
+      "fitoo"
     ]
   },
   {
@@ -8701,6 +9375,7 @@
       "fceca509680b3bcb44140c9720cdfcd8"
     ],
     "alias_list": [
+      "9L jayHANZO",
       "jayHANZ0",
       "jayHANZO"
     ]
@@ -8723,6 +9398,7 @@
       "ACEK4SHERA",
       "ACE_K4SHERA",
       "ACE_K4SHERA KICK",
+      "GN K4SHERA",
       "K4SHERA",
       "K4SHERA ACE",
       "KICK.COM/K4SHERA",
@@ -8772,6 +9448,7 @@
     ],
     "alias_list": [
       "ESG lighT",
+      "GG lighT",
       "OMIT lighT",
       "OMiT lighT",
       "SAF lighT",
@@ -8813,13 +9490,14 @@
       "6bc6ace1836d909006fbe6ff08487e41"
     ],
     "alias_list": [
+      "NRG N\u0444cturnal",
+      "Nocturnal",
+      "Nocturnal XSET",
       "TLNocturnal",
       "XSET 9N\u0444c",
       "XSET N\u0444cturnal",
       "XSETNocturnal",
-      "XSET_Nocturnal",
-      "Nocturnal",
-      "Nocturnal XSET"
+      "XSET_Nocturnal"
     ]
   },
   {
@@ -8855,6 +9533,11 @@
   },
   {
     "esport_name": "qzier",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "rBlackVenom",
     "hash": [],
     "alias_list": []
   },
@@ -8984,7 +9667,8 @@
     ],
     "alias_list": [
       "CCE shini",
-      "WVE MNK"
+      "WVE MNK",
+      "shini"
     ]
   },
   {
@@ -9010,6 +9694,7 @@
       "13bad827972a29fce8d8efff200ee878"
     ],
     "alias_list": [
+      "DMS_taskmast33r",
       "FIRE BEAVERS taskmast33r",
       "FIREBEAVERStaskmast33r",
       "RD_taskmast33r",
@@ -9070,6 +9755,11 @@
     ]
   },
   {
+    "esport_name": "vicliao10q",
+    "hash": [],
+    "alias_list": []
+  },
+  {
     "esport_name": "voiid",
     "hash": [
       "35463562c22c0212c5ccc15d34761440"
@@ -9112,6 +9802,7 @@
       "f64b0d665df09d75c8d5bfb2ae1ea89c"
     ],
     "alias_list": [
+      "MPIRE wifi",
       "wifi 0"
     ]
   },
@@ -9138,8 +9829,13 @@
   },
   {
     "esport_name": "xaniya",
-    "hash": [],
-    "alias_list": []
+    "hash": [
+      "dda968cfc294b270d2305d0c8a65dc19"
+    ],
+    "alias_list": [
+      "CATS XANIYA",
+      "xaniya"
+    ]
   },
   {
     "esport_name": "xd",
@@ -9163,6 +9859,16 @@
       "BFG_xeriffer",
       "twitch-xeriffer"
     ]
+  },
+  {
+    "esport_name": "yL",
+    "hash": [],
+    "alias_list": []
+  },
+  {
+    "esport_name": "yrvz",
+    "hash": [],
+    "alias_list": []
   },
   {
     "esport_name": "yubn",
@@ -9189,6 +9895,7 @@
       "NTH YukaPEROdator",
       "NTH_YukaPEROdator",
       "NTH_yukaPEROdator",
+      "nth yukaPEROdator",
       "yukaPEROdator",
       "yukaPEROdator FC"
     ]
@@ -9211,7 +9918,8 @@
       "3537ade4a86494e87b7bc9091834d98e"
     ],
     "alias_list": [
-      "lzhidan"
+      "lzhidan",
+      "lzhidann"
     ]
   },
   {

@@ -259,23 +259,34 @@ def scrape_games(tournament_df, current_game_df):
                     game_map = elem.find('p', class_='gameMap')
                     if game_title.text == "All games":
                         continue
+
+                    pending_game = elem.find('p', class_='pendingGame')
+
+                    if pending_game is not None:
+                        continue
+
                     if game_title is None or game_map is None:
                         logger.info(f"Error: {tournament_full_name} - {tournament_url} ")
                         continue
                     game_title = game_title.text.strip()
                     game_map = game_map.text.strip()
                     game_id = elem['href'].replace("/algs/game/", "")
-                    game_timestamp = elem.find("p", class_="settings-label")["data-timestamp"]
+                    settings_label = elem.find("p", class_="settings-label")
 
-                    game_match = re.match(game_pattern, game_title)
-                    if game_match:
-                        game_num = game_match.group("game_num").strip()
+                    if settings_label is not None:
+                        game_timestamp = settings_label["data-timestamp"]
 
-                        r = (
-                            tournament_full_name, tournament_name, tournament_year, tournament_split,
-                            tournament_region, tournament_url, tournament_day,
-                            game_title, game_map, game_timestamp, game_num, game_id)
-                        game_list.append(r)
+                        game_match = re.match(game_pattern, game_title)
+                        if game_match:
+                            game_num = game_match.group("game_num").strip()
+
+                            r = (
+                                tournament_full_name, tournament_name, tournament_year, tournament_split,
+                                tournament_region, tournament_url, tournament_day,
+                                game_title, game_map, game_timestamp, game_num, game_id)
+                            game_list.append(r)
+                    else:
+                        logger.error(f"Error: {tournament_full_name} - {tournament_url} - {game_title}")
 
     game_df = pd.DataFrame(game_list, columns=game_columns)
 

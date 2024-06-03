@@ -49,6 +49,11 @@ def filter_invalid_url(url):
 
 
 def get_players_esports_profile():
+    """
+
+
+    :return:
+    """
     data_dir = "data/liquidpedia"
     # regions_list = ["North_America", "EMEA", "APAC_North", "APAC_South"]
 
