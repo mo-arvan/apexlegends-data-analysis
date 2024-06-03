@@ -327,7 +327,10 @@ def main():
     init_data = args.init_data
 
     if os.path.exists(algs_game_list_file):
-        current_game_df = pd.read_csv(algs_game_list_file)
+        current_game_df = pd.read_csv(algs_game_list_file,
+                                      na_filter=False,
+
+                                      )
     else:
         current_game_df = None
 
@@ -340,7 +343,8 @@ def main():
 
     game_df.to_csv(algs_game_list_file,
                    index=False,
-                   quoting=csv.QUOTE_NONNUMERIC)
+                   quoting=csv.QUOTE_NONNUMERIC,
+                   )
 
     scrape_games_data(game_df, algs_games_dir, init_data_dir)
 

@@ -2424,8 +2424,13 @@
   },
   {
     "esport_name": "MJ",
-    "hash": [],
-    "alias_list": []
+    "hash": [
+      "3b010b577ad91d2e5ea65df603d41197"
+    ],
+    "alias_list": [
+      "MJ",
+      "hmm"
+    ]
   },
   {
     "esport_name": "MaTaFe",
@@ -5906,17 +5911,7 @@
       "GGLeogri3x6"
     ]
   },
-  {
-    "esport_name": null,
-    "hash": [
-      "670fc77ace46a17e40588585970f8dc4"
-    ],
-    "alias_list": [
-      "GG Qzier",
-      "GG_Qzier",
-      "qzierr"
-    ]
-  },
+
   {
     "esport_name": null,
     "hash": [
@@ -8219,16 +8214,7 @@
       "hayden"
     ]
   },
-  {
-    "esport_name": null,
-    "hash": [
-      "3b010b577ad91d2e5ea65df603d41197"
-    ],
-    "alias_list": [
-      "MJ",
-      "hmm"
-    ]
-  },
+
   {
     "esport_name": null,
     "hash": [
@@ -9517,8 +9503,14 @@
   },
   {
     "esport_name": "qzier",
-    "hash": [],
-    "alias_list": []
+    "hash": [
+      "670fc77ace46a17e40588585970f8dc4"
+    ],
+    "alias_list": [
+      "GG Qzier",
+      "GG_Qzier",
+      "qzierr"
+    ]
   },
   {
     "esport_name": "rBlackVenom",
