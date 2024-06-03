@@ -38,8 +38,11 @@ def match_hash_to_player(player_name_hash_to_match, esports_list):
     for player_name, player_hash in player_name_hash_to_match:
         if player_name == "Osivien" and player_hash == "cb3a766e957858a490eb8408245b91fd":
             continue
-
-        esport_list_match = next(filter(lambda x: player_hash in x[1]["hash"], enumerate(esports_list)), None)
+        try:
+            esport_list_match = next(filter(lambda x: player_hash in x[1]["hash"], enumerate(esports_list)), None)
+        except:
+            print(f"Error with {player_name} {player_hash}")
+            continue
 
         if esport_list_match is not None:
             match_index, matching_player = esport_list_match
@@ -47,7 +50,12 @@ def match_hash_to_player(player_name_hash_to_match, esports_list):
             if player_name not in matching_player["alias_list"]:
                 esports_list[match_index]["alias_list"].append(player_name)
         else:
-            esports_list.append((None, [player_hash], [player_name]))
+            player_dict = {
+                "esport_name": None,
+                "hash": [player_hash],
+                "alias_list": [player_name]
+            }
+            esports_list.append(player_dict)
 
     for e in esports_list:
         e["alias_list"] = sorted(list(set(e["alias_list"])))
