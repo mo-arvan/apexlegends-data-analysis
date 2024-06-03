@@ -320,11 +320,7 @@
       "Vor_AochasoN"
     ]
   },
-  {
-    "esport_name": "Aono",
-    "hash": [],
-    "alias_list": []
-  },
+
   {
     "esport_name": "Archery",
     "hash": [
@@ -539,11 +535,7 @@
     "hash": [],
     "alias_list": []
   },
-  {
-    "esport_name": "Bellkun",
-    "hash": [],
-    "alias_list": []
-  },
+
   {
     "esport_name": "Besk9",
     "hash": [
@@ -2019,11 +2011,7 @@
       "TGRD_Keon"
     ]
   },
-  {
-    "esport_name": "Kernel garcia",
-    "hash": [],
-    "alias_list": []
-  },
+
   {
     "esport_name": "KiingZ",
     "hash": [
@@ -4683,11 +4671,7 @@
       "CCG_You66"
     ]
   },
-  {
-    "esport_name": "YouL1ng",
-    "hash": [],
-    "alias_list": []
-  },
+
   {
     "esport_name": "Yudu",
     "hash": [
@@ -5270,8 +5254,8 @@
       "RTS Bazaar"
     ]
   },
-  {
-    "esport_name": null,
+    {
+    "esport_name": "Bellkun",
     "hash": [
       "68e0c5ea7591a6bc4a5b73f51b605ea7"
     ],
@@ -7567,8 +7551,8 @@
       "SMS SiveNTheWasp"
     ]
   },
-  {
-    "esport_name": null,
+    {
+    "esport_name": "YouL1ng",
     "hash": [
       "e35fedb09bed3494e9023c6aaccf538f"
     ],
@@ -7974,8 +7958,8 @@
       "UnKnowNToXinStv"
     ]
   },
-  {
-    "esport_name": null,
+    {
+    "esport_name": "Aono",
     "hash": [
       "7b265dd047652ff5b39b5caa2cf78fb7"
     ],
@@ -8695,8 +8679,8 @@
       "NewJeans_KingMSG"
     ]
   },
-  {
-    "esport_name": null,
+    {
+    "esport_name": "Kernel garcia",
     "hash": [
       "fbaa4050f34b0a9dda2ec651ffd00d28"
     ],
