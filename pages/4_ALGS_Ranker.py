@@ -26,10 +26,21 @@ st.set_page_config(
 )
 
 
-def get_player_ranking(input_df, minimum_damage):
-    ranking_df = input_df[["player_id", "team_name", "game_id", "player_input", "hit_count", "damage_sum"]]
-    ranking_details_df = input_df.loc[input_df["damage_sum"] >= minimum_damage]
-    high_hit_df = ranking_df.loc[ranking_df["damage_sum"] >= minimum_damage]
+def get_player_ranking(input_df,
+                       minimum_damage,
+                       min_distance,
+                       max_distance):
+    ranking_df = input_df[["player_id", "team_name", "game_id",
+                           "player_input", "hit_count", "damage_sum", "distance_median"]]
+
+    def filter_events(x_df, min_distance, max_distance, minimum_damage):
+        return x_df.loc[(x_df["distance_median"] >= min_distance) & (x_df["distance_median"] <= max_distance) & (
+                x_df["damage_sum"] >= minimum_damage)]
+
+    # ranking_details_df = input_df.loc[input_df["damage_sum"] >= minimum_damage]
+    ranking_details_df = filter_events(input_df, min_distance, max_distance, minimum_damage)
+    # high_hit_df = ranking_df.loc[ranking_df["damage_sum"] >= minimum_damage]
+    high_hit_df = filter_events(ranking_df, min_distance, max_distance, minimum_damage)
 
     high_hit_per_game_df = high_hit_df.groupby(["player_id", "game_id"]).agg(
         hit_count=("hit_count", "count"),
@@ -172,8 +183,13 @@ def get_player_ranking(input_df, minimum_damage):
     return high_hit_df, ranking_details_df
 
 
-def get_player_ranking_plot(input_df, minimum_damage, ranking_top_k, rank_column="high_hit_count"):
-    high_hit_df, ranking_details_df = get_player_ranking(input_df, minimum_damage)
+def get_player_ranking_plot(input_df,
+                            minimum_damage,
+                            ranking_top_k,
+                            min_distance,
+                            max_distance,
+                            rank_column="high_hit_count"):
+    high_hit_df, ranking_details_df = get_player_ranking(input_df, minimum_damage, min_distance, max_distance)
 
     high_hit_df = high_hit_df.sort_values(by=rank_column, ascending=False)
 
@@ -442,7 +458,7 @@ def get_player_ranking_plot(input_df, minimum_damage, ranking_top_k, rank_column
     # + bar_plot_count_text
     rank_bar_plot = rank_bar_plot + bar_plot_input_text
     rank_bar_plot = rank_bar_plot + bar_plot_count_text
-    rank_bar_plot = rank_bar_plot + bar_plot_percentage_text
+    # rank_bar_plot = rank_bar_plot + bar_plot_percentage_text
     rank_bar_plot = rank_bar_plot + legend_circles + legend_image_mark
 
     # rank_bar_plot = legend_image_mark
@@ -669,9 +685,20 @@ top_k = st.sidebar.number_input("Top K Players",
                                 value=20,
                                 key="top_k")
 
-ranking_scenarios = st.sidebar.selectbox("Ranking Scenarios",
-                                         ["Player Ranking", "Team Ranking"],
-                                         key="ranking_scenarios")
+min_distance = st.sidebar.number_input("Minimum Distance",
+                                       min_value=1,
+                                       max_value=1000,
+                                       value=1,
+                                       key="min_distance")
+max_distance = st.sidebar.number_input("Maximum Distance",
+                                       min_value=1,
+                                       max_value=1000,
+                                       value=1000,
+                                       key="max_distance")
+
+# ranking_scenarios = st.sidebar.selectbox("Ranking Scenarios",
+#                                          ["Player Ranking", "Team Ranking"],
+#                                          key="ranking_scenarios")
 # rank_column = "high_hit_count"
 #     # rank_column = "max_hit_count_per_game"
 #     # rank_column = "mean_hit_count_per_game"
@@ -691,12 +718,14 @@ ranking_by = st.sidebar.selectbox("Ranking By",
 rank_column = rank_by_dict.get(ranking_by, "high_hit_count")
 
 ranking_function = get_player_ranking_plot
-if ranking_scenarios == "Team Ranking":
-    ranking_function = get_team_ranking_plot
+# if ranking_scenarios == "Team Ranking":
+#     ranking_function = get_team_ranking_plot
 
 bar_plot, raw_data_1, raw_data_2 = ranking_function(damage_events_filtered_df,
                                                     minimum_damage,
                                                     top_k,
+                                                    min_distance,
+                                                    max_distance,
                                                     rank_column)
 
 st.altair_chart(bar_plot, use_container_width=True)
