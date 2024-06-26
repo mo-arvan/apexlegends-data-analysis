@@ -1,15 +1,15 @@
-import json
 import logging
 import os
 import pickle
 import re
 from argparse import ArgumentParser
 
-import src.data_helper as data_helper
-import src.data_loader as data_loader
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+
+import src.data_helper as data_helper
+import src.data_loader as data_loader
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
@@ -327,6 +327,10 @@ def post_process(damage_events_dir, output_dir, init_dict):
     damage_df["hit_count"] = damage_df["damage"].apply(lambda x: len(x))
     damage_df["damage_sum"] = damage_df["damage"].apply(lambda x: sum(x))
     damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
+    damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
+    damage_df["event_duration"] = damage_df["event_timestamp"].apply(lambda x: max(x) - min(x))
+
+    damage_df = damage_df.sort_values(by=["game_id", "event_duration"], ascending=[True, False])
 
     player_hash_to_name = [(game["gameID"],
                             player["nucleusHash"][:32],
@@ -398,7 +402,6 @@ def main():
     event_files = [f for f in event_files if f[:-4] not in existing_files]
     num_events = len(event_files)
     # 52dd387d9d52ec001940a8c175437335
-
 
     if num_events > 0:
         events_gen = read_events(event_files, events_dir)
