@@ -6,6 +6,7 @@ import streamlit as st
 
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -31,11 +32,16 @@ gun_stats_df, _, _ = data_helper.get_gun_stats()
 logger.info("Data loaded.")
 
 
-def damage_plot_builder(damage_data_df):
+def damage_plot_builder(damage_data_df, min_distance, max_distance):
+    data_df = damage_data_df.copy()
+    data_df = data_df.loc[(data_df["distance_median"] >= min_distance) & (data_df["distance_median"] <= max_distance)]
+
     bin_count = int(len(damage_data_df["hit_count"].unique()) / 2)
 
+    base_chart = alt.Chart(damage_data_df)
+
     interval = alt.selection_interval(encodings=['x', 'y'])
-    heatmap = alt.Chart(damage_data_df).mark_rect().encode(
+    heatmap = base_chart.mark_rect().encode(
         x=alt.X('distance_median:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
         y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
@@ -44,13 +50,13 @@ def damage_plot_builder(damage_data_df):
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
-        height=700,
+        height=400,
 
     ).add_params(
         interval
     )
 
-    epdf_plot = (alt.Chart(damage_data_df)
+    epdf_line_plot = (base_chart
     .transform_filter(
         interval
     )
@@ -69,19 +75,46 @@ def damage_plot_builder(damage_data_df):
         y='epdf:Q',
         color=alt.Color('player_input:N',
                         scale=alt.Scale(scheme='dark2'),
-                        )
+                        ),
         # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
         # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
+
     ).properties(
         title={"text": f"ePDF of Hit Count",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
         # height=700,
+        width=400,
     )
     )
+    epdf_point_plot = (base_chart
+    .transform_filter(
+        interval
+    )
+    .transform_density(
+        density='hit_count',
+        groupby=['player_input'],
+        as_=['hit_count', 'epdf'],
 
-    ecdf_plot = (alt.Chart(damage_data_df)
+    )
+    .mark_point(
+        filled=True,
+        size=25,
+    ).encode(
+        x=alt.X('hit_count',
+                # bin=alt.Bin(maxbins=bin_count),
+                axis=alt.Axis(title='Hit Count'),
+                scale=alt.Scale(zero=False)),
+        y='epdf:Q',
+        color=alt.Color('player_input:N',
+                        scale=alt.Scale(scheme='dark2'),
+                        ),
+        tooltip=["player_input", "hit_count", alt.Tooltip("epdf:Q", format=".2f")],
+    ))
+    epdf_line_plot = epdf_line_plot + epdf_point_plot
+
+    ecdf_line_plot = (base_chart
     .transform_filter(
         interval
     )
@@ -112,18 +145,51 @@ def damage_plot_builder(damage_data_df):
 
         ),
         # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
-        # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
+        tooltip=["player_input", "hit_count", "ecdf:Q"]
     ).properties(
         title={"text": f"eCDF of Hit Count",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
         # height=700,
+        width=400,
     )
     )
 
-    main_plot = alt.vconcat(heatmap, epdf_plot, ecdf_plot, )
-    print("")
+    ecdf_point_plot = (base_chart
+    .transform_filter(
+        interval
+    )
+    .transform_density(
+        density='hit_count',
+        groupby=['player_input'],
+        as_=['hit_count', 'ecdf'],
+        cumulative=True,
+    )
+    .mark_point(
+        filled=True,
+        size=25,
+    ).encode(
+        x=alt.X('hit_count',
+                # bin=alt.Bin(maxbins=bin_count),
+                axis=alt.Axis(title='Hit Count'),
+                scale=alt.Scale(zero=False)),
+        y='ecdf:Q',
+        color=alt.Color('player_input:N',
+                        scale=alt.Scale(scheme='dark2'),
+                        ),
+        tooltip=["player_input", "hit_count", alt.Tooltip("ecdf:Q", format=".2f")],
+    ))
+
+    ecdf_line_plot = ecdf_line_plot + ecdf_point_plot
+
+    # dist_plots = epdf_plot | ecdf_plot
+    main_plot = alt.vconcat(heatmap, epdf_line_plot, ecdf_line_plot, center=True)
+
+    # hcat = alt.hconcat(epdf_plot, ecdf_plot)
+    # main_plot = alt.vconcat(heatmap, epdf_plot, ecdf_plot)
+    # main_plot = edf_pdf_plot
+    # print(main_plot)
     # , color_continuous_scale="Viridis"
     #  nbinsx=20, nbinsy=20
     # density_heatmap_plotly = px.density_heatmap(damage_data_df,
@@ -295,17 +361,38 @@ def damage_plot_builder(damage_data_df):
         # height=700,
     )
 
-    plot_list = [epdf_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
+    plot_list = [epdf_line_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
     return plot_list, weapons_data_df
+
 
 filters_container = st.sidebar.container()
 
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
     algs_games_df, gun_stats_df, filters_container)
 
-plots, raw_data = damage_plot_builder(damage_events_filtered_df)
+filter_unknown_inputs = filters_container.checkbox("Filter Unknown Inputs", value=True)
+
+if filter_unknown_inputs:
+    valid_inputs = ["Mouse & Keyboard", "Controller"]
+    damage_events_filtered_df = damage_events_filtered_df.loc[
+        damage_events_filtered_df["player_input"].isin(valid_inputs)]
+
+min_distance = st.sidebar.number_input("Minimum Distance",
+                                       min_value=1,
+                                       max_value=1000,
+                                       value=1,
+                                       key="min_distance")
+max_distance = st.sidebar.number_input("Maximum Distance",
+                                       min_value=1,
+                                       max_value=1000,
+                                       value=1000,
+                                       key="max_distance")
+
+plots, raw_data = damage_plot_builder(damage_events_filtered_df, min_distance, max_distance)
 
 st.altair_chart(plots[0], use_container_width=True)
+
+# st.altair_chart(plots[1], use_container_width=True)
 
 # TODO:
 # interval selection
