@@ -1,5 +1,4 @@
 import logging
-from functools import partial
 
 import altair as alt
 import numpy as np
@@ -27,7 +26,7 @@ st.set_page_config(
     }
 )
 st.markdown('<style>#vg-tooltip-element{z-index: 1000051}</style>',
-             unsafe_allow_html=True)
+            unsafe_allow_html=True)
 
 logger.info("Loading data...")
 # with st.spinner("Loading data..."):
@@ -50,6 +49,12 @@ def damage_plot_builder(damage_data_df,
 
     plots_height = 500
     plot_width = 700
+
+    color_scale = alt.Scale(
+        # scheme='dark2',
+        domain=["Mouse & Keyboard", "Controller"],
+        range=['red', 'blue'],
+    )
 
     hit_count_distance_heatmap = (alt.Chart(data_df).mark_rect().encode(
         x=alt.X('distance_median:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
@@ -93,25 +98,30 @@ def damage_plot_builder(damage_data_df,
         # Return a DataFrame with the hit_count values, EPDF values, and player_input group
         return pd.DataFrame({'hit_count': x, 'epdf': epdf, 'player_input': group.name})
 
-    #
-    # # Function to compute histogram-based EPDF
-    def compute_hist_epdf(group):
+    # Function to compute histogram-based EPDF and ECDF
+    def compute_hist_epdf_ecdf(group):
         # Compute the histogram
-
-        bin_centers = list(range(1, max(group['hit_count'])))
+        bin_centers = list(range(1, max(group['hit_count']) + 1))  # Corrected to include max value
         bins = len(bin_centers)
         counts, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
 
-        # Calculate the bin centers
-        # bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
-        # Create a DataFrame for the EPDF
-        epdf_df = pd.DataFrame({'hit_count': bin_centers, 'epdf': counts, 'player_input': group.name})
-        return epdf_df
+        # Calculate the ECDF
+        ecdf = np.cumsum(counts * np.diff(bin_edges))
+        eccdf = 1 - ecdf
 
-    compute_hist_fn = partial(compute_hist_epdf)
-    # # Apply the function to each group and concatenate results
-    epdf_df = data_df.groupby('player_input', group_keys=False).apply(compute_hist_fn).reset_index(drop=True)
-    # epdf_df = data_df.groupby('player_input').apply(compute_epdf).reset_index(drop=True)
+        # Create a DataFrame for the EPDF and ECDF
+        epdf_ecdf_df = pd.DataFrame({
+            'hit_count': bin_centers,
+            'epdf': counts,
+            'ecdf': ecdf,
+            'eccdf': eccdf,
+            'player_input': group.name
+        })
+        return epdf_ecdf_df
+
+    # Apply the function to each group and concatenate results, excluding group keys in the operation
+    epdf_ecdf_df = data_df.groupby('player_input', group_keys=False).apply(compute_hist_epdf_ecdf).reset_index(
+        drop=True)
 
     # epdf_base_transform = alt.Chart(data_df).transform_density(
     #     density='hit_count',
@@ -119,18 +129,21 @@ def damage_plot_builder(damage_data_df,
     #     as_=['hit_count', 'epdf'],
     # )
 
-    epdf_base_transform = alt.Chart(epdf_df)
+    base_chart = alt.Chart(epdf_ecdf_df)
 
     columns = data_df["player_input"].unique()
 
-    epdf_line = epdf_base_transform.mark_line(interpolate="basis").encode(
+    epdf_line = base_chart.mark_line(interpolate="basis",
+                                     strokeWidth=5,
+                                     ).encode(
         x=alt.X('hit_count:Q',
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)
                 ),
         y="epdf:Q",
         color=alt.Color('player_input:N',
-                        scale=alt.Scale(scheme='dark2'),
+                        # scale=alt.Scale(scheme='dark2'),
+                        scale=color_scale,
                         ),
     ).properties(
         title={"text": f"ePDF of Hit Count",
@@ -156,7 +169,7 @@ def damage_plot_builder(damage_data_df,
     )
 
     # Draw a rule at the location of the selection
-    rules = epdf_base_transform.transform_pivot(
+    rules = base_chart.transform_pivot(
         "player_input",
         value="epdf",
         groupby=["hit_count"]
@@ -204,7 +217,7 @@ def damage_plot_builder(damage_data_df,
 
     # Put the five layers into a chart and bind the data
     epdf_plot = alt.layer(
-        rules, epdf_line, epdf_points,
+        epdf_line, epdf_points, rules,
     ).properties(
         # width=600, height=300
     )
@@ -238,7 +251,8 @@ def damage_plot_builder(damage_data_df,
         color=alt.Color(
             'player_input:N',
             # legend=None,
-            scale=alt.Scale(scheme='dark2'),
+            # scale=alt.Scale(scheme='dark2'),
+            scale=color_scale,
 
         ),
         # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
