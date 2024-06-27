@@ -98,21 +98,33 @@ def damage_plot_builder(damage_data_df,
         # Return a DataFrame with the hit_count values, EPDF values, and player_input group
         return pd.DataFrame({'hit_count': x, 'epdf': epdf, 'player_input': group.name})
 
-    # Function to compute histogram-based EPDF and ECDF
-    def compute_hist_epdf_ecdf(group):
+    def compute_hist_epdf(group):
         # Compute the histogram
-        bin_centers = list(range(1, max(group['hit_count']) + 1))  # Corrected to include max value
+
+        bin_centers = list(range(1, max(group['hit_count'])))
         bins = len(bin_centers)
         counts, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
 
+        # Calculate the bin centers
+        # bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+        # Create a DataFrame for the EPDF
+        epdf_df = pd.DataFrame({'hit_count': bin_centers, 'epdf': counts, 'player_input': group.name})
+        return epdf_df
+
+    # Function to compute histogram-based EPDF and ECDF
+    def compute_hist_epdf_ecdf(group):
+        # Compute the histogram
+        bins = list(range(1, max(group['hit_count']) + 2))  # Corrected to include max value
+        density, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
+
         # Calculate the ECDF
-        ecdf = np.cumsum(counts * np.diff(bin_edges))
+        ecdf = np.cumsum(density * np.diff(bin_edges))
         eccdf = 1 - ecdf
 
         # Create a DataFrame for the EPDF and ECDF
         epdf_ecdf_df = pd.DataFrame({
-            'hit_count': bin_centers,
-            'epdf': counts,
+            'hit_count': bins[:-1],
+            'epdf': density,
             'ecdf': ecdf,
             'eccdf': eccdf,
             'player_input': group.name
@@ -120,14 +132,8 @@ def damage_plot_builder(damage_data_df,
         return epdf_ecdf_df
 
     # Apply the function to each group and concatenate results, excluding group keys in the operation
-    epdf_ecdf_df = data_df.groupby('player_input', group_keys=False).apply(compute_hist_epdf_ecdf).reset_index(
+    epdf_ecdf_df = data_df.groupby('player_input').apply(compute_hist_epdf_ecdf, include_groups=False).reset_index(
         drop=True)
-
-    # epdf_base_transform = alt.Chart(data_df).transform_density(
-    #     density='hit_count',
-    #     groupby=['player_input'],
-    #     as_=['hit_count', 'epdf'],
-    # )
 
     base_chart = alt.Chart(epdf_ecdf_df)
 
@@ -160,16 +166,21 @@ def damage_plot_builder(damage_data_df,
                                        empty=False)
 
     # Draw points on the line, and highlight based on selection
-    epdf_points = epdf_line.mark_point(
+    epdf_points = base_chart.mark_point(
         filled=True,
-        size=50,
+        size=100,
         color="white",
     ).encode(
+        x=alt.X('hit_count:Q',
+                axis=alt.Axis(title='Hit Count'),
+                scale=alt.Scale(zero=False)
+                ),
+        y="epdf:Q",
         opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0))
     )
 
     # Draw a rule at the location of the selection
-    rules = base_chart.transform_pivot(
+    epdf_rules = base_chart.transform_pivot(
         "player_input",
         value="epdf",
         groupby=["hit_count"]
@@ -181,123 +192,70 @@ def damage_plot_builder(damage_data_df,
         opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0)),
         tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
     ).add_params(epdf_nearest)
-    # columns = ["A", "B", "C"]
-    # source = pd.DataFrame(
-    #     np.cumsum(np.random.randn(100, 3), 0).round(2),
-    #     columns=columns, index=pd.RangeIndex(100, name="x"),
-    # )
-    # source = source.reset_index().melt("x", var_name="category", value_name="y")
-    #
-    #
-    # nearest = alt.selection_point(nearest=True, on="mouseover",
-    #                               fields=["x"], empty=False)
-    #
-    # # The basic line
-    # line = alt.Chart(source).mark_line(interpolate="basis").encode(
-    #     x="x:Q",
-    #     y="y:Q",
-    #     color="category:N"
-    # )
-    #
-    # # Draw points on the line, and highlight based on selection
-    # points = line.mark_point().encode(
-    #     opacity=alt.condition(nearest, alt.value(1), alt.value(0))
-    # )
-    #
-    # # Draw a rule at the location of the selection
-    # rules = alt.Chart(source).transform_pivot(
-    #     "category",
-    #     value="y",
-    #     groupby=["x"]
-    # ).mark_rule(color="gray").encode(
-    #     x="x:Q",
-    #     opacity=alt.condition(nearest, alt.value(0.3), alt.value(0)),
-    #     tooltip=[alt.Tooltip(c, type="quantitative") for c in columns],
-    # ).add_params(nearest)
 
     # Put the five layers into a chart and bind the data
     epdf_plot = alt.layer(
-        epdf_line, epdf_points, rules,
-    ).properties(
-        # width=600, height=300
+        epdf_line, epdf_points, epdf_rules,
     )
 
     epdf_plot = epdf_plot.interactive()
 
-    ecdf_line_plot = (alt.Chart(data_df)
-    # .transform_filter(
-    #     interval
-    # )
-    .transform_density(
-        density='hit_count',
-        groupby=['player_input'],
-        as_=['hit_count', 'ecdf'],
-        cumulative=True,
-    )
-    # .transform_window(
-    #     ecdf='cume_dist()',
-    #     # as_=['hit_count', 'density'],
-    #     groupby=['player_input'],
-    #     sort=[{'field': 'hit_count'}],
-    #     # cumulative=True
-    # )
-    .mark_line()
-    .encode(
-        x=alt.X('hit_count',
-                # bin=alt.Bin(maxbins=bin_count),
+    eccdf_line = base_chart.mark_line(interpolate="basis",
+                                      strokeWidth=5,
+                                      ).encode(
+        x=alt.X('hit_count:Q',
                 axis=alt.Axis(title='Hit Count'),
-                scale=alt.Scale(zero=False)),
-        y='ecdf:Q',
-        color=alt.Color(
-            'player_input:N',
-            # legend=None,
-            # scale=alt.Scale(scheme='dark2'),
-            scale=color_scale,
-
-        ),
-        # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
-        tooltip=["player_input", "hit_count", "ecdf:Q"]
+                scale=alt.Scale(zero=False)
+                ),
+        y="eccdf:Q",
+        color=alt.Color('player_input:N',
+                        # scale=alt.Scale(scheme='dark2'),
+                        scale=color_scale,
+                        ),
     ).properties(
-        title={"text": f"eCDF of Hit Count",
-               # "subtitle": f"Median Fight Count: {fights_count_median}",
+        title={"text": f"eCCDF of Hit Count",
                "subtitleColor": "gray",
                },
-        # height=700,
-        # width=400,
         height=plots_height,
         width=plot_width,
     )
-    )
 
-    ecdf_point_plot = (alt.Chart(data_df)
-    # .transform_filter(
-    #     interval
-    # )
-    .transform_density(
-        density='hit_count',
-        groupby=['player_input'],
-        as_=['hit_count', 'ecdf'],
-        cumulative=True,
-    )
-    .mark_point(
+    # Draw points on the line, and highlight based on selection
+    eccdf_points = base_chart.mark_point(
         filled=True,
-        size=25,
+        size=100,
+        color="white",
     ).encode(
-        x=alt.X('hit_count',
-                # bin=alt.Bin(maxbins=bin_count),
+        x=alt.X('hit_count:Q',
                 axis=alt.Axis(title='Hit Count'),
-                scale=alt.Scale(zero=False)),
-        y='ecdf:Q',
-        color=alt.Color('player_input:N',
-                        scale=alt.Scale(scheme='dark2'),
-                        ),
-        tooltip=["player_input", "hit_count", alt.Tooltip("ecdf:Q", format=".2f")],
-    ))
+                scale=alt.Scale(zero=False)
+                ),
+        y="eccdf:Q",
+        opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0))
+    )
 
-    ecdf_line_plot = ecdf_line_plot + ecdf_point_plot
-    ecdf_line_plot = ecdf_line_plot.interactive()
+    # Draw a rule at the location of the selection
+    eccdf_rules = base_chart.transform_pivot(
+        "player_input",
+        value="eccdf",
+        groupby=["hit_count"]
+    ).mark_rule(
+        color="gray",
+        strokeWidth=2,
+    ).encode(
+        x="hit_count:Q",
+        opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0)),
+        tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
+    ).add_params(epdf_nearest)
 
-    plot_list = [hit_count_distance_heatmap, hit_count_duration_heatmap, epdf_plot, ecdf_line_plot]
+    # Put the five layers into a chart and bind the data
+    eccdf_plot = alt.layer(
+        eccdf_line, eccdf_points, eccdf_rules,
+    )
+
+    eccdf_plot = eccdf_plot.interactive()
+
+    plot_list = [hit_count_distance_heatmap, hit_count_duration_heatmap, epdf_plot, eccdf_plot]
 
     return plot_list, data_df
 
@@ -317,7 +275,7 @@ if filter_unknown_inputs:
 hit_count_clip = st.sidebar.number_input("Hit Count Clip",
                                          min_value=1,
                                          max_value=30,
-                                         value=20,
+                                         value=15,
                                          key="hit_count_clip")
 
 min_distance = st.sidebar.number_input("Minimum Distance",
