@@ -1,8 +1,11 @@
 import logging
+from functools import partial
 
 import altair as alt
-# import plotly.express as px
+import numpy as np
+import pandas as pd
 import streamlit as st
+from scipy.stats import gaussian_kde
 
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
@@ -15,7 +18,7 @@ logger.info(f"Running {__file__}")
 st.set_page_config(
     page_title="ALGS Fights Explorer",
     page_icon="📊",
-    layout="wide",
+    # layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         # 'Get Help': 'https://www.extremelycoolapp.com/help',
@@ -23,6 +26,8 @@ st.set_page_config(
         # 'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
+st.markdown('<style>#vg-tooltip-element{z-index: 1000051}</style>',
+             unsafe_allow_html=True)
 
 logger.info("Loading data...")
 # with st.spinner("Loading data..."):
@@ -32,16 +37,21 @@ gun_stats_df, _, _ = data_helper.get_gun_stats()
 logger.info("Data loaded.")
 
 
-def damage_plot_builder(damage_data_df, min_distance, max_distance):
+def damage_plot_builder(damage_data_df,
+                        hit_count_clip,
+                        min_distance,
+                        max_distance):
     data_df = damage_data_df.copy()
     data_df = data_df.loc[(data_df["distance_median"] >= min_distance) & (data_df["distance_median"] <= max_distance)]
+    # data_df = data_df.loc[data_df["hit_count"] <= max_hit_count]
+    data_df["hit_count"] = data_df["hit_count"].clip(upper=hit_count_clip)
 
-    bin_count = int(len(damage_data_df["hit_count"].unique()) / 2)
+    bin_count = int(len(data_df["hit_count"].unique()) / 2)
 
-    base_chart = alt.Chart(damage_data_df)
+    plots_height = 500
+    plot_width = 700
 
-    interval = alt.selection_interval(encodings=['x', 'y'])
-    heatmap = base_chart.mark_rect().encode(
+    hit_count_distance_heatmap = (alt.Chart(data_df).mark_rect().encode(
         x=alt.X('distance_median:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
         y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
@@ -50,74 +60,161 @@ def damage_plot_builder(damage_data_df, min_distance, max_distance):
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
-        height=400,
-
-    ).add_params(
-        interval
+        height=plots_height,
+        width=plot_width,
+    )
     )
 
-    epdf_line_plot = (base_chart
-    .transform_filter(
-        interval
-    )
-    .transform_density(
-        density='hit_count',
-        groupby=['player_input'],
-        as_=['hit_count', 'epdf'],
-
-    )
-    .mark_line()
-    .encode(
-        x=alt.X('hit_count',
-                # bin=alt.Bin(maxbins=bin_count),
-                axis=alt.Axis(title='Hit Count'),
-                scale=alt.Scale(zero=False)),
-        y='epdf:Q',
-        color=alt.Color('player_input:N',
-                        scale=alt.Scale(scheme='dark2'),
-                        ),
-        # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
-        # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
-
+    hit_count_duration_heatmap = (alt.Chart(data_df).mark_rect().encode(
+        x=alt.X('event_duration:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Duration (s)')),
+        y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
+        color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
     ).properties(
-        title={"text": f"ePDF of Hit Count",
+        title={"text": f"Hit Count vs Duration Heatmap",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
-        # height=700,
-        width=400,
-    )
-    )
-    epdf_point_plot = (base_chart
-    .transform_filter(
-        interval
-    )
-    .transform_density(
-        density='hit_count',
-        groupby=['player_input'],
-        as_=['hit_count', 'epdf'],
+        height=plots_height,
+        width=plot_width,
 
     )
-    .mark_point(
-        filled=True,
-        size=25,
-    ).encode(
-        x=alt.X('hit_count',
-                # bin=alt.Bin(maxbins=bin_count),
+    )
+
+    def compute_epdf(group):
+        # Fit the KDE to the data
+        kde = gaussian_kde(group['hit_count'])
+
+        # Create a range of values for hit_count over which to evaluate the KDE
+        x = np.linspace(group['hit_count'].min(), group['hit_count'].max(), 100)
+
+        # Evaluate the KDE over this range to get the EPDF values
+        epdf = kde.evaluate(x)
+
+        # Return a DataFrame with the hit_count values, EPDF values, and player_input group
+        return pd.DataFrame({'hit_count': x, 'epdf': epdf, 'player_input': group.name})
+
+    #
+    # # Function to compute histogram-based EPDF
+    def compute_hist_epdf(group):
+        # Compute the histogram
+
+        bin_centers = list(range(1, max(group['hit_count'])))
+        bins = len(bin_centers)
+        counts, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
+
+        # Calculate the bin centers
+        # bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+        # Create a DataFrame for the EPDF
+        epdf_df = pd.DataFrame({'hit_count': bin_centers, 'epdf': counts, 'player_input': group.name})
+        return epdf_df
+
+    compute_hist_fn = partial(compute_hist_epdf)
+    # # Apply the function to each group and concatenate results
+    epdf_df = data_df.groupby('player_input', group_keys=False).apply(compute_hist_fn).reset_index(drop=True)
+    # epdf_df = data_df.groupby('player_input').apply(compute_epdf).reset_index(drop=True)
+
+    # epdf_base_transform = alt.Chart(data_df).transform_density(
+    #     density='hit_count',
+    #     groupby=['player_input'],
+    #     as_=['hit_count', 'epdf'],
+    # )
+
+    epdf_base_transform = alt.Chart(epdf_df)
+
+    columns = data_df["player_input"].unique()
+
+    epdf_line = epdf_base_transform.mark_line(interpolate="basis").encode(
+        x=alt.X('hit_count:Q',
                 axis=alt.Axis(title='Hit Count'),
-                scale=alt.Scale(zero=False)),
-        y='epdf:Q',
+                scale=alt.Scale(zero=False)
+                ),
+        y="epdf:Q",
         color=alt.Color('player_input:N',
                         scale=alt.Scale(scheme='dark2'),
                         ),
-        tooltip=["player_input", "hit_count", alt.Tooltip("epdf:Q", format=".2f")],
-    ))
-    epdf_line_plot = epdf_line_plot + epdf_point_plot
-
-    ecdf_line_plot = (base_chart
-    .transform_filter(
-        interval
+    ).properties(
+        title={"text": f"ePDF of Hit Count",
+               "subtitleColor": "gray",
+               },
+        height=plots_height,
+        width=plot_width,
     )
+
+    # Create a selection that chooses the nearest point & selects based on x-value
+    epdf_nearest = alt.selection_point(nearest=True,
+                                       on="mouseover",
+                                       fields=["hit_count"],
+                                       empty=False)
+
+    # Draw points on the line, and highlight based on selection
+    epdf_points = epdf_line.mark_point(
+        filled=True,
+        size=50,
+        color="white",
+    ).encode(
+        opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0))
+    )
+
+    # Draw a rule at the location of the selection
+    rules = epdf_base_transform.transform_pivot(
+        "player_input",
+        value="epdf",
+        groupby=["hit_count"]
+    ).mark_rule(
+        color="gray",
+        strokeWidth=2,
+    ).encode(
+        x="hit_count:Q",
+        opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0)),
+        tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
+    ).add_params(epdf_nearest)
+    # columns = ["A", "B", "C"]
+    # source = pd.DataFrame(
+    #     np.cumsum(np.random.randn(100, 3), 0).round(2),
+    #     columns=columns, index=pd.RangeIndex(100, name="x"),
+    # )
+    # source = source.reset_index().melt("x", var_name="category", value_name="y")
+    #
+    #
+    # nearest = alt.selection_point(nearest=True, on="mouseover",
+    #                               fields=["x"], empty=False)
+    #
+    # # The basic line
+    # line = alt.Chart(source).mark_line(interpolate="basis").encode(
+    #     x="x:Q",
+    #     y="y:Q",
+    #     color="category:N"
+    # )
+    #
+    # # Draw points on the line, and highlight based on selection
+    # points = line.mark_point().encode(
+    #     opacity=alt.condition(nearest, alt.value(1), alt.value(0))
+    # )
+    #
+    # # Draw a rule at the location of the selection
+    # rules = alt.Chart(source).transform_pivot(
+    #     "category",
+    #     value="y",
+    #     groupby=["x"]
+    # ).mark_rule(color="gray").encode(
+    #     x="x:Q",
+    #     opacity=alt.condition(nearest, alt.value(0.3), alt.value(0)),
+    #     tooltip=[alt.Tooltip(c, type="quantitative") for c in columns],
+    # ).add_params(nearest)
+
+    # Put the five layers into a chart and bind the data
+    epdf_plot = alt.layer(
+        rules, epdf_line, epdf_points,
+    ).properties(
+        # width=600, height=300
+    )
+
+    epdf_plot = epdf_plot.interactive()
+
+    ecdf_line_plot = (alt.Chart(data_df)
+    # .transform_filter(
+    #     interval
+    # )
     .transform_density(
         density='hit_count',
         groupby=['player_input'],
@@ -152,14 +249,16 @@ def damage_plot_builder(damage_data_df, min_distance, max_distance):
                "subtitleColor": "gray",
                },
         # height=700,
-        width=400,
+        # width=400,
+        height=plots_height,
+        width=plot_width,
     )
     )
 
-    ecdf_point_plot = (base_chart
-    .transform_filter(
-        interval
-    )
+    ecdf_point_plot = (alt.Chart(data_df)
+    # .transform_filter(
+    #     interval
+    # )
     .transform_density(
         density='hit_count',
         groupby=['player_input'],
@@ -182,187 +281,11 @@ def damage_plot_builder(damage_data_df, min_distance, max_distance):
     ))
 
     ecdf_line_plot = ecdf_line_plot + ecdf_point_plot
+    ecdf_line_plot = ecdf_line_plot.interactive()
 
-    # dist_plots = epdf_plot | ecdf_plot
-    main_plot = alt.vconcat(heatmap, epdf_line_plot, ecdf_line_plot, center=True)
+    plot_list = [hit_count_distance_heatmap, hit_count_duration_heatmap, epdf_plot, ecdf_line_plot]
 
-    # hcat = alt.hconcat(epdf_plot, ecdf_plot)
-    # main_plot = alt.vconcat(heatmap, epdf_plot, ecdf_plot)
-    # main_plot = edf_pdf_plot
-    # print(main_plot)
-    # , color_continuous_scale="Viridis"
-    #  nbinsx=20, nbinsy=20
-    # density_heatmap_plotly = px.density_heatmap(damage_data_df,
-    #                                             x="distance_median",
-    #                                             y="hit_count",
-    #                                             marginal_x="histogram",
-    #                                             marginal_y="histogram",
-    #                                             # color_continuous_scale="Viridis",
-    #                                             color_continuous_scale=px.colors.sequential.Plasma,
-    #                                             nbinsx=10,
-    #                                             nbinsy=12,
-    #                                             # color="count()",
-    #                                             title="Hit Count vs Distance Heatmap",
-    #                                             labels={"distance_median": "Distance (m)", "hit_count": "Hit Count"},
-    #                                             histfunc="sum",
-    #                                             width=800,
-    #                                             height=800,
-    #                                             )
-
-    return [main_plot], damage_data_df
-
-    plot_df = players_grouped_df.sort_values(by="median_accuracy", ascending=False)
-    plot_df["median_accuracy_rank"] = range(1, len(plot_df) + 1)
-
-    fights_and_stats_data_df = weapons_data_df.merge(plot_df,
-                                                     on=["player_hash", "player_name"],
-                                                     how="inner")
-    fights_and_stats_data_df = fights_and_stats_data_df.sort_values(by=["median_accuracy_rank"], ascending=True)
-
-    median_accuracy_rank_top_k = fights_and_stats_data_df[
-        fights_and_stats_data_df["median_accuracy_rank"] <= min(top_k, len(players_grouped_df))]
-    box_plot_color = "gray"
-
-    box_plot = (alt.Chart(median_accuracy_rank_top_k).mark_boxplot(
-        extent="min-max",
-        color=box_plot_color,
-    ).encode(
-        alt.X("accuracy:Q", axis=alt.Axis(title='Accuracy (%)'), scale=alt.Scale(zero=False)),
-        alt.Y("player_name:N", axis=alt.Axis(title=''), sort=None),
-        color=alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
-        fill=alt.Color("player_name:N", legend=None, scale=alt.Scale(scheme='category20')),
-
-    ).properties(
-        title={"text": f"Accuracy Box Plot",
-               "subtitle": f"Median Fight Count: {fights_count_median}",
-               "subtitleColor": "gray",
-               },
-
-        # width=800,
-        # height=700,
-    ))
-
-    median_overall_accuracy = weapons_data_df["accuracy"].median()
-
-    high_accuracy_fights = weapons_data_df[weapons_data_df["accuracy"] >= median_overall_accuracy]
-
-    high_accuracy_count_rank = high_accuracy_fights.groupby(["player_hash", "player_name"]).agg(
-        high_accuracy_count=("accuracy", "count"),
-        sum_opening_damage=("damage_dealt", "sum"),
-    ).reset_index()
-
-    high_accuracy_count_rank_merged = high_accuracy_count_rank.merge(players_grouped_df,
-                                                                     on=["player_hash",
-                                                                         "player_name"],
-                                                                     how="left")
-
-    high_accuracy_count_rank_merged["high_accuracy_ratio"] = high_accuracy_count_rank_merged["high_accuracy_count"] / \
-                                                             high_accuracy_count_rank_merged["total_fights"]
-
-    high_accuracy_count_rank_merged = high_accuracy_count_rank_merged.sort_values(
-        by=["high_accuracy_count", "sum_opening_damage"], ascending=False)
-
-    high_accuracy_count_rank_merged["high_accuracy_count_rank"] = range(1, len(high_accuracy_count_rank_merged) + 1)
-
-    high_accuracy_fights = high_accuracy_fights.merge(high_accuracy_count_rank_merged,
-                                                      on=["player_hash", "player_name"],
-                                                      how="inner")
-
-    high_accuracy_top_k = high_accuracy_fights[high_accuracy_fights["high_accuracy_count_rank"] <= top_k]
-
-    high_accuracy_top_k = high_accuracy_top_k.sort_values(by=["high_accuracy_count", "sum_opening_damage"],
-                                                          ascending=False)
-
-    high_accuracy_top_k["one"] = 1
-
-    players = high_accuracy_top_k["player_name"].unique().tolist()
-
-    players = sorted(players, key=lambda x: x.lower())
-
-    bar_plot = alt.Chart(high_accuracy_top_k).mark_bar().encode(
-        alt.Y("player_name:N", axis=alt.Axis(title=''), sort=None),
-        alt.X("one:Q", axis=alt.Axis(title="Count"), scale=alt.Scale(zero=False)),
-        alt.Color("damage_dealt:N", legend=None, scale=alt.Scale(scheme='yelloworangered')),
-        tooltip=alt.Tooltip(
-            ['player_name', "weapon_name", "damage_dealt", 'shots', 'hits', "accuracy", "high_accuracy_count",
-             "total_fights",
-             "tournament_full_name", "tournament_region", "tournament_day", "game_title"
-             ]),
-    ).properties(
-
-        title={"text": f"Number of Fights with Higher than Median Accuracy ({median_overall_accuracy:.2f})%",
-               "subtitle": f"Text and color encode the damage dealt in the fight",
-               "subtitleColor": "gray",
-               },
-
-        # width=100,
-        # height=500,
-    )
-
-    bar_plot_text = bar_plot.mark_text(align="left",
-                                       baseline="middle",
-                                       color="white",
-                                       dx=-20).encode(
-        alt.X("one:Q", stack="zero"),
-        text="damage_dealt:Q",
-        color=alt.value("black")
-    )
-
-    bar_plot = bar_plot + bar_plot_text
-
-    high_accuracy_count_rank_merged = high_accuracy_count_rank_merged.sort_values(
-        by=["high_accuracy_ratio", "sum_opening_damage"],
-        ascending=False)
-    high_accuracy_count_rank_merged["high_accuracy_percent"] = high_accuracy_count_rank_merged[
-                                                                   "high_accuracy_ratio"] * 100
-
-    high_accuracy_count_rank_merged["high_accuracy_ratio_rank"] = range(1, len(high_accuracy_count_rank_merged) + 1)
-
-    high_accuracy_top_k_ratio = high_accuracy_count_rank_merged[
-        high_accuracy_count_rank_merged["high_accuracy_ratio_rank"] <= top_k]
-
-    bar_plot_2 = alt.Chart(high_accuracy_top_k_ratio).mark_bar().encode(
-        alt.Y("player_name:N", axis=alt.Axis(title=''), sort=None),
-        alt.X("high_accuracy_percent:Q", axis=alt.Axis(title="%"), scale=alt.Scale(zero=False)),
-        alt.Color("high_accuracy_count:N", legend=None, scale=alt.Scale(scheme='yelloworangered')),
-        tooltip=alt.Tooltip(
-            ['player_name', "sum_opening_damage", "high_accuracy_count",
-             "total_fights",
-             "mean_accuracy", "median_accuracy", "sum_shots", "sum_hits"
-             ]),
-    ).properties(
-        title={"text": f"% Fights with Higher than Median Accuracy ({median_overall_accuracy:.2f})%",
-               "subtitle": f"Text encode the damage dealt in the fight, color encode the number of fights with higher than median accuracy",
-               "subtitleColor": "gray",
-               },
-
-    )
-
-    sum_opening_damage_text = bar_plot_2.mark_text(align="left",
-                                                   baseline="middle",
-                                                   color="white",
-                                                   dx=-25).encode(
-        alt.X("high_accuracy_percent:Q", stack="zero"),
-        text="sum_opening_damage:Q",
-        color=alt.value("black")
-    )
-
-    bar_plot_2 = bar_plot_2 + sum_opening_damage_text
-
-    altair_scatter_2 = alt.Chart(weapons_data_df).mark_circle(size=25).encode(
-        alt.Y("shots", axis=alt.Axis(title='Shots'), scale=alt.Scale(zero=True)),
-        alt.X('damage_dealt', axis=alt.Axis(title='Damage Dealt'), scale=alt.Scale(zero=True)),
-        color=alt.Color('accuracy', legend=None, scale=alt.Scale(scheme='redyellowgreen')),
-        tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
-        # opacity=alt.Opacity("accuracy", legend=None, scale=alt.Scale(scheme='viridis')),
-    ).properties(
-        title="Accuracy Scatter Plot",
-        # width=800,
-        # height=700,
-    )
-
-    plot_list = [epdf_line_plot.interactive(), bar_plot, bar_plot_2, box_plot, altair_scatter_2]
-    return plot_list, weapons_data_df
+    return plot_list, data_df
 
 
 filters_container = st.sidebar.container()
@@ -377,6 +300,12 @@ if filter_unknown_inputs:
     damage_events_filtered_df = damage_events_filtered_df.loc[
         damage_events_filtered_df["player_input"].isin(valid_inputs)]
 
+hit_count_clip = st.sidebar.number_input("Hit Count Clip",
+                                         min_value=1,
+                                         max_value=30,
+                                         value=20,
+                                         key="hit_count_clip")
+
 min_distance = st.sidebar.number_input("Minimum Distance",
                                        min_value=1,
                                        max_value=1000,
@@ -388,9 +317,17 @@ max_distance = st.sidebar.number_input("Maximum Distance",
                                        value=1000,
                                        key="max_distance")
 
-plots, raw_data = damage_plot_builder(damage_events_filtered_df, min_distance, max_distance)
+plots, raw_data = damage_plot_builder(damage_events_filtered_df, hit_count_clip, min_distance, max_distance)
 
-st.altair_chart(plots[0], use_container_width=True)
+row_1_cols = st.columns(2)
+
+st.altair_chart(plots[2], use_container_width=False)
+st.altair_chart(plots[3], use_container_width=False)
+
+row_2_cols = st.columns(2)
+
+st.altair_chart(plots[1], use_container_width=False)
+st.altair_chart(plots[0], use_container_width=False)
 
 # st.altair_chart(plots[1], use_container_width=True)
 
