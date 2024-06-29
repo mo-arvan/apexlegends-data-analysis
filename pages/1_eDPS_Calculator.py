@@ -13,6 +13,8 @@ logger = logging.getLogger(__name__)
 
 logger.info(f"Running {__file__}")
 
+alt.renderers.enable("svg")
+
 st.set_page_config(
     page_title="eDPS Calculator",
     page_icon="📊",
@@ -40,8 +42,6 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
         "accuracy_quantile": "Accuracy Quantile (%)",
     }
     name_to_datum_dict = {v: k for k, v in datum_to_name_dict.items()}
-
-
 
     x_axis, y_axis = None, None
 
@@ -196,7 +196,7 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
 
     # fig = dps_line
     fig = (alt.layer(
-        dps_line, selectors, rules, dps_points_plot, #h_line_text,  # points, ,  # , ,  # , rules,  # text selectors,
+        dps_line, selectors, rules, dps_points_plot,  # h_line_text,  # points, ,  # , ,  # , rules,  # text selectors,
     )
     .resolve_scale(
         shape='independent',
@@ -215,28 +215,13 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
 
     fig = fig.interactive()
 
+    # fig = fig.display(renderer='svg')
+
     plot_list = [fig,
                  ]
 
     return plot_list
 
-
-pre_selected_weapons = []
-default_selection = {
-    # "tournament_full_name": [order_dict["tournament_full_name"][0]],
-    # "tournament_region": ["NA"],
-    "weapon_name": ["R-99 SMG",
-                    "Volt SMG",
-                    "Alternator SMG",
-                    "C.A.R. SMG",
-                    "Prowler Burst PDW",
-                    "Alternator SMG - Disruptor", ]
-}
-
-if "selected_weapons" in st.session_state:
-    pre_selected_weapons = st.session_state["selected_weapons"]
-else:
-    pre_selected_weapons = default_selection["weapon_name"]
 
 filter_container = st.sidebar.container()
 
@@ -244,7 +229,7 @@ selected_weapons, selected_mag, selected_bolt = st_helper.get_gun_filters(gun_df
                                                                           filter_container,
                                                                           mag_bolt_selection=True,
                                                                           include_hop_ups=True,
-                                                                          include_reworks=True,
+                                                                          include_reworks=False,
                                                                           )
 
 filters_dict = {
@@ -285,12 +270,12 @@ selected_shot_location = filter_container.selectbox('Shot Location:',
                                                     key='shot_location')
 chart_x_axis = filter_container.selectbox('X Axis:',
                                           [
-                                              # "Accuracy Quantile (%)",
-                                              "Uncapped eDPS",
-                                              "eDPS",
-                                              "Damage Dealt",
                                               "Uncapped Damage Dealt",
+                                              "Damage Dealt",
+                                              "eDPS",
+                                              "Uncapped eDPS",
                                               "Accuracy (%)",
+                                              # "Accuracy Quantile (%)",
 
                                           ],
                                           index=0,

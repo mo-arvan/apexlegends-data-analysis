@@ -22,7 +22,13 @@ def get_gun_filters(gun_stats_df,
                     include_reworks=False,
                     ):
     default_selection = {
-        "weapon_name": ["R-99 SMG", "Volt SMG", "Alternator SMG", "C.A.R. SMG", "Prowler Burst PDW"],
+        "weapon_name": [
+            "R-99 SMG",
+            "Volt SMG",
+            # "Alternator SMG",
+            # "C.A.R. SMG",
+            # "Prowler Burst PDW"
+        ],
     }
 
     base_weapon_condition = np.logical_or(pd.isna(gun_stats_df["secondary_class"]),
@@ -162,9 +168,9 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
     filters_container.write("Apply the filters in any order")
 
     selected_tournament = filters_container.selectbox("Tournament",
-                                               tournaments_order,
-                                               index=0,
-                                               key="selected_tournaments")
+                                                      tournaments_order,
+                                                      index=0,
+                                                      key="selected_tournaments")
 
     if selected_tournament is None:
         st.error("Please select at least one tournament.")
@@ -178,8 +184,8 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
     region_list = sorted(region_list)
 
     selected_region = filters_container.multiselect("Region",
-                                             region_list,
-                                             key="selected_region")
+                                                    region_list,
+                                                    key="selected_region")
 
     if len(selected_region) != 0:
         damage_events_df = damage_events_df[damage_events_df["tournament_region"].isin(selected_region)]
@@ -187,8 +193,8 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
     game_days = sorted(damage_events_df["tournament_day"].unique().tolist())
 
     selected_days = filters_container.multiselect("Day",
-                                           game_days,
-                                           key="selected_days")
+                                                  game_days,
+                                                  key="selected_days")
 
     if len(selected_days) != 0:
         damage_events_df = damage_events_df[damage_events_df["tournament_day"].isin(selected_days)]
