@@ -209,7 +209,7 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     ).encode(
         x=x_axis,
         y=y_axis,
-        text=alt.condition(dps_x_nearest, data_y_name, alt.value(' ')),
+        text=alt.condition(dps_x_nearest, data_x_name, alt.value(' ')),
         # shape=alt.Shape('weapon', legend=None),
     )
     #
