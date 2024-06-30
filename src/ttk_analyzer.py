@@ -1,6 +1,6 @@
 import logging
-
 import math
+
 import pandas as pd
 
 import src.chart_config as chart_config
@@ -88,23 +88,22 @@ def get_e_dps_df(selected_weapons,
         weapon_raw_damage = weapon["damage"]
         current_mag_size = weapon[f"magazine_{mag_index + 1}"]
 
-        stock_index = chart_config.stock_list.index(conditions["stock"])
         # current_stock = weapon[f"stock_{stock_index + 1}"]
 
         if conditions["ability_modifier"] == "Amped Cover (Rampart)":
             # Amped Cover boosts the damage of outgoing shots by 20%.
             # Source https://apexlegends.fandom.com/wiki/Rampart#Amped_Cover
             weapon_raw_damage = weapon_raw_damage * 1.2
-        head_damage = weapon_raw_damage * shot_location[0] * (
+        head_damage = weapon_raw_damage * (
                 helmet_modifier + (1 - helmet_modifier) * weapon["head_multiplier"])
-        body_damage = weapon_raw_damage * shot_location[1]
-        leg_damage = weapon_raw_damage * shot_location[2] * weapon["leg_multiplier"]
+        body_damage = weapon_raw_damage
+        leg_damage = weapon_raw_damage * weapon["leg_multiplier"]
 
         if conditions["ability_modifier"] == "Fortified (Gibby, Caustic, Newcastle)":
             body_damage = body_damage * 0.85
             leg_damage = leg_damage * 0.85
 
-        damage = head_damage + body_damage + leg_damage
+        damage = head_damage * shot_location[0] + body_damage * shot_location[1] + leg_damage * shot_location[2]
 
         effective_damage = damage
 
@@ -123,12 +122,29 @@ def get_e_dps_df(selected_weapons,
 
         total_health = health_amount + evo_shield_amount
 
-        # if weapon["class"] == "Marksman" or weapon["class"] == "Sniper":
-        #     reload_time_modifier = weapon["reload_time_4"]
-        # elif weapon["class"] == "Shotgun" or weapon["class"] == "SMG" or weapon["class"] == "AR":
-        #     reload_time_modifier = weapon["reload_time_4"]
-        # else:
-        #     reload_time_modifier =weapon["reload_time_4"]
+        # adding +1 to the stock level to match the index in the stock list
+        stock_index = chart_config.stock_list.index(conditions["stock"])
+        stock_level = stock_index + 1
+
+        reload_time = weapon[f"reload_time_{stock_level}"]
+        holster_time = weapon["holster_time"]
+        deploy_time = weapon["deploy_time"]
+
+        if stock_index > 0:
+            # care package and pistols do not have a stock level
+            if weapon["class"] not in ["Care Package", "Pistol"]:
+                if weapon["class"] in ["Sniper", "Marksman"]:
+                    stock_level_name = sniper_stocks_df.columns[stock_index]
+                    deploy_holster_modifier = \
+                        sniper_stocks_df.loc[sniper_stocks_df["Statistic"] == "Deploy/Holster Time"][
+                            stock_level_name].item()
+                else:
+                    stock_level_name = standard_stocks_df.columns[stock_index]
+                    deploy_holster_modifier = \
+                        standard_stocks_df.loc[standard_stocks_df["Statistic"] == "Deploy/Holster Time"][
+                            stock_level_name].item()
+                holster_time = holster_time + holster_time * deploy_holster_modifier/ 100
+                deploy_time = deploy_time + deploy_time * deploy_holster_modifier / 100
 
         charge_time = weapon.get("charge_time")
         if pd.isna(charge_time):
@@ -224,8 +240,13 @@ def get_e_dps_df(selected_weapons,
                 # "cdf": cdf,
                 "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
                 "ammo_left": ammo_left,
+                "headshot_damage": head_damage,
+                "body_damage": body_damage,
+                "leg_damage": leg_damage,
                 # "accuracy_model": accuracy_model,
-                # "reload time": reload_time_modifier,
+                "reload_time": reload_time,
+                "holster_time": holster_time,
+                "deploy_time": deploy_time,
             }
             gun_ttk_dict.update(conditions)
             dps_dict_list.append(gun_ttk_dict)
