@@ -59,35 +59,20 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
                    axis=alt.Axis(title=chart_y_axis),
                    scale=alt.Scale(zero=False))
 
-    # if chart_x_axis == "Accuracy Quantile (%)":
-    #     x_axis = alt.X('accuracy_quantile',
-    #                    axis=alt.Axis(title='Accuracy Quantile (%)'),
-    #                    sort=None)
-    #
-    # elif chart_x_axis == "Accuracy (%)":
-    #     x_axis = alt.X('accuracy:Q',
-    #                    axis=alt.Axis(title='Accuracy (%)'),
-    #                    sort=None)
-    #
-    # if chart_y_axis == "eDPS":
-    #     y_axis = alt.Y('dps',
-    #                    axis=alt.Axis(title='eDPS'),
-    #                    scale=alt.Scale(zero=False))
-    # elif chart_y_axis == "Damage Dealt":
-    #     y_axis = alt.Y('damage_dealt',
-    #                    axis=alt.Axis(title='Damage Dealt'),
-    #                    scale=alt.Scale(zero=False))
-    # elif chart_y_axis == "Uncapped eDPS":
-    #     y_axis = alt.Y('uncapped_dps',
-    #                    axis=alt.Axis(title='Uncapped eDPS'),
-    #                    scale=alt.Scale(zero=False))
-    # elif chart_y_axis == "Uncapped Damage Dealt":
-    #     y_axis = alt.Y('uncapped_damage_dealt',
-    #                    axis=alt.Axis(title='Uncapped Damage Dealt'),
-    #                    scale=alt.Scale(zero=False))
+    # Create a selection that chooses the nearest point & selects based on x-value
+    # dps_x_y_nearest = alt.selection_point(nearest=False,
+    #                                       on="mouseover",
+    #                                       fields=[data_x_name, data_y_name],
+    #                                       empty=False)
+
+    dps_x_nearest = alt.selection_point(nearest=True,
+                                        on='mouseover',
+                                        fields=[data_x_name],
+                                        empty=False)
 
     dps_line = alt.Chart(dps_df).mark_line(
-        interpolate='step-before',
+        # interpolate='step-before',
+        interpolate="linear",
         strokeWidth=3,
     ).encode(
         x=x_axis,
@@ -111,9 +96,20 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
         # width=800,
         height=750,
     )
+    # # # Transparent selectors across the chart. This is what tells us
+    # # # the x-value of the cursor
+    selectors = alt.Chart(dps_df).mark_point(
+        color="white"
+    ).encode(
+        # y=y_axis,
+        x=x_axis,
+        tooltip=alt.value(None),
+        opacity=alt.value(0),
+    ).add_params(
+        dps_x_nearest
+    )
 
-    dps_points_plot = alt.Chart(dps_df).mark_point(
-        size=100,
+    dps_points_plot = (alt.Chart(dps_df).mark_point(
         filled=True,
         opacity=1,
     ).encode(
@@ -121,7 +117,7 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
         y=y_axis,
         shape=alt.Shape('weapon_name', legend=alt.Legend(title="Weapon")),
         # color=alt.Color('weapon_name', legend=alt.Legend(title="Weapon"), scale=alt.Scale(scheme='dark2')),
-        color=alt.value("white"),
+        color=alt.condition(dps_x_nearest, alt.value("white"), alt.value("gray")),
         tooltip=['weapon_name',
                  alt.Tooltip('accuracy', format=",.2f"),
                  # alt.Tooltip("accuracy_quantile", format=",.2f"),
@@ -131,91 +127,104 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
                  alt.Tooltip("uncapped_damage_dealt", format=",.2f"),
                  "how",
                  # "accuracy_model"
-                 "ammo_left"
+                 "ammo_left",
+                 alt.Tooltip('reload_time', format=",.2f"),
+                 alt.Tooltip('holster_time', format=",.2f"),
+                 alt.Tooltip('deploy_time', format=",.2f"),
+                 alt.Tooltip('headshot_damage', format=",.2f"),
+                 alt.Tooltip('body_damage', format=",.2f"),
+                 alt.Tooltip('leg_damage', format=",.2f"),
+
                  ],
+        size=alt.condition(dps_x_nearest, alt.value(100), alt.value(50)),
+        # opacity=alt.condition(dps_x_nearest, alt.value(1), alt.value(0))
     )
-
-    # Create a selection that chooses the nearest point & selects based on x-value
-    nearest = alt.selection_point(nearest=True,
-                                  on='mouseover',
-                                  # fields=[x_axis],
-                                  encodings=['y'],
-                                  empty=False)
-
-    # # Transparent selectors across the chart. This is what tells us
-    # # the x-value of the cursor
-    selectors = alt.Chart(dps_df).mark_point().encode(
-        y=y_axis,
-        tooltip=alt.value(None),
-        opacity=alt.value(0),
-    ).add_params(
-        nearest
+        # .add_params(
+        #     dps_x_nearest
+        # )
     )
 
     # # Draw a rule at the location of the selection
-    rules = (alt.Chart(dps_df).mark_rule(color='gray').encode(
-        y=y_axis,
+    # epdf_rules = alt.Chart(dps_df).transform_pivot(
+    #     "weapon_name:N",
+    #     value=data_y_name,
+    #     groupby=[data_x_name]
+    # ).mark_rule(
+    #     color="gray",
+    #     strokeWidth=2,
+    # ).encode(
+    #     x=data_x_name,
+    #     opacity=alt.condition(dps_nearest, alt.value(1), alt.value(0)),
+    #     # tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
+    # ).add_params(dps_nearest)
+
+    # # Create a selection that chooses the nearest point & selects based on x-value
+
+    #
+
+    #
+    # # # Draw a rule at the location of the selection
+    dps_rules = (alt.Chart(dps_df).mark_rule(color='gray').encode(
+        # y=y_axis,
+        x=x_axis,
         # tooltip=None,
     ).transform_filter(
-        nearest
+        dps_x_nearest
     ))
+    #
+    # # # Draw points on the line, and highlight based on selection
+    # points = dps_line.mark_point().encode(
+    #     # y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms)')),
+    #     opacity=alt.condition(nearest, alt.value(1), alt.value(0)),
+    # )
 
-    # # Draw points on the line, and highlight based on selection
-    points = dps_line.mark_point().encode(
-        # y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms)')),
-        opacity=alt.condition(nearest, alt.value(1), alt.value(0)),
-    )
-
-    r = dps_df[dps_df["dps"] > 90].groupby("weapon_name").agg({"accuracy": "min"}).reset_index()
-
-    # plot the text for each line with the min accuracy to achieve at least nearest point y
-    h_line_text = alt.Chart(dps_df).transform_filter(
-        nearest
-    ).transform_aggregate(
-        groupby=["weapon_name"],
-        min_x="min(accuracy)",
-
-    ).mark_text(align='left', dx=-5, dy=10).encode(
-        x=alt.value(10),
-        # y=y_axis,
-        text=alt.Text('min_x:N', format=".2f"),
-        color=alt.value("white"),
-    ).add_params(
-        nearest
-    )
+    # r = dps_df[dps_df["dps"] > 90].groupby("weapon_name").agg({"accuracy": "min"}).reset_index()
+    #
+    # # plot the text for each line with the min accuracy to achieve at least nearest point y
+    # h_line_text = alt.Chart(dps_df).transform_filter(
+    #     nearest
+    # ).transform_aggregate(
+    #     groupby=["weapon_name"],
+    #     min_x="min(accuracy)",
+    # ).mark_text(align='left', dx=-5, dy=10).encode(
+    #     x=alt.value(10),
+    #     # y=y_axis,
+    #     text=alt.Text('min_x:N', format=".2f"),
+    #     color=alt.value("white"),
+    # ).add_params(
+    #     nearest
+    # )
 
     #
 
     #
     # # Draw text labels near the points, and highlight based on selection
-    # text = line.mark_text(align='left', dx=-5, dy=10).encode(
-    #     text=alt.condition(nearest, 'miss rate', alt.value(' ')),
-    #     # shape=alt.Shape('weapon', legend=None),
-    # )
+    text = alt.Chart(dps_df).mark_text(
+        align='left',
+        dx=-10,
+        dy=-15,
+        fontSize=14,
+        color="white",
+
+    ).encode(
+        x=x_axis,
+        y=y_axis,
+        text=alt.condition(dps_x_nearest, data_y_name, alt.value(' ')),
+        # shape=alt.Shape('weapon', legend=None),
+    )
     #
 
     # fig = dps_line
     fig = (alt.layer(
-        dps_line, selectors, rules, dps_points_plot,  # h_line_text,  # points, ,  # , ,  # , rules,  # text selectors,
-    )
-    .resolve_scale(
+        dps_line, selectors, dps_rules, dps_points_plot, text,
+    ).resolve_scale(
         shape='independent',
         color='independent',
         strokeDash='independent',
     )
     )
 
-    # fig = alt.layer(
-    #     fig,
-    # ).resolve_scale(
-    #     shape='independent',
-    #     color='independent',
-    #     strokeDash='independent',
-    # )
-
     fig = fig.interactive()
-
-    # fig = fig.display(renderer='svg')
 
     plot_list = [fig,
                  ]
@@ -225,12 +234,12 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
 
 filter_container = st.sidebar.container()
 
-selected_weapons, selected_mag, selected_bolt = st_helper.get_gun_filters(gun_df,
-                                                                          filter_container,
-                                                                          mag_bolt_selection=True,
-                                                                          include_hop_ups=True,
-                                                                          include_reworks=False,
-                                                                          )
+selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
+                                                                                          filter_container,
+                                                                                          mag_bolt_selection=True,
+                                                                                          include_hop_ups=True,
+                                                                                          include_reworks=False,
+                                                                                          )
 
 filters_dict = {
     "class": "Class",
@@ -241,59 +250,60 @@ selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              min_value=500,
                                              max_value=5000,
                                              value=2000,
-                                             step=250,
+                                             step=100,
                                              key="peek_time")
 
-selected_health = filter_container.selectbox("Health",
-                                             chart_config.health_values_dict.keys(),
-                                             index=4,
-                                             key='health')
-
-selected_evo_shield = filter_container.selectbox('Evo Shield:',
-                                                 chart_config.evo_shield_dict.keys(),
+with filter_container.expander("Advanced Configurations"):
+    selected_health = st.selectbox("Health",
+                                                 chart_config.health_values_dict.keys(),
                                                  index=4,
-                                                 key='evo_shield')
+                                                 key='health')
 
-selected_helmet = filter_container.selectbox('Helmet:',
-                                             chart_config.helmet_dict.keys(),
-                                             index=0,
-                                             key='helmet')
+    selected_evo_shield = st.selectbox('Evo Shield:',
+                                                     chart_config.evo_shield_dict.keys(),
+                                                     index=4,
+                                                     key='evo_shield')
 
-selected_ability_modifier = filter_container.selectbox('Ability Modifier:',
-                                                       chart_config.ability_modifier_list,
-                                                       index=0,
-                                                       key='ability_modifier')
+    selected_helmet = st.selectbox('Helmet:',
+                                                 chart_config.helmet_dict.keys(),
+                                                 index=0,
+                                                 key='helmet')
 
-selected_shot_location = filter_container.selectbox('Shot Location:',
-                                                    chart_config.shot_location_dict.keys(),
-                                                    index=0,
-                                                    key='shot_location')
-chart_x_axis = filter_container.selectbox('X Axis:',
-                                          [
-                                              "Uncapped Damage Dealt",
-                                              "Damage Dealt",
-                                              "eDPS",
-                                              "Uncapped eDPS",
-                                              "Accuracy (%)",
-                                              # "Accuracy Quantile (%)",
+    selected_ability_modifier = st.selectbox('Ability Modifier:',
+                                                           chart_config.ability_modifier_list,
+                                                           index=0,
+                                                           key='ability_modifier')
 
-                                          ],
-                                          index=0,
-                                          key='x_axis')
+    selected_shot_location = st.selectbox('Shot Location:',
+                                                        chart_config.shot_location_dict.keys(),
+                                                        index=0,
+                                                        key='shot_location')
+    chart_x_axis = st.selectbox('X Axis:',
+                                              [
+                                                  "Uncapped Damage Dealt",
+                                                  "Damage Dealt",
+                                                  "eDPS",
+                                                  "Uncapped eDPS",
+                                                  "Accuracy (%)",
+                                                  # "Accuracy Quantile (%)",
 
-chart_y_axis = filter_container.selectbox('Y Axis:',
-                                          [
-                                              # "Accuracy Quantile (%)",
-                                              "Accuracy (%)",
-                                              "eDPS",
-                                              "Damage Dealt",
-                                              "Uncapped eDPS",
-                                              "Uncapped Damage Dealt",
-                                          ]
+                                              ],
+                                              index=0,
+                                              key='x_axis')
 
-                                          ,
-                                          index=0,
-                                          key='y_axis')
+    chart_y_axis = st.selectbox('Y Axis:',
+                                              [
+                                                  # "Accuracy Quantile (%)",
+                                                  "Accuracy (%)",
+                                                  "eDPS",
+                                                  "Damage Dealt",
+                                                  "Uncapped eDPS",
+                                                  "Uncapped Damage Dealt",
+                                              ]
+
+                                              ,
+                                              index=0,
+                                              key='y_axis')
 
 #     estimation_method_list = ["Expected Value"]
 #     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
@@ -305,7 +315,6 @@ chart_y_axis = filter_container.selectbox('Y Axis:',
 #                                               index=0,
 #                                               key='estimation_method')
 selected_estimation_method = "Expected Value"
-selected_stock = "Purple"
 
 conditions_dict = {
     "mag": selected_mag,

@@ -64,7 +64,7 @@ def plot_dps_grid(dps_grid, main_weapon):
                 # bin=alt.Bin(maxbins=peek_time_bins),
                 axis=alt.Axis(title='Peek Time (ms)')),
         y=alt.Y('max_accuracy:Q',
-                bin=alt.Bin(maxbins=accuracy_bins ),
+                bin=alt.Bin(maxbins=accuracy_bins),
                 axis=alt.Axis(title='Accuracy (%)')),
         color=alt.Color('rank:Q',
                         scale=color_scale  # alt.Scale(scheme='plasma')
@@ -83,7 +83,7 @@ def plot_dps_grid(dps_grid, main_weapon):
     #     point
     # ))
     text_mark = heatmap.mark_text(baseline='middle',
-                                    align='center',
+                                  align='center',
                                   fontSize=18,
                                   ).encode(
         text='rank:N',
@@ -249,11 +249,11 @@ main_weapon = st.sidebar.selectbox("Weapon to Rank",
 
 filters_container = st.sidebar.container()
 
-selected_weapons, selected_mag, selected_bolt = st_helper.get_gun_filters(gun_df,
-                                                                          filters_container,
-                                                                          select_text="Weapon Pool",
-                                                                          mag_bolt_selection=True,
-                                                                          include_hop_ups=True)
+selected_weapons, selected_mag, selected_bolt, selected_stocks = st_helper.get_gun_filters(gun_df,
+                                                                                           filters_container,
+                                                                                           select_text="Weapon Pool",
+                                                                                           mag_bolt_selection=True,
+                                                                                           include_hop_ups=True)
 
 selected_evo_shield = st.sidebar.selectbox('Evo Shield:', chart_config.evo_shield_dict.keys(), index=4,
                                            key='evo_shield')

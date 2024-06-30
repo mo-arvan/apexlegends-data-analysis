@@ -125,11 +125,16 @@ def get_gun_filters(gun_stats_df,
                                                    ['White', 'Blue', 'Purple'],
                                                    index=2,
                                                    key='bolt')
+        selected_stocks = filter_container.selectbox('Stock (if applicable):',
+                                                     chart_config.stock_list,
+                                                     index=2,
+                                                     key='stock')
     else:
         selected_mag = None
         selected_bolt = None
+        selected_stocks = None
 
-    return selected_weapons, selected_mag, selected_bolt
+    return selected_weapons, selected_mag, selected_bolt, selected_stocks
 
 
 def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
