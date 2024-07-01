@@ -209,10 +209,10 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
 
     weapon_list = damage_events_df["weapon_name"].unique().tolist()
 
-    selected_weapons, selected_mag, selected_bolt = get_gun_filters(gun_stats_df,
-                                                                    filters_container,
-                                                                    include_ordnance=True,
-                                                                    )
+    selected_weapons, selected_mag, selected_bolt, selected_stock = get_gun_filters(gun_stats_df,
+                                                                                    filters_container,
+                                                                                    include_ordnance=True,
+                                                                                    )
 
     if len(selected_weapons) != 0:
         damage_events_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]
