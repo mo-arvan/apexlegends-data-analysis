@@ -232,19 +232,9 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     return plot_list
 
 
+
+
 filter_container = st.sidebar.container()
-
-selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
-                                                                                          filter_container,
-                                                                                          mag_bolt_selection=True,
-                                                                                          include_hop_ups=True,
-                                                                                          include_reworks=False,
-                                                                                          )
-
-filters_dict = {
-    "class": "Class",
-    "weapon_name": "Weapons",
-}
 
 selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              min_value=500,
@@ -252,6 +242,21 @@ selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              value=2000,
                                              step=100,
                                              key="peek_time")
+
+
+selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
+                                                                                          filter_container,
+                                                                                          mag_bolt_selection=True,
+                                                                                          include_hop_ups=True,
+                                                                                          include_reworks=True,
+                                                                                          enable_tabs=True,
+                                                                                          )
+
+filters_dict = {
+    "class": "Class",
+    "weapon_name": "Weapons",
+}
+
 
 with filter_container.expander("Advanced Configurations"):
     selected_health = st.selectbox("Health",
