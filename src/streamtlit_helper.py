@@ -20,6 +20,7 @@ def get_gun_filters(gun_stats_df,
                     include_hop_ups=False,
                     include_ordnance=False,
                     include_reworks=False,
+                    enable_tabs=False,
                     ):
     default_selection = {
         "weapon_name": [
@@ -33,11 +34,17 @@ def get_gun_filters(gun_stats_df,
 
     base_weapon_condition = np.logical_or(pd.isna(gun_stats_df["secondary_class"]),
                                           gun_stats_df["secondary_class"] == "Care Package")
+
+    child_container = filter_container.container()
+    post_child_container = filter_container.container()
     if include_hop_ups:
         base_weapon_condition = np.logical_or(base_weapon_condition, gun_stats_df["secondary_class"] == "Hop-Up")
     if include_reworks:
-        base_weapon_condition = np.logical_or(base_weapon_condition,
-                                              gun_stats_df["secondary_class"] == "Future Reworks")
+        include_reworked_weapons = post_child_container.checkbox("Include Future Reworks", value=False)
+
+        if include_reworked_weapons:
+            base_weapon_condition = np.logical_or(base_weapon_condition,
+                                                  gun_stats_df["secondary_class"] == "Future Reworks")
 
     base_weapons_df = gun_stats_df[base_weapon_condition]
 
@@ -48,7 +55,7 @@ def get_gun_filters(gun_stats_df,
     else:
         preselected_weapons = st.session_state["selected_weapons"]
 
-    with filter_container.container():
+    with child_container.container():
         st.write("Batch Add Weapon Class")
         row_0_cols = st.columns(3)
         with row_0_cols[0]:
@@ -110,22 +117,22 @@ def get_gun_filters(gun_stats_df,
             logger.warning(f"Preselected weapon {w} not found in the dataset. Removing from preselected weapons.")
             preselected_weapons.remove(w)
 
-    selected_weapons = filter_container.multiselect(select_text,
+    selected_weapons = child_container.multiselect(select_text,
                                                     all_weapons,
                                                     default=preselected_weapons,
                                                     key="selected_weapons")
 
     if mag_bolt_selection:
-        selected_mag = filter_container.selectbox('Mag (if applicable):',
+        selected_mag = child_container.selectbox('Mag (if applicable):',
                                                   chart_config.mag_list,
                                                   index=3,
                                                   key='mag')
 
-        selected_bolt = filter_container.selectbox('Shotgun Bolt (if applicable):',
+        selected_bolt = child_container.selectbox('Shotgun Bolt (if applicable):',
                                                    ['White', 'Blue', 'Purple'],
                                                    index=2,
                                                    key='bolt')
-        selected_stocks = filter_container.selectbox('Stock (if applicable):',
+        selected_stocks = child_container.selectbox('Stock (if applicable):',
                                                      chart_config.stock_list,
                                                      index=2,
                                                      key='stock')
