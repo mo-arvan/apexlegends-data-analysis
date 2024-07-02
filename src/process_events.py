@@ -136,7 +136,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
         #
         # ammo_used_events = player_events_df[player_events_df["event_type"] == "ammoUsed"]
 
-        max_damage_time_diff = 10
+        max_damage_time_diff = 5
         max_ammo_used_time_diff = 10
         merged_damage_events = []
         for i, row in used_damaged_events.iterrows():
