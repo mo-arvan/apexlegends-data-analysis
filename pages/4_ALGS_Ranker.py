@@ -162,22 +162,24 @@ def get_player_ranking(input_df,
         "player_input",
         "team_name",
         "tournament_full_name",
+        'tournament_region',
         "tournament_day",
         "game_title",
         "game_map",
-        "event_start_time",
         "weapon_name",
-        # "class",
-        "target",
+        "event_start_time",
+        "event_duration",
+        "damage_sum",
         "distance_median",
         "hit_count",
-        "damage_sum",
         "ammo_used",
-        "distance",
-        "damage",
-        "event_time",
         "player_hash",
         "game_id",
+        "target",
+        "event_time",
+        "distance",
+        "damage",
+
     ]]
 
     return high_hit_df, ranking_details_df
@@ -735,4 +737,6 @@ expander.dataframe(raw_data_1,
                    hide_index=True,
                    use_container_width=True)
 
-expander.dataframe(raw_data_2)
+expander.dataframe(raw_data_2,
+                   hide_index=True,
+                   )

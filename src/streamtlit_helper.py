@@ -118,24 +118,24 @@ def get_gun_filters(gun_stats_df,
             preselected_weapons.remove(w)
 
     selected_weapons = child_container.multiselect(select_text,
-                                                    all_weapons,
-                                                    default=preselected_weapons,
-                                                    key="selected_weapons")
+                                                   all_weapons,
+                                                   default=preselected_weapons,
+                                                   key="selected_weapons")
 
     if mag_bolt_selection:
         selected_mag = child_container.selectbox('Mag (if applicable):',
-                                                  chart_config.mag_list,
-                                                  index=3,
-                                                  key='mag')
+                                                 chart_config.mag_list,
+                                                 index=3,
+                                                 key='mag')
 
         selected_bolt = child_container.selectbox('Shotgun Bolt (if applicable):',
-                                                   ['White', 'Blue', 'Purple'],
-                                                   index=2,
-                                                   key='bolt')
+                                                  ['White', 'Blue', 'Purple'],
+                                                  index=2,
+                                                  key='bolt')
         selected_stocks = child_container.selectbox('Stock (if applicable):',
-                                                     chart_config.stock_list,
-                                                     index=2,
-                                                     key='stock')
+                                                    chart_config.stock_list,
+                                                    index=3,
+                                                    key='stock')
     else:
         selected_mag = None
         selected_bolt = None
