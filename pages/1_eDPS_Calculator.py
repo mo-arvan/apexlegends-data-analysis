@@ -209,7 +209,11 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     ).encode(
         x=x_axis,
         y=y_axis,
-        text=alt.condition(dps_x_nearest, data_x_name, alt.value(' ')),
+        # text=alt.condition(dps_x_nearest,
+        #                    alt.Text(data_y_name, format=".0f"),
+        #                    alt.value(' ')),
+        text=alt.Text(data_x_name, format=".0f"),
+        opacity=alt.condition(dps_x_nearest, alt.value(1), alt.value(0))
         # shape=alt.Shape('weapon', legend=None),
     )
     #
@@ -232,8 +236,6 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
     return plot_list
 
 
-
-
 filter_container = st.sidebar.container()
 
 selected_peek_time = filter_container.slider("Peek Time (ms):",
@@ -242,7 +244,6 @@ selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              value=2000,
                                              step=100,
                                              key="peek_time")
-
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
                                                                                           filter_container,
@@ -257,58 +258,57 @@ filters_dict = {
     "weapon_name": "Weapons",
 }
 
-
 with filter_container.expander("Advanced Configurations"):
     selected_health = st.selectbox("Health",
-                                                 chart_config.health_values_dict.keys(),
-                                                 index=4,
-                                                 key='health')
+                                   chart_config.health_values_dict.keys(),
+                                   index=4,
+                                   key='health')
 
     selected_evo_shield = st.selectbox('Evo Shield:',
-                                                     chart_config.evo_shield_dict.keys(),
-                                                     index=4,
-                                                     key='evo_shield')
+                                       chart_config.evo_shield_dict.keys(),
+                                       index=4,
+                                       key='evo_shield')
 
     selected_helmet = st.selectbox('Helmet:',
-                                                 chart_config.helmet_dict.keys(),
-                                                 index=0,
-                                                 key='helmet')
+                                   chart_config.helmet_dict.keys(),
+                                   index=3,
+                                   key='helmet')
 
     selected_ability_modifier = st.selectbox('Ability Modifier:',
-                                                           chart_config.ability_modifier_list,
-                                                           index=0,
-                                                           key='ability_modifier')
+                                             chart_config.ability_modifier_list,
+                                             index=0,
+                                             key='ability_modifier')
 
     selected_shot_location = st.selectbox('Shot Location:',
-                                                        chart_config.shot_location_dict.keys(),
-                                                        index=0,
-                                                        key='shot_location')
+                                          chart_config.shot_location_dict.keys(),
+                                          index=0,
+                                          key='shot_location')
     chart_x_axis = st.selectbox('X Axis:',
-                                              [
-                                                  "Uncapped Damage Dealt",
-                                                  "Damage Dealt",
-                                                  "eDPS",
-                                                  "Uncapped eDPS",
-                                                  "Accuracy (%)",
-                                                  # "Accuracy Quantile (%)",
+                                [
+                                    "Uncapped Damage Dealt",
+                                    "Damage Dealt",
+                                    "eDPS",
+                                    "Uncapped eDPS",
+                                    "Accuracy (%)",
+                                    # "Accuracy Quantile (%)",
 
-                                              ],
-                                              index=0,
-                                              key='x_axis')
+                                ],
+                                index=0,
+                                key='x_axis')
 
     chart_y_axis = st.selectbox('Y Axis:',
-                                              [
-                                                  # "Accuracy Quantile (%)",
-                                                  "Accuracy (%)",
-                                                  "eDPS",
-                                                  "Damage Dealt",
-                                                  "Uncapped eDPS",
-                                                  "Uncapped Damage Dealt",
-                                              ]
+                                [
+                                    # "Accuracy Quantile (%)",
+                                    "Accuracy (%)",
+                                    "eDPS",
+                                    "Damage Dealt",
+                                    "Uncapped eDPS",
+                                    "Uncapped Damage Dealt",
+                                ]
 
-                                              ,
-                                              index=0,
-                                              key='y_axis')
+                                ,
+                                index=0,
+                                key='y_axis')
 
 #     estimation_method_list = ["Expected Value"]
 #     selected_estimation_method = st.selectbox('Estimation Method:', estimation_method_list,
