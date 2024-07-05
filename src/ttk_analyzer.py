@@ -143,7 +143,7 @@ def get_e_dps_df(selected_weapons,
                     deploy_holster_modifier = \
                         standard_stocks_df.loc[standard_stocks_df["Statistic"] == "Deploy/Holster Time"][
                             stock_level_name].item()
-                holster_time = holster_time + holster_time * deploy_holster_modifier/ 100
+                holster_time = holster_time + holster_time * deploy_holster_modifier / 100
                 deploy_time = deploy_time + deploy_time * deploy_holster_modifier / 100
 
         charge_time = weapon.get("charge_time")
@@ -239,6 +239,7 @@ def get_e_dps_df(selected_weapons,
                 "uncapped_dps": uncapped_dps,
                 # "cdf": cdf,
                 "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
+                "shot_interval": shot_interval,
                 "ammo_left": ammo_left,
                 "headshot_damage": head_damage,
                 "body_damage": body_damage,
@@ -271,8 +272,28 @@ def get_e_dps_df(selected_weapons,
     dps_df = pd.DataFrame(dps_dict_list)
     dps_df = dps_df.sort_values(by=["weapon_name", "accuracy"], ascending=False).reset_index(drop=True)
 
+    dps_full_list = []
+    max_x_value = int(dps_df["damage_dealt"].max())
+    weapon_list = dps_df["weapon_name"].unique().tolist()
+    for min_x_value in range(0, max_x_value + 1, 5):
+        for weapon in weapon_list:
+            sub_df = dps_df[(dps_df["weapon_name"] == weapon) & (dps_df["damage_dealt"] >= min_x_value)]
+
+            if len(sub_df) > 0:
+                sub_df = sub_df.sort_values(by=["damage_dealt", "accuracy"], ascending=True)
+                row = sub_df.iloc[0].to_dict()
+                row[f"min_damage_dealt"] = min_x_value
+                dps_full_list.append(row)
+    dps_full_df = pd.DataFrame(dps_full_list)
+
+
+    pivot_df = (dps_full_df.pivot_table(index=[f"min_damage_dealt"], columns=["weapon_name"], values="accuracy")
+                .reset_index())
+
     plot_dict = {
         "dps_df": dps_df,
+        "dps_full_df": dps_full_df,
+        "pivot_df": pivot_df,
     }
     return plot_dict
 
