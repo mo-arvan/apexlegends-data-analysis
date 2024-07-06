@@ -28,8 +28,8 @@ with st.spinner("Loading data..."):
 
 
 def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
-    dps_df, dps_full_df, pivot_df = e_dps_plots["dps_df"], e_dps_plots["dps_full_df"], e_dps_plots["pivot_df"]
-
+    dps_df, dps_full_df, pivot_df = e_dps_plots["dps_df"].copy(), e_dps_plots["dps_full_df"].copy(), e_dps_plots[
+        "pivot_df"].copy()
 
     weapon_names_list = dps_full_df["weapon_name"].unique().tolist()
 
@@ -149,12 +149,13 @@ def plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis):
             alt.Tooltip("uncapped_damage_dealt", format=",.2f", title="Uncapped Damage Dealt"),
             alt.Tooltip("uncapped_dps", format=",.2f", title="Uncapped eDPS"),
             alt.Tooltip("how", title="How", ),
-            alt.Tooltip("shot_interval", title="Shot Interval",format=",.3f" ),
+            alt.Tooltip("shot_interval", title="Shot Interval (ms)", format=",.0f"),
+            alt.Tooltip("firing_time", title="Firing Time (ms)", format=",.0f"),
             # "accuracy_model"
             alt.Tooltip("ammo_left", format=",.0f", title="Ammo Left"),
-            alt.Tooltip('reload_time', format=".2f", title="Reload Time (s)"),
-            alt.Tooltip('holster_time', format=",.2f", title="Holster Time (s)"),
-            alt.Tooltip('deploy_time', format=",.2f", title="Deploy Time (s)"),
+            alt.Tooltip('reload_time', format=".0f", title="Reload Time (ms)"),
+            alt.Tooltip('holster_time', format=",.0f", title="Holster Time (ms)"),
+            alt.Tooltip('deploy_time', format=",.0f", title="Deploy Time (ms)"),
             alt.Tooltip('headshot_damage', format=",.2f", title="Headshot Damage"),
             alt.Tooltip('body_damage', format=",.2f", title="Body Damage"),
             alt.Tooltip('leg_damage', format=",.2f", title="Leg Damage"),
@@ -398,7 +399,10 @@ else:
     altair_plot = plot_effective_dps(e_dps_plots, chart_x_axis, chart_y_axis)
 
     with chart_container:
-        st.altair_chart(altair_plot[0], use_container_width=True)
+        try:
+            alt_chart = st.altair_chart(altair_plot[0], use_container_width=True)
+        except Exception as e:
+            st.error("Error in plotting the chart.")
 
 #
 expander = st.expander(label='Raw Data')
