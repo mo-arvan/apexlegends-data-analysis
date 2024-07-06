@@ -209,6 +209,7 @@ def get_player_ranking_plot(input_df,
 
     # height = 800
     height = 40 + ranking_top_k * 40
+    chart_width = 600
 
     chart_title = alt.TitleParams(f"Top Players Ranked based on # High Damage Encounters",
                                   subtitle=[f"Minimum Damage Dealt: {minimum_damage}, color indicates the input type.",
@@ -284,7 +285,7 @@ def get_player_ranking_plot(input_df,
             ]),
     ).properties(
         # width=100,
-        width=800,
+        # width=800,
         height=height,
     )
 
@@ -562,7 +563,7 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit
             ]),
     ).properties(
         # width=100,
-        width=600,
+        # width=600,
 
         height=height,
     )
@@ -730,7 +731,7 @@ bar_plot, raw_data_1, raw_data_2 = ranking_function(damage_events_filtered_df,
                                                     max_distance,
                                                     rank_column)
 
-st.altair_chart(bar_plot, use_container_width=True)
+alt_chart = st.altair_chart(bar_plot, use_container_width=True)
 
 expander = st.expander(label='Raw Data')
 expander.dataframe(raw_data_1,

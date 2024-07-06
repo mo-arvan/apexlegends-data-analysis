@@ -226,6 +226,7 @@ def get_e_dps_df(selected_weapons,
 
             if damage_dealt > 275:
                 pass
+            firing_time = (shots_during_peek - 1) * shot_interval
 
             # TODO include raise and holster time, reload time
             gun_ttk_dict = {
@@ -239,15 +240,16 @@ def get_e_dps_df(selected_weapons,
                 "uncapped_dps": uncapped_dps,
                 # "cdf": cdf,
                 "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
-                "shot_interval": shot_interval,
+                "shot_interval": shot_interval * 1000,
+                "firing_time": firing_time * 1000,
                 "ammo_left": ammo_left,
                 "headshot_damage": head_damage,
                 "body_damage": body_damage,
                 "leg_damage": leg_damage,
                 # "accuracy_model": accuracy_model,
-                "reload_time": reload_time,
-                "holster_time": holster_time,
-                "deploy_time": deploy_time,
+                "reload_time": reload_time * 1000,
+                "holster_time": holster_time * 1000,
+                "deploy_time": deploy_time * 1000,
             }
             gun_ttk_dict.update(conditions)
             dps_dict_list.append(gun_ttk_dict)
@@ -285,7 +287,6 @@ def get_e_dps_df(selected_weapons,
                 row[f"min_damage_dealt"] = min_x_value
                 dps_full_list.append(row)
     dps_full_df = pd.DataFrame(dps_full_list)
-
 
     pivot_df = (dps_full_df.pivot_table(index=[f"min_damage_dealt"], columns=["weapon_name"], values="accuracy")
                 .reset_index())
