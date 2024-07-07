@@ -10,4 +10,4 @@ st.set_page_config(
 with st.spinner("Redirecting to the eDPS Calculator in 3 seconds..."):
     time.sleep(3)
 
-    st.switch_page("pages/1_eDPS_Calculator.py")
+    st.switch_page("pages/1_Effective_Damage_Calculator.py")
