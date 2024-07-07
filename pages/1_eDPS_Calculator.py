@@ -52,6 +52,8 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
         symbol='weapon_name',  # This assigns different symbols to different weapons
         title=chart_title,
         height=chart_height,
+        color_discrete_sequence=px.colors.qualitative.Light24,
+        render_mode='svg',
         # markers=True,
     )
 
@@ -86,7 +88,7 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     # for data in dps_points.data:
     #     fig.add_trace(data)
     fig.update_traces(mode="markers+lines", hovertemplate=None)
-    fig.update_layout(hovermode="x")
+    fig.update_layout(hovermode="x unified")
     # fig.update_traces(hoverinfo='none')
     fig.update_traces(marker={'size': 10})
     # Updating the colors based on 'weapon_name' if similar to dark2 color scheme is desired
@@ -99,9 +101,19 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     evo_shield_amount = chart_config.evo_shield_dict[conditions_dict["shield"]]
     base_health_amount = chart_config.health_values_dict[conditions_dict["health"]]
 
-    fig.add_vline(x=base_health_amount, line_dash="dash", line_color="red", annotation_text="Health")
-    fig.add_vline(x=evo_shield_amount + base_health_amount, line_dash="dash", line_color="blue",
-                  annotation_text="Health + Evo Shield")
+    evo_shield_to_color_map = {
+        125: "red",
+        100: "mediumpurple",
+        75: "blue",
+        50: "gray",
+        25: "white",
+    }
+    if evo_shield_amount > 0:
+        color = evo_shield_to_color_map[evo_shield_amount]
+        fig.add_vline(x=evo_shield_amount, line_dash="dash", line_color=color, annotation_text="Evo Shield")
+    if base_health_amount > 0:
+        fig.add_vline(x=evo_shield_amount + base_health_amount, line_dash="dash", line_color="pink",
+                      annotation_text="Evo Shield + Health")
 
     # Customize Axis Titles if necessary
     fig.update_xaxes(title_text=chart_x_axis)
@@ -361,13 +373,44 @@ def plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis):
     return plot_list
 
 
+def get_selection_details(e_dps_plots, event, ):
+    dps_df = e_dps_plots["dps_df"]
+
+    selected_point_list = event["selection"]["points"]
+
+    if len(selected_point_list) == 0:
+        return None
+
+    out_selected_point_list = []
+    for point in selected_point_list:
+        selected_weapon = dps_df[dps_df["weapon_name"] == point["legendgroup"]]
+        selected_weapon = selected_weapon[selected_weapon[selected_x_axis] == point["x"]]
+        selected_weapon = selected_weapon[selected_weapon[selected_y_axis] == point["y"]]
+        out_selected_point_list.append(selected_weapon)
+    selection_df = pd.concat(out_selected_point_list)
+    selection_df = selection_df[column_orders]
+
+    need_rounding = ["shot_interval", "firing_time", "reload_time",
+                     "holster_time", "deploy_time",
+                     "headshot_damage", "body_damage", "leg_damage",
+                     "dps", "uncapped_dps", "damage_dealt",
+                     "uncapped_damage_dealt"
+                     ]
+    for col in need_rounding:
+        selection_df[col] = selection_df[col].round(3)
+
+    selection_df.rename(columns=datum_to_name_dict, inplace=True)
+
+    return selection_df
+
+
 filter_container = st.sidebar.container()
 
 selected_peek_time = filter_container.slider("Peek Time (ms):",
-                                             min_value=500,
+                                             min_value=100,
                                              max_value=5000,
-                                             value=2000,
-                                             step=100,
+                                             value=1000,
+                                             step=50,
                                              key="peek_time")
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
@@ -524,53 +567,44 @@ conditions_dict = {
 
 chart_container = st.container()
 
-if len(selected_weapons) == 0:
-    st.write(f"Select at least one weapon.")
-else:
-    e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons,
-                                            gun_df,
-                                            sniper_stocks_df,
-                                            standard_stocks_df,
-                                            fights_df,
-                                            conditions_dict)
-    dps_df = e_dps_plots["dps_df"]
 
-    plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
-    # altair_plot = plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis)
 
-    with chart_container:
-        try:
+if len(selected_weapons) != 0:
+    try:
+        e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons,
+                                                gun_df,
+                                                sniper_stocks_df,
+                                                standard_stocks_df,
+                                                fights_df,
+                                                conditions_dict)
+
+        plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
+        # altair_plot = plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis)
+        with chart_container:
             event = st.plotly_chart(plotly_plot[0], on_select="rerun")
-            expander = st.expander(label='Selection Details')
+            # expander = st.expander(label='Selection Details')
+            selection_tab, weapon_stats_tab = st.tabs(["Selection Details", "Weapon Statistics"])
 
-            selected_point_list = event["selection"]["points"]
-            out_selected_point_list = []
-            for point in selected_point_list:
-                selected_weapon = dps_df[dps_df["weapon_name"] == point["legendgroup"]]
-                selected_weapon = selected_weapon[selected_weapon[selected_x_axis] == point["x"]]
-                selected_weapon = selected_weapon[selected_weapon[selected_y_axis] == point["y"]]
-                out_selected_point_list.append(selected_weapon)
-            if len(out_selected_point_list) > 0:
-                merged_df = pd.concat(out_selected_point_list)
-                # selected_weapon = selected_weapon.iloc[0].copy()
-                merged_df = merged_df[column_orders]
+            selection_df = get_selection_details(e_dps_plots, event)
 
-                need_rounding = ["shot_interval", "firing_time", "reload_time", "holster_time", "deploy_time",
-                                 "headshot_damage", "body_damage", "leg_damage",
-                                 "dps", "uncapped_dps", "damage_dealt", "uncapped_damage_dealt"
-                                 ]
-                # 2 decimal places
-                for col in need_rounding:
-                    merged_df[col] = merged_df[col].round(3)
+            with selection_tab:
+                if selection_df is not None and len(selection_df) != 0 :
+                    st.dataframe(selection_df)
+                else:
+                    st.write(
+                        "Click on a point or use lasso or box select to see the details of the selection.")
 
-                merged_df.rename(columns=datum_to_name_dict, inplace=True)
-                expander.dataframe(merged_df)
-            else:
-                expander.write("Click on a point or use lasso or box select to see the details of the selection.")
-            # alt_chart = st.altair_chart(altair_plot[0], use_container_width=True)
-        except Exception as e:
-            st.error(f"Error in plotting the chart. {e}")
+            with weapon_stats_tab:
+                gun_df.rename(columns=datum_to_name_dict, inplace=True)
+
+                st.dataframe(gun_df)
+
+    # alt_chart = st.altair_chart(altair_plot[0], use_container_width=True)
+    except Exception as e:
+        st.error(f"Error in plotting the chart. {e}")
+else:
+    st.write(f"Select at least one weapon.")
 
 #
-expander = st.expander(label='Weapon Statistics')
-expander.dataframe(gun_df)
+# expander = st.expander(label='Weapon Statistics')
+# expander.dataframe(gun_df)
