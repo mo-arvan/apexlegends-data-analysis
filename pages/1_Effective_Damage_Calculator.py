@@ -35,7 +35,7 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     global datum_to_name_dict
     global name_to_datum_dict
 
-    chart_title = f'Effective DPS'
+    chart_title = f'Effective {chart_x_axis}'
 
     if chart_x_axis not in name_to_datum_dict:
         return None
@@ -453,10 +453,10 @@ with filter_container.expander("Advanced Configurations"):
                                           key='shot_location')
     chart_x_axis = st.selectbox('X Axis:',
                                 [
-                                    "Uncapped Damage Dealt",
                                     "Damage Dealt",
+                                    "Damage Dealt (Capped)",
                                     "eDPS",
-                                    "Uncapped eDPS",
+                                    "eDPS (Capped)",
                                     "Accuracy (%)",
                                     # "Accuracy Quantile (%)",
 
@@ -502,11 +502,12 @@ column_orders = ["weapon_name",
                  "uncapped_damage_dealt",
 
                  "how",
+                 "ammo_left",
                  "shot_interval",
                  "firing_time",
                  "headshot_damage", "body_damage", "leg_damage",
 
-                 "ammo_left", "holster_time", "deploy_time", "reload_time",
+                 "holster_time", "deploy_time", "reload_time",
                  "uncapped_dps",
                  "damage_dealt",
                  "dps",
@@ -516,21 +517,21 @@ column_orders = ["weapon_name",
 datum_to_name_dict = {
     "accuracy": "Accuracy (%)",
     "body_damage": "Body Damage",
-    "uncapped_damage_dealt": "Uncapped Damage Dealt",
+    "uncapped_damage_dealt": "Damage Dealt",
     "accuracy_quantile": "Accuracy Quantile (%)",
     "weapon_name": "Weapon",
     "how": "How",
+    "ammo_left": "Ammo Left",
     "shot_interval": "Shot Interval (ms)",
     "firing_time": "Firing Time (ms)",
-    "ammo_left": "Ammo Left",
     "reload_time": "Reload Time (ms)",
     "holster_time": "Holster Time (ms)",
     "deploy_time": "Deploy Time (ms)",
     "headshot_damage": "Headshot Damage",
     "leg_damage": "Leg Damage",
-    "damage_dealt": "Damage Dealt",
-    "dps": "eDPS",
-    "uncapped_dps": "Uncapped eDPS",
+    "damage_dealt": "Damage Dealt (Capped)",
+    "dps": "eDPS (Capped)",
+    "uncapped_dps": "eDPS",
 
 }
 
@@ -589,7 +590,7 @@ if len(selected_weapons) != 0:
 
             with selection_tab:
                 if selection_df is not None and len(selection_df) != 0 :
-                    st.dataframe(selection_df)
+                    st.dataframe(selection_df, hide_index=True)
                 else:
                     st.write(
                         "Click on a point or use lasso or box select to see the details of the selection.")
@@ -597,7 +598,7 @@ if len(selected_weapons) != 0:
             with weapon_stats_tab:
                 gun_df.rename(columns=datum_to_name_dict, inplace=True)
 
-                st.dataframe(gun_df)
+                st.dataframe(gun_df, hide_index=True)
 
     # alt_chart = st.altair_chart(altair_plot[0], use_container_width=True)
     except Exception as e:
