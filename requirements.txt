@@ -6,3 +6,4 @@ streamlit-dynamic-filters
 st-btn-group
 numpy
 scipy
+plotly
