@@ -58,15 +58,11 @@ def get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons
     return accuracy_model_df
 
 
-def get_e_dps_df(selected_weapons,
-                 guns_df,
+def get_e_dps_df(selected_weapons_df,
                  sniper_stocks_df,
                  standard_stocks_df,
-                 fights_df,
                  conditions):
     dps_dict_list = []
-
-    selected_weapons_df = guns_df[guns_df["weapon_name"].isin(selected_weapons)]
 
     mag_index = chart_config.mag_list.index(conditions["mag"])
     helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
@@ -174,14 +170,14 @@ def get_e_dps_df(selected_weapons,
                 remaining_peek_time_ms = peek_time_in_ms - charge_time_in_ms - burst_time_in_ms
                 if remaining_peek_time_ms < 0:
                     break
-                shots_during_peek = math.floor(remaining_peek_time_ms / shot_interval_in_ms) + i#+ bullets_per_burst
+                shots_during_peek = math.floor(remaining_peek_time_ms / shot_interval_in_ms) + i  # + bullets_per_burst
                 shots_during_peek = min(shots_during_peek, max_possible_shots)
                 if shots_during_peek > max_shot_burst:
                     max_shot_burst = shots_during_peek
             shots_during_peek = max_shot_burst
             burst_shots_fired = math.ceil(shots_during_peek / bullets_per_burst)
-            firing_time = (shots_during_peek - burst_shots_fired) * shot_interval + burst_fire_delay * max((burst_shots_fired - 1), 0)
-
+            firing_time = (shots_during_peek - burst_shots_fired) * shot_interval + burst_fire_delay * max(
+                (burst_shots_fired - 1), 0)
 
         pellets_per_shot = weapon.get("pellets_per_shot")
         if pd.isna(pellets_per_shot):

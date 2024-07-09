@@ -1,6 +1,7 @@
 import logging
 
 import altair as alt
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -421,6 +422,8 @@ selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gu
                                                                                           enable_tabs=True,
                                                                                           )
 
+selected_weapons_df = gun_df[gun_df["weapon_name"].isin(selected_weapons)]
+
 filters_dict = {
     "class": "Class",
     "weapon_name": "Weapons",
@@ -477,6 +480,48 @@ with filter_container.expander("Advanced Configurations"):
                                 ,
                                 index=0,
                                 key='y_axis')
+
+adjustment_expander = st.sidebar.expander("Weapon Adjustments")
+
+base_weapon_condition = np.logical_or(pd.isna(gun_df["secondary_class"]),
+                                      gun_df["secondary_class"] == "Care Package")
+base_weapon_condition = np.logical_or(base_weapon_condition, gun_df["secondary_class"] == "Hop-Up")
+
+base_weapons_df = gun_df[base_weapon_condition]
+
+with adjustment_expander:
+    base_weapon_name = st.selectbox("Base Weapon",
+                                    base_weapons_df["weapon_name"].unique().tolist(),
+                                    index=None,
+                                    key="base_weapon_name")
+
+    if base_weapon_name is None:
+        st.write("Select a base weapon.")
+    else:
+        base_weapon_df = base_weapons_df[base_weapons_df["weapon_name"] == base_weapon_name].copy()
+
+        if len(base_weapon_df) != 1:
+            st.write("Report an issue.")
+        else:
+            base_weapon_damage = base_weapon_df["damage"].iloc[0]
+            mag_4 = base_weapon_df["magazine_4"].iloc[0]
+            adjusted_damage = st.number_input("Adjusted Damage",
+                                              min_value=1,
+                                              max_value=200,
+                                              value=base_weapon_damage,
+                                              step=1,
+                                              key="adjusted_damage")
+            adjusted_magazine_4 = st.number_input("Purple Magazine Size",
+                                                  min_value=1,
+                                                  max_value=200,
+                                                  value=mag_4,
+                                                  step=1,
+                                                  key="adjusted_magazine_4")
+            base_weapon_df["weapon_name"] = f"Adjusted {base_weapon_name}"
+            base_weapon_df["damage"] = adjusted_damage
+            base_weapon_df["magazine_4"] = adjusted_magazine_4
+
+            selected_weapons_df = pd.concat([selected_weapons_df, base_weapon_df])
 
 #             alt.Tooltip('weapon_name', title="Weapon"),
 #             alt.Tooltip('accuracy', format=",.2f", title="Accuracy (%)"),
@@ -568,15 +613,11 @@ conditions_dict = {
 
 chart_container = st.container()
 
-
-
 if len(selected_weapons) != 0:
     try:
-        e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons,
-                                                gun_df,
+        e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons_df,
                                                 sniper_stocks_df,
                                                 standard_stocks_df,
-                                                fights_df,
                                                 conditions_dict)
 
         plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
@@ -589,7 +630,7 @@ if len(selected_weapons) != 0:
             selection_df = get_selection_details(e_dps_plots, event)
 
             with selection_tab:
-                if selection_df is not None and len(selection_df) != 0 :
+                if selection_df is not None and len(selection_df) != 0:
                     st.dataframe(selection_df, hide_index=True)
                 else:
                     st.write(
