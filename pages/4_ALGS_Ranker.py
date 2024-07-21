@@ -31,33 +31,33 @@ def get_player_ranking(input_df,
                        min_distance,
                        max_distance):
     ranking_df = input_df[["player_id", "team_name", "game_id",
-                           "player_input", "hit_count", "damage_sum", "distance_median"]]
+                           "player_input", "shots_hit", "total_damage", "distance"]]
 
     def filter_events(x_df, min_distance, max_distance, minimum_damage):
-        return x_df.loc[(x_df["distance_median"] >= min_distance) & (x_df["distance_median"] <= max_distance) & (
-                x_df["damage_sum"] >= minimum_damage)]
+        return x_df.loc[(x_df["distance"] >= min_distance) & (x_df["distance"] <= max_distance) & (
+                x_df["total_damage"] >= minimum_damage)]
 
-    # ranking_details_df = input_df.loc[input_df["damage_sum"] >= minimum_damage]
+    # ranking_details_df = input_df.loc[input_df["total_damage"] >= minimum_damage]
     ranking_details_df = filter_events(input_df, min_distance, max_distance, minimum_damage)
-    # high_hit_df = ranking_df.loc[ranking_df["damage_sum"] >= minimum_damage]
+    # high_hit_df = ranking_df.loc[ranking_df["total_damage"] >= minimum_damage]
     high_hit_df = filter_events(ranking_df, min_distance, max_distance, minimum_damage)
 
     high_hit_per_game_df = high_hit_df.groupby(["player_id", "game_id"]).agg(
-        hit_count=("hit_count", "count"),
+        shots_hit=("shots_hit", "count"),
     ).reset_index()
 
     high_hit_per_game_df = high_hit_per_game_df.groupby(["player_id"]).agg(
-        max_hit_count_per_game=("hit_count", "max"),
-        mean_hit_count_per_game=("hit_count", "mean"),
-        median_hit_count_per_game=("hit_count", "median"),
+        max_shots_hit_per_game=("shots_hit", "max"),
+        mean_shots_hit_per_game=("shots_hit", "mean"),
+        median_shots_hit_per_game=("shots_hit", "median"),
     ).reset_index()
 
     high_hit_df = high_hit_df.groupby(["player_id"]).agg(
-        high_hit_count=("hit_count", "count"),
+        high_shots_hit=("shots_hit", "count"),
     ).reset_index()
 
     all_hit_df = input_df.groupby(["player_id"]).agg(
-        total_fights=("hit_count", "count"),
+        total_fights=("shots_hit", "count"),
     ).reset_index()
 
     hash_character_df = input_df[["player_id", "game_id", "character"]].drop_duplicates()
@@ -102,7 +102,7 @@ def get_player_ranking(input_df,
     player_character_df = player_character_df.merge(player_id_team_name_df, on="player_id", how="left")
     # most_played_character = most_played_character.
     # filtered_df = input_df.loc[
-    #     damage_events_filtered_df["damage_sum"] >= minimum_damage]
+    #     damage_events_filtered_df["total_damage"] >= minimum_damage]
 
     high_hit_df = high_hit_df.merge(all_hit_df, on=[
         "player_id",
@@ -114,23 +114,23 @@ def get_player_ranking(input_df,
 
     high_hit_df = high_hit_df.merge(player_character_df, on="player_id", how="left")
 
-    high_hit_df["high_hit_count_percentage"] = 100 * high_hit_df["high_hit_count"] / high_hit_df["total_fights"]
+    high_hit_df["high_shots_hit_percentage"] = 100 * high_hit_df["high_shots_hit"] / high_hit_df["total_fights"]
 
-    high_hit_df["high_hit_count_percentage"] = high_hit_df["high_hit_count_percentage"].apply(
+    high_hit_df["high_shots_hit_percentage"] = high_hit_df["high_shots_hit_percentage"].apply(
         lambda x: np.round(x, 2))
 
-    high_hit_df["mean_hit_count_per_game"] = high_hit_df["mean_hit_count_per_game"].apply(
+    high_hit_df["mean_shots_hit_per_game"] = high_hit_df["mean_shots_hit_per_game"].apply(
         lambda x: np.round(x, 2))
-    high_hit_df["median_hit_count_per_game"] = high_hit_df["median_hit_count_per_game"].apply(
+    high_hit_df["median_shots_hit_per_game"] = high_hit_df["median_shots_hit_per_game"].apply(
         lambda x: np.round(x, 2))
 
-    high_hit_df["high_hit_count_percentage_str"] = high_hit_df[
-        "high_hit_count_percentage"].apply(
+    high_hit_df["high_shots_hit_percentage_str"] = high_hit_df[
+        "high_shots_hit_percentage"].apply(
         lambda x: f"{x:.2f} %")
 
     high_hit_df = high_hit_df.sort_values(by=[
-        "high_hit_count",
-        "high_hit_count_percentage"
+        "high_shots_hit",
+        "high_shots_hit_percentage"
     ],
         ascending=False)
 
@@ -143,19 +143,19 @@ def get_player_ranking(input_df,
 
     # high_hit_df["characters"] = high_hit_df["player_id"].apply(lambda x: player_id_to_character_dict.get(x, ["?"]))
 
-    high_hit_df["high_hit_count_rank"] = range(1, len(high_hit_df) + 1)
+    high_hit_df["high_shots_hit_rank"] = range(1, len(high_hit_df) + 1)
 
-    high_hit_df = high_hit_df.sort_values(by="max_hit_count_per_game", ascending=False)
+    high_hit_df = high_hit_df.sort_values(by="max_shots_hit_per_game", ascending=False)
 
-    high_hit_df["max_hit_count_per_game_rank"] = range(1, len(high_hit_df) + 1)
+    high_hit_df["max_shots_hit_per_game_rank"] = range(1, len(high_hit_df) + 1)
 
-    high_hit_df = high_hit_df.sort_values(by="mean_hit_count_per_game", ascending=False)
+    high_hit_df = high_hit_df.sort_values(by="mean_shots_hit_per_game", ascending=False)
 
-    high_hit_df["mean_hit_count_per_game_rank"] = range(1, len(high_hit_df) + 1)
+    high_hit_df["mean_shots_hit_per_game_rank"] = range(1, len(high_hit_df) + 1)
 
-    high_hit_df = high_hit_df.sort_values(by="median_hit_count_per_game", ascending=False)
+    high_hit_df = high_hit_df.sort_values(by="median_shots_hit_per_game", ascending=False)
 
-    high_hit_df["median_hit_count_per_game_rank"] = range(1, len(high_hit_df) + 1)
+    high_hit_df["median_shots_hit_per_game_rank"] = range(1, len(high_hit_df) + 1)
 
     ranking_details_df = ranking_details_df[[
         "player_id",
@@ -169,16 +169,16 @@ def get_player_ranking(input_df,
         "weapon_name",
         "event_start_time",
         "event_duration",
-        "damage_sum",
-        "distance_median",
-        "hit_count",
+        "total_damage",
+        "distance",
+        "shots_hit",
         "ammo_used",
         "player_hash",
         "game_id",
         "target",
         "event_time",
-        "distance",
-        "damage",
+        # "distance",
+        # "damage",
 
     ]]
 
@@ -190,7 +190,7 @@ def get_player_ranking_plot(input_df,
                             ranking_top_k,
                             min_distance,
                             max_distance,
-                            rank_column="high_hit_count"):
+                            rank_column="high_shots_hit"):
     high_hit_df, ranking_details_df = get_player_ranking(input_df, minimum_damage, min_distance, max_distance)
 
     high_hit_df = high_hit_df.sort_values(by=rank_column, ascending=False)
@@ -417,9 +417,9 @@ def get_player_ranking_plot(input_df,
                                                        fontSize=14,
                                                        dx=0).encode(
         x=alt.value(35),
-        # text="high_hit_count_percentage:Q",
+        # text="high_shots_hit_percentage:Q",
         # add percentage sign
-        text=alt.Text("high_hit_count_percentage_str:N",
+        text=alt.Text("high_shots_hit_percentage_str:N",
                       # format=".2 %",
                       ),
 
@@ -493,10 +493,10 @@ def get_player_ranking_plot(input_df,
     selected_df = high_hit_df.rename(columns={"player_id": "Name",
                                               "team_name": "Team",
                                               "player_input": "Input",
-                                              "high_hit_count_rank": "Rank",
-                                              "high_hit_count": "Count",
+                                              "high_shots_hit_rank": "Rank",
+                                              "high_shots_hit": "Count",
                                               "total_fights": "Total",
-                                              "high_hit_count_percentage": "Percentage"})
+                                              "high_shots_hit_percentage": "Percentage"})
 
     selected_df = selected_df[["Rank", "Name", "Input", "Count", "Total", "Percentage"]]
 
@@ -505,7 +505,7 @@ def get_player_ranking_plot(input_df,
     return response
 
 
-def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit_count"):
+def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_shots_hit"):
     high_hit_df, ranking_details_df = get_player_ranking(input_df, minimum_damage)
 
     # height = 800
@@ -535,7 +535,7 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit
                               ),
                 # sort based on sum hit count
                 sort=alt.EncodingSortField(
-                    field="high_hit_count",
+                    field="high_shots_hit",
                     order="descending"
                 ),
                 ),
@@ -606,9 +606,9 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit
                                                        fontSize=12,
                                                        dx=0).encode(
         x=alt.value(35),
-        # text="high_hit_count_percentage:Q",
+        # text="high_shots_hit_percentage:Q",
         # add percentage sign
-        text=alt.Text("high_hit_count_percentage_str:N",
+        text=alt.Text("high_shots_hit_percentage_str:N",
                       # format=".2 %",
                       ),
 
@@ -656,10 +656,10 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_hit
     selected_df = high_hit_df.rename(columns={"player_id": "Name",
                                               "team_name": "Team",
                                               "player_input": "Input",
-                                              "high_hit_count_rank": "Rank",
-                                              "high_hit_count": "Count",
+                                              "high_shots_hit_rank": "Rank",
+                                              "high_shots_hit": "Count",
                                               "total_fights": "Total",
-                                              "high_hit_count_percentage": "Percentage"})
+                                              "high_shots_hit_percentage": "Percentage"})
 
     selected_df = selected_df[["Rank", "Name", "Team", "Input", "Count", "Total", "Percentage"]]
 
@@ -680,7 +680,7 @@ minimum_damage = st.sidebar.number_input("Minimum Damage Dealt",
                                          min_value=1,
                                          max_value=1000,
                                          value=100,
-                                         key="high_hit_count")
+                                         key="high_shots_hit")
 
 top_k = st.sidebar.number_input("Top K Players",
                                 min_value=1,
@@ -708,35 +708,36 @@ max_distance = st.sidebar.number_input("Maximum Distance",
 #     # rank_column = "median_hit_count_per_game"
 
 rank_by_dict = {
-    "Sum High Hit Count": "high_hit_count",
-    "Max Hit Count per Game": "max_hit_count_per_game",
-    "Mean Hit Count per Game": "mean_hit_count_per_game",
-    "Median Hit Count per Game": "median_hit_count_per_game",
+    "Sum High Hit Count": "high_shots_hit",
+    "Max Hit Count per Game": "max_shots_hit_per_game",
+    "Mean Hit Count per Game": "mean_shots_hit_per_game",
+    "Median Hit Count per Game": "median_shots_hit_per_game",
 }
 
 ranking_by = st.sidebar.selectbox("Ranking By",
                                   rank_by_dict.keys(),
                                   key="ranking_by")
 
-rank_column = rank_by_dict.get(ranking_by, "high_hit_count")
+rank_column = rank_by_dict.get(ranking_by, "high_shots_hit")
 
-ranking_function = get_player_ranking_plot
+# ranking_function = get_player_ranking_plot
 # if ranking_scenarios == "Team Ranking":
 #     ranking_function = get_team_ranking_plot
 
-bar_plot, raw_data_1, raw_data_2 = ranking_function(damage_events_filtered_df,
-                                                    minimum_damage,
-                                                    top_k,
-                                                    min_distance,
-                                                    max_distance,
-                                                    rank_column)
+
+bar_plot, raw_data_1, raw_data_2 = get_player_ranking_plot(damage_events_filtered_df,
+                                                           minimum_damage,
+                                                           top_k,
+                                                           min_distance,
+                                                           max_distance,
+                                                           rank_column)
 
 alt_chart = st.altair_chart(bar_plot, use_container_width=True)
 
 expander = st.expander(label='Raw Data')
-expander.dataframe(raw_data_1,
-                   hide_index=True,
-                   use_container_width=True)
+# expander.dataframe(raw_data_1,
+#                    hide_index=True,
+#                    use_container_width=True)
 
 expander.dataframe(raw_data_2,
                    hide_index=True,
