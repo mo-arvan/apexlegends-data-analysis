@@ -1,3 +1,4 @@
+import datetime
 import logging
 import os
 import pickle
@@ -97,7 +98,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
     # player id, event id, event name, event time, event detail, event x, event y, event time in minutes and seconds
     # event text
     damage_dealt_pattern = r"Dealt (?P<damage>\d+) damage to (?P<target>.+?) with\s+(?P<weapon>.+?)\s+— ([\s\S]+?) — (?P<distance>\d+(\.\d+)?)"
-    ammo_used_pattern = (r"Used x(?P<ammo_count>\d+) \s*(?P<ammo_type>.+?) Ammo \(\d+ ➟ \d+\)")
+    ammo_used_pattern = (r"Used x(?P<ammo_count>\d+) \s*(?P<ammo_type>.+?) (Ammo|Rounds|Shells) \(\d+ ➟ \d+\)")
 
     game_damage_events = []
 
@@ -111,11 +112,11 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
     # concat_events = concat_events[concat_events["player_hash"].isin(dup_hashes)]
     # concat_events.sort_values("event_id", inplace=True)
     # concat_events.reset_index(drop=True, inplace=True)
-
+    selected_player_hash = "ebb81458a29f44e9c2c30c75008e3223"
     for player_hash, player_events_df in player_hash_game_dict.items():
         player_name = players_hash_to_name_dict[player_events_df["player_hash"][0][:32]]
-        # if player_hash == hao_right_hash_id:
-        #     logger.info(f"Processing events for {player_name}")
+        if player_hash == selected_player_hash:
+            logger.debug(f"Processing events for {player_name}")
 
         used_damaged_events = player_events_df[
             np.logical_or(np.logical_and(player_events_df["event_type"] == "playerDamaged",
@@ -137,7 +138,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
         # ammo_used_events = player_events_df[player_events_df["event_type"] == "ammoUsed"]
 
         max_damage_time_diff = 5
-        max_ammo_used_time_diff = 10
+        max_ammo_used_time_diff = 99
         merged_damage_events = []
         for i, row in used_damaged_events.iterrows():
             event_text = row["event_text"]
@@ -166,45 +167,46 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
 
                         last_event = merged_damage_events[-1]
 
-                        if last_event["weapon"] == weapon:
-                            if last_row["event_type"] == "playerDamaged" or last_row["target"] == "attacker":
-                                time_diff = row["event_timestamp"] - last_event["event_timestamp"][-1]
-                                if time_diff <= max_damage_time_diff:
-                                    merge_with_last = True
-                                elif time_diff < 2 * max_damage_time_diff:
-                                    # logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                        if last_event["ammo_used"] is None:
+                            if last_event["weapon"] == weapon:
+                                if last_row["event_type"] == "playerDamaged" or last_row["target"] == "attacker":
+                                    time_diff = row["event_timestamp"] - last_event["event_timestamp"][-1]
+                                    if time_diff <= max_damage_time_diff:
+                                        merge_with_last = True
+                                    elif time_diff < 2 * max_damage_time_diff:
+                                        # logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                                        pass
+                                else:
+                                    # logger.warning(f"Last event is not a damage event for {weapon}")
                                     pass
-                            else:
-                                # logger.warning(f"Last event is not a damage event for {weapon}")
-                                pass
 
                     if merge_with_last:
                         damage_dict = merged_damage_events[-1]
                         damage_dict["event_id"].append(row["event_id"])
                         damage_dict["event_time"].append(row["event_time"])
                         damage_dict["event_timestamp"].append(row["event_timestamp"])
-                        damage_dict["target"].append(target)
-                        damage_dict["distance"].append(distance)
-                        damage_dict["damage"].append(damage)
+                        damage_dict["target_arr"].append(target)
+                        damage_dict["distance_arr"].append(distance)
+                        damage_dict["damage_arr"].append(damage)
                     else:
                         damage_dict = row.to_dict()
                         damage_dict.pop("event_text")
                         damage_dict["event_id"] = [row["event_id"]]
                         damage_dict["event_time"] = [row["event_time"]]
                         damage_dict["event_timestamp"] = [row["event_timestamp"]]
-                        damage_dict["target"] = [target]
+                        damage_dict["target_arr"] = [target]
                         damage_dict["weapon"] = weapon
-                        damage_dict["distance"] = [distance]
-                        damage_dict["damage"] = [damage]
+                        damage_dict["distance_arr"] = [distance]
+                        damage_dict["damage_arr"] = [damage]
                         damage_dict["ammo_used"] = None
 
                         merged_damage_events.append(damage_dict)
                 else:
-                    logger.debug(f"Event text {event_text} did not match the pattern")
+                    logger.error(f"Event text {event_text} did not match the pattern")
 
             elif row["event_type"] == "ammoUsed":
 
-                if len(merged_damage_events) > 0 and merged_damage_events[-1]["ammo_used"] == None:
+                if len(merged_damage_events) > 0:
                     match = re.match(ammo_used_pattern, event_text)
 
                     if match:
@@ -214,13 +216,34 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
                         last_damage_event = merged_damage_events[-1]
                         last_weapon = last_damage_event["weapon"]
 
-                        if ammo_type in ammo_type_to_weapon_dict and last_weapon in ammo_type_to_weapon_dict[ammo_type]:
+                        if last_damage_event[
+                            "ammo_used"] is None and ammo_type in ammo_type_to_weapon_dict and last_weapon in \
+                                ammo_type_to_weapon_dict[ammo_type]:
                             time_diff = row["event_timestamp"] - last_damage_event["event_timestamp"][-1]
                             if time_diff <= max_ammo_used_time_diff:
                                 last_damage_event["ammo_used"] = ammo_count
                             else:
                                 # logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
                                 pass
+                        else:
+                            matching_weapon_list = ammo_type_to_weapon_dict[ammo_type]
+                            last_matching_event = next(
+                                filter(lambda x: x["weapon"] in matching_weapon_list, merged_damage_events[::-1]), None)
+                            # two_to_last_damage_event = merged_damage_events[-2]
+                            # two_to_last_weapon = two_to_last_damage_event["weapon"]
+
+                            if last_matching_event is None or last_matching_event["ammo_used"] is not None:
+                                continue
+
+                            time_diff = row["event_timestamp"] - last_matching_event["event_timestamp"][-1]
+                            if time_diff <= max_ammo_used_time_diff:
+                                last_matching_event["ammo_used"] = ammo_count
+                            else:
+                                # logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
+                                pass
+
+                    else:
+                        logger.debug(f"Event text {event_text} did not match the pattern")
 
         game_damage_events.extend(merged_damage_events)
 
@@ -323,11 +346,26 @@ def post_process(damage_events_dir, output_dir, init_dict):
                               "game_hash": "game_id"},
                      inplace=True)
 
-    damage_df["distance_median"] = damage_df["distance"].apply(lambda x: np.median(x))
-    damage_df["hit_count"] = damage_df["damage"].apply(lambda x: len(x))
-    damage_df["damage_sum"] = damage_df["damage"].apply(lambda x: sum(x))
-    damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
-    damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
+    hit_count_list = []
+    for i, row in damage_df.iterrows():
+            hit_count = len(row["damage_arr"])
+            if row["ammo_used"] is not None:
+                if row["ammo_used"] < hit_count:
+                    hit_count = row["ammo_used"]
+
+            hit_count_list.append(hit_count)
+    damage_df["shots_hit"] = hit_count_list
+
+    damage_df["distance"] = damage_df["distance_arr"].apply(lambda x: np.median(x))
+    # damage_df["hit_count"] = damage_df[["damage_arr", "target_arr"]].apply(calculate_hit_count)
+    damage_df["total_damage"] = damage_df["damage_arr"].apply(lambda x: sum(x))
+    # damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
+    # damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
+    # get mintues and seconds from event timestamp
+    damage_df["event_start_time"] = damage_df["event_timestamp"].apply(
+        lambda x: datetime.datetime.fromtimestamp(x[0]).strftime('%M:%S'))
+    damage_df["event_end_time"] = damage_df["event_timestamp"].apply(
+        lambda x: datetime.datetime.fromtimestamp(x[-1]).strftime('%M:%S'))
     damage_df["event_duration"] = damage_df["event_timestamp"].apply(lambda x: max(x) - min(x))
 
     damage_df = damage_df.sort_values(by=["game_id", "event_duration"], ascending=[True, False])
@@ -365,7 +403,7 @@ def post_process(damage_events_dir, output_dir, init_dict):
     damage_df = damage_df.merge(player_hash_df,
                                 on=["game_id", "player_hash"], how="inner")
 
-    # damage_df["target_unique"] = damage_df["target"].apply(lambda x: set(x))
+    # damage_df["target_unique"] = damage_df["target_arr"].apply(lambda x: set(x))
     #
     # # finding items that player is in the target list
     # damage_df["is_target"] = damage_df.apply(lambda x: x["player_name"] in x["target_unique"], axis=1)
@@ -417,6 +455,11 @@ def main():
         logger.info(f"Read {len(init_dict)} init files")
 
         # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
+        # selected_gamez = "78656cba121dadc281fd1001a5a24233"
+        #
+        # selected_game_df = damage_events_filtered_df.loc[damage_events_filtered_df["game_id"] == selected_gamez]
+        #
+        # selected_game_df.to_csv("selected_game.csv", index=False)
 
         logger.info("Processing events")
         for e in tqdm(events_gen, total=num_events):
