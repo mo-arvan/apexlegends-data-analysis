@@ -70,21 +70,12 @@ def get_e_dps_df(selected_weapons_df,
     evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
     base_health_amount = chart_config.health_values_dict[conditions["health"]]
     peek_time_in_ms = conditions["peek_time"]
-    # estimation_method = conditions.get("estimation_method", "Expected Value")
-
-    # accuracy_model_df = get_estimation_model(selected_weapons_df,
-    #                                          fights_df,
-    #                                          estimation_method,
-    #                                          selected_weapons_df)
 
     for idx, weapon in selected_weapons_df.iterrows():
 
-        # if weapon["weapon_name"] in accuracy_model_df["guns"]
-        # gun_accuracy_model_df = accuracy_model_df[accuracy_model_df["guns"].apply(lambda x: weapon["weapon_name"] in x)]
         weapon_raw_damage = weapon["damage"]
         current_mag_size = weapon[f"magazine_{mag_index + 1}"]
 
-        # current_stock = weapon[f"stock_{stock_index + 1}"]
 
         if conditions["ability_modifier"] == "Amped Cover (Rampart)":
             # Amped Cover boosts the damage of outgoing shots by 20%.
@@ -230,7 +221,6 @@ def get_e_dps_df(selected_weapons_df,
             if damage_dealt > 275:
                 pass
 
-            # TODO include raise and holster time, reload time
             gun_ttk_dict = {
                 "miss_rate": miss_rate,
                 "accuracy": accuracy,
@@ -256,23 +246,6 @@ def get_e_dps_df(selected_weapons_df,
             gun_ttk_dict.update(conditions)
             dps_dict_list.append(gun_ttk_dict)
 
-    # # adding ranking for weapons based on eDPS for each accuracy value
-    # accuracy_value = sorted(set([dps_dict["accuracy"] for dps_dict in dps_dict_list]), reverse=True)
-    # weapons_set  =  set([dps_dict["weapon_name"] for dps_dict in dps_dict_list])
-    #
-    # ranking_dict = {}
-    # matching_weapons = [dps_dict for dps_dict in dps_dict_list if dps_dict["accuracy"] == 100]
-    # matching_weapons = sorted(matching_weapons, key=lambda k: k['dps'], reverse=True)
-    # weapon_names = [dps_dict["weapon_name"] for dps_dict in matching_weapons]
-    # for i, weapon in enumerate(weapon_names):
-    #     ranking_dict[weapon] = i + 1
-    # #
-    # for accuracy in accuracy_value:
-    #     matching_weapons = [dps_dict for dps_dict in dps_dict_list if dps_dict["accuracy"] == accuracy]
-    #     matching_weapons = sorted(matching_weapons, key=lambda k: k['dps'], reverse=True)
-    #     for weapon in weapons_set:
-
-    # dps_dict_list = sorted(dps_dict_list, key=lambda k: k['dps'], reverse=True)
     dps_df = pd.DataFrame(dps_dict_list)
     dps_df = dps_df.sort_values(by=["weapon_name", "accuracy"], ascending=False).reset_index(drop=True)
 
