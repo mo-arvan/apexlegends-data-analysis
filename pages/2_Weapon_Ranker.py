@@ -22,7 +22,7 @@ st.set_page_config(
     }
 )
 with st.spinner("Loading data..."):
-    gun_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df = data_helper.load_data()
+    gun_df, sniper_stocks_df, standard_stocks_df, algs_games_df = data_helper.load_data()
 
 
 def plot_dps_grid(dps_grid, main_weapon):
@@ -305,7 +305,6 @@ else:
                                                    gun_df,
                                                    sniper_stocks_df,
                                                    standard_stocks_df,
-                                                   fights_df,
                                                    conditions_dict)
         altair_plot = plot_dps_grid(dps_grid_df, main_weapon)
 

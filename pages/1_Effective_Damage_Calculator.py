@@ -27,7 +27,7 @@ st.set_page_config(
     }
 )
 with st.spinner("Loading data..."):
-    gun_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df = data_helper.load_data()
+    gun_df, sniper_stocks_df, standard_stocks_df, algs_games_df = data_helper.load_data()
 
 
 def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=750):
