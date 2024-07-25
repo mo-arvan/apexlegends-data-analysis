@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+import src.data_loader as data_loader
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
 
@@ -199,7 +200,7 @@ def get_player_ranking_plot(input_df,
 
     # high_hit_ids = high_hit_df["player_id"].tolist()
 
-    legends_df = data_helper.get_legends_data()
+    legends_df = data_helper.load_legends_data()
 
     high_hit_df = high_hit_df.merge(legends_df, on="character", how="left")
 
@@ -668,7 +669,7 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_sho
     return response
 
 
-algs_games_df = data_helper.get_algs_games()
+algs_games_df = data_loader.get_algs_games()
 gun_stats_df, _, _ = data_helper.get_gun_stats()
 
 filters_container = st.sidebar.container()
@@ -724,13 +725,13 @@ rank_column = rank_by_dict.get(ranking_by, "high_shots_hit")
 # if ranking_scenarios == "Team Ranking":
 #     ranking_function = get_team_ranking_plot
 
-
-bar_plot, raw_data_1, raw_data_2 = get_player_ranking_plot(damage_events_filtered_df,
-                                                           minimum_damage,
-                                                           top_k,
-                                                           min_distance,
-                                                           max_distance,
-                                                           rank_column)
+with st.spinner("Ranking Players ..."):
+    bar_plot, raw_data_1, raw_data_2 = get_player_ranking_plot(damage_events_filtered_df,
+                                                               minimum_damage,
+                                                               top_k,
+                                                               min_distance,
+                                                               max_distance,
+                                                               rank_column)
 
 alt_chart = st.altair_chart(bar_plot, use_container_width=True)
 

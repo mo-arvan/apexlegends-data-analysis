@@ -615,12 +615,13 @@ chart_container = st.container()
 
 if len(selected_weapons) != 0:
     try:
-        e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons_df,
-                                                sniper_stocks_df,
-                                                standard_stocks_df,
-                                                conditions_dict)
+        with st.spinner("Calculating eDPS..."):
+            e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons_df,
+                                                    sniper_stocks_df,
+                                                    standard_stocks_df,
+                                                    conditions_dict)
 
-        plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
+            plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
         # altair_plot = plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis)
         with chart_container:
             event = st.plotly_chart(plotly_plot[0], on_select="rerun")

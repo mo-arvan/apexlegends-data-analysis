@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 from scipy.stats import gaussian_kde
 
+import src.data_loader as data_loader
 import src.data_helper as data_helper
 import src.streamtlit_helper as streamlit_helper
 
@@ -30,7 +31,7 @@ st.markdown('<style>#vg-tooltip-element{z-index: 1000051}</style>',
 
 logger.info("Loading data...")
 # with st.spinner("Loading data..."):
-algs_games_df = data_helper.get_algs_games()
+algs_games_df = data_loader.get_algs_games()
 gun_stats_df, _, _ = data_helper.get_gun_stats()
 
 logger.info("Data loaded.")
@@ -272,7 +273,7 @@ if filter_unknown_inputs:
     damage_events_filtered_df = damage_events_filtered_df.loc[
         damage_events_filtered_df["player_input"].isin(valid_inputs)]
 
-shots_hit_clip = st.sidebar.number_input("Shots Hit Clip",
+shots_hit_clip = st.sidebar.number_input("Max Shots Hit",
                                          min_value=1,
                                          max_value=30,
                                          value=15,
@@ -289,7 +290,8 @@ max_distance = st.sidebar.number_input("Maximum Distance",
                                        value=1000,
                                        key="max_distance")
 
-plots, raw_data = damage_plot_builder(damage_events_filtered_df, shots_hit_clip, min_distance, max_distance)
+with st.spinner("Building plots..."):
+    plots, raw_data = damage_plot_builder(damage_events_filtered_df, shots_hit_clip, min_distance, max_distance)
 
 row_1_cols = st.columns(2)
 
