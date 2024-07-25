@@ -3,8 +3,9 @@ import logging
 import os
 from argparse import ArgumentParser
 
-import src.data_loader as data_loader
 import pandas as pd
+
+import src.data_loader as data_loader
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

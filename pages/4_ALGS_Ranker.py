@@ -272,7 +272,7 @@ def get_player_ranking_plot(input_df,
                 'player_id',
                 # "characters"
                 # "weapon_name",
-                # "damage_sum:Q",
+                # "total_damage:Q",
                 # 'shots',
                 # 'hits',
                 # "accuracy",
@@ -550,7 +550,7 @@ def get_team_ranking_plot(input_df, minimum_damage, top_k, rank_column="high_sho
             [
                 'player_id',
                 # "weapon_name",
-                # "damage_sum:Q",
+                # "total_damage:Q",
                 # 'shots',
                 # 'hits',
                 # "accuracy",
@@ -702,10 +702,10 @@ max_distance = st.sidebar.number_input("Maximum Distance",
 # ranking_scenarios = st.sidebar.selectbox("Ranking Scenarios",
 #                                          ["Player Ranking", "Team Ranking"],
 #                                          key="ranking_scenarios")
-# rank_column = "high_hit_count"
-#     # rank_column = "max_hit_count_per_game"
-#     # rank_column = "mean_hit_count_per_game"
-#     # rank_column = "median_hit_count_per_game"
+# rank_column = "high_shots_hit"
+#     # rank_column = "max_shots_hit_per_game"
+#     # rank_column = "mean_shots_hit_per_game"
+#     # rank_column = "median_shots_hit_per_game"
 
 rank_by_dict = {
     "Sum High Hit Count": "high_shots_hit",
