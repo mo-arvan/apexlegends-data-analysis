@@ -17,40 +17,7 @@ logger.info(f"Running {__file__}")
 
 
 @st.cache_data
-def get_fights_data():
-    logger.debug("Loading fights data")
-    algs_games_df = get_algs_games()
-    # fights_df = pd.read_csv("data/weapons_data.csv")
-    fights_df = pd.read_parquet("data/fights_data.parquet")
-
-    fights_df = fights_df[~pd.isna(fights_df["weapon_name"])]
-    # filter when hits > shots
-    fights_df = fights_df[fights_df["hits"] <= fights_df["shots"]]
-
-    fights_df["accuracy"] = fights_df["hits"] / fights_df["shots"] * 100
-
-    def map_weapon_name(name):
-        relpace_dict = {
-            # "R-99": "R99",
-            "HAVOC": "HAVOC Turbo",
-        }
-        if name != "Charge Rifle":
-            if name in relpace_dict:
-                name = relpace_dict[name]
-        return name
-
-    invalid_weapon_names = ["Smoke Launcher", "Thermite Grenade", "Arc Star", "Frag Grenade", "Melee",
-                            'Perimeter Security', 'Knuckle Cluster', 'Riot Drill', 'Defensive Bombardment']
-
-    fights_df = fights_df[~fights_df["weapon_name"].isin(invalid_weapon_names)]
-    fights_df["weapon_name"] = fights_df["weapon_name"].apply(map_weapon_name)
-    fights_df = fights_df.merge(algs_games_df, on=["game_id"], how="inner")
-
-    return fights_df
-
-
-@st.cache_data
-def get_damage_data(selected_tournament):
+def load_damage_data(selected_tournament):
     logger.debug(f"Loading damage data for {selected_tournament}")
     normalized_name = selected_tournament.lower().replace(" ", "_")
 
@@ -60,9 +27,9 @@ def get_damage_data(selected_tournament):
 
 
 @st.cache_data
-def get_full_damage_data(selected_tournament):
-    damage_events_df = get_damage_data(selected_tournament)
-    hash_to_input_df = get_hash_to_player_info_df()
+def load_damage_dealt_data(selected_tournament):
+    damage_events_df = load_damage_data(selected_tournament)
+    hash_to_input_df = data_loader.get_hash_to_player_info_df()
 
     damage_events_df = damage_events_df.merge(hash_to_input_df,
                                               on="player_hash",
@@ -79,17 +46,6 @@ def get_full_damage_data(selected_tournament):
     damage_events_df["player_id"] = damage_events_df.apply(get_id_or_name, axis=1)
 
     return damage_events_df
-
-
-@st.cache_data
-def get_algs_games():
-    logger.debug("Loading algs games data")
-    algs_games_df = pd.read_csv("data/algs_game_list.csv",
-                                # ignore NA values
-                                na_filter=False,
-                                )
-
-    return algs_games_df
 
 
 # @st.cache_data
@@ -151,7 +107,7 @@ def get_gun_stats():
 
 @st.cache_data
 def load_data():
-    algs_games_df = get_algs_games()
+    algs_games_df = data_loader.get_algs_games()
     fights_df = get_fights_data()
     gun_stats_df, sniper_stocks_df, standard_stocks_df = get_gun_stats()
 
@@ -159,36 +115,7 @@ def load_data():
 
 
 @st.cache_data
-def get_hash_to_player_info_df():
-    liquipedia_players_df = data_loader.get_liquipedia_players_df()
-    players_df = liquipedia_players_df[["Player ID", "Input"]].copy()
-    esports_list = data_loader.get_esports_list()
-
-    desired_hash = "c47c3a177fce49fc512d3edffcd6fa99"
-
-    player_id_to_hash = [(p["esport_name"].lower(), hash) for p in esports_list for hash in
-                         p["hash"] if isinstance(p["esport_name"], str)]
-
-    player_id_to_hash_df = pd.DataFrame(player_id_to_hash, columns=["player_name", "hash"])
-
-    players_df["player_name"] = players_df["Player ID"].apply(lambda x: x.lower())
-
-    hash_to_input_df = player_id_to_hash_df.merge(players_df, on="player_name", how="left")
-
-    hash_to_input_df.rename(columns={"hash": "player_hash",
-                                     "Input": "player_input",
-                                     "Player ID": "player_id",
-                                     }, inplace=True)
-    hash_to_input_df.drop(columns=["player_name"], inplace=True)
-    # hash_to_input_dict = hash_to_input.set_index("hash")["Input"].to_dict()
-
-    # match = next((e for e in player_id_to_hash if desired_hash in e[1]), None)
-
-    return hash_to_input_df
-
-
-@st.cache_data
-def get_legends_data(resource_dir="resources"):
+def load_legends_data(resource_dir="resources"):
     logger.debug("Loading legends data")
 
     image_path_list = [f"{resource_dir}/{x}" for x in os.listdir(resource_dir) if x.endswith(".png")]
@@ -209,3 +136,37 @@ def get_legends_data(resource_dir="resources"):
     legends_data_df = pd.DataFrame(legends_data_list, columns=["character", "image"])
 
     return legends_data_df
+
+
+@st.cache_data
+def get_fights_data():
+    # not used
+    logger.debug("Loading fights data")
+    algs_games_df = data_loader.get_algs_games()
+    # fights_df = pd.read_csv("data/weapons_data.csv")
+    fights_df = pd.read_parquet("data/fights_data.parquet")
+
+    fights_df = fights_df[~pd.isna(fights_df["weapon_name"])]
+    # filter when hits > shots
+    fights_df = fights_df[fights_df["hits"] <= fights_df["shots"]]
+
+    fights_df["accuracy"] = fights_df["hits"] / fights_df["shots"] * 100
+
+    def map_weapon_name(name):
+        replace_dict = {
+            # "R-99": "R99",
+            "HAVOC": "HAVOC Turbo",
+        }
+        if name != "Charge Rifle":
+            if name in replace_dict:
+                name = replace_dict[name]
+        return name
+
+    invalid_weapon_names = ["Smoke Launcher", "Thermite Grenade", "Arc Star", "Frag Grenade", "Melee",
+                            'Perimeter Security', 'Knuckle Cluster', 'Riot Drill', 'Defensive Bombardment']
+
+    fights_df = fights_df[~fights_df["weapon_name"].isin(invalid_weapon_names)]
+    fights_df["weapon_name"] = fights_df["weapon_name"].apply(map_weapon_name)
+    fights_df = fights_df.merge(algs_games_df, on=["game_id"], how="inner")
+
+    return fights_df

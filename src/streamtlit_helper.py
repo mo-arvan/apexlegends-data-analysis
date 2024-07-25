@@ -188,7 +188,7 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
         st.error("Please select at least one tournament.")
         st.stop()
 
-    damage_events_df = data_helper.get_full_damage_data(selected_tournament)
+    damage_events_df = data_helper.load_damage_dealt_data(selected_tournament)
 
     region_list = algs_games_df[algs_games_df["tournament_full_name"] == selected_tournament][
         "tournament_region"].unique().tolist()

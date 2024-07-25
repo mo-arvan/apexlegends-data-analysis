@@ -299,13 +299,15 @@ if len(selected_weapons) == 0:
     st.write(f"Select at least one weapon.")
 else:
     main_and_pool = [main_weapon] + selected_weapons
-    dps_grid_df = ttk_analyzer.get_gun_meta_df(main_and_pool,
-                                               gun_df,
-                                               sniper_stocks_df,
-                                               standard_stocks_df,
-                                               fights_df,
-                                               conditions_dict)
-    altair_plot = plot_dps_grid(dps_grid_df, main_weapon)
+    with st.spinner("Calculating DPS Grid..."):
+
+        dps_grid_df = ttk_analyzer.get_gun_meta_df(main_and_pool,
+                                                   gun_df,
+                                                   sniper_stocks_df,
+                                                   standard_stocks_df,
+                                                   fights_df,
+                                                   conditions_dict)
+        altair_plot = plot_dps_grid(dps_grid_df, main_weapon)
 
     with chart_container:
         st.altair_chart(altair_plot[0], use_container_width=True)
