@@ -323,9 +323,9 @@ def post_process(damage_events_dir, output_dir, init_dict):
                               "game_hash": "game_id"},
                      inplace=True)
 
-    damage_df["distance_median"] = damage_df["distance"].apply(lambda x: np.median(x))
-    damage_df["hit_count"] = damage_df["damage"].apply(lambda x: len(x))
-    damage_df["damage_sum"] = damage_df["damage"].apply(lambda x: sum(x))
+    damage_df.distance = damage_df["distance"].apply(lambda x: np.median(x))
+    damage_df["shots_hit"] = damage_df["damage"].apply(lambda x: len(x))
+    damage_df["total_damage"] = damage_df["damage"].apply(lambda x: sum(x))
     damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
 
     player_hash_to_name = [(game["gameID"],
@@ -436,12 +436,12 @@ def main():
     ring_3_center_grouped = ring_3_center_grouped.sort_values(by=["map_name", "count"], ascending=[True, False])
 
     ring_6_grouped = (rings_df.groupby(["map_name", "ring_6_center_x", "ring_6_center_y"]).size().
-                                reset_index(name="count"))
+                      reset_index(name="count"))
 
     ring_6_grouped = ring_6_grouped.sort_values(by=["map_name", "count"], ascending=[True, False])
 
     game_rings_df = rings_df.merge(algs_games_df,
-                                                on=["game_id"], how="inner")
+                                   on=["game_id"], how="inner")
 
     rings_grouped = (game_rings_df[["tournament_full_name", "tournament_day", "map_name",
                                     "ring_6_center_x", "ring_6_center_y"]]

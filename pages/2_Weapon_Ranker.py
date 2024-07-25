@@ -29,7 +29,7 @@ def plot_dps_grid(dps_grid, main_weapon):
     # dps_grid
 
     # histogram_plot = alt.Chart(dps_grid).mark_bar().encode(
-    #     x=alt.X('hit_count',
+    #     x=alt.X('shots_hit',
     #             bin=alt.Bin(maxbins=bin_count),
     #             axis=alt.Axis(title='Hit Count'),
     #             scale=alt.Scale(zero=False)),

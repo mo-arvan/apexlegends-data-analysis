@@ -1,6 +1,6 @@
 import logging
-import math
 
+import math
 import pandas as pd
 
 import src.chart_config as chart_config
@@ -312,13 +312,13 @@ def get_gun_meta_df(selected_weapons,
     peek_time_list = [100]
     peek_time_list += [t * 500 + 250 for t in range(1, 10)]
 
+    selected_guns_df = guns_df[guns_df["weapon_name"].isin(selected_weapons)]
+
     for peek_time in peek_time_list:
         conditions["peek_time"] = peek_time
-        plot_dict = get_e_dps_df(selected_weapons,
-                                 guns_df,
+        plot_dict = get_e_dps_df(selected_guns_df,
                                  sniper_stocks_df,
                                  standard_stocks_df,
-                                 fights_df,
                                  conditions)
         dps_df = plot_dict["dps_df"]
         dps_df["peek_time"] = peek_time

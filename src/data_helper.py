@@ -56,7 +56,6 @@ def get_damage_data(selected_tournament):
 
     damage_events_df = pd.read_parquet(f"data/tournament_damage_events/{normalized_name}.parquet")
 
-
     return damage_events_df
 
 

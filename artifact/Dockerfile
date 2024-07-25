@@ -6,8 +6,9 @@ COPY requirements.txt /docker_build/
 
 RUN pip install --upgrade pip && \
     pip install -r /docker_build/requirements.txt && \
-    pip install numpy matplotlib pandas seaborn scikit-learn requests beautifulsoup4 lxml opencv-python bokeh==2.4.3 \
-    plotly tqdm
+    pip install requests plotly tqdm
+
+# matplotlib seaborn scikit-learn beautifulsoup4 lxml opencv-python
 
 # change the working directory to /opt/project
 

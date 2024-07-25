@@ -37,15 +37,15 @@ logger.info("Data loaded.")
 
 
 def damage_plot_builder(damage_data_df,
-                        hit_count_clip,
+                        shots_hit_clip,
                         min_distance,
                         max_distance):
     data_df = damage_data_df.copy()
-    data_df = data_df.loc[(data_df["distance_median"] >= min_distance) & (data_df["distance_median"] <= max_distance)]
-    # data_df = data_df.loc[data_df["hit_count"] <= max_hit_count]
-    data_df["hit_count"] = data_df["hit_count"].clip(upper=hit_count_clip)
+    data_df = data_df.loc[(data_df.distance >= min_distance) & (data_df.distance <= max_distance)]
+    # data_df = data_df.loc[data_df.shots_hit <= max_shots_hit]
+    data_df.shots_hit = data_df.shots_hit.clip(upper=shots_hit_clip)
 
-    bin_count = int(len(data_df["hit_count"].unique()) / 2)
+    bin_count = int(len(data_df.shots_hit.unique()) / 2)
 
     plots_height = 500
     plot_width = 700
@@ -56,9 +56,9 @@ def damage_plot_builder(damage_data_df,
         range=['red', 'blue'],
     )
 
-    hit_count_distance_heatmap = (alt.Chart(data_df).mark_rect().encode(
-        x=alt.X('distance_median:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
-        y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
+    shots_hit_distance_heatmap = (alt.Chart(data_df).mark_rect().encode(
+        x=alt.X('distance:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
+        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
     ).properties(
         title={"text": f"Hit Count vs Distance Heatmap",
@@ -70,9 +70,9 @@ def damage_plot_builder(damage_data_df,
     )
     )
 
-    hit_count_duration_heatmap = (alt.Chart(data_df).mark_rect().encode(
+    shots_hit_duration_heatmap = (alt.Chart(data_df).mark_rect().encode(
         x=alt.X('event_duration:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Duration (s)')),
-        y=alt.Y('hit_count:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
+        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
     ).properties(
         title={"text": f"Hit Count vs Duration Heatmap",
@@ -87,35 +87,35 @@ def damage_plot_builder(damage_data_df,
 
     def compute_epdf(group):
         # Fit the KDE to the data
-        kde = gaussian_kde(group['hit_count'])
+        kde = gaussian_kde(group['shots_hit'])
 
-        # Create a range of values for hit_count over which to evaluate the KDE
-        x = np.linspace(group['hit_count'].min(), group['hit_count'].max(), 100)
+        # Create a range of values for shots_hit over which to evaluate the KDE
+        x = np.linspace(group['shots_hit'].min(), group['shots_hit'].max(), 100)
 
         # Evaluate the KDE over this range to get the EPDF values
         epdf = kde.evaluate(x)
 
-        # Return a DataFrame with the hit_count values, EPDF values, and player_input group
-        return pd.DataFrame({'hit_count': x, 'epdf': epdf, 'player_input': group.name})
+        # Return a DataFrame with the shots_hit values, EPDF values, and player_input group
+        return pd.DataFrame({'shots_hit': x, 'epdf': epdf, 'player_input': group.name})
 
     def compute_hist_epdf(group):
         # Compute the histogram
 
-        bin_centers = list(range(1, max(group['hit_count'])))
+        bin_centers = list(range(1, max(group['shots_hit'])))
         bins = len(bin_centers)
-        counts, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
+        counts, bin_edges = np.histogram(group['shots_hit'], bins=bins, density=True)
 
         # Calculate the bin centers
         # bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
         # Create a DataFrame for the EPDF
-        epdf_df = pd.DataFrame({'hit_count': bin_centers, 'epdf': counts, 'player_input': group.name})
+        epdf_df = pd.DataFrame({'shots_hit': bin_centers, 'epdf': counts, 'player_input': group.name})
         return epdf_df
 
     # Function to compute histogram-based EPDF and ECDF
     def compute_hist_epdf_ecdf(group):
         # Compute the histogram
-        bins = list(range(1, max(group['hit_count']) + 2))  # Corrected to include max value
-        density, bin_edges = np.histogram(group['hit_count'], bins=bins, density=True)
+        bins = list(range(1, int(max(group['shots_hit']) + 2))) # Corrected to include max value
+        density, bin_edges = np.histogram(group['shots_hit'], bins=bins, density=True)
 
         # Calculate the ECDF
         ecdf = np.cumsum(density * np.diff(bin_edges))
@@ -123,7 +123,7 @@ def damage_plot_builder(damage_data_df,
 
         # Create a DataFrame for the EPDF and ECDF
         epdf_ecdf_df = pd.DataFrame({
-            'hit_count': bins[:-1],
+            'shots_hit': bins[:-1],
             'epdf': density,
             'ecdf': ecdf,
             'eccdf': eccdf,
@@ -142,7 +142,7 @@ def damage_plot_builder(damage_data_df,
     epdf_line = base_chart.mark_line(interpolate="basis",
                                      strokeWidth=5,
                                      ).encode(
-        x=alt.X('hit_count:Q',
+        x=alt.X('shots_hit:Q',
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)
                 ),
@@ -162,7 +162,7 @@ def damage_plot_builder(damage_data_df,
     # Create a selection that chooses the nearest point & selects based on x-value
     epdf_nearest = alt.selection_point(nearest=True,
                                        on="mouseover",
-                                       fields=["hit_count"],
+                                       fields=["shots_hit"],
                                        empty=False)
 
     # Draw points on the line, and highlight based on selection
@@ -171,7 +171,7 @@ def damage_plot_builder(damage_data_df,
         size=100,
         color="white",
     ).encode(
-        x=alt.X('hit_count:Q',
+        x=alt.X('shots_hit:Q',
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)
                 ),
@@ -183,12 +183,12 @@ def damage_plot_builder(damage_data_df,
     epdf_rules = base_chart.transform_pivot(
         "player_input",
         value="epdf",
-        groupby=["hit_count"]
+        groupby=["shots_hit"]
     ).mark_rule(
         color="gray",
         strokeWidth=2,
     ).encode(
-        x="hit_count:Q",
+        x="shots_hit:Q",
         opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0)),
         tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
     ).add_params(epdf_nearest)
@@ -203,7 +203,7 @@ def damage_plot_builder(damage_data_df,
     eccdf_line = base_chart.mark_line(interpolate="basis",
                                       strokeWidth=5,
                                       ).encode(
-        x=alt.X('hit_count:Q',
+        x=alt.X('shots_hit:Q',
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)
                 ),
@@ -226,7 +226,7 @@ def damage_plot_builder(damage_data_df,
         size=100,
         color="white",
     ).encode(
-        x=alt.X('hit_count:Q',
+        x=alt.X('shots_hit:Q',
                 axis=alt.Axis(title='Hit Count'),
                 scale=alt.Scale(zero=False)
                 ),
@@ -238,12 +238,12 @@ def damage_plot_builder(damage_data_df,
     eccdf_rules = base_chart.transform_pivot(
         "player_input",
         value="eccdf",
-        groupby=["hit_count"]
+        groupby=["shots_hit"]
     ).mark_rule(
         color="gray",
         strokeWidth=2,
     ).encode(
-        x="hit_count:Q",
+        x="shots_hit:Q",
         opacity=alt.condition(epdf_nearest, alt.value(1), alt.value(0)),
         tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
     ).add_params(epdf_nearest)
@@ -255,7 +255,7 @@ def damage_plot_builder(damage_data_df,
 
     eccdf_plot = eccdf_plot.interactive()
 
-    plot_list = [hit_count_distance_heatmap, hit_count_duration_heatmap, epdf_plot, eccdf_plot]
+    plot_list = [shots_hit_distance_heatmap, shots_hit_duration_heatmap, epdf_plot, eccdf_plot]
 
     return plot_list, data_df
 
@@ -272,11 +272,11 @@ if filter_unknown_inputs:
     damage_events_filtered_df = damage_events_filtered_df.loc[
         damage_events_filtered_df["player_input"].isin(valid_inputs)]
 
-hit_count_clip = st.sidebar.number_input("Hit Count Clip",
+shots_hit_clip = st.sidebar.number_input("Hit Count Clip",
                                          min_value=1,
                                          max_value=30,
                                          value=15,
-                                         key="hit_count_clip")
+                                         key="shots_hit_clip")
 
 min_distance = st.sidebar.number_input("Minimum Distance",
                                        min_value=1,
@@ -289,7 +289,7 @@ max_distance = st.sidebar.number_input("Maximum Distance",
                                        value=1000,
                                        key="max_distance")
 
-plots, raw_data = damage_plot_builder(damage_events_filtered_df, hit_count_clip, min_distance, max_distance)
+plots, raw_data = damage_plot_builder(damage_events_filtered_df, shots_hit_clip, min_distance, max_distance)
 
 row_1_cols = st.columns(2)
 
@@ -320,14 +320,13 @@ expander.dataframe(raw_data[[
     "weapon_name",
     "class",
     "target",
-    "distance_median",
-    "hit_count",
-    "damage_sum",
-    "ammo_used",
     "distance",
-    "damage",
+    "shots_hit",
+    "total_damage",
+    "ammo_used",
+    "distance_arr",
+    "damage_arr",
     "event_time",
-
     "player_hash",
     "game_id",
 

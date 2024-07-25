@@ -346,18 +346,19 @@ def post_process(damage_events_dir, output_dir, init_dict):
                               "game_hash": "game_id"},
                      inplace=True)
 
-    hit_count_list = []
+    shots_hit_list = []
     for i, row in damage_df.iterrows():
-            hit_count = len(row["damage_arr"])
-            if row["ammo_used"] is not None:
-                if row["ammo_used"] < hit_count:
-                    hit_count = row["ammo_used"]
+        shots_hit = len(row["damage_arr"])
+        if row["ammo_used"] is not None:
+            if row["ammo_used"] < shots_hit:
+                shots_hit = row["ammo_used"]
 
-            hit_count_list.append(hit_count)
-    damage_df["shots_hit"] = hit_count_list
+        shots_hit_list.append(shots_hit)
+    damage_df["shots_hit"] = shots_hit_list
+    damage_df["shots_hit"] = damage_df["shots_hit"].astype(int)
 
     damage_df["distance"] = damage_df["distance_arr"].apply(lambda x: np.median(x))
-    # damage_df["hit_count"] = damage_df[["damage_arr", "target_arr"]].apply(calculate_hit_count)
+    # damage_df["shots_hit"] = damage_df[["damage_arr", "target_arr"]].apply(calculate_shots_hit)
     damage_df["total_damage"] = damage_df["damage_arr"].apply(lambda x: sum(x))
     # damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
     # damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
