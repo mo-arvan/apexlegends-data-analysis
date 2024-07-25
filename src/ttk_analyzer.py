@@ -305,7 +305,6 @@ def get_gun_meta_df(selected_weapons,
                     guns_df,
                     sniper_stocks_df,
                     standard_stocks_df,
-                    fights_df,
                     conditions):
     dps_list = []
 

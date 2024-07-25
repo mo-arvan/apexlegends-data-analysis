@@ -108,10 +108,10 @@ def get_gun_stats():
 @st.cache_data
 def load_data():
     algs_games_df = data_loader.get_algs_games()
-    fights_df = get_fights_data()
+    # fights_df = get_fights_data()
     gun_stats_df, sniper_stocks_df, standard_stocks_df = get_gun_stats()
 
-    return gun_stats_df, sniper_stocks_df, standard_stocks_df, fights_df, algs_games_df
+    return gun_stats_df, sniper_stocks_df, standard_stocks_df, algs_games_df
 
 
 @st.cache_data
