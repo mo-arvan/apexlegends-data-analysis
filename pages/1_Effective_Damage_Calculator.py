@@ -9,7 +9,7 @@ import streamlit as st
 import src.chart_config as chart_config
 import src.streamtlit_helper as st_helper
 from src import data_helper
-from src import ttk_analyzer
+from src import damage_calculator
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -616,7 +616,7 @@ chart_container = st.container()
 if len(selected_weapons) != 0:
     try:
         with st.spinner("Calculating eDPS..."):
-            e_dps_plots = ttk_analyzer.get_e_dps_df(selected_weapons_df,
+            e_dps_plots = damage_calculator.get_e_dps_df(selected_weapons_df,
                                                     sniper_stocks_df,
                                                     standard_stocks_df,
                                                     conditions_dict)

@@ -6,7 +6,7 @@ import streamlit as st
 import src.chart_config as chart_config
 import src.streamtlit_helper as st_helper
 from src import data_helper
-from src import ttk_analyzer
+from src import damage_calculator
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -301,7 +301,7 @@ else:
     main_and_pool = [main_weapon] + selected_weapons
     with st.spinner("Calculating DPS Grid..."):
 
-        dps_grid_df = ttk_analyzer.get_gun_meta_df(main_and_pool,
+        dps_grid_df = damage_calculator.get_gun_meta_df(main_and_pool,
                                                    gun_df,
                                                    sniper_stocks_df,
                                                    standard_stocks_df,
