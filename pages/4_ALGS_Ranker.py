@@ -708,10 +708,10 @@ max_distance = st.sidebar.number_input("Maximum Distance",
 #     # rank_column = "median_shots_hit_per_game"
 
 rank_by_dict = {
-    "Sum High Hit Count": "high_shots_hit",
-    "Max Hit Count per Game": "max_shots_hit_per_game",
-    "Mean Hit Count per Game": "mean_shots_hit_per_game",
-    "Median Hit Count per Game": "median_shots_hit_per_game",
+    "Sum High Shots Hit": "high_shots_hit",
+    "Max Shots Hit per Game": "max_shots_hit_per_game",
+    "Mean Shots Hit per Game": "mean_shots_hit_per_game",
+    "Median Shots Hit per Game": "median_shots_hit_per_game",
 }
 
 ranking_by = st.sidebar.selectbox("Ranking By",

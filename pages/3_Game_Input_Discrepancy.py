@@ -58,10 +58,10 @@ def damage_plot_builder(damage_data_df,
 
     shots_hit_distance_heatmap = (alt.Chart(data_df).mark_rect().encode(
         x=alt.X('distance:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Distance (m)')),
-        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
+        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Shots Hit')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
     ).properties(
-        title={"text": f"Hit Count vs Distance Heatmap",
+        title={"text": f"Shots Hit vs Distance Heatmap",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
@@ -72,10 +72,10 @@ def damage_plot_builder(damage_data_df,
 
     shots_hit_duration_heatmap = (alt.Chart(data_df).mark_rect().encode(
         x=alt.X('event_duration:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Duration (s)')),
-        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Hit Count')),
+        y=alt.Y('shots_hit:Q', bin=alt.Bin(maxbins=bin_count), axis=alt.Axis(title='Shots Hit')),
         color=alt.Color('count()', scale=alt.Scale(scheme='viridis'))
     ).properties(
-        title={"text": f"Hit Count vs Duration Heatmap",
+        title={"text": f"Shots Hit vs Duration Heatmap",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
@@ -143,7 +143,7 @@ def damage_plot_builder(damage_data_df,
                                      strokeWidth=5,
                                      ).encode(
         x=alt.X('shots_hit:Q',
-                axis=alt.Axis(title='Hit Count'),
+                axis=alt.Axis(title='Shots Hit'),
                 scale=alt.Scale(zero=False)
                 ),
         y="epdf:Q",
@@ -152,7 +152,7 @@ def damage_plot_builder(damage_data_df,
                         scale=color_scale,
                         ),
     ).properties(
-        title={"text": f"ePDF of Hit Count",
+        title={"text": f"ePDF of Shots Hit",
                "subtitleColor": "gray",
                },
         height=plots_height,
@@ -172,7 +172,7 @@ def damage_plot_builder(damage_data_df,
         color="white",
     ).encode(
         x=alt.X('shots_hit:Q',
-                axis=alt.Axis(title='Hit Count'),
+                axis=alt.Axis(title='Shots Hit'),
                 scale=alt.Scale(zero=False)
                 ),
         y="epdf:Q",
@@ -204,7 +204,7 @@ def damage_plot_builder(damage_data_df,
                                       strokeWidth=5,
                                       ).encode(
         x=alt.X('shots_hit:Q',
-                axis=alt.Axis(title='Hit Count'),
+                axis=alt.Axis(title='Shots Hit'),
                 scale=alt.Scale(zero=False)
                 ),
         y="eccdf:Q",
@@ -213,7 +213,7 @@ def damage_plot_builder(damage_data_df,
                         scale=color_scale,
                         ),
     ).properties(
-        title={"text": f"eCCDF of Hit Count",
+        title={"text": f"eCCDF of Shots Hit",
                "subtitleColor": "gray",
                },
         height=plots_height,
@@ -227,7 +227,7 @@ def damage_plot_builder(damage_data_df,
         color="white",
     ).encode(
         x=alt.X('shots_hit:Q',
-                axis=alt.Axis(title='Hit Count'),
+                axis=alt.Axis(title='Shots Hit'),
                 scale=alt.Scale(zero=False)
                 ),
         y="eccdf:Q",
@@ -272,7 +272,7 @@ if filter_unknown_inputs:
     damage_events_filtered_df = damage_events_filtered_df.loc[
         damage_events_filtered_df["player_input"].isin(valid_inputs)]
 
-shots_hit_clip = st.sidebar.number_input("Hit Count Clip",
+shots_hit_clip = st.sidebar.number_input("Shots Hit Clip",
                                          min_value=1,
                                          max_value=30,
                                          value=15,

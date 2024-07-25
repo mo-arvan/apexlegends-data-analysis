@@ -31,13 +31,13 @@ def plot_dps_grid(dps_grid, main_weapon):
     # histogram_plot = alt.Chart(dps_grid).mark_bar().encode(
     #     x=alt.X('shots_hit',
     #             bin=alt.Bin(maxbins=bin_count),
-    #             axis=alt.Axis(title='Hit Count'),
+    #             axis=alt.Axis(title='Shots Hit'),
     #             scale=alt.Scale(zero=False)),
     #     y='count()',
     #     # color=alt.Color('player_name', legend=None, scale=alt.Scale(scheme='category20')),
     #     # tooltip=['player_name', "weapon_name", 'shots', 'hits', "accuracy"],
     # ).properties(
-    #     title={"text": f"Hit Count Histogram",
+    #     title={"text": f"Shots Hit Histogram",
     #            # "subtitle": f"Median Fight Count: {fights_count_median}",
     #            "subtitleColor": "gray",
     #            },
