@@ -248,7 +248,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
         game_damage_events.extend(merged_damage_events)
 
     if len(game_damage_events) == 0:
-        logger.warning(f"No damage events found for {game_hash}")
+        logger.debug(f"No damage events found for {game_hash}")
         return
 
     game_damage_df = pd.DataFrame(game_damage_events)
@@ -293,7 +293,7 @@ def post_process(damage_events_dir, output_dir, init_dict):
     all_files = [pd.read_parquet(f) for f in all_files]
     damage_df = pd.concat(all_files)
 
-    algs_games_df = data_helper.get_algs_games()
+    algs_games_df = data_loader.get_algs_games()
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
 
     def fix_weapon_name(name):
@@ -403,6 +403,21 @@ def post_process(damage_events_dir, output_dir, init_dict):
 
     damage_df = damage_df.merge(player_hash_df,
                                 on=["game_id", "player_hash"], how="inner")
+
+    hash_to_input_df = data_loader.get_hash_to_player_info_df()
+    damage_df = damage_df.merge(hash_to_input_df,
+                                              on="player_hash",
+                                              how="left")
+    def get_id_or_name(x):
+        id = x["player_id"]
+        name = x["player_name"]
+        if not pd.isna(id):
+            return id
+        else:
+            return name
+
+    damage_df["player_id"] = damage_df[["player_id", "player_name"]].apply(get_id_or_name, axis=1)
+
 
     # damage_df["target_unique"] = damage_df["target_arr"].apply(lambda x: set(x))
     #

@@ -5,7 +5,7 @@ from altair import datum
 
 from functools import partial
 import src.chart_config as chart_config
-from src import ttk_analyzer
+from src import damage_calculator
 import src.data_helper as data_helper
 from src.dynamic_filters import DynamicFilters
 import numpy as np
@@ -65,7 +65,7 @@ selected_estimation_method = "Expected Value"
 
 selected_weapons_df = pd.DataFrame()
 
-accuracy_model_df = ttk_analyzer.get_estimation_model(guns_df,
+accuracy_model_df = damage_calculator.get_estimation_model(guns_df,
                                                       fights_df,
                                                       selected_estimation_method,
                                                       selected_weapons_df)
