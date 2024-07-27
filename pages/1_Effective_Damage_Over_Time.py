@@ -8,8 +8,8 @@ import streamlit as st
 
 import src.chart_config as chart_config
 import src.streamtlit_helper as st_helper
-from src import data_helper
 from src import damage_calculator
+from src import data_helper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -19,7 +19,7 @@ logger.info(f"Running {__file__}")
 alt.renderers.enable("svg")
 
 st.set_page_config(
-    page_title="eDPS Calculator",
+    page_title="Effective Damage Over Time",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -30,13 +30,13 @@ with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, algs_games_df = data_helper.load_data()
 
 
-def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=750):
-    dps_df, dps_full_df, pivot_df = e_dps_plots["dps_df"], e_dps_plots["dps_full_df"], e_dps_plots["pivot_df"]
+def plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=750):
+    dps_df = e_dps_plots["dps_df"]
 
     global datum_to_name_dict
     global name_to_datum_dict
 
-    chart_title = f'Effective {chart_x_axis}'
+    chart_title = f'Effective {chart_x_axis}<br>Accuracy {conditions_dict["accuracy"]}%'
 
     if chart_x_axis not in name_to_datum_dict:
         return None
@@ -60,7 +60,7 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
 
     # Assuming `dps_full_df` has columns specified in tooltips and weapon_name for color encoding
     dps_points = px.scatter(
-        dps_full_df,
+        dps_df,
         x=data_x_name,
         y=data_y_name,
         color='weapon_name',  # Automatically uses default color sequence
@@ -91,7 +91,7 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     fig.update_traces(mode="markers+lines", hovertemplate=None)
     fig.update_layout(hovermode="x unified")
     # fig.update_traces(hoverinfo='none')
-    fig.update_traces(marker={'size': 10})
+    fig.update_traces(marker={'size': 6})
     # Updating the colors based on 'weapon_name' if similar to dark2 color scheme is desired
     fig.update_traces(line=dict(width=2))  # This sets the line width similar to strokeWidth=3 in Altair
     fig.update_layout(
@@ -119,254 +119,6 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     # Customize Axis Titles if necessary
     fig.update_xaxes(title_text=chart_x_axis)
     fig.update_yaxes(title_text=chart_y_axis)
-
-    plot_list = [fig,
-                 ]
-
-    return plot_list
-
-
-def plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis):
-    dps_df, dps_full_df, pivot_df = e_dps_plots["dps_df"].copy(), e_dps_plots["dps_full_df"].copy(), e_dps_plots[
-        "pivot_df"].copy()
-
-    weapon_names_list = dps_full_df["weapon_name"].unique().tolist()
-
-    chart_title = f'Effective DPS'
-
-    # dps_df["accuracy_quantile"] = dps_df["cdf"].apply(lambda x: round(x * 100, 2))
-    datum_to_name_dict = {
-        "accuracy": "Accuracy (%)",
-        "damage_dealt": "Damage Dealt",
-        "dps": "eDPS",
-        "uncapped_dps": "Uncapped eDPS",
-        "uncapped_damage_dealt": "Uncapped Damage Dealt",
-        "accuracy_quantile": "Accuracy Quantile (%)",
-    }
-    name_to_datum_dict = {v: k for k, v in datum_to_name_dict.items()}
-
-    x_axis, y_axis = None, None
-
-    if chart_x_axis not in name_to_datum_dict:
-        return None
-
-    data_x_name = name_to_datum_dict[chart_x_axis]
-
-    x_axis = alt.X(data_x_name,
-                   axis=alt.Axis(title=chart_x_axis),
-                   sort=None)
-    data_y_name = name_to_datum_dict[chart_y_axis]
-
-    y_axis = alt.Y(data_y_name,
-                   axis=alt.Axis(title=chart_y_axis),
-                   scale=alt.Scale(zero=False))
-
-    # Create a selection that chooses the nearest point & selects based on x-value
-    # dps_x_y_nearest = alt.selection_point(nearest=False,
-    #                                       on="mouseover",
-    #                                       fields=[data_x_name, data_y_name],
-    #                                       empty=False)
-
-    dps_line = alt.Chart(dps_df).mark_line(
-        # interpolate='step-before',
-        interpolate="linear",
-        strokeWidth=3,
-    ).encode(
-        x=x_axis,
-        y=y_axis,
-        color=alt.Color('weapon_name:N',
-                        legend=alt.Legend(title="Weapon"),
-                        scale=alt.Scale(scheme='dark2')
-                        ),
-        # shape=alt.Shape('weapon'),
-        tooltip=alt.value(None),
-        # strokeDash=alt.StrokeDash("weapon", scale=alt.Scale(domain=list(weapon_to_stroke_dash.keys()),
-        #                                                     range=list(weapon_to_stroke_dash.values())),
-        #                           legend=alt.Legend(title="Weapon")),
-        strokeDash=alt.StrokeDash("weapon_name",
-                                  legend=alt.Legend(title="Weapon")
-                                  ),
-        # strokeWidth=alt.value(3),
-        # strokeDash="symbol",
-    ).properties(
-        title=chart_title,
-        # width=800,
-        height=750,
-    )
-
-    # dps_x_nearest = alt.selection_point(nearest=True,
-    #                                     on='mouseover',
-    #                                     fields=[data_x_name],
-    #                                     empty=False)
-
-    # # # Transparent selectors across the chart. This is what tells us
-    # # # the x-value of the cursor
-    # selectors = alt.Chart(dps_df).mark_point(
-    #     color="white"
-    # ).encode(
-    #     # y=y_axis,
-    #     x=x_axis,
-    #     tooltip=alt.value(None),
-    #     opacity=alt.value(0),
-    #     # opacity=alt.condition(dps_x_nearest, alt.value(1), alt.value(0)),
-    # ).add_params(
-    #     dps_x_nearest
-    # )
-
-    dps_min_x_nearest = alt.selection_point(
-        nearest=True,
-        on='mouseover',
-        fields=[f"min_{data_x_name}"],
-        empty=False,
-    )
-
-    dps_points_plot = (alt.Chart(dps_full_df).mark_point(
-        filled=True,
-        opacity=1,
-    ).encode(
-        x=x_axis,
-        y=y_axis,
-        shape=alt.Shape('weapon_name', legend=alt.Legend(title="Weapon")),
-        color=alt.Color('weapon_name', legend=alt.Legend(title="Weapon"), scale=alt.Scale(scheme='dark2')),
-        # color=alt.condition(dps_x_nearest, alt.value("white"), alt.value("gray")),
-        tooltip=[
-            alt.Tooltip('weapon_name', title="Weapon"),
-            alt.Tooltip('accuracy', format=",.2f", title="Accuracy (%)"),
-            # alt.Tooltip("accuracy_quantile", format=",.2f"),
-            alt.Tooltip("damage_dealt", format=",.2f", title="Damage Dealt"),
-            alt.Tooltip('dps', format=",.2f", title="eDPS"),
-            alt.Tooltip("uncapped_damage_dealt", format=",.2f", title="Uncapped Damage Dealt"),
-            alt.Tooltip("uncapped_dps", format=",.2f", title="Uncapped eDPS"),
-            alt.Tooltip("how", title="How", ),
-            alt.Tooltip("shot_interval", title="Shot Interval (ms)", format=",.0f"),
-            alt.Tooltip("firing_time", title="Firing Time (ms)", format=",.0f"),
-            # "accuracy_model"
-            alt.Tooltip("ammo_left", format=",.0f", title="Ammo Left"),
-            alt.Tooltip('reload_time', format=".0f", title="Reload Time (ms)"),
-            alt.Tooltip('holster_time', format=",.0f", title="Holster Time (ms)"),
-            alt.Tooltip('deploy_time', format=",.0f", title="Deploy Time (ms)"),
-            alt.Tooltip('headshot_damage', format=",.2f", title="Headshot Damage"),
-            alt.Tooltip('body_damage', format=",.2f", title="Body Damage"),
-            alt.Tooltip('leg_damage', format=",.2f", title="Leg Damage"),
-
-        ],
-        size=alt.condition(dps_min_x_nearest, alt.value(300), alt.value(100)),
-        # opacity=alt.condition(dps_min_x_nearest, alt.value(1), alt.value(0.8))
-    )
-        # .add_params(
-        #     dps_x_nearest
-        # )
-    )
-
-    # # Draw a rule at the location of the selection
-    # epdf_rules = alt.Chart(dps_df).transform_pivot(
-    #     "weapon_name:N",
-    #     value=data_y_name,
-    #     groupby=[data_x_name]
-    # ).mark_rule(
-    #     color="gray",
-    #     strokeWidth=2,
-    # ).encode(
-    #     x=data_x_name,
-    #     opacity=alt.condition(dps_nearest, alt.value(1), alt.value(0)),
-    #     # tooltip=[alt.Tooltip(c, type="quantitative", format=".2f") for c in columns],
-    # ).add_params(dps_nearest)
-
-    # # Create a selection that chooses the nearest point & selects based on x-value
-
-    #
-
-    #
-    # # # Draw a rule at the location of the selection
-    min_x_tooltip = [alt.Tooltip(f"min_{data_x_name}:Q", format=".2f", title=f"Min {chart_x_axis}")]
-    dps_rules = (alt.Chart(pivot_df)
-    # .transform_aggregate(
-    #     groupby=["weapon_name", data_x_name],
-    #     min_y=f"min({data_y_name})",
-    # )
-    # .transform_pivot(
-    #     pivot="weapon_name",
-    #     value=data_y_name,
-    #     groupby=[f"min_{data_x_name}"]
-    # )
-    .mark_rule(color='gray').encode(
-        # y=y_axis,
-        x=f"min_{data_x_name}:Q",
-        tooltip=min_x_tooltip + [alt.Tooltip(field=c.replace(".", "\\."), type="quantitative", format=".2f") for c in
-                                 weapon_names_list],
-        opacity=alt.condition(dps_min_x_nearest, alt.value(1), alt.value(0)),
-        # tooltip=None,
-    ).add_params(
-        dps_min_x_nearest
-    )
-
-        # .transform_filter(
-        #     dps_x_nearest
-        # )
-    )
-    #
-    # # # Draw points on the line, and highlight based on selection
-    # points = dps_line.mark_point().encode(
-    #     # y=alt.Y('ttk', axis=alt.Axis(title='Effective TTK (ms)')),
-    #     opacity=alt.condition(nearest, alt.value(1), alt.value(0)),
-    # )
-
-    # r = dps_df[dps_df["dps"] > 90].groupby("weapon_name").agg({"accuracy": "min"}).reset_index()
-    #
-    # # plot the text for each line with the min accuracy to achieve at least nearest point y
-    # h_line_text = alt.Chart(dps_df).transform_filter(
-    #     nearest
-    # ).transform_aggregate(
-    #     groupby=["weapon_name"],
-    #     min_x="min(accuracy)",
-    # ).mark_text(align='left', dx=-5, dy=10).encode(
-    #     x=alt.value(10),
-    #     # y=y_axis,
-    #     text=alt.Text('min_x:N', format=".2f"),
-    #     color=alt.value("white"),
-    # ).add_params(
-    #     nearest
-    # )
-
-    #
-
-    #
-    # # Draw text labels near the points, and highlight based on selection
-    text = (alt.Chart(dps_full_df).transform_aggregate(
-        groupby=["weapon_name", data_x_name],
-        min_y=f"min({data_y_name})",
-    ).transform_calculate(
-        line_text=alt.datum.weapon_name + " @ " + alt.datum.min_y + "%"  # + alt.datum[data_x_name] + " " +
-    ).mark_text(
-        align='center',
-        dx=0,
-        dy=-25,
-        fontSize=14,
-        color="white",
-
-    ).encode(
-        x=x_axis,
-        y="min_y:Q",
-        # text=alt.condition(dps_x_nearest,
-        #                    alt.Text(data_y_name, format=".0f"),
-        #                    alt.value(' ')),
-        text=alt.Text("line_text:N"),
-        opacity=alt.condition(dps_min_x_nearest, alt.value(1), alt.value(0))
-        # shape=alt.Shape('weapon', legend=None),
-    ))
-    #
-
-    # fig = dps_line
-    fig = (alt.layer(
-        dps_line, dps_rules, dps_points_plot,  # , text,
-    ).resolve_scale(
-        shape='independent',
-        color='independent',
-        strokeDash='independent',
-    )
-    )
-
-    fig = fig.interactive()
 
     plot_list = [fig,
                  ]
@@ -407,12 +159,12 @@ def get_selection_details(e_dps_plots, event, ):
 
 filter_container = st.sidebar.container()
 
-selected_peek_time = filter_container.slider("Peek Time (ms):",
-                                             min_value=100,
-                                             max_value=5000,
-                                             value=1000,
-                                             step=50,
-                                             key="peek_time")
+selected_accuracy = filter_container.slider("Accuracy (%)",
+                                            min_value=0,
+                                            max_value=100,
+                                            value=100,
+                                            step=5,
+                                            key="accuracy")
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
                                                                                           filter_container,
@@ -454,32 +206,35 @@ with filter_container.expander("Advanced Configurations"):
                                           chart_config.shot_location_dict.keys(),
                                           index=0,
                                           key='shot_location')
-    chart_x_axis = st.selectbox('X Axis:',
-                                [
-                                    "Damage Dealt",
-                                    "Damage Dealt (Capped)",
-                                    "eDPS",
-                                    "eDPS (Capped)",
-                                    "Accuracy (%)",
-                                    # "Accuracy Quantile (%)",
-
-                                ],
-                                index=0,
-                                key='x_axis')
-
-    chart_y_axis = st.selectbox('Y Axis:',
-                                [
-                                    # "Accuracy Quantile (%)",
-                                    "Accuracy (%)",
-                                    "eDPS",
-                                    "Damage Dealt",
-                                    "Uncapped eDPS",
-                                    "Uncapped Damage Dealt",
-                                ]
-
-                                ,
-                                index=0,
-                                key='y_axis')
+    chart_x_axis = "Damage Dealt"
+    # chart_x_axis = st.selectbox('X Axis:',
+    #                             [
+    #                                 "Damage Dealt",
+    #                                 "Damage Dealt (Capped)",
+    #                                 "eDPS",
+    #                                 "eDPS (Capped)",
+    #                                 "Accuracy (%)",
+    #                                 # "Accuracy Quantile (%)",
+    #
+    #                             ],
+    #                             index=0,
+    #                             key='x_axis')
+    #
+    chart_y_axis = "Time (ms)"
+    # chart_y_axis = st.selectbox('Y Axis:',
+    #                             [
+    #                                 # "Accuracy Quantile (%)",
+    #                                 "Time (ms)",
+    #                                 "Accuracy (%)",
+    #                                 "eDPS",
+    #                                 "Damage Dealt",
+    #                                 "Uncapped eDPS",
+    #                                 "Uncapped Damage Dealt",
+    #                             ]
+    #
+    #                             ,
+    #                             index=0,
+    #                             key='y_axis')
 
 adjustment_expander = st.sidebar.expander("Weapon Adjustments")
 
@@ -577,6 +332,7 @@ datum_to_name_dict = {
     "damage_dealt": "Damage Dealt (Capped)",
     "dps": "eDPS (Capped)",
     "uncapped_dps": "eDPS",
+    "firing_time": "Time (ms)",
 
 }
 
@@ -605,7 +361,7 @@ conditions_dict = {
     "shield": selected_evo_shield,
     "shot_location": selected_shot_location,
     "estimation_method": selected_estimation_method,
-    "peek_time": selected_peek_time,
+    "accuracy": selected_accuracy,
     "health": selected_health,
 }
 
@@ -615,13 +371,13 @@ chart_container = st.container()
 
 if len(selected_weapons) != 0:
     try:
-        with st.spinner("Calculating eDPS..."):
-            e_dps_plots = damage_calculator.get_e_dps_df(selected_weapons_df,
-                                                    sniper_stocks_df,
-                                                    standard_stocks_df,
-                                                    conditions_dict)
+        with st.spinner("Calculating damage dealt..."):
+            e_dps_plots = damage_calculator.calculate_damage_over_time(selected_weapons_df,
+                                                                       sniper_stocks_df,
+                                                                       standard_stocks_df,
+                                                                       conditions_dict)
 
-            plotly_plot = plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
+            plotly_plot = plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
         # altair_plot = plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis)
         with chart_container:
             event = st.plotly_chart(plotly_plot[0], on_select="rerun")

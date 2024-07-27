@@ -4,6 +4,7 @@ import logging
 import os
 from io import BytesIO
 
+import time
 import pandas as pd
 import streamlit as st
 from PIL import Image
@@ -22,28 +23,6 @@ def load_damage_data(selected_tournament):
     normalized_name = selected_tournament.lower().replace(" ", "_")
 
     damage_events_df = pd.read_parquet(f"data/tournament_damage_events/{normalized_name}.parquet")
-
-    return damage_events_df
-
-
-@st.cache_data
-def load_damage_dealt_data(selected_tournament):
-    damage_events_df = load_damage_data(selected_tournament)
-    hash_to_input_df = data_loader.get_hash_to_player_info_df()
-
-    damage_events_df = damage_events_df.merge(hash_to_input_df,
-                                              on="player_hash",
-                                              how="left")
-
-    def get_id_or_name(x):
-        id = x["player_id"]
-        name = x["player_name"]
-        if not pd.isna(id):
-            return id
-        else:
-            return name
-
-    damage_events_df["player_id"] = damage_events_df.apply(get_id_or_name, axis=1)
 
     return damage_events_df
 

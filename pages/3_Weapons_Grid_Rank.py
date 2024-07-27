@@ -44,6 +44,7 @@ def plot_dps_grid(dps_grid, main_weapon):
     #     # height=700,
     # )
     # point = alt.selection_point(encodings=['x', 'y'])
+    chart_height = 750
     accuracy_bins = dps_grid["max_accuracy"].nunique()
     peek_time_bins = dps_grid["peek_time"].nunique()
 
@@ -72,11 +73,11 @@ def plot_dps_grid(dps_grid, main_weapon):
         tooltip=['weapon_name', 'max_accuracy', 'peek_time', 'uncapped_damage_dealt', "rank"],
         # text=alt.Text('weapon_name:N', format=".2f"),
     ).properties(
-        title={"text": f"{main_weapon} eDPS Grid Rank",
+        title={"text": f"{main_weapon} Effective Damage Grid Rank",
                # "subtitle": f"Median Fight Count: {fights_count_median}",
                "subtitleColor": "gray",
                },
-        height=700,
+        height=chart_height,
 
     ))
     # .add_params(
@@ -138,7 +139,7 @@ def plot_dps_grid(dps_grid, main_weapon):
     ).properties(
         title=chart_title,
         # width=800,
-        height=750,
+        height=chart_height,
     )
 
     dps_points_line = alt.Chart(dps_df).mark_point(
