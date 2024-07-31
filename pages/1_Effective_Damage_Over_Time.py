@@ -163,7 +163,7 @@ selected_accuracy = filter_container.slider("Accuracy (%)",
                                             min_value=0,
                                             max_value=100,
                                             value=100,
-                                            step=5,
+                                            step=1,
                                             key="accuracy")
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
