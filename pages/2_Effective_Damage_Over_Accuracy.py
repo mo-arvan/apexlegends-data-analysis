@@ -30,7 +30,7 @@ with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, algs_games_df = data_helper.load_data()
 
 
-def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=750):
+def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=500):
     dps_df, dps_full_df, pivot_df = e_dps_plots["dps_df"], e_dps_plots["dps_full_df"], e_dps_plots["pivot_df"]
 
     global datum_to_name_dict

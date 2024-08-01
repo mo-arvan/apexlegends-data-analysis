@@ -30,7 +30,7 @@ with st.spinner("Loading data..."):
     gun_df, sniper_stocks_df, standard_stocks_df, algs_games_df = data_helper.load_data()
 
 
-def plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=750):
+def plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis, chart_height=500):
     dps_df = e_dps_plots["dps_df"]
 
     global datum_to_name_dict
@@ -323,7 +323,7 @@ datum_to_name_dict = {
     "how": "How",
     "ammo_left": "Ammo Left",
     "shot_interval": "Shot Interval (ms)",
-    "firing_time": "Firing Time (ms)",
+    # "firing_time": "Firing Time (ms)",
     "reload_time": "Reload Time (ms)",
     "holster_time": "Holster Time (ms)",
     "deploy_time": "Deploy Time (ms)",
