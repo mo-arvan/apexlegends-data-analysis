@@ -24,10 +24,10 @@ def get_gun_filters(gun_stats_df,
                     ):
     default_selection = {
         "weapon_name": [
-            "R-99 SMG",
+            # "R-99 SMG",
             "Volt SMG",
             # "Alternator SMG",
-            # "C.A.R. SMG",
+            "C.A.R. SMG",
             # "Prowler Burst PDW"
         ],
     }

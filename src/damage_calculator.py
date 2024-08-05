@@ -347,12 +347,14 @@ def calculate_damage_over_time(selected_weapons_df,
 
         for i, peek_time in enumerate(shots_timeline):
             weapon_condition = conditions.copy()
-            hit_shots = i + 1
-            hit_shots = math.floor(hit_shots * (weapon_condition["accuracy"] / 100))
+            shots_fired = i + 1
+            hit_shots = math.floor(shots_fired * (weapon_condition["accuracy"] / 100))
             # if hit_shots == current_weapon_last_hit_shots and len(shots_timeline) != i + 1 :
             #     continue
             current_weapon_last_hit_shots = hit_shots
-            weapon_condition["peek_time"] = (peek_time + 0.05) * 1000
+
+
+            weapon_condition["peek_time"] = (peek_time + 0.01) * 1000
             weapon_condition.pop("accuracy")
             damage_dict = calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_df,
                                                  weapon_condition)
