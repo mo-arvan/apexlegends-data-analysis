@@ -125,7 +125,7 @@ def calculate_max_shots_given_peak_time(weapon, conditions):
     return shots_during_peek, shots_timeline
 
 
-def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_df, conditions):
+def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, standard_stocks_df, conditions):
     mag_index = chart_config.mag_list.index(conditions["mag"])
     helmet_modifier = chart_config.helmet_dict[conditions["helmet"]]
     shot_location = chart_config.shot_location_dict[conditions["shot_location"]]
@@ -202,9 +202,11 @@ def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_
     if pd.isna(pellets_per_shot):
         pellets_per_shot = 1
 
+    pellets_shot_during_peek = shots_during_peek * pellets_per_shot
+
     # for miss_shots in range(shots_during_peek):
     # miss_rate = 1 - accuracy
-    miss_shots = shots_during_peek - hit_shots
+    miss_shots = pellets_shot_during_peek - hit_shots_or_pellets
     if miss_shots < 0:
         print(f"weapon_dict = {weapon}, conditions = {conditions}")
         pass
@@ -212,10 +214,10 @@ def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_
         pass
 
     # hit_shots = shots_during_peek - miss_shots
-    miss_rate = miss_shots / shots_during_peek
+    miss_rate = miss_shots / pellets_shot_during_peek
     accuracy = round((1 - miss_rate) * 100, 2)
 
-    hit_pellets = hit_shots * pellets_per_shot
+    hit_pellets = hit_shots_or_pellets #* pellets_per_shot
 
     hit_and_miss_shots = shots_during_peek
     damage_dealt = hit_pellets * evo_shield_effective_damage
@@ -248,7 +250,7 @@ def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_
     if damage_dealt == total_health:
         target_neutralized = True
 
-    ammo_left = current_mag_size - hit_shots - miss_shots
+    ammo_left = current_mag_size - shots_during_peek
     # cdf = gun_accuracy_model_df[gun_accuracy_model_df["accuracy"] <= accuracy]["cdf"].max()
     #
     # model_name = gun_accuracy_model_df["model_name"].unique().tolist()
@@ -264,6 +266,11 @@ def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_
     # if damage_dealt > 275:
     #     pass
 
+    if pellets_per_shot == 1:
+        how_text = f"shots hit: {hit_pellets}, shots missed: {miss_shots}"
+    else:
+        how_text = f"pellets hit: {hit_pellets}, pellets missed: {miss_shots}"
+
     damage_dict = {
         "miss_rate": miss_rate,
         "accuracy": accuracy,
@@ -274,7 +281,7 @@ def calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_
         "dps": dps,
         "uncapped_dps": uncapped_dps,
         # "cdf": cdf,
-        "how": f"shots hit: {hit_shots}, shots missed: {miss_shots}",
+        "how": how_text,
         "shot_interval": shot_interval * 1000,
         "firing_time": firing_time * 1000,
         "ammo_left": ammo_left,
@@ -299,9 +306,18 @@ def calculate_damage_over_accuracy(selected_weapons_df,
 
     for idx, weapon in selected_weapons_df.iterrows():
         shots_during_peek, _ = calculate_max_shots_given_peak_time(weapon, conditions)
+        pellets_per_shot = weapon.get("pellets_per_shot")
+        if pd.isna(pellets_per_shot):
+            pellets_per_shot = 1
+        pellets_shot_during_peek = int(shots_during_peek * pellets_per_shot)
 
-        for hit_shots in range(1, shots_during_peek + 1):
-            damage_dict = calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_df, conditions)
+        for hit_shots_or_pellets in range(1, pellets_shot_during_peek + 1):
+
+            damage_dict = calculate_damage_dealt(weapon,
+                                                 hit_shots_or_pellets,
+                                                 sniper_stocks_df,
+                                                 standard_stocks_df,
+                                                 conditions)
 
             dps_dict_list.append(damage_dict.copy())
             # if damage_dict["target_neutralized"]:
@@ -348,7 +364,10 @@ def calculate_damage_over_time(selected_weapons_df,
         for i, peek_time in enumerate(shots_timeline):
             weapon_condition = conditions.copy()
             shots_fired = i + 1
-            hit_shots = math.floor(shots_fired * (weapon_condition["accuracy"] / 100))
+            pellets_per_shot = weapon.get("pellets_per_shot")
+            if pd.isna(pellets_per_shot):
+                pellets_per_shot = 1
+            hit_shots = math.floor(shots_fired * pellets_per_shot *  (weapon_condition["accuracy"] / 100))
             # if hit_shots == current_weapon_last_hit_shots and len(shots_timeline) != i + 1 :
             #     continue
             current_weapon_last_hit_shots = hit_shots
