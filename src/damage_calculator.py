@@ -97,16 +97,17 @@ def calculate_max_shots_given_peak_time(weapon, conditions):
 
     else:
         bullets_per_burst = int(bullets_per_burst)
+        burst_fire_delay_in_ms = burst_fire_delay * 1000
         for i in range(0, current_mag_size):
             if i == 0:
                 shots_timeline_in_ms.append(0)
             else:
                 if i % bullets_per_burst == 0:
-                    shots_timeline_in_ms.append(shots_timeline_in_ms[-1] + burst_fire_delay)
+                    shots_timeline_in_ms.append(shots_timeline_in_ms[-1] + burst_fire_delay_in_ms)
                 else:
                     shots_timeline_in_ms.append(shots_timeline_in_ms[-1] + shot_interval_in_ms)
 
-        shots_timeline_in_ms = list(filter(lambda x: x * 1000 <= peek_time_in_ms, shots_timeline_in_ms))
+        shots_timeline_in_ms = list(filter(lambda x: x <= peek_time_in_ms, shots_timeline_in_ms))
         shots_during_peek = len(shots_timeline_in_ms)
         #
         # max_burst = current_mag_size // bullets_per_burst
@@ -273,9 +274,9 @@ def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, stand
     #     pass
 
     if pellets_per_shot == 1:
-        how_text = f"shots hit: {hit_pellets}, shots missed: {miss_shots}"
+        how_text = f"shots fired: {shots_during_peek}, shots hit: {hit_pellets}, shots missed: {miss_shots}"
     else:
-        how_text = f"pellets hit: {hit_pellets}, pellets missed: {miss_shots}"
+        how_text = f"shots fired: {shots_during_peek}, pellets hit: {hit_pellets}, pellets missed: {miss_shots}"
 
     damage_dict = {
         "miss_rate": miss_rate,
