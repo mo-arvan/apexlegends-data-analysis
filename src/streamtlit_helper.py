@@ -41,8 +41,8 @@ def get_gun_filters(gun_stats_df,
     if include_hop_ups:
         base_weapon_condition = np.logical_or(base_weapon_condition, gun_stats_df["secondary_class"] == "Hop-Up")
     if include_reworks:
-        include_reworked_weapons = post_child_container.checkbox("Include Future Reworks", value=False)
-
+        # include_reworked_weapons = post_child_container.checkbox("Include Future Reworks", value=False)
+        include_reworked_weapons = False
         if include_reworked_weapons:
             base_weapon_condition = np.logical_or(base_weapon_condition,
                                                   gun_stats_df["secondary_class"] == "Future Reworks")

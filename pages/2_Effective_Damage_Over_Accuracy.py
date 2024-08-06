@@ -36,7 +36,7 @@ def plot_effective_dps_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_
     global datum_to_name_dict
     global name_to_datum_dict
 
-    chart_title = f'Effective {chart_x_axis}<br>Peek Time: {conditions_dict["peek_time"]}ms'
+    chart_title = f'Effective {chart_x_axis}<br>Peek Time: {conditions_dict["peek_time_in_ms"]}ms'
 
     if chart_x_axis not in name_to_datum_dict:
         return None
@@ -412,7 +412,7 @@ selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              max_value=5000,
                                              value=1000,
                                              step=50,
-                                             key="peek_time")
+                                             key="peek_time_in_ms")
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
                                                                                           filter_container,
@@ -605,7 +605,7 @@ conditions_dict = {
     "shield": selected_evo_shield,
     "shot_location": selected_shot_location,
     "estimation_method": selected_estimation_method,
-    "peek_time": selected_peek_time,
+    "peek_time_in_ms": selected_peek_time,
     "health": selected_health,
 }
 
