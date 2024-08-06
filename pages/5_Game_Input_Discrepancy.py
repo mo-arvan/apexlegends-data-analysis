@@ -264,7 +264,7 @@ def damage_plot_builder(damage_data_df,
 filters_container = st.sidebar.container()
 
 damage_events_filtered_df, selected_tournament, selected_region, selected_days, selected_weapons = streamlit_helper.get_tournament_filters(
-    algs_games_df, gun_stats_df, filters_container)
+    algs_games_df, gun_stats_df, filters_container, base_weapons_only=True)
 
 filter_unknown_inputs = filters_container.checkbox("Filter Unknown Inputs", value=True)
 
