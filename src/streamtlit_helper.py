@@ -21,6 +21,7 @@ def get_gun_filters(gun_stats_df,
                     include_ordnance=False,
                     include_reworks=False,
                     enable_tabs=False,
+                    clean_weapon_names=False
                     ):
     default_selection = {
         "weapon_name": [
@@ -117,9 +118,20 @@ def get_gun_filters(gun_stats_df,
             logger.warning(f"Preselected weapon {w} not found in the dataset. Removing from preselected weapons.")
             preselected_weapons.remove(w)
 
+    clean_weapon_name_dict = {}
+
+    # some weapon names have [OPTIONAL_TAG] in their name, we need to remove them
+    for w in all_weapons:
+        if clean_weapon_names:
+            clean_weapon_name_dict[w] = w.split("[")[0].strip()
+        else:
+            clean_weapon_name_dict[w] = w
+
+    preselected_weapons_cleaned = set([clean_weapon_name_dict[w] for w in preselected_weapons])
+
     selected_weapons = child_container.multiselect(select_text,
-                                                   all_weapons,
-                                                   default=preselected_weapons,
+                                                   clean_weapon_name_dict.values(),
+                                                   default=preselected_weapons_cleaned,
                                                    key="selected_weapons")
 
     if mag_bolt_selection:
@@ -144,7 +156,7 @@ def get_gun_filters(gun_stats_df,
     return selected_weapons, selected_mag, selected_bolt, selected_stocks
 
 
-def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
+def get_tournament_filters(algs_games_df, gun_stats_df, filters_container, base_weapons_only=False):
     # find the largest timestamp for each tournament
     tournaments = (algs_games_df[['tournament_full_name', "tournament_region", 'game_timestamp']]
                    .groupby(['tournament_full_name', "tournament_region"]).
@@ -219,7 +231,7 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container):
     selected_weapons, selected_mag, selected_bolt, selected_stock = get_gun_filters(gun_stats_df,
                                                                                     filters_container,
                                                                                     include_ordnance=True,
-                                                                                    )
+                                                                                    clean_weapon_names=True)
 
     if len(selected_weapons) != 0:
         damage_events_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]

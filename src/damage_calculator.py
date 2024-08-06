@@ -10,6 +10,9 @@ logger = logging.getLogger(__name__)
 
 logger.info(f"Running {__file__}")
 
+# Adding 10 ms to the peek time to avoid rounding errors
+EPSILON_TIME_IN_MS = 10
+
 
 def get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons_df):
     accuracy_model_df = None
@@ -59,7 +62,7 @@ def get_estimation_model(guns_df, fights_df, estimation_method, selected_weapons
 
 
 def calculate_max_shots_given_peak_time(weapon, conditions):
-    peek_time_in_ms = conditions.get("peek_time", 100 * 1000)
+    peek_time_in_ms = conditions.get("peek_time_in_ms", 10 * 1000)
     mag_index = chart_config.mag_list.index(conditions["mag"])
     current_mag_size = weapon[f"magazine_{mag_index + 1}"]
 
@@ -80,49 +83,52 @@ def calculate_max_shots_given_peak_time(weapon, conditions):
 
     burst_fire_delay = weapon.get("burst_fire_delay")
     bullets_per_burst = weapon.get("bullets_per_burst")
-    shots_timeline = []
+    shots_timeline_in_ms = []
 
     if pd.isna(burst_fire_delay) or pd.isna(bullets_per_burst):
-        shots_during_peek = math.floor(max((peek_time_in_ms - charge_time_in_ms), 0) / shot_interval_in_ms) + 1
+        if peek_time_in_ms > charge_time_in_ms:
+            shots_during_peek = math.floor((peek_time_in_ms - charge_time_in_ms) / shot_interval_in_ms) + 1
+        else:
+            shots_during_peek = 0
         shots_during_peek = min(shots_during_peek, current_mag_size)
 
-        shots_timeline = [i * shot_interval for i in range(shots_during_peek)]
+        shots_timeline_in_ms = [i * shot_interval_in_ms + charge_time_in_ms for i in range(shots_during_peek)]
         # firing_time = (shots_during_peek - 1) * shot_interval
 
     else:
         bullets_per_burst = int(bullets_per_burst)
         for i in range(0, current_mag_size):
             if i == 0:
-                shots_timeline.append(0)
+                shots_timeline_in_ms.append(0)
             else:
                 if i % bullets_per_burst == 0:
-                    shots_timeline.append(shots_timeline[-1] + burst_fire_delay)
+                    shots_timeline_in_ms.append(shots_timeline_in_ms[-1] + burst_fire_delay)
                 else:
-                    shots_timeline.append(shots_timeline[-1] + shot_interval)
+                    shots_timeline_in_ms.append(shots_timeline_in_ms[-1] + shot_interval_in_ms)
 
-        shots_timeline = list(filter(lambda x: x * 1000 <= peek_time_in_ms, shots_timeline))
-        max_shots_during_peek_a = len(shots_timeline)
-
-        max_burst = current_mag_size // bullets_per_burst
-        max_shot_burst = -1
-        for i in range(1, max_burst + 1):
-            max_possible_shots = bullets_per_burst * i
-            burst_time = burst_fire_delay * (i - 1)
-            burst_time_in_ms = burst_time * 1000
-            remaining_peek_time_ms = peek_time_in_ms - charge_time_in_ms - burst_time_in_ms
-            if remaining_peek_time_ms < 0:
-                break
-            shots_during_peek = math.floor(remaining_peek_time_ms / shot_interval_in_ms) + i  # + bullets_per_burst
-            shots_during_peek = min(shots_during_peek, max_possible_shots)
-            if shots_during_peek > max_shot_burst:
-                max_shot_burst = shots_during_peek
-        shots_during_peek = max_shot_burst
-        assert max_shots_during_peek_a == shots_during_peek
-        burst_shots_fired = math.ceil(shots_during_peek / bullets_per_burst)
+        shots_timeline_in_ms = list(filter(lambda x: x * 1000 <= peek_time_in_ms, shots_timeline_in_ms))
+        shots_during_peek = len(shots_timeline_in_ms)
+        #
+        # max_burst = current_mag_size // bullets_per_burst
+        # max_shot_burst = -1
+        # for i in range(1, max_burst + 1):
+        #     max_possible_shots = bullets_per_burst * i
+        #     burst_time = burst_fire_delay * (i - 1)
+        #     burst_time_in_ms = burst_time * 1000
+        #     remaining_peek_time_ms = peek_time_in_ms - charge_time_in_ms - burst_time_in_ms
+        #     if remaining_peek_time_ms < 0:
+        #         break
+        #     shots_during_peek = math.floor(remaining_peek_time_ms / shot_interval_in_ms) + i  # + bullets_per_burst
+        #     shots_during_peek = min(shots_during_peek, max_possible_shots)
+        #     if shots_during_peek > max_shot_burst:
+        #         max_shot_burst = shots_during_peek
+        # shots_during_peek = max_shot_burst
+        # assert max_shots_during_peek_a == shots_during_peek
+        # burst_shots_fired = math.ceil(shots_during_peek / bullets_per_burst)
         # firing_time = (shots_during_peek - burst_shots_fired) * shot_interval + burst_fire_delay * max(
         #     (burst_shots_fired - 1), 0)
 
-    return shots_during_peek, shots_timeline
+    return shots_during_peek, shots_timeline_in_ms
 
 
 def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, standard_stocks_df, conditions):
@@ -131,7 +137,7 @@ def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, stand
     shot_location = chart_config.shot_location_dict[conditions["shot_location"]]
     evo_shield_amount = chart_config.evo_shield_dict[conditions["shield"]]
     base_health_amount = chart_config.health_values_dict[conditions["health"]]
-    peek_time_in_ms = conditions["peek_time"]
+    peek_time_in_ms = conditions["peek_time_in_ms"]
 
     weapon_raw_damage = weapon["damage"]
     current_mag_size = weapon[f"magazine_{mag_index + 1}"]
@@ -197,7 +203,7 @@ def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, stand
     shot_interval_in_ms = shot_interval * 1000
 
     shots_during_peek, shots_timeline = calculate_max_shots_given_peak_time(weapon, conditions)
-    firing_time = shots_timeline[-1]
+    firing_time_in_ms = shots_timeline[-1]
     pellets_per_shot = weapon.get("pellets_per_shot")
     if pd.isna(pellets_per_shot):
         pellets_per_shot = 1
@@ -217,7 +223,7 @@ def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, stand
     miss_rate = miss_shots / pellets_shot_during_peek
     accuracy = round((1 - miss_rate) * 100, 2)
 
-    hit_pellets = hit_shots_or_pellets #* pellets_per_shot
+    hit_pellets = hit_shots_or_pellets  # * pellets_per_shot
 
     hit_and_miss_shots = shots_during_peek
     damage_dealt = hit_pellets * evo_shield_effective_damage
@@ -282,8 +288,8 @@ def calculate_damage_dealt(weapon, hit_shots_or_pellets, sniper_stocks_df, stand
         "uncapped_dps": uncapped_dps,
         # "cdf": cdf,
         "how": how_text,
-        "shot_interval": shot_interval * 1000,
-        "firing_time": firing_time * 1000,
+        "shot_interval": shot_interval_in_ms,
+        "firing_time": firing_time_in_ms,
         "ammo_left": ammo_left,
         "headshot_damage": head_damage,
         "body_damage": body_damage,
@@ -312,7 +318,6 @@ def calculate_damage_over_accuracy(selected_weapons_df,
         pellets_shot_during_peek = int(shots_during_peek * pellets_per_shot)
 
         for hit_shots_or_pellets in range(1, pellets_shot_during_peek + 1):
-
             damage_dict = calculate_damage_dealt(weapon,
                                                  hit_shots_or_pellets,
                                                  sniper_stocks_df,
@@ -356,24 +361,22 @@ def calculate_damage_over_time(selected_weapons_df,
                                standard_stocks_df,
                                conditions):
     dps_dict_list = []
-
     for idx, weapon in selected_weapons_df.iterrows():
         shots_during_peek, shots_timeline = calculate_max_shots_given_peak_time(weapon, conditions)
         current_weapon_last_hit_shots = -1
 
-        for i, peek_time in enumerate(shots_timeline):
+        for i, peek_time_in_ms in enumerate(shots_timeline):
             weapon_condition = conditions.copy()
             shots_fired = i + 1
             pellets_per_shot = weapon.get("pellets_per_shot")
             if pd.isna(pellets_per_shot):
                 pellets_per_shot = 1
-            hit_shots = math.floor(shots_fired * pellets_per_shot *  (weapon_condition["accuracy"] / 100))
+            hit_shots = math.floor(shots_fired * pellets_per_shot * (weapon_condition["accuracy"] / 100))
             # if hit_shots == current_weapon_last_hit_shots and len(shots_timeline) != i + 1 :
             #     continue
             current_weapon_last_hit_shots = hit_shots
 
-
-            weapon_condition["peek_time"] = (peek_time + 0.01) * 1000
+            weapon_condition["peek_time_in_ms"] = peek_time_in_ms + EPSILON_TIME_IN_MS
             weapon_condition.pop("accuracy")
             damage_dict = calculate_damage_dealt(weapon, hit_shots, sniper_stocks_df, standard_stocks_df,
                                                  weapon_condition)
@@ -383,7 +386,8 @@ def calculate_damage_over_time(selected_weapons_df,
             #     break
 
     dps_df = pd.DataFrame(dps_dict_list)
-    dps_df = dps_df.sort_values(by=["weapon_name", "peek_time", "damage_dealt"], ascending=False).reset_index(drop=True)
+    dps_df = dps_df.sort_values(by=["weapon_name", "peek_time_in_ms", "damage_dealt"], ascending=False).reset_index(
+        drop=True)
 
     # dps_full_list = []
     # max_x_value = int(dps_df["damage_dealt"].max())
@@ -422,14 +426,14 @@ def get_gun_meta_df(selected_weapons,
 
     selected_guns_df = guns_df[guns_df["weapon_name"].isin(selected_weapons)]
 
-    for peek_time in peek_time_list:
-        conditions["peek_time"] = peek_time
+    for peek_time_in_ms in peek_time_list:
+        conditions["peek_time_in_ms"] = peek_time_in_ms
         plot_dict = calculate_damage_over_accuracy(selected_guns_df,
                                                    sniper_stocks_df,
                                                    standard_stocks_df,
                                                    conditions)
         dps_df = plot_dict["dps_df"]
-        dps_df["peek_time"] = peek_time
+        dps_df["peek_time_in_ms"] = peek_time_in_ms
         dps_list.append(dps_df)
 
     dps_df = pd.concat(dps_list)
@@ -442,8 +446,8 @@ def get_gun_meta_df(selected_weapons,
     # for each accuracy and peek time, find the worst dps for each weapon
     for max_accuracy in accuracy_list:
         accuracy_df = dps_df[dps_df["accuracy"] <= max_accuracy]
-        for peek_time in peek_time_list:
-            peek_time_df = accuracy_df[accuracy_df["peek_time"] == peek_time]
+        for peek_time_in_ms in peek_time_list:
+            peek_time_df = accuracy_df[accuracy_df["peek_time_in_ms"] == peek_time_in_ms]
             # for weapon in weapon_list:
 
             best_dps = peek_time_df.groupby("weapon_name", observed=False).agg(
@@ -464,7 +468,7 @@ def get_gun_meta_df(selected_weapons,
                     rank = last_rank
                 best_dps.at[i, "rank"] = rank
                 last_rank = rank
-            best_dps["peek_time"] = peek_time
+            best_dps["peek_time_in_ms"] = peek_time_in_ms
             best_dps["max_accuracy"] = max_accuracy
 
             best_dps_list.append(best_dps)
