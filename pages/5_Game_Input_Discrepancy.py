@@ -6,8 +6,8 @@ import pandas as pd
 import streamlit as st
 from scipy.stats import gaussian_kde
 
-import src.data_loader as data_loader
 import src.data_helper as data_helper
+import src.data_loader as data_loader
 import src.streamtlit_helper as streamlit_helper
 
 logging.basicConfig(level=logging.INFO)
@@ -115,7 +115,7 @@ def damage_plot_builder(damage_data_df,
     # Function to compute histogram-based EPDF and ECDF
     def compute_hist_epdf_ecdf(group):
         # Compute the histogram
-        bins = list(range(1, int(max(group['shots_hit']) + 2))) # Corrected to include max value
+        bins = list(range(1, int(max(group['shots_hit']) + 2)))  # Corrected to include max value
         density, bin_edges = np.histogram(group['shots_hit'], bins=bins, density=True)
 
         # Calculate the ECDF
@@ -293,15 +293,38 @@ max_distance = st.sidebar.number_input("Maximum Distance",
 with st.spinner("Building plots..."):
     plots, raw_data = damage_plot_builder(damage_events_filtered_df, shots_hit_clip, min_distance, max_distance)
 
-row_1_cols = st.columns(2)
+tabs = st.tabs(["Shots Hit vs Distance Heatmap",
+                "Shots Hit vs Duration Heatmap",
+                "ePDF of Shots Hit",
+                "eCCDF of Shots Hit",
+                "Raw Data"])
 
-st.altair_chart(plots[2], use_container_width=False)
-st.altair_chart(plots[3], use_container_width=False)
+with tabs[0]:
+    # st.header("Shots Hit vs Distance Heatmap")
+    st.altair_chart(plots[0], use_container_width=True)
+    st.write("The Shots Hit vs Distance Heatmap shows the number of shots hit at different distances. ")
 
-row_2_cols = st.columns(2)
+with tabs[1]:
+    # st.header("Shots Hit vs Duration Heatmap")
+    st.altair_chart(plots[1], use_container_width=True)
+    st.write("The Shots Hit vs Duration Heatmap shows the number of shots hit at different durations. ")
 
-st.altair_chart(plots[1], use_container_width=False)
-st.altair_chart(plots[0], use_container_width=False)
+# st.altair_chart(plots[2], use_container_width=False)
+# st.altair_chart(plots[3], use_container_width=False)
+#
+# row_2_cols = st.columns(2)
+
+with tabs[2]:
+    # st.header("ePDF of Shots Hit")
+    st.altair_chart(plots[2], use_container_width=True)
+    st.write(
+        "The Empirical Probability Density Function (ePDF) of Shots Hit shows the probability density of the number of shots hit for each input type. ")
+
+with tabs[3]:
+    # st.header("eCCDF of Shots Hit")
+    st.altair_chart(plots[3], use_container_width=True)
+    st.write(
+        "The Empirical Complementary Cumulative Distribution Function (eCCDF) of Shots Hit shows the probability of hitting at least a certain number of shots for each input type. ")
 
 # st.altair_chart(plots[1], use_container_width=True)
 
@@ -311,26 +334,26 @@ st.altair_chart(plots[0], use_container_width=False)
 # - eCDF of damage dealt
 # - color per input
 
-expander = st.expander(label='Raw Data')
-expander.dataframe(raw_data[[
-    "player_name",
-    "team_name",
-    "tournament_full_name",
-    "tournament_day",
-    "game_title",
-    "game_map",
-    "weapon_name",
-    "class",
-    "target",
-    "distance",
-    "shots_hit",
-    "total_damage",
-    "ammo_used",
-    "distance_arr",
-    "damage_arr",
-    "event_time",
-    "player_hash",
-    "game_id",
+with tabs[4]:
+    st.dataframe(raw_data[[
+        "player_name",
+        "team_name",
+        "tournament_full_name",
+        "tournament_day",
+        "game_title",
+        "game_map",
+        "weapon_name",
+        "class",
+        "target",
+        "distance",
+        "shots_hit",
+        "total_damage",
+        "ammo_used",
+        "distance_arr",
+        "damage_arr",
+        "event_time",
+        "player_hash",
+        "game_id",
 
-]]
-                   )
+    ]]
+                 )
