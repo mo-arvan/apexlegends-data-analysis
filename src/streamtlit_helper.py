@@ -15,23 +15,29 @@ logger.info(f"Running {__file__}")
 
 def get_gun_filters(gun_stats_df,
                     filter_container,
+                    pre_selected_weapons=None,
                     select_text="Weapon",
                     mag_bolt_selection=False,
                     include_hop_ups=False,
                     include_ordnance=False,
                     include_reworks=False,
                     enable_tabs=False,
-                    clean_weapon_names=False
+                    use_base_weapon_name=False
                     ):
-    default_selection = {
-        "weapon_name": [
-            # "R-99 SMG",
-            "Volt SMG",
-            # "Alternator SMG",
-            "C.A.R. SMG",
-            # "Prowler Burst PDW"
-        ],
-    }
+    # default_selection = {
+    #     "weapon_name": [
+    #         # "R-99 SMG",
+    #         "Volt SMG",
+    #         # "Alternator SMG",
+    #         "C.A.R. SMG",
+    #         # "Prowler Burst PDW"
+    #     ],
+    # }
+
+    weapon_name_column = "weapon_name"
+    if use_base_weapon_name:
+        weapon_name_column = "base_weapon_name"
+
 
     base_weapon_condition = np.logical_or(pd.isna(gun_stats_df["secondary_class"]),
                                           gun_stats_df["secondary_class"] == "Care Package")
@@ -52,7 +58,10 @@ def get_gun_filters(gun_stats_df,
     weapon_class_list = sorted(base_weapons_df["class"].unique().tolist())
 
     if "selected_weapons" not in st.session_state:
-        preselected_weapons = default_selection["weapon_name"]
+        if pre_selected_weapons is not None:
+            preselected_weapons = pre_selected_weapons
+        else:
+            preselected_weapons = []
     else:
         preselected_weapons = st.session_state["selected_weapons"]
 
@@ -63,33 +72,33 @@ def get_gun_filters(gun_stats_df,
             batch_add_smg = st.button("SMG", use_container_width=True, type="primary")
             if batch_add_smg:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "SMG"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
         with row_0_cols[1]:
             batch_add_pistol = st.button("Pistol", use_container_width=True, type="primary")
             if batch_add_pistol:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "Pistol"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
         with row_0_cols[2]:
             batch_add_shotgun = st.button("Shotgun", use_container_width=True, type="primary")
             if batch_add_shotgun:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "Shotgun"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
         row_1_cols = st.columns(2)
         with row_1_cols[0]:
             batch_add_ar = st.button("AR", use_container_width=True, type="primary")
             if batch_add_ar:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "AR"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
         with row_1_cols[1]:
             batch_add_lmg = st.button("LMG", use_container_width=True, type="primary")
 
             if batch_add_lmg:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "LMG"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
         row_2_cols = st.columns(2)
 
@@ -97,17 +106,17 @@ def get_gun_filters(gun_stats_df,
             batch_add_marksman = st.button("Marksman", use_container_width=True, type="primary")
             if batch_add_marksman:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "Marksman"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
         with row_2_cols[1]:
             batch_add_sniper = st.button("Sniper", use_container_width=True, type="primary")
             if batch_add_sniper:
                 preselected_weapons += base_weapons_df[base_weapons_df["class"] == "Sniper"][
-                    "weapon_name"].unique().tolist()
+                    weapon_name_column].unique().tolist()
 
     preselected_weapons = list(sorted(set(preselected_weapons)))
     logger.debug(f"Preselected Weapons: {preselected_weapons}")
 
-    all_weapons = base_weapons_df["weapon_name"].unique().tolist()
+    all_weapons = base_weapons_df[weapon_name_column].unique().tolist()
 
     if include_ordnance:
         ordnance_list = ["Frag Grenade", "Arc Star", "Thermite Grenade"]
@@ -118,20 +127,10 @@ def get_gun_filters(gun_stats_df,
             logger.warning(f"Preselected weapon {w} not found in the dataset. Removing from preselected weapons.")
             preselected_weapons.remove(w)
 
-    clean_weapon_name_dict = {}
-
-    # some weapon names have [OPTIONAL_TAG] in their name, we need to remove them
-    for w in all_weapons:
-        if clean_weapon_names:
-            clean_weapon_name_dict[w] = w.split("[")[0].strip()
-        else:
-            clean_weapon_name_dict[w] = w
-
-    preselected_weapons_cleaned = set([clean_weapon_name_dict[w] for w in preselected_weapons])
 
     selected_weapons = child_container.multiselect(select_text,
-                                                   clean_weapon_name_dict.values(),
-                                                   default=preselected_weapons_cleaned,
+                                                   all_weapons,
+                                                   default=preselected_weapons,
                                                    key="selected_weapons")
 
     if mag_bolt_selection:
@@ -228,10 +227,23 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container, base_
 
     weapon_list = damage_events_df["weapon_name"].unique().tolist()
 
+    pre_selected_weapons = [
+        "Volt SMG",
+        "HAVOC Rifle",
+        "R-99 SMG",
+        "Volt SMG",
+        "Alternator SMG",
+        "C.A.R. SMG",
+        "Prowler Burst PDW",
+        "VK-47 Flatline",
+        "R-301 Carbine",
+    ]
+
     selected_weapons, selected_mag, selected_bolt, selected_stock = get_gun_filters(gun_stats_df,
                                                                                     filters_container,
+                                                                                    pre_selected_weapons=pre_selected_weapons,
                                                                                     include_ordnance=True,
-                                                                                    clean_weapon_names=True)
+                                                                                    use_base_weapon_name=True)
 
     if len(selected_weapons) != 0:
         damage_events_df = damage_events_df[damage_events_df["weapon_name"].isin(selected_weapons)]

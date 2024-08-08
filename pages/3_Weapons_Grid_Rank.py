@@ -5,8 +5,8 @@ import streamlit as st
 
 import src.chart_config as chart_config
 import src.streamtlit_helper as st_helper
-from src import data_helper
 from src import damage_calculator
+from src import data_helper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -46,11 +46,11 @@ def plot_dps_grid(dps_grid, main_weapon):
     # point = alt.selection_point(encodings=['x', 'y'])
     chart_height = 750
     accuracy_bins = dps_grid["max_accuracy"].nunique()
-    peek_time_bins = dps_grid["peek_time"].nunique()
+    peek_time_bins = dps_grid["peek_time_in_ms"].nunique()
 
     main_weapon_grid = dps_grid[dps_grid["weapon_name"] == main_weapon].copy().reset_index()
 
-    main_grouped = main_weapon_grid.groupby(["peek_time", "max_accuracy"]).agg(
+    main_grouped = main_weapon_grid.groupby(["peek_time_in_ms", "max_accuracy"]).agg(
         count=("rank", "count"),
     ).reset_index()
 
@@ -60,7 +60,7 @@ def plot_dps_grid(dps_grid, main_weapon):
 
     heatmap = (alt.Chart(main_weapon_grid).mark_rect(
     ).encode(
-        x=alt.X('peek_time:Q',
+        x=alt.X('peek_time_in_ms:Q',
                 bin=alt.Bin(maxbins=peek_time_bins),
                 # bin=alt.Bin(maxbins=peek_time_bins),
                 axis=alt.Axis(title='Peek Time (ms)')),
@@ -70,7 +70,7 @@ def plot_dps_grid(dps_grid, main_weapon):
         color=alt.Color('rank:Q',
                         scale=color_scale  # alt.Scale(scheme='plasma')
                         ),
-        tooltip=['weapon_name', 'max_accuracy', 'peek_time', 'uncapped_damage_dealt', "rank"],
+        tooltip=['weapon_name', 'max_accuracy', 'peek_time_in_ms', 'uncapped_damage_dealt', "rank"],
         # text=alt.Text('weapon_name:N', format=".2f"),
     ).properties(
         title={"text": f"{main_weapon} Effective Damage Grid Rank",
@@ -222,26 +222,22 @@ def plot_dps_grid(dps_grid, main_weapon):
     return fig
 
 
-pre_selected_weapons = []
-default_selection = {
-    # "tournament_full_name": [order_dict["tournament_full_name"][0]],
-    # "tournament_region": ["NA"],
-    "weapon_name": ["R-99 SMG",
-                    "Volt SMG",
-                    "Alternator SMG",
-                    "C.A.R. SMG",
-                    "Prowler Burst PDW",
-                    "Alternator SMG - Disruptor", ]
-}
-
-if "selected_weapons" in st.session_state:
-    pre_selected_weapons = st.session_state["selected_weapons"]
-else:
-    pre_selected_weapons = default_selection["weapon_name"]
-
 weapon_list = sorted(gun_df["weapon_name"].unique().tolist())
 
-havoc_turbo_index = weapon_list.index("HAVOC Rifle - Turbo")
+pre_selected_weapons = [
+    "Volt SMG",
+    "HAVOC Rifle [Turbo]",
+    "R-99 SMG [>10m Range]",
+    "R-99 SMG [<10m Range]",
+    "Volt SMG",
+    "Alternator SMG",
+    "C.A.R. SMG",
+    "Prowler Burst PDW",
+    "VK-47 Flatline",
+    "R-301 Carbine",
+]
+
+havoc_turbo_index = weapon_list.index("HAVOC Rifle [Turbo]")
 
 main_weapon = st.sidebar.selectbox("Weapon to Rank",
                                    weapon_list,
@@ -252,6 +248,7 @@ filters_container = st.sidebar.container()
 
 selected_weapons, selected_mag, selected_bolt, selected_stocks = st_helper.get_gun_filters(gun_df,
                                                                                            filters_container,
+                                                                                           pre_selected_weapons=pre_selected_weapons,
                                                                                            select_text="Weapon Pool",
                                                                                            mag_bolt_selection=True,
                                                                                            include_hop_ups=True)
@@ -303,10 +300,10 @@ else:
     with st.spinner("Calculating DPS Grid..."):
 
         dps_grid_df = damage_calculator.get_gun_meta_df(main_and_pool,
-                                                   gun_df,
-                                                   sniper_stocks_df,
-                                                   standard_stocks_df,
-                                                   conditions_dict)
+                                                        gun_df,
+                                                        sniper_stocks_df,
+                                                        standard_stocks_df,
+                                                        conditions_dict)
         altair_plot = plot_dps_grid(dps_grid_df, main_weapon)
 
     with chart_container:
