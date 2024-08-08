@@ -166,8 +166,14 @@ selected_accuracy = filter_container.slider("Accuracy (%)",
                                             step=1,
                                             key="accuracy")
 
+pre_selected_weapons = [
+    "Volt SMG",
+    "HAVOC Rifle [Turbo]",
+]
+
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
                                                                                           filter_container,
+                                                                                          pre_selected_weapons=pre_selected_weapons,
                                                                                           mag_bolt_selection=True,
                                                                                           include_hop_ups=True,
                                                                                           include_reworks=True,
@@ -377,7 +383,8 @@ if len(selected_weapons) != 0:
                                                                        standard_stocks_df,
                                                                        conditions_dict)
 
-            plotly_plot = plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis, chart_y_axis)
+            plotly_plot = plot_effective_damage_over_time_plotly(e_dps_plots, conditions_dict, chart_x_axis,
+                                                                 chart_y_axis)
         # altair_plot = plot_effective_dps_altair(e_dps_plots, chart_x_axis, chart_y_axis)
         with chart_container:
             event = st.plotly_chart(plotly_plot[0], on_select="rerun")

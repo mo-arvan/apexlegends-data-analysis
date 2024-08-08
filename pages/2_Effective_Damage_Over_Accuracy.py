@@ -8,8 +8,8 @@ import streamlit as st
 
 import src.chart_config as chart_config
 import src.streamtlit_helper as st_helper
-from src import data_helper
 from src import damage_calculator
+from src import data_helper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -413,9 +413,14 @@ selected_peek_time = filter_container.slider("Peek Time (ms):",
                                              value=1000,
                                              step=50,
                                              key="peek_time_in_ms")
+pre_selected_weapons = [
+    "Volt SMG",
+    "HAVOC Rifle [Turbo]",
+]
 
 selected_weapons, selected_mag, selected_bolt, selected_stock = st_helper.get_gun_filters(gun_df,
                                                                                           filter_container,
+                                                                                          pre_selected_weapons=pre_selected_weapons,
                                                                                           mag_bolt_selection=True,
                                                                                           include_hop_ups=True,
                                                                                           include_reworks=True,

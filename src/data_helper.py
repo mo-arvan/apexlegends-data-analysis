@@ -69,10 +69,19 @@ def get_gun_stats():
 
     current_gun_df = gun_stats_df
 
-    gun_stats_df = gun_stats_df.sort_values(by=["secondary_class", "class", "weapon_name"])
+    gun_stats_df = gun_stats_df.sort_values(by=["class", "weapon_name", "secondary_class"])
     for col in gun_stats_df.columns:
         if 'magazine' in col or "rpm" in col:
             gun_stats_df[col] = gun_stats_df[col].fillna(-1).astype(int)
+
+
+    # some weapon names have [OPTIONAL_TAG] in their name, we add a column with the clean name
+
+    # for w in all_weapons:
+    #     if clean_weapon_names:
+    #         clean_weapon_name_dict[w] = w.split("[")[0].strip()
+    #     else:
+    #         clean_weapon_name_dict[w] = w
 
     if current_gun_df.equals(gun_stats_df):
         logger.debug("gun_stats_df is the same as the current one")
@@ -80,6 +89,11 @@ def get_gun_stats():
         logger.debug("Updating gun_stats_df")
         gun_stats_df.to_csv("data/guns_stats.csv", index=False,
                             quoting=csv.QUOTE_NONNUMERIC)
+
+    def clean_weapon_name(name):
+        return name.split("[")[0].strip()
+
+    gun_stats_df["base_weapon_name"] = gun_stats_df["weapon_name"].apply(clean_weapon_name)
 
     return gun_stats_df, sniper_stocks_df, standard_stocks_df
 
