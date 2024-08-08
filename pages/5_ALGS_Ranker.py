@@ -735,13 +735,16 @@ with st.spinner("Ranking Players ..."):
                                                                max_distance,
                                                                rank_column)
 
-alt_chart = st.altair_chart(bar_plot, use_container_width=True)
+tabs = st.tabs(
+    [
+        "Player Ranking",
+        "Raw Data"
+    ]
+)
+with tabs[0]:
+    alt_chart = st.altair_chart(bar_plot, use_container_width=True)
 
-expander = st.expander(label='Raw Data')
-# expander.dataframe(raw_data_1,
-#                    hide_index=True,
-#                    use_container_width=True)
-
-expander.dataframe(raw_data_2,
-                   hide_index=True,
-                   )
+with tabs[1]:
+    st.dataframe(raw_data_2,
+                       hide_index=True,
+                       )

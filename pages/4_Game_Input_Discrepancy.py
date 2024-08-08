@@ -18,7 +18,7 @@ logger.info(f"Running {__file__}")
 st.set_page_config(
     page_title="ALGS Fights Explorer",
     page_icon="📊",
-    # layout="wide",
+    layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         # 'Get Help': 'https://www.extremelycoolapp.com/help',
