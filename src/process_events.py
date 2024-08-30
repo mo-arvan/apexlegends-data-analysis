@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-import src.data_helper as data_helper
 import src.data_loader as data_loader
 
 logging.basicConfig(level=logging.INFO,
@@ -363,13 +362,17 @@ def post_process(damage_events_dir, output_dir, init_dict):
     # damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
     # damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
     # get mintues and seconds from event timestamp
+    damage_df["event_start_timestamp"] = damage_df["event_timestamp"].apply(lambda x: min(x))
     damage_df["event_start_time"] = damage_df["event_timestamp"].apply(
         lambda x: datetime.datetime.fromtimestamp(x[0]).strftime('%M:%S'))
     damage_df["event_end_time"] = damage_df["event_timestamp"].apply(
         lambda x: datetime.datetime.fromtimestamp(x[-1]).strftime('%M:%S'))
     damage_df["event_duration"] = damage_df["event_timestamp"].apply(lambda x: max(x) - min(x))
 
-    damage_df = damage_df.sort_values(by=["game_id", "event_duration"], ascending=[True, False])
+    damage_df = damage_df.sort_values(by=["game_id", "player_hash", "event_start_timestamp"],
+                                      ascending=[True, True, True])
+    # group by game_id and player_hash, then sort by event_timestamp, then calculate the cumulative damage
+    damage_df["cumulative_damage"] = damage_df.groupby(["game_id", "player_hash"])["total_damage"].cumsum()
 
     player_hash_to_name = [(game["gameID"],
                             player["nucleusHash"][:32],
@@ -406,8 +409,9 @@ def post_process(damage_events_dir, output_dir, init_dict):
 
     hash_to_input_df = data_loader.get_hash_to_player_info_df()
     damage_df = damage_df.merge(hash_to_input_df,
-                                              on="player_hash",
-                                              how="left")
+                                on="player_hash",
+                                how="left")
+
     def get_id_or_name(x):
         id = x["player_id"]
         name = x["player_name"]
@@ -417,7 +421,6 @@ def post_process(damage_events_dir, output_dir, init_dict):
             return name
 
     damage_df["player_id"] = damage_df[["player_id", "player_name"]].apply(get_id_or_name, axis=1)
-
 
     # damage_df["target_unique"] = damage_df["target_arr"].apply(lambda x: set(x))
     #
