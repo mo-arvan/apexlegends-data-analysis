@@ -112,6 +112,13 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir, sleep_duration=
         missing_games = game_df.loc[~game_df["game_id"].isin(downloaded_files)].copy()
         if len(missing_games) == 0:
             continue
+
+        invalid_game_timestamps = missing_games["game_timestamp"].apply(lambda x: isinstance(x, str))
+        if any(invalid_game_timestamps):
+            invalid_list = missing_games[invalid_game_timestamps]["game_timestamp"].tolist()
+            logger.info(f"Found invalid timestamps {invalid_list}")
+            # ensure game_timestamp is an integer
+            missing_games = missing_games[~invalid_game_timestamps]
         missing_games.sort_values("game_timestamp", inplace=True, ascending=False)
         logger.info(f"Downloading {api_name} data")
         progress_bar = tqdm(total=len(missing_games), desc=f"Downloading {api_name} data")
