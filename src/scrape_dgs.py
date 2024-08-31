@@ -127,6 +127,8 @@ def scrape_players_endpoints(game_df, init_dict, algs_games_dir, sleep_duration=
 
             if len(init_dict[game_id]) == 0:
                 continue
+            if "players" not in init_dict[game_id]:
+                continue
 
             players_hash_list = [player["nucleusHash"] for player in init_dict[row["game_id"]]["players"]]
             file_name = f"{algs_games_dir}/{api_name}/{row['game_id']}.json"
@@ -175,9 +177,21 @@ def scrape_tournaments():
     # example of the pattern usage: 'ALGS Playoffs - Year 3, Split 2'
     tournament_pattern = r"(?P<name>[^-]*) - Year (?P<year>\d+), Split (?P<split_num>\d+)"
 
+    non_algs_tournaments = ["Solos-Showdown"]
+
+    skip_tournament = False
+
+    def is_valid_tournament(tournament_full_name):
+        for non_algs_tournament in non_algs_tournaments:
+            if non_algs_tournament.lower() in tournament_full_name.lower():
+                return False
+        return True
+
     tournament_list = []
     for tournament in algs_region_elems:
         tournament_full_name = tournament.find(class_='listText').text.strip()
+        if not is_valid_tournament(tournament_full_name):
+            continue
         tournament_url = tournament["href"]
         tournament_match = re.match(tournament_pattern, tournament_full_name)
         if tournament_match:
@@ -220,6 +234,7 @@ def scrape_games(tournament_df, current_game_df):
         if tournament_region == "" or pd.isna(tournament_region):
             logger.info(f"Invalid region: {tournament_full_name} - {tournament_url}")
 
+
         tournament_page_url = ALS_URL + tournament_url
 
         if "plq" in tournament_url.lower():
@@ -235,6 +250,10 @@ def scrape_games(tournament_df, current_game_df):
 
         soup = BeautifulSoup(tournament_page_html.text, 'html.parser')
 
+        if "Y4-Split2/ALGS-Playoffs" in tournament_page_url:
+            # day 2, a vs d
+            pass
+
         # algsDaysNav
         algs_days_nav = soup.find(class_='algsDaysNav')
         for day in algs_days_nav.children:
@@ -245,9 +264,10 @@ def scrape_games(tournament_df, current_game_df):
 
                 games_matching = current_tournament_df[current_tournament_df["tournament_day"] == tournament_day]
 
-                if not games_matching.empty:
-                    continue
+                # if not games_matching.empty:
+                #     continue
                 day_page_url = ALS_URL + day_href
+
                 day_page_html = requests.get(day_page_url)
                 if day_page_html.status_code != 200:
                     logger.info(f"Error: {tournament_full_name} - {tournament_url} - {day_href}")
@@ -282,16 +302,21 @@ def scrape_games(tournament_df, current_game_df):
 
                     if settings_label is not None:
                         game_timestamp = settings_label["data-timestamp"]
+                        # try to convert to int
+                        try:
+                            game_timestamp = int(game_timestamp)
 
-                        game_match = re.match(game_pattern, game_title)
-                        if game_match:
-                            game_num = game_match.group("game_num").strip()
+                            game_match = re.match(game_pattern, game_title)
+                            if game_match:
+                                game_num = game_match.group("game_num").strip()
 
-                            r = (
-                                tournament_full_name, tournament_name, tournament_year, tournament_split,
-                                tournament_region, tournament_url, tournament_day,
-                                game_title, game_map, game_timestamp, game_num, game_id)
-                            game_list.append(r)
+                                r = (
+                                    tournament_full_name, tournament_name, tournament_year, tournament_split,
+                                    tournament_region, tournament_url, tournament_day,
+                                    game_title, game_map, game_timestamp, game_num, game_id)
+                                game_list.append(r)
+                        except ValueError:
+                            logger.error(f"Error: {tournament_full_name} - {tournament_url} - {game_title}")
                     else:
                         logger.error(f"Error: {tournament_full_name} - {tournament_url} - {game_title}")
 
