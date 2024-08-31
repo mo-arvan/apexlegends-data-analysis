@@ -7,7 +7,8 @@ import pandas as pd
 def get_game_init(init_data_dir="data/algs_games/init", file_list=None):
     init_dict = {}
     for file_name in os.listdir(init_data_dir):
-        if file_list is not None and file_name not in file_list:
+        base_file_name = os.path.basename(file_name).split(".")[0]
+        if file_list is not None and base_file_name not in file_list:
             continue
         with open(os.path.join(init_data_dir, file_name), "r") as f:
             json_data = json.load(f)
