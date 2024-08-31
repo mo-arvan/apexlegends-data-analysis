@@ -374,6 +374,8 @@ def post_process(damage_events_dir, output_dir, init_dict):
     # group by game_id and player_hash, then sort by event_timestamp, then calculate the cumulative damage
     damage_df["cumulative_damage"] = damage_df.groupby(["game_id", "player_hash"])["total_damage"].cumsum()
 
+    init_dict = {k: v for k, v in init_dict.items() if "players" in v}
+
     player_hash_to_name = [(game["gameID"],
                             player["nucleusHash"][:32],
                             player["playerName"],
