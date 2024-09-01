@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 logger.info(f"Running {__file__}")
 
 st.set_page_config(
-    page_title="ALGS Fights Explorer",
+    page_title="Shots Hit Analysis",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
