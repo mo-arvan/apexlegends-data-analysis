@@ -1301,6 +1301,7 @@
       "EzFlashKIDZ HVND",
       "HVND EzFlashKIDZ",
       "HVND_EzFlashKIDZ",
+      "LGND EzFlashKIDZ",
       "LGND_EzFlashKlDZ"
     ]
   },
@@ -3199,9 +3200,10 @@
     ]
   },
   {
-    "esport_name": "Noname",
+    "esport_name": "iHateTheWorld",
     "hash": [
-      "72086c2a5947f79d061709f74f31a1ce"
+      "72086c2a5947f79d061709f74f31a1ce",
+      "80bcbb660636c57db4cee88a99370749"
     ],
     "alias_list": [
       ":(",
@@ -3213,7 +3215,8 @@
       "WHYWASIBORN",
       "caijiuduolian",
       "iHateTheWorld",
-      "iHtw"
+      "iHtw",
+      "DF iHateTheWorld"
     ]
   },
   {

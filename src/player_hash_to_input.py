@@ -12,8 +12,9 @@ def normalize_name(x):
 
 
 def get_player_hash_list(init_dict):
+
     player_name_hash_to_match = [(pp["playerName"], pp["nucleusHash"][:32])
-                                 for p in init_dict.values()
+                                 for p in init_dict.values() if "players" in p
                                  for pp in p["players"]]
 
     player_name_hash_to_match = list(set(player_name_hash_to_match))
