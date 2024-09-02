@@ -467,10 +467,15 @@ shots_hit_clip = st.sidebar.number_input("Max Shots Hit",
                                          value=15,
                                          key="shots_hit_clip")
 
-distance_threshold = 40
+selected_distance = st.sidebar.number_input("Distance Threshold",
+                                            min_value=0,
+                                            max_value=1000,
+                                            value=40,
+                                            key="selected_distance")
 
-close_range_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] <= distance_threshold]
-close_range_damage_events_b_df = damage_events_b_df.loc[damage_events_b_df["distance"] <= distance_threshold]
+
+close_range_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] <= selected_distance]
+close_range_damage_events_b_df = damage_events_b_df.loc[damage_events_b_df["distance"] <= selected_distance]
 
 with st.spinner("Building plots..."):
     plots_dict, raw_data = discrepancy_plot_builder(close_range_damage_events_a_df,
