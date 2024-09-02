@@ -1,4 +1,4 @@
-# Aim Assist Nerf and Its Effect on MnK vs. Controller Gap
+# Aim Assist Nerf and Its Effect on MnK vs. Controller Gap - ALGS Playoffs Analysis
 
 ## Abstract
 
@@ -64,7 +64,7 @@ Furthermore, through the eCCDF, I can assess the likelihood of a player hitting 
 
 By the end of this post, I aim to clearly demonstrate any performance gaps and ideally show minimal differences between the inputs across various combat scenarios.
 
-### Results
+## Results
 
 Below are the ePDFs for shots hit during the ALGS Playoffs Year 4, Split 1 (left) and Split 2 (right). In these charts, red bars represent Controller players and blue bars represent MnK players. The x-axis shows the number of shots hit, and the y-axis indicates the probability density for each value.
 
@@ -90,14 +90,16 @@ The comparison between Playoffs Year 4 Split 2 and ALGS Championships Year 3, Sp
 
 It is worth noting there are cases where MnK players outperform controller players, particularly in the 11-15 shots hit range. However, the difference is less than 1%, indicating a near parity in performance.
 
-### Conclusion
+## Conclusion
 
 The recent changes to aim assist have reduced the performance differences between MnK and controller players in close-range combat. This analysis shows that shots are now more evenly distributed between the two types of controls, although controller players still have a small advantage. The updates in Season 22 have made the game more competitive, allowing both input methods to perform similarly in ALGS tournaments. It's important for the future of the game that there is balance and fairness between the different control methods. Developers should keep reviewing and tweaking the aim assist to ensure the game stays fair and competitive for everyone. They should also make sure that controller players have a smooth experience with actions like looting and opening doors, without sacrificing the game’s integrity.
 
 This analysis has its limitations. For instance, differences between MnK and controller players can vary greatly depending on each player's skills and style. Over time, the perception has grown that MnK is less effective than controllers because of the aim assist feature. Also, mastering the game requires many hours of playing ranked games, which can be more mentally demanding for MnK players. These factors might discourage skilled MnK players from competing at higher levels. Moreover, this analysis assumes that the combat scenarios are the same for both controls, which might not always reflect the true dynamics of the game. Other factors like the choice of weapons and legends might also influence the results.
 
+This visualization as well as the raw data used is available at [apexlegends-data-analysis.streamlit.app/Game_Input_Parity](https://apexlegends-data-analysis.streamlit.app/Game_Input_Parity).
 
-### Future Work 
+
+## Future Work 
 
 I have a few ideas for future work:
 
