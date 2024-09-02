@@ -38,7 +38,6 @@ def get_gun_filters(gun_stats_df,
     if use_base_weapon_name:
         weapon_name_column = "base_weapon_name"
 
-
     base_weapon_condition = np.logical_or(pd.isna(gun_stats_df["secondary_class"]),
                                           gun_stats_df["secondary_class"] == "Care Package")
 
@@ -126,7 +125,6 @@ def get_gun_filters(gun_stats_df,
         if w not in all_weapons:
             logger.warning(f"Preselected weapon {w} not found in the dataset. Removing from preselected weapons.")
             preselected_weapons.remove(w)
-
 
     selected_weapons = child_container.multiselect(select_text,
                                                    all_weapons,
@@ -237,6 +235,13 @@ def get_tournament_filters(algs_games_df, gun_stats_df, filters_container, base_
         "Prowler Burst PDW",
         "VK-47 Flatline",
         "R-301 Carbine",
+        'Devotion LMG',
+        'EVA-8 Auto',
+        'L-STAR EMG',
+        'M600 Spitfire',
+        'Mozambique Shotgun',
+        'P2020',
+        'RE-45 Auto',
     ]
 
     selected_weapons, selected_mag, selected_bolt, selected_stock = get_gun_filters(gun_stats_df,

@@ -287,7 +287,7 @@ min_distance = st.sidebar.number_input("Minimum Distance",
 max_distance = st.sidebar.number_input("Maximum Distance",
                                        min_value=1,
                                        max_value=1000,
-                                       value=1000,
+                                       value=40,
                                        key="max_distance")
 
 with st.spinner("Building plots..."):
