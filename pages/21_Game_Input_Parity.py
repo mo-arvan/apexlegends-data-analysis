@@ -8,6 +8,7 @@ from plotly.subplots import make_subplots
 
 import src.data_helper as data_helper
 import src.data_loader as data_loader
+from src.local.draw_map import index
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -474,7 +475,7 @@ selected_distance = st.sidebar.number_input("Distance Threshold",
 
 distance_filter = st.sidebar.selectbox("Distance Filter",
                                        ["Less than", "Greater than"],
-                                       "Less than",
+                                       index=0,
                                        key="distance_filter")
 
 if "Less than" in distance_filter:
