@@ -472,10 +472,10 @@ selected_distance = st.sidebar.number_input("Distance Threshold",
                                             value=40,
                                             key="selected_distance")
 
-distance_filter = st.sidebar.multiselect("Distance Filter",
-                                 ["Less than", "Greater than"],
-                                 ["Less than"],
-                                 key="distance_filter")
+distance_filter = st.sidebar.select("Distance Filter",
+                                    ["Less than", "Greater than"],
+                                    ["Less than"],
+                                    key="distance_filter")
 
 if "Less than" in distance_filter:
     filtered_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] <= selected_distance]
