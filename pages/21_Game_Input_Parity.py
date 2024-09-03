@@ -362,7 +362,6 @@ def discrepancy_plot_builder(damage_events_a_df,
         **default_plot_layout,
     )
 
-
     plot_list = [epdf_diff_subplots, eccdf_diff_subplots]
     for plot in plot_list:
         plot.update_xaxes(showgrid=False)
@@ -473,13 +472,21 @@ selected_distance = st.sidebar.number_input("Distance Threshold",
                                             value=40,
                                             key="selected_distance")
 
+distance_filter = st.multiselect("Distance Filter",
+                                 ["Less than", "Greater than"],
+                                 ["Less than"],
+                                 key="distance_filter")
 
-close_range_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] <= selected_distance]
-close_range_damage_events_b_df = damage_events_b_df.loc[damage_events_b_df["distance"] <= selected_distance]
+if "Less than" in distance_filter:
+    filtered_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] <= selected_distance]
+    filtered_damage_events_b_df = damage_events_b_df.loc[damage_events_b_df["distance"] <= selected_distance]
+else:
+    filtered_damage_events_a_df = damage_events_a_df.loc[damage_events_a_df["distance"] > selected_distance]
+    filtered_damage_events_b_df = damage_events_b_df.loc[damage_events_b_df["distance"] > selected_distance]
 
 with st.spinner("Building plots..."):
-    plots_dict, raw_data = discrepancy_plot_builder(close_range_damage_events_a_df,
-                                                    close_range_damage_events_b_df,
+    plots_dict, raw_data = discrepancy_plot_builder(filtered_damage_events_a_df,
+                                                    filtered_damage_events_b_df,
                                                     shots_hit_clip)
 
 tabs = st.tabs([
@@ -536,7 +543,7 @@ with tabs[3]:
 
 with tabs[4]:
     st.header(f"Raw Data {selected_tournament_a}")
-    st.dataframe(close_range_damage_events_a_df[[
+    st.dataframe(filtered_damage_events_a_df[[
         "player_name",
         "team_name",
         "tournament_full_name",
@@ -560,7 +567,7 @@ with tabs[4]:
                  )
 with tabs[5]:
     st.header(f"Raw Data {selected_tournament_b}")
-    st.dataframe(close_range_damage_events_b_df[[
+    st.dataframe(filtered_damage_events_b_df[[
         "player_name",
         "team_name",
         "tournament_full_name",
