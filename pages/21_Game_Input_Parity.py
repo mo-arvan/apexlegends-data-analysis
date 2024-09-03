@@ -474,7 +474,7 @@ selected_distance = st.sidebar.number_input("Distance Threshold",
 
 distance_filter = st.sidebar.selectbox("Distance Filter",
                                        ["Less than", "Greater than"],
-                                       ["Less than"],
+                                       "Less than",
                                        key="distance_filter")
 
 if "Less than" in distance_filter:
