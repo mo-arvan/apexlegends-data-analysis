@@ -449,8 +449,9 @@ selected_guns = filters_container.multiselect("Select Weapons",
                                               default=close_range_weapons,
                                               key="selected_guns")
 
-damage_events_a_df = damage_events_a_df[damage_events_a_df["weapon_name"].isin(selected_guns)]
-damage_events_b_df = damage_events_b_df[damage_events_b_df["weapon_name"].isin(selected_guns)]
+if len(selected_guns) >= 0:
+    damage_events_a_df = damage_events_a_df[damage_events_a_df["weapon_name"].isin(selected_guns)]
+    damage_events_b_df = damage_events_b_df[damage_events_b_df["weapon_name"].isin(selected_guns)]
 
 filter_unknown_inputs = filters_container.checkbox("Filter Unknown Inputs", value=True)
 
