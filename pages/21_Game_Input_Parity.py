@@ -472,7 +472,7 @@ selected_distance = st.sidebar.number_input("Distance Threshold",
                                             value=40,
                                             key="selected_distance")
 
-distance_filter = st.multiselect("Distance Filter",
+distance_filter = st.sidebar.multiselect("Distance Filter",
                                  ["Less than", "Greater than"],
                                  ["Less than"],
                                  key="distance_filter")
