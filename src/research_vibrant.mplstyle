@@ -1,0 +1,94 @@
+# research_vibrant — Clean scientific style with Tol Vibrant palette
+#
+# Layout inspired by UNHCR dataviz guidelines:
+#   Zero spines, left-aligned bold titles, transparent axes background,
+#   generous title padding (for legend placement above chart).
+#
+# Color palette: Paul Tol Vibrant (SRON/EPS/TN/09-002)
+#   Colorblind-safe, validated for deuteranopia, protanopia, tritanopia.
+#
+# Install globally:
+#   cp research_vibrant.mplstyle ~/.config/matplotlib/stylelib/
+#
+# Usage:
+#   import matplotlib.pyplot as plt
+#   plt.style.use("research_vibrant")
+
+# --- Figure ---
+figure.figsize:     8, 5
+figure.dpi:         150
+figure.facecolor:   white
+figure.edgecolor:   white
+figure.constrained_layout.use: True
+
+# --- Export ---
+savefig.dpi:        300
+savefig.bbox:       tight
+savefig.pad_inches: 0.15
+savefig.facecolor:  white
+
+# --- Font ---
+font.family:        sans-serif
+font.sans-serif:    Lato, Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif
+font.size:          10
+
+# --- Text ---
+text.color:         333333
+
+# --- Axes ---
+axes.titlesize:     12
+axes.titleweight:   bold
+axes.titlepad:      12
+axes.titlelocation: left
+axes.labelsize:     11
+axes.labelweight:   normal
+axes.labelpad:      3
+axes.labelcolor:    666666
+
+# Zero spines
+axes.spines.top:    False
+axes.spines.right:  False
+axes.spines.left:   False
+axes.spines.bottom: False
+axes.linewidth:     0.8
+axes.edgecolor:     black
+axes.facecolor:     none
+
+# Grid off by default (enable per-chart as needed)
+axes.grid:          False
+axes.grid.axis:     both
+axes.axisbelow:     True
+
+# Paul Tol Vibrant palette
+axes.prop_cycle: cycler('color', ['0077BB', 'EE7733', '009988', 'EE3377', 'CC3311', '33BBEE', 'BBBBBB'])
+
+# --- Grid (when enabled) ---
+grid.color:     999999
+grid.linewidth: 0.5
+grid.alpha:     0.5
+grid.linestyle: -
+
+# --- Ticks ---
+xtick.labelsize:    10
+ytick.labelsize:    10
+xtick.color:        333333
+ytick.color:        333333
+xtick.major.size:   3.5
+ytick.major.size:   3.5
+xtick.major.width:  0.8
+ytick.major.width:  0.8
+xtick.direction:    out
+ytick.direction:    out
+
+# --- Legend ---
+legend.fontsize:    9
+legend.frameon:     False
+
+# --- Lines / Patches ---
+lines.linewidth:    1.8
+lines.markersize:   6
+patch.edgecolor:    white
+patch.linewidth:    0.5
+
+# --- Heatmaps ---
+image.cmap:         YlOrRd

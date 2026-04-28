@@ -9,6 +9,11 @@ data/local
 /pages/local
 /data/events/
 
+# Generated reports / plots / posts-fodder. data/ is for inputs + caches +
+# pipeline intermediates that other scripts consume; output/ is for everything
+# human-facing. Regeneratable via the script set.
+/output/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

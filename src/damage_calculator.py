@@ -357,6 +357,68 @@ def calculate_damage_over_accuracy(selected_weapons_df,
     return plot_dict
 
 
+def calculate_effective_ttk(selected_weapons_df,
+                            sniper_stocks_df,
+                            standard_stocks_df,
+                            conditions,
+                            accuracy_values=(100, 80, 60, 40),
+                            peek_start_ms=500,
+                            peek_step_ms=100):
+    """For each (weapon, accuracy) pair, find the smallest peek-time at which
+    the weapon downs the target and return one row per pair.
+
+    Mirrors `calculate_damage_over_accuracy` — same `damage_dict` shape, same
+    sort — but inverts the question: instead of sweeping shot counts at a
+    fixed peek-time, we sweep peek-time at a fixed accuracy and stop at the
+    first peek-time that kills.
+
+    Bounded by `calculate_max_shots_given_peak_time`'s magazine cap: once the
+    pellet count stops growing the magazine is empty, and we report the row
+    as the best the weapon can do (`target_neutralized` may be False).
+    """
+    dps_dict_list = []
+
+    for accuracy in accuracy_values:
+        for idx, weapon in selected_weapons_df.iterrows():
+            target_neutralized = False
+            peek_time_in_ms = peek_start_ms
+            prev_pellets = -1
+            damage_dict = None
+            while not target_neutralized:
+                conditions["peek_time_in_ms"] = peek_time_in_ms
+                shots_during_peek, _ = calculate_max_shots_given_peak_time(weapon, conditions)
+                pellets_per_shot = weapon.get("pellets_per_shot")
+                if pd.isna(pellets_per_shot):
+                    pellets_per_shot = 1
+                pellets_shot_during_peek = int(shots_during_peek * pellets_per_shot)
+
+                hit_shots_or_pellets = math.floor(pellets_shot_during_peek * (accuracy / 100))
+                damage_dict = calculate_damage_dealt(weapon,
+                                                     hit_shots_or_pellets,
+                                                     sniper_stocks_df,
+                                                     standard_stocks_df,
+                                                     conditions)
+                target_neutralized = damage_dict["target_neutralized"]
+                if target_neutralized:
+                    break
+                # Mag exhausted (pellet count stopped growing) — record the
+                # best-effort row and move on so we don't loop forever.
+                if pellets_shot_during_peek == prev_pellets:
+                    break
+                prev_pellets = pellets_shot_during_peek
+                peek_time_in_ms += peek_step_ms
+            if damage_dict is not None:
+                dps_dict_list.append(damage_dict.copy())
+
+    dps_df = pd.DataFrame(dps_dict_list)
+    dps_df = dps_df.sort_values(by=["weapon_name", "accuracy"], ascending=False).reset_index(drop=True)
+
+    plot_dict = {
+        "dps_df": dps_df,
+    }
+    return plot_dict
+
+
 def calculate_damage_over_time(selected_weapons_df,
                                sniper_stocks_df,
                                standard_stocks_df,

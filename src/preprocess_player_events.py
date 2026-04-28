@@ -67,6 +67,18 @@ def parse_events(game_data_tuple):
         # logger.info(f"Skipping {game_id}")
         return
 
+    # Some scrapes contain malformed per-player entries (missing `html` or
+    # other keys from a failed/empty API response). Skip those; log if a
+    # whole game ends up empty.
+    valid = [g for g in game_events
+             if isinstance(g, dict) and "html" in g and "lastEventId" in g and "eventsLocations" in g]
+    if not valid:
+        logger.warning(f"Skipping {game_id}: no valid player-event entries")
+        return
+    if len(valid) != len(game_events):
+        logger.info(f"{game_id}: dropped {len(game_events) - len(valid)} malformed player entries")
+    game_events = valid
+
     game_events_merged = {}
     game_events_merged["lastEventId"] = {k: v for g in game_events for k, v in g["lastEventId"].items()}
     game_events_merged["eventsLocations"] = {k: v for g in game_events for k, v in g["eventsLocations"].items()}

@@ -1,3 +1,8 @@
+
+# end zone variability
+# each series, six games, 3 per map.
+
+import datetime
 import logging
 import os
 import pickle
@@ -8,7 +13,6 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-import src.data_helper as data_helper
 import src.data_loader as data_loader
 
 logging.basicConfig(level=logging.INFO,
@@ -16,20 +20,6 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 logger.info(f"Running {__file__}")
-
-
-def merge_damage(event_text):
-    event_pattern = r"Dealt (?P<damage>\d+) damage to (?P<target>.+?) with\s+(?P<weapon>.+?)\s+— ([\s\S]+?) — (?P<distance>\d+(\.\d+)?)"
-    match = re.match(event_pattern, event_text)
-    if match:
-        damage = int(match.group("damage"))
-        target = match.group("target")
-        weapon = match.group("weapon")
-        distance = float(match.group("distance"))
-        return damage, target, weapon, distance
-    else:
-        logger.debug(f"Event text {event_text} did not match the pattern")
-        return None, None, None, None
 
 
 def normalize_weapon_name(weapon):
@@ -97,7 +87,7 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
     # player id, event id, event name, event time, event detail, event x, event y, event time in minutes and seconds
     # event text
     damage_dealt_pattern = r"Dealt (?P<damage>\d+) damage to (?P<target>.+?) with\s+(?P<weapon>.+?)\s+— ([\s\S]+?) — (?P<distance>\d+(\.\d+)?)"
-    ammo_used_pattern = (r"Used x(?P<ammo_count>\d+) \s*(?P<ammo_type>.+?) Ammo \(\d+ ➟ \d+\)")
+    ammo_used_pattern = (r"Used x(?P<ammo_count>\d+) \s*(?P<ammo_type>.+?) (Ammo|Rounds|Shells) \(\d+ ➟ \d+\)")
 
     game_damage_events = []
 
@@ -111,11 +101,11 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
     # concat_events = concat_events[concat_events["player_hash"].isin(dup_hashes)]
     # concat_events.sort_values("event_id", inplace=True)
     # concat_events.reset_index(drop=True, inplace=True)
-
+    selected_player_hash = "ebb81458a29f44e9c2c30c75008e3223"
     for player_hash, player_events_df in player_hash_game_dict.items():
         player_name = players_hash_to_name_dict[player_events_df["player_hash"][0][:32]]
-        # if player_hash == hao_right_hash_id:
-        #     logger.info(f"Processing events for {player_name}")
+        if player_hash == selected_player_hash:
+            logger.debug(f"Processing events for {player_name}")
 
         used_damaged_events = player_events_df[
             np.logical_or(np.logical_and(player_events_df["event_type"] == "playerDamaged",
@@ -136,8 +126,8 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
         #
         # ammo_used_events = player_events_df[player_events_df["event_type"] == "ammoUsed"]
 
-        max_damage_time_diff = 10
-        max_ammo_used_time_diff = 10
+        max_damage_time_diff = 5
+        max_ammo_used_time_diff = 99
         merged_damage_events = []
         for i, row in used_damaged_events.iterrows():
             event_text = row["event_text"]
@@ -166,45 +156,46 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
 
                         last_event = merged_damage_events[-1]
 
-                        if last_event["weapon"] == weapon:
-                            if last_row["event_type"] == "playerDamaged" or last_row["target"] == "attacker":
-                                time_diff = row["event_timestamp"] - last_event["event_timestamp"][-1]
-                                if time_diff <= max_damage_time_diff:
-                                    merge_with_last = True
-                                elif time_diff < 2 * max_damage_time_diff:
-                                    # logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                        if last_event["ammo_used"] is None:
+                            if last_event["weapon"] == weapon:
+                                if last_row["event_type"] == "playerDamaged" or last_row["target"] == "attacker":
+                                    time_diff = row["event_timestamp"] - last_event["event_timestamp"][-1]
+                                    if time_diff <= max_damage_time_diff:
+                                        merge_with_last = True
+                                    elif time_diff < 2 * max_damage_time_diff:
+                                        # logger.warning(f"Time difference between events is {time_diff} for {weapon}")
+                                        pass
+                                else:
+                                    # logger.warning(f"Last event is not a damage event for {weapon}")
                                     pass
-                            else:
-                                # logger.warning(f"Last event is not a damage event for {weapon}")
-                                pass
 
                     if merge_with_last:
                         damage_dict = merged_damage_events[-1]
                         damage_dict["event_id"].append(row["event_id"])
                         damage_dict["event_time"].append(row["event_time"])
                         damage_dict["event_timestamp"].append(row["event_timestamp"])
-                        damage_dict["target"].append(target)
-                        damage_dict["distance"].append(distance)
-                        damage_dict["damage"].append(damage)
+                        damage_dict["target_arr"].append(target)
+                        damage_dict["distance_arr"].append(distance)
+                        damage_dict["damage_arr"].append(damage)
                     else:
                         damage_dict = row.to_dict()
                         damage_dict.pop("event_text")
                         damage_dict["event_id"] = [row["event_id"]]
                         damage_dict["event_time"] = [row["event_time"]]
                         damage_dict["event_timestamp"] = [row["event_timestamp"]]
-                        damage_dict["target"] = [target]
+                        damage_dict["target_arr"] = [target]
                         damage_dict["weapon"] = weapon
-                        damage_dict["distance"] = [distance]
-                        damage_dict["damage"] = [damage]
+                        damage_dict["distance_arr"] = [distance]
+                        damage_dict["damage_arr"] = [damage]
                         damage_dict["ammo_used"] = None
 
                         merged_damage_events.append(damage_dict)
                 else:
-                    logger.debug(f"Event text {event_text} did not match the pattern")
+                    logger.error(f"Event text {event_text} did not match the pattern")
 
             elif row["event_type"] == "ammoUsed":
 
-                if len(merged_damage_events) > 0 and merged_damage_events[-1]["ammo_used"] == None:
+                if len(merged_damage_events) > 0:
                     match = re.match(ammo_used_pattern, event_text)
 
                     if match:
@@ -214,18 +205,39 @@ def process_events(game_hash, game_data_dict, init_data_dict, output_dir):
                         last_damage_event = merged_damage_events[-1]
                         last_weapon = last_damage_event["weapon"]
 
-                        if ammo_type in ammo_type_to_weapon_dict and last_weapon in ammo_type_to_weapon_dict[ammo_type]:
+                        if last_damage_event[
+                            "ammo_used"] is None and ammo_type in ammo_type_to_weapon_dict and last_weapon in \
+                                ammo_type_to_weapon_dict[ammo_type]:
                             time_diff = row["event_timestamp"] - last_damage_event["event_timestamp"][-1]
                             if time_diff <= max_ammo_used_time_diff:
                                 last_damage_event["ammo_used"] = ammo_count
                             else:
                                 # logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
                                 pass
+                        else:
+                            matching_weapon_list = ammo_type_to_weapon_dict[ammo_type]
+                            last_matching_event = next(
+                                filter(lambda x: x["weapon"] in matching_weapon_list, merged_damage_events[::-1]), None)
+                            # two_to_last_damage_event = merged_damage_events[-2]
+                            # two_to_last_weapon = two_to_last_damage_event["weapon"]
+
+                            if last_matching_event is None or last_matching_event["ammo_used"] is not None:
+                                continue
+
+                            time_diff = row["event_timestamp"] - last_matching_event["event_timestamp"][-1]
+                            if time_diff <= max_ammo_used_time_diff:
+                                last_matching_event["ammo_used"] = ammo_count
+                            else:
+                                # logger.warning(f"Time difference between events is {time_diff} for {ammo_type}")
+                                pass
+
+                    else:
+                        logger.debug(f"Event text {event_text} did not match the pattern")
 
         game_damage_events.extend(merged_damage_events)
 
     if len(game_damage_events) == 0:
-        logger.warning(f"No damage events found for {game_hash}")
+        logger.debug(f"No damage events found for {game_hash}")
         return
 
     game_damage_df = pd.DataFrame(game_damage_events)
@@ -270,7 +282,7 @@ def post_process(damage_events_dir, output_dir, init_dict):
     all_files = [pd.read_parquet(f) for f in all_files]
     damage_df = pd.concat(all_files)
 
-    algs_games_df = data_helper.get_algs_games()
+    algs_games_df = data_loader.get_algs_games()
     gun_stats_df = pd.read_csv("data/guns_stats.csv")
 
     def fix_weapon_name(name):
@@ -323,10 +335,34 @@ def post_process(damage_events_dir, output_dir, init_dict):
                               "game_hash": "game_id"},
                      inplace=True)
 
-    damage_df.distance = damage_df["distance"].apply(lambda x: np.median(x))
-    damage_df["shots_hit"] = damage_df["damage"].apply(lambda x: len(x))
-    damage_df["total_damage"] = damage_df["damage"].apply(lambda x: sum(x))
-    damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
+    shots_hit_list = []
+    for i, row in damage_df.iterrows():
+        shots_hit = len(row["damage_arr"])
+        if row["ammo_used"] is not None:
+            if row["ammo_used"] < shots_hit:
+                shots_hit = row["ammo_used"]
+
+        shots_hit_list.append(shots_hit)
+    damage_df["shots_hit"] = shots_hit_list
+    damage_df["shots_hit"] = damage_df["shots_hit"].astype(int)
+
+    damage_df["distance"] = damage_df["distance_arr"].apply(lambda x: np.median(x))
+    # damage_df["shots_hit"] = damage_df[["damage_arr", "target_arr"]].apply(calculate_shots_hit)
+    damage_df["total_damage"] = damage_df["damage_arr"].apply(lambda x: sum(x))
+    # damage_df["event_start_time"] = damage_df["event_time"].apply(lambda x: x[0])
+    # damage_df["event_end_time"] = damage_df["event_time"].apply(lambda x: x[-1])
+    # get mintues and seconds from event timestamp
+    damage_df["event_start_timestamp"] = damage_df["event_timestamp"].apply(lambda x: min(x))
+    damage_df["event_start_time"] = damage_df["event_timestamp"].apply(
+        lambda x: datetime.datetime.fromtimestamp(x[0]).strftime('%M:%S'))
+    damage_df["event_end_time"] = damage_df["event_timestamp"].apply(
+        lambda x: datetime.datetime.fromtimestamp(x[-1]).strftime('%M:%S'))
+    damage_df["event_duration"] = damage_df["event_timestamp"].apply(lambda x: max(x) - min(x))
+
+    damage_df = damage_df.sort_values(by=["game_id", "player_hash", "event_start_timestamp"],
+                                      ascending=[True, True, True])
+    # group by game_id and player_hash, then sort by event_timestamp, then calculate the cumulative damage
+    damage_df["cumulative_damage"] = damage_df.groupby(["game_id", "player_hash"])["total_damage"].cumsum()
 
     player_hash_to_name = [(game["gameID"],
                             player["nucleusHash"][:32],
@@ -361,7 +397,22 @@ def post_process(damage_events_dir, output_dir, init_dict):
     damage_df = damage_df.merge(player_hash_df,
                                 on=["game_id", "player_hash"], how="inner")
 
-    # damage_df["target_unique"] = damage_df["target"].apply(lambda x: set(x))
+    hash_to_input_df = data_loader.get_hash_to_player_info_df()
+    damage_df = damage_df.merge(hash_to_input_df,
+                                on="player_hash",
+                                how="left")
+
+    def get_id_or_name(x):
+        id = x["player_id"]
+        name = x["player_name"]
+        if not pd.isna(id):
+            return id
+        else:
+            return name
+
+    damage_df["player_id"] = damage_df[["player_id", "player_name"]].apply(get_id_or_name, axis=1)
+
+    # damage_df["target_unique"] = damage_df["target_arr"].apply(lambda x: set(x))
     #
     # # finding items that player is in the target list
     # damage_df["is_target"] = damage_df.apply(lambda x: x["player_name"] in x["target_unique"], axis=1)
@@ -391,137 +442,47 @@ def main():
 
     algs_games_df = data_loader.get_algs_games()
 
-    playoff_games_df = algs_games_df[
-        algs_games_df["tournament_full_name"].str.contains("ALGS Playoffs - Year 4, Split 2")]
+    playoff_games_df = algs_games_df[algs_games_df["tournament_full_name"].str.contains("ALGS Playoffs - Year 4, Split 2")]
 
     event_files = os.listdir(events_dir)
     logger.info(f"Reading events from {events_dir}")
 
     event_files = [f for f in event_files if f[:-4] in playoff_games_df["game_id"].values]
     num_events = len(event_files)
+    # 52dd387d9d52ec001940a8c175437335
+
+    events_gen = read_events(event_files, events_dir)
 
     logger.info(f"Read {num_events} events")
 
     logger.info(f"Reading init data from {args.init_data_dir}")
-    init_dict = data_loader.get_game_init(args.init_data_dir, playoff_games_df["game_id"].values)
+    # os.path.join(args.init_data_dir, file_name)
+    init_dict = data_loader.get_game_init(args.init_data_dir)
+    # init_df = pd.DataFrame(init_dict.values())
+
+    playoff_init_dict = {k: v for k, v in init_dict.items() if k in playoff_games_df["game_id"].values}
 
     logger.info(f"Read {len(init_dict)} init files")
 
-    events_gen = read_events(event_files, events_dir)
+    # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
+    # selected_gamez = "78656cba121dadc281fd1001a5a24233"
+    #
+    # selected_game_df = damage_events_filtered_df.loc[damage_events_filtered_df["game_id"] == selected_gamez]
+    #
+    # selected_game_df.to_csv("selected_game.csv", index=False)
 
-    # games grouped on tournament_full_name, and tournament_day, getting count of games
-    games_grouped = algs_games_df.groupby(["tournament_full_name", "tournament_day"]).size().reset_index(name="count")
+    logger.info("Processing events")
+    for e in tqdm(events_gen, total=num_events):
+        if e[0] in init_dict:
+            game_hash, game_data_tuple = e
+            process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
 
-    rings_list = []
+    logger.info("Performing post processing")
 
-    def get_map_name(game_init):
-        map_name = game_init["mapImg"]
-        if "tropic_island" in map_name:
-            return "storm_point"
-        elif "desertlands" in map_name:
-            return "worlds_edge"
-        else:
-            logger.warning(f"Unknown map: {map_name}")
-            return None
+    # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
+    post_process(damage_events_dir, output_dir, init_dict)
 
-    for game_hash, game_init in init_dict.items():
-        ring_debug = game_init["ringDebug"]
-        map_name = get_map_name(game_init)
-
-        if isinstance(ring_debug, dict) and "rings" in ring_debug:
-            rings = ring_debug["rings"]
-
-            ring_dict = {"game_id": game_init["gameID"],
-                         "map_name": map_name,
-                         "timestamp": game_init["timestamp"]
-                         }
-
-            for i, ring in enumerate(rings):
-                ring_i_str = f"ring_{i + 1}"
-
-                for k, v in ring.items():
-                    if isinstance(v, dict):
-                        for kk, vv in v.items():
-                            ring_dict[f"{ring_i_str}_{k}_{kk}"] = vv
-                    else:
-                        ring_dict[f"{ring_i_str}_{k}"] = v
-
-            rings_list.append(ring_dict)
-
-    rings_df = pd.DataFrame(rings_list)
-
-    ring_3_center_grouped = (rings_df.groupby(["map_name", "ring_4_center_x", "ring_4_center_y"]).size().
-                             reset_index(name="count"))
-
-    ring_3_center_grouped = ring_3_center_grouped.sort_values(by=["map_name", "count"], ascending=[True, False])
-
-    ring_6_grouped = (rings_df.groupby(["map_name", "ring_6_center_x", "ring_6_center_y"]).size().
-                      reset_index(name="count"))
-
-    ring_6_grouped = ring_6_grouped.sort_values(by=["map_name", "count"], ascending=[True, False])
-
-    game_rings_df = rings_df.merge(algs_games_df,
-                                   on=["game_id"], how="inner")
-
-    rings_grouped = (game_rings_df[["tournament_full_name", "tournament_day", "map_name",
-                                    "ring_6_center_x", "ring_6_center_y"]]
-                     .groupby(["tournament_full_name", "tournament_day", "map_name"]))
-
-    from itertools import combinations
-    def process_groups(group):
-        if 'ring_6_center_x' not in group.columns:
-            return []
-        rings = group[["ring_6_center_x", "ring_6_center_y"]].values
-
-        ring_pairs = list(combinations(rings, 2))
-
-        dist_list = []
-
-        for pair in ring_pairs:
-            dist = np.linalg.norm(pair[0] - pair[1])
-            dist_list.append(dist)
-
-        dist_list = sorted(dist_list)
-
-        # group['distances'] = dist_list
-
-        return dist_list
-
-    rings_dist_grouped = rings_grouped.apply(process_groups)
-
-    print("")
-
-    existing_files = os.listdir(output_dir)
-    existing_files = [f.split(".")[0] for f in existing_files]
-
-    event_files = [f for f in event_files if f[:-4] not in existing_files]
-    num_events = len(event_files)
-    # 52dd387d9d52ec001940a8c175437335
-
-    if num_events > 0:
-        events_gen = read_events(event_files, events_dir)
-
-        logger.info(f"Read {num_events} events")
-
-        #
-        # init_df = pd.DataFrame(init_dict.values())
-
-        logger.info(f"Read {len(init_dict)} init files")
-
-        # events_list = sorted(events_list, key=lambda x: int(init_dict[x[0]]["timestamp"]), reverse=True)
-
-        logger.info("Processing events")
-        for e in tqdm(events_gen, total=num_events):
-            if e[0] in init_dict:
-                game_hash, game_data_tuple = e
-                process_events(game_hash, game_data_tuple, init_dict[e[0]], output_dir)
-
-        logger.info("Performing post processing")
-
-        # damage_df.to_parquet(damage_events_file, index=False, compression="gzip")
-        post_process(damage_events_dir, output_dir, init_dict)
-
-        logger.info("Done")
+    logger.info("Done")
 
 
 if __name__ == "__main__":
