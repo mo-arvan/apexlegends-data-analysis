@@ -56,12 +56,13 @@ def _save(fig, name):
     _check_overlaps(fig, name)
 
 
-def _style_legend(ax, handles, labels=None, ncol=4, **kwargs):
+def _style_legend(ax, handles, labels=None, ncol=4, pad=30, **kwargs):
     """Place legend between title and chart area (never above the title).
 
     Follows the research_vibrant convention: legend sits just above the axes
-    (y=1.01 in axes coords), and the title is pushed up via pad=30 so it still
-    appears at the top of the figure.
+    (y=1.01 in axes coords), and the title is pushed up via pad so it still
+    appears at the top of the figure. Bump pad to ~50 when the legend wraps
+    to two rows so the title clears it.
     """
     kwargs.setdefault("frameon", False)
     kwargs.setdefault("fontsize", 8)
@@ -86,7 +87,7 @@ def _style_legend(ax, handles, labels=None, ncol=4, **kwargs):
     for loc in ("left", "center", "right"):
         t = ax.get_title(loc=loc)
         if t:
-            ax.set_title(t, loc=loc, pad=30)
+            ax.set_title(t, loc=loc, pad=pad)
             break
 
 
@@ -287,17 +288,15 @@ def fig1_thresholds(results):
         Patch(facecolor=QUADRANT_COLORS["underrated"], label="underrated"),
         Patch(facecolor=QUADRANT_COLORS["outclassed"], label="outclassed"),
     ]
+    # Horizontal bars with inline end-labels: legend must NOT live inside-axes
+    # (would overlap right-edge labels). Use outside_right per skill rule.
     ax.legend(
         handles=handles,
-        loc="upper right",
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),
         fontsize=8,
-        frameon=True,
-        facecolor="white",
-        edgecolor="#ccc",
-        ncol=2,
-        borderpad=0.6,
-        labelspacing=0.5,
-        columnspacing=1.2,
+        frameon=False,
+        labelspacing=0.6,
     )
 
     _save(fig, "07_thresholds_bar")
@@ -486,7 +485,7 @@ def fig2_tdown_curves(results, curves):
     def _head_curve(weapon):
         """Return list of (accuracy_pct, t_down_head) across the chart range."""
         out = []
-        for acc_pct in range(5, 100):
+        for acc_pct in range(5, 101):
             acc = acc_pct / 100.0
             t = _t_down_at_accuracy(weapon, acc, head=True)
             if t is not None:
@@ -543,7 +542,7 @@ def fig2_tdown_curves(results, curves):
         plot_panel(
             class_weapons,
             anchor_weapon if anchor_weapon in all_weapons and anchor_weapon not in class_weapons else None,
-            f"Down time vs accuracy — {class_display}",
+            f"{class_display}: down time vs accuracy",
             outname,
         )
 
@@ -631,17 +630,16 @@ def fig2_tdown_curves(results, curves):
         ax.set_ylabel("time to down (seconds)")
         ax.set_title(title)
         ax.grid(True, axis="y", alpha=0.22)
-        ax.legend(
-            handles=handles,
-            loc="upper right",
-            fontsize=9,
-            frameon=True,
-            facecolor="white",
-            edgecolor="#ccc",
-            borderpad=0.5,
-            labelspacing=0.5,
-            handlelength=2.6,
-        )
+
+        n = len(handles)
+        char_in, swatch_in = 0.075, 0.45
+        one_row_in = sum(swatch_in + char_in * len(h.get_label()) for h in handles)
+        fig_w = fig.get_size_inches()[0]
+        if n <= 4 and one_row_in <= fig_w:
+            ncol, pad = n, 30
+        else:
+            ncol, pad = (n + 1) // 2, 50
+        _style_legend(ax, handles, ncol=ncol, pad=pad, fontsize=9)
 
         bar_weapons = weapons + ([anchor] if anchor else [])
         rows = [
@@ -737,7 +735,7 @@ def fig2_tdown_curves(results, curves):
     ax.set_ylim(y_min, y_max)
     ax.set_xlabel("accuracy (%)", fontsize=11)
     ax.set_ylabel("time to down (seconds)", fontsize=11)
-    ax.set_title("Down time vs accuracy — all weapons")
+    ax.set_title("All weapons: down time vs accuracy")
     ax.grid(True, axis="y", alpha=0.22)
     ax.tick_params(labelsize=10)
 
@@ -766,7 +764,7 @@ def fig2_tdown_curves(results, curves):
     rank_ax.set_ylim(rank_df["rank"].max() + 0.5, 0.5)
     rank_ax.set_xlabel("accuracy (%)", fontsize=11)
     rank_ax.set_ylabel("rank by t_down", fontsize=11)
-    rank_ax.set_title("Rank vs accuracy — all weapons")
+    rank_ax.set_title("All weapons: rank vs accuracy")
     rank_ax.grid(True, axis="y", alpha=0.22)
     rank_ax.tick_params(labelsize=10)
 
@@ -816,14 +814,15 @@ def fig2_tdown_curves(results, curves):
         for w in all_weapons
     ]
     legend_ax.axis("off")
+    # Dedicated legend axis = figure-level legend (4-panel composite per skill rule).
+    # Frame off matches the no-spines aesthetic; the panel boundary already
+    # separates the legend from the data panels above.
     legend_ax.legend(
         handles=all_handles,
         loc="center",
         ncol=4,
         fontsize=9.5,
-        frameon=True,
-        facecolor="white",
-        edgecolor="#ccc",
+        frameon=False,
         columnspacing=2.2,
         handlelength=3.0,
         handletextpad=0.6,
@@ -832,6 +831,20 @@ def fig2_tdown_curves(results, curves):
     _save(fig, "05h_t_down_all")
     plt.close(fig)
     logger.info("wrote 05h_t_down_all")
+
+
+def _wrap_abbrev_key(pairs, per_line=8):
+    """Wrap an abbreviation key (list of (abbrev, name) tuples) into multiple
+    lines of `per_line` entries each. Returns a single string with newlines.
+
+    A single-line key for 25+ entries forces the figure to be ~20 inches wide.
+    Wrapping to several lines lets the figure stay at standard width and the
+    key sits in a compact block at the bottom-left.
+    """
+    chunks = [pairs[i:i + per_line] for i in range(0, len(pairs), per_line)]
+    return "\n".join(
+        " · ".join(f"{ab}={n}" for ab, n in chunk) for chunk in chunks
+    )
 
 
 def _weapon_abbrev(name):
@@ -1053,8 +1066,8 @@ def fig_target_strips(results, objectives):
     # Suptitle lives in title_ax so it cannot collide with any strip title.
     title_ax.text(
         0.0, 0.3,
-        "Target strips — every objective × adoption per weapon  "
-        "(x = score, y = shots landed log, colour/shape = class)",
+        "Target strips: every objective x adoption per weapon. "
+        "x = score, y = shots landed log, colour/shape = class.",
         fontsize=12, fontweight="bold",
         transform=title_ax.transAxes, va="bottom", ha="left", color="#222",
     )
@@ -1076,7 +1089,7 @@ def fig_target_strips(results, objectives):
     )
     legend_ax.legend(
         handles=handles, loc="center", ncol=len(handles), fontsize=9,
-        frameon=True, facecolor="white", edgecolor="#ccc",
+        frameon=False,
         columnspacing=2.0, handlelength=1.4, handletextpad=0.5,
         borderaxespad=0.2,
     )
@@ -1212,16 +1225,16 @@ def fig3_rebalance(results, recs):
             label=f"target ({int(A_DOWN_TARGET * 100)}%)",
         ),
     ]
+    # Horizontal bars with inline end-labels: legend must NOT live inside-axes
+    # (would overlap right-edge labels and "+1 mag" / "+1 pellet" annotations).
+    # Use outside_right per skill rule.
     ax.legend(
         handles=handles,
-        loc="upper right",
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),
         fontsize=7.5,
-        frameon=True,
-        facecolor="white",
-        edgecolor="#ccc",
-        ncol=1,
-        borderpad=0.4,
-        labelspacing=0.35,
+        frameon=False,
+        labelspacing=0.5,
     )
 
     _save(fig, "08_rebalance_dumbbell")
@@ -1370,17 +1383,17 @@ def fig4_quadrants(results):
             label=f"pick-rate median ({int(pick_median):,} shots)",
         ),
     ]
-    ax.legend(
-        handles=handles,
-        loc="upper right",
-        fontsize=8,
-        frameon=True,
-        facecolor="white",
-        edgecolor="#ccc",
-        ncol=1,
-        borderpad=0.6,
-        labelspacing=0.45,
-    )
+    # Quadrant scatter has many weapon labels scattered across the axes;
+    # inside-axes legend would compete with data labels. Place above.
+    n = len(handles)
+    char_in, swatch_in = 0.075, 0.45
+    one_row_in = sum(swatch_in + char_in * len(h.get_label()) for h in handles)
+    fig_w = fig.get_size_inches()[0]
+    if n <= 4 and one_row_in <= fig_w:
+        ncol, pad = n, 30
+    else:
+        ncol, pad = (n + 1) // 2, 50
+    _style_legend(ax, handles, ncol=ncol, pad=pad, fontsize=8)
 
     _save(fig, "04_quadrants")
     plt.close(fig)
@@ -1621,8 +1634,7 @@ def fig6_scorecard(results, objectives):
     ax.set_yticks(np.arange(len(weapons_order)))
     ax.set_yticklabels(weapons_order)
     ax.tick_params(axis="y", length=0)
-    ax.set_title("Multi-objective balance scorecard  —  signed gap from target per cell",
-                 loc="left", pad=12, fontweight="bold")
+    ax.set_title("Multi-objective balance scorecard: signed gap from target per cell")
 
     # Colorbar lives inside the explicit bottom band. Use inset_axes to carve
     # the exact rectangle inside band_ax.
@@ -1714,8 +1726,7 @@ def fig7_skill_metrics():
     ax.axhline(1.2, color="#CC3311", linestyle=":", linewidth=1.2, alpha=0.7, zorder=1)
     ax.set_xlabel("threshold gap vs q75 (accuracy points)")
     ax.set_ylabel("peak speed at q100 (seconds)")
-    ax.set_title("Skill reward: hard threshold, fast peak", loc="left",
-                 fontweight="bold", pad=10)
+    ax.set_title("Skill reward: hard threshold, fast peak")
     ax.set_ylim(0.3, Y_CLIP)
     ax.grid(True, alpha=0.22)
 
@@ -1736,18 +1747,27 @@ def fig7_skill_metrics():
                markeredgecolor="black", markersize=10, linestyle="",
                label="off-chart (y > 5s)"),
     ]
-    ax.legend(handles=handles, loc="upper right",
-              fontsize=8, frameon=True, facecolor="white",
-              edgecolor="#ccc", ncol=1, borderpad=0.5, labelspacing=0.4)
+    # Multi-encoding scatter (class color/shape + marker types). Outside_right
+    # would push savefig bbox to ~19 inches and stretch the bottom abbreviation
+    # key. Above-the-chart with multi-row wrapping keeps figure at 11 inches.
+    n = len(handles)
+    char_in, swatch_in = 0.075, 0.45
+    one_row_in = sum(swatch_in + char_in * len(h.get_label()) for h in handles)
+    fig_w = fig.get_size_inches()[0]
+    if n <= 4 and one_row_in <= fig_w:
+        ncol, pad = n, 30
+    else:
+        ncol, pad = (n + 1) // 2, 50
+    _style_legend(ax, handles, ncol=ncol, pad=pad, fontsize=8)
 
     # Footnote with abbreviation key — small, bottom-left, not in the way.
     abbrev_pairs = sorted(
         ((_weapon_abbrev(w), w) for w in df["weapon"]),
         key=lambda x: x[0],
     )
-    abbrev_text = " · ".join(f"{ab}={n}" for ab, n in abbrev_pairs)
+    abbrev_text = _wrap_abbrev_key(abbrev_pairs, per_line=8)
     fig.text(0.02, 0.005, abbrev_text, fontsize=6.5, color="#666",
-             ha="left", va="bottom", wrap=True)
+             ha="left", va="bottom")
 
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     _save(fig, "03_skill_metrics")
@@ -1876,9 +1896,7 @@ def fig_proposal(weapon_name, current_stats, proposed_stats, anchors,
                markeredgecolor=color, markeredgewidth=2, linestyle="",
                label="proposed"),
     ]
-    ax.legend(handles=handles, loc="upper right", fontsize=9,
-              frameon=True, facecolor="white", edgecolor="#ccc",
-              borderpad=0.4)
+    _style_legend(ax, handles, ncol=2, pad=30, fontsize=9)
 
     # Delta summary as a clean bottom-left footer.
     deltas = []
@@ -1958,7 +1976,7 @@ def fig_design_space():
     EMPTY_ZONES = [
         # (xmin, xmax, ymin, ymax, label, label_pos)
         (350, 500, 24, 32, "heavy AR\n(slower cadence,\nbigger per-shot)", (415, 31)),
-        (240, 400, 28, 40, "mid-cadence pistol\n(big mag, mid dmg —\nbridges P2020 to Wingman)", (310, 39)),
+        (240, 400, 28, 40, "mid-cadence pistol\n(big mag, mid dmg)\nbridges P2020 to Wingman", (310, 39)),
     ]
     for xmin, xmax, ymin, ymax, label, label_xy in EMPTY_ZONES:
         ax.add_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax - ymin,
@@ -1991,7 +2009,7 @@ def fig_design_space():
     ax.set_ylim(8, 250)
     ax.set_xlabel("RPM (log)")
     ax.set_ylabel("damage per trigger pull (damage x pellets, log)")
-    ax.set_title("Weapon design space: RPM x per-trigger damage  —  bubble area = mag size")
+    ax.set_title("Weapon design space: RPM x per-trigger damage. Bubble area = mag size.")
     ax.grid(True, which="major", alpha=0.22)
     ax.grid(True, which="minor", alpha=0.10)
 
@@ -2013,16 +2031,26 @@ def fig_design_space():
     handles.append(Line2D([0], [0], color="#EE7733", linestyle="--",
                           linewidth=1.3, label="empty design region"))
 
-    ax.legend(handles=handles, loc="lower left", fontsize=8.5,
-              frameon=True, facecolor="white", edgecolor="#ccc",
-              borderpad=0.5, labelspacing=0.6)
+    # Multi-encoding scatter (class color/shape + size for mag + dashed line
+    # for empty region). 11 entries; above-the-chart with multi-row wrap keeps
+    # the figure at fixed width (outside_right would stretch savefig bbox).
+    n = len(handles)
+    char_in, swatch_in = 0.075, 0.45
+    one_row_in = sum(swatch_in + char_in * len(h.get_label()) for h in handles)
+    fig_w = fig.get_size_inches()[0]
+    if n <= 4 and one_row_in <= fig_w:
+        ncol, pad = n, 30
+    else:
+        ncol, pad = (n + 1) // 2, 50
+    _style_legend(ax, handles, ncol=ncol, pad=pad, fontsize=8.5)
 
-    # Abbreviation key footer
+    # Abbreviation key footer — wrapped to multiple lines so figure stays at
+    # standard width.
     abbrev_pairs = sorted(
         ((_weapon_abbrev(w), w) for w in df["weapon"]),
         key=lambda x: x[0],
     )
-    abbrev_text = " · ".join(f"{ab}={n}" for ab, n in abbrev_pairs)
+    abbrev_text = _wrap_abbrev_key(abbrev_pairs, per_line=8)
     fig.text(0.02, 0.005, abbrev_text, fontsize=6.5, color="#666",
              ha="left", va="bottom")
 
@@ -2113,7 +2141,7 @@ def _bullet_times_for_entry(entry, base_stats):
     # cycles through few (2..5), so it has fewer dots.
     out = []
     prev_n = None
-    for acc_pct in range(5, 100):
+    for acc_pct in range(5, 101):
         acc = acc_pct / 100.0
         n = _bullets_to_down(dmg, pellets, acc, evo_mult, non_evo_mult)
         if n is None or n > mag:
@@ -2189,7 +2217,7 @@ def _curve_for_entry(entry, base_stats):
     is_burst = bpb > 0 and bfd > 0
     shot_interval = 60.0 / rpm
     out = []
-    for acc_pct in range(5, 100):
+    for acc_pct in range(5, 101):
         acc = acc_pct / 100.0
         bullets = _bullets_to_down(dmg, pellets, acc, evo_mult, non_evo_mult)
         if bullets is None or bullets > mag:
@@ -2281,7 +2309,7 @@ def fig_story(spec):
     else:
         auto_x_min = 30
     x_min = spec.get("x_min", int(auto_x_min))
-    x_max = spec.get("x_max", 95)
+    x_max = spec.get("x_max", 102)
 
     # Auto y-axis: tight padding around min/max of all drawn curves, with
     # gentle floor/ceiling. Caller can still override via spec["y_min"/"y_max"].
@@ -2311,7 +2339,9 @@ def fig_story(spec):
                            default_markers[anchor_idx % len(default_markers)])
             lw = 1.4
             ms = 4.5
-            face = "#BBBBBB"
+            # Marker face follows the line color when an explicit color is
+            # given (so colored anchors get colored dots), otherwise grey.
+            face = color if "color" in entry else "#BBBBBB"
             alpha = 0.85
             zorder = 3
             anchor_idx += 1
@@ -2366,7 +2396,7 @@ def fig_story(spec):
                                   markeredgecolor="white", markeredgewidth=0.9,
                                   linewidth=lw, label=label))
 
-    # Reference lines (optional).
+    # Vertical reference lines (optional).
     for ref in spec.get("ref_lines", []):
         rx = ref["x"]
         ax.axvline(rx, color=ref.get("color", "#888"), linestyle=":",
@@ -2376,6 +2406,77 @@ def fig_story(spec):
                 ha="center", va="top",
                 bbox=dict(facecolor="white", edgecolor="none",
                           boxstyle="round,pad=0.2", alpha=0.8))
+    # Horizontal reference lines (optional).
+    for ref in spec.get("h_ref_lines", []):
+        ry = ref["y"]
+        ax.axhline(ry, color=ref.get("color", "#888"), linestyle=":",
+                   linewidth=1, alpha=0.6, zorder=1)
+        ax.text(x_max - 0.5, ry, ref.get("label", ""),
+                fontsize=8, color=ref.get("color", "#666"),
+                ha="right", va="bottom",
+                bbox=dict(facecolor="white", edgecolor="none",
+                          boxstyle="round,pad=0.2", alpha=0.8))
+
+    # Value-readout text boxes (optional). Pass spec["readouts"] as a list of
+    # dicts; each dict has either x_anchor (lists eTTK at that accuracy) or
+    # y_anchor (lists accuracy at that eTTK). Position via either:
+    #   loc: matplotlib AnchoredText loc string (corners)
+    #   xy: (x_data, y_data) tuple, with optional ha / va alignment, so the
+    #       box anchors near its reference line instead of a corner.
+    readouts = spec.get("readouts", [])
+    legacy = spec.get("readout")  # backward-compat: single dict
+    if legacy and not readouts:
+        readouts = [legacy]
+    for readout in readouts:
+        if not drawn:
+            break
+        x_anchor = readout.get("x_anchor")
+        y_anchor = readout.get("y_anchor")
+        lines = []
+        if x_anchor is not None:
+            lines.append(f"At {x_anchor}% accuracy:")
+            for entry, pts in drawn:
+                label = entry.get("label", entry["name"])
+                pts_below = [p for p in pts if p[0] <= x_anchor]
+                if pts_below:
+                    val = pts_below[-1][1]
+                    lines.append(f"  {label}: {val:.2f}s")
+                else:
+                    lines.append(f"  {label}: cannot one-clip")
+        if x_anchor is not None and y_anchor is not None:
+            lines.append("")
+        if y_anchor is not None:
+            lines.append(f"At eTTK = {y_anchor}s:")
+            for entry, pts in drawn:
+                label = entry.get("label", entry["name"])
+                hits = [p for p in pts if p[1] <= y_anchor]
+                if hits:
+                    lines.append(f"  {label}: {hits[0][0]}% accuracy")
+                else:
+                    lines.append(f"  {label}: never (mag-bound)")
+        if not lines:
+            continue
+        bbox = dict(facecolor="white", edgecolor="#ccc",
+                    boxstyle="round,pad=0.4", alpha=0.92)
+        if "xy" in readout:
+            x_d, y_d = readout["xy"]
+            ax.text(x_d, y_d, "\n".join(lines),
+                    fontsize=8,
+                    ha=readout.get("ha", "left"),
+                    va=readout.get("va", "top"),
+                    bbox=bbox, zorder=6)
+        else:
+            from matplotlib.offsetbox import AnchoredText
+            anchored = AnchoredText(
+                "\n".join(lines),
+                loc=readout.get("loc", "lower right"),
+                prop=dict(size=8),
+                frameon=True, pad=0.4, borderpad=0.6,
+            )
+            anchored.patch.set_facecolor("white")
+            anchored.patch.set_edgecolor("#ccc")
+            anchored.patch.set_alpha(0.92)
+            ax.add_artist(anchored)
 
     ax.set_xlim(x_min, x_max)
     ax.set_ylim(y_min, y_max)
@@ -2383,9 +2484,20 @@ def fig_story(spec):
     ax.set_ylabel("time to down (s)")
     ax.set_title(spec["title"])
     ax.grid(True, axis="y", alpha=0.22)
-    ax.legend(handles=handles, loc="upper right", fontsize=9,
-              frameon=True, facecolor="white", edgecolor="#ccc",
-              borderpad=0.5, labelspacing=0.5, handlelength=2.6)
+
+    # Legend placement: compute from inputs (entry count, longest label width,
+    # figure width) instead of hard-coding loc=. Above-axes by default; wraps
+    # to two rows if labels are too long for one row to fit.
+    n = len(handles)
+    longest = max((len(h.get_label()) for h in handles), default=0)
+    fig_w = fig.get_size_inches()[0]
+    char_in, swatch_in = 0.075, 0.45
+    one_row_in = sum(swatch_in + char_in * len(h.get_label()) for h in handles)
+    if n <= 4 and one_row_in <= fig_w:
+        ncol, pad = n, 30
+    else:
+        ncol, pad = (n + 1) // 2, 50
+    _style_legend(ax, handles, ncol=ncol, pad=pad, fontsize=9)
 
     fig.tight_layout()
     _save(fig, spec["outname"])
@@ -2431,8 +2543,30 @@ def main():
     # --- R-99 post: three story beats via fig_story ---
     smg_weapons = [w for w in results["weapon"]
                    if str(base_class_for(w, results)) in ("SMG", "Submachine Gun")]
-    # Beat 1: SMG class as-is (intro to eTTK framework). Each dot = one shot,
-    # so high-RPM weapons show dense rainfall under their line, slower-firing
+    # Beat 0: how-to-read explainer. Same SMG curves as beat 1, with vertical
+    # and horizontal reference lines plus a readout box that lists eTTK at a
+    # fixed accuracy and required accuracy at a fixed eTTK. Standalone
+    # pedagogical plot; not the same as beat 1 (clean overview).
+    fig_story({
+        "title": "How to read an eTTK chart",
+        "outname": "story_r99_beat0_explainer",
+        "weapons": [{"name": w} for w in smg_weapons],
+        "scatter_bullets": True,
+        "ref_lines": [{"x": 60, "label": "60% accuracy", "color": "#888"}],
+        "h_ref_lines": [{"y": 1.5, "label": "eTTK = 1.5s", "color": "#888"}],
+        "readouts": [
+            # Sit each readout next to its reference line, in empty data space.
+            # 60% acc readout: just right of the vertical line, in the upper area
+            # where no curves go (above ~1.85 at x=60+).
+            {"x_anchor": 60, "xy": (62, 2.95), "ha": "left", "va": "top"},
+            # 1.5s readout: just below the horizontal line, on the left side
+            # where only the steep Alternator low-accuracy tail lives.
+            {"y_anchor": 1.5, "xy": (40, 1.45), "ha": "left", "va": "top"},
+        ],
+        "legend_loc": "center right",
+    })
+    # Beat 1: SMG class as-is (clean overview). Each dot = one shot, so
+    # high-RPM weapons show dense rainfall under their line, slower-firing
     # weapons show sparser dots.
     fig_story({
         "title": "SMG: time to down",
@@ -2446,11 +2580,21 @@ def main():
         "title": "R-99 proposed vs Volt",
         "outname": "story_r99_beat2_volt_context",
         "weapons": [
+            # CAR and Volt are coloured anchors (faster / slower floor SMGs).
+            # R-99 current stays grey as the pre-nerf reference. Two proposed
+            # variants are both drawn as highlights with different colours so
+            # they read as alternative answers, not one definitive proposal.
+            {"name": "C.A.R. SMG", "label": "CAR", "style": "anchor",
+             "color": "#0077BB"},
             {"name": "R-99 SMG", "label": "R-99 current", "style": "anchor"},
-            {"name": "R-99 SMG", "label": "R-99 proposed (-2 dmg, +5 mag)",
-             "overrides": {"damage": 11, "magazine_4": 32},
-             "style": "highlight"},
-            {"name": "Volt SMG", "label": "Volt"},
+            {"name": "R-99 SMG", "label": "Option A: 12/30 (CAR-anchored)",
+             "overrides": {"damage": 12, "magazine_4": 30},
+             "style": "highlight", "color": "#CC3311", "marker": "D"},
+            {"name": "R-99 SMG", "label": "Option B: 11/38 (Volt-anchored)",
+             "overrides": {"damage": 11, "magazine_4": 38},
+             "style": "highlight", "color": "#EE7733", "marker": "s"},
+            {"name": "Volt SMG", "label": "Volt", "style": "anchor",
+             "color": "#009988"},
         ],
         "scatter_bullets": True,
     })

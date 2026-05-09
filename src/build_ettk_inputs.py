@@ -33,6 +33,8 @@ EXCLUDE_ALWAYS = {
     "Electrified Door", "Whistler", "Crushed", "Sniper's Mark",
     "Tracker Dart", "Minigun", "Weapon Overheat", "mp_weapon_bubble_bunker",
     "Charge Rifle",  # low sample + unique mechanic, excluded by default
+    "Prowler Burst PDW",  # RoF changed in S29; current data is stale until patches re-applied
+    "Prowler",
 }
 
 # Map event-feed weapon names to the canonical names in patches-derived CSV.
@@ -71,12 +73,10 @@ EVENT_TO_PATCHES_NAME = {
 }
 
 # Hop-up overrides for the current season (state not encoded in patches CSV).
-# Galvanic Gavel (added 2025-11-03 patch): CAR ships with Disruptor Rounds
-# active by default on first pickup. Disruptor adds +20% damage vs evo
-# shields. Add a row here when other weapons get analogous default hop-ups.
-HOPUP_OVERRIDES = {
-    "C.A.R. SMG": {"evo": 1.20, "non_evo": 1.00},
-}
+# Galvanic Gavel (added 2025-11-03, removed S29): CAR briefly shipped with
+# Disruptor Rounds active by default; that's gone in S29. Add a row here when
+# other weapons get analogous default-equipped hop-ups.
+HOPUP_OVERRIDES = {}
 
 
 def load_event_stats(event_stats_csv):
