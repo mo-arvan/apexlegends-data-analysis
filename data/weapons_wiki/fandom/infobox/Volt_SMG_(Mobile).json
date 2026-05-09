@@ -1,0 +1,26 @@
+{
+  "title": "Volt SMG (Mobile)",
+  "infobox": {
+    "name": "Volt SMG",
+    "description": "Full-auto charged energy rifle. Fine stability, high rate of fire, and easy to control.",
+    "type": "Sub machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "barrel": "stabilizer",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "15",
+    "damageHead": "26 (1.5×)",
+    "damageLegs": "12 (0.8×)",
+    "rateOfFire": "780",
+    "magazineSize": [
+      "21",
+      "24",
+      "27",
+      "32"
+    ],
+    "tacReload": "1.3",
+    "fullReload": "2.1"
+  }
+}

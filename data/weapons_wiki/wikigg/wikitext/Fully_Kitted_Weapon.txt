@@ -1,0 +1,543 @@
+{{MainGameNotice|mobilePage=Fully Kitted Weapon (Mobile)}}
+
+[[File:Golden R-301 Carbine.png|350px|thumb|right|A Fully Kitted {{Legendary}} [[R-301 Carbine]].]]
+'''Fully Kitted Weapons''' are [[weapons]] equipped with all their possible [[attachments]] which cannot be removed, except for the [[Optic]]. If the weapon is dropped, the Optic stays on the weapon. There is no performance difference between a Fully Kitted Weapon and a weapon whose same attachments have been manually equipped.
+
+Fully Kitted Weapons are tiered {{Common}} ({{Common|★}}), {{Rare}} ({{Rare|★★}}), {{Epic}} ({{Epic|★★★}}), and {{Legendary}} ({{Legendary|★★★★}}), with the rarity marking the level of the non-Optic attachments a weapon has. {{Legendary}} Fully Kitted Weapons whose attachments lack a {{Legendary}} version default to having {{Epic}} ones, for example an [[R-99 SMG|{{Legendary|R-99 SMG}}]] will have a {{ItemLink|Standard Stock|text={{Epic|Standard Stock}}}} equipped. As for the Optic, Fully Kitted Weapons carry the following:
+
+* Assault Rifles are equipped with {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} when {{Common}}, {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}} otherwise;
+* Submachine Guns are equipped with {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}};
+* Light Machine Guns are equipped with {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} when {{Common}}, {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}} otherwise;
+* Marksman Weapons are equipped with {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}} when {{Common}} or {{Rare}}, {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} otherwise;
+* Sniper Rifles are equipped with {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}} when {{Common}} or {{Rare}}, {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}} otherwise;
+* Shotguns are equipped with {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}};
+* Pistols are equipped with {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+
+Due to their different rarities coloring them with a specific color both outside and inside the inventory, Fully Kitted Weapons may also be referred to as {{Common|White}}, {{Rare|Blue}}, {{Epic|Purple}}, or {{Legendary|Gold}} Weapons.
+<br>
+<br>
+== Distribution ==
+=== Battle Royale ===
+In {{ItemLink|Battle Royale}}, all Fully Kitted Weapons are {{Legendary}}. Five weapons are selected each [[Season]] to be Fully Kitted Weapons, and have a 80% chance to spawn in Hot Zones marked on any [[map]], even if only one can spawn in a given Hot Zone. They can also spawn in map-specific loot sources such as gold [[loot ticks]] (1% chance), [[Flyers]] carrying gold death boxes (37.5% chance), gold [[cargo bots]] (1% chance) and [[loot MRVNs]] after giving them their missing arm (1% chance). Some very specific locations on certain maps also have a high chance of spawning a Fully Kitted Weapon.
+
+{{ItemLink|Ballistic|image=Ballistic Icon.svg}} can equip all weapons in his {{AbilityLink|Sling}}, including {{Legendary|Fully Kitted Weapons}}, but they will be converted into {{Common}} Fully Kitted variants and their optics cannot be removed. Sling weapons may be upgraded to {{Rare}} and {{Epic}} Fully Kitted variants at their respective levels. Removing the weapon from the Sling will return it to its previous state.
+
+<gallery widths="200" heights="50" class="invert-image" style="text-align:center; width:75%" mode="nolines" caption="{{Legendary|Fully Kitted Weapons}} in [[File:Season 25.svg|50px|link=Season 25]] [[Season 25]]">
+M600 Spitfire Icon.svg|[[M600 Spitfire]]
+R-301 Carbine Icon.svg|[[R-301 Carbine]]
+R-99 SMG Icon.svg|[[R-99 SMG]]
+VK-47 Flatline Icon.svg|[[VK-47 Flatline]]
+Mozambique Shotgun Akimbo Icon.svg|[[Mozambique Shotgun]]
+
+</gallery>
+<br>
+<br>
+{| class="wikitable mw-collapsible mw-collapsed invert-image" style="width:75%"
+! colspan="6" | Previously Available
+|-
+! colspan="6" | <big>GROUND LOOT</big>
+|-
+! Season !! Weapons !! Season !! Weapons !! Season !! Weapons
+|
+|-
+| style="text-align:center; width:100px" |[[File:Season 24.svg|80px|link=Season 24]]<br />  '''[[Season 24]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}} (Split 1)
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}} (Split 1)
+* {{ItemLink|Wingman|image=Wingman Icon.svg}} (Split 1)
+* {{ItemLink|30-30 Repeater|image=30-30 Repeater Icon.svg}} (Split 1)
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}} (Split 1)
+* {{ItemLink|P2020|image=P2020 Akimbo Icon.svg}} (Split 2)
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} (Split 2)
+* {{ItemLink|Volt SMG|image=Volt SMG Icon.svg}} (Split 2)
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} (Split 2)
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} (Split 2)
+|[[File:Season 23.svg|80px|link=Season 23]]<br />  '''[[Season 23]]'''
+|
+* {{ItemLink|C.A.R. SMG|image=C.A.R. SMG Icon.svg}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}} (Split 1)
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}} (Split 1)
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}} (Split 1)
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}} (Split 1)
+* {{ItemLink|Charge Rifle|image=Charge Rifle Icon.svg}} (Split 2)
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} (Split 2)
+* {{ItemLink|Nemesis Burst AR|image=Nemesis Burst AR Icon.svg}} (Split 2)
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} (Split 2)
+|[[File:Season 22.svg|80px|link=Season 22]]<br />  '''[[Season 22]]'''
+|
+* {{ItemLink|Mozambique Shotgun|image=Mozambique Shotgun Akimbo Icon.svg}}
+* {{ItemLink|P2020|image=P2020 Akimbo Icon.svg}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}} (Split 2)
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} (Split 2)
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}} (Split 2)
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}} (Split 1)
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}} (Split 1)
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}} (Split 1)
+|-
+| style="text-align:center; width:100px" | [[File:Season 21.svg|80px|link=Season 21]]<br/>'''[[Season 21]]'''
+|
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|Nemesis Burst AR|image=Nemesis Burst AR Icon.svg}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 20.svg|80px|link=Season 20]]<br/>'''[[Season 20]]'''
+|
+* {{ItemLink|30-30 Repeater|image=30-30 Repeater Icon.svg}}
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 19.svg|80px|link=Season 19]]<br/>'''[[Season 19]]'''
+|
+* {{ItemLink|C.A.R. SMG|image=C.A.R. SMG Icon.svg}}
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}}
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}}
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 18.svg|80px|link=Season 18]]<br/>'''[[Season 18]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}}
+* {{ItemLink|Charge Rifle|image=Charge Rifle Icon.svg}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 17.svg|80px|link=Season 17]]<br/>'''[[Season 17]]'''
+|
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+* {{ItemLink|Volt SMG|image=Volt SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 16.svg|80px|link=Season 16]]<br/>'''[[Season 16]]'''
+|
+* {{ItemLink|Nemesis Burst AR|image=Nemesis Burst AR Icon.svg}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 15.svg|80px|link=Season 15]]<br/>'''[[Season 15]]'''
+|
+* {{ItemLink|30-30 Repeater|image=30-30 Repeater Icon.svg}}
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 14.svg|80px|link=Season 14]]<br/>'''[[Season 14]]'''
+|
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}}
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|Mozambique Shotgun|image=Mozambique Shotgun Icon.svg}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 13.svg|80px|link=Season 13]]<br/>'''[[Season 13]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|P2020|image=P2020 Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 12.svg|80px|link=Season 12]]<br/>'''[[Season 12]]'''
+|
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 11.svg|80px|link=Season 11]]<br/>'''[[Season 11]]'''
+|
+* {{ItemLink|30-30 Repeater|image=30-30 Repeater Icon.svg}} {{ItemLink|Dual Shell|noText=yes}}
+* {{ItemLink|C.A.R. SMG|image=C.A.R. SMG Icon.svg}}
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 10.svg|80px|link=Season 10]]<br/>'''[[Season 10]]'''
+|
+* {{ItemLink|Charge Rifle|image=Charge Rifle Icon.svg}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 9.svg|80px|link=Season 9]]<br/>'''[[Season 9]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 8.svg|80px|link=Season 8]]<br/>'''[[Season 8]]'''
+|
+* {{ItemLink|30-30 Repeater|image=30-30 Repeater Icon.svg}}
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|Mozambique Shotgun|image=Mozambique Shotgun Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 7.svg|80px|link=Season 7]]<br/>'''[[Season 7]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}}
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}}
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}}
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 6.svg|80px|link=Season 6]]<br/>'''[[Season 6]]'''
+|
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+* {{ItemLink|Volt SMG|image=Volt SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 5.svg|80px|link=Season 5]]<br/>'''[[Season 5]]'''
+|
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}}
+* {{ItemLink|Longbow DMR|image=Longbow DMR Icon.svg}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 4.svg|80px|link=Season 4]]<br/>'''[[Season 4]]'''
+|
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}}
+* {{ItemLink|P2020|image=P2020 Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 3.svg|80px|link=Season 3]]<br/>'''[[Season 3]]'''
+|
+* {{ItemLink|Charge Rifle|image=Charge Rifle Icon.svg}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}}
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 2.svg|80px|link=Season 2]]<br/>'''[[Season 2]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}}
+* {{ItemLink|Mozambique Shotgun|image=Mozambique Shotgun Icon.svg}}
+* {{ItemLink|P2020|image=P2020 Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}}
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 1.svg|80px|link=Season 1]]<br/>'''[[Season 1]]'''<br>& '''[[Preseason]]'''
+|
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}} {{ItemLink|Turbocharger|noText=yes}}<ref>The [[HAVOC]] was introduced to both ''Apex'' and the Fully Kitted Weapons pool in the [[February 20, 2019 Patch]]. Its [[Hop-Up]] was switched from the {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} to the {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} in the [[April 16, 2019 Patch]].</ref>
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}}
+* {{ItemLink|R-301 Carbine|image=R-301 Carbine Icon.svg}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}}
+|-
+! colspan="6" | <big>KINGS CANYON TERMINAL STATIONS</big>
+|-
+! Season !! Weapons !! Season !! Weapons !! Season !! Weapons
+|-
+| style="text-align:center; width:100px" | [[File:Season 7.svg|80px|link=Season 7]]<br/>'''[[Season 7]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}} (L-19)
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}} (O-240)
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}} (W-73)
+* {{ItemLink|Wingman|image=Wingman Icon.svg}} (F-85)
+| style="text-align:center; width:100px" | [[File:Season 6.svg|80px|link=Season 6]]<br/>'''[[Season 6]]'''
+|
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} (F-85)
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}} (W-73)
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}} (O-240)
+* {{ItemLink|VK-47 Flatline|image=VK-47 Flatline Icon.svg}} (L-19)
+| style="text-align:center; width:100px" | [[File:Season 5.svg|80px|link=Season 5]]<br/>'''[[Season 5]]'''
+|
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}} (L-19)
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} (W-73)
+* {{ItemLink|Sentinel|image=Sentinel Icon.svg}} (O-240)
+|}
+<br>
+<br>
+{| class="wikitable mw-collapsible sortable" style="text-align:center; width:70%"
+|+ Seasonal {{Legendary|Fully Kitted Weapons}} Rotation
+|-
+! Weapon !! Total !! [[Season 1|01]] !! [[Season 2|02]] !! [[Season 3|03]] !! [[Season 4|04]] !! [[Season 5|05]] !! [[Season 6|06]] !! [[Season 7|07]] !! [[Season 8|08]] !! [[Season 9|09]] !! [[Season 10|10]] !! [[Season 11|11]]!! [[Season 12|12]] !! [[Season 13|13]] !! [[Season 14|14]] !! [[Season 15|15]] !! [[Season 16|16]] !! [[Season 17|17]] !! [[Season 18|18]] !! [[Season 19|19]] !! [[Season 20|20]] !! [[Season 21|21]] !! [[Season 22|22]] !! [[Season 23|23]]
+|-
+| style="text-align:left;"| [[File:Alternator SMG Icon.svg|x20px|link=]] [[Alternator]]
+| 3
+|  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Devotion LMG Icon.svg|x20px|link=]] [[Devotion]]
+| 3
+|  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||
+|-
+| style="text-align:left;"| [[File:EVA-8 Auto Icon.svg|x20px|link=]] [[EVA-8]]
+| 5
+|  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:VK-47 Flatline Icon.svg|x20px|link=]] [[Flatline]]
+| 7
+|  || ✓ || ✓ ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:G7 Scout Icon.svg|x20px|link=]] [[G7 Scout]]
+| 4
+|  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:Hemlok Burst AR Icon.svg|x20px|link=]] [[Hemlok]]
+| 5
+|  ||  ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓
+|-
+| style="text-align:left;"| [[File:Kraber .50-Cal Sniper Icon.svg|x20px|link=]] [[Kraber]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Longbow DMR Icon.svg|x20px|link=]] [[Longbow]]
+| 7
+|  ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  || ✓ ||  || ✓
+|-
+| style="text-align:left;"| [[File:Mastiff Shotgun Icon.svg|x20px|link=]] [[Mastiff]]
+| 5
+|  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  || ✓
+|-
+| style="text-align:left;"| [[File:Mozambique Shotgun Icon.svg|x20px|link=]] [[Mozambique]]
+| 4
+|  || ✓ ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:P2020 Icon.svg|x20px|link=]] [[P2020]]
+| 4
+|  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:Peacekeeper Icon.svg|x20px|link=]] [[Peacekeeper]]
+| 6
+| ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  || ✓ ||  ||  ||  || ✓ ||  || ✓ ||  ||  || ✓  ||  ||
+|-
+| style="text-align:left;"| [[File:Prowler Burst PDW Icon.svg|x20px|link=]] [[Prowler]]
+| 5
+| ✓ ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  ||  ||  || ✓  ||  ||
+|-
+| style="text-align:left;"| [[File:R-301 Carbine Icon.svg|x20px|link=]] [[R-301]]
+| 7
+| ✓ ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  || || ✓ ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:R-99 SMG Icon.svg|x20px|link=]] [[R-99]]
+| 3
+|  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:RE-45 Auto Icon.svg|x20px|link=]] [[RE-45]]
+| 6
+|  || ✓ ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||
+|-
+| style="text-align:left;"| [[File:M600 Spitfire Icon.svg|x20px|link=]] [[Spitfire]]
+| 4
+|  ||  ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Triple Take Icon.svg|x20px|link=]] [[Triple Take]]
+| 5
+|  ||  || ✓ ||  ||  || ✓ ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓  ||  ||
+|-
+| style="text-align:left;"| [[File:Wingman Icon.svg|x20px|link=]] [[Wingman]]
+| 4
+| ✓ ||  ||  ||  ||  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:HAVOC Rifle Icon.svg|x20px|link=]] [[HAVOC]]
+| 5
+| ✓ ||  ||  || ✓ ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:L-STAR EMG Icon.svg|x20px|link=]] [[L-STAR]]
+| 2
+| style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓
+|-
+| style="text-align:left;"| [[File:Charge Rifle Icon.svg|x20px|link=]] [[Charge Rifle]]
+| 3
+| colspan="2" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Sentinel Icon.svg|x20px|link=]] [[Sentinel]]
+| 4
+| colspan="3" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  || ✓ ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:Volt SMG Icon.svg|x20px|link=]] [[Volt]]
+| 2
+| colspan="5" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:30-30 Repeater Icon.svg|x20px|link=]] [[30-30]]
+| 4
+| colspan="7" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  || ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  || ✓ ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Bocek Compound Bow Icon.svg|x20px|link=]] [[Bocek]]
+| 2
+| colspan="8" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Rampage LMG Icon.svg|x20px|link=]] [[Rampage]]
+| 3
+| colspan="9" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓ ||
+|-
+| style="text-align:left;"| [[File:C.A.R. SMG Icon.svg|x20px|link=]] [[CAR]]
+| 3
+| colspan="10" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  ||  ||  ||  ||  || ✓ ||  ||  ||  || ✓
+|-
+| style="text-align:left;"| [[File:Nemesis Burst AR Icon.svg|x20px|link=]] [[Nemesis]]
+| 2
+| colspan="15" style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ ||  ||  ||  ||  || ✓ ||  ||
+|}
+<br>
+<br>
+
+=== Other Modes ===
+* In {{ItemLink|Control}}, all weapons are {{Rare}} Fully Kitted Weapons, and can be upgraded to {{Epic}} and then {{Legendary}} by earning enough Ratings to progress to the next Ratings Tier. Weapon ugrades can be skipped: for example, if a {{Rare}} weapon is equipped and {{Legendary|Ratings Tier 4}} is reached, that weapon will become {{Legendary}}.
+* In {{ItemLink|Gun Run}}, all weapons are Fully Kitted Weapons, but their rarity varies depending on the weapon.
+* In {{ItemLink|Team Deathmatch}}, all weapons are {{Rare}} Fully Kitted Weapons. At various points during the match, [[Care Package]]s containing two {{Legendary}} Fully Kitted Weapons and one [[Supply Drop Weapon|{{Mythic|Supply Drop Weapon}}]] each start dropping into the arena.
+* In {{ItemLink|Lockdown}}, all weapons are {{Rare}} Fully Kitted Weapons. When a Zone gets captured, two {{Legendary}} Fully Kitted Weapons and a {{Mythic|Supply Drop Weapon}} spawn in the middle of it.
+* In {{ItemLink|Season 5}}'s [[Hunt]]s, specific {{Legendary}} Fully Kitted Weapons were available depending on the chapter.
+* In [[Airdrop Escalation]], {{Rare}}, {{Epic}}, and {{Legendary}} Fully Kitted Weapons as well as [[Supply Drop Weapon|{{Mythic|Supply Drop Weapons}}]] may be found inside [[Care Package]]s. The color of the Care Package beam changes accordingly based on which type of weapons it contains: blue, purple, gold, red.
+* In [[Armed and Dangerous]], {{Legendary}} Fully Kitted versions of certain [[sniper]]s and [[shotgun]]s may spawn rarely across the map.
+* In [[Gold Rush Duos]], all available weapons are Seasonal {{Legendary}} Fully Kitted Weapons and [[Supply Drop Weapon|{{Mythic|Supply Drop Weapons}}]].
+* In [[Quads]], {{Rare}} and {{Epic}} Fully Kitted Weapons may spawn in addition to Seasonal {{Legendary|Legendary}} ones.
+* In [[Straight Shot]] and [[Solos]], all weapons are Fully Kitted, ranging from {{Common}} to {{Legendary}}.
+* In [[TDM - Unshielded]], all weapons not in the {{Mythic|Care Package}} are {{Legendary}} Fully Kitted Weapons.
+* During the [[Rift Relics Takeover]], some {{Legendary}} Fully Kitted Weapons statistically different than usual, called Relic Weapons, spawn before the Round 1 [[Ring]] starts closing.
+<br>
+<br>
+
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 23}}: [[C.A.R. SMG]], [[Hemlok Burst AR]], [[L-STAR EMG]], [[Longbow DMR]], [[Mastiff Shotgun]].
+
+
+; {{ItemLink|Space Hunt|noText=yes}} [[September 17, 2024 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 22}}: [[EVA-8 Auto]], [[G7 Scout]], [[Mozambique Shotgun]], [[P2020]], [[VK-47 Flatline]].
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 22}}: [[Mozambique Shotgun]], [[P2020]], [[R-301 Carbine]], [[Rampage LMG]], [[Sentinel]].
+
+
+; {{ItemLink|Season 21|noText=yes}} [[May 07, 2024 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 21}}: [[Longbow DMR]], [[Nemesis Burst AR]], [[Peacekeeper]], [[Prowler Burst PDW]], [[Triple Take]].
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}.
+** Changed [[Pistol|{{Legendary|Pistols}}]] and [[Shotgun|{{Legendary|Shotguns}}]] attachment from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+* [[Ballistic]] can now equip Fully Kitted Weapons in his {{AbilityLink|Sling}}.
+* {{ItemLink|Battle Royale}}: Ballistic's {{AbilityLink|Sling-Shot}} Upgrade can now upgrade {{AbilityLink|Sling}}'s {{Common|Fully Kitted Weapons}} into {{Rare}} and {{Epic}} variants.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 20}}: [[30-30 Repeater]], [[Devotion LMG]], [[Mastiff Shotgun]], [[R-301 Carbine]], [[RE-45 Auto]].
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} compatibility from [[SMG]]s.
+** Changed [[SMG|{{Legendary|SMGs}}]] attachment from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+* {{ItemLink|Battle Royale}}: [[Ballistic]]'s {{AbilityLink|Sling}} weapons are now {{Common|Fully Kitted}}.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 19}}: [[C.A.R. SMG]], [[HAVOC Rifle]], [[L-STAR EMG]], [[Longbow DMR]], [[RE-45 Auto]].
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 18}}: [[Alternator SMG]], [[Charge Rifle]], [[Hemlok Burst AR]], [[Peacekeeper]], [[Rampage LMG]].
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 17}}: [[M600 Spitfire]], [[Mastiff Shotgun]], [[Triple Take]], [[VK-47 Flatline]], [[Volt SMG]].
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 16}}: [[Nemesis Burst AR]], [[Peacekeeper]], [[R-99 SMG]], [[Rampage LMG]], [[Wingman]].
+
+
+; {{ItemLink|Season 15|noText=yes}} [[August 09, 2022 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 15}}: [[30-30 Repeater]], [[Devotion LMG]], [[EVA-8 Auto]], [[Prowler Burst PDW]], [[R-301 Carbine]].
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 14}}: [[G7 Scout]], [[Hemlok Burst AR]], [[Longbow DMR]], [[Mozambique Shotgun]], [[R-99 SMG]].
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 13}}: [[Bocek Compound Bow]], [[EVA-8 Auto]], [[M600 Spitfire]], [[P2020]], [[VK-47 Flatline]].
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 12}}: [[HAVOC Rifle]], [[Peacekeeper]], [[Prowler Burst PDW]], [[RE-45 Auto]], [[Triple Take]].
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 11}}: [[30-30 Repeater]], [[C.A.R. SMG]], [[Longbow DMR]], [[Mastiff Shotgun]], [[R-301 Carbine]].
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 10}}: [[Charge Rifle]], [[Peacekeeper]], [[Rampage LMG]], [[RE-45 Auto]], [[VK-47 Flatline]].
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 9}}: [[Bocek Compound Bow]], [[Hemlok Burst AR]], [[R-99 SMG]], [[Sentinel]], [[Wingman]].
+* Introduced {{Common}} Fully Kitted Weapons as part of {{ItemLink|Arenas}}.
+
+
+; [[March 09, 2021 Patch]]
+* Changed [[AR|{{Legendary|Assault Rifles}}]] attachment from {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} to {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG "Bruiser"}}}}.
+* Optics on Fully Kitted Weapons can now be removed and/or replaced with any other compatible one.
+
+
+; February 09, 2021
+* {{ItemLink|Season 8}} {{Legendary|Fully Kitted Weapons}} can spawn in [[Care Package]]s, as part of [[Locked and Loaded (LTT)|Locked and Loaded]].
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 8}}: [[30-30 Repeater]], [[Longbow DMR]], [[M600 Spitfire]], [[Mozambique Shotgun]], [[R-301 Carbine]].
+
+
+; [[January 05, 2021 Patch]]
+* Introduced {{Rare}} and {{Epic}} Fully Kitted Weapons, as part of [[Airdrop Escalation]].
+* Updated Fully Kitted Weapons HUD.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 7}}: [[Wingman]], [[Sentinel]], [[HAVOC Rifle]], [[G7 Scout]], [[Alternator SMG]].
+* Changed [[HAVOC Rifle|{{Legendary|HAVOC Rifle}}]] attachments from {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} to {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 6}}: [[Devotion LMG]], [[Mastiff Shotgun]], [[Triple Take]], [[VK-47 Flatline]], [[Volt SMG]].
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 5}}: [[Longbow DMR]], [[Hemlok Burst AR]], [[M600 Spitfire]], [[EVA-8 Auto]], [[RE-45 Auto]].
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 4}}: [[HAVOC Rifle]], [[P2020]], [[Prowler Burst PDW]], [[R-301 Carbine]], [[Sentinel]].
+* Changed [[HAVOC Rifle|{{Legendary|HAVOC Rifle}}]] attachment from {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} to {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 3}}: [[Charge Rifle]], [[EVA-8 Auto]], [[G7 Scout]], [[Triple Take]], [[VK-47 Flatline]].
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Rotated {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}} for {{ItemLink|Season 2}}: [[Alternator SMG]], [[Mozambique Shotgun]], [[P2020]], [[RE-45 Auto]], [[VK-47 Flatline]].
+
+
+; [[April 16, 2019 Patch]]
+* Changed [[HAVOC Rifle|{{Legendary|HAVOC Rifle}}]] attachments from {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} and {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} to {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} and {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}.
+* Changed [[R-301 Carbine|{{Legendary|R-301 Carbine}}]] attachment from {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} to {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}.
+* Changed [[Wingman|{{Legendary|Wingman}}]] attachment from {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} to {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}.
+
+
+; [[February 20, 2019 Patch]]
+* Added the [[HAVOC Rifle]] to the loot table of {{ItemLink|Battle Royale}}'s {{Legendary|Fully Kitted Weapons}}.}}
+<br>
+<br>
+== Trivia ==
+* {{Epic|Pistols}} and {{Epic|Shotguns}} have their potentially compatible {{Legendary}} {{ItemLink|Hop-Up|text=Hop-Ups}}, despite being {{Epic}} Fully Kitted Weapons.
+* Before {{ItemLink|Season 6}}, in {{ItemLink|Battle Royale}}, [[Supply Drop Weapon|{{Mythic|Supply Drop Weapons}}]] had a golden color just like Fully Kitted Weapons. The term "gold weapon" could refer to either, and they both spawned in [[Gold Rush Duos]], a Limited Time Mode with only gold weapons. [[Respawn Entertainment|The developers]] later upgraded the rarity and color of Supply Drop Weapons from {{Legendary}} (gold) to {{Mythic}} (red) to differentiate the two.
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}
+[[Category:Gameplay mechanics]]

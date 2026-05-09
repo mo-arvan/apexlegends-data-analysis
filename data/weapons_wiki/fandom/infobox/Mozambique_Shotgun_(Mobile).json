@@ -1,0 +1,33 @@
+{
+  "title": "Mozambique Shotgun (Mobile)",
+  "infobox": {
+    "name": "Mozambique Shotgun",
+    "description": "Triple-barrel shotgun pistol.",
+    "type": "Shotgun",
+    "fireModes": "Automatic",
+    "ammoType": "Shotgun Shells",
+    "creator": "Altamirano Armory",
+    "magType": "bolt",
+    "optics": "true",
+    "hopup": "hammerpoint",
+    "damageBody": "15×3 20×3",
+    "damageHeadMobile": "19×3 (1.25×) 26×3 (1.25×)",
+    "damageLegs": "15×3 20×3",
+    "rateOfFire": [
+      "132",
+      "152",
+      "165",
+      "178"
+    ],
+    "dps": [
+      "99",
+      "114",
+      "124",
+      "134"
+    ],
+    "magazineSize": "7",
+    "tacReload": "1.9 seconds",
+    "fullReload": "2.5 seconds",
+    "damageHead": "20×3 26×3"
+  }
+}

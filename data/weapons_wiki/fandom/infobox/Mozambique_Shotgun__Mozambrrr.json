@@ -1,0 +1,20 @@
+{
+  "title": "Mozambique Shotgun/Mozambrrr",
+  "infobox": {
+    "name": "Mozambrrr",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "NOOO! You can't just hold the trigger down and spray everyone!",
+    "type": "Shotgun",
+    "fireModes": "Automatic",
+    "optics": "true",
+    "ammoType": "Light Rounds",
+    "damageBody": "12",
+    "damageLegs": "15 (1.25×)",
+    "damageHead": "12",
+    "rateOfFire": "1080",
+    "dps": "216",
+    "magazineSize": "36",
+    "tacreload": "1.9",
+    "fullreload": "2.4"
+  }
+}

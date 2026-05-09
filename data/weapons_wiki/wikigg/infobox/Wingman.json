@@ -1,0 +1,28 @@
+{
+  "title": "Wingman",
+  "infobox": {
+    "name": "Wingman",
+    "description": "High-powered revolver.",
+    "type": "Pistol",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "Brockhaurd Manufacturing",
+    "barrel": "laser",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "",
+    "hopup": "skullpiercer",
+    "damageBody": "50",
+    "damageHead": "75{{Symbol|Skullpiercer}} 96",
+    "damageLegs": "45",
+    "rateOfFire": "168",
+    "dps": "140",
+    "magazineSize": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "reload": "2.1"
+  }
+}

@@ -1,0 +1,157 @@
+{{Tabs|
+{{Tabs2|Devotion LMG|Main}}
+{{Tabs1|Devotion LMG/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Devotion LMG
+| description = Full-auto energy LMG. The longer it is fired, the faster its rate of fire will become. Attach Turbocharger to reach maximum rate of fire.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Energy Ammo
+| rateOfFire = 300~804
+| optics = true
+| damageBody = 16
+| damageHead = 28 <small>(1.75×)</small>
+| damageLegs = 12 <small>(0.75×)</small>
+| dps = 80~214
+| magazineSize = {{Level0123|40|44|48|52}}
+| tacReload = {{Level023|2.4|2.2|2.1}}
+| fullReload = {{Level023|3.1|2.8|2.7}}
+}}
+
+The '''Devotion LMG''', or '''Devotion''', is a fully-automatic [[light machine gun]] that utilizes Energy Ammo.
+
+As a Supply Drop Weapon, it can only be found in Care Packages, but is equipped with the highest tier of attachments available, including a Barrel Stabilizer, Energy Mag, Standard Stock, 2x HCOG "Bruiser", and Turbocharger.
+
+It has a unique RPM acceleration mechanic: the longer the Devotion is fired continuously, the faster its fire rate will become, up to a cap. The {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} Hop-Up allows the Devotion to reach its highest fire rate faster. As a Supply Drop Weapon, it can charge up even more quickly and skips some of the initial rev.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Hop-Up
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 16
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+<references group="note"/>
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Energy Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || ✔
+|-
+| style="text-align:left;"| {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} || || || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} || || || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} || || || ✔ || ✔
+|}
+
+== Pros And Cons ==
+'''Pros'''
+
+* Larger magazine than the Spitfire.
+* Low bullet drop
+* Excellent damage output.
+
+'''Cons'''
+
+* Moderate recoil
+* RPM accelerates overtime, requiring a few seconds of sustained fire to achieve maximum fire-rate.
+
+== Skins ==
+There are a total of 11 weapon skins for the Devotion: 2 {{Eternal}}, 1 {{Legendary}}, 4 {{Epic}}, 3 {{Rare}}, and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Slope Rider Devotion Mobile.jpg|{{Eternal|Slope Rider}}<br/>[[Winter Warfare]]
+Sector X Zapper Devotion Mobile.png|{{Eternal|Sector X Zapper}}
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Cold Coverage Devotion Mobile.png|{{Symbol|Cold Snap}} {{Legendary|Cold Coverage}}<br/>Level 1
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Greenlight Devotion Mobile.png|{{Epic|Greenlight}}<br/>[[Extreme Speed]]
+Astral Array Devotion Mobile.png|{{Epic|Astral Array}}<br/>[[Shipwrecked]]
+Eyes of the Night Devotion Mobile.png|{{Epic|Eyes of the Night}}
+Sea Algorithm Devotion Mobile.png|{{Epic|Sea Algorithm}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Safeguard Devotion Mobile.png|{{Rare|Safeguard}}<br>{{SG|290}}
+Lunar Lander Devotion Mobile.png|{{Symbol|s4m}} {{Rare|Lunar Lander}}<br/>Level 10
+Meteorite Shield Devotion Mobile.png|{{Symbol|s4m}} {{Rare|Meteorite Shield}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Devotion Mobile.png|{{Common|Factory Issue}}<br>Default
+Nile Devotion Mobile.png|{{Common|Nile}}
+</gallery>
+</tabber>
+
+{{Nav-MobileWeapons}}

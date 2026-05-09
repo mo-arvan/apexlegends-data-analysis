@@ -1,0 +1,115 @@
+{{DISPLAYTITLE:30-30 (Mobile)}}
+{{MobileGameNotice|mainPage=30-30 Repeater}}
+{{Infobox weapon
+| name = 30-30
+| image = 30-30 Repeater.png
+| description = Semi-auto heavy repeater
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Heavy Rounds
+| rateOfFire = 144
+| projectileSpeed = 29000
+| charge = 0.35 seconds
+| rechamber = 0.685 seconds
+| creator = Holdener Arms
+| id = 3030
+| magType = heavy
+| optics = true
+| stock = sniper
+| damageBody = 42-57
+| damageLegs = 36-48 <small>(0.85×)</small>
+| damageHead = 74-100 <small>(1.75×)</small>
+| dps = 101
+| magazineSize = {{Level0123|10|12|14|16}}
+| ADSspeed = 57.5
+}}
+
+The '''30-30''' is a [[lever action repeating rifle]] introduced in {{ItemLink|Season 1 (Mobile)|text=Season 1}} that utilizes {{ItemLink|Heavy Rounds}}. It has a unique charge mechanic allowing the weapon to do more damage (up to 36% more) by aiming down sights for longer without firing. It can also be simply fired without charging at a faster fire rate.
+
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG Ranger|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+; Base damage
+{{Damage profile
+| damage = 42
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+; Fully Charged
+{{Damage profile
+| damage = 57
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+
+== Skins ==
+There is a total of 13 skins for the 30-30: 2 {{Eternal}}, 2 {{Legendary}}, 3 {{Epic}}, 5 {{Rare}} and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="200px" heights="300px" mode="nolines">
+Dazzler 30-30 Mobile.jpg|{{Eternal|Dazzler}}<br/>[[Party Animal]]
+Asp Venom 30-30 Mobile.png|{{Eternal|Asp Venom}}<br/>[[Divinity's Blessing]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="200px" heights="300px" mode="nolines">
+Remote Access 30-30 Mobile.png|{{Legendary|Remote Access}}<br/>[[Pythas Error Control]]
+White Pegasus 30-30 Mobile.png|{{Legendary|White Pegasus}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200px" heights="300px" mode="nolines">
+Burnished Solo 30-30 Mobile.jpg|{{Epic|Burnished Solo}}<br/>[[Nightclub Icons]]
+Alien Carapace 30-30 Mobile.png|{{Epic|Alien Carapace}}
+</gallery>
+* {{Epic|Wings of Salvo}}
+
+|-|
+
+Rare=
+<gallery widths="200px" heights="300px" mode="nolines">
+Blast Jammer 30-30 Mobile.png|{{Rare|Blast Jammer}}<br/>[[Mecha Strike Go!]]
+Shot Synthesis 30-30 Mobile.jpg|{{Rare|Shot Synthesis}}<br/>[[Rhapsody's Underground]]
+Chrome Chorus 30-30 Mobile.jpg|{{Symbol|s2.5m}} {{Rare|Chrome Chorus}}<br/>Level 20
+Legion's Arms 30-30 Mobile.png|{{Rare|Legion's Arms}}<br/>[[Royal Regiment]]
+Joy to the Outlands 30-30 Mobile.png|{{Rare|Joy to the Outlands}}<br/>[[Winner Wonderland]]
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="200px" heights="300px" mode="nolines">
+Factory Issue 30-30 Mobile.png|{{Common|Factory Issue}}<br>Default
+Blue Widow 30-30 Mobile.png|{{Common|Blue Widow}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{Symbol|s1m}} [[May 17, 2022 Patch (Mobile)|May 17, 2022 Patch]]
+* Introduced.
+* Added to the loot table of [[fully kitted weapons]] for {{ItemLink|Season 1 (Mobile)|text=Season 1}}.
+}}
+
+== Trivia ==
+* The name is a reference to the [[wikipedia:.30-30 Winchester|.30-30 Winchester]] cartridge used by the [[wikipedia:Winchester Model 1894|Winchester Model 1894]] rifle, on which the weapon's design is based.
+* The 30-30 is one of the only two weapons in the game to reload one bullet at a time, the other one being the [[Mastiff Shotgun]].
+
+{{Nav-MobileWeapons}}

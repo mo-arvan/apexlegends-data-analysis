@@ -1,0 +1,39 @@
+{
+  "title": "R-301 Carbine",
+  "infobox": {
+    "name": "R-301 Carbine",
+    "description": "Full-auto and high accuracy.",
+    "type": "Assault rifle",
+    "fireModes": "Auto Single",
+    "ammoType": "Light Rounds",
+    "creator": "Lastimosa Armory",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "",
+    "damageBody": "13",
+    "damageHead": "23 (1.75×)",
+    "damageLegs": "10 (0.75×)",
+    "rateOfFire": "810",
+    "dps": "176",
+    "magazineSize": [
+      "21",
+      "23",
+      "28",
+      "31"
+    ],
+    "tacReload": [
+      "2.4",
+      "2.32",
+      "2.24",
+      "2.16"
+    ],
+    "fullReload": [
+      "3.2",
+      "3.09",
+      "2.99",
+      "2.88"
+    ]
+  }
+}

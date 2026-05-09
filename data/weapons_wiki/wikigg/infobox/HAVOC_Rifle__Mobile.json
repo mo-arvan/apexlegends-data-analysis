@@ -1,0 +1,28 @@
+{
+  "title": "HAVOC Rifle/Mobile",
+  "infobox": {
+    "name": "Havoc Rifle",
+    "image": "HAVOC Rifle.png",
+    "icon": "HAVOC Rifle Icon.svg",
+    "description": "Full-auto charged energy rifle. Can only reach maximum rate of fire after charging up or equipped with Turbocharger hop-up.",
+    "type": "Assault rifle",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "creator": "Siwhan Industries Wonyeon",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "turbo",
+    "damageBody": "18",
+    "damageHead": "32 (1.75×)",
+    "damageLegs": "15 (0.85×)",
+    "rateOfFire": "672",
+    "magazineSize": [
+      "26",
+      "30",
+      "34",
+      "38"
+    ],
+    "reload": "{{Level023|2.9|2.7|2.6}}"
+  }
+}

@@ -1,0 +1,415 @@
+{{MainGameNotice|mobilePage=Devotion LMG (Mobile)}}
+{{Infobox-Weapon
+| name = Devotion LMG
+| description = Full-auto energy LMG.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Energy Ammo
+| barrel = stabilizer
+| magType = energy
+| optics = true
+| stock = standard
+| hopup = turbo
+| damageBody = 16
+| damageHead = 23 <small>(1.5×)</small>
+| damageLegs = 13 <small>(0.85×)</small>
+| rateOfFire = 300–900
+| dps = 80–240
+| magazineSize = <nowiki>Magazine Size = 54 / Ammo Reserve = 324}}</nowiki>
+| tacReload = {{Level0123|2.8|2.71|2.61|2.52}}
+| fullReload = {{Level0123|3.63|3.51|3.39|3.27}}
+}}
+
+The '''Devotion LMG''', or '''Devotion''', is a fully-automatic [[light machine gun]] that utilizes {{ItemLink|Energy Ammo|text=Energy Ammo}}.
+
+It has a unique RPM acceleration mechanic: the longer the Devotion is fired continuously, the faster its fire rate will become, up to a cap. The {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} Hop-Up allows the Devotion to reach its highest fire rate more quickly. (Comes equipped with  {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} from Care)
+
+Being an LMG, the Devotion is affected by [[Rampart]]'s {{AbilityLink|Modded Loader}} Passive ability.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}} (Auto-equipped) 
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} 
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}}) 
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}
+
+NEW WEAPON PERK : Reversed Hipfire - Hipfire spread gets tighter as the weapon is fired for longer while in hipfire (Care Package Perk)
+=== Damage Profile ===
+; Base
+{{Damage profile
+| damage = 15
+| headshotMdfr = 1.5
+| legMdfr = 0.85
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_esaw</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 5
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | <div class="invert-image>[[File:Turbocharger.svg|25px|link=Turbocharger]] 6.8</div>
+|-
+| fire_rate_max
+| style="text-align:center" | 15
+| Highest number of rounds fired in one second.
+|-
+| rowspan="2" | fire_rate_max_time_speedup
+| style="text-align:center" | 1.75
+| rowspan="2" | Time to reach highest fire rate. Expressed in seconds.
+|-
+| style="text-align:center" | <div class="invert-image>[[File:Turbocharger.svg|25px|link=Turbocharger]] 0.85</div>
+|-
+| projectile_launch_speed
+| style="text-align:center" | 33500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 850 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 2250
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 57 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 3.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.75
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.45
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.75
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.65
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.6
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.34
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.3
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.4
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.1
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.05
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Acceleration''
+| style="text-align:left" | Down an enemy while the Devotion reaches its highest fire rate.
+| 25 times
+|-
+| 40
+| ''Go Turbo''
+| style="text-align:left" | Kill an enemy with hipfire while [{{Legendary|Turbocharger}}] equipped.
+| 15 times
+|-
+| 60
+| ''Exodia''
+| style="text-align:left" | Kill an enemy while Devotion is using all maxed attachment slots.
+| 15 times
+|-
+| 80
+| ''Big Brother''
+| style="text-align:left" | Down an enemy with the weapon while the enemy is using Havoc and damaged you.
+| 10 times
+|-
+| 100
+| ''2 For 1''
+| style="text-align:left" | Down at least 2 enemies in the same magazine while holding the trigger.
+| 3 times
+|}
+
+
+== Lore ==
+{{Quote|The Devotion demands something different from its handler than most weapons: commitment. A cyclical, energy-assisted firing action increases its rate of fire the longer its trigger is held. This added "spin-up" time can make the Devotion a risky choice in heated situations. However, upgrading it with a Turbocharger hop-up decreases its spin-up significantly and makes the fealty worthwile.}}
+
+
+== Skins ==
+There are a total of 88 skins for the Devotion LMG; 22 {{Legendary}}, 14 {{Epic}}, 36 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="300" mode="nolines">
+Nitro Kustom Devotion.png|{{Legendary|Nitro Kustom}}<br/>{{CraftingMetals|1,200}}
+The Lucky Rabbit Devotion.png|{{Legendary|The Lucky Rabbit}}<br/>{{CraftingMetals|1,200}}
+The Lead Farmer Devotion.png|{{Legendary|The Lead Farmer}}<br/>{{CraftingMetals|1,200}}
+Tidal Wave Devotion.png|{{Legendary|Tidal Wave}}<br/>{{CraftingMetals|1,200}}
+The Fast Track Devotion.png|{{Cosmetic-NI|Recolor|Legendary|The Fast Track}}<br/>Needs {{Legendary|Nitro Kustom}}
+Bunny Hopper Devotion.png|{{Cosmetic-NI|Recolor|Legendary|Bunny Hopper}}<br/>Needs {{Legendary|The Lucky Rabbit}}
+Headhunter Devotion.png|{{Cosmetic-NI|Recolor|Legendary|Headhunter}}<br/>Needs {{Legendary|The Lead Farmer}}
+Rising Tide Devotion.png|{{Cosmetic-NI|Recolor|Legendary|Rising Tide}}<br/>Needs {{Legendary|Tidal Wave}}
+Nocturnal Elegance Devotion.png|{{Cosmetic|Fight or Fright 2019|Legendary|Nocturnal Elegance}}
+Brass Rain Devotion.png|{{Cosmetic-NI|Recolor|Legendary|Brass Rain}}<br/>Needs {{Legendary|Nitro Kustom}}
+Hot Streak Devotion.png|{{Cosmetic|System Override|Legendary|Hot Streak}}
+Heat Trail Devotion.png|{{Cosmetic-NI|Recolor|Legendary|Heat Trail}}<br/>Needs {{Legendary|Nitro Kustom}}
+Sweet Revenge Devotion.png|{{Cosmetic|Fight Night|Legendary|Sweet Revenge}}
+Terror of the Deep Devotion.png|{{Cosmetic|Gibraltar Edition|Legendary|Terror of the Deep}}
+Bound in Bone Devotion.png|{{Cosmetic|Season 9|Legendary|Bound in Bone}}<ref group="note" name="reactive">This skin is reactive.</ref><br>Level 100
+Dragon's Spine Devotion.png|{{Cosmetic|Season 9|Legendary|Dragon's Spine}}<ref group="note" name="reactive"/><br>Level 110
+Arctic Calibration Devotion.png|{{Cosmetic|Beast of Prey|Legendary|Arctic Calibration}}
+Dragon's Breath Devotion.png|{{Cosmetic|Celestial Sunrise|Legendary|Dragon's Breath}}
+Royally Devoted Devotion.png|{{Legendary|Royally Devoted}}<ref group="note">Included in the Holika Bundle.</ref>
+Pulse Eater Devotion.png|{{Cosmetic|Season 17|Legendary|Pulse Eater}}<br/>Level 1
+Punchline Devotion.png|{{Cosmetic|Doppelgangers|Legendary|Punchline}}
+Haptic Feedback Devotion.png|[[File:Sale Icon.svg|22px|link=Retro Arcade Store]] {{Legendary|Haptic Feedback}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="300" mode="nolines">
+Eye of the Storm Devotion.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Devotion.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Devotion.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Devotion.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Devotion.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Bronze Beast Devotion.png|{{Cosmetic|Holo-Day Bash 2019|Epic|Bronze Beast}}
+Gold Rush Devotion.png|{{Cosmetic|Season 8|Epic|Gold Rush}}<br>{{ItemLink|Treasure Pack|text={{Heirloom|Treasure Pack}}}} #60
+Burning Rubber Devotion.png|{{Cosmetic|Thrillseekers|Epic|Burning Rubber}}
+Forbidden Treasure Devotion.png|{{Cosmetic|Raiders|Epic|Forbidden Treasure}}
+Scourge of the Plains Devotion.png|{{Cosmetic|Season 14|Epic|Scourge of the Plains}}
+Ornate Oath Devotion.png|{{Cosmetic|Spellbound|Epic|Ornate Oath}}
+Dust to Dusk Devotion.png|{{Cosmetic|Sun Squad|Epic|Dust to Dusk}}
+Gilded Serpent Devotion.png|{{Cosmetic|Dressed to Kill|Epic|Gilded Serpent}}
+Blood Revolution Devotion.png|{{Cosmetic|Death Dynasty|Epic|Blood Revolution}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="300" mode="nolines">
+Solstice Devotion.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord Devotion.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Shockwave Devotion.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Fun Fair Devotion.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Rock Bed Devotion.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Kaleidoscope Devotion.png| {{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork Devotion.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither Devotion.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug Devotion.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy Devotion.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile Devotion.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef Devotion.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Morning Dew Devotion.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos Devotion.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Zeal Devotion.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest Devotion.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 54
+Inner Workings Devotion.png|{{Cosmetic|Season 2|Rare|Inner Workings}}<br/>Level 62
+Cool Breeze Devotion.png|{{Cosmetic|Season 3|Rare|Cool Breeze}}<br/>Level 74
+Tectonic Shift Devotion.png|{{Cosmetic|Season 4|Rare|Tectonic Shift}}<br/>Level 79
+Cartographer Devotion.png|{{Cosmetic|Season 5|Rare|Cartographer}}<br/>Level 47
+Cult Classic Devotion.png|{{Cosmetic|Lost Treasures|Rare|Cult Classic}}
+The Finisher Devotion.png|{{Cosmetic|Season 6|Rare|The Finisher}}<br/>Level 57
+Ornate Forest Devotion.png|{{Cosmetic-NI|PlayStation+|Rare|Ornate Forest}}<br>August 2020
+Light Pollution Devotion.png|{{Cosmetic|Season 7|Rare|Light Pollution}}<br/>Level 79
+Whirlwind Devotion.png|{{Cosmetic|Season 8|Rare|Whirlwind}}<br/>Level 31
+Lavender Fields Devotion.png|{{Cosmetic|Season 9|Rare|Lavender Fields}}<br>Level 55
+Stacking Evidence Devotion.png|{{Cosmetic|Season 10|Rare|Stacking Evidence}}<br>Level 90
+Ground Fire Devotion.png|{{Cosmetic|Season 11|Rare|Ground Fire}}<br>Level 71
+Magma Core Devotion.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Magma Core}}<br>January 2022
+Always Watching Devotion.png|{{Cosmetic|Season 12|Rare|Always Watching}}<br>Level 10
+Serpent's Blood Devotion.png|{{Cosmetic|Season 13|Rare|Serpent's Blood}}<br/>Level 61
+Digital Jammer Devotion.png|{{Cosmetic|ALGS Champ 2022|Rare|Digital Jammer}}
+Royal Hunter Devotion.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Royal Hunter}}<br/>July 2022
+Savannah's Promise Devotion.png|{{Cosmetic|Season 14|Rare|Savannah's Promise}}<br/>Level 40
+Lined in Gold Devotion.png|{{Symbol|PS+}} {{Rare|Lined in Gold}}<br>Season 16
+Net Lethal Devotion.png|{{Cosmetic|PS+|Rare|Net Lethal}}<br>Season 18
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="300" mode="nolines">
+Factory Issue Devotion.png|{{Common|Factory Issue}}<br/>Default
+Midnight Devotion.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Devotion.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Devotion.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Devotion.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Devotion.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Devotion.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Devotion.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Devotion.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Devotion.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Devotion.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Devotion.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Devotion.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Devotion.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Devotion.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Devotion.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} no longer reduces damage.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 02, 2021 Patch]]
+* Reduced damage when {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} is equipped from 15 to 14.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 15}}.
+* ('''Undocumented''') Updated holster animations.
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Reduced damage from 16 to 15.
+* Reduced headshot multiplier from 1.75× to 1.5×.
+* Increased tac reload time from 2.8 to 3.2.
+* Increased draw time from 0.7 to 0.8.
+* Increased holster time from 0.65 to 0.75.
+* Increased raise time from 0.55 to 0.65.
+* Increased lower time from 0.5 to 0.6.
+* ('''Undocumented''') Increased full reload time from 3.63 to 4.1.
+
+; {{ItemLink|Warriors|noText=yes}} [[March 29, 2022 Patch]]
+* {{ItemLink|Control}}:
+** Removed {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} from {{Epic|Ratings Tier 3}}.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|400}} to {{Materials|500}}.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Reduced headshot multiplier from 2× to 1.75×.
+* Increased legshot multiplier from 0.75× to 0.85×.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* Updated reload animations for [[Rampart]].
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Increased base hipfire spread. 
+* Increased the spread added while firing.
+
+; [[September 03, 2020 Patch]]
+* Fixed an issue with the Devotion not playing audio while shooting.
+
+; [[August 20, 2020 Patch]]
+* Reduced damage from 17 to 16.
+* Increased recoil.
+* Reduced spawn rate in all zone tiers.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Removed from the [[Care Package|{{Legendary|Care Package}}]].
+* Changed magazine size from 54 to {{Level0123|36|40|44|48}}.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 6}}.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Moved in the [[Care Package|{{Legendary|Care Package}}]]. Comes pre-equipped with 162 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.
+* Increased magazine size from 44 to 54.
+* Increased starting fire rate.
+
+; {{ItemLink|Grand Soirée|noText=yes}} [[January 14, 2020 Patch]]
+* Removed {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}.
+* Changed magazine size from {{Level0123|36|40|44|48}} to 44.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}. Compatible with the Devotion LMG, [[HAVOC Rifle]], and [[Triple Take]].
+* Changed magazine size from 44 to {{Level0123|36|40|44|48}}.
+
+; [[June 11, 2019 Patch]]
+* Reduced magazine size after an accidental increase.
+
+; {{ItemLink|Season 1|noText=yes}} [[March 19, 2019 Patch]]
+* Fixed bug where the audio sometimes wouldn’t accurately reflect the rate of fire.
+
+; [[March 06, 2019 Patch]]
+* Increased spawn rate in all zone tiers.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Cliff Childs Devotion LMG.jpg|Concept Art for the Devotion LMG made by Cliff Childs.<ref>[https://www.artstation.com/artwork/OyaoZy Cliff Childs on ArtStation]</ref>
+Bound in Bone Devotion Concept Art.jpg|Concept art for the {{Legendary|Bound in Bone}} skin.<ref>[https://www.artstation.com/artwork/oAnRRJ Gadget-Bot Productions on ArtStation]</ref>
+Sweet Revenge Devotion Concept Art.jpg|Concept art for the {{Legendary|Sweet Revenge}} skin.<ref>[https://www.artstation.com/artwork/B1xOa4 Gadget-Bot Productions on ArtStation]</ref>
+Arctic Calibration Devotion Concept Art.jpg|Concept art for the {{Legendary|Arctic Calibration}} skin.<ref>[https://www.artstation.com/artwork/5BrBKw Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+
+== Trivia ==
+
+* The "Lead Farmer" skin is a reference to a skin of the same name for the Spitfire in Titanfall 2
+
+
+== See also ==
+* [[Devotion LMG (Mobile)|Devotion LMG (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/X-55_Devotion X-55 Devotion (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

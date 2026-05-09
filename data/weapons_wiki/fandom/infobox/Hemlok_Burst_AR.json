@@ -1,0 +1,28 @@
+{
+  "title": "Hemlok Burst AR",
+  "infobox": {
+    "name": "Hemlok Burst AR",
+    "description": "3-round burst assault rifle.",
+    "type": "Assault rifle",
+    "fireModes": "Burst (3) Single",
+    "ammoType": "Heavy Rounds",
+    "creator": "Wonyeon",
+    "barrel": "stabilizer",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "19",
+    "damageHead": "33 (1.75×)",
+    "damageLegs": "14 (0.75×)",
+    "rateOfFire": "380 930 per burst.384",
+    "dps": "133 134",
+    "magazineSize": [
+      "18",
+      "21",
+      "24",
+      "30"
+    ],
+    "tacReload": "2.16{{Symbol|Boosted Loader}} 1.75",
+    "fullReload": "2.57"
+  }
+}

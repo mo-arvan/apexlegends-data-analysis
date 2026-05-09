@@ -1,0 +1,13 @@
+{
+  "title": "Power Sword",
+  "infobox": {
+    "name": "Power Sword",
+    "colorPalette": "mythic",
+    "description": "Forged from a metal that exploded from a dying rift, this Power Sword unlocks each Legend's beast mode alter ego.",
+    "icon": "Power Sword Icon.svg",
+    "fireModes": "Single",
+    "damageBody": "40",
+    "rateOfFire": "118",
+    "magazineSize": "∞"
+  }
+}

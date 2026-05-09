@@ -1,0 +1,439 @@
+{{Tabs|
+{{Tabs1|Alternator SMG|Main}}
+{{Tabs2|Alternator SMG/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Alternator SMG
+| description = Twin barrel full-auto SMG.
+| type = Submachine Gun
+| fireModes = [[File:Auto Icon.svg|25px|Auto|link=]] Auto
+| ammoType = Light Rounds
+| creator = [[Burrell Defense]]
+| barrel = laser
+| magType = light
+| optics = true
+| stock = standard
+| hopup =double_tap 
+| damageBody = 19
+| damageHead = 24
+| damageLegs = 15
+| rateOfFire = 600
+| dps = 190
+| magazineSize = {{Level0123|20|24|26|30}}
+| tacReload = {{Level0123|1.9|1.84|1.77|1.71}}
+| fullReload = {{Level0123|2.23|2.16|2.08|2.01}}
+}}
+
+The '''Alternator SMG''', or '''Alternator''', is a [[submachine gun]] that utilizes {{ItemLink|Light Rounds}}. As the name implies, it fires through two alternating barrels.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Others
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.2
+| legMdfr = 0.8
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_alternator_smg</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 10
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 19000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 482 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.2
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.35
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.2
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.75
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.35
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.25
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 5
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''Alternator'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Alternator'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Alternator'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''Alternator'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''600''' enemies with the '''Alternator'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The Alternator is famous for its accuracy; featuring twin barrels that alternate fire from a single magazine, it suffers less of the barrel-wear that reduces accuracy in other firearms. However, its patented receiver and barrel assembly ensured it could only be manufactured by Burrell Industries, hampering widespread adoption during the Frontier War. After Burrell's collapse following the Blackout, the design was reverse-engineered by surviving competitors, and current models have reached nearly the same level of sophistication.}}
+
+The Alternator A-2 is a double-barrel submachine gun developed by [[Burrell Defense]]. The successor to the [[Frontier War]]-era Alternator A-1, a notable visual change includes a more ergonomic handguard. It is chambered with a 10mm round and fires 1000 rounds per minute. Nicknamed the "Hatchet" due to its shape, high rate of fire, and brutally "chopping" up its targets in close quarters engagements. Its firing range is effective at 200 meters with a muzzle velocity of 800 m/s and has a muzzle energy of 510j in 9.78 m/s².
+
+Tried and true, the recoil dampening system is ideal for firing while in movement. Its high speed, lightweight, compact design allows its user to operate melee weapons while accurately delivering a hail of gunfire downrange.<ref>SP-14 Hatchet Concept Art</ref>
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|27}}
+{{#vardefine:epicskin|19}}
+{{#vardefine:rareskin|35}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="162" mode="nolines">
+The Alternative Remedy Alternator SMG.png|{{Legendary|The Alternative Remedy}}<br/>{{CraftingMetals|1,200}}
+Search & Rescue Alternator SMG.png|{{Legendary|Search & Rescue}}<br/>{{CraftingMetals|1,200}}
+LED Rez Alternator SMG.png|{{Legendary|LED Rez}}<br/>{{CraftingMetals|1,200}}
+The Galvanizer Alternator SMG.png|{{Legendary|The Galvanizer}}<br/>{{CraftingMetals|1,200}}
+Placebo Effect Alternator SMG.png|{{Cosmetic-NI|Recolor|Legendary|The Placebo Effect}}<br/>Needs {{Legendary|The Alternative Remedy}}
+The Illuminator Alternator SMG.png|{{Cosmetic-NI|Recolor|Legendary|The Illuminator}}<br/>Needs {{Legendary|LED Rez}}
+The Swashbuckler Alternator SMG.png|{{Cosmetic|Iron Crown|Legendary|The Swashbuckler}}
+Haymaker Alternator SMG.png|{{Cosmetic|Fight or Fright 2019|Legendary|Haymaker}}
+Code Blue Alternator SMG.png|{{Cosmetic-NI|Recolor|Legendary|Code Blue}}<br/>Needs {{Legendary|Search & Rescue}}
+Devil's Right Hand Alternator SMG.png|{{Cosmetic|System Override|Legendary|Devil's Right Hand}}
+Ocean Spray Alternator SMG.png|{{Cosmetic-NI|Recolor|Legendary|Ocean Spray}}<br/>Needs {{Legendary|LED Rez}}
+Palate Cleanser Alternator SMG.png|{{Cosmetic-NI|Recolor|Legendary|Palate Cleanser}}<br/>Needs {{Legendary|The Galvanizer}}
+Amped Up Alternator SMG.png|{{Cosmetic|Aftermarket|Legendary|Amped Up}}
+Dark Hearted Alternator SMG.png|{{Cosmetic|Fight Night|Legendary|Dark Hearted}}
+Combined Powers Alternator SMG.png|{{Cosmetic|Genesis|Legendary|Combined Powers}}
+Power Coil Alternator SMG.png|{{Cosmetic|Raiders|Legendary|Power Coil}}
+Mark of Death Alternator SMG.png|{{Cosmetic|Beast of Prey|Legendary|Mark of Death}}
+Slipstream Alternator SMG.png|{{Cosmetic|Spellbound|Legendary|Slipstream}}
+Shell Shot Alternator SMG.png|{{Cosmetic|Sun Squad|Legendary|Shell Shot}}
+Deathweaver Alternator SMG.png|{{Cosmetic|Harbingers|Legendary|Deathweaver}}
+Mayday Maker Alternator SMG.png|{{Cosmetic|Urban Assault|Legendary|Mayday Maker}}
+Sequence Breaker Alternator SMG.png|{{Cosmetic|Double Take|Legendary|Sequence Breaker}}
+Lucky 7 Alternator SMG.png|{{Cosmetic|Space Hunt|Legendary|Lucky 7}}
+Cosmic Pearl Alternator SMG.png|{{Cosmetic|Astral Anomaly|Legendary|Cosmic Pearl}}
+Slithering Strike Alternator SMG.png|{{Cosmetic|Takeover|Legendary|Slithering Strike}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Split 1 Premium Lv 60
+Obsidian Chameleon Alternator SMG.png|{{Cosmetic|Takeover|Legendary|Obsidian Chameleon}}<ref group="note" name="reactive"/><br>Split 2 Premium Lv 60
+Final Flight Alternator SMG.png|{{Cosmetic|Season 26|Legendary|Final Flight}}<br>Split 2 Premium Lv 30
+</gallery>
+<references group="note"/>
+|-|
+
+Epic=
+<gallery widths="290" heights="162" mode="nolines">
+Eye of the Storm Alternator SMG.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Alternator SMG.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Alternator SMG.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Alternator SMG.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Alternator SMG.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Molten Forge Alternator SMG.png|{{Cosmetic|Season 2|Epic|Molten Forge}}<br/>Level 72
+Melternator Alternator SMG.png|{{Cosmetic|Holo-Day Bash 2019|Epic|Melternator}}
+Star Chart Alternator SMG.png|{{Cosmetic|Lost Treasures|Epic|Star Chart}}
+Treadrunner Alternator SMG.png|{{Cosmetic|Chaos Theory|Epic|Treadrunner}}
+Cyber Hide Alternator SMG.png|{{Cosmetic|Dark Depths|Epic|Cyber Hide}}
+Spotted Alternator.png|{{Cosmetic|Season 14|Epic|Spotted}}<br/>Level 88
+Summoning Circle Alternator SMG.png|{{Cosmetic|Season 15|Epic|Summoning Circle}}
+Great Northern Way Alternator SMG.png|{{Cosmetic|Wintertide|Epic|Great Northern Way}}
+Gamma Ray Alternator SMG.png|{{Cosmetic|Void Reckoning|Epic|Gamma Ray}}
+Night Glider Alternator SMG.png|{{Cosmetic|S22|Epic|Night Glider}}<br>Split 1 Premium Lv 23
+Nessinator Alternator SMG.png|{{Cosmetic|S23|Epic|Nessinator}}<br>Split 2 Premium Lv 35
+Radical Rush Alternator SMG.png|{{Cosmetic|Fight Force|Epic|Radical Rush}}
+Rising Streak Alternator SMG.png|{{Epic|Rising Streak}}<br/>Spark Bonus
+Sticker Shock Alternator SMG.png|{{Cosmetic|S25|Epic|Sticker Shock}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="162" mode="nolines">
+Carnivale Alternator SMG.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Cold Wave Alternator SMG.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Alternator SMG.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Headgames Alternator SMG.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Icebreaker Alternator SMG.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Out for Blood Alternator SMG.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Paper Trail Alternator SMG.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Recluse Alternator SMG.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Solar Flare Alternator SMG.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Surprise Party Alternator SMG.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Tagged Alternator SMG.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Trident Alternator SMG.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Urban Edge Alternator SMG.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Warm Rave Alternator SMG.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Wildlands Alternator SMG.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Patchwork Alternator SMG.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 44
+Battle Clasp Alternator SMG.png|{{Cosmetic|Season 2|Rare|Battle Clasp}}<br/>Level 46
+Winged Phoenix Alternator SMG.png|{{Cosmetic|Season 3|Rare|Winged Phoenix}}<br/>Level 50
+Hypertrophy Alternator SMG.png|{{Cosmetic|Season 4|Rare|Hypertrophy}}<br/>Level 35
+Entombed Alternator SMG.png|{{Cosmetic|Season 5|Rare|Entombed}}<br/>Level 59
+Hot Pursuit Alternator SMG.png|{{Cosmetic|Season 6|Rare|Hot Pursuit}}<br/>Level 48
+Fragmentation Alternator SMG.png|{{Cosmetic|Season 8|Rare|Fragmentation}}<br/>Level 17
+Flower Bed Alternator SMG.png|{{Cosmetic|Season 9|Rare|Flower Bed}}<br/>Level 02
+Copperhead Alternator SMG.png|{{Cosmetic|ALGS Champ 2021|Rare|Copperhead}}
+Charged Alternator SMG.png|{{Cosmetic|Season 10|Rare|Charged}}<br/>Level 14
+Spring Serenity Alternator SMG.png|{{Cosmetic-NI|PlayStation+ Pack|Rare|Spring Serenity}}</br>August 2021
+Jawmuncher Alternator SMG.png|{{Cosmetic|Season 11|Rare|Jawmuncher}}<br/>Level 53
+Paisley Parade Alternator SMG.png|{{Cosmetic|Season 12|Rare|Paisley Parade}}<br/>Level 17
+Virtual Hero Alternator SMG.png|{{Cosmetic|Season 13|Rare|Virtual Hero}}<br/>Level 79
+Serpentine Alternator.png|{{Cosmetic|Season 14|Rare|Serpentine}}<br/>Level 82
+Bound in Bone Alternator SMG.png|{{Cosmetic|Season 15|Rare|Bound in Bone}}<br/>Level 37
+Gem Shredder Alternator SMG.png|{{Cosmetic-NI|Prime Gaming|Rare|Gem Shredder}}<br/>November 2022
+Face Off Alternator SMG.png|{{Cosmetic|S18|Rare|Face Off}}<br>Level 63
+CMYK Alternator SMG.png|{{Cosmetic|S20|Rare|CMYK}}<br>Level 17
+Necrotic Devourer Alternator SMG.png|{{Symbol|Season 21}} {{Rare|Necrotic Devourer}}<br>Level 26
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="162" mode="nolines">
+Factory Issue Alternator SMG.png|{{Common|Factory Issue}}<br/>Default 
+Midnight Alternator SMG.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Alternator SMG.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Alternator SMG.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Alternator SMG.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Alternator SMG.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Alternator SMG.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Alternator SMG.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Alternator SMG.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Alternator SMG.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Alternator SMG.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Alternator SMG.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Alternator SMG.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Alternator SMG.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Alternator SMG.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Alternator SMG.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; [[April 08, 2025 Patch]]
+* Increased headshot damage from 22 to 23.
+
+
+; {{Symbol|Beast Mode}} [[March 25, 2025 Patch]]
+* Increased magazine size from {{Level0123|19|23|26|28}} to {{Level0123|20|24|27|29}}.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 18 (was 16).
+* Headshot damage: 22.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Increased magazine size from {{Level0123|19|22|25|27}} to {{Level0123|19|23|26|28}}.
+* Removed {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Increased projectile gravity scale from 1.15 to 1.2.
+* Reduced projectile speed from 19500 to 19000.
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} compatibility.
+
+
+; {{ItemLink|Apex Legends & FINAL FANTASY VII REBIRTH|image=Final Fantasy VII.svg|noText=yes}} [[January 09, 2024 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Reduced headshot damage multiplier from ×1.5 to ×1.25.
+* Reduced ADS movement speed multiplier from ×0.85 to ×0.75.
+* Added {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}. Compatible with Alternator SMG and [[Peacekeeper]].
+** Reduced damage multiplier from ×1.4 to ×1.2.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 18}}.
+
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+* ('''Undocumented''') Changed inspect animation.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with Alternator SMG, [[P2020]], [[Prowler Burst PDW]], [[R-99 SMG]], [[RE-45 Auto]], and [[Volt SMG]].
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Increased hipfire spread when crouching from 1 to 2.
+* Increased hipfire spread when standing from 1.5 to 3.
+* Increased hipfire spread when moving from 2.5 to 5.
+* Increased hipfire spread when running from 0.8 to 1.6.
+* Increased hipfire spread when in midair from 3.5 to 7.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* ('''Undocumented''') Changed pre-equipped {{ItemLink|Barrel Stabilizer}} rarity from {{Legendary}} to {{Epic}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 245 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+** Reduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}} damage multiplier from ×1.55 to ×1.4.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Increased damage from 15 to 16.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 7}}.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Increased magazine size from {{Level0123|16|20|23|26}} to {{Level0123|19|22|25|27}}.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Removed {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+
+
+; {{ItemLink|Voidwalker|noText=yes}} [[September 03, 2019 Patch]]
+* Removed {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} and {{ItemLink|2x-4x Variable AOG|image=2x-4x Variable AOG.svg|text={{Epic|2x-4x Variable AOG}}}} compatibility.
+
+
+; {{ItemLink|Iron Crown|noText=yes}} [[August 13, 2019 Patch]]
+* Reduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}} damage multiplier from ×1.7 to ×1.55.
+
+
+; [[July 05, 2019 Patch]]
+* Reduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}} damage multiplier from ×2.26 to ×1.7.
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Increased damage from 13 to 15.
+* Increased effectiveness for all {{ItemLink|Barrel Stabilizer|text=Barrel Stabilizers}}.
+* Added {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}. Compatible with Alternator SMG and [[RE-45 Auto]].
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 2}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+Amped Up Alternator Concept Art.jpg|Concept art for the {{Cosmetic|Aftermarket|Legendary|Amped Up}} skin.<ref>https://www.artstation.com/artwork/eaG2VJ</ref>
+Dark Hearted Alternator Concept Art.jpg|Concept art for the {{Cosmetic|Fight Night|Legendary|Dark Hearted}} skin.<ref>https://www.artstation.com/artwork/qQA2xz</ref>
+Combined Powers Alternator Concept Art.jpg|Concept art for the {{Cosmetic|Genesis|Legendary|Combined Powers}} skin.<ref>https://www.artstation.com/artwork/D5nEbO</ref>
+Power Coil Alternator SMG Concept Art.jpg|Concept art for the {{Legendary|Power Coil}} skin.<ref>[https://www.artstation.com/artwork/aGlGG8 Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* Before being named "Alternator" in ''Titanfall 2'', it was originally called the "SP-14 Hatchet".
+<br>
+<br>
+== See also ==
+* [[Alternator SMG (Mobile)|Alternator SMG (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/Alternator Alternator (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

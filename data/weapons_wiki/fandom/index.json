@@ -1,0 +1,434 @@
+[
+  {
+    "title": "Weapon",
+    "slug": "Weapon",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "30-30 Repeater",
+    "slug": "30-30_Repeater",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "30-30 Repeater (Mobile)",
+    "slug": "30-30_Repeater_(Mobile)",
+    "has_infobox": true,
+    "field_count": 21
+  },
+  {
+    "title": "Alternator SMG",
+    "slug": "Alternator_SMG",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "Alternator SMG (Mobile)",
+    "slug": "Alternator_SMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Bocek Compound Bow",
+    "slug": "Bocek_Compound_Bow",
+    "has_infobox": true,
+    "field_count": 13
+  },
+  {
+    "title": "Bocek Compound Bow/Heart Stealer",
+    "slug": "Bocek_Compound_Bow__Heart_Stealer",
+    "has_infobox": true,
+    "field_count": 13
+  },
+  {
+    "title": "C.A.R. SMG",
+    "slug": "C.A.R._SMG",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Charge Rifle",
+    "slug": "Charge_Rifle",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Charge Rifle (Mobile)",
+    "slug": "Charge_Rifle_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Devotion LMG",
+    "slug": "Devotion_LMG",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Devotion LMG (Mobile)",
+    "slug": "Devotion_LMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 14
+  },
+  {
+    "title": "EVA-8 Auto",
+    "slug": "EVA-8_Auto",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "EVA-8 Auto (Mobile)",
+    "slug": "EVA-8_Auto_(Mobile)",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Fully Kitted Weapon",
+    "slug": "Fully_Kitted_Weapon",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "G7 Scout",
+    "slug": "G7_Scout",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "G7 Scout (Mobile)",
+    "slug": "G7_Scout_(Mobile)",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "Grenade",
+    "slug": "Grenade",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "HAVOC Rifle",
+    "slug": "HAVOC_Rifle",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "HAVOC Rifle (Mobile)",
+    "slug": "HAVOC_Rifle_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Hemlok Burst AR",
+    "slug": "Hemlok_Burst_AR",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Hemlok Burst AR (Mobile)",
+    "slug": "Hemlok_Burst_AR_(Mobile)",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "Kraber .50-Cal Sniper",
+    "slug": "Kraber_.50-Cal_Sniper",
+    "has_infobox": true,
+    "field_count": 14
+  },
+  {
+    "title": "Kraber .50-Cal Sniper (Mobile)",
+    "slug": "Kraber_.50-Cal_Sniper_(Mobile)",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "L-STAR EMG",
+    "slug": "L-STAR_EMG",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "L-STAR EMG (Mobile)",
+    "slug": "L-STAR_EMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Longbow DMR",
+    "slug": "Longbow_DMR",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Longbow DMR (Mobile)",
+    "slug": "Longbow_DMR_(Mobile)",
+    "has_infobox": true,
+    "field_count": 20
+  },
+  {
+    "title": "M600 Spitfire",
+    "slug": "M600_Spitfire",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "M600 Spitfire (Mobile)",
+    "slug": "M600_Spitfire_(Mobile)",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "Mastiff Shotgun",
+    "slug": "Mastiff_Shotgun",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Mastiff Shotgun (Mobile)",
+    "slug": "Mastiff_Shotgun_(Mobile)",
+    "has_infobox": true,
+    "field_count": 20
+  },
+  {
+    "title": "Mozambique Shotgun",
+    "slug": "Mozambique_Shotgun",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Mozambique Shotgun (Mobile)",
+    "slug": "Mozambique_Shotgun_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Mozambique Shotgun/April Fools'",
+    "slug": "Mozambique_Shotgun__April_Fools'",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Mozambique Shotgun/Mozambeam",
+    "slug": "Mozambique_Shotgun__Mozambeam",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Mozambique Shotgun/Mozamblam",
+    "slug": "Mozambique_Shotgun__Mozamblam",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Mozambique Shotgun/Mozambrrr",
+    "slug": "Mozambique_Shotgun__Mozambrrr",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Mozambique Shotgun/Mozamburst",
+    "slug": "Mozambique_Shotgun__Mozamburst",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Mozambique Shotgun/Ol' Nessie",
+    "slug": "Mozambique_Shotgun__Ol'_Nessie",
+    "has_infobox": true,
+    "field_count": 14
+  },
+  {
+    "title": "Nemesis Burst AR",
+    "slug": "Nemesis_Burst_AR",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "P2020",
+    "slug": "P2020",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "P2020 (Mobile)",
+    "slug": "P2020_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "P2020/April Fools'",
+    "slug": "P2020__April_Fools'",
+    "has_infobox": true,
+    "field_count": 14
+  },
+  {
+    "title": "Peacekeeper",
+    "slug": "Peacekeeper",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Peacekeeper (Mobile)",
+    "slug": "Peacekeeper_(Mobile)",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Prowler Burst PDW",
+    "slug": "Prowler_Burst_PDW",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Prowler Burst PDW (Mobile)",
+    "slug": "Prowler_Burst_PDW_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "R-301 Carbine",
+    "slug": "R-301_Carbine",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "R-301 Carbine (Mobile)",
+    "slug": "R-301_Carbine_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "R-99 SMG",
+    "slug": "R-99_SMG",
+    "has_infobox": true,
+    "field_count": 13
+  },
+  {
+    "title": "R-99 SMG (Mobile)",
+    "slug": "R-99_SMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Rampage LMG",
+    "slug": "Rampage_LMG",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Rampage LMG (Mobile)",
+    "slug": "Rampage_LMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "Rampart's Custom Modded Paintball Weapon",
+    "slug": "Rampart's_Custom_Modded_Paintball_Weapon",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "Rampart/Mobile Minigun \"Sheila\"",
+    "slug": "Rampart__Mobile_Minigun_\"Sheila\"",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "RE-45 Auto",
+    "slug": "RE-45_Auto",
+    "has_infobox": true,
+    "field_count": 18
+  },
+  {
+    "title": "RE-45 Auto (Mobile)",
+    "slug": "RE-45_Auto_(Mobile)",
+    "has_infobox": true,
+    "field_count": 19
+  },
+  {
+    "title": "Sentinel",
+    "slug": "Sentinel",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Sentinel (Mobile)",
+    "slug": "Sentinel_(Mobile)",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Supply Drop Weapon",
+    "slug": "Supply_Drop_Weapon",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "Throwing Knife",
+    "slug": "Throwing_Knife",
+    "has_infobox": true,
+    "field_count": 10
+  },
+  {
+    "title": "Triple Take",
+    "slug": "Triple_Take",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Triple Take (Mobile)",
+    "slug": "Triple_Take_(Mobile)",
+    "has_infobox": true,
+    "field_count": 21
+  },
+  {
+    "title": "Vantage/Sniper's Mark",
+    "slug": "Vantage__Sniper's_Mark",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "VK-47 Flatline",
+    "slug": "VK-47_Flatline",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "VK-47 Flatline (Mobile)",
+    "slug": "VK-47_Flatline_(Mobile)",
+    "has_infobox": true,
+    "field_count": 17
+  },
+  {
+    "title": "Volt SMG",
+    "slug": "Volt_SMG",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Volt SMG (Mobile)",
+    "slug": "Volt_SMG_(Mobile)",
+    "has_infobox": true,
+    "field_count": 16
+  },
+  {
+    "title": "Weapon/zh",
+    "slug": "Weapon__zh",
+    "has_infobox": false,
+    "field_count": 0
+  },
+  {
+    "title": "Wingman",
+    "slug": "Wingman",
+    "has_infobox": true,
+    "field_count": 15
+  },
+  {
+    "title": "Wingman (Mobile)",
+    "slug": "Wingman_(Mobile)",
+    "has_infobox": true,
+    "field_count": 21
+  }
+]

@@ -1,0 +1,155 @@
+{{Tabs|
+{{Tabs2|Alternator SMG|Main}}
+{{Tabs1|Alternator SMG/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Alternator SMG
+| description = Twin barrel full-auto SMG. High stability.
+| type = Sub machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Light Rounds
+| creator = [[File:Burrell Defense.svg|22px]] [[Burrell Defense]]
+| barrel = stabilizer
+| barrelMobile = true
+| magType = light
+| optics = true
+| stock = standard
+| damageBody = 16
+| damageHead = 24 <small>(1.5×)</small>
+| damageLegs = 13 <small>(0.8×)</small>
+| rateOfFire = 600
+| magazineSize = {{Level0123|21|25|29|32}}
+| tacReloadMobile = {{Level023|1.6|1.5|1.4}}
+| fullReloadMobile = {{Level023|2.1|1.9|1.8}}
+}}
+
+The '''Alternator SMG''', or '''Alternator''', is an [[SMG]] that utilizes {{ItemLink|Light Rounds}}. As the name implies, it fires through two alternating barrels. 
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 16
+| headshotMdfr = 1.5
+| legMdfr = 0.8
+}}
+<references group="note"/>
+
+=== Arenas ===
+{{Arenas weapon costs
+| basecost= 400
+| lvl1upgrade= 150
+| lvl1total= 550
+| lvl2upgrade= 250
+| lvl2total= 800
+| lvl3upgrade= 300
+| lvl3total= 1100
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Light Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|}
+
+== Lore ==
+The '''Alternator A-2''' is a double-barrel submachine gun developed by [[Burrell Defense]]. The successor to the [[Frontier War]]-era Alternator A-1, a notable visual change includes a more ergonomic handguard. It is chambered with a 10mm round and fires 1000 rounds per minute. Nicknamed the "Hatchet" due to its shape, high rate of fire, and brutally "chopping" up its targets in close quarters engagements. Its firing range is effective at 200 meters with a muzzle velocity of 800 m/s and has a muzzle energy of 510j in 9.78 m/s².
+
+Tried and true, the recoil dampening system is ideal for firing while in movement. Its high speed, lightweight, compact design allows its user to operate melee weapons while accurately delivering a hail of gunfire downrange.<ref>SP-14 Hatchet Concept Art</ref>
+
+== Skins ==
+There are a total of 14 skins for the Alternator SMG: 1 {{Eternal}}, 4 {{Legendary}}, 5 {{Epic}}, 4 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Menace to Mankind Alternator Mobile.png|{{Eternal|Menace to Mankind}}
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Emergency Protection Alternator Mobile.jpg|{{Legendary|Emergency Protection}}<br/>[[Heat Wave]]
+Ice Rink Alternator Mobile.jpg|{{Legendary|Ice Rink}}<br/>[[Glacial Games]]
+Devil's Right Hand Alternator Mobile.png|{{Legendary|Devil's Right Hand}}<br/>[[Infernal Rager]]
+Ocean Spray Alternator Mobile.png|{{Legendary|Ocean Spray}}<br/>[[Shipwrecked]]
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Golden Standard Alternator Mobile.jpg|{{Epic|Golden Standard}}
+Masked Jubilee Alternator Mobile.png|{{Epic|Masked Jubilee}}<br/>[[Digital Bliss Fest]]
+Drillbit Alternator SMG Mobile.png|{{Epic|Drillbit}}
+Past Emblem Alternator SMG Mobile.png|{{Epic|Past Emblem}}
+Inferno Trident Alternator Mobile.png|{{Symbol|s3.5m}} {{Epic|Inferno Trident}}<br/>Level 40
+</gallery>
+* {{Epic|Lunar Shot}}
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Montage Alternator Mobile.png|{{Rare|Montage}}
+Frosty Coat Alternator Mobile.jpg|{{Rare|Frosty Coat}}<br/>[[Winter Warfare]]
+Cold Turkey Alternator Mobile.png|{{Symbol|Cold Snap}} {{Rare|Cold Turkey}}<br/>Level 20
+Web Weaver Alternator Mobile.png|{{Rare|Web Weaver}}
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Alternator Mobile.png|{{Common|Factory Issue}}<br/>Default 
+</gallery>
+</tabber>
+
+== Trivia ==
+* Before being named "Alternator" in ''Titanfall 2'', it was originally called the "SP-14 Hatchet".
+
+== See also ==
+* [[Alternator SMG]]
+* [[titanfall:Alternator|Alternator (''Titanfall 2'')]]
+
+{{Nav-MobileWeapons}}
+[[Category:Sub machine guns]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

@@ -1,0 +1,405 @@
+{{MainGameNotice|mobilePage=Triple Take (Mobile)}}
+{{Infobox-Weapon
+| name = Triple Take
+| description = Triple-barrel marksman rifle.
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Energy Ammo
+| creator = [[Burrell Defense]]
+| magType = energy
+| optics = true
+| stock = sniper
+| damageBody = 21×3
+| damageHead = 37×3 <small>(1.75×)</small>
+| damageLegs = 19×3 <small>(0.9×)</small>
+| rateOfFire = 81
+| dps = 85
+| magazineSize= {{Level0123|6|7|8|10}}
+| tacReload = {{Level0123|2.34|2.26|2.18|2.11}}
+| fullReload = {{Level0123|3.06|2.96|2.85|2.75}}
+}}
+
+The '''Triple Take''' is a triple-barreled semi-automatic [[marksman rifle]] that utilizes {{ItemLink|Energy Ammo}}. It fires 3 projectiles, one in the middle and two to the sides.
+
+The Triple Take has a {{ItemLink|Choke Active Icon|noText=1}} Choke function, which can be turned on/off, where the spread of the pellets is greatly reduced while aiming down sights.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+
+; Other
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+
+=== Damage Profile ===
+{{Damage profile
+| damageref = <ref group="note">Assumes all three bullets hit.</ref>
+| damage = 21
+| bulletsPerBurst = 3
+| headshotMdfr = 1.75
+| legMdfr = 0.9
+}}
+<references group="note"/>
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_doubletake</big>
+|-
+! Variable !! Value !! Description
+|-
+| charge_time
+| style="text-align:center" | 0.75
+| Time to charge shots for better accuracy. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 1.35
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 32000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 812 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 17716
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 450 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 6
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 7
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 8
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.42
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.65
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.3
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.26
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.425
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 4
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Pew Pew!''
+| style="text-align:left" | Down an enemy with hipfire.
+| 25 times
+|-
+| 40
+| ''Choking Hazard''
+| style="text-align:left" | Down an enemy with fully choked shot.
+| 20 times
+|-
+| 60
+| ''Baited''
+| style="text-align:left" | Down an enemy executing your teammate.
+| 10 times
+|-
+| 80
+| ''Landed''
+| style="text-align:left" | Land all bullets in one shot at least 10 times in one match.
+| 10 times
+|-
+| 100
+| ''All Choked Up''
+| style="text-align:left" | Down at least 2 enemies with a fully choked headshot in one match.
+| 3 times
+|}
+
+
+== Lore ==
+{{Quote|The Triple Take came close to dying at the blueprint stage. A successor to the Double Take that fires from three separate barrels with each shot, the base model's spread makes it less effective at long-range. The original Triple Take project was shelved, but a new version emerged in the Outlands after the Blackout. While many sniper rifles demand a high degree of precision from operators, the Triple Take's spread proved more forgiving and effective for operators at all skill levels.}}
+
+
+== Skins ==
+There are a total of 82 skins for the Triple Take: 22 {{Legendary}}, 11 {{Epic}}, 34 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+First Strike Triple Take.png|{{Legendary|First Strike}}<br/>{{CraftingMetals|1,200}}
+Absolute Zero Triple Take.png|{{Legendary|Absolute Zero}}<br/>{{CraftingMetals|1,200}}
+The Invader Triple Take.png|{{Legendary|The Invader}}<br/>{{CraftingMetals|1,200}}
+Triple Crown Triple Take.png|{{Legendary|Triple Crown}}<br/>{{CraftingMetals|1,200}}
+Tamed Beast Triple Take.png|{{Cosmetic|Legendary Hunt|Legendary|Tamed Beast}}
+The Sea Stalker Triple Take.png|{{Cosmetic-NI|Recolor|Legendary|The Sea Stalker}}<br/>Needs {{Legendary|First Strike}}
+The Body Snatcher Triple Take.png|{{Cosmetic-NI|Recolor|Legendary|The Body Snatcher}}<br/>Needs {{Legendary|The Invader}}
+Under The Sun Triple Take.png|{{Cosmetic-NI|Recolor|Legendary|Under The Sun}}<br/>Needs {{Legendary|Absolute Zero}}
+Witchcraft Triple Take.png|{{Cosmetic|Fight or Fright 2019|Legendary|Witchcraft}}
+Hyperdrive Triple Take.png|{{Cosmetic|System Override|Legendary|Hyperdrive}}
+Deresolution Triple Take.png|{{Cosmetic-NI|Recolor|Legendary|Deresolution}}<br/>Needs {{Legendary|Triple Crown}}
+Ghillied as Charged Triple Take.png|{{Cosmetic-NI|Recolor|Legendary|Ghillied as Charged}}<br/>Needs {{Legendary|First Strike}}
+Curse of the Awaken Triple Take.png|{{Cosmetic|Champion Edition|Legendary|Curse of the Awaken}}
+Abstract Idea Triple Take.png|{{Cosmetic|Fight Night|Legendary|Abstract Idea}}
+Death Wrap Triple Take.png|{{Cosmetic|Genesis|Legendary|Death Wrap}}
+Prime Precision Triple Take.png|{{Cosmetic|Evolution|Legendary|Prime Precision}}
+Fortune Hunter Triple Take.png|{{Cosmetic|Season 14|Legendary|Fortune Hunter}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Trophy Taker Triple Take.png|{{Cosmetic|Season 14|Legendary|Trophy Taker}}<ref group="note" name="reactive"/><br/>Level 110
+Frozen Rope Triple Take.png|{{Cosmetic|Wintertide|Legendary|Frozen Rope}}
+Beyond Sight Triple Take.png|{{Cosmetic|Threat Level|Legendary|Beyond Sight}}
+Arcade Blast Triple Take.png|[[File:Conduit Icon.svg|22px|link=Retro Arcade Store#Bundles]] {{Legendary|Arcade Blast}}
+Triple Stakes Triple Take.png|{{Cosmetic|Uprising|Legendary|Triple Stakes}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Triple Take.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Triple Take.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Triple Take.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off The Grid Triple Take.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break The Enemy Triple Take.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Rough Seas Triple Take.png|{{Cosmetic|Iron Crown|Epic|Rough Seas}}
+Gift Wrapped Triple Take.png|{{Cosmetic|Holo-Day Bash 2019|Epic|Gift Wrapped}}
+Electric Flux Triple Take.png|{{Cosmetic|Aftermarket|Epic|Electric Flux}}
+Crimson Gold Triple Take.png|{{Cosmetic|Chaos Theory|Epic|Crimson Gold}}
+Bubble Blaster Triple Take.png|{{Cosmetic|Sun Squad|Epic|Bubble Blaster}}
+Gold Circuit Triple Take.png|{{Cosmetic|Dressed to Kill|Epic|Gold Circuit}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Solstice Triple Take.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord Triple Take.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Shockwave Triple Take.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Fun Fair Triple Take.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Rock Bed Triple Take.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Kaleidoscope Triple Take.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork Triple Take.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither Triple Take.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug Triple Take.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy Triple Take.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile Triple Take.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef Triple Take.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Morning Dew Triple Take.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos Triple Take.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Zeal Triple Take.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest Triple Take.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 02
+Whirlpool Triple Take.png|{{Cosmetic|Season 2|Rare|Whirlpool}}<br/>Level 93
+Lightshow Triple Take.png|{{Cosmetic|Season 3|Rare|Lightshow}}<br/>Level 94
+Ice Clouds Triple Take.png|{{Cosmetic-NI|PlayStation+|Rare|Ice Clouds}}<br/>November 2019
+Metallization Triple Take.png|{{Cosmetic|Season 4|Rare|Metallization}}<br/>Level 63
+Scarabs Bite Triple Take.png|{{Cosmetic|Season 5|Rare|Scarab's Bite}}<br/>Level 19
+Ocean Breeze Triple Take.png|{{Cosmetic|Season 6|Rare|Ocean Breeze}}<br/>Level 65
+Focused Strategy Triple Take.png|{{Cosmetic|Season 7|Rare|Focused Strategy}}<br/>Level 31
+Snake Eyes Triple Take.png|{{Cosmetic|Season 8|Rare|Snake Eyes}}<br/>Level 79
+Iconic Aim Triple Take.png|{{Cosmetic|Season 9|Rare|Iconic Aim}}<br/>Level 79
+Warning Colors Triple Take.png|{{Cosmetic|Season 10|Rare|Warning Colors}}<br/>Level 20
+Spring Serenity Triple Take.png|{{Cosmetic-NI|PlayStation+|Rare|Spring Serenity}}</br>August 2021
+Orange Crush Triple Take.png|{{Cosmetic|Season 11|Rare|Orange Crush}}<br/>Level 68
+Links To The Past Triple Take.png|{{Cosmetic|Season 12|Rare|Links To The Past}}<br/>Level 29
+Fantastic Trails Triple Take.png|{{Cosmetic|Season 13|Rare|Fantastic Trails}}<br/>Level 33
+Hibiscus Summer Triple Take.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Hibiscus Summer}}<br/>June 2022
+The Big Picture Triple Take.png|{{Cosmetic|Season 15|Rare|The Big Picture}}<br/>Level 70
+Deadly Decals Triple Take.png|{{Cosmetic|Season 16|Rare|Deadly Decals}}<br/>Level 78
+Holographic Ember Triple Take.png|{{Cosmetic|S18|Rare|Holographic Ember}}<br/>Level 57
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Triple Take.png|{{Common|Factory Issue}}<br/>Default
+Midnight Triple Take.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Triple Take.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Triple Take.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Triple Take.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Triple Take.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Triple Take.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Triple Take.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Triple Take.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Triple Take.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Triple Take.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Triple Take.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Triple Take.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Triple Take.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Triple Take.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Triple Take.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Increased projectile size.
+* Reduced hipfire spread.
+* Tightened bullet pattern when fully choked.
+* Reduced ammo consumed per shot from 3 to 1.
+* Reduced ammo required per shot from 3 to 1.
+* Reduced magazine size from {{Level0123|18|21|24|27}} to {{Level0123|6|7|8|10}}.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 17}}.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Increased fire rate from 1.2 to 1.35.
+* Reduced {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 1.1 to 0.75 seconds.
+* Removed {{ItemLink|Kinetic Feeder|text={{Epic|Kinetic Feeder}}}}.
+
+; {{ItemLink|Warriors|noText=yes}} [[March 29, 2022 Patch]]
+* Fixed issue where {{ItemLink|Choke Active Icon|noText=1}} Choke was disabled by default on {{Legendary|Fully Kitted}} Triple Take.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Introduced {{ItemLink|Kinetic Feeder|text={{Epic|Kinetic Feeder}}}}. Compatible with [[Peacekeeper]] and Triple Take.
+* Reduced damage per pellet from 23 to 21.
+* Removed projectile growth from bullets.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 12}}.
+
+; [[November 05, 2021 Patch]]
+* Reduced headshot damage multiplier from 2× to 1.75×.
+* ('''Undocumented''') Reduced fire rate from 1.3 to 1.2.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Increased {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 0.8 to 1.1 seconds.
+* Changed magazine size from {{Level0123|6|7|8|9}} to {{Level0123|18|21|24|27}}.
+* Increased ammo consumed per shot from 1 to 3.
+* Increased ammo required per shot from 1 to 3.
+
+; {{ItemLink|Season 10|noText=yes}} [[September 14, 2021 Patch]]
+* Reduced {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 1 to 0.8 seconds.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Changed weapon type from sniper rifle to marksman weapon.
+** No longer compatible with the {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}, {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}, and {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}} optics.
+* Changed ammo type from {{ItemLink|Sniper Ammo|text=Sniper}} to {{ItemLink|Energy Ammo|text=Energy}}.
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 63 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.
+* Changed magazine size from {{Level0123|6|7|8|9}} to 9.
+* Increased fire rate from 1.2 to 1.3.
+* Reduced {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 1.1 to 1 second.
+* Now maintains charge for a bit after exiting ADS instead of instantly losing it.
+* Reduced ADS movement speed penalty from -65% to -57.5%.
+* Increased spread of bullets while in the air and aiming down sights.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Reduced fire rate from 1.3 to 1.2.
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Reduced fire rate from 1.4 to 1.3.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Increased fire rate from 1.25 to 1.4.
+* Increased magazine size from {{Level0123|5|6|7|8}} to {{Level0123|6|7|8|9}}.
+* Integrated {{ItemLink|Precision Choke|text={{Epic|Precision Choke}}}} into the weapon. Can be toggled on/off.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 6}}.
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Added a new visual static effect on targets hit.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Changed ammo type from {{ItemLink|Energy Ammo|text=Energy}} to {{ItemLink|Sniper Ammo|text=Sniper}}.
+* Introduced {{ItemLink|Extended Sniper Mag|text=Extended Sniper Mags}}. Compatible with [[Longbow DMR]], [[Sentinel]], and Triple Take.
+* Changed magazine size from 7 to {{Level0123|5|6|7|8}}.
+* Improved iron sights accuracy.
+
+; {{ItemLink|Grand Soirée|noText=yes}} [[January 14, 2020 Patch]]
+* Removed {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}} as they got removed from the game.
+* Changed magazine size {{Level0123|5|6|7|8}} from to 7.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 3}}.
+
+; {{ItemLink|Voidwalker|noText=yes}} [[September 03, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}. Compatible with [[HAVOC Rifle]], [[Devotion LMG]], and Triple Take.
+* Changed magazine size from 5 to {{Level0123|5|6|7|8}}.
+* Reduced {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 1.5 to 1.1 seconds.
+
+; [[April 16, 2019 Patch]]
+* Increased legshot damage multiplier from 0.75× to 0.9×.
+* Reduced base weapon sway by about 33%.
+* Reduced base sway speed by about 25%.
+
+; [[March 06, 2019 Patch]]
+* Increased spawn rate in all zone tiers.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Dallas Doan Triple Take Abstract Idea 01.jpg|Concept art for the {{Legendary|Abstract Idea}} skin by Dallas Doan.<ref>[https://www.artstation.com/artwork/8eLXYE Dallas Doan on ArtStation]</ref>
+ConceptArt Dallas Doan Triple Take Abstract Idea 02.jpg
+ConceptArt Dallas Doan Triple Take Abstract Idea 03.jpg
+ConceptArt Dallas Doan Triple Take Abstract Idea 04.jpg
+ConceptArt Dallas Doan Triple Take Abstract Idea 05.jpg
+</gallery>
+
+
+== See also ==
+* [[Triple Take (Mobile)|Triple Take (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/D-2_Double_Take D-2 Double Take (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

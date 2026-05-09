@@ -1,0 +1,98 @@
+{{Tabs|
+{{Tabs2|Rampage LMG|Main}}
+{{Tabs1|Rampage LMG/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Rampage LMG
+| description = Revved Up LMGs can be charged up with Thermite.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Heavy Rounds
+| creator = [[File:Rampart Icon.svg|20px]] [[Rampart (character)|Rampart]] (Gunsmith)<ref>[https://www.ea.com/games/apex-legends/news/emergence-patch-notes Apex Legends - Emergence - Patch Notes]</ref><br/>SWCC (Manufacturer)
+| barrel = stabilizer
+| magType = heavy
+| optics = true
+| stock = standard
+| damageBody = 26
+| damageHead = 39 <small>(1.5×)</small>
+| damageLegs = 22 <small>(0.85×)</small>
+| rateOfFire = 300<br>[[File:Heavy Rounds Revved Up.svg|20px|Revved Up]] 390
+| dps = 130<br>[[File:Heavy Rounds Revved Up.svg|20px|Revved Up]] 169
+| magazineSize ={{Level0123|30|34|36|42}}
+| tacreload = 2.34
+| fullreload = 3
+}}
+The '''Rampage LMG''', or '''Rampage''', is a fully-automatic [[light machine gun]] introduced in {{ItemLink|Season 3 (Mobile)|text=Season 3}} that utilizes {{ItemLink|Heavy Rounds}}.
+
+The Rampage has a unique [[File:Heavy Rounds Revved Up.svg|20px|Revved Up]] Revved Up mechanic that consumes a {{ItemLink|Thermite Grenade}}. It takes 4 seconds to consume the Thermite, increasing the fire rate of the Rampage by 30% for 90 seconds, even though each shot decreases the remaining charge time by 2 seconds. In this state, the Rampage can also break doors in two shots, or one if the door was already damaged.
+
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG Ranger|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 26
+| headshotMdfr = 1.5
+| legMdfr = 0.85
+}}
+
+== Skins ==
+There are 8 skins for the Rampage LMG: 1 {{Eternal}}, 2 {{Legendary}}, 3 {{Epic}}, 2 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Illuminated Wings Rampage Mobile.png|{{Eternal|Illuminated Wings}}<br/>[[Royal Regiment]]
+Vampiric Jewel Rampage Mobile.png|{{Legendary|Vampiric Jewel}}
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Bound by Hades Rampage Mobile.png|{{Symbol|s3.5m}} {{Legendary|Bound by Hades}}<br/>Level 50
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Creature Feature Rampage Mobile.png|{{Epic|Creature Feature}}<br/>[[Awoken Nightmares]]
+Arrow Etched Rampage Mobile.png|{{Symbol|s3m}} {{Epic|Arrow Etched}}<br/>{{SeasonCurrency|3|9,000}}
+Call from Below Rampage Mobile.png|{{Symbol|s3.5m}} {{Epic|Call from Below}}<br/>{{SeasonCurrency|3.5|9,000}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Traveler's Leather Rampage Mobile.png|{{Rare|Traveler's Leather}}<br/>[[Secrets of the Tomb]]
+Majesty's Might Rampage Mobile.png|{{Rare|Majesty's Might}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Rampage Mobile.png|{{Common|Factory Issue}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{Symbol|s3m}} [[October 18, 2022 Patch (Mobile)|October 18, 2022]]
+* Introduced.
+}}
+
+== References ==
+<references />
+
+{{Nav-MobileWeapons}}

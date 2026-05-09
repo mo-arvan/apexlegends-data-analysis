@@ -1,0 +1,19 @@
+{
+  "title": "Mozambique Shotgun/Ol' Nessie",
+  "infobox": {
+    "name": "Ol' Nessie",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "You all laughed. Who's laughing now?",
+    "type": "Shotgun",
+    "fireModes": "Auto",
+    "ammoType": "Shotgun Shells",
+    "damageBody": "0The weapon itself does no damage, it's up to the nessies to do so.",
+    "damageLegs": "0",
+    "damageHead": "0",
+    "rateOfFire": "96",
+    "dps": "0",
+    "magazineSize": "2",
+    "tacReload": "2.28",
+    "fullReload": "2.88"
+  }
+}

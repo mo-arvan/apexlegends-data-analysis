@@ -1,0 +1,177 @@
+{{DISPLAYTITLE:Havoc Rifle (Mobile)}}
+{{MobileGameNotice|mainPage=HAVOC Rifle}}
+{{Infobox weapon
+| name = Havoc Rifle
+| image = HAVOC Rifle.png
+| icon = HAVOC Rifle Icon.svg
+| description = Full-auto charged energy rifle. Can only reach maximum rate of fire after charging up or equipped with Turbocharger hop-up.
+| type = Assault rifle
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Energy Ammo
+| creator = [[File:Siwhan Industries.svg|20px]] [[Siwhan Industries]]<br>[[File:Wonyeon.svg|20px]] [[Wonyeon]]
+| magType = energy
+| optics = true
+| stock = standard
+| hopup = turbo
+| damageBody = 18
+| damageHead = 32 <small>(1.75×)</small>
+| damageLegs = 15 <small>(0.85×)</small>
+| rateOfFire = 672
+| magazineSize = {{Level0123|26|30|34|38}}
+| reload = {{Level023|2.9|2.7|2.6}}
+}}
+
+The '''Havoc Rifle''', or '''Havoc''', is a fully-automatic [[assault rifle]] that utilizes {{ItemLink|Energy Ammo|text=Energy Ammo}}.
+
+Every time the fire button is pressed, there is a spin-up delay before the weapon starts shooting. The spin-up delay can be removed by equipping a {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} Hop-Up.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; [[Hop-Up]]
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}
+
+; Others
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+<references group="note" />
+
+=== Arenas ===
+{{Arenas weapon costs
+| basecost= 400
+| lvl1upgrade= 200
+| lvl1total= 600
+| lvl2upgrade= 350
+| lvl2total= 950
+| lvl3upgrade= 350
+| lvl3total= 1300
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Extended Energy Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || ✔
+|-
+| style="text-align:left;"| {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} || || || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} || || || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} || || || ✔ || ✔
+|}
+
+== Pros And Cons ==
+'''Pros'''
+
+* Largest magazine capacity of all Assault Rifles at 26 rounds by default
+* Same damage numbers as the Flatline.
+* Similar iron sights to the Wingman and RE-45 Auto.
+* Fastest TTK in the Assault Rifle category.
+
+'''Cons'''
+
+* Moderate fire-rate and a spin-up delay.
+** Turbocharger Hop-Up is required to remove spin-up delay.
+* Noticeably higher recoil than the Flatline.
+** Unable to accept barrel mods.
+* Uses a more uncommon ammo type, Energy Ammo, unlike the Flatline and Hemlok (which share Heavy Ammo), and the R-301 (which shares light ammo with several weapons.)
+
+== Skins ==
+There are a total of 19 skins for the Havoc Rifle: 2 {{Eternal}}, 1 {{Legendary}}, 9 {{Epic}}, 5 {{Rare}} and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Particle Saber Havoc Mobile.png|{{Eternal|Particle Saber}}<br/>[[Mecha Strike Go!]]
+Pride of the Principales Havoc Mobile.png|{{Eternal|Pride of the Principales}}<br/>[[Royal Regiment]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Authorized Personnel Only Havoc Mobile.png|{{Symbol|Prime Time}} {{Legendary|Authorized Personnel Only}}<br>Level 50
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Rune Breaker Havoc Mobile.png|{{Epic|Rune Breaker}}
+Lightning Strike Havoc Mobile.jpg|{{Symbol|Prime Time}} {{Epic|Lightning Strike}}<br/>{{SeasonCurrency|1|9,000}}
+Electrifying Finish Havoc Mobile.jpg|{{Epic|Electrifying Finish}}<br/>[[Glacial Games]]
+Aqua Volt Havoc Mobile.png|{{Symbol|Distortion}} {{Epic|Aqua Volt}}<br/>{{SeasonCurrency|2|9,000}}
+Stage Shock Havoc Mobile.jpg|{{Epic|Stage Shock}}<br/>[[Rhapsody's Underground]]
+Checkmate Havoc Mobile.jpg|{{Symbol|s2.5m}} {{Epic|Checkmate}}<br/>{{SeasonCurrency|2.5|9,000}}
+Bat Bite Havoc Mobile.png|{{Epic|Bat Bite}}<br/>[[Awoken Nightmares]]
+Spearmint Havoc Mobile.png|{{Epic|Spearmint}}
+Winter Fresh Havoc Mobile.png|{{Epic|Winter Fresh}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Snow Glare Havoc Mobile.png|{{Symbol|Cold Snap}} {{Rare|Snow Glare}}<br/>Level 10
+Satellite Launcher Havoc Mobile.png|{{Rare|Satellite Launcher}}
+Fulgid Flicker Havoc Mobile.png|{{Symbol|s3m}} {{Rare|Fulgid Flicker}}<br/>{{SeasonCurrency|3|4,000}}
+Eye for an Eye Havoc Mobile.png|{{Symbol|s3.5m}} {{Rare|Eye for an Eye}}<br/>Level 30
+Saturn's Ring Havoc Mobile.png|{{Symbol|s4m}} {{Rare|Saturn's Ring}}<br/>Level 30
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Havoc Mobile.png|{{Common|Factory Issue}}<br/>Default
+Cold Wave Havoc Mobile.png|{{Common|Cold Wave}}
+</gallery>
+</tabber>
+
+== Trivia ==
+* The Havoc has several visual similarities to the [https://titanfall.fandom.com/wiki/PR-01_Plasma_Railgun PR-01 Plasma Railgun] Titan weapon from the ''Titanfall'' series, such as a wind up time, a rotating magazine and magnetic rails which glow with the same color as the projectile.
+
+== See Also ==
+* [[HAVOC Rifle]]
+
+{{Nav-MobileWeapons}}
+[[Category:Weapons]]
+[[Category:Assault rifles]]
+[[Category:Mobile weapons]]

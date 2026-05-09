@@ -1,0 +1,31 @@
+{
+  "title": "Global Price Adjustment Update",
+  "summary": "An update on the upcoming global price adjustments for Apex Legends.",
+  "image": {
+    "type": "Image",
+    "name": "Apex_legends_keyart_16x9",
+    "description": null,
+    "alternateText": "Apex Legends keyart featuring the logo and legends such as Wraith, Loba and more.",
+    "ar1X1": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(1,1),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar2X1": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(2,1),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar2X3": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(2,3),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar3X1": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(3,1),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar3X4": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(3,4),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar4X3": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(4,3),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar9X16": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(9,16),xPosition=0.29140625,yPosition=0.22870370370370371",
+    "ar16X9": "https://drop-assets.ea.com/images/5wmwmxnYpzriVQWWNCSEja/ac52bc01414c673c0844456f7992cc1e/apex-price-change-key-art.jpg?im=AspectCrop=(16,9),xPosition=0.29140625,yPosition=0.22870370370370371"
+  },
+  "publishingDate": "2023-05-19T08:00:00.000-08:00",
+  "slug": "global-price-adjustment-update",
+  "type": "News Article",
+  "linkedTo": [
+    {
+      "type": "Game",
+      "slug": "apex-legends"
+    }
+  ],
+  "tags": [],
+  "body": "\nHey Legends,\n\nWe wanted to give you a heads up about some price changes that will take effect from June 1, 2023. We will occasionally reevaluate global pricing due to changing economic conditions and have decided to adjust prices for Apex Legends™.\n\nWhile some currencies won’t see any changes at this time (USD, EUR, JPY, HKD, INR, UAH, AED, VND), others will be seeing increases while other countries can expect price reductions to align with our goal of balancing prices across all currencies. For currencies that will see price increases, the team worked to ensure that the price increases for Apex Legends were fair and in line with economic conditions.\n\nThis price adjustment will only impact real money transactions for the purchase of Apex Coins and the cost to acquire in-game cosmetics will not change.\n\nWe will have an in-game event called Threat Level that will run from May 23rd through June 6th. Given the timing of this event, if you are planning on purchasing Apex Coins to get items for Threat Level, please note that the rollout for the price adjustment across all platforms will begin at 2 am PT and be completed by approximately 10 am PT on June 1st.For those currencies not listed, please check out your local store front or please visit [HELP.EA.COM](https://answers.ea.com/t5/News-Game-Updates/bd-p/apex-legends-news-en) for additional support.\n\n---\n\n[Play Apex Legends™ for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S, Nintendo Switch™, and PC via the EA app, Epic, and Steam. \n\nFollow Apex Legends on [Twitter](https://twitter.com/PlayApex) and [Instagram](https://www.instagram.com/playapex/), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).\n\nSign up for our [newsletter](https://www.ea.com/en-au/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.\n\nThis announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/en-au/service-updates).\n\n*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.\n",
+  "addonItem": null,
+  "meta": null
+}

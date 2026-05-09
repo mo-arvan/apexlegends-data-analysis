@@ -1,0 +1,449 @@
+{{Tabs|
+{{Tabs1|VK-47 Flatline|Main}}
+{{Tabs2|VK-47 Flatline/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = VK-47 Flatline
+| description = Full-auto with a punch.
+| type = Assault Rifle
+| fireModes = [[File:Auto Icon.svg|25px|Auto|link=]] Auto<br>[[File:Single-fire Icon.svg|25px|Single|link=]] Single
+| ammoType = Heavy Rounds
+| creator = {{ItemLink|Wonyeon}}
+| barrel =
+| magType = heavy
+| optics = true
+| stock = standard
+| hopup = accelerator
+| damageBody = 20
+| damageHead = 26
+| damageLegs = 15
+| rateOfFire = 600
+| dps = 200
+| magazineSize = {{Level0123|19|23|27|29}}
+| tacReload = {{Level0123|2.4|2.32|2.24|2.16}}
+| fullReload = {{Level0123|3.1|3|2.89|2.79}}
+}}
+
+The '''VK-47 Flatline''', or '''Flatline''', is an [[assault rifle]] that utilizes {{ItemLink|Heavy Rounds}}. It can be switched between fully-automatic and semi-automatic fire modes.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+
+
+; Others
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}}) 
+* {{ItemLink|Accelerator}} 
+*
+<br>
+<br>
+=== Damage Profile ===
+{{Damage profile
+| damage = 20
+| headshotMdfr = 1.3
+| legMdfr = 0.75
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_vinson</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 10
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | {{ItemLink|Anvil Receiver|noText=yes}} 2.9
+|-
+| projectile_launch_speed
+| style="text-align:center" | 24000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 609 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 6.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 8.5
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 9.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 9.5
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.25
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''Flatline'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Flatline'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''200''' enemies while ADS with the '''Flatline'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''250''' enemies with '''50''' meters away with the '''Flatline'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''700''' enemies with the '''Flatline'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The Flatline is a standard and beloved civilian firearm, used throughout the Frontier against predators of all species. Many Militia volunteers brought their personal Flatlines with them when they joined the ranks. Its harsh recoil makes it an inelegant piece of machinery, but its famous reliability and resilience ensure it will always have a place in Frontier life.}}
+
+The VK-47 Flatline is the successor to the [[Frontier War]]-era V-47 Flatline, although the changes made to the weapon aside from a different grip and a shorter exposed barrel are unknown.
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|37}}
+{{#vardefine:epicskin|23}}
+{{#vardefine:rareskin|39}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+{{#vardefine:ac3|{{Coins|500}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+<tabber>
+Legendary=
+<gallery widths="290" heights="125" mode="nolines">
+Supernova Flatline.png|{{Legendary|Supernova}}<br/>{{CraftingMetals|1,200}}
+Hazard Pay Flatline.png|{{Legendary|Hazard Pay}}<br/>{{CraftingMetals|1,200}}
+The Spine Chiller Flatline.png|{{Legendary|The Spine Chiller}}<br/>{{CraftingMetals|1,200}}
+The Lowrider Flatline.png|{{Legendary|The Lowrider}}<br/>{{CraftingMetals|1,200}}
+Revelations Flatline.png|{{Cosmetic|Gaiden|Legendary|Revelations}}<br/>{{CraftingMetals|1,200}}
+The Death Rattle Flatline.png|{{Cosmetic-NI|Recolor|Legendary|The Death Rattle}}<br/>Needs {{Legendary|The Spine Chiller}}
+Thorned Rose Flatline.png|{{Cosmetic-NI|Recolor|Legendary|Thorned Rose}}<br/>Needs {{Legendary|Hazard Pay}}
+Party Starter Flatline.png|{{Cosmetic-NI|Recolor|Legendary|Party Starter}}<br/>Needs {{Legendary|The Lowrider}}
+Harlequin Flatline.png|{{Cosmetic|Black Friday 2019|Legendary|Harlequin}}<br>{{#var:ac1}}
+Chooser of the Slain Flatline.png|{{Cosmetic|Lifeline Edition|Legendary|Chooser of the Slain}}
+Heavy Metal Flatline.png|{{Cosmetic|Season 4|Legendary|Heavy Metal}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+Heat Sink Flatline.png|{{Cosmetic|Season 4|Legendary|Heat Sink}}<ref group="note" name="reactive"/><br/>Level 110
+Cobalt Expanse Flatline.png|{{Cosmetic-NI|Recolor|Legendary|Cobalt Expanse}}<br/>Needs {{Legendary|Supernova}}
+Teal Zeal Flatline.png|{{Cosmetic|Lost Treasures|Legendary|Teal Zeal}}<br>{{#var:ac1}}
+Reaper's Touch Flatline.png|{{Cosmetic-NI|Recolor|Legendary|Reaper's Touch}}<br/>Needs {{Legendary|The Spine Chiller}}
+Slayers Lancer Flatline.png|{{Cosmetic|Champion Edition|Legendary|Slayer’s Lancer}}
+Chained Beast Flatline.png|{{Cosmetic|Season 8|Legendary|Chained Beast}}<br/>Level 1
+Cord Cutter Flatline.png|{{Cosmetic|Genesis|Legendary|Cord Cutter}}
+Captain's Plunder Flatline.png|{{Cosmetic|Raiders|Legendary|Captain's Plunder}}<br>{{#var:ac1}}
+Clenched Fist Flatline.png|{{Cosmetic|Warriors|Legendary|Clenched Fist}}<br>{{#var:ac1}}
+Hell Shell Flatline.png|{{Cosmetic|Fall Hunt Sale|Legendary|Hell Shell}}<br>{{#var:ac1}}
+Killer Carapace Flatline.png|{{Cosmetic|Beast of Prey|Legendary|Killer Carapace}}
+Molten Mayhem Flatline.png|{{Cosmetic|Spellbound|Legendary|Molten Mayhem}}<br>{{#var:ac1}}
+Splash Zone Flatline.png|{{Cosmetic|Sun Squad|Legendary|Splash Zone}}<br>[[File:Sale Icon.svg|22px|link=Golden Week (2024)]]
+Transistor Flatline.png|{{Cosmetic|Neon Network |Legendary|Transistor}}<br>{{#var:ac1}}
+Full Dusk Flatline.png|{{Cosmetic|Uprising|Legendary|Full Dusk}}<br>{{#var:ac1}}
+Top Tier Flatline.png|{{Cosmetic|Season 20|Legendary|Top Tier}}<ref group="note" name="reactive"/><br>Breakout Reward
+Pointed Question Flatline.png|[[File:Sale Icon.svg|22px|link=Poly Prowler Store]] {{Epic|Pointed Question}}<br>{{#var:ac1}}
+Purple Origins Flatline.png|[[File:Sale Icon.svg|22px|link=Golden Week (2024)]] {{Legendary|Purple Origins}}
+Overheat Flatline.png|{{Legendary|Overheat}}<ref group="note" name="reactive"/><br>[[File:Exotic Shards.svg|22px|link=Store#Exotic Shop]] 50
+Triple Killz Flatline.png|[[File:Sale Icon.svg|22px|link=Galactic Sports Store]] {{Legendary|Triple Killz}}<br>{{#var:ac1}}
+Cassette Closer Flatline.png|{{Cosmetic|S22|Legendary|Cassette Closer}}<br>Split 2 Premium Lv 30
+Shatterline Flatline.png|{{Cosmetic|Void Mercenaries|Legendary|Shatterline}}
+Moonless Night Flatline.png|{{Cosmetic|Lunar Rebirth|Legendary|Moonless Night}}
+Streamline Flatline.png|{{Cosmetic|6th Anniversary|Legendary|Streamline}}
+Sunstorm Flatline.png|{{Cosmetic|Fight Force|Legendary|Sunstorm}}
+Fatal Riches Flatline.png|{{Cosmetic|Death by Design|Legendary|Fatal Riches}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="125" mode="nolines">
+Eye of the Storm Flatline.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Flatline.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Flatline.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Flatline.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Flatline.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+In The Game Flatline.png|{{Cosmetic-NI|Origin Access|Epic|In the Game}}
+Greenback Flatline.png|{{Cosmetic-NI|EA Access|Epic|Greenback}}
+Goldmine Gremlin Flatline.png|{{Cosmetic|Legendary Hunt|Epic|Goldmine Gremlin}}<br>{{#var:ac2}}
+Hallow's Eve Flatline.png|{{Cosmetic|Fight or Fright 2019|Epic|Hallow's Eve}}<br>{{#var:ac2}}
+Special Delivery Flatline.png|{{Cosmetic|Holo-Day Bash 2019|Epic|Special Delivery}}<br>{{#var:ac2}}
+Ancient Predator Flatline.png|{{Cosmetic|Season 5|Epic|Ancient Predator}}<br>{{ItemLink|Treasure Pack|link=The Broken Ghost|text={{Heirloom|Treasure Pack #45}}}}
+Flashpoint Flatline.png|{{Cosmetic|Aftermarket|Epic|Flashpoint}}<br>{{#var:ac2}}
+Blood Legacy Flatline.png|{{Cosmetic|Season 9|Epic|Blood Legacy}}<br>Level 99
+Aqua Flow Flatline.png|{{Cosmetic|Evolution|Epic|Aqua Flow}}<br>{{#var:ac2}}
+Glyph Shot Flatline.png|{{Cosmetic|Harbingers|Epic|Glyph Shot}}<br>{{#var:ac2}}
+Camo Threat Flatline.png|{{Cosmetic|Camo Credits|Epic|Camo Threat}}
+Tailored Triggerman Flatline.png|{{Cosmetic|Shadow Society|Epic|Tailored Triggerman}}<br>Week 3 - 600 Reputation
+Live Wire Flatline.png|[[File:Sale Icon.svg|22px|link=Molten Mayhem Store]] {{Epic|Live Wire}}<br>{{#var:ac2}}
+Personal Touch Flatline.png|{{Cosmetic|Season 22|Epic|Personal Touch}}<br>Split 1 Premium Lv 35
+Outfoxed Flatline.png|{{Cosmetic|S23|Epic|Outfoxed}}<br>Split 2 Premium Lv 54
+Starfall Flatline.png|{{Cosmetic|Astral Anomaly|Epic|Starfall}}
+Artistic License Flatline.png|{{Cosmetic|S25|Epic|Artistic License}}<br>Split 2 Premium Lv 8
+Love Pulse Flatline.png|{{Symbol|S27}} {{Epic|Love Pulse}}<br> Split 1 Premium Lv 23
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="125" mode="nolines">
+Chaos Theory Flatline.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Flatline.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Flatline.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Flatline.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Flatline.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Flatline.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Flatline.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Flatline.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Flatline.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Flatline.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Flatline.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Flatline.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Flatline.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Flatline.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Flatline.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Navigator Flatline.png|{{Cosmetic|Season 1|Rare|Navigator}}<br/>Level 39
+Deep Blue Flatline.png|{{Cosmetic-NI|PlayStation+ Pack|Rare|Deep Blue}}<ref group="note">Was originally named "Greatness Awaits".</ref><br/>Season 1
+Shell Game Flatline.png|{{Cosmetic|Season 2|Rare|Shell Game}}<br/>Level 33
+Green Lagoon Flatline.png|{{Cosmetic|Season 3|Rare|Green Lagoon}}<br/>Level 64
+Circuitry Flatline.png|{{Cosmetic|Season 4|Rare|Circuitry}}<br/>Level 59
+Scarlet Temperament Flatline.png|{{Cosmetic|Season 5|Rare|Scarlet Temperament}}<br/>Level 31
+Spray Coat Flatline.png|{{Cosmetic|Season 6|Rare|Spray Coat}}<br/>Level 40
+Parallax Flatline.png|{{Cosmetic|Season 7|Rare|Parallax}}<br/>Level 56
+Caramelized Flatline.png|{{Cosmetic|Fight Night|Rare|Caramelized}}<br>{{#var:ac3}}
+Aftershock Flatline.png|{{Cosmetic|Season 8|Rare|Aftershock}}<br/>Level 17
+Coin Flip Flatline.png|{{Cosmetic|Season 9|Rare|Coin Flip}}<br/>Level 15
+Temporal Scale Flatline.png|{{Cosmetic|Season 10|Rare|Temporal Scale}}<br/>Level 28
+Gridlock Flatline.png|{{Cosmetic|Season 11|Rare|Gridlock}}<br/>Level 89
+Ghost Writer Flatline.png|{{Cosmetic|Season 12|Rare|Ghost Writer}}<br/>Level 52
+Jeweled Night Flatline.png|{{Cosmetic|ALGS Playoffs 2022|Rare|Jeweled Night}}
+Gilded Lineage Flatline.png|{{Cosmetic|Season 13|Rare|Gilded Lineage}}<br/>Level 58
+Jade Tiger Flatline.png|{{Cosmetic|Season 14|Rare|Jade Tiger}}<br/>Level 20
+Overachiever Flatline.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Overachiever}}<br/>August 2022
+Bloodstained Glass Flatline.png|{{Cosmetic|Season 15|Rare|Bloodstained Glass}}<br/>Level 25
+Cosmic Vectors Flatline.png|{{Symbol|Season 16}} {{Rare|Cosmic Vectors}}<br>Level 94
+Space Circuit Flatline.png|{{Symbol|Season 17}} {{Rare|Space Circuit}}<br>Level 23
+Emblematic Flatline.png|{{Symbol|Season 18}} {{Rare|Emblematic}}<br>Level 26
+Net Lethal Flatline.png|{{Cosmetic|PS+|Rare|Net Lethal}}<br>Season 18
+Blighted Gemstone Flatline.png|{{Symbol|Season 21}} {{Rare|Blighted Gemstone}}<br>Level 72
+</gallery>
+<references group="note"/>
+
+|-|
+
+Common=
+<gallery widths="290" heights="125" mode="nolines">
+Factory Issue Flatline.png|{{Common|Factory Issue}}<br/>Default
+Midnight Flatline.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Flatline.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Flatline.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Flatline.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Flatline.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Flatline.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Flatline.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Flatline.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Flatline.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Flatline.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Flatline.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Flatline.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Flatline.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Flatline.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Flatline.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Winter Wipeout}} [[January 06, 2026 Patch]]
+* Damage increased to 20 (was 19).
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 19 (was 18).
+* Headshot damage: 25.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Reduced magazine size from {{Level0123|20|25|28|30}} to {{Level0123|19|23|27|29}}.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 17}}.
+
+
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* ('''Undocumented''') Changed full reload animation.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+* Increased hipfire spread when standing from 3 to 6.5.
+* Increased hipfire spread when crouching from 2.4 to 5.
+* Increased hipfire spread when moving from 6.6 to 8.5.
+* Increased hipfire spread when running from 8.4 to 9.5.
+* Increased hipfire spread when in midair from 8.4 to 9.5.
+
+
+; {{ItemLink|Spellbound|noText=yes}} [[January 10, 2023 Patch]]
+* Reduced {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}} legshot damage multiplier from ×0.9 to ×0.75.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Added {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with [[R-301 Carbine]] and VK-47 Flatline.
+* ('''Undocumented''') Increased {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}} damage multiplier from ×2.25 to ×2.4.
+
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Updated iron sights for the {{ItemLink|Season 4|noText=Yes}} {{Legendary|Heavy Metal}}, {{ItemLink|Season 4|noText=Yes}} {{Legendary|Heat Sink}}, and {{ItemLink|Gaiden|noText=Yes}} {{Legendary|Revelations}} skins.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+* Reduced damage from 19 to 18.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 10}}.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Reduced headshot multiplier from ×2 to ×1.75.
+* Removed parts of the iron sights which were displayed over the whole weapon.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Added {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with [[R-301 Carbine]] and VK-47 Flatline.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 6}}.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+* Fixed bug for cases where full-auto would be disabled with {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}} equipped.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Introduced {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with [[R-301 Carbine]] and VK-47 Flatline.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 3}}.
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Increased damage from 16 to 19.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 2}}.
+
+
+; [[May 20, 2019 Patch]]
+* Fixed missing or quiet out of ammo trigger click sound and low ammo (the progressive change in sound that the gun makes as the magazine approaches empty) sounds.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+Flatline Concept Art.jpg|Concept art for the Flatline.<ref>[https://www.artstation.com/artwork/Bmy1Yr Danny Gardner on ArtStation]</ref>
+ConceptArt Gadget-Bot Teal Zeal Flatline.jpg|Concept art for the {{Cosmetic|Lost Treasures|Legendary|Teal Zeal}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/mDAVq8 Gadget-Bot Productions on ArtStation]</ref>
+ConceptArt Gadget-Bot Chained Beast Flatline.jpg|Concept art for the {{Cosmetic|Season 8|Legendary|Chained Beast}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/18d3XL Gadget-Bot Productions on ArtStation]</ref>
+Revelations Flatline Concept Art.jpg|Concept art for the {{Legendary|Revelations}} skin.<ref>[https://www.artstation.com/artwork/zDZDzL Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The "V" in the weapon's model number means, following what the weapon ID says, "Vinson". Whether or not this means that [[Vinson Dynamics]] had contributed in the creation or design of the weapon, or if it's just a reference of the [[Respawn Entertainment]] developer of the same name, is unknown.
+* The {{ItemLink|Season 4|noText=yes}} {{Legendary|Heavy Metal}} and {{ItemLink|Season 4|noText=yes}} {{Legendary|Heat Sink}} skins are weapon mods designed by [[Rampart]], indicated by the presence of a Rampart Mods logo.
+* The Flatline is the first weapon to have a recolored reactive skin being available outside of a Collection Event.
+<br>
+<br>
+== See also ==
+* [[VK-47 Flatline (Mobile)|Flatline (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/V-47_Flatline V-47 Flatline (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

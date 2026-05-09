@@ -1,0 +1,409 @@
+{{MainGameNotice|mobilePage=Supply Drop Weapon (Mobile)}}
+
+'''Supply Drop Weapons''' are [[weapon]]s that can only be found in [[Care Package]]s. Being essentially [[Fully Kitted Weapon]]s, they are equipped with all their best [[attachments]] which cannot be removed, except for the [[Optic]]. If the weapon is dropped, the Optic still stays on the weapon. Supply Drop Weapons may also receive adequate improvements, whether through direct changes to their statistics or through {{ItemLink|Hop-Up|image=Hop Up Slot.svg|text=Hop-Ups}}, in order to make them stronger than when they were on [[Loot|ground loot]].
+
+Supply Drop Weapons always come in {{Mythic}} rarity.
+
+
+== Available Supply Drop Weapons ==
+<gallery widths="200" heights="50" class="invert-image" style="text-align:center; width:75%" mode="nolines" caption="{{Mythic|Supply Drop Weapons}} in [[File:Season 24.svg|50px|link=Season 24]] [[Season 24]]">
+Bocek Compound Bow Icon.svg|[[Bocek Compound Bow]] {{ItemLink|Shatter Caps|noText=yes}}
+HAVOC Rifle Icon.svg|[[HAVOC Rifle]] {{ItemLink|Turbocharger|noText=yes}} {{ItemLink|Selectfire Receiver|noText=yes}}
+Kraber .50-Cal Sniper Icon.svg|[[Kraber .50-Cal Sniper]]
+Peacekeeper Icon.svg|[[Peacekeeper]]
+</gallery>
+
+{| class="wikitable mw-collapsible mw-collapsed invert-image" style="width:75%"
+! colspan="6" | Previously Available
+|-
+| style="text-align:center;" colspan="6" | '''Note:''' the {{ItemLink|Kraber .50-Cal Sniper|image=Kraber .50-Cal Sniper Icon.svg}} has never left the Care Package, appearing there in every Season, and is therefore not listed in this table.
+|-
+! Season !! Weapons !! Season !! Weapons !! Season !! Weapons
+|-
+| style="text-align:center; width:100px" | [[File:Season 23.svg|65px|link=Season 22]]<br/>'''[[Season 23]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|HAVOC Rifle|image=HAVOC Rifle Icon.svg}} {{ItemLink|Turbocharger|noText=yes}} {{ItemLink|Selectfire Receiver|noText=yes}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 22.svg|65px|link=Season 22]]<br/>'''[[Season 22]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} {{ItemLink|Turbocharger|noText=yes}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 21.svg|65px|link=Season 21]]<br/>'''[[Season 21]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} {{ItemLink|Turbocharger|noText=yes}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}} {{ItemLink|Hammerpoint Rounds|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 20.svg|65px|link=Season 20]]<br/>'''[[Season 20]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|EVA-8 Auto|image=EVA-8 Auto Icon.svg}} {{ItemLink|Hammerpoint Rounds|noText=yes}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}} {{ItemLink|Skullpiercer Elite|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 19.svg|65px|link=Season 19]]<br/>'''[[Season 19]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}}
+* {{ItemLink|Wingman|image=Wingman Icon.svg}} {{ItemLink|Skullpiercer Elite|noText=yes}} {{ItemLink|Boosted Loader|noText=yes}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 18.svg|65px|link=Season 18]]<br/>'''[[Season 18]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 17.svg|65px|link=Season 17]]<br/>'''[[Season 17]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}} {{ItemLink|Boosted Loader|noText=yes}}
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 16.svg|65px|link=Season 16]]<br/>'''[[Season 16]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Hemlok Burst AR|image=Hemlok Burst AR Icon.svg}} {{ItemLink|Boosted Loader|noText=yes}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 15.svg|65px|link=Season 15]]<br/>'''[[Season 15]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}}
+* {{ItemLink|RE-45 Auto|image=RE-45 Auto Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 14.svg|65px|link=Season 14]]<br/>'''[[Season 14]]'''
+|
+* {{ItemLink|Bocek Compound Bow|image=Bocek Compound Bow Icon.svg}} {{ItemLink|Shatter Caps|noText=yes}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+* {{ItemLink|Rampage LMG|image=Rampage LMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 13.svg|65px|link=Season 13]]<br/>'''[[Season 13]]'''
+|
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} {{ItemLink|Double Tap Trigger|noText=yes}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}} {{ItemLink|Dual Shell|noText=yes}}
+* {{ItemLink|Volt SMG|image=Volt SMG Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 12.svg|65px|link=Season 12]]<br/>'''[[Season 12]]'''
+|
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} {{ItemLink|Double Tap Trigger|noText=yes}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|Volt SMG|image=Volt SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 11.svg|65px|link=Season 11]]<br/>'''[[Season 11]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+* {{ItemLink|G7 Scout|image=G7 Scout Icon.svg}} {{ItemLink|Double Tap Trigger|noText=yes}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 10.svg|65px|link=Season 10]]<br/>'''[[Season 10]]'''
+|
+* {{ItemLink|Alternator SMG|image=Alternator SMG Icon.svg}} {{ItemLink|Disruptor Rounds|noText=yes}}
+* {{ItemLink|M600 Spitfire|image=M600 Spitfire Icon.svg}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 9.svg|65px|link=Season 9]]<br/>'''[[Season 9]]'''
+|
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}}
+* {{ItemLink|Triple Take|image=Triple Take Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 8.svg|65px|link=Season 8]]<br/>'''[[Season 8]]'''
+|
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}}
+| style="text-align:center; width:100px" | [[File:Season 7.svg|65px|link=Season 7]]<br/>'''[[Season 7]]'''
+|
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|Prowler Burst PDW|image=Prowler Burst PDW Icon.svg}} {{ItemLink|Selectfire Receiver|noText=yes}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 6.svg|65px|link=Season 6]]<br/>'''[[Season 6]]'''
+|
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+* {{ItemLink|R-99 SMG|image=R-99 SMG Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 5.svg|65px|link=Season 5]]<br/>'''[[Season 5]]'''
+|
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} {{ItemLink|Turbocharger|noText=yes}}
+* {{ItemLink|Peacekeeper|image=Peacekeeper Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 4.svg|65px|link=Season 4]]<br/>'''[[Season 4]]'''
+|
+* {{ItemLink|Devotion LMG|image=Devotion LMG Icon.svg}} {{ItemLink|Turbocharger|noText=yes}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+|-
+| style="text-align:center; width:100px" | [[File:Season 3.svg|65px|link=Season 3]]<br/>'''[[Season 3]]'''
+|
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 2.svg|65px|link=Season 2]]<br/>'''[[Season 2]]'''
+|
+* {{ItemLink|L-STAR EMG|image=L-STAR EMG Icon.svg}}
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+| style="text-align:center; width:100px" | [[File:Season 1.svg|65px|link=Season 1]]<br/>'''[[Season 1]]'''
+|
+* {{ItemLink|Mastiff Shotgun|image=Mastiff Shotgun Icon.svg}}
+|}
+
+
+{| class="wikitable mw-collapsible sortable" style="text-align:center; width:70%"
+|+ Seasonal {{Mythic|Supply Drop Weapons}} Rotation
+|-
+! Weapon !! Total !! [[Season 1|01]] !! [[Season 2|02]] !! [[Season 3|03]] !! [[Season 4|04]] !! [[Season 5|05]] !! [[Season 6|06]] !! [[Season 7|07]] !! [[Season 8|08]] !! [[Season 9|09]] !! [[Season 10|10]] !! [[Season 11|11]]!! [[Season 12|12]] !! [[Season 13|13]] !! [[Season 14|14]] !! [[Season 15|15]] !! [[Season 16|16]] !! [[Season 17|17]] !! [[Season 18|18]] !! [[Season 19|19]] !! [[Season 20|20]] !! [[Season 21|21]] !! [[Season 22|22]] !! [[Season 23|23]] !! [[Season 24|24]]
+|-
+| style="text-align:left;"| [[File:Alternator SMG Icon.svg|x20px|link=]] [[Alternator]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Devotion LMG Icon.svg|x20px|link=]] [[Devotion]]
+| 4
+|  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||
+|-
+| style="text-align:left;"| [[File:EVA-8 Auto Icon.svg|x20px|link=]] [[EVA-8]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||
+|-
+| style="text-align:left;"| [[File:VK-47 Flatline Icon.svg|x20px|link=]] [[Flatline]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:G7 Scout Icon.svg|x20px|link=]] [[G7 Scout]]
+| 3
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Hemlok Burst AR Icon.svg|x20px|link=]] [[Hemlok]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Kraber .50-Cal Sniper Icon.svg|x20px|link=]] [[Kraber]]
+| 24
+| ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓
+|-
+| style="text-align:left;"| [[File:Longbow DMR Icon.svg|x20px|link=]] [[Longbow]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Mastiff Shotgun Icon.svg|x20px|link=]] [[Mastiff]]
+| 6
+| ✓ || ✓ || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Mozambique Shotgun Icon.svg|x20px|link=]] [[Mozambique]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:P2020 Icon.svg|x20px|link=]] [[P2020]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Peacekeeper Icon.svg|x20px|link=]] [[Peacekeeper]]
+| 5
+|  ||  ||  ||  || ✓ || ✓ || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓
+|-
+| style="text-align:left;"| [[File:Prowler Burst PDW Icon.svg|x20px|link=]] [[Prowler]]
+| 5
+|  ||  ||  ||  ||  ||  || ✓ || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:R-301 Carbine Icon.svg|x20px|link=]] [[R-301]]
+| 0
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:R-99 SMG Icon.svg|x20px|link=]] [[R-99]]
+| 3
+|  ||  ||  ||  ||  || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||
+|-
+| style="text-align:left;"| [[File:RE-45 Auto Icon.svg|x20px|link=]] [[RE-45]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:M600 Spitfire Icon.svg|x20px|link=]] [[Spitfire]]
+| 3
+|  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Triple Take Icon.svg|x20px|link=]] [[Triple Take]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Wingman Icon.svg|x20px|link=]] [[Wingman]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:HAVOC Rifle Icon.svg|x20px|link=]] [[HAVOC]]
+| 2
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓
+|-
+| style="text-align:left;"| [[File:L-STAR EMG Icon.svg|x20px|link=]] [[L-STAR]]
+| 4
+| style="background-color:rgba(0, 0, 0, 0.05);" | 
+| ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Charge Rifle Icon.svg|x20px|link=]] [[Charge Rifle]]
+| 0
+| colspan="2" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Sentinel Icon.svg|x20px|link=]] [[Sentinel]]
+| 0
+| colspan="3" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Volt SMG Icon.svg|x20px|link=]] [[Volt]]
+| 2
+| colspan="5" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:30-30 Repeater Icon.svg|x20px|link=]] [[30-30]]
+| 0
+| colspan="7" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Bocek Compound Bow Icon.svg|x20px|link=]] [[Bocek]]
+| 11
+| colspan="8" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓
+|-
+| style="text-align:left;"| [[File:Rampage LMG Icon.svg|x20px|link=]] [[Rampage]]
+| 2
+| colspan="9" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  || ✓ || ✓ ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:C.A.R. SMG Icon.svg|x20px|link=]] [[CAR]]
+| 0
+| colspan="10" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+|-
+| style="text-align:left;"| [[File:Nemesis Burst AR Icon.svg|x20px|link=]] [[Nemesis]]
+| 0
+| colspan="15" style="background-color:rgba(0, 0, 0, 0.05);" | 
+|  ||  ||  ||  ||  ||  ||  ||  ||
+|}
+
+== History == <!-- List only changes that affect the weapons themselves like rotation, ammo, attachments... -->
+{{Patch notes|
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Replaced [[Devotion LMG]] with [[HAVOC Rifle|{{Mythic|HAVOC Rifle}}]]. Comes with 288 {{ItemLink|Mythic Light Rounds|text=Ammo}}, {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}, and {{ItemLink|Selectfire Receiver|text={{Legendary|Selectfire Receiver}}}}.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Replaced [[EVA-8 Auto]] with [[R-99 SMG|{{Mythic|R-99 SMG}}]]. Comes with 240 {{ItemLink|Mythic Light Rounds|text=Ammo}}.
+* Added {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}} to [[Devotion LMG|{{Mythic|Devotion LMG}}]].
+
+
+; {{ItemLink|Season 21|noText=yes}} [[May 07, 2024 Patch]]
+* Replaced [[Wingman]] with [[Devotion LMG|{{Mythic|Devotion LMG}}]]. Comes with 324 {{ItemLink|Mythic Energy Ammo|text=Ammo}} and {{ItemLink|Turbocharger|text={{Epic|Turbocharger}}}}.
+* Changed [[EVA-8 Auto|{{Mythic|EVA-8 Auto}}]]'s optic from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+
+
+; [[February 16, 2023 Patch]]
+* Removed [[Wingman|{{Mythic|Wingman}}]]'s {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}.
+* Changed {{Mythic|Wingman}}'s optic from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+* {{Mythic|Wingman}}'s optics can no longer be removed or swapped.
+* Reduced {{Mythic|Wingman}}'s {{ItemLink|Mythic Sniper Ammo|text=Ammo}} from 119 to 99.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Replaced [[Prowler Burst PDW]] with [[EVA-8 Auto|{{Mythic|EVA-8 Auto}}]]. Comes with 96 {{ItemLink|Mythic Shotgun Shells|text=Ammo}} and {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Replaced [[L-STAR EMG]] with [[Wingman|{{Mythic|Wingman}}]]. Comes with 119 {{ItemLink|Mythic Sniper Ammo|text=Ammo}}, {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}, and {{ItemLink|Skullpiercer Elite|text={{Legendary|Skullpiercer Elite}}}}.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Replaced [[Hemlok Burst AR]] with [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]. Comes with 245 {{ItemLink|Mythic Heavy Rounds|text=Ammo}} and {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Replaced [[RE-45 Auto]] with [[L-STAR EMG|{{Mythic|L-STAR EMG}}]]. Comes with 324 {{ItemLink|Mythic Energy Ammo|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+* Changed {{Mythic|L-STAR}}'s optic from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Replaced [[Rampage LMG]] with [[Hemlok Burst AR|{{Mythic|Hemlok Burst AR}}]]. Comes with 240 {{ItemLink|Mythic Heavy Rounds|text=Ammo}} and {{ItemLink|Boosted Loader|text={{Epic|Boosted Loader}}}}.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Replaced [[Mastiff Shotgun]] with [[RE-45 Auto|{{Mythic|RE-45 Auto}}]]. Comes with 225 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+* [[Rampage LMG|{{Mythic|Rampage LMG}}]] is now [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up when found inside Care Packages.
+** Removed {{ItemLink|Thermite Grenade}} from the Care Package slot containing the {{Mythic|Rampage}}.
+
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Reduced [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]'s {{ItemLink|Mythic Arrows|text=Ammo}} from 80 to 60.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Replaced [[G7 Scout]] and [[Volt SMG]] with [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]] and [[Rampage LMG|{{Mythic|Rampage LMG}}]].
+** {{Mythic|Bocek}} comes with 32 {{ItemLink|Mythic Arrows|text=Ammo}} and {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}.
+** {{Mythic|Rampage}} comes with 220 {{ItemLink|Mythic Heavy Rounds|text=Ammo}}, and a {{ItemLink|Thermite Grenade}} spawns in the same Care Package slot.
+* Removed [[Mastiff Shotgun|{{Mythic|Mastiff Shotgun}}]]'s {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Replaced [[M600 Spitfire]] with [[Mastiff Shotgun|{{Mythic|Mastiff Shotgun}}]]. Comes with 32 {{ItemLink|Mythic Shotgun Shells|text=Ammo}} and {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]] 
+* Replaced [[Alternator SMG]] with [[Volt SMG|{{Mythic|Volt SMG}}]]. Comes with 238 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.
+
+
+; {{ItemLink|Warriors|noText=yes}} [[March 29, 2022 Patch]]
+* Increased [[G7 Scout|{{Mythic|G7 Scout}}]]'s {{ItemLink|Mythic Light Rounds|text=Ammo}} from 120 to 140.
+
+
+; [[November 05, 2021 Patch]]
+* Increased [[G7 Scout|{{Mythic|G7 Scout}}]]'s {{ItemLink|Mythic Light Rounds|text=Ammo}} from 100 to 120.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]] 
+* Replaced [[Triple Take]] with [[G7 Scout|{{Mythic|G7 Scout}}]]. Comes with 100 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}}.
+* Changed [[Alternator SMG|{{Mythic|Alternator SMG}}]] and [[M600 Spitfire|{{Mythic|M600 Spitfire}}]]'s {{ItemLink|Barrel Stabilizer|text=Barrel Stabilizers}} from {{Legendary}} to {{Epic}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Replaced [[Prowler Burst PDW]] with [[Alternator SMG|{{Mythic|Alternator SMG}}]] and [[M600 Spitfire|{{Mythic|M600 Spitfire}}]].
+** {{Mythic|Alternator}} comes with 210 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+** {{Mythic|Spitfire}} comes with 300 {{ItemLink|Mythic Heavy Rounds|text=Ammo}}.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Replaced [[Peacekeeper]] with [[Triple Take|{{Mythic|Triple Take}}]]. Comes with 72 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapon]]s and {{Mythic|Supply Drop Weapons}} optics can now be swapped or removed.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Changed [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]'s {{ItemLink|Extended Heavy Mag}} from {{Epic}} to {{Legendary}}.
+
+
+; {{ItemLink|Fight Night|noText=yes}} [[January 05, 2021 Patch]]
+* Increased [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]'s {{ItemLink|Mythic Heavy Rounds|text=Ammo}} from 210 to 245.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Replaced [[R-99 SMG]] with [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]. Comes with 210 {{ItemLink|Mythic Heavy Rounds|text=Ammo}} and {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Changed rarity from {{Legendary}} to {{Mythic}}.
+* Replaced [[Devotion LMG]] with [[R-99 SMG|{{Mythic|R-99 SMG}}]]. Comes with 192 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Replaced [[Mastiff Shotgun]] with [[Peacekeeper|{{Legendary|Peacekeeper}}]]. Comes with 25 {{ItemLink|Mythic Shotgun Shells|text=Ammo}} and {{ItemLink|Precision Choke|text={{Epic|Precision Choke}}}}.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Replaced [[L-STAR EMG]] with [[Devotion LMG|{{Legendary|Devotion LMG}}]]. Comes with 220 {{ItemLink|Mythic Energy Ammo|text=Ammo}} and {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Changed [[L-STAR EMG|{{Legendary|L-STAR EMG}}]]'s optic from none to {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}.
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced [[L-STAR EMG]], as a {{Legendary|Supply Drop Weapon}}. Comes with 120 {{ItemLink|Mythic Energy Ammo|text=Ammo}}.}}
+
+
+== Trivia ==
+* The [[Kraber]] has never left the Care Package.
+* Before {{ItemLink|Season 6}}, in {{ItemLink|Battle Royale}}, {{Mythic|Supply Drop Weapons}} had a golden color just like Fully Kitted Weapons. The term "gold weapon" could refer to either, and they both spawned in [[Gold Rush Duos]], a Limited Time Mode with only gold weapons. [[Respawn Entertainment|The developers]] later upgraded the rarity and of Supply Drop Weapons from {{Legendary}} (gold) to {{Mythic}} (red) to differentiate the two.
+
+
+== See Also ==
+* [[Care Package]]
+* [[Hop-Up]]
+
+
+{{Nav-Weapons}}
+[[Category:Weapons]][[Category:Gameplay mechanics]]

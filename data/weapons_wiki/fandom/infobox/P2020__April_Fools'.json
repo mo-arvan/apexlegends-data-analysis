@@ -1,0 +1,19 @@
+{
+  "title": "P2020/April Fools'",
+  "infobox": {
+    "name": "P2020",
+    "image": "P2020.png",
+    "icon": "P2020 Icon.svg",
+    "description": "Semi-auto pistol.",
+    "type": "Pistol",
+    "fireModes": "Single",
+    "ammoType": "Light Rounds",
+    "damageBody": "24",
+    "damageLegs": "21 (0.9×)",
+    "damageHead": "36 (1.50×)",
+    "rateOfFire": "510",
+    "dps": "108",
+    "magazineSize": "25",
+    "reload": "1.13"
+  }
+}

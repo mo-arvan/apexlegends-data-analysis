@@ -1,0 +1,197 @@
+{{Mythic|Supply Drop Weapons}} are {{Mythic}}-tier [[weapon]]s that can only be found in [[Care Package]]s. These weapons come with a limited amount of [[Ammo]], and most of them are equipped with their highest tier of [[Attachment]]s that cannot be removed from the weapon, along with removable [[Optics]]. 
+
+==Available Supply Drop Weapons==
+<tabber>
+Main=
+{| class="wikitable"
+|-
+! Season !! Weapons
+|-
+| style="text-align:center; width: 100px"| [[File:Season 19.svg|65px|link=Season 19]]<br/>'''[[Season 19]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]
+* [[Wingman|{{Mythic|Wingman}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 18.svg|65px|link=Season 18]]<br/>'''[[Season 18]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]
+* [[L-STAR EMG|{{Mythic|L-STAR EMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 17.svg|65px|link=Season 17]]<br/>'''[[Season 17]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Hemlok Burst AR|{{Mythic|Hemlok Burst AR}}]]
+* [[L-STAR EMG|{{Mythic|L-STAR EMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 16.svg|65px|link=Season 16]]<br/>'''[[Season 16]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[RE-45|{{Mythic|RE-45}}]]
+* [[Hemlok Burst AR|{{Mythic|Hemlok Burst AR}}]]
+|-
+|-
+| style="text-align:center; width: 100px"| [[File:Season 15.svg|65px|link=Season 15]]<br/>'''[[Season 15]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[RE-45|{{Mythic|RE-45}}]]
+* [[Rampage LMG|{{Mythic|Rampage LMG}}]]
+|-
+|-
+| style="text-align:center; width: 100px"| [[File:Season 14.svg|65px|link=Season 14]]<br/>'''[[Season 14]]'''
+|
+* [[Bocek Compound Bow|{{Mythic|Bocek Compound Bow}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Mastiff Shotgun|{{Mythic|Mastiff Shotgun}}]]
+* [[Rampage LMG|{{Mythic|Rampage LMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 13.svg|65px|link=Season 13]]<br/>'''[[Season 13]]'''
+|
+* [[G7 Scout|{{Mythic|G7 Scout}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Mastiff Shotgun|{{Mythic|Mastiff Shotgun}}]]
+* [[Volt SMG|{{Mythic|Volt SMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 12.svg|65px|link=Season 12]]<br/>'''[[Season 12]]'''
+|
+* [[G7 Scout|{{Mythic|G7 Scout}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[M600 Spitfire|{{Mythic|M600 Spitfire}}]]
+* [[Volt SMG|{{Mythic|Volt SMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 11.svg|65px|link=Season 11]]<br/>'''[[Season 11]]'''
+|
+* [[Alternator SMG|{{Mythic|Alternator SMG}}]]
+* [[G7 Scout|{{Mythic|G7 Scout}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[M600 Spitfire|{{Mythic|M600 Spitfire}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 10.svg|65px|link=Season 10]]<br/>'''[[Season 10]]'''
+|
+* [[Alternator SMG|{{Mythic|Alternator SMG}}]]
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[M600 Spitfire|{{Mythic|M600 Spitfire}}]]
+* [[Triple Take|{{Mythic|Triple Take}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 9.svg|65px|link=Season 9]]<br/>'''[[Season 9]]'''
+|
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]
+* [[Triple Take|{{Mythic|Triple Take}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 8.svg|65px|link=Season 8]]<br/>'''[[Season 8]]'''
+| rowspan=2 |
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Peacekeeper|{{Mythic|Peacekeeper}}]]
+* [[Prowler Burst PDW|{{Mythic|Prowler Burst PDW}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 7.svg|65px|link=Season 7]]<br/>'''[[Season 7]]'''
+|-
+| style="text-align:center; width: 100px"| [[File:Season 6.svg|65px|link=Season 6]]<br/>'''[[Season 6]]'''
+|
+* [[Kraber .50-Cal Sniper|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[Peacekeeper|{{Mythic|Peacekeeper}}]]
+* [[R-99 SMG|{{Mythic|R-99 SMG}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 5.svg|65px|link=Season 5]]<br/>'''[[Season 5]]'''
+|
+* [[Devotion LMG|{{Legendary|Devotion LMG}}]]
+* [[Kraber .50-Cal Sniper|{{Legendary|Kraber .50-Cal Sniper}}]]
+* [[Peacekeeper|{{Legendary|Peacekeeper}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 4.svg|65px|link=Season 4]]<br/>'''[[Season 4]]'''
+|
+* [[Devotion LMG|{{Legendary|Devotion LMG}}]]
+* [[Kraber .50-Cal Sniper|{{Legendary|Kraber .50-Cal Sniper}}]]
+* [[Mastiff Shotgun|{{Legendary|Mastiff Shotgun}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 3.svg|65px|link=Season 3]]<br/>'''[[Season 3]]'''
+| rowspan=2 |
+* [[Kraber .50-Cal Sniper|{{Legendary|Kraber .50-Cal Sniper}}]]
+* [[L-STAR EMG|{{Legendary|L-STAR EMG}}]]
+* [[Mastiff Shotgun|{{Legendary|Mastiff Shotgun}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 2.svg|65px|link=Season 2]]<br/>'''[[Season 2]]'''
+|-
+| style="text-align:center; width: 100px"| [[File:Season 1.svg|65px|link=Season 1]]<br/>'''[[Season 1]]'''
+|
+* [[Kraber .50-Cal Sniper|{{Legendary|Kraber .50-Cal Sniper}}]]
+* [[Mastiff Shotgun|{{Legendary|Mastiff Shotgun}}]]
+|}
+
+|-|
+
+Mobile=
+{| class="wikitable"
+|-
+! Season !! Weapons
+|-
+| style="text-align:center; width: 100px"| [[File:Season 2 (Mobile).svg|65px|link=Season 2 (Mobile)]]<br/>'''[[Season 2 (Mobile)|Season 2]]'''
+|
+* [[Devotion LMG (Mobile)|{{Mythic|Devotion LMG}}]]
+* [[EVA-8 Auto (Mobile)|{{Mythic|EVA-8 Auto}}]]
+* [[Kraber .50-Cal Sniper (Mobile)|{{Mythic|Kraber .50-Cal Sniper}}]]
+|-
+| style="text-align:center; width: 100px"| [[File:Season 1 (Mobile).svg|65px|link=Season 1 (Mobile)]]<br/>'''[[Season 1 (Mobile)|Season 1]]'''
+|
+* [[Kraber .50-Cal Sniper (Mobile)|{{Mythic|Kraber .50-Cal Sniper}}]]
+* [[M600 Spitfire (Mobile)|{{Mythic|M600 Spitfire}}]]
+* [[Volt SMG (Mobile)|{{Mythic|Volt SMG}}]]
+</tabber>
+
+==History==
+{{Patch notes|
+; {{Symbol|season 14}} [[August 09, 2022 Patch]]
+* Removed the [[G7 Scout]] and [[Volt SMG]] from Care Packages, replaced with the [[Bocek Compound Bow]] and [[Rampage LMG]].
+
+; {{Symbol|season 13}} [[May 10, 2022 Patch]]
+* Removed the [[M600 Spitfire]] from Care Packages, replaced with the [[Mastiff Shotgun]].
+
+; {{Symbol|season 12}} [[February 08, 2022 Patch]] 
+* Removed the [[Alternator SMG]] from Care Packages, replaced with the [[Volt SMG]].
+
+; {{Symbol|season 11}} [[November 02, 2021 Patch]] 
+* Removed the [[Triple Take]] from Care Packages, replaced with the [[G7 Scout]].
+
+; {{Symbol|season 10}} [[August 03, 2021 Patch]]
+* Removed the [[Prowler Burst PDW]] from Care Packages, replaced with the [[M600 Spitfire]] and [[Alternator SMG]]. 
+
+; {{Symbol|season 9}} [[May 04, 2021 Patch]]
+* Removed the [[Peacekeeper]] from Care Packages, replaced with the [[Triple Take]].
+* Airdrop spawn rates have changed. The early game will spawn more [[Triple Take]]s, mid-game will spawn more [[Kraber]]s, and the late game will spawn more [[Prowler]]s.
+
+; [[March 09, 2021 Patch]]
+* Optics on the [[Peacekeeper]] and [[Prowler Burst PDW]] can now be removed and replaced with a different one.
+
+; {{Symbol|season 7}} [[November 04, 2020 Patch]]
+* Removed the [[R-99 SMG]] from Care Packages, replaced with the [[Prowler Burst PDW]].
+
+; {{Symbol|season 6}} [[August 18, 2020 Patch]]
+* Changed rarity of Supply Drop Weapons from {{Legendary}} to {{Mythic|Heirloom}} (now called {{Mythic}}).
+* Removed the [[Devotion LMG]] from Care Packages, replaced with the [[R-99 SMG]].
+
+; {{Symbol|season 5}} [[May 12, 2020 Patch]]
+* Removed the [[Mastiff Shotgun]] from Care Packages, replaced with the [[Peacekeeper]].
+
+; {{Symbol|season 4}} [[February 04, 2020 Patch]]
+* Removed the [[L-STAR EMG]] from Care Packages, replaced with the [[Devotion LMG]].
+
+; {{Symbol|season 2}} [[July 02, 2019 Patch]]
+* Added the [[L-STAR EMG]] as a Supply Drop Weapon. 
+* Adjusted weapon pool to vary by round; [[Kraber .50-cal Sniper]]s are more common early game while [[Mastiff Shotgun]]s are more common late game.
+}}
+
+== See also ==
+* [[Care Package]]
+* [[Weapon]]
+* [[Fully kitted weapon]]
+* [[Hop-Up]]
+
+{{Nav weapons}}
+[[Category:Weapons]][[Category:Gameplay mechanics]]

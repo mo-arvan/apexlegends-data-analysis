@@ -1,0 +1,36 @@
+{
+  "title": "VK-47 Flatline",
+  "infobox": {
+    "name": "VK-47 pd",
+    "description": "Full-auto with a punch.",
+    "type": "Assault rifle",
+    "fireModes": "Auto Single",
+    "ammoType": "Heavy Rounds",
+    "creator": "Wonyeon",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "18",
+    "damageHead": "32 (1.75×)",
+    "damageLegs": "14 (0.75×)",
+    "rateOfFire": "600",
+    "magazineSize": [
+      "19",
+      "23",
+      "27",
+      "29"
+    ],
+    "tacReload": [
+      "2.4",
+      "2.32",
+      "2.24",
+      "2.16"
+    ],
+    "fullReload": [
+      "3.1",
+      "3",
+      "2.89",
+      "2.79"
+    ]
+  }
+}

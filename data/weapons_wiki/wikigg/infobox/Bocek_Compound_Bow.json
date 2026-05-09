@@ -1,0 +1,23 @@
+{
+  "title": "Bocek Compound Bow",
+  "infobox": {
+    "name": "Bocek Compound Bow",
+    "description": "Hold fire to increase power.",
+    "type": "Marksman Weapon",
+    "fireModes": "Single",
+    "ammoType": "Arrows",
+    "creator": "",
+    "barrel": "",
+    "magType": "",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "35–65 55 + 25 (80)",
+    "damageHead": "56–104 88 + 25 (112)",
+    "damageLegs": "28–52 44 + 25 (69)",
+    "rateOfFire": "???",
+    "dps": "???",
+    "magazineSize": "40",
+    "tacReload": "",
+    "fullReload": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Rampage LMG/Mobile",
+  "infobox": {
+    "name": "Rampage LMG",
+    "description": "Revved Up LMGs can be charged up with Thermite.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Heavy Rounds",
+    "creator": "Rampart (Gunsmith)[https://www.ea.com/games/apex-legends/news/emergence-patch-notes Apex Legends - Emergence - Patch Notes]SWCC (Manufacturer)",
+    "barrel": "stabilizer",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "26",
+    "damageHead": "39 (1.5×)",
+    "damageLegs": "22 (0.85×)",
+    "rateOfFire": "300 390",
+    "dps": "130 169",
+    "magazineSize": [
+      "30",
+      "34",
+      "36",
+      "42"
+    ],
+    "tacreload": "2.34",
+    "fullreload": "3"
+  }
+}

@@ -1,0 +1,490 @@
+{{Tabs|
+{{Tabs1|R-301 Carbine|Main}}
+{{Tabs2|R-301 Carbine/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = R-301 Carbine
+| description = Full-auto and high accuracy.
+| type = Assault Rifle
+| fireModes = [[File:Auto Icon.svg|25px|Auto|link=]] Auto<br>[[File:Single-fire Icon.svg|25px|Single|link=]] Single
+| ammoType = Light Rounds
+| creator = {{ItemLink|Lastimosa Armory}}
+| barrel = stabilizer
+| magType = light
+| optics = true
+| stock = standard
+| hopup = 
+| damageBody = 15
+| damageHead = 20
+| damageLegs = 11
+| rateOfFire = 810
+| dps = 203
+| magazineSize = {{Level0123|21|23|28|31}}
+| tacReload = {{Level0123|2.4|2.32|2.24|2.16}}
+| fullReload = {{Level0123|3.2|3.09|2.99|2.88}}
+}}
+
+The '''R-301 Carbine''', or '''R-301''', is an [[assault rifle]] that utilizes {{ItemLink|Light Rounds}}. It can be switched between fully-automatic and semi-automatic fire modes.
+
+The R-301 may also be enhanced with {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}}, which creates a shield that absorbs up to 40 damage when aiming down sights with the weapon.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} 
+
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 15
+| headshotMdfr = 1.3
+| legMdfr = 0.75
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_rspn_101</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 13.5
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | {{ItemLink|Anvil Receiver|noText=yes}} 3.5
+|-
+| projectile_launch_speed
+| style="text-align:center" | 29000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 736 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 6.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 8.5
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 9.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 9.5
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''R-301'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''R-301'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''200''' enemies while ADS with the '''R-301'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''250''' enemies with '''50''' meters away with the '''R-301'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''700''' enemies with the '''R-301'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The latest in a proud line of standard-issue assault rifles, the R-301 is as reliable, versatile, and easy-to-control as its forebears, the [[tf:R-101C Carbine|R-101]] and [[tf:R-201 Assault Rifle|R-201 SOAR]]. The series is almost as old as Frontier civilization - some say the first carbines were built on Earth - and have been a mainstay in every Frontier conflict.}}
+
+Manufactured by the [[Lastimosa Armory]] and commissioned by the [[IMC]], the R-301 is the successor to the R-101 and R-201 rifles from the Frontier War. In the years after the Battle of Typhon, the IMC felt a need to improve on their very successful and reliable R-201 platform. High volumes of data collected from the R-201 and the R-201-A2's internal CPU's indicated that most mechanical failures were due to the rifle frame's exposure to extreme elements which caused misfires and the occasional feed mechanism malfunction. The internal components have been revised with a lighter and stronger composite as the external framework has been strengthened with a composite metallic weave to better compensate for overheating and structural integrity. The piston system was removed overall and the bolt cycling mechanism is completely controlled by the R-301's integrated AI. What you have with this new and improved platform is a reliable and accurate rifle with minimal maintenance and a larger caliber.
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|47}}
+{{#vardefine:epicskin|17}}
+{{#vardefine:rareskin|40}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+{{#vardefine:ac3|{{Coins|500}}}}
+There are a total of '''{{#expr:5 + {{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: 5 {{Mythic}}, {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Mythic=
+<gallery widths="300" heights="180" mode="nolines">
+Void Disruption R-301.png|{{Mythic|Void Disruption}}<br>{{HeirloomShards|150}}
+Void Disruption Evolved R-301.png|{{Mythic|Void Disruption Evolved}}
+Hornet R-301.png|{{Mythic|Hornet}}
+Vermillion R-301.png|{{Mythic|Vermillion}}
+Limelight R-301.png|{{Mythic|Limelight}}
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="300" heights="180" mode="nolines">
+The Last Spartan R-301.png|{{Legendary|The Last Spartan}}<br/>{{CraftingMetals|1,200}}
+The Daybreaker R-301.png|{{Legendary|The Daybreaker}}<br/>{{CraftingMetals|1,200}}
+Unsheathed Rebellion R-301.png|{{Legendary|Unsheathed Rebellion}}<br/>{{CraftingMetals|1,200}}
+Dynastic Cycle R-301.png|{{Legendary|Dynastic Cycle}}<br/>{{CraftingMetals|1,200}}
+Exposed Wiring R-301.png|{{Cosmetic|Monsters Within|Legendary|Exposed Wiring}}</br>{{CraftingMetals|1,200}}
+Barnacle Buster R-301.png|{{Cosmetic|Dark Depths|Legendary|Barnacle Buster}}</br>{{CraftingMetals|1,200}}
+The Pale Moonlight R-301.png|{{Cosmetic-NI|Recolor|Legendary|The Pale Moonlight}}<br/>Needs {{Legendary|The Daybreaker}}
+Honored Prey R-301.png|{{Cosmetic|Legendary Hunt|Legendary|Honored Prey}}<br/>{{ItemLink|Season 1|noText=yes}} Level 1
+The Iron Rampage R-301.png|{{Cosmetic|Season 2|Legendary|The Iron Rampage}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+The Golden Rampage R-301.png|{{Cosmetic|Season 2|Legendary|The Golden Rampage}}<ref group="note" name="reactive"/><br/>Level 110
+Retrocausality R-301.png|{{Cosmetic-NI|Recolor|Legendary|Retrocausality}}<br>Needs {{Legendary|Dynastic Cycle}}
+Intelligent Design R-301.png|{{Cosmetic-NI|Recolor|Legendary|Intelligent Design}}<br/>Needs {{Legendary|Unsheathed Rebellion}}
+Ice Cold R-301.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Ice Cold}}<br>{{#var:ac1}}
+Predatorial Instincts R-301.png|{{Cosmetic-NI|Recolor|Legendary|Predatorial Instincts}}<br/>Needs {{Legendary|The Last Spartan}}
+Fun in the Sun R-301.png| {{Cosmetic|System Override|Legendary|Fun in the Sun}}<br>{{#var:ac1}}
+Trophy Collector R-301.png|{{Cosmetic|The Old Ways|Legendary|Trophy Collector}}<br>{{#var:ac1}}
+Enduring Honor R-301.png|{{Cosmetic-NI|Recolor|Legendary|Enduring Honor}}<br/>Needs {{Legendary|Unsheathed Rebellion}}
+Pure Performance R-301.png|{{Cosmetic|Aftermarket|Legendary|Pure Performance}}
+An Anger Righteous R-301.png|{{Cosmetic|Chaos Theory|Legendary|An Anger Righteous}}<br>{{#var:ac1}}
+Tried and True R-301.png|{{Cosmetic|Thrillseekers|Legendary|Tried and True}}<br>{{#var:ac1}}
+Amethyst Apathy R-301.png|{{Cosmetic|Evolution|Legendary|Amethyst Apathy}}<br>{{#var:ac1}}
+Pieces of Eight R-301.png|{{Cosmetic|Raiders|Legendary|Pieces of Eight}}<br>{{#var:ac1}}
+The Drip R-301.png|{{Cosmetic|3rd Anniversary|Legendary|The Drip}}<br>{{#var:ac1}}
+Techno Terror R-301.png|{{Cosmetic|Weapon Recolor Store (Season 14)|Legendary|Techno Terror}}
+Blue Surge R-301.png|[[File:Sale Icon.svg|22px|link=Weapon Recolor Store (Season 16)]] {{Legendary|Blue Surge}}
+Final Act R-301.png|[[File:Sale Icon.svg|22px|link=Fallen Angel Store]] {{Legendary|Final Act}}<br>{{#var:ac1}}
+Rave Rebellion R-301.png|[[File:Sale Icon.svg|22px|link=Fluorescent Frenzy Store]] {{Legendary|Rave Rebellion}}<br>{{#var:ac1}}
+Lunar Fury R-301.png|[[File:Sale Icon.svg|22px|link=New Moon Store]] {{Legendary|Lunar Fury}}<br>{{#var:ac1}}
+Valedictorian R-301.png|[[File:Sale Icon.svg|22px|link=Battle Academy Store]] {{Legendary|Valedictorian}}<br>{{#var:ac1}}
+Sakura Classic R-301.png|{{Cosmetic|Post Malone|Legendary|Sakura Classic}}
+Limit Breaker R-301.png|{{Cosmetic|Final Fantasy VII|Legendary|Limit Breaker}}
+Howling Wind R-301.png|{{Cosmetic|Inner Beast|Legendary|Howling Wind}}<br>{{#var:ac1}}
+Nexus Typewriter R-301.png|{{Cosmetic|Shadow Society|Legendary|Nexus Typewriter}}<br>{{#var:ac1}}
+Quick Strike R-301.png|[[File:Sale Icon.svg|22px|link=Golden Week (2024)]] {{Legendary|Quick Strike}}<br>{{#var:ac1}}
+Nitride Dominance R-301.png|[[File:Sale Icon.svg|22px|link=Nitride Weapon Arsenal)]] {{Legendary|Nitride Dominance}}<br>{{#var:ac1}}
+Biotech R-301.png|[[File:Sale Icon.svg|22px|link=Corrupted Summer Store]] {{Legendary|Biotech}}
+Arm of Orion R-301.png|{{Cosmetic|Void Reckoning|Legendary|Arm of Orion}}<br>{{#var:ac1}}
+Vibe Killer R-301.png|[[File:Sale Icon.svg|22px|link=Neon Omen Store]] {{Legendary|Vibe Killer}}<br>{{#var:ac1}}
+Outlands Marshal R-301.png|{{Cosmetic|Space Hunt|Legendary|Outlands Marshal}}<br>{{#var:ac1}}
+Cloudburster R-301.png|{{Cosmetic|Lunar Rebirth|Legendary|Cloudburster}}<br>{{#var:ac1}}
+Brass Bolter R-301.png|{{Cosmetic|Takeover|Legendary|Brass Bolter}}<br>Split 1 Premium Lv 30
+Soft Serve R-301.png|{{Cosmetic|Haute Shot|Legendary|Soft Serve}}
+Aviary Ambush R-301.png|{{Cosmetic|Galactic Games|Legendary|Aviary Ambush}}
+Outfoxed_R-301.png|[[File:Sale Icon.svg|22px|link=Arctic Drip Sale]]{{Legendary|Outfoxed}}<br>{{#var:ac1}}
+Armored Extinction R-301.png|{{Legendary|Armored Extinction}}<ref group="note" name="reactive"/><br>{{ExoticShards|50}}
+Hard Contact R-301.png|{{Cosmetic|7th Anniversary|Legendary|Hard Contact}}
+Aerial 301 R-301.png|{{Cosmetic|Apex Legends X Gundam|Legendary|Aerial 301}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="300" heights="180" mode="nolines">
+Eye of the Storm R-301.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire R-301.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor R-301.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid R-301.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy R-301.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Bronze Age R-301.png|{{Cosmetic|Fight Night|Epic|Bronze Age}}<br>{{#var:ac2}}
+One Blood R-301.png|{{Cosmetic|Season 11|Epic|One Blood}}</br>Level 97
+Aftershock Wave R-301.png|{{Cosmetic|3rd Anniversary|Epic|Aftershock Wave}}<ref group="story">'''Aftershock Wave''': Inspired by LuluLovely</ref>
+Cloud Surfer R-301.png|{{Cosmetic|Warriors|Epic|Cloud Surfer}}<br>{{#var:ac2}}
+Cosmic Guardian R-301.png|{{Cosmetic|Season 15|Epic|Cosmic Guardian}}<br/>Level 89
+Enforcer of Justice R-301.png|{{Cosmetic|4th Anniversary|Epic|Enforcer of Justice}}<br>{{#var:ac2}}
+Lightbreaker R-301.png|{{Cosmetic|Neon Network|Epic|Lightbreaker}}<br>Redeem 5,000 [[File:Node Icon.svg|x18px|link=]]
+Plasma Display R-301.png|{{Cosmetic|Temporal Chaos|Epic|Plasma Display}}<br>{{#var:ac2}}
+Frostfire_R-301.png|{{Cosmetic|S23|Epic|Frostfire}}<br>Split 1 Premium Lv 14
+Reflective Cut_R-301.png|{{Cosmetic|Void Mercenaries|Epic|Reflective Cut}}<br>{{#var:ac2}}
+Steelbird R-301.png|{{Cosmetic|S26|Epic|Steelbird}}<br>Split 1 Premium Lv 8
+Dynamic Reflection R-301.png|{{Cosmetic|S27|Epic|Dynamic Reflection}}<br>Split 2 Premium Lv 35
+</gallery>
+<references group="story"/>
+
+|-|
+
+Rare=
+<gallery widths="300" heights="180" mode="nolines">
+Clockwork R-301.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Coral Reef R-301.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Cosmos R-301.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Envy R-301.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Fun Fair R-301.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Kaleidoscope R-301.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Ladybug R-301.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Morning Dew R-301.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Nile R-301.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Rock Bed R-301.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Shockwave R-301.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Slither R-301.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Solstice R-301.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord R-301.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Zeal R-301.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest R-301.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 99
+Direct Connection R-301.png|{{Cosmetic|Season 2|Rare|Direct Connection}}<br/>Level 53
+Ghostly Graveyard R-301.png|{{Cosmetic|Fight or Fright 2019|Rare|Ghostly Graveyard}}
+Firestorm R-301.png|{{Cosmetic|Season 3|Rare|Firestorm}}<br/>Level 66
+Magma R-301.png|{{Cosmetic|Grand Soirée|Rare|Magma}}
+Alkaline R-301.png|{{Cosmetic|Season 4|Rare|Alkaline}}<br/>Level 51
+Celestial Clockwork R-301.png|{{Cosmetic|Season 5|Rare|Celestial Clockwork}}<br/>Level 36
+Rune Awakening R-301.png|{{Cosmetic-NI|PlayStation+ Pack|Rare|Rune Awakening}}<br>Season 5
+Shifting Sandstone R-301.png|{{Cosmetic|Summer of Plunder|Rare|Shifting Sandstone}}<br>{{#var:ac3}}
+Jet Setter R-301.png|{{Cosmetic|Season 6|Rare|Jet Setter}}<br/>Level 58
+Starstruck R-301.png|{{Cosmetic|Season 7|Rare|Starstruck}}<br/>Level 58
+Pure Fusion R-301.png|{{Cosmetic|Season 8|Rare|Pure Fusion}}<br/>Level 73
+Golden Waves R-301.png|{{Cosmetic|Season 9|Rare|Golden Waves}}<br/>Level 65
+Eyes and Ears R-301.png|{{Cosmetic|Season 10|Rare|Eyes and Ears}}<br/>Level 41
+Red Alert R-301.png|{{Cosmetic|Twitch Drop|Rare|Red Alert}}<br/>November 2021
+Death Maker R-301.png|{{Cosmetic|Season 12|Rare|Death Maker}}<br>Level 57
+Saint's End R-301.png|{{Cosmetic|Season 13|Rare|Saint's End}}<br>Level 17
+Buckle Up R-301.png|{{Cosmetic|Season 14|Rare|Buckle Up}}<br/>Level 71
+Party Mix v301 R-301.png|{{Cosmetic|Season 16|Rare|Party Mix v301}}<br/>Level 92
+Carbon Shredder R-301.png|{{Cosmetic|Season 17|Rare|Carbon Shredder}}<br>Level 35
+Digital Camouflage R-301.png|{{Cosmetic|Season 18|Rare|Digital Camouflage}}<br>Level 34
+Wire Cutter R-301.png|{{Symbol|Season 19}} {{Rare|Wire Cutter}}<br>Level 78
+CMYK R-301.png|{{Symbol|Season 20}} {{Rare|CMYK}}<br>Level 94
+Blighted Gemstone R-301.png|{{Symbol|Season 21}} {{Rare|Blighted Gemstone}}<br>Level 33
+Confetti Cannon R-301.png|{{Symbol|ps+}} {{Rare|Confetti Cannon}}<br>Season 24
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="300" heights="192" mode="nolines">
+Factory Issue R-301.png|{{Common|Factory Issue}}<br/>Default
+Midnight R-301.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal R-301.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic R-301.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire R-301.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater R-301.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo R-301.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm R-301.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest R-301.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen R-301.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid R-301.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal R-301.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket R-301.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon R-301.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover R-301.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic R-301.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Winter Wipeout}} [[January 06, 2026 Patch]]
+* Damage increased to 15 (was 14).
+
+
+; {{Symbol|Future Icons}} [[June 24, 2024 Patch]]
+* Can now equip {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}}
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 14 (was 13).
+* Headshot damage: 18.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Increased magazine size from {{Level0123|18|20|25|28}} to {{Level0123|21|23|28|31}}.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Reduced hipfire spread when standing from 6.5 to ???.
+* Reduced hipfire spread when crouching from 5 to ???.
+* Reduced hipfire spread when moving from 8.5 to ???.
+* Reduced hipfire spread when running from 9.5 to ???.
+* Reduced hipfire spread when in midair from 9.5 to ???.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 20}}.
+
+
+; {{ItemLink|Apex Legends & FINAL FANTASY VII REBIRTH|image=Final Fantasy VII.svg|noText=yes}} [[October 31, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Corrected French translation for Level 20 Mastery Challenge.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Reduced damage from 14 to 13.
+* Increased hipfire spread when standing from 3 to 6.5.
+* Increased hipfire spread when crouching from 2.4 to 5.
+* Increased hipfire spread when moving from 6.6 to 8.5.
+* Increased hipfire spread when running from 8.4 to 9.5.
+* Increased hipfire spread when in midair from 8.4 to 9.5.
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+
+
+; {{ItemLink|Spellbound|noText=yes}} [[January 10, 2023 Patch]]
+* Reduced {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}} legshot damage multiplier from ×0.9 to ×0.75.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Added {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with R-301 Carbine and [[VK-47 Flatline]].
+
+
+; {{ItemLink|Awakening|noText=yes}} [[June 21, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|300}} to {{Materials|350}}.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Reduced headshot multiplier from ×2 to ×1.75.
+
+
+; {{ItemLink|Chaos Theory}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] R-301 Carbine now has the {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG "Bruiser"}}}} optic instead of the {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}, which can also be removed and/or replaced with any other compatible optic.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Added {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with R-301 Carbine and [[VK-47 Flatline]].
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 8}}.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Removed {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+* Fixed bug for cases where full auto mode would be disabled when players equipped an {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}} while in single fire mode.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 4}}.
+* Improved iron sights accuracy.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Introduced {{ItemLink|Anvil Receiver|text={{Legendary|Anvil Receiver}}}}. Compatible with R-301 Carbine and [[VK-47 Flatline]].
+
+
+; {{ItemLink|Iron Crown|noText=yes}} [[August 13, 2019 Patch]]
+* Increased vertical and horizontal recoil.
+* Increased recoil pattern randomness slightly.
+
+
+; [[April 16, 2019 Patch]]
+* [[Fully Kitted Weapon|{{Legendary|Fully kitted}}]] R-301 Carbine now has {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} instead of {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa R-301 Carbine.jpg|Concept Art for the R-301 Carbine by Ryan Lastimosa.
+Honored Prey R-301 Concept Art.jpg|Concept art for the {{Cosmetic|Legendary Hunt|Legendary|Honored Prey}} skin.
+The Iron Rampage R-301 Concept Art.jpg|Concept art for the {{Cosmetic|Season 2|Legendary|The Iron Rampage}} skin.
+Ice Cold R-301 Concept Art.jpg|Concept art for the {{Cosmetic|Holo-Day Bash 2019|Legendary|Ice Cold}} skin.
+An Anger Righteous R-301 Concept Art.jpg|Concept art for the {{Cosmetic|Chaos Theory|Legendary|An Anger Righteous}} skin.<ref>[https://www.artstation.com/artwork/Zegek1 Gadget-Bot Productions on ArtStation]</ref>
+Exposed Wiring R-301 Concept Art.jpg|Concept art for the {{Cosmetic|Monsters Within|Legendary|Exposed Wiring}} skin.<ref>[https://www.artstation.com/artwork/Omy1bk Gadget-Bot Productions on ArtStation]</ref>
+The Drip R-301 Concept Art.jpg|Concept art for the {{Cosmetic|3rd Anniversary|Legendary|The Drip}} skin.<ref>[https://www.artstation.com/artwork/ZeR5bm Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+[[File:Wrong Dynastic Cycle Colors.png|right|thumb|300px|The bugged {{Legendary|Dynastic Cycle}} skin.]]
+* The '''R''' in the weapon's model number references the game's developer, [[Respawn Entertainment]]. This is made more obvious by its weapon ID, '''rspn_101'''.
+* The R-301 Carbine was the weapon used by ARES guards during the events of the [[Stories from the Outlands#Voidwalker|Voidwalker]] cinematic.
+* The straight-bow trigger in many of the weapon skins visually resembles the CMC Triggers Flat Face drop-in trigger for the [[wikipedia:Remington Model 700|Remington 700]], [[wikipedia:AR-15 style rifle|AR-15]], and [[wikipedia:AK-47|AK-47]] real life weapons.
+* After {{ItemLink|Season 11}} started, the {{Legendary|Dynastic Cycle}} skin became bugged and looked like a mix between it and its recolor, {{Cosmetic-NI|Recolor|Legendary|Retrocausality}}. Curiously, {{Cosmetic-NI|Recolor|Legendary|Retrocausality}} appeared in the [[Store]] one month later.
+<br>
+<br>
+== See also ==
+* [[R-301 Carbine (Mobile)|R-301 Carbine (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/R-101C_Carbine R-101C Carbine (''Titanfall'')]
+* [https://titanfall.wiki.gg/wiki/R-101C_Carbine#Titanfall_2 R-101 Carbine (''Titanfall 2'')]
+* [https://titanfall.wiki.gg/wiki/R-201_Assault_Rifle R-201 Assault Rifle (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

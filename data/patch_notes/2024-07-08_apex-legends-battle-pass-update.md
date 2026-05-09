@@ -1,0 +1,122 @@
+---
+title: "Apex Legends\u2122: Battle Pass Updates"
+date: 2024-07-08
+slug: apex-legends-battle-pass-update
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/apex-legends-battle-pass-update
+---
+
+# Apex Legends™: Battle Pass Updates
+
+
+EDIT: JULY 24, 2024
+
+*To Our Apex Community:* 
+
+*You’ve spoken, and we’ve listened. With the release of Season 22* ***we will restore the ability to get the Premium Battle Pass for 950 Apex Coins.*** *We recognize that we could have handled the Battle Pass changes better—that&#39;s on us.*
+
+*It’s our intention to improve the overall value and experience across our Battle Pass offerings. For a summary of the updated Battle Pass offerings starting with Season 22 Split 2 on September 17th, please check out the infographic. Here&#39;s what we&#39;d like you to know:*
+
+- *With the launch of Season 22 on August 6th through Split 1, we want to give you an opportunity to get the Premium Battle Pass. You can unlock it by completing a series of simple in-game challenges.* 
+- *Starting with Split 2 on September 17th, you can get the Premium Battle Passes the same way as before: by using 950 Apex Coins. You’ll be able to earn enough Apex Coins via the Battle Pass to get future passes.*
+- *The Battle Pass options now include better rewards—and with the re-tuned Battle Pass challenges, it&#39;ll be faster to complete at only 60 levels.*
+
+
+*Moving forward, we recognize that we need to be more timely, transparent, and consistent in our communications with you.* ***Your priorities are our priorities: cheaters, game stability, and quality of life updates are top of mind. We need to get better and it&#39;s why we&#39;re acknowledging them here.*** *As a next step, there are a number of improvements and game stability bug fixes coming in Season 22 that will be outlined in the Patch Notes dropping on August 5, 2024.*
+
+*Thank you again for all of your passion and time in Apex Legends, because we couldn’t do this without you.*
+
+*-The Apex Legends Team*
+
+![Battle Pass comparison chart showing rewards and prices for Free, Premium, Ultimate, and Ultimate+ tiers in Apex Legends.](https://drop-assets.ea.com/images/2aAxzdSf2wdRHRuEzOpPuc/20e221b6e09980143f9d631d8129d154/en-2-0-apex-s22-battlepassrewards-rework-3840x2160-240724.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+---
+
+ORIGINAL: JULY 8, 2024
+
+Hey, Legends. You know that we’re all-in on creating the best experience. We’re frequently iterating on the game, chatting with players, and considering how we can action on community feedback—from casuals to pros. Today we’re announcing a brand new Battle Pass experience that will launch with Season 22. And this isn’t just a heads up, it’s also an inside look into how we’ve improved the value, reduced the time needed to unlock high-end items, and more. There’s a TLDR for those that would rather, but for those that like details—this one’s for you.
+## LOOKING FOR A TLDR?
+
+We’re evolving the Apex Legends™ Battle Pass to improve your experience and progression goals:
+
+- Battle Pass now available per split (was one per season)
+
+    - Players can earn the first Premium BP during the first two weeks of Season 22
+
+- Levels to obtain final key cosmetic items (ex. reactives) dropped to 60 per Battle Pass (was 110)
+- Rewards from past Battle Passes that frequently weren’t being used have been removed
+- Free Track rewards refreshed with the following available across each of the seasonal split’s BPs: 200 AC, 7 Apex Packs†, 1 complete Epic set, and more
+- Premium Track rewards refreshed with the following available per Battle Pass: 2400 CM, 1300 AC, 10 Exotic Shards, various Apex Packs†, 1 Reactive and 1 Legendary Weapon skin, 2 Legendary and 3 Epic Legend skins, 7 Epic weapon skins, and more
+
+    - Twice as many Crafting Materials and 3 more Legendary/Epic Apex Packs† per Battle Pass compared to the old one
+
+- New Premium+ offering with additional rewards per Battle Pass: 10 Levels, 2 Premium+ Legendary skin variants (exclusive for one year), 10 Exotic Shards, and ALL Legends playable for the duration of the Battle Pass
+- Costs: $9.99 for Premium and $19.99 for Premium+* (was 950 AC for Premium, 2800 AC for the discontinued Premium Battle Pass Bundle)
+
+## BATTLE PASS OVERHAUL
+
+We’ll get into it for those that love the details, but **here’s the gist: shorter Battle Pass with one for each split, revamped rewards, and purchased with IRL currency** with a new cost for Premium+. We’ve seen the numbers, and things need to be more approachable and realistic for our global player community. Each of these updated aspects allows us to make the Battle Pass more attainable and valuable for your time and money. The reward should always be worth the time you choose to spend in the Outlands, and now it is.
+
+Instead of just talking about it, we want players to experience the new Battle Pass format for themselves. All players will be able to earn the first split’s Premium Battle Pass at season launch by logging in and completing a set of challenges within the first two weeks. This first one is on us.
+
+- Season 21
+
+    - 950 AC
+    - One season long BP
+    - 110 Levels
+    - Underused rewards
+
+- Season 22
+
+    - $9.99 USD*
+    - One BP for earch split
+    - 60 Levels each
+    - Revamped rewards
+
+
+## SPLITS &amp; LEVELS
+
+Starting in Season 22, each split will now have its own 60 Level Battle Pass with the same cost for each. With the Battle Pass shortened, more of our community will be able to tackle the track and obtain the Reactive skin at the end. You’ll now earn double the Battle Pass rewards across the entire season by completing both Battle Passes (more on that below), and you can continue your progress past Level 60 up to Level 100 to upgrade your Battle Pass badges.
+
+The impact of this change is twofold. It allows us to align seasonal progression more closely with Ranked while also increasing the value for your time.
+## TRACKS &amp; REWARDS
+
+We’re maintaining both Battle Pass tracks: Free and Premium. Your time will always be rewarded regardless of which track you’re on. The overall seasonal value has increased which means your rewards for each split will also increase across the board on all tracks. Yes, that includes the Free Track too.
+
+![Battle Pass rewards chart for Apex Legends: Free, Premium, and Premium+ tiers with breakdown of levels, Apex Coins, packs, and cosmetics.](https://drop-assets.ea.com/images/zi4mma2a7fWyDxeF1Ex1A/65e66aed343efb262f44d13fdcdd769f/Apex_S22_BattlePassRewards_Infographic_3840x2160_en-EN.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+### FREE TRACK
+
+There’s never been a better time to jump in and complete a Battle Pass for the ultimate reward. AC has doubled across the season: each split will have 200 AC up for grabs, which brings your total potential currency to 400 AC per season as part of the Free Track. We’ve also doubled the Apex Packs† making it 14 Apex Packs† per season (7 for each split’s Battle Pass). Cosmetics also got an upgrade with a matching Epic Set for you to chase for each Battle Pass. That includes an Epic Legend skin, Epic Weapon skin, Epic emote, and 4 additional Epic items per pass. With the new focus on Epics and the removal of Trackers, we also want to call out that this means there will be fewer Rare items awarded.
+### PREMIUM TRACK
+
+If you’re paying for a Premium Track, then your rewards should reflect that. Starting with currency, players at this tier will receive 2400 Crafting Materials (double the amount in the old season-long BP), 1300 AC, and 10 Exotic Shards per Battle Pass. This increase in CM also puts the power back in your hands as you’ll now receive enough to craft even more items from the core pack pool or during an event. We’ve also increased the Apex Packs† per Battle Pass too: 5 Rare Apex Packs†, 3 Epic Apex Packs†, 2 Legendary Apex Packs†, and 3 Rare Legend Thematic Packs†. Cosmetics have also been shifted for this tier to accommodate both the overall updates and the new Free Track. Each Battle Pass Premium Track will now have: 1 Reactive and 1 Legendary Weapon skin, 2 Legendary and 3 Epic Legend skins, 7 Epic weapon skins, and more rewards curated to fit the season. And again, with the adjustment to remove the less utilized items there will be fewer Weapon Charms, Kill Quips, and Rare Weapon skins though you may still see a couple. Don’t forget: login during the first two weeks of Season 22 and complete a set of challenges to unlock the first split’s Premium BP.
+### NEW PREMIUM+ TRACK
+
+Gone is the bundle of the past—this too needed a refresh. We think this new offering strikes a good balance of value and cost. If you opt to purchase Premium+ for $10 USD* more than the Premium Track, you’ll receive an additional 6100+ AC value including: 10 Levels, 2 Premium+ Legendary skin variants per Battle Pass that will be exclusive for one year, 10 Exotic Shards (additional to the 10 in the Premium Track), and ALL Legends playable for the duration of the Battle Pass you purchase this for.
+## PRICE
+
+Cost is another aspect that we’ve been reevaluating. To up the value going forward, each Premium Track Battle Pass will cost $9.99 USD* and will come with the rewards expanded on above. The decision to move from AC to real world currency is not one that we made lightly, but it does allow us to decrease the price of Premium+ for our community. The new Premium+ Battle Pass comes in at $19.99 USD* and offers additional value; a cost difference of ~29% when compared to the discontinued Premium Battle Pass Bundle at 2800 AC.
+
+And what happens if you buy the Battle Pass, then unlock it? We’ve got you: you’ll be refunded 1,000 AC.
+## TRACKERS
+
+Before we wrap this, let’s chat Trackers. Some of y’all are really passionate about these (especially the designed ones), but there were a lot of under utilized Trackers bloating the BP rewards. It’s one of the first things we noticed. And while they’re great for gloating, we want you to have bigger and better rewards for your time in-game regardless of how much time you have to spend in the Outlands. We’ll be removing the base level Trackers from the Battle Pass while we work on some quality of life upgrades on the side.
+
+Notice we said base level? Fully designed Trackers featuring art will still be available in the Battle Pass. And with our upcoming revamp, Tracker art will become agnostic—meaning you can take any art and put it on any Legend’s banner card. Bloodhound art on Fuse’s card? We ship it.
+
+****OFFERS MAY VARY OR CHANGE. SEE RETAILER SITE FOR DETAILS.***
+
+---
+
+[Play Apex Legends™ for free](/games/apex-legends/apex-legends/buy)* now on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S, Nintendo Switch™, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [X](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), [TikTok](https://www.tiktok.com/@PLAYAPEX), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends™ news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+
+†Not available in all territories.

@@ -1,0 +1,411 @@
+{{MainGameNotice|mobilePage=Hemlok Burst AR (Mobile)}}
+{{Infobox-Weapon
+| name = Hemlok Burst AR
+| description = 3-round burst assault rifle.
+| type = Assault rifle
+| fireModes = [[File:Burst Icon.svg|25px|Burst|link=]] Burst (3)<br>[[File:Single-fire Icon.svg|25px|Single|link=]] Single
+| ammoType = Heavy Rounds
+| creator = [[File:Wonyeon.svg|25px|link=Wonyeon]] [[Wonyeon]]
+| barrel = stabilizer
+| magType = heavy
+| optics = true
+| stock = standard
+| damageBody = 19
+| damageHead = 33 <small>(1.75×)</small>
+| damageLegs = 14 <small>(0.75×)</small>
+| rateOfFire = 380 [[File:Burst Icon.svg|25px|Burst|link=]]<ref>930 per burst.</ref><br>384 [[File:Single-fire Icon.svg|25px|Single|link=]]
+| dps = 133 [[File:Burst Icon.svg|25px|Burst|link=]]<br>134 [[File:Single-fire Icon.svg|25px|Single|link=]]
+| magazineSize = {{Level0123|18|21|24|30}}<br>{{Symbol|Boosted Loader}} {{Level0123|27|33|36|39}}
+| tacReload = 2.16<br>{{Symbol|Boosted Loader}} 1.75
+| fullReload = 2.57
+}}
+
+The '''Hemlok Burst AR''', also called '''Hemlok''', is an [[assault rifle]] that utilizes {{ItemLink|Heavy Rounds}}. It may be switched between 3-shot burst and semi-automatic fire modes.
+
+The Hemlok was able to be enhanced with {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}, which speeds up tactical reloads and will add 9 additional rounds in the magazine, but only if performed when the magazine is close to being fully depleted.
+
+== Stats ==
+=== Attachments ===
+{{Main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}}) 
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}
+
+
+=== Damage Profile ===
+; Per round
+{{Damage profile
+| damage = 19
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+
+
+; <span class="invert-image">[[File:Burst Icon.svg|25px|link=]] Burst</span>
+{{Damage profile
+| damage = 21
+| bulletsPerBurst = 3
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_hemlok</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | <div class="invert-image">[[File:Burst Icon.svg|20px|link=|Burst]] 15.5</div>
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | <div class="invert-image">[[File:Single-fire Icon.svg|20px|link=|Single]] 6.4</div>
+|-
+| burst_fire_delay
+| style="text-align:center" | 0.28
+| Time delay between two bursts. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 27500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 698 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 3.6
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 7.15
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 8.4
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 8.4
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.25
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Fire Selector''
+| style="text-align:left" | Down an enemy using ['''Single Fire'''] mode when ADS with the weapon.
+| 20 times
+|-
+| 40
+| ''Quick Death''
+| style="text-align:left" | Down the target then finish them off in 5 seconds with the Hemlok.
+| 15 times
+|-
+| 60
+| ''Lucky Shot''
+| style="text-align:left" | Land all 3 bullets in a burst with at least 1 as a headshot.
+| 10 times
+|-
+| 80
+| ''Blind Aggression''
+| style="text-align:left" | Down an enemy with full burst landed on target when ADS.
+| 5 times
+|-
+| 100
+| ''Hemlocked and Loaded''
+| style="text-align:left" | Get a double kill with the Hemlok at least 50 meters away.
+| 3 times
+|}
+
+
+== Lore ==
+{{Quote|The Hemlok Burst AR is a heavy burst-fire assault rifle based on the Hemlok BF-R, a weapon designed exclusively for IMC ground troops. Lastimosa Armory was commissioned by the IMC to create a weapon with a stronger punch than the R-101, so it could more effectively puncture standard-issue body armor. During the Frontier War, direct sale to the public was prohibited, but its updated model is commonplace in the Outlands.}}
+
+
+== Skins ==
+There are a total of 90 weapon skins for the Hemlok Burst AR: 24 {{Legendary}}, 17 {{Epic}}, 33 {{Rare}} and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="300" mode="nolines">
+The Glorious One Hemlok.png|{{Legendary|The Glorious One}}<br/>{{CraftingMetals|1,200}}
+Lost Queen Hemlok.png|{{Legendary|Lost Queen}}<br/>{{CraftingMetals|1,200}}
+Pressure Point Hemlok.png|{{Legendary|Pressure Point}}<br/>{{CraftingMetals|1,200}}
+Fluid Mechanics Hemlok.png|{{Legendary|Fluid Mechanics}}<br/>{{CraftingMetals|1,200}}
+The Cyberian Hemlok.png|{{Cosmetic|Voidwalker|Legendary|The Cyberian}}<br/>{{CraftingMetals|1,200}}
+Cardiac Assault Hemlok.png|{{Cosmetic|Monsters Within|Legendary|Cardiac Assault}}</br>{{CraftingMetals|1,200}}
+Terminated Hemlok.png|{{Cosmetic|Unshackled|Legendary|Terminated}}<br/>{{CraftingMetals|1,200}}
+The Notorious One Hemlok.png|{{Cosmetic|Founders Pack|Legendary|The Notorious One}}
+The Intensifier Hemlok.png|{{Cosmetic-NI|Recolor|Legendary|The Intensifier}}<br/>Needs {{Legendary|Fluid Mechanics}}
+Forgotten Odyssey Hemlok.png|{{Cosmetic-NI|Recolor|Legendary|Forgotten Odyssey}}<br/>Needs {{Legendary|Lost Queen}}
+Golden Arrow Hemlok.png|{{Cosmetic|Grand Soirée|Legendary|Golden Arrow}}<br/>{{Coins|1,800}}
+Mossy Hardware Hemlok.png|{{Cosmetic-NI|Recolor|Legendary|Mossy Hardware}}<br/>Needs {{Legendary|The Cyberian}}
+Retrofitted Hemlok.png|{{Cosmetic|Season 5|Legendary|Retrofitted}}<br/>Level 1
+Performance Boost Hemlok.png|{{Cosmetic|Aftermarket|Legendary|Performance Boost}}
+Sailors Pride Hemlok.png|{{Cosmetic|Raiders|Legendary|Sailors Pride}}
+Gentleman Baller Hemlok.png|{{Cosmetic|Season 12|Legendary|Gentleman Baller}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Scream Machine Hemlok.png|{{Cosmetic|Season 12|Legendary|Scream Machine}}<ref group="note" name="reactive"/><br/>Level 110
+Unsung Hemlok.png|{{Cosmetic|Awakening|Legendary|Unsung}}
+Pulsator Hemlok.png|{{Cosmetic|Weapon Recolor Store (Season 14)|Legendary|Pulsator}}
+Ornate Dragon Hemlok.png|{{Cosmetic|Celestial Sunrise|Legendary|Ornate Dragon}}
+Exhaust Valve Hemlok.png|[[File:Sale Icon.svg|22px|link=Locked and Loaded Store]] {{Legendary|Exhaust Valve}}
+Aristocrat's Armament Hemlok.png|{{Cosmetic|Threat Level|Legendary|Aristocrat's Armament}}
+Synthetic Fiber Hemlok.png|{{Cosmetic|New Moon Store|Legendary|Synthetic Fiber}}
+Redline Hemlok.png|{{Cosmetic|Doppelgangers|Legendary|Redline}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="300" mode="nolines">
+Eye of the Storm Hemlok.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Hemlok.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Hemlok.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Hemlok.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Hemlok.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Rise of the Phoenix Hemlok.png|{{Cosmetic|Iron Crown|Epic|Rise of the Phoenix}}
+The Abyss Hemlok.png|{{Cosmetic|Season 3|Epic|The Abyss}}<br/>Level 69
+Gradient Descent Hemlok.png|{{Cosmetic|System Override|Epic|Gradient Descent}}
+Worthy Tribute Hemlok.png|{{Cosmetic|Lost Treasures|Epic|Worthy Tribute}}
+Redeye Hemlok.png|{{Cosmetic|Ascension|Epic|Redeye}}<br>{{ItemLink|Treasure Pack|text={{Heirloom|Treasure Pack}}}} #57
+Oxidization Hemlok.png|{{Cosmetic|Fight Night|Epic|Oxidization}}
+Phoenix Fire Hemlok.png|{{Cosmetic|Anniversary|Epic|Phoenix Fire}}
+Cuteness Overload Hemlok.png|{{Cosmetic|Genesis|Epic|Cuteness Overload}}
+Mimicry Complex Hemlok.png|{{Cosmetic|Season 10|Epic|Mimicry Complex}}<br/>Level 97
+Artifact Finder Hemlok.png|{{Cosmetic|Evolution|Epic|Artifact Finder}}
+Noxious Spray Hemlok.png|{{Cosmetic|Beast of Prey|Epic|Noxious Spray}}
+Deadliest Catch Hemlok.png|{{Cosmetic|Sun Squad|Epic|Deadliest Catch}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="300" mode="nolines">
+Out for Blood Hemlok.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party Hemlok.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale Hemlok.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare Hemlok.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands Hemlok.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames Hemlok.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail Hemlok.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker Hemlok.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident Hemlok.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged Hemlok.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave Hemlok.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge Hemlok.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse Hemlok.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave Hemlok.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Hemlok.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Patchwork Hemlok.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 04
+Mainframe Hemlok.png|{{Cosmetic|Season 2|Rare|Mainframe}}<br/>Level 66
+Caged Rage Hemlok.png|{{Cosmetic-NI|PlayStation+ Pack|image=PSPlus Logo.png|Rare|Caged Rage}}<br/>August 2019
+Hot Zone Hemlok.png|{{Cosmetic|Season 3|Rare|Hot Zone}}<br/>Level 88
+Quantum Realm Hemlok.png|{{Cosmetic|Season 4|Rare|Quantum Realm}}<br/>Level 15
+Spine Chiller Hemlok.png|{{Cosmetic|Season 5|Rare|Spine Chiller}}<br/>Level 28
+Neon Glow Hemlok.png|{{Cosmetic|Season 6|Rare|Neon Glow}}<br/>Level 60
+Lavender Lux Hemlok.png|{{Cosmetic|Season 7|Rare|Lavender Lux}}<br/>Level 47
+Chevron Check Hemlok.png|{{Cosmetic|Season 8|Rare|Chevron Check}}<br/>Level 65
+Temple Guardian Hemlok.png|{{Cosmetic|Season 9|Rare|Temple Guardian}}<br/>Level 81
+Camo Commando Hemlok.png|{{Cosmetic-NI|PlayStation+ Pack|image=PSPlus Logo.png|Rare|Camo Commando}}<br/>May 2021
+Hardwire Sprawl Hemlok.png|{{Cosmetic|Season 11|Rare|Hardwire Sprawl}}<br/>Level 14
+Rare Throwback Hemlok.png|{{Cosmetic|Season 13|Rare|Rare Throwback}}<br/>Level 73
+Sunset Scavenger Hemlok.png|{{Cosmetic|Season 14|Rare|Sunset Scavenger}}<br/>Level 26
+Rage Chain Hemlok.png|{{Cosmetic|Season 15|Rare|Rage Chain}}<br/>Level 94
+Sonic Sequencer Hemlok.png|{{Cosmetic|Season 16|Rare|Sonic Sequencer}}<br/>Level 30
+The Dopple Gang Hemlok.png|{{Cosmetic|Season 18|Rare|The Dopple Gang}}<br/>Level 51
+Temple Runner Hemlok.png|{{Cosmetic|PS+|Rare|Temple Runner}}<br>Season 19
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="300" mode="nolines">
+Factory Issue Hemlok.png|{{Common|Factory Issue}}<br/>Default
+Midnight Hemlok.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Hemlok.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Hemlok.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Hemlok.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Hemlok.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Hemlok.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Hemlok.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Hemlok.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Hemlok.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Hemlok.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Hemlok.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Hemlok.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Hemlok.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Hemlok.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Hemlok.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|{{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Damage reduced to 20 (was 21)
+* Hipfire spread increased
+* Spread delay increased to 0.28 (was 0.21)
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Damage reduced to 21 (was 22).
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Reduced damage from 23 to 22.
+* Reduced headshot multiplier from 1.8 to 1.75.
+* Increased recoil when ADS.
+* Added {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}. Compatible with Hemlok Burst AR and [[Wingman]].
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 18}}.
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 210 ammo and {{ItemLink|Boosted Loader|text={{Epic|Boosted Loader}}}}.
+* Increased damage from 20 to 23.
+* Increased headshot damage multiplier from 1.75× to 1.8×.
+* Improved recoil.
+* {{ItemLink|Boosted Loader|text={{Epic|Boosted Loader}}}}:
+** Increased magazine size boost from 6 to 9.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Removed {{ItemLink|Boosted Loader|text={{Epic|Boosted Loader}}}}.
+* Increased hipfire spread when crouching from 3 to 3.6.
+* Increased hipfire spread when standing from 3.5 to 7.15.
+* Increased hipfire spread when moving from 4.5 to 8.4.
+* Increased hipfire spread when running from 2.75 to 3.
+* Increased hipfire spread when in midair from 7 to 8.4.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 14}}.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|500}} to {{Materials|450}}.
+
+; {{ItemLink|Evolution|noText=yes}} [[September 14, 2021 Patch]]
+* Reduced hipfire spread.
+* Reduced hipfire reset time slightly.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Introduced {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}. Compatible with Hemlok Burst AR and [[Wingman]].
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 9}}.
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* Increased hipfire spread.
+
+; {{ItemLink|Fight Night|noText=yes}} [[January 05, 2021 Patch]]
+* Reduced damage from 22 to 20.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Increased horizontal recoil on the first three shots.
+* Increased recoil magnitude in the later stages of the pattern.
+* Reduced recoil multiplier in single fire mode to help compensate for additional recoil in the pattern. Recoil should mostly be increased in burst mode rather than single fire mode.
+* Reduced headshot damage multiplier from 2× to 1.75×.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Reduced [[File:Burst Icon.svg|25px|link=]] Burst vertical recoil.
+* Reduced recoil on the second and third shots slightly.
+* Reduced burst delay from 0.32 to 0.28 seconds.
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 5}}.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Increased [[File:Single-fire Icon.svg|25px|link=]] Single fire rate from 5.6 to 6.4.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Increased damage from 18 to 22.
+* Reduced fire rate for both fire modes slightly.
+
+; [[May 20, 2019 Patch]]
+* Fixed missing or quiet out of ammo trigger click sound and low ammo (the progressive change in sound that the gun makes as the magazine approaches empty) sounds.
+}}
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Gadget-Bot Cardiac Assault Hemlok.jpg|Concept art for the {{Cosmetic|Monsters Within|Legendary|Cardiac Assault}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/J9yw80 Gadget-Bot Productions on ArtStation]</ref>
+Retrofitted Hemlok Concept Art.jpg|Concept art for the {{Cosmetic|Season 5|Legendary|Retrofitted}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/OmoJqw Gadget-Bot Productions on ArtStation]</ref>
+Terminated Hemlok Concept Art.jpg|Concept art for the {{Legendary|Terminated}} skin.<ref>[https://www.artstation.com/artwork/WmZmm2 Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+== Trivia ==
+* Rather than being a recoloration of either {{Legendary|Lost Queen}} or {{Legendary|The Glorious One}}, {{Cosmetic-NI|Recolor|Legendary|Forgotten Odyssey}} is a recoloration of {{Cosmetic|Founders Pack|Legendary|The Notorious One}}, as they share the same model.
+
+
+== See also ==
+* [[Hemlok Burst AR (Mobile)|Hemlok Burst AR (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/Hemlok_BF-R Hemlok BF-R (''Titanfall'' and ''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

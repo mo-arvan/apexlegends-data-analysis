@@ -1,0 +1,39 @@
+{
+  "title": "Longbow DMR",
+  "infobox": {
+    "name": "Longbow DMR",
+    "description": "Semi-auto sniper rifle.",
+    "type": "Sniper Rifle",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "{{ItemLink|Wonyeon}}",
+    "barrel": "",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "skullpiercer",
+    "damageBody": "60",
+    "damageHead": "108{{Symbol|Skullpiercer}} 129",
+    "damageLegs": "48",
+    "rateOfFire": "78",
+    "dps": "78",
+    "magazineSize": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "tacReload": [
+      "2.66",
+      "2.57",
+      "2.48",
+      "2.39"
+    ],
+    "fullReload": [
+      "3.66",
+      "3.54",
+      "3.41",
+      "3.29"
+    ]
+  }
+}

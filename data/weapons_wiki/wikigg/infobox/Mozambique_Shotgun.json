@@ -1,0 +1,35 @@
+{
+  "title": "Mozambique Shotgun",
+  "infobox": {
+    "name": "Mozambique Shotgun",
+    "icon": "Default: Akimbo:",
+    "description": "Triple-barrel shotgun pistol.",
+    "type": "Shotgun",
+    "fireModes": "Auto",
+    "ammoType": "Shotgun Shells",
+    "creator": "Altamirano Armory",
+    "barrel": "",
+    "magType": "bolt",
+    "optics": "true",
+    "stock": "",
+    "hopup": "",
+    "damageBody": "17×3{{Symbol|Hammerpoint Rounds}} ??×3-->",
+    "damageHead": "21×3{{Symbol|Hammerpoint Rounds}} ??×3-->",
+    "damageLegs": "17×3{{Symbol|Hammerpoint Rounds}} 18×3-->",
+    "rateOfFire": [
+      "160",
+      "176",
+      "184",
+      "192"
+    ],
+    "dps": [
+      "132.6",
+      "145.8",
+      "156.06",
+      "163.2"
+    ],
+    "magazineSize": "5 10",
+    "tacReload": "2.1 2.5",
+    "fullReload": "2.6 3"
+  }
+}

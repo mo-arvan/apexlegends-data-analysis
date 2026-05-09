@@ -1,0 +1,413 @@
+{{MainGameNotice|mobilePage=Sentinel (Mobile)}}
+{{Infobox-Weapon
+| name = Sentinel
+| description = Bolt-action sniper rifle.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Sniper Ammo
+| creator = {{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}
+| magType = sniper
+| optics = true
+| stock = sniper
+| damageBody = 70</br>[[File:Sniper Ammo Amped.png|25px|Amped|link=]] 88
+| damageHead = 140 <small>(2×)</small></br>[[File:Sniper Ammo Amped.png|25px|Amped|link=]] 176 <small>(2×)</small>
+| damageLegs = 63 <small>(0.9×)</small></br>[[File:Sniper Ammo Amped.png|25px|Amped|link=]] 79 <small>(0.9×)</small>
+| rateOfFire = 31-38
+| dps = 36-45<br/>[[File:Sniper Ammo Amped.png|25px|Amped|link=]] 44-58
+| magazineSize = {{Level0123|4|5|6|7}}
+| tacReload = {{Level0123|2.5|2.42|2.33|2.25}}
+| fullReload = {{Level0123|3.6|3.48|3.36|3.24}}
+}}
+
+The '''Sentinel''' is a bolt-action [[sniper rifle]] introduced in {{ItemLink|Season 4}} that utilizes {{ItemLink|Sniper Ammo}}. When timing the shots correctly, the Sentinel's rate of fire increases.
+
+The Sentinel can be [[File:Sniper Ammo Amped.png|25px|link=]] Amped with a {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}}, increasing the damage by 25% for 120 seconds, with each shot shortening the charge by 15 seconds. Charging the Sentinel takes 5 seconds.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+* {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+; Others
+* {{ItemLink|Extended Sniper Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+
+=== Damage Profile ===
+; Base
+{{Damage profile
+| damage = 70
+| headshotMdfr = 2
+| legMdfr = 0.9
+}}
+
+
+; [[File:Sniper Ammo Amped.png|25px|link=]] Amped
+{{Damage profile
+| damage = 88
+| headshotMdfr = 2
+| legMdfr = 0.9
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_sentinel</big>
+|-
+! Variable !! Value !! Description
+|-
+| start_energized
+| style="text-align:center" | 0
+| When found the first time, the Sentinel is not [[File:Sniper Ammo Amped.png|25px|link=]] Amped.
+|-
+| energized_duration
+| style="text-align:center" | 120
+| [[File:Sniper Ammo Amped.png|25px|link=]] Amped duration. Expressed in seconds.
+|-
+| energized_time_consumed_per_shot
+| style="text-align:center" | 15
+| Time detracted from [[File:Sniper Ammo Amped.png|25px|link=]] Amped with each shot. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 3.1
+| Rounds fired in one second.
+|-
+| rowspan="2" | rechamber_time
+| style="text-align:center" | 1.6
+| rowspan="2" | Time delay between two shots. Expressed in seconds.
+|-
+| style="text-align:center" | <div class="invert-image">[[File:Deadeye's Tempo.svg|25px|link=Deadeye's Tempo]] 1.25</div>
+|-
+| projectile_launch_speed
+| style="text-align:center" | 31000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 787 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 29528
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 750 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 8
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 10
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 11
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 10
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.6
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 1
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.7
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.55
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.65
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.31
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.28
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.35
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Amped Up''
+| style="text-align:left" | Down an enemy with amped shots.
+| 20 times
+|-
+| 40
+| ''Death Trap''
+| style="text-align:left" | Down an enemy with headshot when target is looting a deathbox.
+| 20 times
+|-
+| 60
+| ''Feel the Rhythm''
+| style="text-align:left" | Land 2 headshots in a row while in tempo.
+| 15 times
+|-
+| 80
+| ''Gotcha''
+| style="text-align:left" | Down an enemy at least 200 meters away with headshot.
+| 10 times
+|-
+| 100
+| ''Simple Geometry''
+| style="text-align:left" | Down an airborne enemy with an amped headshot.
+| 3 times
+|}
+
+
+== Lore ==
+{{Quote|The Sentinel is a bolt action sniper rifle, effective at medium to long range and retrofitted to solve a unique problem. Snipers for the Frontier Militia acted as lynchpins in many of the Titan War's initial conflicts, but their effectiveness was undercut by the mass mobilization of Titans by the IMC. Militia snipers realized that if they could destroy a Titan's energy shield, that would create an opportunity for ground troops to do significant damage to the chassis. The result of those efforts - the Sentinel - was outfitted with a charge port that allowed projectiles to be energized and interfere with energy shields on impact. It would ultimately fall out of favor in Titan warfare (replaced by the heavy-hitting [[Charge Rifle]]), but remains a destructive force against a variety of targets at distance.}}
+
+The Sentinel ESR (Electromagnetic Sniper Rifle) is a dual-stage, electromagnetic actuated sniper rifle manufactured by [[Paradinha Arsenal]]. Rounds are chambered through the rear bolt action receiver and fired with a traditional closed bolt pin. The round is then accelerated with a muzzle velocity of 5km/s through the EM Propulsion system. This delivers a projectile with highly destructive kinetic energy to defeat the immediate effects of bullet drop over distances of 2km. This gives the weapon more accessibility and a faster cycle time than the [[Kraber .50-Cal Sniper]] in exchange for a little less lethality.<ref>[https://www.artstation.com/artwork/EV6NAn Ryan Lastimosa on ArtStation]</ref>
+
+The [[A-13 Sentry]], Vantage's signature sniper rifle, was what laid the basis for the Sentinel's development.<ref>{{ItemLink|Transition}} - {{Cosmetic|Season 14|Rare|Happy Birthday, Mara}}</ref>
+
+
+== Skins ==
+There are a total of 73 skins for the Sentinel: 19 {{Legendary}}, 9 {{Epic}}, 29 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+Biomechanics Sentinel.png|{{Legendary|Biomechanics}}<br/>{{CraftingMetals|1,200}}
+Golden Spine Sentinel.png|{{Legendary|Golden Spine}}<br/>{{CraftingMetals|1,200}}
+Nightcore Sentinel.png|{{Legendary|Nightcore}}<br/>{{CraftingMetals|1,200}}
+The Law Dispenser Sentinel.png|{{Legendary|The Law Dispenser}}<br/>{{CraftingMetals|1,200}}
+Clean Shot Sentinel.png|{{Cosmetic-NI|Recolor|Legendary|Clean Shot}}<br/>Needs {{Legendary|Nightcore}}
+Rollcage Sentinel.png|{{Cosmetic|Season 6|Legendary|Rollcage}}<br/>Level 1
+Brass Blaster Sentinel.png|{{Cosmetic-NI|Recolor|Legendary|Brass Blaster}}<br/>Needs {{Legendary|The Law Dispenser}}
+Jaded Myth Sentinel.png|{{Cosmetic|Champion Edition|Legendary|Jaded Myth}}
+Dressed For Death Sentinel.png|{{Cosmetic-NI|Recolor|Legendary|Dressed For Death}}<br/>Needs {{Legendary|Golden Spine}}
+Beastial Instinct Sentinel.png|{{Cosmetic|Genesis|Legendary|Beastial Instinct}}
+Ethereal Expectations Sentinel.png|{{Cosmetic|Evolution|Legendary|Ethereal Expectations}}
+Hollow Sentinel.png|{{Cosmetic-NI|Recolor|Legendary|Hollow}}<br/>Needs {{Legendary|Nightcore}}
+Frozen Patrol Sentinel.png|{{Cosmetic|Vantage Launch Bundle|Legendary|Frozen Patrol}}
+Luxury Longshot Sentinel.png|{{Cosmetic-NI|Recolor|Legendary|Luxury Longshot}}<br>Needs {{Legendary|Biomechanics}}
+Platinum Aegis Sentinel.png|{{Cosmetic|Veiled|Legendary|Platinum Aegis}}
+Royal Wrap Sentinel.png|{{Cosmetic|Threat Level|Legendary|Royal Wrap}}
+Rules of Engagement Sentinel.png|{{Cosmetic|Neon Network|Legendary|Rules of Engagement}}
+Outreacher 04 Sentinel.png|{{Cosmetic|Doppelgangers|Legendary|Outreacher 04}}
+Storm's Fury Sentinel.png|{{Cosmetic|Final Fantasy VII|Legendary|Storm's Fury}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Sentinel.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Sentinel.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Sentinel.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Sentinel.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Sentinel.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Swamp Creature Sentinel.png|{{Cosmetic|Fight or Fright 2020|Epic|Swamp Creature}}
+Mark of the Ancestors Sentinel.png|{{Cosmetic|Warriors|Epic|Mark of the Ancestors}}
+Ghostly Premonition Sentinel.png|{{Cosmetic|Spellbound|Epic|Ghostly Premonition}}
+Epitaph Sentinel.png|{{Cosmetic|Harbingers|Epic|Epitaph}} 
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Out for Blood Sentinel.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party Sentinel.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale Sentinel.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare Sentinel.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands Sentinel.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames Sentinel.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail Sentinel.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker Sentinel.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident Sentinel.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged Sentinel.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave Sentinel.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge Sentinel.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse Sentinel.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave Sentinel.png|{{Rare|Coldwave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Sentinel.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Cybersilk Sentinel.png|{{Cosmetic|Season 4|Rare|Cybersilk}}<br/>Level 71
+Admonish Sentinel.png|{{Cosmetic|Season 5|Rare|Admonish}}<br/>Level 94
+Grieving Widow Sentinel.png|{{Cosmetic|Season 6|Rare|Grieving Widow}}<br/>Level 75
+Particle Play Sentinel.png|{{Cosmetic|Season 7|Rare|Particle Play}}<br/>Level 50
+Clobberstone Sentinel.png|{{Cosmetic|Season 8|Rare|Clobberstone}}<br/>Level 09
+Demonic Resolve Sentinel.png|{{Cosmetic|Season 9|Rare|Demonic Resolve}}<br/>Level 65
+Substructure Sentinel.png|{{Cosmetic|Season 10|Rare|Substructure}}<br/>Level 94
+No Mercy Sentinel.png|{{Cosmetic|Season 11|Rare|No Mercy}}<br/>Level 94
+Shock and Awe Sentinel.png|{{Cosmetic-NI|PlayStation+|Rare|Shock and Awe}}<br/>November 2021
+Sniper Rogue Sentinel.png|{{Cosmetic|Season 12|Rare|Sniper Rogue}}<br/>Level 37
+Shedding The Dead Sentinel.png|{{Cosmetic|Season 13|Rare|Shedding the Dead}}<br/>Level 7
+Prints Sentinel.png|{{Cosmetic|Season 14|Rare|Prints}}<br/>Level 37
+Vampiric Buddies Sentinel.png|{{Cosmetic|Season 15|Rare|Vampiric Buddies}}<br/>Level 14
+Red Rumble Sentinel.png|{{Cosmetic|S18|Rare|Red Rumble}}<br/>Level 53
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Sentinel.png|{{Common|Factory Issue}}<br/>Default
+Midnight Sentinel.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Sentinel.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Sentinel.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Sentinel.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Sentinel.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Sentinel.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Sentinel.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Sentinel.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Sentinel.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Sentinel.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Sentinel.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Sentinel.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Sentinel.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Sentinel.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Sentinel.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Increased [[File:Sniper Ammo Amped.png|25px|link=]] Amped shot projectile size.
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+; [[January 23, 2023 Patch]]
+* ('''Undocumented''') Increased charge cost from 0 to 1 {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}} when wearing a {{ItemLink|Body Shield|text={{Legendary|Body Shield}}}}.
+
+; {{ItemLink|Spellbound|noText=yes}} [[January 10, 2023 Patch]]
+* Reduced charge cost from 2 to 1 {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}}.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Can now be charged before a previous charge has ended.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Integrated {{ItemLink|Deadeye's Tempo|text={{Epic|Deadeye's Tempo}}}} into the Sentinel.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Reduced charge cost from 2 to 1 {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}} when wearing a {{ItemLink|Body Shield|text={{Legendary|Body Shield}}}}.
+
+; [[January 13, 2022 Patch]]
+* Added.
+* ('''Undocumented''') Removed movement penalty when charging.
+
+; [[January 05, 2022 Patch]]
+* Temporarily removed to fix an exploit that allowed players to charge it indefinitely at no cost.
+
+; {{ItemLink|Raiders|noText=yes}} [[December 07, 2021 Patch]]
+* ('''Undocumented''') Increased charge cost from 1 to 2 {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}} when wearing a {{ItemLink|Body Shield|text={{Legendary|Body Shield}}}}.
+
+; [[July 21, 2021 Patch]]
+* Fixed an exploit that allowed players to fire the weapon rapidly.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* ('''Undocumented''') Changed HUD for the charge prompt.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Introduced {{ItemLink|Deadeye's Tempo|text={{Epic|Deadeye's Tempo}}}}. Compatible with [[Bocek Compound Bow]] and Sentinel.
+* Fixed a graphical issue when swapping to a Sentinel.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 9}}.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* ('''Undocumented''') Added a [[Hop-Up]] slot.
+
+; [[December 09, 2020 Patch]]
+* Fixed an error causing players to die while charging the Sentinel.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Changed charge name from Disruptor to Amped.
+* Changed charge behavior: now gives a 25% flat damage bonus rather than breaking [[shield]]s.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 7}}.
+
+; October 15, 2020
+* Added.
+
+; [[October 09, 2020 Patch]]
+* Temporarily removed to fix an exploit that allowed players to fire the weapon rapidly.
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Fixed an issue with the Sentinel not always receiving the {{AbilityLink|Amped Cover}} buff.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Reduced charge cost from 2 to 1 {{ItemLink|Shield Cell|text={{Common|Shield Cell}}}} when wearing a {{ItemLink|Body Shield|text={{Legendary|Body Shield}}}}.
+
+; {{ItemLink|Lost Treasures|noText=yes}} [[June 23, 2020 Patch]]
+* Reduced rechamber time from 1.75 to 1.6 seconds.
+* Increased charge duration from 90 to 120 seconds.
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* ('''Undocumented''') Changed charge cost from 1 {{ItemLink|Shield Battery|text={{Rare|Shield Battery}}}} to 2 {{ItemLink|Shield Cell|text={{Common|Shield Cells}}}}.
+
+; {{ItemLink|The Old Ways|noText=yes}} [[April 07, 2020 Patch]]
+* Charge can now be canceled before going through.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Increased damage from 65 to 70.
+* Reduced rechamber time from 1.85 to 1.75 seconds.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Introduced.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 4}}.
+}}
+
+
+== Trivia ==
+* The Sentinel is visible on the [[DUMMIE]]s back in [[Crypto]]'s finisher "Drone Scan", when previewed in the Legends tab. This was a whole Season before the weapon was first revealed. As said by community coordinator Jason Garza on Reddit, he messed up while capturing the finisher, and it shipped with the weapon showing. He also said that he'd let the fans figure out what the weapon was<ref>[https://www.reddit.com/r/apexlegends/comments/esx41n/everyone_always_downvoted_these_posts_saying_its/ u/thisnotfor on Reddit]</ref>.
+* [[Vantage]] has different first equip, draw, and holster animations when using a Sentinel, along with some voice lines.
+* A "5km/s" muzzle velocity, mentioned in the "Lore" section and quoted verbatim from the blurb included in the original concpt art, is likely an error. A speed of 5,000 m/s roughly equates to mach 14.5, which is more than 4 times faster than the current real-life record for the fastest small arms ammunition, held by .220 Swift at over 1,200 m/s. A projectile - any projectile - travelling at mach 14.5 would be astonishingly destructive, far beyond that of a Kraber shot, contrary to the source description.
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa Sentinel ESR.jpg|Concept Art by Ryan Lastimosa.
+Nightcore Sentinel Concept Art.jpg|Concept art for the {{Legendary|Nightcore}} skin.
+</gallery>
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

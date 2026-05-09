@@ -1,0 +1,415 @@
+{{MainGameNotice|mobilePage=Peacekeeper (Mobile)}}
+{{Infobox-Weapon
+| name = Peacekeeper
+| description = Lever-action shotgun.
+| type = Shotgun
+| fireModes = [[File:Single-fire Icon.svg|20px]] [[File:Choke Active Icon.svg|20px]] Single<br>[[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Shotgun Shells
+| magType = bolt
+| optics = true
+| stock = standard
+| hopup = disruptor
+| damageBody = 11×9<br>{{Symbol|Disruptor Rounds}} 14×9
+| damageHead = 14×9<small>(1.25×)</small><br>{{Symbol|Disruptor Rounds}} 18×9 <small>(1.25×)</small>
+| damageLegs = 11×9<br>{{Symbol|Disruptor Rounds}} 14×9
+| rateOfFire = {{Level0123|44|47|50|51}}
+| dps = {{Level0123|73|78|83|84}}<br>{{Symbol|Disruptor Rounds}} {{Level0123|89|95|101|103}}
+| magazineSize = 5
+| tacReload = {{Level0123|2.5|2.42|2.33|2.25}}
+| fullReload = {{Level0123|3.5|3.38|3.27|3.15}}
+}}
+
+The '''Peacekeeper''' is a lever-action energy [[shotgun]] that utilizes {{ItemLink|Shotgun Shells}}. It fires 9 pellets in the shape of a shield, with one pellet in the middle and two on each outer line of the star shape. When {{ItemLink|Choke Active Icon|noText=1}} Choke is active, the spread of the pellets is greatly reduced while aiming down sights.
+
+The Peacekeeper can be enhanced with {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}, which increases damage dealt against shielded targets by 25%.
+
+Being a shotgun, the Peacekeeper affects [[Mad Maggie]]'s movement speed because of her {{AbilityLink|Warlord's Ire}} Passive ability.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Other
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}
+
+
+=== Damage Profile ===
+'''Note:''' {{AbilityLink|Fortified}} headshot damage may vary ±9. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.
+{{Damage profile
+|damageref=<ref group="note">Shotgun Damage is calculated per pellet.<br/>Correct: 9 dmg/pellet x 1.25 = 11.25dmg/pellet ≈ 11 dmg/pellet, resulting in 121 damage total.<br/>Incorrect: 99 dmg x 1.25 = 123.75 ≈ 124 damage total.</ref>
+| damage = 9
+| bulletsPerBurst = 11
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note" />
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_energy_shotgun</big>
+|-
+! Variable !! Value !! Description
+|-
+| charge_time
+| style="text-align:center" | 1.25
+| Time to charge shots for better accuracy. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 4
+| Rounds fired in one second.
+|-
+| rechamber_time
+| style="text-align:center" | 1.1
+| Time delay between two shots. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 16000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 406 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 3940
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 100 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.8
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 2.8
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 2.8
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2.8
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 2.8
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.4
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.25
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.9
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 2.8
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 2.8
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 2.8
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Full Star''
+| style="text-align:left" | Down an enemy with all pellets landed on target in a blast.
+| 25 times
+|-
+| 40
+| ''Pull!''
+| style="text-align:left" | Down an enemy with hipfire when the enemy is airborne.
+| 20 times
+|-
+| 60
+| ''Here's Peacekeeper!''
+| style="text-align:left" | Break a door and get a knock within 5 seconds.
+| 15 times
+|-
+| 80
+| ''Sh…''
+| style="text-align:left" | Down at least 3 enemies with fully choke shots in one match while using Peacekeeper.
+| 15 times
+|-
+| 100
+| ''Smooth Criminal''
+| style="text-align:left" | Down at least 3 enemies with the weapon while sliding in one match.
+| 10 times
+|}
+
+== Lore ==
+{{Quote|As manufacturing became more commonplace with IMC expansion, the need to guard IMC factories and plants against outlaws increased. However, many ballistic firearms could not be used in these facilities due to the volatile materials involved in industrial production. The IMC turned to Lastimosa Armory for a solution, and the energy-based Peacekeeper was born. Slow and heavy-hitting, the Peacekeeper requires few charges to put down a target at close range.}}
+
+
+== Skins ==
+There are a total of 83 skins for Peacekeeper: 23 {{Legendary}}, 12 {{Epic}}, 33 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+The Lonestar Peacekeeper.png|{{Legendary|The Lonestar}}<br/>{{CraftingMetals|1,200}}
+The Superstar Peacekeeper.png|{{Legendary|The Superstar}}<br/>{{CraftingMetals|1,200}}
+Pal 9000 Peacekeeper.png|{{Legendary|Pal 9000}}<br/>{{CraftingMetals|1,200}}
+The Demolisher Peacekeeper.png|{{Legendary|The Demolisher}}<br/>{{CraftingMetals|1,200}}
+Digging the Grave Peacekeeper.png|{{Cosmetic|Unshackled|Legendary|Digging the Grave}}<br/>{{CraftingMetals|1,200}}
+Clean Breach Peacekeeper.png|{{Cosmetic-NI|Recolor|Legendary|Clean Breach}}<br/>Needs {{Legendary|The Demolisher}}
+The Noble Cause Peacekeeper.png|{{Cosmetic|Iron Crown|Legendary|The Noble Cause}}
+Northern Lights Peacekeeper.png|{{Cosmetic-NI|Recolor|Legendary|Northern Lights}}<br/>Needs {{Legendary|The Superstar}}
+Frostbite Peacekeeper.png|{{Cosmetic|Season 3|Legendary|Frostbite}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Blood Stone Peacekeeper.png|{{Cosmetic|Season 3|Legendary|Blood Stone}}<ref group="note" name="reactive"/><br/>Level 110
+Red Dawn Peacekeeper.png|{{Cosmetic-NI|Recolor|Legendary|Red Dawn}}<br/>Needs {{Legendary|Pal 9000}}
+Cyber Shock Peacekeeper.png|{{Cosmetic|System Override|Legendary|Cyber Shock}}
+Old Blue Peacekeeper.png|{{Cosmetic-NI|Recolor|Legendary|Old Blue}}<br/>Needs {{Legendary|The Lonestar}}
+Hide and Seek Peacekeeper.png|{{Cosmetic-NI|Recolor|Legendary|Hide and Seek}}<br/>Needs {{Legendary|The Demolisher}}
+Buckle Up Peacekeeper.png|{{Cosmetic|Aftermarket|Legendary|Buckle Up}}
+Peacebreaker Peacekeeper.png|{{Cosmetic|Mad Maggie Launch Bundle|Legendary|Peacebreaker}}
+Hardball Peacekeeper.png|{{Cosmetic|Awakening|Legendary|Hardball}}
+Toxic Takedown Peacekeeper.png|{{Cosmetic|Beast of Prey|Legendary|Toxic Takedown}}
+Soldier Side Peacekeeper.png|{{Cosmetic|Wintertide|Legendary|Soldier Side}}
+Jadeite Retribution Peacekeeper.png|{{Cosmetic|Celestial Sunrise|Legendary|Jadeite Retribution}}<ref group="note" name="reactive"/>
+Sun Soaker Peacekeeper.png|{{Cosmetic|Sun Squad|Legendary|Sun Soaker}}
+Head of the Class Peacekeeper.png|[[File:Sale Icon.svg|22px|link=Battle Academy Store]] {{Legendary|Head of the Class}}
+Tie the Knot Peacekeeper.png|{{Cosmetic|Uprising|Legendary|Tie the Knot}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Peacekeeper.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Peacekeeper.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Peacekeeper.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Peacekeeper.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Peacekeeper.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Ghouls and Ghost Peacekeeper.png|{{Cosmetic|Fight or Fright 2019|Epic|Ghouls and Ghosts}}
+Wrapped Up Peacekeeper.png|{{Cosmetic|Lost Treasures|Epic|Wrapped Up}}
+Breach of Peace Peacekeeper.png|{{Cosmetic|Anniversary|Epic|Breach of Peace}}
+Necropotence Peacekeeper.png|{{Cosmetic|Chaos Theory|Epic|Necropotence}}
+Vermilion Velocity Peacekeeper.png|{{Cosmetic|Black Friday 2021|Epic|Vermilion Velocity}}
+Purple Pounce Peacekeeper.png|{{Cosmetic|Dressed to Kill|Epic|Purple Pounce}}
+Royal Blast Peacekeeper.png|{{Cosmetic|Season 18|Epic|Royal Blast}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Solstice Peacekeeper.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord Peacekeeper.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Shockwave Peacekeeper.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Fun Fair Peacekeeper.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Rock Bed Peacekeeper.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Kaleidoscope Peacekeeper.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork Peacekeeper.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither Peacekeeper.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug Peacekeeper.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy Peacekeeper.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile Peacekeeper.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef Peacekeeper.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Morning Dew Peacekeeper.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos Peacekeeper.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Zeal Peacekeeper.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest Peacekeeper.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 49
+Symbiotic Peacekeeper.png|{{Cosmetic|Season 2|Rare|Symbiotic}}<br/>Level 63
+Caged Rage Peacekeeper.png|{{Cosmetic|PlayStation+|Rare|Caged Rage}}<br/>August 2019
+Firestarter Peacekeeper.png|{{Cosmetic|season 3|Rare|Firestarter}}<br/>Level 34
+Poacher Peacekeeper.png|{{Cosmetic|Grand Soirée|Rare|Poacher}}
+Filament Peacekeeper.png|{{Cosmetic|Season 4|Rare|Filament}}<br/>Level 75
+Evolved Flow Peacekeeper.png|{{Cosmetic|Season 5|Rare|Evolved Flow}}<br/>Level 76
+Infinite Overload Peacekeeper.png|{{Cosmetic|Season 6|Rare|Infinite Overload}}<br/>Level 87
+Quilted Frame Peacekeeper.png|{{Cosmetic|Season 7|Rare|Quilted Frame}}<br/>Level 41
+Bubble Burster Peacekeeper.png|{{Cosmetic|Season 8|Rare|Bubble Burster}}<br/>Level 85
+Ride The Wave Peacekeeper.png|{{Cosmetic|Season 9|Rare|Ride the Wave}}<br/>Level 93
+Hive Circuit Peacekeeper.png|{{Cosmetic|Season 10|Rare|Hive Circuit}}<br/>Level 62
+Good Politics Peacekeeper.png|{{Cosmetic|Season 11|Rare|Good Politics}}<br/>Level 78
+Scaled Silhouette Peacekeeper.png|{{Cosmetic|Season 13|Rare|Scaled Silhouette}}<br/>Level 45
+The Real Teal Peacekeeper.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|The Real Teal}}<br/>May 2022
+Shortsighted Peacekeeper.png|{{Cosmetic|Season 14|Rare|Shortsighted}}<br/>Level 55
+Ornate Relic Peacekeeper.png|{{Cosmetic|Season 15|Rare|Ornate Relic}}<br/>Level 64
+Crimson Striker Peacekeeper.png|[[File:ALGS Icon.svg|22px|link=]] {{Rare|Crimson Striker}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Peacekeeper.png|{{Common|Factory Issue}}<br/>Default
+Midnight Peacekeeper.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Peacekeeper.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Peacekeeper.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Peacekeeper.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Peacekeeper.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Peacekeeper.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Peacekeeper.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Peacekeeper.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Peacekeeper.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Peacekeeper.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Peacekeeper.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Peacekeeper.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Peacekeeper.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Peacekeeper.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Peacekeeper.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 18}} [[August 08, 2023 Patch]]
+* Added {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}. Compatible with [[Alternator SMG]] and Peacekeeper.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 18}}.
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Added {{ItemLink|Standard Stock|text=Standard Stocks}} compatibility.
+* Increased projectile size at close range.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+* Reduced projectile growth.
+* Removed {{ItemLink|Kinetic Feeder|text={{Epic|Kinetic Feeder}}}}.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Increased legshot multiplier from 0.8× to 1×.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Introduced {{ItemLink|Kinetic Feeder|text={{Epic|Kinetic Feeder}}}}. Compatible with Peacekeeper and [[Triple Take]].
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Increased pellet size slightly.
+* Reduced {{ItemLink|Choke Active Icon|noText=1}} Choke charge time from 1.5 to 1.25 seconds.
+* Choked up shots remain tight for slightly longer when exiting ADS.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|500}} to {{Materials|350}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Reduced damage per pellet from 10 to 9.
+* Increased rechamber time from 0.9 to 1.1 seconds.
+* Increased tactical reload time from 2.45 to 2.5 seconds. 
+* Increased full reload time from 3.35 to 3.5 seconds.
+* Increased pellet spread.
+* Increased pellet spread when charged for all charge levels from 0.65 / 0.45 / 0.2 to 0.85 / 0.65 / 0.35.
+* Now quickly loses charge after leaving ADS.
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* The optic can now be removed and/or replaced with a different one.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Fixed a POV issue that occurred when using [[Horizon]]'s abilities, then immediately going into ADS with a Peacekeeper.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Integrated {{ItemLink|Precision Choke|text={{Epic|Precision Choke}}}} into the weapon. Can be toggled on/off.
+* Changed rarity from {{Legendary}} to {{Heirloom}} to distinguish [[Care Package#Supply Drop Weapons|{{Heirloom|Supply Drop Weapons}}]] from [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]].
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Moved in the [[Care Package|{{Legendary|Care Package}}]]. Comes pre-equipped with 20 {{ItemLink|Mythic Shotgun Shells|text=Ammo}} and {{ItemLink|Precision Choke|text={{Epic|Precision Choke}}}}.
+* Reduced pellet spread pattern.
+* Reduced rechamber time from 1.2 to 0.9 seconds.
+* Reduced tactical reload time from 2.65 to 2.45 seconds.
+* Reduced full reload time from 3.6 to 3.35 seconds.
+* Increased projectile size to improve consistency at close range.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced magazine size from 6 to 5.
+* Increased tactical reload time from 2.5 to 2.65 seconds.
+* Increased full reload time from 3.5 to 3.6 seconds.
+* Increased scale of blast pattern from 1.6 to 1.7.
+
+; [[December 05, 2019 Patch]]
+* Reduced projectile width. 
+* Increased shot spread. 
+* Increased spread on final {{ItemLink|Precision Choke|text={{Epic|Precision Choke}}}} level.
+
+; [[November 22, 2019 Patch]]
+* Increased rechamber time from 1.1 seconds to 1.2 seconds.
+* Reduced headshot multiplier from 1.5× to 1.25×.
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Fixed an exploit that allowed players to spam fire with the Peacekeeper.
+
+; {{ItemLink|Season 1|noText=yes}} [[March 19, 2019 Patch]]
+* Reduced end sounds on the Peacekeeper charged shot.
+* Fixed players being able to shortcut Peacekeeper rechamber sequence.
+* Fixed bug where sometimes you couldn’t fire the Peacekeeper after riding a zipline.
+
+; [[March 06, 2019 Patch]]
+* Reduced spawn rate in all zone tiers.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Common|Shotgun Bolt}}}} rechamber time bonus from +10% to +7.5%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Rare|Shotgun Bolt}}}} rechamber time bonus from +20% to +13%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Epic|Shotgun Bolt}}}} rechamber time bonus from +25% to +16%.
+}}
+
+
+== Trivia ==
+* The binary code on the {{Legendary|Pal 9000}} skin reads "Kill [[Pathfinder]]".
+* The Peacekeeper's codename is "energy_shotgun", and it fires blue projectiles like energy weapons. This is due to the Peacekeeper's ammunition actually being batteries.<ref name="Lastimosa">[https://www.artstation.com/artwork/rRZEXE Ryan Lastimosa on ArtStation]</ref> Despite this, it's doesn't utilize {{ItemLink|Energy Ammo}} most likely for gameplay reasons.
+* [[Gibraltar]] has a "spinning" draw pickup Peackeeper animation, similar to reloading or chambering the next shot with a single hand. This same animation is seen when using a zip line or any other action that may use a Legend's left arm.
+** The spinning draw animation is also a possible reference to the 1991 science fiction film ''[[wikipedia:Terminator_2:_Judgment_Day|Terminator 2: Judgement Day]]''.
+** Gibraltar and [[Fuse]] have chambering the next shot with a single hand animation in 3rd Person View.
+
+== Gallery ==
+<gallery widths="250" heights="250">
+Peacekeeper_hip_fired.png|Peacekeeper bullet spread when hip fired.
+Peacekeeper_ads.png|Peacekeeper bullet spread when aimed down sights.
+ConceptArt_Ryan_Lastimosa_Peacekeeper_Mechanics.jpg|Concept art by Ryan Lastimosa.
+ConceptArt_Ryan_Lastimosa_Peacekeeper_Old_Designs_01.jpg|Old Peacekeeper designs.
+ConceptArt_Ryan_Lastimosa_Peacekeeper_Old_Designs_02.jpg
+ConceptArt_Ryan_Lastimosa_Peacekeeper_Old_Designs_03.jpg
+Buckle Up Peacekeeper Concept Art.jpg|Concept art for the {{Legendary|Buckle Up}} skin.<ref>[https://www.artstation.com/artwork/eJ0bQw Gadget-Bot Productions on ArtStation]</ref>
+Toxic Takedown Peacekeeper Concept Art.jpg|Concept art for the {{Legendary|Toxic Takedown}} skin.<ref>[https://www.artstation.com/artwork/1404wX Gadget-Bot Productions on ArtStation]</ref>
+Digging the Grave Peacekeeper Concept Art.jpg|Concept art for the {{Legendary|Digging the Grave}} skin.<ref>[https://www.artstation.com/artwork/aGlG0q Gadget-Bot Productions on ArtStation]</ref>
+Soldier Side Peacekeeper Concept Art.jpg|Concept art for the {{Legendary|Soldier Side}} skin.<ref>[https://www.artstation.com/artwork/5BJk28 Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+== References ==
+<references />
+
+{{Nav-Weapons}}

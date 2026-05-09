@@ -1,0 +1,138 @@
+---
+title: "New Updates Coming with Apex Legends\u2122: Upheaval"
+date: 2024-05-03
+slug: upheaval-game-updates
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/upheaval-game-updates
+---
+
+# New Updates Coming with Apex Legends™: Upheaval
+
+
+[![Apex Legends: Upheaval Gameplay Trailer](https://www.youtube.com/watch?v=JK2p-vZNfPA)](https://drop-assets.ea.com/images/3Ra5XBOAWz0Zl50IG0NTYZ/a7563b7d5c8bf78bd94188642fb72fb0/s21-gameplay-trailer-thumbnail.jpg?im=AspectCrop=%2816,9%29,xPosition=0.503125,yPosition=0.6222222222222222)(Youtube)(Thumbnail for Apex Legends: Upheaval Gameplay Trailer)
+## NEW UPDATES COMING WITH APEX LEGENDS™: UPHEAVAL
+
+Want to watch the world burn, Legends? Get ready to disturb the peace, because upheaval is upon us! Bend the world with Alter and her Void-based abilities, then sow chaos in Solos Takeover—with kitted guns and new ways to dodge (and deal) death. Descend into a new age of Broken Moon, unearthing new POIs and faster paths to mayhem. More fights? That just means more opportunities to slice in style with the latest customizable Apex Artifacts. It’s time to sew mayhem across the Outlands, so let’s get to it!
+## TAKEOVER: SOLOS
+
+![Apex Legends character drops from a portal above while another stands below, unaware of the ambush inside a metal-walled building.](https://drop-assets.ea.com/images/6TxmOK5Hv0zejLDApzlWQ3/239ba67eb8db8423afb6b6d12bac1d67/R5_S21_Launch_PortalAmbush_B_v02__1_.png?im=AspectCrop=%2816,9%29,xPosition=0.24296875,yPosition=0.37824074074074077)
+
+Well, well, well…looks like Solos is coming back after all! Replacing Duos from the beginning of the season, take on the Outlands by yourself in this revamped variant. We’ve taken aspects of some of our most popular modes and integrated them to keep things interesting: use your Battle Sense to detect nearby enemies, tear things up with pre-kitted weapons and attachments, and keep the fight going with auto heal and Second Chance mechanics. We get it–sometimes you want to drop hot and heavy without having to carry the squad. It’s every Legend for themselves…for now. Solos Takeover is live May 7, 2024 to June 24, 2024.
+## NEW LEGEND: ALTER
+
+![Apex Legends character Conduit stands confidently with a hand raised, smirking in a vibrant, forested arena with purple foliage.](https://drop-assets.ea.com/images/6foNikhBuXUKMcEeIWuCvH/4b7bc9dd22136720a5c211831ab04a10/R5_S21_Launch_AlterBase_v03__1_.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+When Alter emerged from her dimension into another with her past held close to the chest, she had only two things: her interdimensional traveling Void tech, and a desire to have fun. She did what she wanted when she wanted, never needing to stick around for the consequences of her actions. Morality and responsibility were things of the past as Alter traveled throughout different realities, drawn to worlds on the edge of complete destruction. 
+
+Whether something devastating was already happening or she helped usher in the apocalypse herself, Alter was always there to watch whatever catastrophe ensued. She loved seeing worlds end and seeing the true nature of the people come out within the chaos. However, in some ruined dimensions, there was a common denominator that intrigued her–one that would lead her to witness the grandest apocalypse of all. Seeking out the next world it would condemn, Alter has landed in ours, ready to do what’s necessary to see her wish fulfilled.
+### PASSIVE: GIFT FROM THE RIFT
+
+Alter can see and remotely interact with nearby death boxes to claim a single item. While she cannot take shield cores through the void, any other prize can be snatched from afar.
+### TACTICAL: VOID PASSAGE
+
+Alter fires a void blast from her tail that shatters against a surface to open a dimensional gateway through from one side to the other for a short time. Crossing through the portal is instantaneous, and can be done from either direction, but travelers will remain phased briefly after exiting. 
+
+The angle of this shot determines what surface the exit will open on and can be used to open passages through ceilings and ledges, allowing Alter to place her passages creatively through the environment.
+### ULTIMATE: VOID NEXUS
+
+Alter can deploy a Void Nexus that allies can remotely interact with to open a phase tunnel back to that point. When a tunnel is opened, that player will phase walk from their location to the Void Nexus and leave behind a portal that any player can follow through. The Nexus can be used even while downed, and it is an incredible way for Alter and her squad to regroup to a position of power for a reset, provided interlopers do not pursue…
+### APEX ARTIFACTS
+
+![Three Legends in dynamic poses with futuristic weapons, ready for battle on a vibrant, rocky map with glowing skies.](https://drop-assets.ea.com/images/hAvhWGnOBa42ZqoThxtN9/223972345eca22c62f1f9742d220faa4/R5_S21_Launch_Action_LineupArtifacts_v03__1_.png?im=AspectCrop=%2816,9%29,xPosition=0.32578125,yPosition=0.4847222222222222)
+
+The pantheon of Apex Artifacts is expanding. Check out our dedicated [blog](https://www.ea.com/games/apex-legends/apex-legends/news/apex-artifacts) for all things Apex Artifacts including lore connections and customizations.
+## MAP UPDATE: BROKEN MOON
+
+Our goals for the Upheaval update were to bring a new combat experience throughout Broken Moon and within the new POIs, while also changing the identity of the map. Detached and now floating in outer space between Cleo and Boreas, the colony of Hope is forever changed. The Terraformer has had to recalculate and adapt which has, in turn, mutated familiar biomes and created an exotic landscape.
+### POINTS OF INTEREST
+
+**QUARANTINE ZONE**
+
+![A futuristic arena is shielded by a glowing pink dome, nestled in rocky terrain with floating islands and alien architecture in the background.](https://drop-assets.ea.com/images/7A38YY4DSVUVne751E02SP/1018cbc3a7d00d862d14d18677fb7b8a/S21_-_BM_-_Quarantine_Zone_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Where Promenade East met West is now the Quarantine Zone. Promenade was wiped out by the Stasis Array Node that crashed down to the map. When what appeared to be Olympus collided with the Stasis Net satellite, Broken Moon’s protection was no longer—allowing the crash debris and meteors to rain down along with unknown biological material that has required the area to be quarantined.
+
+From a game design perspective, the goal was to deliver a faster-paced and more deliberate combat experience. We condensed the whole center of the map, making it more predictable where players can and cannot rotate from. The layout of this POI makes for fast pace looting, combat, and some fun action with the covered ziprail loop, while also providing a safe rotation from teams at the lower end.
+
+**BREAKER WHARF**
+
+![A scenic alien landscape with rocky cliffs, floating islands, futuristic structures, and glowing vegetation under a turquoise sky.](https://drop-assets.ea.com/images/72nnK3Qr8uupO9h1ZrJ9Za/49453b87ddbef3663ba4ec3d484aea86/S21_-_BM_-_Breaker_Wharf_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Breaker Wharf was also affected by the debris raining down, which gave us some room to play. Because this POI was so secluded from the rest, we felt that there was an opportunity to move it – and move it did! Now, look out for it where the Backup Atmostation was.
+
+This design change is one that aims to break up the playstyle of this side of the map, where there were a lot of science buildings that played in a similar manner. Bringing over a more industrial kit will help break that repetitiveness, offering more gameplay variety to players.
+
+**SPACE PORT**
+
+![A high-angle view of a futuristic canyon city built into cliffs, with platforms, ziplines, and scattered vegetation along rugged rock formations.](https://drop-assets.ea.com/images/22FX5OAERlCprJI12MWoOC/fe65790067327cf37991477de8dd7895/S21_-_BM_-_Space_Port_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Space Port is a smaller POI that breaks the mold of the original larger POIs and sits in the area that once was Breaker Wharf (recreated by the mobilization to help keep Broken Moon alive and together). It serves a bigger purpose to bring more action to spaces less-traveled, and is the perfect drop for one team to get some good loot.
+
+**CLIFF SIDE**
+
+![Aerial view of a rocky canyon area with purple trees, alien plants, construction cranes, and high-tech structures scattered throughout.](https://drop-assets.ea.com/images/1JDmassva7y8taSeQE9nIs/0047dd0d36f35efdd0a3b892d71fdeed/S21_-_BM_-_Cliff_Side_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Cliff Side sits in-between the Quarantine Zone and Stasis Array, and is another smaller POI with an interesting X layout allowing for a tug-of-war between the high and low grounds. Its placement also allows for less of a hike to rotate and it’s a great spot to strategize during your next rotation.
+
+**SOLAR PODS**
+
+![Futuristic base built into a canyon, featuring sci-fi structures, glowing lights, and a bright sky with floating platforms above.](https://drop-assets.ea.com/images/5p56QOcFR9fe2Odp4eKIB7/8605e614337a00ab1051d3e7b1649390/S21_-_BM_-_Solar_Pods_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Solar Pods utilizes the new Lunar buildings to introduce the bridge between Foundry and Cultivation as a new POI. The intent of this placement is to speed up the pacing of the map between POIs and offer a new combat experience within them.
+
+**UNDERPASS**
+
+![High-tech structures with landing pads sit on a rocky cliffside, surrounded by tall platforms, zip lines, and scattered supply crates.](https://drop-assets.ea.com/images/11csgyDhiv3AnWS3GkGWBD/9e3371f484020490c2cd52bcc38e7c89/S21_-_BM_-_Underpass_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Underpass is another one of the smaller POIs that allow for a slower paced beginning for teams looking for less of a hot drop. This POI also sticks to the high-level goal of speeding the pacing up while allowing for more desirable rotations.
+
+**EXPERIMENTAL LABS**
+
+![A futuristic base with yellow and blue modular buildings sits on a rocky terrain under a teal sky, with supply crates and ziplines scattered around.](https://drop-assets.ea.com/images/1TqZMIFLYZJKEJAXMSoSKw/502ad05e59b7990d1cbc22ea460e04c2/S21_-_BM_-_Experimental_Labs_2.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Experimental Labs was an addition to a camp that existed and allowed for more loot in a less-than-desirable landing location. Looking for some fun rooftop to rooftop combat? This is your drop.
+### NEW ROTATIONS
+
+What would an Apex Legends map update be without some fresh and updated rotations? Here are a few that you may want to be aware of to avoid getting pinched…
+
+![A large industrial building with a yellow stripe stands against a cliff, surrounded by sci-fi structures and blue-leaved trees under a violet sky dome.](https://drop-assets.ea.com/images/4hNUtQVDAThOEYpzYZZEPJ/a142d78eef50327081837ec01fc07264/S21_-_BM_-_Rotation_1b.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Hazmat Tunnel is a new rotation that connects Quarantine Zone and Terraformer for a risky, but rewarding rotation. Offering speed and more loot, it’s up to you to decide how long is too long to stick around. This tension point should allow for some fun and interesting conflict. 
+
+![Entrance of a futuristic facility nestled on a rocky cliffside.](https://drop-assets.ea.com/images/Mue4aHUDMmCLfQ40ffmKx/07e905760c0788fae36c4850a952f199/S21_-_BM_-_Rotation_2b.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+This rotation between Terraformer and Stasis is a nice anchor point and the perfect spot for strategy planning while avoiding difficult chokes. 
+
+![Futuristic buildings at the bottom of a large rocky canyon.](https://drop-assets.ea.com/images/5Pu1t4nV39jpfSoLa6h95/deb27b21ba9e2cd7f313977f05d12f72/S21_-_BM_-_Rotation_3b.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Connecting Cultivation, Terraformer, and Quarantine Zone, this area has multiple power positions with interesting ways to attack each of them. 
+
+![Large futuristic buildings nestled at the bottom of a rocky canyon.](https://drop-assets.ea.com/images/6sdwl2PL0fpzSU0LnhubWF/b12b8f681bfb8ecb6bbef6cd4660453c/S21_-_BM_-_Rotation_4b.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Between Quarantine Zone and Underpass, this quick rotation has some fun slide downs and links to a covered bridge. 
+
+![Large futuristic buildings surrounded by giant rock walls](https://drop-assets.ea.com/images/2FZXXIoKmEO7qY67uMmg3D/ccf99d938d049208d0d390e0703afa24/S21_-_BM_-_Rotation_5b.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Use the space between Space Port and Perpetual Core to avoid being caught thanks to multiple rotation opportunities. 
+
+![Futuristic looking entrance to a large cavernous structure with large digital banners that read Apex Legends.](https://drop-assets.ea.com/images/5Sj8k0DHgsZ8rmp0IkLScf/d6239ed1040195a03e3ae2c1a70239d3/S21_-_BM_-_Rotation_6.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+This rotation connects Perpetual Core and Quarantine Zone, offering some fun platform to platform combat. The team had a lot of fun putting this update together and we hope you enjoy the galactic effort. There are also some smaller quality of life details that have been improved upon as well, but we’ll leave those for you to discover.
+## SEE YOU ON THE DROPSHIP
+
+With Broken Moon rising from the rubble, the long awaited return of Solos, a fresh pantheon of Apex Artifacts, and a brand new Legend, this season is just beginning. Strap in, Legends, who knows what will awaken when peace is disturbed. One more time with feeling: the upheaval is upon us.
+
+---
+
+[Play Apex Legends™ for free](/games/apex-legends/apex-legends/buy)* now on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S, Nintendo Switch™, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [X](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), [TikTok](https://www.tiktok.com/@PLAYAPEX), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends™ news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+
+†Not available in all territories.

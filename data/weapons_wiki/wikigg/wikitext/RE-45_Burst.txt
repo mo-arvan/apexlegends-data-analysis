@@ -1,0 +1,177 @@
+{{Infobox-Weapon
+| name = RE-45 Burst
+| description = Auto-trigger 3-round burst charge pistol.
+| icon=[[Image:RE-45 Auto Icon.svg|x25px]]
+| type = Pistol
+| fireModes = [[File:Burst Icon.svg|25px|Burst|link=]] Burst (3)
+| ammoType = Energy Ammo
+| creator = {{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}<ref>While it is stated that this weapon is from [[Ballistic]]s private collection, it is unclear who made the conversion. The Chassis was made by Paradinha Arsenal, however a conversion from Full Auto to Burst, as well as utilising a different ammo type, requires extensive modification to the internals, which may have been done by a third party.</ref>
+| barrel = laser
+| magType = energy
+| optics = true
+| stock =
+| hopup = 
+| damageBody = 17
+| damageHead = 21
+| damageLegs = 15
+| rateOfFire = ???
+| dps = ???
+| magazineSize = {{Level0123|15|18|21|27}}
+| tacReload = 1.5
+| fullReload = 1.95
+| image=RE-45 Auto.png
+}}
+The '''RE-45 Burst''' is a burst-firing [[pistol]] that utilizes {{ItemLink|Energy Ammo}}.
+
+Originally the [[RE-45 Auto]], the RE-45 Burst is a modified energy ammo version from Ballistic's private elite arsenal. The weapon features a small windup similar to that of the [[HAVOC Rifle]], before firing in 3-round bursts with an auto-trigger similar to that of the [[Nemesis Burst AR]].
+
+As of {{SeasonLink|28}} Split 2, this became the default RE-45, with the RE-45 Auto effectively retired from the game. This also removed the Elite Weapon "Hop-Up" and graphic in the inventory.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Other
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 17
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+<br>
+<br>
+=== Advanced Stats ===
+'''Note:''' These are the values for the RE-45 Auto, and likely accurate, but need confirmation.
+
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_autopistol</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 13
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 19500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 495 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3.6
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.315
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.27
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.27
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.225
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.18
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.16
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 1
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{{#section-h:RE-45 Auto|Weapon Mastery}}
+
+== Lore ==
+{{Quote|Ah, the RE-45 Burst, a cherished member of my private collection. An energetic twist on an old favorite, recommended for connoisseurs who understand good things come to those who wait. Its charged bursts remind me of a particularly stiff drink I had on Salvo, long ago. Its flavor took a moment to hit but when it did, it was...devastating. A  perfect pairing to the Apex Games, wouldn't you say?}}
+
+
+== Skins ==
+{{#section-h:RE-45 Auto|Skins}}
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 28|noText=yes}} [[March 24, 2026 Patch]]
+* Elite version is now the default version of the RE-45
+* Removed Elite weapon visual treatment
+
+; {{Symbol|Winter Wipeout}} [[January 06, 2026 Patch]]
+* Improved recoil.
+* Increased projectile size at close range.
+
+; {{ItemLink|Season 26|noText=yes}} [https://twitter.com/PlayApex/status/1968015830009913786 September 16, 2025 Patch]
+* Horizontal and vertical recoil improvements.
+* {{ItemLink|Extended Energy Mag|lvl=3}} size increased by 3.
+
+; {{ItemLink|Season 26|noText=yes}} [https://twitter.com/Respawn/status/1960099454767534103 August 26, 2025 Patch]
+* Reduced magazine size by 3 at all tiers, including the base tier.
+* Increased horizontal and vertical recoil.
+* Projectile size reduced to match other pistols.
+
+; {{ItemLink|Season 26|noText=yes}} [[August 05, 2025 Patch]]
+* Added to floor loot
+* Also found on Energy Arsenals
+}}
+<br>
+<br>
+== Gallery ==
+{{#section-h:RE-45 Auto|Gallery}}
+
+== See also ==
+* [[RE-45 Auto|RE-45 Auto]]
+* [[RE-45 Auto (Mobile)|RE-45 Auto (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/RE-45_Autopistol RE-45 Autopistol (''Titanfall'')]
+* [https://titanfall.wiki.gg/wiki/RE-45_Autopistol#Titanfall_2 RE-45 Auto (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

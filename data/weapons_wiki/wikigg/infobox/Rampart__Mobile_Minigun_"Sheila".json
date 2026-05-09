@@ -1,0 +1,19 @@
+{
+  "title": "Rampart/Mobile Minigun \"Sheila\"",
+  "infobox": {
+    "name": "Mobile Minigun \"Sheila\"",
+    "colorPalette": "sheila",
+    "image": "Sheila.png",
+    "description": "Mobile minigun with a single high capacity magazine.",
+    "icon": "SHEILA Icon.svg",
+    "fireModes": "Auto",
+    "creator": "Rampart",
+    "damageBody": "14",
+    "damageHead": "28 (2×)",
+    "damageLegs": "14",
+    "dps": "{{#iferror: {{#expr: ((1200/60) * 14 round 0)}}|{{{dps|-}}}}}",
+    "rateOfFire": "1200",
+    "magazineSize": "150{{Symbol|modded loader}} 173",
+    "reload": "8.67 seconds{{Symbol|modded loader}} 6.5 seconds"
+  }
+}

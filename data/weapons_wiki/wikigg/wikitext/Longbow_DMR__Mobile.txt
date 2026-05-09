@@ -1,0 +1,133 @@
+{{Tabs|
+{{Tabs2|Longbow DMR|Main}}
+{{Tabs1|Longbow DMR/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Longbow DMR
+| image = Longbow DMR.png
+| description = Semi-auto Sniper Rifle, slow rate of fire, but high damage.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Sniper Ammo
+| creator = [[File:Wonyeon.svg|20px]] [[Wonyeon]]
+| barrel = stabilizer
+| magType = sniper
+| optics = true
+| stock = sniper
+| hopup = skullpiercer
+| damageBody = 55
+| damageLegs = 44 (0.8x)
+| damageHead = 110 (2x)
+| rateOfFire = 78
+| dps = 72
+| magazineSize = {{Level0123|8|10|12|14}}
+| tacReload = {{Level0123|2.5|?|?|?}}
+| fullReload = {{Level0123|3.15|?|?|?}}
+}}
+
+The '''Longbow DMR''', or '''Longbow''', is a [[designated marksman rifle]] that utilizes {{ItemLink|Sniper Ammo}}.
+
+The Longbow can be enhanced with the {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}} Hop-Up which increases damage dealt by headshots.
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|6x Sniper|text={{Common|6x Sniper}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+* {{ItemLink|4x-8x Variable Sniper|text={{Rare|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+;[[Hop-Up]]
+
+* {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Sniper Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 55
+| headshotMdfr = 2
+| legMdfr = 0.8
+}}
+<references group="note"/>
+
+== Pros and cons ==
+; Pros
+* Highest ammo capacity of all snipers.
+* Can cause collateral shots, as projectiles are able to pierce through multiple enemies.
+* Can open doors by shooting the handle.
+* Highest fire rate of all sniper rifles.
+*With instantly break shields with Skullpiercer equipped.
+
+; Cons
+* Poor hipfire accuracy.
+* Strong recoil.
+*Slower bullet speed and increased bullet drop compared to other sniper rifles.
+
+== Lore ==
+The '''D-101 Longbow DMR''' ([[wikipedia:Designated marksman rifle|'''D'''esignated '''M'''arksman '''R'''ifle]]) is a semi-automatic sniper rifle made by [[Lastimosa Armory]]. Models from the [[Frontier War]] were variants of the then-current R-201 Assault Rifle,<ref>[https://www.reddit.com/r/titanfall/comments/672pcz/i_framed_my_tier_1_diecast_tf2_weapons_shiny/dip21l7/ Comment by Ryan Lastimosa (brockhaurd) on r/titanfall]</ref> the model used in the [[Apex Games]] then would most likely be a variant of the R-201's successor, the [[R-301 Carbine]].
+
+== Skins ==
+There are a total of 15 skins for the Longbow DMR: 3 {{Eternal}}, 1 {{Legendary}}, 6 {{Epic}}, 4 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Cool Blue Longbow Mobile.jpg|{{Eternal|Cool Blue}}<br/>[[Winter Warfare]]
+B-Savior Longbow Mobile.png|{{Eternal|B-Savior}}<br/>[[Mecha Strike Go!]]
+Nether Mutant Longbow Mobile.png|{{Eternal|Nether Mutant}}
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Submarine Stream Longbow Mobile.png|{{Legendary|Submarine Stream}}<br/>[[Shipwrecked]]
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Dust Storm Longbow Mobile.png|{{Epic|Dust Storm}}
+Lucent Groove Longbow Mobile.png|{{Symbol|s2.5m}} {{Epic|Lucent Groove}}<br/>Level 10
+Entry Lane Longbow Mobile.png|{{Epic|Entry Lane}}
+Calavera Longbow Mobile.png|{{Epic|Calavera}}
+Wild Energy Longbow Mobile.png|{{Epic|Wild Energy}}
+Storm Brewing Longbow Mobile.png|{{Epic|Storm Brewing}}
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Champion's Flight Longbow Mobile.jpg|{{Rare|Champion's Flight}}<br/>[[Glacial Games]]
+Sweet 16 Longbow Mobile.jpg|{{Rare|Sweet 16}}<br/>{{Flux|3,000}}
+Troublemaker Longbow Mobile.png|{{Rare|Troublemaker}}<br/>[[Future Wave]]
+Saltwater Longbow Mobile.png|{{Rare|Saltwater}}
+Punishment of Prometheus Longbow Mobile.png|{{Symbol|s3.5m}} {{Rare|Punishment of Prometheus}}<br/>Level 10
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Longbow Mobile.png|{{Common|Factory Issue}}<br/>Default 
+</gallery>
+</tabber>
+
+== Trivia ==
+* Owing to its lineage as a variant of the [[R-301 Carbine]], it shares the same magazine design with said weapon, which is also the same model used for the {{ItemLink|Extended Light Mag|text=Extended Light Mags}}.
+* Despite the fact that the Longbow is a designated marksman rifle (DMR), it is classified in-game as a [[sniper rifle]] instead of a [[marksman weapon]].
+* The Longbow's {{Eternal|B-Savior}} skin may reference ''[[wikipedia:G-Saviour|G-Saviour]]'', a much-derided live-action adaptation of the ''[[wikipedia:Gundam|Gundam]]'' franchise.
+
+== See also ==
+*[[Longbow DMR]]
+*[[titanfall:Longbow-DMR Sniper|Longbow DMR (Titanfall 1)]]
+*[[titanfall:Longbow-DMR|Longbow DMR (Titanfall 2)]]
+
+==References==
+<references/>
+
+{{Nav-MobileWeapons}}

@@ -1,0 +1,33 @@
+{
+  "title": "30-30 Repeater",
+  "infobox": {
+    "name": "30-30 Repeater",
+    "description": "Semi-auto heavy repeater.",
+    "type": "Marksman weapon",
+    "fireModes": "Single",
+    "ammoType": "Heavy Rounds",
+    "creator": "Holdener Arms",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "",
+    "damageBody": "39~53",
+    "damageLegs": "33~45 (0.85×)",
+    "damageHead": "68~93 (1.75×)",
+    "rateOfFire": "231",
+    "dps": "90",
+    "magazineSize": [
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "tacReload": [
+      "0.33",
+      "0.31",
+      "0.29",
+      "0.26"
+    ],
+    "fullReload": "Segmented"
+  }
+}

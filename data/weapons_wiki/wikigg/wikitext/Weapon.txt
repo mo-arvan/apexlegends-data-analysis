@@ -1,0 +1,1285 @@
+{{MainGameNotice|mobilePage=Weapon (Mobile)}}
+
+[[File:R-301 Carbine.png|350px|thumb|right|The [[R-301 Carbine]], an assault rifle.]]
+'''Weapons''' are the main method of dealing damage in ''[[Apex Legends]]''. A weapon's effectiveness and fire power can be enhanced through [[attachment]]s that can help stabilize the weapon, increase its magazine size, change its optics, and more.
+
+In {{ItemLink|Battle Royale}}, [[Legend]]s drop into the arena without any weapon equipped, and must find them from any suitable [[loot|loot source]] upon landing.
+
+In {{ItemLink|Control}}, {{ItemLink|Lockdown}}, and {{ItemLink|Team Deathmatch}}, Legends may choose between five different loadouts, each containing two weapons and a [[grenade]] (two grenades in {{ItemLink|Control}}). Based on the loadout, the weapons given are more suitable at close, medium, or long range.
+
+
+== Types ==
+All weapons are split into seven types. Weapons of the same type have similar characteristics, such as movement speed while aiming down sights, handling times and limitations to the attachments the weapon can take. 
+* '''Assault Rifles''', or '''ARs''', are the most well-rounded weapon group, suited for both mid and close range engages.
+* '''Submachine Guns''', or '''SMGs''', are high DPS (damage per second) weapons for close range engages with fast movement and handling.
+* '''Light Machine Guns''', or '''LMGs''', pack a lot of damage in their large magazines, but have slow movement and handling, making them more suited for applying pressure at mid range.
+* '''Marksman Weapons''', '''Marksman''', or '''Marksmen''', are [[ammo]] efficient weapons that fall between assault rifles and sniper rifles in terms of damage, fire rate and effective range. 
+* '''Sniper Rifles''', or '''Snipers''', are highly damaging and accurate at long range, but less optimal up close due to their slow fire rate and handling. Bullets from sniper rifles may cause "collateral" hits, piercing through multiple enemies if they are close enough to each other.
+* '''Shotguns''' are close range specialized weapons that pack a lot of damage in a single blast, making them excellent for playing around cover. They require little reserve ammo and few attachments, being highly effective straight off the ground.
+* '''Pistols''' are lightweight weapons that may lose in raw damage output, but allow for the fastest handling and movement across the board, making them reliable secondary weapons.
+
+
+== List of Weapons ==
+=== ARs ===
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+HAVOC Rifle.png|link=HAVOC Rifle|'''[[HAVOC Rifle]]'''
+VK-47 Flatline.png|link=VK-47 Flatline|'''[[VK-47 Flatline]]'''
+Hemlok Burst AR.png|link=Hemlok Burst AR|'''[[Hemlok Burst AR]]'''
+Hemlok Breach AR.png|link=Hemlok Breach AR|'''[[Hemlok Breach AR]]'''
+R-301 Carbine.png|link=R-301 Carbine|'''[[R-301 Carbine]]'''
+Nemesis Burst AR.png|link=Nemesis Burst AR|'''[[Nemesis Burst AR]]'''
+</gallery>
+
+=== SMGs ===
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Alternator SMG.png|link=Alternator SMG|'''[[Alternator SMG]]'''
+Prowler Burst PDW.png|link=Prowler Burst PDW|'''[[Prowler Burst PDW]]'''
+R-99 SMG.png|link=R-99 SMG|'''[[R-99 SMG]]'''
+Volt SMG.png|link=Volt SMG|'''[[Volt SMG]]'''
+C.A.R. SMG.png|link=C.A.R. SMG|'''[[C.A.R. SMG]]'''
+</gallery>
+
+
+=== LMGs ===
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Devotion LMG.png|link=Devotion LMG|'''[[Devotion LMG]]'''
+L-STAR EMG.png|link=L-STAR EMG|'''[[L-STAR EMG]]'''
+M600 Spitfire.png|link=M600 Spitfire|'''[[M600 Spitfire]]'''
+Rampage LMG.png|link=Rampage LMG|'''[[Rampage LMG]]'''
+</gallery>
+
+
+=== Marksmen ===
+<gallery mode="nolines" widths="260" heights="50" perrow="7">>
+G7 Scout.png|link=G7 Scout|'''[[G7 Scout]]'''
+Triple Take.png|link=Triple Take|'''[[Triple Take]]'''
+30-30 Repeater.png|link=30-30 Repeater|'''[[30-30 Repeater]]'''
+Bocek Compound Bow.png|link=Bocek Compound Bow|'''[[Bocek Compound Bow]]'''
+</gallery>
+
+
+=== Snipers ===
+<gallery mode="nolines" widths="260" heights="45" perrow="7">
+Charge Rifle.png|link=Charge Rifle|'''[[Charge Rifle]]'''
+Longbow DMR.png|link=Longbow DMR|'''[[Longbow DMR]]'''
+Kraber .50-Cal Sniper.png|link=Kraber .50-Cal Sniper|'''[[Kraber .50-Cal Sniper]]'''
+Sentinel.png|link=Sentinel|'''[[Sentinel]]'''
+</gallery>
+
+
+=== Shotguns ===
+<gallery mode="nolines" widths="260" heights="65" heighperrow="7">
+EVA-8 Auto.png|link=EVA-8 Auto|'''[[EVA-8 Auto]]'''
+Mastiff Shotgun.png|link=Mastiff Shotgun|'''[[Mastiff Shotgun]]'''
+Mozambique Shotgun.png|link=Mozambique Shotgun|'''[[Mozambique Shotgun]]'''
+Peacekeeper.png|link=Peacekeeper|'''[[Peacekeeper]]'''
+</gallery>
+
+
+=== Pistols ===
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+RE-45 Auto.png|link=RE-45 Auto|'''[[RE-45 Auto]]'''
+RE-45 Auto.png|link=RE-45 Burst|'''[[RE-45 Burst]]'''
+P2020.png|link=P2020|'''[[P2020]]'''
+Wingman.png|link=Wingman|'''[[Wingman]]'''
+</gallery>
+
+== Other Weapons ==
+=== Supply Drop Weapons ===
+{{Main|Supply Drop Weapon}}
+'''Supply Drop Weapons''' are {{Mythic}}-tier weapons that can only be found in neutral [[Care Package]]s. They have limited [[Ammo#Mythic Ammo|ammo]] that cannot be replenished. Their [[optic]] may or may not be replaced, depending on the weapon.
+
+
+=== Fully Kitted Weapons ===
+{{Main|Fully Kitted Weapon}}
+'''Fully Kitted Weapons''' are weapons that come pre-equipped with all of their [[attachment]]s, which cannot be replaced, besides their [[optic]]. The level of the attachments are based on the rarity of the weapon, ranging from {{Common}} to {{Legendary}}.
+
+
+=== Ordnance ===
+{{Main|Ordnance}}
+There are three types of '''ordnance''' that can be thrown. Unlike firearms, they take up item slots in the inventory and are classified as consumables. There are currently three ordnances in ''Apex Legends''.
+
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Arc Star.svg|link=Arc-Star|'''[[Arc Star]]'''
+Frag Grenade.svg|link=Frag Grenade|'''[[Frag Grenade]]'''
+Thermite Grenade.svg|link=Thermite Grenade|'''[[Thermite Grenade]]'''
+</gallery>
+
+
+=== Rampart's Custom Modded Paintball Weapons ===
+{{Main|Rampart's Custom Modded Paintball Weapon}}
+'''Rampart's Custom Modded Paintball Weapons''' are Fully Kitted Weapons that have been modified by [[Rampart]] with the {{ItemLink|Splatter Rounds|lvl=4}} Hop-Up. They reload faster and shoot paint-loaded rounds which have a visual colored effect. They can be purchased from Vend-it Machines located in [[Rampart's Big Maude]], and are available in {{Rare}} and {{Epic}} rarities. Legends refer to them as "Rampart Specials" if [[ping]]ed.
+
+
+=== Melee Weapon Skins ===
+[[Legend]]s do not possess a melee weapon by default, as they just use their fists and kicks. However, by obtaining a Legend's [[Heirloom|{{Mythic|Heirloom Set}}]], players can equip that Legend's personalized melee weapon skin. Melee weapons are purely cosmetic and do not impact gameplay.
+
+
+=== Gamemode-exclusive Weapons ===
+In some [[game mode]]s, some exclusive weapons may become available for use.
+
+<gallery mode="nolines" widths="260" heights="50" perrow="6">
+Throwing Knife.png|link=Throwing Knife|'''[[Throwing Knife]]'''<br>Exclusive to {{ItemLink|Gun Run}} and the [[Firing Range]]
+Heart Stealer.png|link=Heart Stealer|'''[[Heart Stealer]]'''<br>Exclusive to [[Date Night]]
+Buster Sword R2R5.png|link=Buster Sword R2R5|'''[[Buster Sword R2R5]]'''<br>Exclusive to the [[FINAL FANTASY VII Takeover]]
+Throwing Knife.png|link=Rift Relic|'''[[Rift Relic|Relic Pulse Knife]]'''<br>Exclusive to [[Rift Relic]]
+EPG-1 Launcher.png|link=EPG-1 Launcher|'''[[EPG-1 Launcher]]'''<br>Exclusive to [[Rift Relic]], [[EPG Extreme]] & [[Wild Iron]]
+Power Sword.png|link=Power Sword|'''[[Power Sword]]'''<br>Exclusive to the [[Power Sword Royale]] & [[EPG Extreme]]
+Vermillion .png|'''Vermillion'''<br>Exclusive to the [[Mythic Mayhem Royale]]
+Hornet.png|'''Hornet'''<br>Exclusive to the [[Mythic Mayhem Royale]]
+Limelight.png|'''Vermillion'''<br>Exclusive to the [[Mythic Mayhem Royale]]
+Road Rage.png|link=Road Rage|'''[[Road Rage]]'''<br>Exclusive to the [[Wild Iron]]
+</gallery>
+
+=== April Fools' Weapons ===
+During [[wikipedia:April Fools' Day|April Fools']], one or more modified versions of existing weapons may become available and occasionally replace their default version. These April Fools' variants are generally unfairly strong, one of them even being capable of [[Ol' Nessie|summoning powerful minions]] to attack enemies with. There are currently nine April Fools' weapons in ''Apex Legends''.
+
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Mozambique Shotgun.png|link=Mozambique Shotgun/April Fools'|'''[[Mozambique Shotgun/April Fools'|April Fools' Mozambique Shotgun]]'''
+Ol' Nessie.png|link=Ol' Nessie|'''[[Ol' Nessie]]'''
+Mozambeam.png|link=Mozambeam|'''[[Mozambeam]]'''
+Mozamblam.png|link=Mozamblam|'''[[Mozamblam]]'''
+Mozambrrr.png|link=Mozambrrr|'''[[Mozambrrr]]'''
+Mozamburst.png|link=Mozamburst|'''[[Mozamburst]]'''
+Mozambique Shotgun.png|link=MozamBOOM|'''[[MozamBOOM]]'''
+Mozambique Shotgun.png|link=MozamBOOM²|'''[[MozamBOOM²]]'''
+P2020.png|link=P2020/April Fools'|'''[[P2020/April Fools'|April Fools' P2020]]'''
+</gallery>
+
+=== Ability Weapons ===
+Some Legends utilize actual weapons as part of an [[ability]].
+
+<gallery mode="nolines" widths="260" heights="50" perrow="7">
+Sheila.png|link=Rampart/Mobile Minigun "Sheila"|<span class="invert-image">{{Symbol|Rampart}} </span>'''[[Rampart/Mobile Minigun "Sheila"|Sheila]]'''<br>Ultimate
+A-13 Sentry.png|link=Vantage/Sniper's Mark|<span class="invert-image">{{Symbol|Vantage}}</span> '''[[Vantage/Sniper's Mark|A-13 Sentry]]'''<br>Ultimate
+</gallery>
+
+
+== Statistics ==
+Statistics are what make a weapon what it is in ''Apex Legends''. Some of them may also be altered with [[attachment]]s.
+
+{| class="wikitable mw-collapsible mw-collapsed" style="width:100%"
+! style="font-size:22px" colspan="4" | Weapon Statistics
+|-
+! style="font-size:18px" colspan="4" | UTILIZED BY MOST WEAPONS
+|-
+! Statistic
+! Description
+! colspan="2" | Notes
+|-
+| style="text-align:center" | '''Ammo type'''<br><small>''ammo_pool_type''</small>
+| Type of ammo a weapon utilizes.
+|-
+| style="text-align:center" | '''Ammo consumed per shot'''<br><small>''ammo_per_shot''</small>
+| Amount of ammo deducted from a weapon's magazine with each shot.
+|-
+| style="text-align:center" | '''Firing mode'''<br><small>''fire_mode''</small>
+| Behavior of a weapon's fired shots.
+| colspan="2" | If a weapon has two fire modes, they can be switched into at will with {{Key|B}}/{{Key|Xbox|Left}}/{{Key|PS4|Left}}/{{Key|Switch|Left}}.
+|-
+| style="text-align:center" | '''Rate of fire'''<br><small>''fire_rate''</small>
+| Shots fired within one second.
+| colspan="2" |
+* {{ItemLink|Shotgun Bolt|text=Shotgun Bolts}} affect this statistic.
+* This statistic is affected when {{ItemLink|Rampage LMG|noText=yes|image=Rampage LMG Icon.svg}} is [[File:Heavy Rounds Revved Up.svg|22px|link=]] Revved Up.
+|-
+| style="text-align:center" | '''Magazine size'''<br><small>''ammo_clip_size''</small>
+| Rounds stored in a weapon's magazine.
+| colspan="2" |
+* {{ItemLink|Extended Light Mag|noText=yes}}{{ItemLink|Extended Heavy Mag|noText=yes}}{{ItemLink|Extended Energy Mag|noText=yes}}{{ItemLink|Extended Sniper Mag|noText=yes}} [[Extended Mag]]s affect this statistic.
+* {{ItemLink|Boosted Loader}} may affect this statistic.
+|-
+| style="text-align:center" | '''Headshot distance'''<br><small>''headshot_distance''</small>
+| Highest distance after which the headshot multiplier is no longer applied.
+|-
+| style="text-align:center" | '''Headshot multiplier'''<br><small>''damage_headshot_scale''</small>
+| Multiplier, generally above ×1, applied to shots that hit the head of a target.
+| colspan="2" | If the target is wearing a {{ItemLink|Helmet}}, the multiplier is reduced depending on the Helmet's level.
+|-
+| style="text-align:center" | '''Legshot multiplier'''<br><small>''damage_leg_scale''</small>
+| Multiplier, generally ×1 or below, applied to shots that hit the legs of a target.
+|-
+| style="text-align:center" | '''Tactical reload speed'''<br><small>''reload_time''</small>
+| Time it takes for a weapon to reload with rounds still in the magazine.
+| colspan="2" |
+* Most reload animations have a "checkpoint" halfway through (''reload_time_late1''), so that if a reload that was previously canceled has reached this checkpoint, it can be resumed afterwards without having to do it all over again.
+* {{ItemLink|Standard Stock|noText=yes}}{{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+* {{ItemLink|Boosted Loader}} may affect this statistic.
+|-
+| style="text-align:center" | '''Full reload speed'''<br><small>''reloadempty_time''</small>
+| Time it takes for a weapon to reload with an empty magazine.
+| colspan="2" |
+* Most reload animations have a "checkpoint" halfway through (''reloadempty_time_late2''), so that if a reload that was previously canceled has reached this checkpoint, it can be resumed afterwards without having to do it all over again.
+* {{ItemLink|Standard Stock|noText=yes}}{{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+* {{ItemLink|HAVOC Rifle|noText=yes|image=HAVOC Rifle Icon.svg}}, {{ItemLink|L-STAR EMG|noText=yes|image=L-STAR EMG Icon.svg}}, {{ItemLink|P2020|noText=yes|image=P2020 Icon.svg}} and {{ItemLink|Wingman|noText=yes|image=Wingman Icon.svg}} do not use this statistic, defaulting to ''reload_time'' instead.
+|-
+| style="text-align:center" | '''Pickup animation'''<br><small>''deployfirst_time''</small>
+| Time it takes for a weapon to be cocked after picking it up for the first time.
+|-
+| style="text-align:center" | '''Deploy time'''<br><small>''deploy_time''</small>
+| Time it takes for a weapon to be equipped.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+|-
+| style="text-align:center" | '''Holster time'''<br><small>''holster_time''</small>
+| Time it takes for a weapon to be put away.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+|-
+| style="text-align:center" | '''Raise time'''<br><small>''raise_time''</small>
+| Time it takes for a weapon to be equipped after performing an action.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+|-
+| style="text-align:center" | '''Lower time'''<br><small>''lower_time''</small>
+| Time it takes for a weapon to be put away after performing an action.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+|-
+| style="text-align:center" | '''Entering ADS mode'''<br><small>''zoom_time_in''</small>
+| Time it takes to aim downsights with a weapon.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s and {{ItemLink|Optic|text=Optics|image=Optics Slot.svg}} affect this statistic.
+|-
+| style="text-align:center" | '''Exiting ADS mode'''<br><small>''zoom_time_out''</small>
+| Time it takes to return to hipfire with a weapon.
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}} {{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s and {{ItemLink|Optic|text=Optics|image=Optics Slot.svg}} affect this statistic.
+|-
+| style="text-align:center" | '''ADS movement speed penalty'''<br><small>''ads_move_speed_scale''</small>
+| Multiplier applied to a Legend's movement speed while ADS.
+| colspan="2" | This statistic varies depending on a weapon's type: ARs have it set at 0.5, SMGs 0.75, LMGs 0.4, Marksman 0.425, Snipers 0.35, and Pistols 1.
+|-
+| style="text-align:center" | '''View drift'''<br><small>''viewdrift_ads_'''N'''_scale_pitch<br>viewdrift_ads_'''N'''_scale_yaw''</small>
+| Sway applied to a weapon while ADS and not firing.<br><small>Possible '''N''' values: ''stand'', ''crouch'', ''air'', ''speed''</small>
+| colspan="2" | {{ItemLink|Standard Stock|noText=yes}}{{ItemLink|Sniper Stock|noText=yes}} [[Stock]]s affect this statistic.
+|-
+| style="text-align:center" | '''Recoil'''<br><small>''viewkick_'''N'''_base<br>viewkick_'''N'''_random''</small>
+| Direction the crosshair, and subsequently the shots, take whenever firing, hindering accuracy.<br><small>Possible '''N''' values: ''pitch'', ''yaw''</small>
+| colspan="2" | {{ItemLink|Barrel Stabilizer|text=Barrel Stabilizers}} affect this statistic.
+|-
+| style="text-align:center" | '''ADS spread'''<br><small>''spread_'''N'''_ads''</small>
+| Random spread applied to a weapon while firing and ADS, hindering accuracy.<br><small>Possible '''N''' values: ''stand'', ''crouch'', ''air''</small>
+| colspan="2" | This statistic is only used when a Legend is firing while in the air.
+|-
+| style="text-align:center" | '''Hipfire spread'''<br><small>''spread_'''N'''_hip<br>spread_kick_on_fire_'''N'''_hip<br>spread_max_kick_'''N'''_hip''</small>
+| Random spread applied to a weapon while firing from the hip, indicated by the crosshair becoming bigger, hindering accuracy.<br><small>Possible '''N''' values: ''stand'', ''crouch'', ''air''</small>
+| colspan="2" |
+* {{ItemLink|Laser Sight|text=Laser Sights}} affect this statistic.
+* [[Shotgun]]s except {{ItemLink|Mozambique Shotgun|noText=yes|image=Mozambique Shotgun Icon.svg}} have this statistic set to 0.
+|-
+| style="text-align:center" | '''Projectile launch speed'''<br><small>''projectile_launch_speed''</small>
+| Speed at which projectiles travel.
+|-
+| style="text-align:center" | '''Projectile drag'''<br><small>''projectile_drag_coefficient''</small>
+| Multiplier, generally ×0.0033, applied to projectiles over time, slowing them down.
+| colspan="2" | {{ItemLink|Energy Ammo|text=weapons}} except {{ItemLink|Volt SMG|noText=yes|image=Volt SMG Icon.svg}} have this statistic set to 0.
+|-
+| style="text-align:center" | '''Projectile gravity'''<br><small>''projectile_gravity_scale''</small>
+| Strength applied to fired projectiles that make them arch and travel towards the ground.
+|-
+| style="text-align:center" | '''Projectile gravity zero distance'''<br><small>''bolt_zero_distance''</small>
+| Distance at which projectile gravity starts affecting fired projectiles.
+|-
+| style="text-align:center" | '''Projectile size'''<br><small>''bolt_hitsize_'''N'''_time<br>bolt_hitsize_'''N'''_size<br>bolt_hitsize_growfinal_lerptime<br>bolt_hitsize_growfinal_size''</small>
+| Size of a projectile. Generally, after being fired, projectiles increase in size as they travel.<br><small>Possible '''N''' values: ''grow1'', ''grow2''</small>
+|-
+| style="text-align:center" | '''Movement slowness on hit'''
+| Taking damage slows a Legend down by 10% for 0.25 seconds; this can happen once every 3 seconds.
+| colspan="2" | {{AbilityLink|Fortified}} Legends are not affected by this statistic.
+|-
+| style="text-align:center" | '''Movement slowness with weapon equipped'''
+| Generally, equipping a weapon slows a Legend down by around 13%, regardless if ADS or not.
+| colspan="2" |
+* {{ItemLink|Mad Maggie|image=Mad Maggie Icon.svg}} is not affected by this statistic when using a [[Shotgun]] due to {{AbilityLink|Warlord's Ire}}.
+* Legends are not affected by this statistic when using {{ItemLink|R-99 SMG|noText=yes|image=R-99 SMG Icon.svg}}.
+|-
+! style="font-size:18px" colspan="4" | UTILIZED ONLY BY CERTAIN WEAPONS
+|-
+! style="width:20%" | Statistic
+! style="width:44%" | Description
+! style="width:18%" | Used by
+! style="width:18%" | Notes
+|-
+| style="text-align:center" | '''Ammo not taken from inventory'''<br><small>''ammo_no_remove_from_stockpile''</small>
+| If set to 1, ammo will not be taken from the inventory.
+| style="text-align:center" | [[Supply Drop Weapon|{{Mythic|Supply Drop Weapons}}]]
+|-
+| style="text-align:center" | '''Projectiles fired per shot'''<br><small>''projectiles_per_shot''</small>
+| Amount of rounds fired at once with one pull of the trigger.
+| style="text-align:center" | [[Shotgun]]s, {{ItemLink|Triple Take|noText=yes|image=Triple Take Icon.svg}}
+|-
+| style="text-align:center" | '''Bursts fired per shot'''<br><small>''burst_fire_count''</small>
+| Amount of rounds fired in succession with one pull of the trigger.
+| style="text-align:center" | {{ItemLink|Hemlok Burst AR|noText=yes|image=Hemlok Burst AR Icon.svg}} {{ItemLink|Nemesis Burst AR|noText=yes|image=Nemesis Burst AR Icon.svg}} {{ItemLink|Prowler Burst PDW|noText=yes|image=Prowler Burst PDW Icon.svg}}
+|-
+| style="text-align:center" | '''Burst delay'''<br><small>''burst_delay''</small>
+| Delay applied after a burst before another can be fired.
+| style="text-align:center" | {{ItemLink|Hemlok Burst AR|noText=yes|image=Hemlok Burst AR Icon.svg}} {{ItemLink|Nemesis Burst AR|noText=yes|image=Nemesis Burst AR Icon.svg}} {{ItemLink|Prowler Burst PDW|noText=yes|image=Prowler Burst PDW Icon.svg}}
+| {{ItemLink|Nemesis Burst AR|noText=yes|image=Nemesis Burst AR Icon.svg}} natively affects this statistic the longer it is fired, up to a set cap.
+|-
+| style="text-align:center" | '''Rechamber time'''<br><small>''rechamber_time''</small>
+| Time it takes for a bolt-action or lever-action weapon to rechamber.
+| style="text-align:center" | {{ItemLink|30-30 Repeater|noText=yes|image=30-30 Repeater Icon.svg}} {{ItemLink|Kraber .50-Cal Sniper|noText=yes|image=Kraber .50-Cal Sniper Icon.svg}} {{ItemLink|Peacekeeper|noText=yes|image=Peacekeeper Icon.svg}} {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}}
+| {{ItemLink|Shotgun Bolt|text=Shotgun Bolts}} affect this statistic on {{ItemLink|Peacekeeper|noText=yes|image=Peacekeeper Icon.svg}}.
+|-
+| style="text-align:center" | '''Opening doors by shooting their handle'''
+| Certain weapons can open doors by shooting their handle.
+| style="text-align:center" | {{ItemLink|30-30 Repeater|noText=yes|image=30-30 Repeater Icon.svg}} {{ItemLink|Charge Rifle|noText=yes|image=Charge Rifle Icon.svg}} {{ItemLink|Kraber .50-Cal Sniper|noText=yes|image=Kraber .50-Cal Sniper Icon.svg}} {{ItemLink|Longbow DMR|noText=yes|image=Longbow DMR Icon.svg}} {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}} {{ItemLink|Wingman|noText=yes|image=Wingman Icon.svg}}
+|-
+| style="text-align:center" | '''Projectile passthrough'''
+| Certain weapons' projectiles can pierce through a target, potentially hitting multiple targets in their way.
+| style="text-align:center" | {{ItemLink|Charge Rifle|noText=yes|image=Charge Rifle Icon.svg}} {{ItemLink|Kraber .50-Cal Sniper|noText=yes|image=Kraber .50-Cal Sniper Icon.svg}} {{ItemLink|L-STAR EMG|noText=yes|image=L-STAR EMG Icon.svg}} {{ItemLink|Longbow DMR|noText=yes|image=Longbow DMR Icon.svg}} {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}}
+| {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}} needs to be [[File:Sniper Ammo Amped.png|25px|link=]] Amped before it can pierce through targets.
+|-
+| style="text-align:center" | '''Segmented reload'''<br><small>''reload_is_segmented''</small>
+| If set to 1, a weapon's reload animation will be repeated until the magazine is full or until it is canceled.
+| style="text-align:center" | {{ItemLink|30-30 Repeater|noText=yes|image=30-30 Repeater Icon.svg}} {{ItemLink|Mastiff Shotgun|noText=yes|image=Mastiff Shotgun Icon.svg}}
+|-
+| style="text-align:center" | '''Rate of fire acceleration'''<br><small>''fire_rate_max_time_speedup''</small>
+| Time it takes for a weapon to reach its highest fire rate (''fire_rate_max'').
+| style="text-align:center" | {{ItemLink|Devotion LMG|noText=yes|image=Devotion LMG Icon.svg}}
+| {{ItemLink|Turbocharger|lvl=4}} affects this statistic.
+|-
+| style="text-align:center" | '''Wind-up'''<br><small>''charge_time''</small>
+| Delay between each trigger pull and the weapon itself firing.
+| style="text-align:center" | {{ItemLink|HAVOC Rifle|noText=yes|image=HAVOC Rifle Icon.svg}}
+| <!--{{ItemLink|Turbocharger|lvl=4}} affects this statistic.-->
+|-
+| style="text-align:center" | '''Cooldown time'''<br><small>''charge_overheat_cooldown_time<br>charge_overheat_cooldown_time_'''N'''''</small>
+| Time it takes for a weapon cool down while not firing.<br><small>Possible '''N''' values: ''late1'', ''late2'', ''late3''</small>
+| style="text-align:center" | {{ItemLink|L-STAR EMG|noText=yes|image=L-STAR EMG Icon.svg}}
+|-
+| style="text-align:center" | '''Damage falloff'''<br><small>''damage_'''N'''_value''</small>
+| Damage dealt gradually changing past set distances.<br><small>Possible '''N''' values: ''near'', ''far'', ''veryfar''</small>
+| style="text-align:center" | {{ItemLink|Charge Rifle|noText=yes|image=Charge Rifle Icon.svg}} {{ItemLink|R-99 SMG|noText=yes|image=R-99 SMG Icon.svg}}
+|
+* All weapons have this statistic, however only the aforementioned weapons have different damage values based on distance.
+* {{ItemLink|Charge Rifle|noText=yes|image=Charge Rifle Icon.svg}} has inverse damage falloff, with the projectile damage increasing as it travels.
+|-
+| style="text-align:center" | '''Charge'''<br><small>''has_energized''</small>
+| If set to 1, a weapon can charge itself by utilizing a consumable item.
+| style="text-align:center" | {{ItemLink|Rampage LMG|noText=yes|image=Rampage LMG Icon.svg}} {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}}
+|-
+| style="text-align:center" | '''Secondary ammo type'''<br><small>''secondary_ammo_pool_type''</small>
+| Another type of ammo a weapon utilizes.
+| style="text-align:center" | {{ItemLink|C.A.R. SMG|noText=yes|image=C.A.R. SMG Icon.svg}}
+| When spawning, a weapon with this statistic will always be surrounded by ammo of its primary type.
+|-
+| style="text-align:center" | '''Akimbo compatibility'''<br><small>''is_akimbo_weapon''</small>
+| If set to 1, a second identical weapon can be equipped in the same slot, unlocking a dual-wield full-auto fire mode with increased magazine size and fire rate.
+| style="text-align:center" | {{ItemLink|Mozambique Shotgun|noText=yes|image=Mozambique Shotgun Icon.svg}} {{ItemLink|P2020|noText=yes|image=P2020 Icon.svg}}
+|}
+
+
+== Comparison ==
+=== General ===
+The following table lists the most important statistics for the main weapons in ''Apex Legends'', allowing for comparison between them.
+* Damage values are obtained ignoring [[Ability|Abilities]] and [[Perk]]s modifiers.
+* DPS values are calculated from scoring bodyshots only.
+* RPM and DPS values for [[Shotgun]]s are calculated with a {{ItemLink|Shotgun Bolt|lvl=3}} equipped.
+* RPM and DPS values for {{ItemLink|HAVOC Rifle|noText=yes|image=HAVOC Rifle Icon.svg}}, {{ItemLink|Nemesis Burst AR|noText=yes|image=Nemesis Burst AR Icon.svg}}, {{ItemLink|Devotion LMG|noText=yes|image=Devotion LMG Icon.svg}}, and {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}} are calculated with the weapons being at their highest fire rate.
+* Magazine value of {{ItemLink|L-STAR EMG|noText=yes|image=L-STAR EMG Icon.svg}} shows the maximum number of consecutive shots that can be fired before overheating.
+* Reload Speed values are expressed in seconds.
+* Projectile Speed values are expressed in hammer units per second.
+
+{| role="presentation" class="wikitable sortable mw-collapsible mw-collapsed" style="text-align:center; font-size:13px; width:100%"
+|-
+! style="font-size:22px" colspan="26" | General Stats
+|-
+! rowspan="3" | Weapon
+! rowspan="3" | Type
+! rowspan="3" | Ammo
+! rowspan="3" | Modes
+! colspan="6" | Damage
+! rowspan="3" data-sort-type="number" | RPM
+! rowspan="3" data-sort-type="number" | DPS
+! rowspan="2" colspan="4" | Magazine
+! colspan="8" | Reload Speed
+! rowspan="3" | Projectile<br>Speed
+|-
+! rowspan="2" | Body
+! colspan="4" | Head
+! rowspan="2" | Legs
+! colspan="4" | Tactical
+! colspan="4" | Full
+|-
+! Base
+! {{Common|LV.1}}
+! {{Rare|LV.2}}
+! {{Epic|LV.3}}
+! Base
+! {{Common|LV.1}}
+! {{Rare|LV.2}}
+! {{Epic|LV.3}}
+! Base
+! {{Common|LV.1}}
+! {{Rare|LV.2}}
+! {{Epic|LV.3}}
+! Base
+! {{Common|LV.1}}
+! {{Rare|LV.2}}
+! {{Epic|LV.3}}
+|-
+| <span class="invert-image">[[File:HAVOC Rifle Icon.svg|x25px|link=HAVOC Rifle]]<br><small>'''[[HAVOC Rifle]]'''</small></span>
+| AR || [[File:Energy Ammo.svg|30px|link=Energy Ammo]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 18 || 32 || 29 || 25 || 23 || 15 || 672 || 202 || 20 || 24 || 28 || 32 || 3.2 || 3.09 || 2.99 || 2.88 || 3.2 || 3.09 || 2.99 || 2.88 || 30500
+|-
+| <span class="invert-image">[[File:VK-47 Flatline Icon.svg|x25px|link=VK-47 Flatline]]<br><small>'''[[VK-47 Flatline]]'''</small></span>
+| AR || [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]] / [[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 18 || 32 || 29 || 25 || 23 || 15 || 600 || 180 || 19 || 23 || 27 || 29 || 2.4 || 2.32 || 2.24 || 2.16 || 3.1 || 3 || 2.89 || 2.79 || 24000
+|-
+| rowspan="2" | <span class="invert-image">[[File:Hemlok Burst AR Icon.svg|x25px|link=Hemlok Burst AR]]<br><small>'''[[Hemlok Burst AR]]'''</small></span>
+| rowspan="2" | AR
+| rowspan="2" | [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Burst Icon.svg|18px|link=|3-round burst]] / [[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| rowspan="2" | 19
+| rowspan="2" | 33
+| rowspan="2" | 30
+| rowspan="2" | 26
+| rowspan="2" | 24
+| rowspan="2" | 14
+| 365 <span class="invert-image">[[File:Burst Icon.svg|18px|link=|Burst]]</span>
+| 116 <span class="invert-image">[[File:Burst Icon.svg|18px|link=|Burst]]</span>
+| rowspan="2" | 18
+| rowspan="2" | 21
+| rowspan="2" | 24
+| rowspan="2" | 30
+| rowspan="2" | 2.4
+| rowspan="2" | 2.32
+| rowspan="2" | 2.24
+| rowspan="2" | 2.16
+| rowspan="2" | 2.85
+| rowspan="2" | 2.76
+| rowspan="2" | 2.66
+| rowspan="2" | 2.57
+| rowspan="2" | 27500
+|-
+| 384 <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 122 <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+|-
+| <span class="invert-image">[[File:R-301 Carbine Icon.svg|x25px|link=R-301 Carbine]]<br><small>'''[[R-301 Carbine]]'''</small></span>
+| AR || [[File:Light Rounds.svg|30px|link=Light Rounds]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]] / [[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 13 || 23 || 22 || 19 || 18 || 10 || 810 || 176 || 21 || 23 || 28 || 31 || 2.4 || 2.32 || 2.24 || 2.16 || 3.2 || 3.09 || 2.99 || 2.88 || 29000
+|-
+| <span class="invert-image">[[File:Nemesis Burst AR Icon.svg|x25px|link=Nemesis Burst AR]]<br><small>'''[[Nemesis Burst AR]]'''</small></span>
+| AR || [[File:Energy Ammo.svg|30px|link=Energy Ammo]] || <span class="invert-image">[[File:Burst Icon.svg|18px|link=|4-round burst]]</span>
+| 16 || 28 || 26 || 22 || 20 || 12 || 582 || 155 || 20 || 24 || 28 || 32 || 2.7 || 2.61 || 2.52 || 2.43 || 2.7 || 2.61 || 2.52 || 2.43 || 31000
+|-
+| <span class="invert-image">[[File:Alternator SMG Icon.svg|x25px|link=Alternator SMG]]<br><small>'''[[Alternator SMG]]'''</small></span>
+| SMG || [[File:Light Rounds.svg|30px|link=Light Rounds]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 16 || 20 || 19 || 18 || 17 || 13 || 600 || 160 || 19 || 23 || 26 || 28 || 1.9 || 1.84 || 1.77 || 1.71 || 2.23 || 2.16 || 2.08 || 2.01 || 19000
+|-
+| <span class="invert-image">[[File:Prowler Burst PDW Icon.svg|x25px|link=Prowler Burst PDW]]<br><small>'''[[Prowler Burst PDW]]'''</small></span>
+| SMG || [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]] || <span class="invert-image">[[File:Burst Icon.svg|18px|link=|5-round burst]]</span>
+| 15 || 23 || 21 || 19 || 18 || 12 || 579 || 145 || 20 || 25 || 30 || 35 || 2 || 1.93 || 1.87 || 1.8 || 2.6 || 2.51 || 2.43 || 2.34 || 18000
+|-
+| rowspan="2" | <span class="invert-image">[[File:R-99 SMG Icon.svg|x25px|link=R-99 SMG]]<br><small>'''[[R-99 SMG]]'''</small></span>
+| rowspan="2" | SMG
+| rowspan="2" | [[File:Mythic Light Rounds.svg|30px|link=Mythic Light Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 14 <small><small>max</small></small>
+| 18 <small><small>max</small></small>
+| 17 <small><small>max</small></small>
+| 16 <small><small>max</small></small>
+| 15 <small><small>max</small></small>
+| 11 <small><small>max</small></small>
+| rowspan="2" | 1080
+| 252 <small><small>max</small></small>
+| rowspan="2" colspan="4" | 30
+| rowspan="2" colspan="4" | 1.62
+| rowspan="2" colspan="4" | 2.21
+| rowspan="2" | 19000
+|-
+| 11 <small><small>min</small></small>
+| 14 <small><small>min</small></small>
+| 13 <small><small>min</small></small>
+| 12 <small><small>min</small></small>
+| 12 <small><small>min</small></small>
+| 9 <small><small>min</small></small>
+| 198 <small><small>min</small></small>
+|-
+| <span class="invert-image">[[File:Volt SMG Icon.svg|x25px|link=Volt SMG]]<br><small>'''[[Volt SMG]]'''</small></span>
+| SMG || [[File:Energy Ammo.svg|30px|link=Energy Ammo]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 15 || 19 || 18 || 17 || 16 || 12 || 720 || 180 || 19 || 21 || 23 || 26 || 1.44 || 1.39 || 1.33 || 1.3 || 2.03 || 1.96 || 1.89 || 1.83 || 20000
+|-
+| <span class="invert-image">[[File:C.A.R. SMG Icon.svg|x25px|link=C.A.R. SMG]]<br><small>'''[[C.A.R. SMG]]'''</small></span>
+| SMG || [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]] [[File:Light Rounds.svg|30px|link=Light Rounds]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 12 || 15 || 14 || 14 || 13 || 10 || 930 || 186 || 19 || 22 || 24 || 27 || 1.7 || 1.64 || 1.59 || 1.53 || 2.13 || 2.06 || 1.99 || 1.92 || 18000
+|-
+| <span class="invert-image">[[File:Devotion LMG Icon.svg|x25px|link=Devotion LMG]]<br><small>'''[[Devotion LMG]]'''</small></span>
+| LMG || [[File:Mythic Energy Ammo.svg|30px|link=Mythic Energy Ammo]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 16 || 24 || 22 || 18 || 17 || 14 || 900 || 240 || colspan="4" | 48 || colspan="4" | 2.88 || colspan="4" | 3.69 || 33500
+|-
+| <span class="invert-image">[[File:L-STAR EMG Icon.svg|x25px|link=L-STAR EMG]]<br><small>'''[[L-STAR EMG]]'''</small></span>
+| LMG || [[File:Energy Ammo.svg|30px|link=Energy Ammo]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 17 || 26 || 24 || 21 || 20 || 14 || 600 || 170 || 24 || 26 || 28 || 30 || 2.45 || 2.37 || 2.29 || 2.21 || 2.45 || 2.37 || 2.29 || 2.21 || 24000
+|-
+| <span class="invert-image">[[File:M600 Spitfire Icon.svg|x25px|link=M600 Spitfire]]<br><small>'''[[M600 Spitfire]]'''</small></span>
+| LMG || [[File:Light Rounds.svg|30px|link=Light Rounds]] || <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 18 || 27 || 25 || 23 || 21 || 15 || 540 || 162 || 35 || 40 || 45 || 50 || 3.4 || 3.29 || 3.17 || 3.06 || 4.2 || 4.06 || 3.92 || 3.78 || 27500
+|-
+| rowspan="2" | <span class="invert-image">[[File:Rampage LMG Icon.svg|x25px|link=Rampage LMG]]<br><small>'''[[Rampage LMG]]'''</small></span>
+| rowspan="2" | LMG
+| rowspan="2" | [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| rowspan="2" | 26
+| rowspan="2" | 39
+| rowspan="2" | 36
+| rowspan="2" | 33
+| rowspan="2" | 31
+| rowspan="2" | 22
+| 300
+| 130
+| rowspan="2" | 28
+| rowspan="2" | 32
+| rowspan="2" | 36
+| rowspan="2" | 40
+| rowspan="2" | 3.1
+| rowspan="2" | 3
+| rowspan="2" | 2.89
+| rowspan="2" | 2.79
+| rowspan="2" | 4
+| rowspan="2" | 3.87
+| rowspan="2" | 3.73
+| rowspan="2" | 3.6
+| rowspan="2" | 26500
+|-
+| 390 [[File:Heavy Rounds Revved Up.svg|18px|link=|Revved Up]]
+| 169 [[File:Heavy Rounds Revved Up.svg|18px|link=|Revved Up]]
+|-
+| <span class="invert-image">[[File:G7 Scout Icon.svg|x25px|link=G7 Scout]]<br><small>'''[[G7 Scout]]'''</small></span>
+| Marksman || [[File:Light Rounds.svg|30px|link=Light Rounds]] || <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 33 || 58 || 53 || 45 || 42 || 25 || 252 || 139 || 10 || 15 || 18 || 20 || 2.16 || 2.09 || 2.02 || 1.94 || 2.7 || 2.61 || 2.52 || 2.43 || 30000
+|-
+| rowspan="2" | <span class="invert-image">[[File:Triple Take Icon.svg|x25px|link=Triple Take]]<br><small>'''[[Triple Take]]'''</small></span>
+| rowspan="2" | Marksman
+| rowspan="2" | [[File:Energy Ammo.svg|30px|link=Energy Ammo]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| rowspan="2" | 63
+| rowspan="2" | 111
+| rowspan="2" | 102
+| rowspan="2" | 87
+| rowspan="2" | 81
+| rowspan="2" | 57
+| rowspan="2" | 81
+| rowspan="2" | 85
+| 6
+| 7
+| 8
+| 10
+| 2.34
+| 2.26
+| 2.18
+| 2.11
+| rowspan="2" | 3.06
+| rowspan="2" | 2.96
+| rowspan="2" | 2.85
+| rowspan="2" | 2.75
+| rowspan="2" | 32000
+|-
+| 8 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 9 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 10 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 13 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.4 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.35 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.31 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.26 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+|-
+| rowspan="2" | <span class="invert-image">[[File:30-30 Repeater Icon.svg|x25px|link=30-30 Repeater]]<br><small>'''[[30-30 Repeater]]'''</small></span>
+| rowspan="2" | Marksman
+| rowspan="2" | [[File:Heavy Rounds.svg|30px|link=Heavy Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 39 <small><small>min</small></small>
+| 68 <small><small>min</small></small>
+| 62 <small><small>min</small></small>
+| 54 <small><small>min</small></small>
+| 49 <small><small>min</small></small>
+| 33 <small><small>min</small></small>
+| 139 <small><small>min</small></small>
+| 90 <small><small>min</small></small>
+| rowspan="2" | 6
+| rowspan="2" | 7
+| rowspan="2" | 8
+| rowspan="2" | 10
+| rowspan="2" colspan="8" | <ref name="3030rel">TBA</ref>
+| rowspan="2" | 29000
+|-
+| 53 <small><small>max</small></small>
+| 93 <small><small>max</small></small>
+| 85 <small><small>max</small></small>
+| 73 <small><small>max</small></small>
+| 67 <small><small>max</small></small>
+| 45 <small><small>max</small></small>
+| 41 <small><small>max</small></small>
+| 39 <small><small>max</small></small>
+|-
+| rowspan="2" | <span class="invert-image">[[File:Bocek Compound Bow Icon.svg|x25px|link=Bocek Compound Bow]]<br><small>'''[[Bocek Compound Bow]]'''</small></span>
+| rowspan="2" | Marksman
+| rowspan="2" | [[File:Mythic Arrows.svg|30px|link=Mythic Arrows]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 25 <small><small>min</small></small>
+| 31 <small><small>min</small></small>
+| 30 <small><small>min</small></small>
+| 28 <small><small>min</small></small>
+| 27 <small><small>min</small></small>
+| 20 <small><small>min</small></small>
+| 180 <small><small>min</small></small>
+| 75 <small><small>min</small></small>
+| rowspan="2" colspan="4" | ∞
+| rowspan="2" colspan="8" | <ref name="noreload">This weapon does not reload.</ref>
+| 10000 <small><small>min</small></small>
+|-
+| 70 <small><small>max</small></small>
+| 123 <small><small>max</small></small>
+| 112 <small><small>max</small></small>
+| 96 <small><small>max</small></small>
+| 88 <small><small>max</small></small>
+| 63 <small><small>max</small></small>
+| 107 <small><small>max</small></small>
+| 125 <small><small>max</small></small>
+| 28000 <small><small>max</small></small>
+|-
+| rowspan="2" | <span class="invert-image">[[File:Bocek Compound Bow Icon.svg|x25px|link=Bocek Compound Bow]]<br><small>'''[[Bocek Compound Bow]]'''</small> [[File:Shatter Caps.svg|18px|link=Shatter Caps]]</span>
+| rowspan="2" | Marksman
+| rowspan="2" | [[File:Mythic Arrows.svg|30px|link=Mythic Arrows]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 35 <small><small>min</small></small>
+| 42 <small><small>min</small></small>
+| 42 <small><small>min</small></small>
+| 42 <small><small>min</small></small>
+| 35 <small><small>min</small></small>
+| 28 <small><small>min</small></small>
+| 180 <small><small>min</small></small>
+| 105 <small><small>min</small></small>
+| rowspan="2" colspan="4" | ∞
+| rowspan="2" colspan="8" | <ref name="noreload">This weapon does not reload.</ref>
+| 10000 <small><small>min</small></small>
+|-
+| 84 <small><small>max</small></small>
+| 105 <small><small>max</small></small>
+| 98 <small><small>max</small></small>
+| 98 <small><small>max</small></small>
+| 91 <small><small>max</small></small>
+| 84 <small><small>max</small></small>
+| 107 <small><small>max</small></small>
+| 150 <small><small>max</small></small>
+| 16000 <small><small>max</small></small>
+|-
+| rowspan="2" | <span class="invert-image">[[File:Charge Rifle Icon.svg|x25px|link=Charge Rifle]]<br><small>'''[[Charge Rifle]]'''</small></span>
+| rowspan="2" | Sniper
+| rowspan="2" | [[File:Sniper Ammo.svg|30px|link=Sniper Ammo]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 75 <small><small>min</small></small>
+| 150 <small><small>min</small></small>
+| 135 <small><small>min</small></small>
+| 113 <small><small>min</small></small>
+| 101 <small><small>min</small></small>
+| 68 <small><small>min</small></small>
+| rowspan="2" | 26
+| rowspan="2" | 48
+| rowspan="2" | 4
+| rowspan="2" | 5
+| rowspan="2" | 6
+| rowspan="2" | 8
+| rowspan="2" | 3.5
+| rowspan="2" | 3.38
+| rowspan="2" | 3.27
+| rowspan="2" | 3.15
+| rowspan="2" | 4.6
+| rowspan="2" | 4.45
+| rowspan="2" | 4.29
+| rowspan="2" | 4.14
+| rowspan="2" | 33501
+|-
+| 110 <small><small>max</small></small>
+| 220 <small><small>max</small></small>
+| 198 <small><small>max</small></small>
+| 165 <small><small>max</small></small>
+| 149 <small><small>max</small></small>
+| 99 <small><small>max</small></small>
+|-
+| <span class="invert-image">[[File:Longbow DMR Icon.svg|x25px|link=Longbow DMR]]<br><small>'''[[Longbow DMR]]'''</small></span>
+| Sniper
+| [[File:Sniper Ammo.svg|30px|link=Sniper Ammo]]
+| <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 55 || 124 || 110 || 89 || 79 || 50 || 78 || 72 || 6 || 8 || 10 || 12 || 2.66 || 2.57 || 2.48 || 2.39 || 3.66 || 3.54 || 3.41 || 3.29 || 30500
+|-
+| <span class="invert-image">[[File:Kraber .50-Cal Sniper Icon.svg|x25px|link=Kraber .50-Cal Sniper]]<br><small>'''[[Kraber .50-Cal Sniper]]'''</small></span>
+| Sniper || [[File:Mythic Sniper Ammo.svg|30px|link=Mythic Sniper Ammo]] || <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 140 || 280 || 252 || 210 || 189 || 112 || 25 || 60 || colspan="4" | 4 || colspan="4" | 3.2 || colspan="4" | 4.3 || 29500
+|-
+| rowspan="2" | <span class="invert-image">[[File:Sentinel Icon.svg|x25px|link=Sentinel]]<br><small>'''[[Sentinel]]'''</small></span>
+| rowspan="2" | Sniper
+| rowspan="2" | [[File:Sniper Ammo.svg|30px|link=Sniper Ammo]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 70
+| 140
+| 126
+| 105
+| 95
+| 63
+| rowspan="2" | 38
+| 44
+| rowspan="2" | 4
+| rowspan="2" | 5
+| rowspan="2" | 6
+| rowspan="2" | 7
+| rowspan="2" | 2.5
+| rowspan="2" | 2.42
+| rowspan="2" | 2.33
+| rowspan="2" | 2.25
+| rowspan="2" | 3.6
+| rowspan="2" | 3.48
+| rowspan="2" | 3.36
+| rowspan="2" | 3.24
+| rowspan="2" | 31000
+|-
+| 88 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 176 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 158 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 132 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 119 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 79 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+| 56 [[File:Sniper Ammo Amped.png|18px|link=|Amped]]
+|-
+| rowspan="2" | <span class="invert-image">[[File:EVA-8 Auto Icon.svg|x25px|link=EVA-8 Auto]]<br><small>'''[[EVA-8 Auto]]'''</small></span>
+| rowspan="2" | Shotgun
+| rowspan="2" | [[File:Shotgun Shells.svg|30px|link=Shotgun Shells]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| rowspan="2" | 56
+| rowspan="2" | 72
+| rowspan="2" | 64
+| rowspan="2" | 64
+| rowspan="2" | 64
+| rowspan="2" | 56
+| rowspan="2" | 193
+| rowspan="2" | 180
+| colspan="4" | 8
+| 2.75
+| 2.65
+| 2.56
+| 2.48
+| rowspan="2" | 3
+| rowspan="2" | 2.9
+| rowspan="2" | 2.79
+| rowspan="2" | 2.7
+| rowspan="2" | 16000
+|-
+| colspan="4" | 10 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.75 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.69 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.63 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| 1.58 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+|-
+| <span class="invert-image">[[File:Mastiff Shotgun Icon.svg|x25px|link=Mastiff Shotgun]]<br><small>'''[[Mastiff Shotgun]]'''</small></span>
+| Shotgun || [[File:Shotgun Shells.svg|30px|link=Shotgun Shells]] || <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 90 || 114 || 108 || 102 || 96 || 90 || 79 || 119 || colspan="4" | 5
+| colspan="8" | <ref name="mastiffrel">The Mastiff reloads its rounds one by one, therefore its reload times vary depending on how many rounds are inserted. Tactical reload animation for the first round lasts {{Level0123|0.9|0.87|0.84|0.81}} seconds. Full reload animation for the first round lasts {{Level0123|1.6|1.55|1.49|1.44}} seconds. Each round subsequently loaded after the first one is added every {{Level0123|0.51|0.49|0.48|0.46}} seconds. After ending the reload, a final animation lasting 0.55 seconds is played.<br>
+* 1 round: {{Level0123|1.45|1.42|1.39|1.36}} seconds (tactical), {{Level0123|2.15|2.1|2.04|1.99}} seconds (full)
+* 2 rounds: {{Level0123|1.96|1.93|1.9|1.87}} seconds (tactical), {{Level0123|2.66|2.61|2.55|2.5}} seconds (full)
+* 3 rounds: {{Level0123|2.47|2.44|2.41|2.38}} seconds (tactical), {{Level0123|3.17|3.12|3.06|3.01}} seconds (full)
+* 4 rounds: {{Level0123|2.98|2.95|2.92|2.89}} seconds (tactical), {{Level0123|3.68|3.63|3.57|3.52}} seconds (full)
+* 5 rounds: {{Level0123|4.19|4.14|4.08|4.03}} seconds.</ref>
+| 16000
+|-
+| rowspan="2" | <span class="invert-image">[[File:Mozambique Shotgun Icon.svg|x25px|link=Mozambique Shotgun]]<br><small>'''[[Mozambique Shotgun]]'''</small></span>
+| rowspan="2" | Shotgun
+| rowspan="2" | [[File:Shotgun Shells.svg|30px|link=Shotgun Shells]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 45
+| 57
+| 54
+| 51
+| 48
+| 45
+| rowspan="2" | 202
+| 152
+| rowspan="2" colspan="4" | 6
+| rowspan="2" colspan="4" | 2.1
+| rowspan="2" colspan="4" | 2.6
+| rowspan="2" | 10000
+|-
+| 54 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 69 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 66 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 60 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 60 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 54 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 182 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+|-
+| rowspan="2" | <span class="invert-image">[[File:Mozambique Shotgun Akimbo Icon.svg|x25px|link=Mozambique Shotgun#Akimbo]]<br><small>'''[[Mozambique Shotgun#Akimbo|Mozambique Shotgun Akimbo]]'''</small></span>
+| rowspan="2" | Shotgun
+| rowspan="2" | [[File:Shotgun Shells.svg|30px|link=Shotgun Shells]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 45
+| 57
+| 54
+| 51
+| 48
+| 45
+| rowspan="2" | 225
+| 169
+| rowspan="2" colspan="4" | 12
+| rowspan="2" colspan="4" | 2.5
+| rowspan="2" colspan="4" | 3
+| rowspan="2" | 10000
+|-
+| 54 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 69 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 66 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 60 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 60 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 54 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 203 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+|-
+| <span class="invert-image">[[File:Peacekeeper Icon.svg|x25px|link=Peacekeeper]]<br><small>'''[[Peacekeeper]]'''</small></span>
+| Shotgun || [[File:Shotgun Shells.svg|30px|link=Shotgun Shells]] || <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 99 || 126 || 117 || 108 || 108 || 99 || 51 || 84 || colspan="4" | 5 || 2.5 || 2.42 || 2.33 || 2.25 || 3.5 || 3.38 || 3.27 || 3.15 || 16000
+|-
+| rowspan="2" | <span class="invert-image">[[File:RE-45 Auto Icon.svg|x25px|link=RE-45 Auto]]<br><small>'''[[RE-45 Auto]]'''</span>
+| rowspan="2" | Pistol
+| rowspan="2" | [[File:Light Rounds.svg|30px|link=Light Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 12
+| 18
+| 17
+| 15
+| 14
+| 11 
+| rowspan="2" | 780
+| 182
+| rowspan="2" | 18
+| rowspan="2" | 20
+| rowspan="2" | 23
+| rowspan="2" | 26
+| rowspan="2" colspan="4" | 1.5
+| rowspan="2" colspan="4" | 1.95
+| rowspan="2" | 19500
+|-
+| 16 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 24 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 22 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 20 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 19 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 14 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 208 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+|-
+| rowspan="2" | <span class="invert-image">[[File:P2020 Icon.svg|x25px|link=P2020]]<br><small>'''[[P2020]]'''</small></span>
+| rowspan="2" | Pistol
+| rowspan="2" | [[File:Light Rounds.svg|30px|link=Light Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| 21
+| 32
+| 29
+| 26
+| 25
+| 19
+| rowspan="2" | 420
+| 147
+| rowspan="2" | 10
+| rowspan="2" | 11
+| rowspan="2" | 12
+| rowspan="2" | 14
+| rowspan="2" colspan="4" | 1.25
+| rowspan="2" colspan="4" | 1.25
+| rowspan="2" | 18500
+|-
+| 23 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 35 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 32 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 29 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 27 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 21 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 161 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+|-
+| rowspan="2" | <span class="invert-image">[[File:P2020 Akimbo Icon.svg|x25px|link=P2020#Akimbo]]<br><small>'''[[P2020#Akimbo|P2020 Akimbo]]'''</small></span>
+| rowspan="2" | Pistol
+| rowspan="2" | [[File:Light Rounds.svg|30px|link=Light Rounds]]
+| rowspan="2" | <span class="invert-image">[[File:Auto Icon.svg|18px|link=|Auto]]</span>
+| 21
+| 32
+| 29
+| 26
+| 25
+| 19
+| rowspan="2" | 480
+| 168
+| rowspan="2" | 20
+| rowspan="2" | 22
+| rowspan="2" | 24
+| rowspan="2" | 28
+| rowspan="2" colspan="4" | 2.1
+| rowspan="2" colspan="4" | 2.6
+| rowspan="2" | 18500
+|-
+| 23 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 35 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 32 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 29 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 27 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 21 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+| 184 <span class="invert-image">[[File:Hammerpoint Rounds.svg|18px|link=Hammerpoint Rounds]]</span>
+|-
+| rowspan="2" | <span class="invert-image">[[File:Wingman Icon.svg|x25px|link=Wingman]]<br><small>'''[[Wingman]]'''</small></span>
+| rowspan="2" | Pistol
+| rowspan="2" | [[File:Sniper Ammo.svg|30px|link=Sniper Ammo]]
+| rowspan="2" | <span class="invert-image">[[File:Single-fire Icon.svg|18px|link=|Single]]</span>
+| rowspan="2" | 45
+| rowspan="2" | 97
+| rowspan="2" | 86
+| rowspan="2" | 71
+| rowspan="2" | 63
+| rowspan="2" | 41
+| rowspan="2" | 156
+| rowspan="2" | 117
+| colspan="4" | 6
+| colspan="4" | 2.1
+| rowspan="2" colspan="4" | 2.1
+| rowspan="2" | 18000
+|-
+| colspan="4" | 8 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+| colspan="4" | 1.4 <span class="invert-image">[[File:Boosted Loader.svg|18px|link=Boosted Loader]]</span>
+|}
+
+
+=== TTK ===
+The following table lists the time to kill (TTK) for the main weapons in ''Apex Legends''.
+* Damage values are calculated ignoring [[Ability|Abilities]] and [[Perk]]s modifiers.
+* TTK values are calculated from scoring bodyshots only.
+* TTK values for {{ItemLink|HAVOC Rifle|noText=yes|image=HAVOC Rifle Icon.svg}}, {{ItemLink|Nemesis Burst AR|noText=yes|image=Nemesis Burst AR Icon.svg}}, {{ItemLink|Devotion LMG|noText=yes|image=Devotion LMG Icon.svg}}, and {{ItemLink|Sentinel|noText=yes|image=Sentinel Icon.svg}} are calculated with the weapons being at their highest fire rate.
+* TTK values for {{ItemLink|Bocek Compound Bow|noText=yes|image=Bocek Compound Bow Icon.svg}} are calculated with the weapon being at its highest Tempo level.
+
+{| role="presentation" class="wikitable sortable mw-collapsible mw-collapsed" style="text-align:center; width:50%"
+|-
+! style="font-size:22px" colspan="6" | TTK Stats
+|-
+! Weapon
+! data-sort-type="number" | 100 HP
+! data-sort-type="number" | {{Common|150}} HP
+! data-sort-type="number" | {{Rare|175}} HP
+! data-sort-type="number" | {{Epic|200}} HP
+! data-sort-type="number" | {{Mythic|225}} HP
+|-
+| <span class="invert-image">[[File:HAVOC Rifle Icon.svg|x35px|link=HAVOC Rifle]]<br>[[HAVOC Rifle]]</span>
+| 0.45 || 0.71 || 0.80 || 0.98 || 1.07
+|-
+| <span class="invert-image">[[File:VK-47 Flatline Icon.svg|x35px|link=VK-47 Flatline]]<br>[[VK-47 Flatline]]</span>
+| 0.50 || 0.80 || 0.90 || 1.10 || 1.20
+|-
+| rowspan="2" | <span class="invert-image">[[File:Hemlok Burst AR Icon.svg|x35px|link=Hemlok Burst AR]]<br>[[Hemlok Burst AR]]</span>
+| ??? <span class="invert-image">[[File:Burst Icon.svg|22px|link=|Burst]]</span>
+| ??? <span class="invert-image">[[File:Burst Icon.svg|22px|link=|Burst]]</span>
+| ??? <span class="invert-image">[[File:Burst Icon.svg|22px|link=|Burst]]</span>
+| ??? <span class="invert-image">[[File:Burst Icon.svg|22px|link=|Burst]]</span>
+| ??? <span class="invert-image">[[File:Burst Icon.svg|22px|link=|Burst]]</span>
+|-
+| 0.63 <span class="invert-image">[[File:Single-fire Icon.svg|22px|link=|Single]]</span>
+| 1.09 <span class="invert-image">[[File:Single-fire Icon.svg|22px|link=|Single]]</span>
+| 1.25 <span class="invert-image">[[File:Single-fire Icon.svg|22px|link=|Single]]</span>
+| 1.41 <span class="invert-image">[[File:Single-fire Icon.svg|22px|link=|Single]]</span>
+| 1.72 <span class="invert-image">[[File:Single-fire Icon.svg|22px|link=|Single]]</span>
+|-
+| <span class="invert-image">[[File:R-301 Carbine Icon.svg|x35px|link=R-301 Carbine]]<br>[[R-301 Carbine]]</span>
+| 0.52 || 0.81 || 0.96 || 1.11 || 1.26
+|-
+| <span class="invert-image">[[File:Nemesis Burst AR Icon.svg|x35px|link=Nemesis Burst AR]]<br>[[Nemesis Burst AR]]</span>
+| 0.51 || 0.86 || 0.92 || 1.21 || 1.32
+|-
+| <span class="invert-image">[[File:Alternator SMG Icon.svg|x35px|link=Alternator SMG]]<br>[[Alternator SMG]]</span>
+| 0.60 || 0.80 || 1.00 || 1.20 || 1.40
+|-
+| <span class="invert-image">[[File:Prowler Burst PDW Icon.svg|x35px|link=Prowler Burst PDW]]<br>[[Prowler Burst PDW]]</span>
+| 0.53 || 0.67 || 0.96 || 1.05 || 1.15
+|-
+| rowspan="4" | <span class="invert-image">[[File:R-99 SMG Icon.svg|x35px|link=R-99 SMG]]<br>[[R-99 SMG]]</span>
+| 0.39 <small>(≤4m)</small>
+| 0.56 <small>(≤4m)</small>
+| 0.67 <small>(≤4m)</small>
+| 0.78 <small>(≤4m)</small>
+| 0.89 <small>(≤4m)</small> 
+|-
+| 0.39 <small>(5-6m)</small>
+| 0.61 <small>(5-6m)</small>
+| 0.72 <small>(5-6m)</small>
+| 0.83 <small>(5-6m)</small>
+| 0.94 <small>(5-6m)</small> 
+|-
+| 0.44 <small>(7-8m)</small>
+| 0.67 <small>(7-8m)</small>
+| 0.78 <small>(7-8m)</small>
+| 0.89 <small>(7-8m)</small>
+| 1.00 <small>(7-8m)</small> 
+|-
+| 0.50 <small>(≥9m)</small>
+| 0.72 <small>(≥9m)</small>
+| 0.83 <small>(≥9m)</small>
+| 1.00 <small>(≥9m)</small>
+| 1.11 <small>(≥9m)</small> 
+|-
+| <span class="invert-image">[[File:Volt SMG Icon.svg|x35px|link=Volt SMG]]<br>[[Volt SMG]]</span>
+| 0.50 || 0.75 || 0.92 || 1.08 || 1.17
+|-
+| <span class="invert-image">[[File:C.A.R. SMG Icon.svg|x35px|link=C.A.R. SMG]]<br>[[C.A.R. SMG]]</span>
+| 0.52 || 0.77 || 0.90 || 1.03 || 1.16
+|-
+| <span class="invert-image">[[File:Devotion LMG Icon.svg|x35px|link=Devotion LMG]]<br>[[Devotion LMG]]</span>
+| 0.40 || 0.60 || 0.67 || 0.80 || 0.93
+|-
+| <span class="invert-image">[[File:L-STAR EMG Icon.svg|x35px|link=L-STAR EMG]]<br>[[L-STAR EMG]]</span>
+| 0.50 || 0.80 || 1.00 || 1.10 || 1.30
+|-
+| <span class="invert-image">[[File:M600 Spitfire Icon.svg|x35px|link=M600 Spitfire]]<br>[[M600 Spitfire]]</span>
+| 0.56 || 0.89 || 1.00 || 1.22 || 1.33
+|-
+| rowspan="2" | <span class="invert-image">[[File:Rampage LMG Icon.svg|x35px|link=Rampage LMG]]<br>[[Rampage LMG]]</span>
+| 0.60 || 1.00 || 1.20 || 1.40 || 1.60
+|-
+| 0.46 [[File:Heavy Rounds Revved Up.svg|22px|link=|Revved Up]]
+| 0.77 [[File:Heavy Rounds Revved Up.svg|22px|link=|Revved Up]]
+| 0.92 [[File:Heavy Rounds Revved Up.svg|22px|link=|Revved Up]]
+| 1.08 [[File:Heavy Rounds Revved Up.svg|22px|link=|Revved Up]]
+| 1.23 [[File:Heavy Rounds Revved Up.svg|22px|link=|Revved Up]]
+|-
+| <span class="invert-image">[[File:G7 Scout Icon.svg|x35px|link=G7 Scout]]<br>[[G7 Scout]]</span>
+| 0.71 || 0.95 || 1.19 || 1.67 || 1.67
+|-
+| <span class="invert-image">[[File:Triple Take Icon.svg|x35px|link=Triple Take]]<br>[[Triple Take]]</span>
+| 0.74 || 1.48 || 1.48 || 2.22 || 2.22
+|-
+| <span class="invert-image">[[File:30-30 Repeater Icon.svg|x35px|link=30-30 Repeater]]<br>[[30-30 Repeater]]</span>
+| 0.86 || 1.29 || 1.73 || 1.73 || 2.16
+|-
+| rowspan="2" | <span class="invert-image">[[File:Bocek Compound Bow Icon.svg|x35px|link=Bocek Compound Bow]]<br>[[Bocek Compound Bow]]</span>
+| 0.56 || 1.12 || 1.12 || 1.12 || 1.68
+|-
+| 0.56 {{Symbol|Shatter Caps}} || 0.56 {{Symbol|Shatter Caps}} || 1.12 {{Symbol|Shatter Caps}} || 1.12 {{Symbol|Shatter Caps}} || 1.12 {{Symbol|Shatter Caps}}
+|-
+| rowspan="2" | <span class="invert-image">[[File:Charge Rifle Icon.svg|x35px|link=Charge Rifle]]<br>[[Charge Rifle]]</span>
+| 1.72 <small>min</small>
+| 2.12 <small>min</small>
+| 2.12 <small>min</small>
+| 3.37 <small>min</small>
+| 3.67 <small>min</small>
+|-
+| ??? <small>max</small>
+| ??? <small>max</small>
+| ??? <small>max</small>
+| ??? <small>max</small>
+| ??? <small>max</small>
+|-
+| <span class="invert-image">[[File:Longbow DMR Icon.svg|x35px|link=Longbow DMR]]<br>[[Longbow DMR]]</span>
+| 0.77 || 1.54 || 2.31 || 2.31 || 3.08
+|-
+| <span class="invert-image">[[File:Kraber .50-Cal Sniper Icon.svg|x35px|link=Kraber .50-Cal Sniper]]<br>[[Kraber .50-Cal Sniper]]</span>
+| 0.00 || 2.40 || 2.40 || 2.40 || 2.40
+|-
+| rowspan="2" | <span class="invert-image">[[File:Sentinel Icon.svg|x35px|link=Sentinel]]<br>[[Sentinel]]</span>
+| 1.58 || 3.16 || 3.16 || 3.16 || 4.74
+|-
+| 1.58 [[File:Sniper Ammo Amped.png|22px|link=|Amped]]
+| 1.58 [[File:Sniper Ammo Amped.png|22px|link=|Amped]]
+| 1.58 [[File:Sniper Ammo Amped.png|22px|link=|Amped]]
+| 3.16 [[File:Sniper Ammo Amped.png|22px|link=|Amped]]
+| 3.16 [[File:Sniper Ammo Amped.png|22px|link=|Amped]]
+|-
+| <span class="invert-image">[[File:EVA-8 Auto Icon.svg|x35px|link=EVA-8 Auto]]<br>[[EVA-8 Auto]]</span>
+| 0.33 || 0.66 || 0.66 || 1.00 || 1.00
+|-
+| rowspan="4" | <span class="invert-image">[[File:Mastiff Shotgun Icon.svg|x35px|link=Mastiff Shotgun]]<br>[[Mastiff Shotgun]]</span>
+| 0.91 || 1.82 || 1.82 || 2.73 || 2.73
+|-
+| {{Common|0.82}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.64}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.64}} {{Symbol|Shotgun Bolt}}
+| {{Common|2.47}} {{Symbol|Shotgun Bolt}}
+| {{Common|2.47}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Rare|0.79}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.58}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.58}} {{Symbol|Shotgun Bolt}}
+| {{Rare|2.37}} {{Symbol|Shotgun Bolt}}
+| {{Rare|2.37}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Epic|0.76}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.52}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.52}} {{Symbol|Shotgun Bolt}}
+| {{Epic|2.28}} {{Symbol|Shotgun Bolt}}
+| {{Epic|2.28}} {{Symbol|Shotgun Bolt}}
+|-
+| rowspan="8" | <span class="invert-image">[[File:Mozambique Shotgun Icon.svg|x35px|link=Mozambique Shotgun]]<br>[[Mozambique Shotgun]]</span>
+| 0.91 || 1.36 || 1.36 || 1.82 || 1.82
+|-
+| {{Common|0.79}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.18}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.18}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.58}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.58}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Rare|0.73}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.09}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.09}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.45}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.45}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Epic|0.67}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.01}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.01}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.34}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.34}} {{Symbol|Shotgun Bolt}}
+|-
+| 0.45 {{Symbol|Hammerpoint Rounds}}
+| 0.91 {{Symbol|Hammerpoint Rounds}}
+| 1.36 {{Symbol|Hammerpoint Rounds}}
+| 1.36 {{Symbol|Hammerpoint Rounds}}
+| 1.82 {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Common|0.39}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|0.79}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|1.18}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|1.18}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|1.58}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Rare|0.36}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|0.73}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|1.09}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|1.09}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|1.45}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Epic|0.34}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|0.67}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|1.01}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|1.01}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|1.34}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| rowspan="8" | <span class="invert-image">[[File:Mozambique Shotgun Akimbo Icon.svg|x35px|link=Mozambique Shotgun#Akimbo]]<br>[[Mozambique Shotgun#Akimbo|Mozambique Shotgun Akimbo]]</span>
+| 0.64 || 0.96 || 0.96 || 1.28 || 1.28
+|-
+| {{Common|0.58}} {{Symbol|Shotgun Bolt}}
+| {{Common|0.87}} {{Symbol|Shotgun Bolt}}
+| {{Common|0.87}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.17}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.17}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Rare|0.56}} {{Symbol|Shotgun Bolt}}
+| {{Rare|0.83}} {{Symbol|Shotgun Bolt}}
+| {{Rare|0.83}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.11}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.11}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Epic|0.53}} {{Symbol|Shotgun Bolt}}
+| {{Epic|0.80}} {{Symbol|Shotgun Bolt}}
+| {{Epic|0.80}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.07}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.07}} {{Symbol|Shotgun Bolt}}
+|-
+| 0.32 {{Symbol|Hammerpoint Rounds}}
+| 0.64 {{Symbol|Hammerpoint Rounds}}
+| 0.96 {{Symbol|Hammerpoint Rounds}}
+| 0.96 {{Symbol|Hammerpoint Rounds}}
+| 1.28 {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Common|0.29}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|0.58}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|0.87}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|0.87}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Common|1.16}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Rare|0.28}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|0.56}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|0.84}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|0.84}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Rare|1.12}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| {{Epic|0.27}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|0.54}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|0.81}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|0.81}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+| {{Epic|1.08}} {{Symbol|Shotgun Bolt}} {{Symbol|Hammerpoint Rounds}}
+|-
+| rowspan="4" | <span class="invert-image">[[File:Peacekeeper Icon.svg|x35px|link=Peacekeeper]]<br>[[Peacekeeper]]</span>
+| 1.36 || 1.36 || 1.36 || 2.73 || 2.73
+|-
+| {{Common|1.28}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.28}} {{Symbol|Shotgun Bolt}}
+| {{Common|1.28}} {{Symbol|Shotgun Bolt}}
+| {{Common|2.55}} {{Symbol|Shotgun Bolt}}
+| {{Common|2.55}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Rare|1.20}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.20}} {{Symbol|Shotgun Bolt}}
+| {{Rare|1.20}} {{Symbol|Shotgun Bolt}}
+| {{Rare|2.40}} {{Symbol|Shotgun Bolt}}
+| {{Rare|2.40}} {{Symbol|Shotgun Bolt}}
+|-
+| {{Epic|1.18}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.18}} {{Symbol|Shotgun Bolt}}
+| {{Epic|1.18}} {{Symbol|Shotgun Bolt}}
+| {{Epic|2.35}} {{Symbol|Shotgun Bolt}}
+| {{Epic|2.35}} {{Symbol|Shotgun Bolt}}
+|-
+| rowspan="2" | <span class="invert-image">[[File:RE-45 Auto Icon.svg|x35px|link=RE-45 Auto]]<br>[[RE-45 Auto]]</span>
+| 0.62 || 0.92 || 1.08 || 1.23 || 1.38
+|-
+| 0.46 {{Symbol|Hammerpoint Rounds}}
+| 0.77 {{Symbol|Hammerpoint Rounds}}
+| 0.92 {{Symbol|Hammerpoint Rounds}}
+| 1.08 {{Symbol|Hammerpoint Rounds}}
+| 1.23 {{Symbol|Hammerpoint Rounds}}
+|-
+| rowspan="2" | <span class="invert-image">[[File:P2020 Icon.svg|x35px|link=P2020]]<br>[[P2020]]</span>
+| 0.71 || 1.14 || 1.29 || 1.57 || 1.71
+|-
+| 0.43 {{Symbol|Hammerpoint Rounds}}
+| 0.86 {{Symbol|Hammerpoint Rounds}}
+| 1.00 {{Symbol|Hammerpoint Rounds}}
+| 1.29 {{Symbol|Hammerpoint Rounds}}
+| 1.43 {{Symbol|Hammerpoint Rounds}}
+|-
+| rowspan="2" | <span class="invert-image">[[File:P2020 Akimbo Icon.svg|x35px|link=P2020#Akimbo]]<br>[[P2020#Akimbo|P2020 Akimbo]]</span>
+| 0.50 || 0.88 || 1.00 || 1.13 || 1.25
+|-
+| 0.50 {{Symbol|Hammerpoint Rounds}}
+| 0.75 {{Symbol|Hammerpoint Rounds}}
+| 0.88 {{Symbol|Hammerpoint Rounds}}
+| 1.00 {{Symbol|Hammerpoint Rounds}}
+| 1.13 {{Symbol|Hammerpoint Rounds}}
+|-
+| <span class="invert-image">[[File:Wingman Icon.svg|x35px|link=Wingman]]<br>[[Wingman]]</span>
+| 0.77 || 1.15 || 1.15 || 1.54 || 1.54
+|}
+
+
+== Trivia ==
+* Out of the current 29 weapons in ''Apex Legends'', 21 are derived from the ''Titanfall'' series. The eight exceptions are the [[30-30 Repeater]], [[Bocek Compound Bow]], [[HAVOC Rifle]], [[Nemesis Burst AR]], [[Peacekeeper]], [[Prowler Burst PDW]], [[Rampage LMG]], and [[Sentinel]].
+** The Nemesis' design however was inspired by the [https://titanfall.wiki.gg/wiki/Splitter_Rifle Splitter Rifle], a Titan weapon from ''Titanfall 2''.
+*The [[Nemesis Burst AR]] is currently the only season-introduced weapon that has not gone into the {{Mythic|Care Package}}.
+* The marksman category was not introduced into ''Apex Legends'' until {{ItemLink|Season 9}}.
+** The [[G7]] and [[Triple Take]] were originally snipers. The G7 was then moved into the assault rifle category in ''Apex Legends'' until it became a marksman weapon.
+** Curiously, the [[Longbow DMR]] (Designated Marksman Rifle) was not moved to the marksman category.
+* The [[Mozambique Shotgun]] is a shotgun pistol and is actually classified as both.
+** For [[challenge]]s and [[Mad Maggie]]'s {{AbilityLink|Warlord's Ire}} Passive, it is treated as a shotgun.
+** In a match, it is labeled a pistol. The Mozambique has no ADS movement penalty like pistols. If its [[optic]]s are requested, the [[Legend]] will ask for pistol optics. The {{ItemLink|Hammerpoint Rounds|lvl=4}} Hop-Up is marked as compatible with "Pistols, except the [[Wingman]]", including the Mozambique.
+* A [[File:Heavy Rounds Revved Up.svg|25px|Revved Up]] Revved Up [[Rampage]] can break [[Door]]s.
+* The L-STAR was originally meant to break [[Door]]s rather than opening them.
+* Some Legends have unique animations with specific weapons:
+** [[Lifeline]] has a unique inspect animation and a unique voice line for the [[Mozambique Shotgun]] when Akimbo.
+** [[Mirage]] has a unique inspect animation for the [[P2020]] when Akimbo.
+** [[Bangalore]] has a unique inspect animation for the [[G7 Scout]].
+** [[Gibraltar]] has a unique pick-up animation for the Peacekeeper. This animation also happens when a Legend is rechambering the Peacekeeper one-handed due to the left hand being used, for example while [[Octane]] is using his {{AbilityLink|Stim}}.
+** [[Wattson]] has a unique inspect animation for the [[HAVOC Rifle]].
+** [[Rampart]] has a unique pick-up animation for the Rampage LMG, unique reload animations for all [[LMG]]s, and unique reload and inspect animations for {{AbilityLink|Mobile Minigun "Sheila"|text=Sheila}}.
+** [[Fuse]] has a unique pick-up animation for the [[30-30 Repeater]]. He also uses the one-handed rechamber animation that other legends use when the left hand is occupied by default.
+** [[Mad Maggie]] has a unique pick-up animation for the [[Mastiff]].
+** [[Vantage]] has four unique pick-up animations, a unique draw animation, and a unique holster animation for the [[Sentinel]].
+** [[Ballistic]] has a unique pick-up animation for the [[C.A.R. SMG]]. During {{ItemLink|Season 16}} and {{ItemLink|Season 17}}, this animation would unintentionally be added to Bangalore.
+** [[Horizon]] has a unique reload animation for the [[Volt SMG]] that was added in Season 26.
+
+== See Also ==
+* [[Ammo]]
+* [[Attachment]]
+* [[Hop-Up]]
+
+
+== Notes ==
+<references/>
+
+
+{{Nav-Weapons}}
+[[Category:Weapons|*]]
+[[pt-br:Armas]]

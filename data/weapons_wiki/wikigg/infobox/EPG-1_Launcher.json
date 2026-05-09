@@ -1,0 +1,13 @@
+{
+  "title": "EPG-1 Launcher",
+  "infobox": {
+    "name": "EPG-1 Launcher",
+    "colorPalette": "mythic",
+    "description": "",
+    "icon": "EPG-1 Launcher Icon.svg",
+    "fireModes": "Single",
+    "damageBody": "",
+    "rateOfFire": "",
+    "magazineSize": ""
+  }
+}

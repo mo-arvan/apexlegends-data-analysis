@@ -1,0 +1,20 @@
+{
+  "title": "Vantage/Sniper's Mark",
+  "infobox": {
+    "name": "A-13 Sentry",
+    "colorPalette": "a13",
+    "image": "A-13 Sentry.png",
+    "description": "Custom sniper rifle.",
+    "icon": "A-13 Sentry Icon.svg",
+    "fireModes": "Single",
+    "creator": "Paradinha Arsenal",
+    "damageBody": "50{{Symbol|marked}}100",
+    "damageHead": "75 (1.5×){{Symbol|marked}}150 (1.5×)",
+    "damageLegs": "50{{Symbol|marked}}100",
+    "dps": "34{{Symbol|marked}}68",
+    "rateOfFire": "41",
+    "magazineSize": "6",
+    "tacReload": "40 seconds",
+    "fullReload": "4 minutes"
+  }
+}

@@ -1,0 +1,352 @@
+{{MainGameNotice|mobilePage=P2020 (Mobile)}}
+{{Infobox-Weapon
+| name = P2020
+| description = Semi-auto pistol.
+| type = Pistol
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Light Rounds
+| creator = {{ItemLink|Lastimosa Armory}}
+| barrel = laser
+| magType = light
+| optics = true
+| hopup = hammerpoint
+| damageBody = 18<br>{{Symbol|Hammerpoint Rounds}} 27
+| damageHead = 27 <small>(1.5×)</small><br>{{Symbol|Hammerpoint Rounds}} 41 <small>(1.5×)</small>
+| damageLegs = 16 <small>(0.9×)</small><br>{{Symbol|Hammerpoint Rounds}} 24 <small>(0.9×)</small>
+| rateOfFire = 420
+| dps = 126
+| magazineSize = {{Level0123|14|16|18|21}}
+| reload = 1.25
+}}
+
+The '''P2020''' is a semi-automatic [[pistol]] that utilizes {{ItemLink|Light Rounds}}.
+
+It can be enhanced with the {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}} Hop-Up, which increases damage done to unshielded targets by 50%.
+
+The P2020 has an April Fools' [[P2020/April Fools|enhanced version]].
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}
+
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_semipistol</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 7
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 18500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 470 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4.4
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 10
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 13
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 16
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.225
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.18
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.225
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.18
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.18
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.16
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 1
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Cracked''
+| style="text-align:left" | Break an enemy white armor.
+| 25 times
+|-
+| 40
+| ''Locked & Loaded''
+| style="text-align:left" | Down an enemy after picking up the P2020 within 15 seconds.
+| 20 times
+|-
+| 60
+| ''All Fall Down''
+| style="text-align:left" | Down at least 3 enemies equipped with [{{Epic|Lv3 Extended Light Mag}}] in one match.
+| 15 times
+|-
+| 80
+| ''Fresh Meat''
+| style="text-align:left" | Down an enemy within 5 seconds with the P2020 after breaking enemy's armor.
+| 5 times
+|-
+| 100
+| ''4040''
+| style="text-align:left" | Kill at least 2 enemies with damages coming from two P2020s in the same loadout in one match.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|This small but reliable pistol was once standard-issue for IMC recruits before the Blackout. While lacking significant firepower, it's famously accurate with limited recoil, and modifications can significantly increase its rate of fire. A stand-off device in the muzzle also ensures greater accuracy in close quarters. When all other magazines are spent, it's comforting to have a P2020 on your hip.}}
+
+The Hammond P2020, is a semi-automatic single-action small caliber pistol manufactured by [[Lastimosa Armory]]. This handgun features an integrated standoff device and a fully milled slide. It also has a fully integrated Taclight and LAM, along with varied functions for IR, LiDAR, or FLIR illumination. When dropping in hot and you need something more than your mitts, the P2020 will help you tap, rack, and bang to first place with the best [[Legends]] out there.
+
+
+== Skins ==
+There are a total of 68 weapon skins for the P2020: 11 {{Legendary}}, 6 {{Epic}}, 35 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+The Nullifier P2020.png|{{Legendary|The Nullifier}}<br/>{{CraftingMetals|1,200}}
+Green Mamba P2020.png|{{Legendary|Green Mamba}}<br/>{{CraftingMetals|1,200}}
+Lady Justice P2020.png|{{Legendary|Lady Justice}}<br/>{{CraftingMetals|1,200}}
+Death's Scepter P2020.png|{{Legendary|Death's Scepter}}<br/>{{CraftingMetals|1,200}}
+Pit Viper P2020.png|{{Cosmetic-NI|Recolor|Legendary|Pit Viper}}<br/>Needs {{Legendary|Green Mamba}}
+Season's Greetings P2020.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Season's Greetings}}
+Tool of Anubis P2020.png|{{Cosmetic-NI|Recolor|Legendary|Tool of Anubis}}<br/>Needs {{Legendary|Death's Scepter}}
+Null Hypothesis P2020.png|{{Cosmetic|Lost Treasures|Legendary|Null Hypothesis}}
+Madam Mayhem P2020.png|{{Cosmetic-NI|Recolor|Legendary|Madam Mayhem}}<br/>Needs {{Legendary|Lady Justice}}
+Ivory Fang P2020.png|{{Cosmetic|Summer of Plunder|Legendary|Ivory Fang}}<ref group="story">'''Ivory Fang''': The signature weapon of [[Loba (character)|Loba Andrade]], for when you absolutely, positively have to kill someone... with style.</ref>
+Jawbreaker P2020.png|{{Cosmetic|Neon Network|Legendary|Jawbreaker}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm P2020.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire P2020.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor P2020.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid P2020.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy P2020.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Shadow Web P2020.png|{{Cosmetic|Fight or Fright 2019|Epic|Shadow Web}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Solstice P2020.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord P2020.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Shockwave P2020.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Fun Fair P2020.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Rock Bed P2020.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Kaleidoscope P2020.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork P2020.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither P2020.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug P2020.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy P2020.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile P2020.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef P2020.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Morning Dew P2020.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos P2020.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Zeal P2020.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest P2020.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 64
+Hot Shot P2020.png|{{Cosmetic|Season 2|Rare|Hot Shot}}<br/>Level 6
+Cold Punch P2020.png|{{Cosmetic|Season 3|Rare|Cold Punch}}<br/>Level 12
+Nanofuse P2020.png|{{Cosmetic|Season 4|Rare|Nanofuse}}<br/>Level 67
+Daisy Chain P2020.png|{{Cosmetic-NI|PlayStation+|Rare|Daisy Chain}}<br/>February 2020
+Emerald Shard P2020.png|{{Cosmetic|Season 5|Rare|Emerald Shard}}<br/>Level 92
+Open Circuit P2020.png|{{Cosmetic|Season 6|Rare|Open Circuit}}<br/>Level 51
+Hot Spot P2020.png|{{Cosmetic|Aftermarket|Rare|Hot Spot}}
+Fragmentary P2020.png|{{Cosmetic|Season 7|Rare|Fragmentary}}<br/>Level 49
+Hidden Hazard P2020.png|{{Cosmetic|Fight Night|Rare|Hidden Hazard}}
+Target Acquired P2020.png|{{Cosmetic|Season 8|Rare|Target Acquired}}<br/>Level 72
+Thunderstruck P2020.png|{{Cosmetic|Season 9|Rare|Thunderstruck}}<br/>Level 49
+Pollenation P2020.png|{{Cosmetic|Season 10|Rare|{{Texttip|Pollenation|sic}}}}<br/>Level 6
+Deadly Links P2020.png|{{Cosmetic|Season 12|Rare|Deadly Links}}<br/>Level 61
+Spinal Double Tap P2020.png|{{Cosmetic|Season 13|Rare|Spinal Double Tap}}<br/>Level 91
+Equilibrium P2020.png|{{Cosmetic|Season 14|Rare|Equilibrium}}<br/>Level 10
+Silver Bullet P2020.png|{{Cosmetic|Season 15|Rare|Silver Bullet}}<br/>Level 21
+Squared Up P2020.png|{{Symbol|PS+}} {{Rare|Squared Up}}<br>Season 17
+Digital Camouflage P2020.png|{{Cosmetic|S18|Rare|Digital Camouflage}}<br>Level 10
+Lilac Defender P2020.png|{{Cosmetic|S19|Rare|Lilac Defender}}<br>Level 33
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue P2020.png|{{Common|Factory Issue}}<br/>Default
+Midnight P2020.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal P2020.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic P2020.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire P2020.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater P2020.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo P2020.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm P2020.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest P2020.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen P2020.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid P2020.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal P2020.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket P2020.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon P2020.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover P2020.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic P2020.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Added {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}. Compatible with [[Mozambique Shotgun]] and P2020.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}. Comes pre-equipped with {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with the [[Alternator SMG]], [[Prowler Burst PDW]], P2020, [[R-99 SMG]], [[RE-45 Auto]], and [[Volt SMG]].
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 13}}.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Common|Level 1}} upgrade cost from {{Materials|25}} to {{Materials|50}}.
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|50}} to {{Materials|150}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|250}} to {{Materials|500}}.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Added {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}. Compatible with [[Mozambique Shotgun]], P2020, and [[RE-45 Auto]].
+* Reduced {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} multiplier from 2.35× to 1.5×.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced {{Rare|Level 2}} upgrade cost from {{Materials|75}} to {{Materials|50}}.
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|150}} to {{Materials|125}}.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Increased draw speed from 0.25 to 0.225 seconds.
+* Increased holster speed from 0.2 to 0.18 seconds.
+* Increased ADS-in speed from 0.25 to 0.225 seconds.
+* Increased ADS-out speed from 0.2 to 0.18 seconds.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* Increased fire rate from 6.25 to 7.
+* Increased magazine size from {{Level0123|12|14|16|18}} to {{Level0123|14|16|18|21}}.
+* {{ItemLink|Arenas}}:
+** Reduced {{Common|Level 1}} upgrade cost from {{Materials|50}} to {{Materials|25}}, {{Rare|Level 2}} from {{Materials|125}} to {{Materials|75}}, and {{Epic|Level 3}} from {{Materials|200}} to {{Materials|150}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Increased damage from 15 to 18.
+* Reduced fire rate from 8.5 to 6.25.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+
+; April 1, 2021
+* Replaced all P2020s with an [[/April Fools'|April Fools']] version for one day only.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} for one day only.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Increased damage from 13 to 15.
+* Reduced {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} multiplier from 2.7× to 2.35×.
+* Increased mag size from {{Level0123|10|13|15|18}} to {{Level0123|12|14|16|18}}.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 2}}.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Increased damage from 12 to 13.
+* Introduced {{ItemLink|Hammerpoint Rounds|image=Hammerpoint Rounds.svg|text={{Epic|Hammerpoint Rounds}}}}. Compatible with [[Mozambique Shotgun]] and P2020.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 2}}.
+}}
+
+
+== Trivia ==
+* Its predecessors, the '''P2011''' and '''P2016''', were references to the year development of ''Titanfall'' and ''Titanfall 2'''s release year respectively.  Following the naming scheme, the P2020 was supposed to be the P2019 but was changed before release to its current name.
+** Some P2020 skins reference this, having "P2019" labeled on the weapon instead of "P2020".
+
+
+== Gallery ==
+<gallery heights="250" widths="250">
+ConceptArt Ryan Lastimosa P2019.jpg|Concept Art for the then P2019 by Ryan Lastimosa.<ref>[https://www.artstation.com/artwork/qAZL2e Ryan Lastimosa on ArtStation]</ref>
+</gallery>
+
+
+== See also ==
+* [[P2020 (Mobile)|P2020 (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/Hammond_P2011 Hammond P2011 (''Titanfall'')]
+* [https://titanfall.fandom.com/wiki/Hammond_P2016 Hammond P2016 (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

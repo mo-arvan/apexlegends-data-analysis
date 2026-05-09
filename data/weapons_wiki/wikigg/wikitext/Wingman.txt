@@ -1,0 +1,452 @@
+{{Tabs|
+{{Tabs1|Wingman|Main}}
+{{Tabs2|Wingman/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Wingman
+| description = High-powered revolver.
+| type = Pistol
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Sniper Ammo
+| creator = [[Brockhaurd Manufacturing]]
+| barrel =laser
+| magType =sniper
+| optics = true
+| stock =
+| hopup = skullpiercer
+| damageBody = 50
+| damageHead = 75<br>{{Symbol|Skullpiercer}} 96
+| damageLegs = 45
+| rateOfFire = 168
+| dps = 140
+| magazineSize = {{Level0123|5|6|7|8}}
+| reload = 2.1
+}}
+The '''Wingman''' is a double-action [[Weapon|handgun]] that utilizes {{ItemLink|Sniper Ammo}}.<!--The Wingman can be enhanced with either {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}, which speeds up tactical reloads and will add 3 additional rounds in the magazine, but only if performed when the magazine is close to being fully depleted, or {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}, which increases the headshot multiplier by an additional 35%.-->
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Other
+* {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 50
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+<references group="note"/>
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_wingman</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 2.8
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 18000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 457 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 10000
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 254 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.4
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 4
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.5
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.45
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.4
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.36
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.315
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.27
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.18
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.16
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 1
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''25000''' damages with the '''Wingman'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Wingman'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Wingman'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''Wingman'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''500''' enemies with the '''Wingman'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The powerful, slow-firing Wingman has historically been popular among Frontier settlers as a symbol of rugged independence. However, for all its strength and swagger, it can be difficult to control due to its harsh recoil - more than a few overconfident marksmen have met their end with a spent Wingman in hand. It truly shines when wielded by a handler who can match its strength. The Wingman is notably the preferred sidearm of Apex Games Commissioner [[Kuben Blisk]].}}
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|42}}
+{{#vardefine:epicskin|17}}
+{{#vardefine:rareskin|41}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="160" mode="nolines">
+Dead Heat Wingman.png|{{Legendary|Dead Heat}}<br/>{{CraftingMetals|1,200}}
+Thermal Rise Wingman.png|{{Legendary|Thermal Rise}}<br/>{{CraftingMetals|1,200}}
+The Death Ray Wingman.png|{{Legendary|The Death Ray}}<br/>{{CraftingMetals|1,200}}
+Merciless Wing Wingman.png|{{Legendary|Merciless Wing}}<br/>{{CraftingMetals|1,200}}
+Cardinal Force Wingman.png|{{Cosmetic|Gaiden|Legendary|Cardinal Force}}<br/>{{CraftingMetals|1,200}}
+The Dragon's Claw Wingman.png|{{Cosmetic|Iron Crown|Legendary|The Dragon's Claw}}<br>{{#var:ac1}}
+The Dismantler Wingman.png|{{Cosmetic-NI|Recolor|Legendary|The Dismantler}}<br/>Needs {{Legendary|The Death Ray}}
+Loud Mouth Wingman.png|{{Cosmetic|Fight or Fright 2019|Legendary|Loud Mouth}}<br>{{#var:ac1}}
+Red Rocket Wingman.png|{{Cosmetic-NI|Recolor|Legendary|Red Rocket}}<br/>Needs {{Legendary|Merciless Wing}}
+Double Bypass Wingman.png|{{Cosmetic|System Override|Legendary|Double Bypass}}
+The Sunburst Wingman.png|{{Cosmetic-NI|Recolor|Legendary|The Sunburst}}<br/>Needs {{Legendary|The Death Ray}}
+Brass Beast Wingman.png|{{Cosmetic-NI|Recolor|Legendary|Brass Beast}}<br/>Needs {{Legendary|Merciless Wing}}
+Precision Caliber Wingman.png|{{Cosmetic|Season 5|Legendary|Precision Caliber}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+Attention To Detail Wingman.png|{{Cosmetic|Season 5|Legendary|Attention To Detail}}<ref group="note" name="reactive"/><br/>Level 110
+Hammer Down Wingman.png|{{Cosmetic|Aftermarket|Legendary|Hammer Down}}
+Lawbringer Wingman.png|{{Cosmetic|Chaos Theory|Legendary|Lawbringer}}<br>{{#var:ac1}}
+Final Form Wingman.png|{{Cosmetic|Evolution|Legendary|Final Form}}<br>Prize Track Reward
+Cerulean Blues Wingman.png|{{Cosmetic|Raiders|Legendary|Cerulean Blues}}<br>{{#var:ac1}}
+Eye of the Beholder Wingman.png|{{Cosmetic|3rd Anniversary|Legendary|Eye of the Beholder}}<br>{{#var:ac1}}
+Lucky Draw Wingman.png|{{Cosmetic|Season 14|Legendary|Lucky Draw}}<br/>Level 1
+Guns Up Wingman.png|{{Cosmetic|Dark Circuits Store|Legendary|Guns Up}}<br>{{#var:ac1}}
+Serpent's Fang Wingman.png|{{Cosmetic|Celestial Sunrise|Legendary|Serpent's Fang}}<br>{{#var:ac1}}
+Jade Revolver Wingman.png|{{Cosmetic|Imperial Guard|Legendary|Jade Revolver}}<br>{{#var:ac1}}
+Under Pressure Wingman.png|{{Cosmetic|Sun Squad|Legendary|Under Pressure}}<br>{{#var:ac1}}
+Imperial Entrance Wingman.png|{{Cosmetic|Threat Level|Legendary|Imperial Entrance}}<br>{{#var:ac1}}
+Punk Shot Wingman.png|{{Cosmetic|Fluorescent Frenzy Store|Legendary|Punk Shot}}<br>{{#var:ac1}}
+Sanguine Sidearm Wingman.png|{{Cosmetic|Death Dynasty|Legendary|Sanguine Sidearm}}<br>{{#var:ac1}}
+Fae Fire Wingman.png|[[File:Sale Icon.svg|22px|link=Fight or Fright Sale]] {{Legendary|Fae Fire}}<br>{{#var:ac1}}
+Incognito Wingman.png|{{Cosmetic|Post Malone|Legendary|Incognito}}
+Eye of the Idol Wingman.png|{{Cosmetic|Uprising|Legendary|Eye of the Idol}}<br>{{#var:ac1}}
+Knock Out Wingman.png|[[File:Sale Icon.svg|22px|link=End of Year Sale (2023)]] {{Legendary|Knock Out}}<br>{{#var:ac1}}
+Sly Shot Wingman.png|{{Cosmetic|Inner Beast|Legendary|Sly Shot}}<br>{{#var:ac1}}
+Death's Door Wingman.png|{{Cosmetic|Shadow Society|Legendary|Death's Door}}<br>{{#var:ac1}}
+The Bouncer Wingman.png|{{Cosmetic|Final Fantasy VII|Legendary|The Bouncer}}
+Blue Steel Wingman.png|[[File:Sale Icon.svg|22px|link=Steeled Demon Store]] {{Legendary|Blue Steel}}<br>{{#var:ac1}}
+Molten Slugger Wingman.png|[[File:Sale Icon.svg|22px|link=Molten Mayhem Store]] {{Legendary|Molten Slugger}}<br>{{#var:ac1}}
+Prismatic Wingman.png|[[File:Sale Icon.svg|22px|link=Poly Prowler Store]] {{Legendary|Prismatic}}<br>{{#var:ac1}}
+Nitride Persistence Wingman.png|[[File:Sale Icon.svg|22px|link=Nitride Weapon Arsenal)]] {{Legendary|Nitride Persistence}}<br>{{#var:ac1}}
+Iron Draw Wingman.png|{{Cosmetic|Space Hunt|Legendary|Iron Draw}}{{#var:ac1}}
+Big Bang Wingman.png|{{Cosmetic|Astral Anomaly|Legendary|Big Bang}}
+Splash of Color Wingman.png|{{Cosmetic|Future Icons|Legendary|Splash of Color}}
+Sherbert Wingman.png|{{Cosmetic|Haute Shot|Legendary|Sherbert}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="160" mode="nolines">
+Eye of the Storm Wingman.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Wingman.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Wingman.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Wingman.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Wingman.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Arctic Blaster Wingman.png|{{Cosmetic|holo-day bash 2019|Epic|Arctic Blaster}}<br>{{#var:ac2}}
+Crimson King Wingman.png|{{Cosmetic|lost treasures|Epic|Crimson King}}<br>{{#var:ac2}}
+Dragon's Wing Wingman.png|{{Cosmetic|anniversary|Epic|Dragon's Wing}}<br>{{#var:ac2}}
+Wings of Morien Wingman.png|{{Cosmetic|Season 13|Epic|Wings of Morien}}<br/>Treasure Pack Reward
+Arctic Fox Wingman.png|{{Cosmetic|Beast of Prey|Epic|Arctic Fox}}<br>{{#var:ac2}}
+Reality Eradicator Wingman.png|{{Cosmetic|4th anniversary|Epic|Reality Eradicator}}<ref group="story">'''Reality Eradicator''': Inspired by Ninjayla, Designed by fayren</ref>
+The Redactor Wingman.png|{{Cosmetic|Doppelgangers|Epic|The Redactor}}<br>{{#var:ac2}}
+Calamity Claw Wingman.png|{{Cosmetic|Urban Assault|Epic|Calamity Claw}}<br>{{#var:ac2}}
+Shattered Pixels Wingman.png|{{Cosmetic|S22|Epic|Shattered Pixels}}<br>Split 1 Premium Lv 16
+Cosmic Camo Wingman.png|{{Cosmetic|Winter's Haunt|Epic|Cosmic Camo}}
+Milky Wave Wingman.png|{{Cosmetic|Takeover|Epic|Milky Wave}}
+Proton Piercer Wingman.png|{{Cosmetic|Season 26|Epic|Proton Piercer}}<br>Split 2 Premium Lv 53
+</gallery>
+<references group="story"/>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="160" mode="nolines">
+Chaos Theory Wingman.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Wingman.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Wingman.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Wingman.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Wingman.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Wingman.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Wingman.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Wingman.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Wingman.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Wingman.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Wingman.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Wingman.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Wingman.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Wingman.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Wingman.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Navigator Wingman.png|{{Cosmetic|Season 1|Rare|Navigator}}<br/>Level 79
+Haunt Wingman.png|{{Cosmetic|Season 2|Rare|Haunt}}<br/>Level 96
+Ice Breaker Wingman.png|{{Cosmetic|Season 3|Rare|Ice Breaker}}<br/>Level 78
+Carapace Wingman.png|{{Cosmetic|Season 4|Rare|Carapace}}<br/>Level 91
+The Keystone Wingman.png|{{Cosmetic|Season 5|Rare|The Keystone}}<br/>Level 100
+Gridlocked Wingman.png|{{Cosmetic|Season 6|Rare|Gridlocked}}<br/>Level 90
+Ornate Forest Wingman.png|{{Cosmetic-NI|PlayStation+|Rare|Ornate Forest}}<br/>Season 6
+Pinged Wingman.png|{{Cosmetic|Season 7|Rare|Pinged}}<br/>Level 43
+Nightshade Wingman.png|{{Cosmetic|Season 8|Rare|Nightshade}}<br/>Level 93
+Gladiator's Trophy Wingman.png|{{Cosmetic|Chaos Theory|Rare|Gladiator's Trophy}}
+Wake Up Wingman.png|{{Cosmetic|Season 9|Rare|Wake Up}}<br/>Level 25
+Invasion Wingman.png|{{Cosmetic|Season 10|Rare|Invasion}}<br/>Level 89
+Eternal Life Wingman.png|{{Rare|Eternal Life}}
+Dead Red Wingman.png|{{Cosmetic|Season 11|Rare|Dead Red}}<br/>Level 38
+Linked Languish Wingman.png|{{Cosmetic|Season 12|Rare|Linked Languish}}<br/>Level 41
+Imbued Fury Wingman.png|{{Cosmetic|Season 13|Rare|Imbued Fury}}<br/>Level 47
+Broken Wing Wingman.png|{{Rare|Broken Wing}}
+Flavor Burst Wingman.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Flavor Burst}}<br/>October 2022
+Crimson Gaze Wingman.png|{{Cosmetic|Season 15|Rare|Crimson Gaze}}<br/>Level 59
+Heartfelt Holos Wingman.png|{{Cosmetic|Season 16|Rare|Heartfelt Holos}}<br/>Level 70
+Battle Blaster Wingman.png|{{Cosmetic|Season 17|Rare|Battle Blaster}}<br>Season 59
+Squared Up Wingman.png|{{Cosmetic-NI|PlayStation+|Rare|Squared Up}}<br>Season 17
+Digital Camouflage Wingman.png|{{Cosmetic|Season 18|Rare|Digital Camouflage}}<br>Level 28
+Tessellator Wingman.png|{{Cosmetic|Season 19|Rare|Tessellator}}<br>Level 34
+CMYK Wingman.png|{{Cosmetic|Season 20|Rare|CMYK}}<br>Level 58
+Crimson Slash Wingman.png|[[File:ALGS Icon.svg|22px|link=Twitch_Drop#Apex_Legends_Global_Series]] {{Rare|Crimson Slash}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="160" mode="nolines">
+Factory Issue Wingman.png|{{Common|Factory Issue}}<br/>Default
+Midnight Wingman.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Wingman.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Wingman.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Wingman.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Wingman.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Wingman.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Wingman.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Wingman.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Wingman.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Wingman.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Wingman.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Wingman.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Wingman.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Wingman.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Wingman.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Wild Iron}} [[September 16, 2025 Patch]]
+* Damage increased to 50 (was 48).
+* Skullpiercer headshot multiplier reduced to 1.92 (was 2.0).
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 48 (was 45).
+* Headshot damage: 72.
+* Base magazine size reduced to 5 (was 6).
+* With added magazine - White: 6, Blue: 7, Purple/Gold: 8.
+
+; {{ItemLink|Season 21|noText=yes}} [[May 07, 2024 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Removed {{ItemLink|Extended Sniper Mag}} compatibility.
+* Reduced damage from 50 to 45.
+* Reduced projectile size.
+* Added {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}. Compatible with [[Triple Take]] and Wingman.
+* <s>Reduced hipfire accuracy.</s>
+
+
+; {{ItemLink|Shadow Society|noText=yes}} [[March 26, 2024 Patch]]
+* Optics can now be removed or swapped.
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} compatibility.
+* Reduced pre-equipped {{ItemLink|Mythic Sniper Ammo|text=Ammo}} from 99 to 81.
+
+
+; [[February 16, 2024 Patch]]
+* Removed pre-equipped {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}.
+* Changed pre-equipped optic from {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} to {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}.
+* Optics can no longer be removed or swapped.
+* Reduced pre-equipped {{ItemLink|Mythic Sniper Ammo|text=Ammo}} from 119 to 99.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 119 {{ItemLink|Mythic Sniper Ammo|text=Ammo}}, {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}, and {{ItemLink|Skullpiercer Elite|text={{Legendary|Skullpiercer Elite}}}}.
+* Increased damage from 45 to 50.
+* Increased projectile size.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Added {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}. Compatible with [[Hemlok Burst AR]] and Wingman.
+** Increased magazine size boost from 2 to 3.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 16}}.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Removed {{ItemLink|Boosted Loader|text={{Epic|Boosted Loader}}}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Changed ammo type from {{ItemLink|Heavy Rounds|text=Heavy}} to {{ItemLink|Sniper Ammo|text=Sniper}}.
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+* Added {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}. Compatible with [[30-30 Repeater]], [[Longbow DMR]], and Wingman.
+* Increased {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}} multiplier from ×2.4 to ×2.5.
+
+
+; {{ItemLink|Awakening|noText=yes}} [[June 21, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Introduced {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}. Compatible with [[Hemlok Burst AR]] and Wingman.
+* Removed {{ItemLink|Quickdraw Holster|text={{Epic|Quickdraw Holster}}}}.
+* Increased draw speed from 0.45 to 0.4 seconds.
+* Increased holster speed from 0.4 to 0.36 seconds.
+* Increased ADS-in speed from 0.35 to 0.315 seconds.
+* Increased ADS-out speed from 0.3 to 0.27 seconds.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Increased headshot multiplier from ×2 to ×2.15.
+* Removed {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 9}}.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* Increased magazine size from {{Level0123|5|6|7|8}} to {{Level0123|6|7|8|9}}.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Introduced {{ItemLink|Quickdraw Holster|text={{Epic|Quickdraw Holster}}}}. Compatible with [[RE-45 Auto]] and Wingman.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 7}}.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Reduced headshot multiplier from ×2.1 to ×2.
+* Added {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}. Compatible with [[Longbow DMR]] and Wingman.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Changed magazine size from {{Level0123|4|6|8|10}} to {{Level0123|5|6|7|8}}.
+* Improved iron sights accuracy.
+
+
+; [[November 05, 2019 Patch]]
+* Reduced headshot multiplier from ×2.15× to ×2.1.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Increased headshot multiplier from ×2 to ×2.15.
+* Removed {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}.
+
+
+; [[April 16, 2019 Patch]]
+* Reduced magazine size from {{Level0123|6|8|9|12}} to {{Level0123|4|6|8|10}}.
+
+
+; [[March 06, 2019 Patch]]
+* Increased base hip fire spread.
+* Reduced the rate at which hip fire spread decays.
+* Reduced fire rate from 3.1 to 2.6.
+* Reduced {{ItemLink|Skullpiercer Rifling|text={{Epic|Skullpiercer Rifling}}}} multiplier from ×2.5 to ×2.25.
+* Reduced chance to spawn.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+Wingman Concept Art.jpg|Concept art for the Wingman.<ref>[https://www.artstation.com/artwork/8lkeER Danny Gardner on ArtStation]</ref>
+The Death Ray Wingman Concept Art.jpg|Concept art for {{Legendary|The Death Ray}} skin.
+Lawbringer Wingman Concept Art.jpg|Concept art for {{Legendary|Lawbringer}} skin.<ref>https://www.artstation.com/artwork/9NeW3v</ref>
+Cardinal Force Wingman Concept Art.jpg|Concept art for the {{Legendary|Cardinal Force}} skin.<ref>[https://www.artstation.com/artwork/b5150m Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The {{Legendary|Precision Caliber}} and {{Legendary|Attention to Detail}} skins are weapon mods designed by [[Rampart]], indicated by the presence of a Rampart Mods stamp.
+<br>
+<br>
+== See also ==
+* [[Wingman (Mobile)|Wingman (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/B3_Wingman B3 Wingman (''Titanfall'')]
+* [https://titanfall.wiki.gg/wiki/B3_Wingman#Titanfall_2 B3 Wingman (''Titanfall 2'')]
+* [https://titanfall.wiki.gg/wiki/B3_Wingman_Elite B3 Wingman Elite (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

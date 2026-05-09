@@ -1,0 +1,21 @@
+{
+  "title": "L-STAR EMG (Mobile)",
+  "infobox": {
+    "name": "L-STAR EMG",
+    "description": "Plasma-fueled light machine gun with no magazine. Overheats after a certain number of shots.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Mythic Energy Ammo",
+    "creator": "Wonyeon",
+    "barrel": "stabilizer",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "18",
+    "damageHead": "32 (1.75×)",
+    "damageLegs": "14 (0.8×)",
+    "rateOfFire": "600",
+    "magazineSize": "∞",
+    "reload": "{{Level023|2.1|2|1.8}}"
+  }
+}

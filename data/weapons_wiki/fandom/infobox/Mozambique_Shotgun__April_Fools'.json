@@ -1,0 +1,20 @@
+{
+  "title": "Mozambique Shotgun/April Fools'",
+  "infobox": {
+    "name": "Mozambique Shotgun",
+    "image": "Mozambique Shotgun.png",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "Triple-barrel shotgun pistol.",
+    "type": "Shotgun",
+    "fireModes": "Auto",
+    "ammoType": "Shotgun Shells",
+    "damageBody": "19×3",
+    "damageLegs": "18×3",
+    "damageHead": "29×3 (1.5×)",
+    "rateOfFire": "180",
+    "dps": "171",
+    "magazineSize": "9",
+    "tacReload": "2.1",
+    "fullReload": "2.6"
+  }
+}

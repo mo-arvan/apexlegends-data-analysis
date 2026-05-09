@@ -1,0 +1,28 @@
+{
+  "title": "P2020 (Mobile)",
+  "infobox": {
+    "name": "P2020",
+    "image": "P2020.png",
+    "description": "Basic pistol, if the accuracy is low, then a fist is more useful.",
+    "type": "Pistol",
+    "fireModes": "Single",
+    "ammoType": "Light Rounds",
+    "creator": "Lastimosa Armory",
+    "magType": "light",
+    "optics": "true",
+    "hopup": "hammerpoint",
+    "damageBody": "18 27",
+    "damageLegs": "16 24",
+    "damageHead": "27 (1.5×) 41 (1.5×)",
+    "rateOfFire": "516",
+    "dps": "155",
+    "magazineSize": [
+      "18",
+      "20",
+      "22",
+      "26"
+    ],
+    "tacReload": "1.25 seconds",
+    "fullReload": "1.05 seconds"
+  }
+}

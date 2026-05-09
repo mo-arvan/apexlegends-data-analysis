@@ -1,0 +1,93 @@
+---
+title: "An Update on Nintendo Switch Support"
+date: 2026-01-30
+slug: update-on-nintendo-switch-support
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/update-on-nintendo-switch-support
+---
+
+# An Update on Nintendo Switch Support
+
+
+Hey legends, we want to share an important update about Apex Legends on the Nintendo Switch. 
+
+Season 29 will be the final update for Apex Legends on Nintendo Switch. Future seasons of Apex Legends will continue to be available on Nintendo Switch 2.
+
+- Starting August 4, 2026 (Season 30), Apex Legends will no longer be playable on the Nintendo Switch system. 
+- Until August 4, 2026, players can continue to jump into the action, earn rewards, and enjoy matches per usual. 
+- Beginning August 4, 2026, in-game premium currency will no longer be available for purchase on Nintendo Switch, though any existing balances can still be used before August 4, 2026. Players can use any existing balances from Nintendo Switch on Nintendo Switch 2.
+- All players progress, purchases, and earnings are tied to their individual EA accounts. Everything that has been earned or purchased, including Apex Coins and cosmetics, will carry over to Nintendo Switch 2, even if you purchase Nintendo Switch 2 after August 4, 2026. *Please note that in some regions, local laws require you to use digital currency within 180 days of purchase.* 
+- All the above only applies to Nintendo Switch and not Nintendo Switch 2.
+
+
+Apex Legends will continue to be available on all other supported platforms. As we continue to evolve Apex Legend’s content and technical foundation, our goal is to deliver a high quality experience. Thanks to Nintendo’s investment in the Nintendo Switch 2, the platform offers a great handheld experience for Apex Legends.
+
+We are deeply grateful to the Nintendo community that has been with us on this journey since Day 1, and we hope to see you on the Dropship on Nintendo Switch 2. 
+
+– Respawn
+## FAQ 
+
+**Q: How long will I have left to play Apex Legends on Nintendo Switch?** 
+
+A: Game servers for Nintendo Switch will be available until August 4, 2026, at which time the game will no longer be playable. The game will continue to be playable on Nintendo Switch 2.
+
+**Q: Will there still be content coming to Nintendo Switch?**
+
+A: Yes, Nintendo players will still receive all the same game updates on both Nintendo Switch and Nintendo Switch 2 through Season 29. After August 4, 2026, updates will continue for Nintendo Switch 2, but Nintendo Switch will not be able to connect to our servers.
+
+**Q: Can I play Apex Legends on Nintendo Switch after the game sunsets?**
+
+A: No. Apex Legends requires online servers to play, so playing the game in any form on Nintendo Switch will no longer be possible after this date.
+
+**Q. Can I still download Apex Legends at a later date?**
+
+A: Yes, you can still download Apex Legends on Nintendo Switch until August 4, 2026. However, you will not be able to purchase any in-game item or currency on Nintendo Switch after August 3, 2026. Apex Legends and any existing balances are attached to your EA account and will be accessible on Nintendo Switch 2.
+
+**Q: When can I no longer purchase in-game items or currency in Apex?*** 
+
+A: You will be able to make in-game purchases on Nintendo Switch until August 4, 2026, after which the Nintendo Switch version of Apex will not be playable. After August 4, 2026, you’ll be able to use all of your in-game items and the remainder of your in-game currency on Nintendo Switch 2, if legally allowed in your region.
+
+**Players who purchased currency in Japan are subject to a 180 day expiration period across ALL platforms, including Nintendo Switch.*
+
+**Q. What happens to all of my purchases in Apex Legends? Will I still be able to use my in-game purchases and currency?***
+
+A: All purchases you’ve made will still work in-game on Nintendo Switch until August 4, 2026. After that date, Apex Legends on Nintendo Switch will no longer be playable.  Any leftover currency will be available on Nintendo Switch 2. Please note that by law, certain regions require you to use your digital currency within 180 days of purchase, so please check the local requirements where you are.
+
+**Players who purchased currency in Japan are subject to a 180 day expiration period across ALL platforms, including Nintendo Switch.*
+
+**Q: If I want to play Apex Legends on the Nintendo Switch 2, do I need to re-purchase everything I purchased on Nintendo Switch?***
+
+A: No, your progress and purchases are tracked through your EA account. Everything you have earned and purchased on Nintendo Switch will be available for you on Nintendo Switch 2. Please note that by law, certain regions require you to use your digital currency within 180 days of purchase, so please check the local requirements where you are.
+
+**Players who purchased currency in Japan are subject to a 180 day expiration period across ALL platforms, including Nintendo Switch.*
+
+**Q. What happens to my Apex Legends account? How long do I have to transfer everything?**
+
+A: Your Apex Legends account will remain active. You can choose to transfer to any other compatible platform at any time. You can check out more on this <u>[here](https://www.ea.com/games/apex-legends/apex-legends/news/cross-progression)</u>. However, digital currency will not transfer to other platforms from Nintendo Switch systems. You can merge your wallet to Nintendo Switch 2 but not any other platform.
+
+**Q: How do I transfer my Apex Legends data from Nintendo Switch to the Nintendo Switch 2?**
+
+A: You can either initiate a data transfer from your Nintendo Switch to your Nintendo Switch 2 by going into your settings on your Nintendo Switch and initiating a System Transfer or you can sign into your Nintendo Switch 2 system with your Nintendo account information, download Apex Legends, and sign in using your EA account.
+
+If you need further information, please follow the instructions from the <u>[guide on the Nintendo website](https://www.nintendo.com/us/gaming-systems/switch-2/transfer-guide/?srsltid=AfmBOopNq9-ia802AdZuIivokoQkQ64ZMpuuQMyHArWPcEQ8gW3ssiYL)</u>.
+
+**Q. What is the refund policy on items I purchased on Nintendo Switch?**
+
+A: All purchases are final and non-refundable.
+
+**Q. What happens to my Apex Legends progress on Nintendo Switch?**
+
+A: Your Apex Legends progress will transfer over via your EA account. You must use the same EA account that you were using on Nintendo Switch for your progress to carry over.
+
+---
+
+[Play Apex Legends for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, Nintendo Switch 2, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [Twitter](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), and [TikTok](https://www.tiktok.com/@PlayApex), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.

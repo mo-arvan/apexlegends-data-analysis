@@ -1,0 +1,462 @@
+{{Tabs|
+{{Tabs1|Charge Rifle|Main}}
+{{Tabs2|Charge Rifle/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Charge Rifle
+| description = Charged beam sniper rifle.
+| type = Sniper Rifle
+| fireModes = [[File:Single-fire Icon.svg|25px|Single|link=]] Single<br>
+| ammoType = Sniper Ammo
+| creator = {{ItemLink|Vinson Dynamics|image=Vinson Dynamics Icon.svg}}
+| barrel =
+| magType = sniper
+| optics = true
+| stock = sniper
+| hopup = selectfire
+| damageBody = 75–110<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 56–83
+| damageHead = 135–198<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 101–149
+| damageLegs = 68–99<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 50-74
+| rateOfFire = [[File:Single-fire Icon.svg|25px|Single|link=]] 26<!-- Effective fire rate of 0.43 RPS or 2.3026 seconds/round accounting for Charge Time. Raw value on files is 0.95 RPS, charge time is on next param --><br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 84
+| dps = [[File:Single-fire Icon.svg|25px|Single|link=]] 33~48 <br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 78~116
+| magazineSize = {{Level0123|6|7|8|9}}
+| tacReload = {{Level0123|3.5|3.38|3.27|3.15}}
+| fullReload = {{Level0123|4.6|4.45|4.29|4.14}}
+}}
+
+The '''Charge Rifle''' is a [[railgun]] introduced in {{ItemLink|Season 3}} that utilizes {{ItemLink|Sniper Ammo}}.
+
+When the trigger is pressed, there is a 0.85 second charge delay before the shot is fired. The projectile the Charge Rifle fires is subjected to a damage increase the further it travels<!--: starting with 75 damage at 57 meters, it gradually increases by 1 damage every ~7 meters traveled (76 DMG at 56-62 meters, 77 DMG at 63-69 meters, and so on),-->, eventually reaching 110 damage at 200+ meters.
+
+It can be equipped with a {{ItemLink|Selectfire Receiver|image=Selectfire Receiver.svg|text={{Legendary|Selectfire Receiver}}}}, which allows the Charge Rifle to switch to full-auto mode, at the cost of a 25% damage reduction. In this firing mode, once it is charged up, it can continue firing without having to charge up again, but this charge will quickly deplete when not firing.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+* {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+
+; Others
+* {{ItemLink|Extended Sniper Mag|image=Extended Sniper Mag.svg}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock|image=Sniper Stock.svg}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Selectfire Receiver|text={{Legendary|Selectfire Receiver}}}}
+
+<br>
+<br>
+
+=== Damage Profile ===
+; Closest range
+{{Damage profile
+| damage = 75
+| headshotMdfr = 1.8
+| legMdfr = 0.9
+}}
+<br>
+<br>
+; Farthest range
+{{Damage profile
+| damage = 110
+| headshotMdfr = 1.8
+| legMdfr = 0.7
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_defender</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 1.3
+| Rounds fired in one second.
+|-
+| charge_time
+| style="text-align:center" | 0.85
+| Time to charge shots to fire. Expressed in seconds.
+|-
+| charge_cooldown_time
+| style="text-align:center" | 1.1
+| rowspan="2" | Time delay between two shots. Expressed in seconds.
+|-
+| charge_cooldown_delay
+| style="text-align:center" | 0.1
+|-
+| projectile_launch_speed
+| style="text-align:center" | 33999
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 864 meters per second.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 5.5
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 6
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3.25
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.5
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.7
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.2
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.15
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.35
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 0
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''25000''' damages with the '''Charge Rifle'''
+|-
+|''Headshot Kills''
+| style="text-align:left" | Kill '''100''' enemies with '''Headshots''' with the '''Charge Rifle'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Charge Rifle'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''200''' enemies with '''80''' meters away with the '''Charge Rifle'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''500''' enemies with the '''Charge Rifle'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|This portable beam cannon was originally designed to take down Titans in the field, so imagine what it can do to a human. The Charge Rifle's signature orange beam starts charging on trigger-pull and fires automatically when fully charged. This unique firing cadence makes accuracy essential - a poorly aimed shot will leave the operator vulnerable to return fire. A shot that lands, however, can finish the fight before it starts.}}
+
+The Charge Rifles used in the [[Apex Games]] are manufactured by [[Vinson Dynamics]]. Notable changes from its Frontier War-era model include a smaller profile, more compact build, and a completely reworked firing system, shooting out a beam that rapidly increases in damage instead of charging for a single massive blast.
+
+In 2735, Vinson Dynamics shared plans internally for a redesign of the Apex Games' implementation of the Charge Rifle.<ref>[https://twitter.com/PlayApex/status/1685717163728879616 PlayApex on Twitter]</ref>
+<br>
+<br>
+== Skins ==
+There are a total of 82 skins for the Charge Rifle: 21 {{Legendary}}, 12 {{Epic}}, 33 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+Charged Warrior Charge Rifle.png|{{Legendary|Charged Warrior}}<br/>{{CraftingMetals|1,200}}
+For Honor Charge Rifle.png|{{Legendary|For Honor}}<br/>{{CraftingMetals|1,200}}
+Elegant Experiment Charge Rifle.png|{{Legendary|Elegant Experiment}}<br/>{{CraftingMetals|1,200}}
+Contemporary Counterpart Charge Rifle.png|{{Legendary|Contemporary Counterpart}}<ref group="note">It was named "Nocturnal Elegance" before it was changed due to sharing the name with a [[Devotion LMG]] skin.</ref><br/>{{CraftingMetals|1,200}}
+Oak Thump Charge Rifle.png|{{Cosmetic|Gaiden|Legendary|Oak Thump}}<br/>{{CraftingMetals|1,200}}
+Arachnoid Charge Rifle.png|{{Cosmetic|Octane Edition|Legendary|Arachnoid}}
+Hard Coded Charge Rifle.png|{{Cosmetic|System Override|Legendary|Hard Coded}}
+Safety First Charge Rifle.png|{{Cosmetic|The Old Ways|Legendary|Safety First}}
+Red Prism Charge Rifle.png|{{Cosmetic|Fight Night|Legendary|Red Prism}}
+Feudal Glory Charge Rifle.png|{{Cosmetic|Genesis|Legendary|Feudal Glory}}
+Curse of the Amazon Charge Rifle.png|{{Cosmetic|Warriors|Legendary|Curse of the Amazon}}
+Laser Eviscerator Charge Rifle.png|{{Cosmetic|Season 15|Legendary|Laser Eviscerator}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+Cosmic Cannon Charge Rifle.png|{{Cosmetic|Season 15|Legendary|Cosmic Cannon}}<ref group="note" name="reactive"></ref><br/>Level 110
+Sting Ray Charge Rifle.png|{{Cosmetic|Sun Squad|Legendary|Sting Ray}}
+Divine Lance Charge Rifle.png|{{Cosmetic|Threat Level|Legendary|Divine Lance}}
+Eclipse Bringer Charge Rifle.png|{{Cosmetic|Harbingers|Legendary|Eclipse Bringer}}
+Emerald Eye Charge Rifle.png|{{Cosmetic|Uprising|Legendary|Emerald Eye}}
+Northern Way Charge Rifle.png|[[File:Sale Icon.svg|22px|link=End of Year Sale (2023)]] {{Legendary|Northern Way}}
+Arcane Ward Charge Rifle.png|{{Cosmetic|Final Fantasy VII|Legendary|Arcane Ward}}
+High Honors Charge Rifle.png|{{Symbol|Battle Academy Store 2024}} {{Legendary|High Honors}}
+Ice Beam Charge Rifle.png|{{Cosmetic|Winter's Haunt|Legendary|Ice Beam}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Charge Rifle.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Charge Rifle.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Charge Rifle.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Charge Rifle.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Charge Rifle.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Calibrated Charge Rifle.png|{{Cosmetic|Season 4|Epic|Calibrated}}<br/>Level 99
+Lagoon Idol Charge Rifle.png|{{Cosmetic|Chaos Theory|Epic|Lagoon Idol}}
+Thunderbuss Charge Rifle.png|{{Cosmetic|Raiders|Epic|Thunderbuss}}
+Plasmatic Precision Charge Rifle.png|{{Cosmetic|Death Dynasty|Epic|Plasmatic Precision}}
+Poison Beam Charge Rifle.png|{{Cosmetic|Double Take|Epic|Poison Beam}}
+Gecko Glazer Charge Rifle.png|{{Cosmetic|Takeover|Epic|Gecko Glazer}}
+Gilded Acquisition Charge Rifle.png|{{Cosmetic|Death by Design|Epic|Gilded Acquisition}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Chaos Theory Charge Rifle.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Charge Rifle.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Charge Rifle.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Charge Rifle.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Charge Rifle.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Charge Rifle.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Charge Rifle.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Charge Rifle.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Charge Rifle.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Charge Rifle.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Charge Rifle.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Charge Rifle.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Charge Rifle.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Charge Rifle.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Charge Rifle.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Frozen Path Charge Rifle.png|{{Cosmetic|Season 3|Rare|Frozen Path}}<br/>Level 10
+Overcharged Charge Rifle.png|{{Cosmetic|Season 4|Rare|Overcharged}}<br/>Level 47
+Gilded Hunt Charge Rifle.png|{{Cosmetic|Season 5|Rare|Gilded Hunt}}<br/>Level 22
+Mainframe Online Charge Rifle.png|{{Cosmetic|Season 6|Rare|Mainframe Online}}<br/>Level 63
+Sun Baked Charge Rifle.png|{{Cosmetic|Season 7|Rare|Sun Baked}}<br/>Level 41
+Dead Eye Charge Rifle.png|{{Cosmetic|Season 8|Rare|Dead Eye}}<br/>Level 56
+Fan Out Charge Rifle.png|{{Cosmetic|Season 9|Rare|Fan Out}}<br/>Level 86
+Corrupted Hive Charge Rifle.png|{{Cosmetic|Season 10|Rare|Corrupted Hive}}<br/>Level 86
+Aubergine Dream Charge Rifle.png|{{Cosmetic|Season 11|Rare|Aubergine Dream}}<br/>Level 90
+Pink Ink Charge Rifle.png|{{Cosmetic|Season 12|Rare|Pink Ink}}<br/>Level 41
+Scales & Stripes Charge Rifle.png|{{Cosmetic|Season 13|Rare|Scales & Stripes}}<br/>Level 15
+Triangular Charge Rifle.png|{{Cosmetic|Season 16|Rare|Triangular}}<br>Level 52
+Overclocked Upgrade Charge Rifle.png|{{Cosmetic|Season 17|Rare|Overclocked Upgrade}}<br>Level 52
+The Dopple Gang Charge Rifle.png|{{Cosmetic|Season 18|Rare|The Dopple Gang}}<br>Level 20
+Emblematic Charge Rifle.png|{{Symbol|Season 19}} {{Rare|Emblematic}}<br>Level 8
+Temple Runner Charge Rifle.png|{{Cosmetic|PS+|Rare|Temple Runner}}<br>Season 19
+Toxic Bite Charge Rifle.png|{{Symbol|Season 20}} {{Rare|Toxic Bite}}<br>Level 53
+Tech Takeover Charge Rifle.png|{{Symbol|Season 21}} {{Rare|Tech Takeover}}<br>Level 17
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Charge Rifle.png|{{Common|Factory Issue}}<br/>Default
+Midnight Charge Rifle.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Charge Rifle.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Charge Rifle.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Charge Rifle.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Charge Rifle.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Charge Rifle.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Charge Rifle.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Charge Rifle.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Charge Rifle.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Charge Rifle.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Charge Rifle.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Charge Rifle.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Charge Rifle.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Charge Rifle.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Charge Rifle.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 25|noText=yes}} [[May 06, 2025 Patch]]
+* Increased limb damage multiplier from 0.7 to 0.9.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 11, 2025 Patch]]
+* Headshot damage (min. distance) reduced from 150 to 135.
+* Headshot damage (max. distance) reduced from 220 to 198.
+* Autofire headshot damage (min. distance) reduced from 113 to 101.
+* Autofire headshot damage (max. distance) reduced from 165 to 149.
+* Limb damage reduced to 70% (was 90%).
+
+
+; {{Symbol|Astral Anomaly}} [[January 07, 2025 Patch]]
+* Increased ammo capacity
+** Base Ammo: 6
+** {{ItemLink|Extended Sniper Mag|text=White Mag|lvl=1}}:7
+** {{ItemLink|Extended Sniper Mag|text=Blue Mag|lvl=2}}: 8
+** {{ItemLink|Extended Sniper Mag|text=Purple Mag|lvl=3}}: 9
+* Increased projectile size at closer ranges
+* Increased projectile speed
+* Improved recoil
+* Maximum damage for range scaling now achieved at 200m (was 300m)
+* Reduced projectile gravity
+* Now takes {{ItemLink|Selectfire Receiver|text=Select Fire|lvl=4}} Hop-Up
+** Alternate fire: automatic firing mode
+** Damage reduced by 25%
+** Increased fire rate (from 1.3 to 1.4)
+** Recoil improvements when in auto
+* Charge Rifle weapon UI no longer occasionally displays when in ADS with a high power optic
+
+
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* ('''Undocumented''') Can now destroy [[Door]]s.
+
+
+; {{ItemLink|Season 21|noText=yes}} [[May 07, 2024 Patch]]
+* Reduced recoil when firing while ADS.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* {{ItemLink|Gun Run}}: changed Charge Rifle with [[Kraber .50-Cal Sniper]].
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Improved bullet drop ballistics.
+* Increased projectile size.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Changed firing type from hitscan to projectile-based.
+* Removed pre-firing laser.
+* Damage now gradually increases the longer the projectile travels.
+** Reduced close range distance (for damage purposes) from 100 to 55 meters.
+** Increased mid range distance (for damage purposes) from 150 to 300 meters.
+** Reduced long range distance (for damage purposes) from 400 to 300 meters.
+** Increased close range damage from 45 to 75.
+** Increased mid range damage from 45 to 110.
+** Increased long range damage from 15 to 110.
+* Reduced ammo consumed per shot from 2 to 1.
+* Changed magazine size from 6 to {{Level0123|4|5|6|8}}.
+* Added projectile passthrough, retaining 80% of their damage.
+* Reduced tactical reload speed from 4 to 3.5.
+* Reduced full reload speed from 5.1 to 4.6.
+* Projectiles can now open [[Door]]s.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 18}}.
+* ('''Undocumented''') Increased headshot damage multiplier from ×1.75 to ×2.
+* ('''Undocumented''') Changed pickup animation.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Reduced magazine size from 8 to 6.
+* Reduced spawn rate.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 10}}.
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|700}} to {{Materials|600}}.
+** Reduced {{Common|Level 1}} upgrade cost from {{Materials|250}} to {{Materials|200}}, and {{Rare|Level 2}} from {{Materials|300}} to {{Materials|200}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|400}} to {{Materials|450}}.
+
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Fixed an issue with the initial blast of the beam not destroying [[Rampart]]'s {{AbilityLink|Amped Cover}}.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Increased ammo consumed per shot from 1 to 2.
+* Increased base magazine size from 4 to 8.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Fixed an issue with the beam shooting from the scope while using the {{Legendary|Hard Coded}} skin.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Changed ammo type from {{ItemLink|Energy Ammo|text=Energy}} to {{ItemLink|Sniper Ammo|text=Sniper}}.
+* Improved iron-sights accuracy.
+* Reduced ammo consumed per shot from 3 to 1.
+* Reduced base magazine size from 12 to 4.
+
+
+; [[October 25, 2019 Patch]]
+* Reduced fire rate from 1.1 to 0.95.
+* Reduced damage falloff starting distance from 300 meters to 250 meters.
+* Reduced damage at max damage falloff from 60 to 30.
+* Removed {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}} compatibility.
+* Increased base magazine size from 9 to 12.
+
+
+; [[October 17, 2019 Patch]]
+* Reduced damage falloff starting distance from 300 meters to 250 meters.
+* Reduced damage falloff ending distance from 500 meters to 400 meters.
+* Increased ammo consumed per shot from 1 to 3.
+* Increased mag size from {{Level0123|4|5|6|7}} to {{Level0123|9|12|15|18}}.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Introduced.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 3}}.}}
+<br>
+<br>
+
+== Gallery == 
+<gallery widths="250" heights="250">
+ConceptArt Eric Simard Charge Rifle 01.jpg|Concept Art by Eric Simard.<ref>[https://www.artstation.com/artwork/4brB01 Eric Simard on ArtStation]</ref>
+ConceptArt Eric Simard Charge Rifle 02.jpg
+ConceptArt Eric Simard Charge Rifle 03.jpg
+Elegant Experiment Charge Rifle Concept Art.jpg|Concept art for the {{Legendary|Elegant Experiment}} skin.
+Arachnoid Charge Rifle Concept Art.jpg|Concept art for the {{Legendary|Arachnoid}} skin.
+Safety First Charge Rifle Concept Art.jpg|Concept art for the {{Legendary|Safety First}} skin.<ref>https://www.artstation.com/artwork/6aYYq0</ref>
+Oak Thump Charge Rifle Concept Art.jpg|Concept art for the {{Legendary|Oak Thump}} skin.<ref>[https://www.artstation.com/artwork/LeYeZk Gadget-Bot Productions on ArtStation]</ref>
+Curse of the Amazon Charge Rifle Concept Art.jpg|Concept art for the {{Legendary|Curse of the Amazon}} skin.<ref>[https://www.artstation.com/artwork/zDZDDQ Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* Prior models of the Charge Rifle were manufactured by {{ItemLink|Wonyeon}} as an anti-Titan weapon.
+** The Charge Rifle is currently the only anti-Titan weapon adapted for use in the Apex Games.
+* The Charge Rifle's "magazine" is a battery.<ref>[https://titanfall.fandom.com/wiki/Charge_Rifle#Trivia Charge Rifle's Trivia section on Titanfall Wiki]</ref>
+<br>
+<br>
+== See also ==
+* [[Charge Rifle (Mobile)|Charge Rifle (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/Charge_Rifle Charge Rifle (''Titanfall'' and ''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

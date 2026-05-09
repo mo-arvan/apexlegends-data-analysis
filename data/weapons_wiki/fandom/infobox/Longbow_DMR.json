@@ -1,0 +1,36 @@
+{
+  "title": "Longbow DMR",
+  "infobox": {
+    "name": "Longbow DMR",
+    "description": "Semi-auto sniper rifle.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "Wonyeon",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "55",
+    "damageLegs": "44 (0.8×)",
+    "damageHead": "118 (2.15×)",
+    "rateOfFire": "78",
+    "magazineSize": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "tacReload": [
+      "2.66",
+      "2.57",
+      "2.48",
+      "2.39"
+    ],
+    "fullReload": [
+      "3.66",
+      "3.54",
+      "3.41",
+      "3.29"
+    ]
+  }
+}

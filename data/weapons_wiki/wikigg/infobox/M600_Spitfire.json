@@ -1,0 +1,39 @@
+{
+  "title": "M600 Spitfire",
+  "infobox": {
+    "name": "M600 Spitfire",
+    "description": "Full-auto LMG.",
+    "type": "Light Machine Gun",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "Siwhan Industries",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "gun_shield",
+    "damageBody": "21",
+    "damageHead": "26",
+    "damageLegs": "18",
+    "rateOfFire": "540",
+    "dps": "189",
+    "magazineSize": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "tacReload": [
+      "3.4",
+      "3.29",
+      "3.17",
+      "3.06"
+    ],
+    "fullReload": [
+      "4.2",
+      "4.06",
+      "3.92",
+      "3.78"
+    ]
+  }
+}

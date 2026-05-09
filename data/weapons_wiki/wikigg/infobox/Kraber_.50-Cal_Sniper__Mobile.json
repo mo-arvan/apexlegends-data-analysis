@@ -1,0 +1,20 @@
+{
+  "title": "Kraber .50-Cal Sniper/Mobile",
+  "infobox": {
+    "name": "Kraber",
+    "image": "Kraber .50-Cal Sniper.png",
+    "description": "Powerful bolt-action Sniper Rifle, with 6x-10x variable zoom.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Mythic Sniper Ammo",
+    "creator": "Lastimosa Armory",
+    "damageBody": "145",
+    "damageLegs": "116 (0.8x)",
+    "damageHead": "435 (3x)",
+    "rateOfFire": "30",
+    "dps": "73",
+    "magazineSize": "5",
+    "tacReload": "3.2 seconds",
+    "fullReload": "4 seconds"
+  }
+}

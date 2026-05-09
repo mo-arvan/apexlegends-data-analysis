@@ -1,0 +1,41 @@
+{
+  "title": "Triple Take/Mobile",
+  "infobox": {
+    "name": "Triple Take",
+    "image": "Triple Take.png",
+    "description": "Triple-barrel Sniper Rifle with choke fire mode.",
+    "type": "Marksman weapon",
+    "fireModes": "Single () Single",
+    "ammoType": "Energy Ammo",
+    "rateOfFire": "78",
+    "projectileSpeed": "32000",
+    "creator": "Burrell Defense",
+    "id": "doubletake",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "69 (23×3)",
+    "damageLegs": "63 (21×3)",
+    "damageHead": "120 (40×3)",
+    "dps": "90",
+    "magazineSize": [
+      "21",
+      "24",
+      "27",
+      "33"
+    ],
+    "tacReload": [
+      "2.6",
+      "?",
+      "?",
+      "?"
+    ],
+    "fullReload": [
+      "3.05",
+      "?",
+      "?",
+      "?"
+    ],
+    "ADSspeed": "57.5"
+  }
+}

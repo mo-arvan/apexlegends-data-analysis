@@ -1,0 +1,132 @@
+<div class="infobox weapon {{#replace:{{lc:{{{ammoType|}}}}}| |-}}">
+{| class="infobox-table"
+|- 
+! class="infobox-header" colspan="3" | Mobile Minigun "Sheila"
+|- 
+| colspan="3" class="infobox-centered" |
+<tabber>
+Model=
+[[Image:Sheila.png{{!}}{{{size|319x104px}}}]]
+|-|
+Icon=
+[[Image:Mobile Minigun -Sheila-.svg{{!}}{{{size|314x300px}}}]]
+</tabber>
+|- class="infobox-row"
+! class="infobox-row-name" | '''Manufacturer''' 
+| colspan="3" class="infobox-row-value; invert-image" | [[Rampart]]
+|- 
+| colspan="3" class="infobox-section" | Damage & Tactical
+|- class="infobox-row"
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''BODY'''
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''HEAD''' 
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''LEGS'''
+|- class="infobox-row-value{{#ifeq: {{{name|{{PAGENAME}}}}}|Sentinel||<nowiki>;</nowiki> invert-image}}" style="text-align:center;"
+| 14
+| 28 (2×)
+| 14
+|- class="infobox-row"
+! class="infobox-row-name" | '''Rate of fire ({{Texttip|RPM|Rounds per minute}})''' 
+| colspan="3" class="infobox-row-value; invert-image" | 1200
+|- class="infobox-row"
+! class="infobox-row-name" | '''Damage per second''' 
+| colspan="3" class="infobox-row-value{{#switch: {{{name|{{PAGENAME}}}}}|Rampage LMG=|Sentinel=|#default=<nowiki>;</nowiki> invert-image}}" | {{#iferror: {{#expr: ((1200/60) * 14 round 0)}}|{{{dps|-}}}}}
+|- class="infobox-row"
+! class="infobox-row-name" | '''Magazine size''' 
+| colspan="3" class="infobox-row-value; invert-image" | 150<br/>{{Symbol|modded loader}} 173
+|- class="infobox-row"
+! class="infobox-row-name" | '''Reload time''' 
+| colspan="3" class="infobox-row-value; invert-image" | 8.67 seconds<br/>{{Symbol|modded loader}} 6.5 seconds
+|}
+</div>
+
+This page lists the damage profile for [[Rampart]]'s {{AbilityLink|Mobile Minigun "Sheila"}}.
+
+== Stats ==
+=== Damage profile ===
+{{Damage profile
+| damage = 14
+| headshotMdfr = 2
+| legMdfr = 1
+}}
+
+=== Advanced Stats ===
+{| class="wikitable"
+|-
+! Variable !! Value !! Notes
+|-
+| id || mobile_hmg || How the weapon is referred to in the files.
+|-
+| fire_rate || 20 || Expressed in rounds per second.
+|-
+| projectile_launch_speed || 25000 || Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second. Equals to 647.7 m/s.
+|-
+| headshot_distance || 2500 || Distance at which shots can no longer deal headshots. Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 64 meters.
+|-
+| spread_stand_hip || 3 || Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run || 3 || Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint || 3 || Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip || 3 || Hipfire spread radius while crouching.
+|-
+| spread_air_hip || 5.5 || Hipfire spread radius while in the air.
+|-
+| deploy_time || 5 || How long it takes to bring out the weapon. Expressed in seconds.
+|-
+| holster_time || 0.4 || How long it takes to holster the weapon. Expressed in seconds.
+|-
+| raise_time || 1.6 || How long it takes to enter ADS with the weapon. Expressed in seconds.
+|-
+| lower_time || 0.4 || How long it takes to exit ADS with the weapon. Expressed in seconds.
+|}
+
+== History ==
+{{Main|Rampart#History}} {{-}}
+{{Patch notes|
+; [[September 14, 2021 Patch]]
+* Sheila now can be used as Mobile Minigun Sheila instead of only Mounted Minigun Sheila
+
+; [[May 04, 2021 Patch]]
+* Jumping on and off a damaged minigun will no longer transfer the flame effect to your weapon.
+
+; [[March 09, 2021 Patch]]
+* [[Grenade|Explosives]] now damage Sheila normally, instead of inflicting 175 damage.
+* Can no longer be used to get under the world when placed too close to the [[Map Feature#Phase Runner|Phase Runner]] in [[Olympus]].
+
+; [[February 02, 2021 Patch]]
+* Increased rotation angle from 120° to 180°.
+* Can no longer be placed on {{AbilityLink|Launch Pad}}s in [[Octane%27s Gauntlet]].
+
+; [[January 05, 2021 Patch]]
+* Fixed an issue that allowed Rampart to place it while in the [[Map Feature#Phase Runner|Phase Runner]].
+* Fixed an issue where UI elements stayed on screen after using the turret.
+
+; [[December 01, 2020 Patch]]
+* Re-enabled the ability to put the turret on a [[Trident]].
+
+; [[November 18, 2020 Patch]]
+* Temporarily disabled the ability to put the turret on a [[Trident]] to fix a game-crashing bug.
+
+; [[November 04, 2020 Patch]]
+* Reduced spin-up time from 2 seconds to 1.25 seconds.
+* Fixed an issue with Sheila teleporting when placed on a hatch in [[World's Edge]] Staging.
+
+; [[October 06, 2020 Patch]]
+* Increased the rate at which the bullet spread tightens.
+* Fixed an issue with being able to place Sheila on loot bins.
+* Fixed an issue with doors closing when dismounting a placed Sheila in a doorway.
+
+; [[September 03, 2020 Patch]]
+* Fixed a server crash when Sheila is destroyed while someone is using it.
+* Fixed an issue with allowing a player to shoot through [[Gibraltar]]'s {{AbilityLink|Dome of Protection}} while using Sheila.
+* Fixed an issue with [[Crypto]]'s {{AbilityLink|Surveillance Drone}} not detecting players on Sheila.
+
+; [[August 20, 2020 Patch]]
+* Fixed an error caused in some instances where a player is on the turret when it is destroyed.
+
+; [[August 18, 2020 Patch]]
+* Introduced.
+}}
+
+{{Nav weapons}}

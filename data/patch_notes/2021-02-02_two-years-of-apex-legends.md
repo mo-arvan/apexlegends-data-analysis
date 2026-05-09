@@ -1,0 +1,104 @@
+---
+title: "Looking Back on Two Years of Apex Legends"
+date: 2021-02-02
+slug: two-years-of-apex-legends
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/two-years-of-apex-legends
+---
+
+# Looking Back on Two Years of Apex Legends
+
+
+Hey everyone, I’m Chad Grenier, the game director of Apex Legends. 
+
+I’ve been at Respawn since the studio’s formation in 2010 and have had the privilege to work on many great games, including Apex Legends from the very beginning. 
+
+In just a few days we will be celebrating our two year anniversary so we’ve been doing some reflecting and reminiscing on how we’ve gotten to where we are today. I’d like to take a brief moment to share a bit of the story.
+### Origin Story &amp; Launch
+
+![Apex Legends 2 years accolades and awards received from the media.](https://drop-assets.ea.com/images/47qRkCqrXPujI5zE8fXTf9/77ab4494337afb242698f2c34b5b96a7/apex-blog-image-two-year-anniversary-origin-story.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.49107142857142855,yPosition=0.4222222222222222)
+
+After shipping Titanfall 2 we were hard at work on post-release Titanfall content and naturally starting to explore ideas for another game. Apex Legends wasn’t even a thought yet. We were discussing and trying new ideas, playtesting prototype campaign ideas, playing new game modes, and two designers started a small prototype that would change the course of our game.
+
+Almost two years before the release of Apex Legends, we had our first company-wide playtest on a new game mode called ‘Survival’ where pilots and Titans would fight it out to be the last man standing, battle royale style.
+
+![Screenshot of titanfall 2 prior to development of Apex Legends](https://drop-assets.ea.com/images/6FxvN0rEfkRW64mJ8ZT7QU/50f0a0815cfde09f6be57f399d088c80/apex-blog-image-two-year-anniversary-survival-mode.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+*Early ‘survival’ game mode put 24 pilots into a drop ship where they would form teams of 3 by running to and entering the same droppod together* 
+
+![Apex Legends prototype map.](https://drop-assets.ea.com/images/7vGHb7Tz1JeGvN3Is6SQsY/732bf2a74ff813174fe162a80f5a8096/apex-blog-image-two-year-anniversary-real-big-map.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5169642857142858,yPosition=0.28888888888888886)
+
+*Our prototype map called ‘real big map’ was quite different than Kings Canyon in that it was more sparse and allowed for Titans to roam freely* 
+
+Fast forward another month, and the team working on this new game mode had grown to over 20 people. In October of 2017 we saw the first versions of Gibraltar, Bloodhound, and Wraith in game, in November of 2017 we did our first 50 player game successfully and had just begun playtesting on a map that would eventually be called Kings Canyon. 
+
+![The earliest recognizable image of Kings Canyon. Before town names they were simply called zones](https://drop-assets.ea.com/images/2eGsgdJgqNQYCKTmAWrJ1p/ba4ef36ce11331a3696bd0f3639688ed/apex-featured-image-two-year-anniversary.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5857142857142857,yPosition=0.25396825396825395)
+
+*The earliest recognizable image of Kings Canyon. Before town names they were simply called zones*
+
+The gameplay improved over time, with Titans and wallrunning being removed to slow down the pace of the game and bring more balance to the gameplay. Of course, we tried to keep Titans in the game for many months, but once we accepted that we were making something fundamentally different from Titanfall, we entered a new phase. Company playtests were happening weekly, and often running late into the night. We couldn’t stop playing!
+
+
+There was a leaderboard on the chalkboard in the kitchen showing who had the most wins. The company had become consumed with playing this new mode we were building.
+
+![A chalkboard in the studio keeps track of ‘Friday Night Fights’ playtest winners](https://drop-assets.ea.com/images/5PX7fMCycUhGfRjVfd4pIf/e8e5b801b94b5ae4e8269c33ec462161/apex-blog-image-two-year-anniversary-chalk-board.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5142857142857142,yPosition=0.4111111111111111)
+
+*A chalkboard in the studio keeps track of ‘Friday Night Fights’ playtest winners*
+
+The name of the game turned from “Survival” to “Apex *Predator*”. Kings Canyon became more like Kings Canyon we know today. We began prototyping new mechanics like respawning teammates and legend abilities. We would force the entire team to playtest without headsets, and with player names turned off, so we could build a best in class in-game communication system.
+
+It became clear to us that we had something great on our hands, and our plans for the other project were scrapped. We were then all-hands on what would eventually be called “Apex Legends” and would never look back.
+
+Of course, thinking you have a great game on your hands doesn’t mean the world will love what you’ve created so we were all very anxious to see how our game did at launch. 
+
+Knowing that many of our fans would be expecting another traditional Titanfall game, we opted to go with a secret launch so players could immediately play the game when they first heard about it. We knew players would love the game if they could just play it.
+
+A few days before launch we held a private event in Los Angeles to show the game to top streamers, content creators, and media. After a presentation they got to play the game for two hours. Two hours turned into eight, and they didn’t want to put it down. The team was starting to become overwhelmed with excitement!
+
+![Apex Legends launch event featuring content creators and media.](https://drop-assets.ea.com/images/DJhQS9KUWDPMRObJvnLKH/3e92465635d843a9f59c6aa5f37b0c4f/apex-blog-image-two-year-anniversary-launch-viewing.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+![Apex Legends during its launch playtest event.](https://drop-assets.ea.com/images/HfmI5UMskw7jxUTjJCNwk/8e8b83d345f716225c9d1e3d8d60210b/apex-blog-image-two-year-anniversary-launch-playtest.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+On Feb 4th, 2019 we would launch our game to the world&#39;s surprise. We hoped some players would download the game and love it, but also knew that creating a free-to-play game was more about longevity and building over time, as opposed to a blockbuster boxed game launch.
+
+I remember one of our live ops engineers (responsible for ensuring our servers work at scale) setting expectations and telling the team “Don’t expect a million players right out of the gate, or even within the first few months!”
+
+As the entire team stood in the kitchen staring at our projector screen we counted down together the seconds until the game launched. By the time the champagne toasts and cheers had settled down we already had tens of thousands of players in games!
+
+![Picture of a number counter pass a million as player count reaches that number.](https://drop-assets.ea.com/images/4OjiUOlqNPBECB0ulZEMxZ/c753854c7bd77d5683894b6a0199cdc6/apex-blog-image-two-year-anniversary-1-million.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5571428571428572,yPosition=0.3968253968253968)
+
+Eight hours later while we’re still at work we hit a million players. We of course had to go give that live ops engineer some crap!
+
+Three days later, we stood in the same kitchen and counted down to 10 million players, and then 24 days after launch hit 50 million players.
+### Toward an Even Brighter Future
+
+Since launch we’ve had eight season launches, over a dozen lore events paired with original video content and over a dozen major in-game events. We’ve added two new maps, vehicles, eight new legends, and countless other limited-time game modes and improvements to the game.
+
+The game continues to grow. Next month, [we’ll launch on Nintendo Switch](https://www.nintendo.com/store/products/apex-legends-switch/). Work on a mobile version of Apex Legends is well underway. And later this year, we’ll launch new ways to play the game that take us beyond battle royale.
+
+![Apex Legends keyart featuring character "Fuse" and the Nintendo Switch logo, celebrating its port to Switch.](https://drop-assets.ea.com/images/7EOGl8RxOHtxvkuLTOjFDD/458534b4b514596f14bc1c9eaaf5a40c/apex-blog-image-two-year-anniversary-fuse-switch.jpg.adapt.1456w.jpg?im=AspectCrop=%2816,9%29,xPosition=0.26607142857142857,yPosition=0.48253968253968255)
+
+We’ve learned how to run a successful live service game, how important player sentiment is, and how it’s entirely possible to captivate users with storytelling in a multiplayer game.
+
+For us, Apex Legends is more than a game. It brings people together, it unifies players, it entertains, it takes our minds off of the real world, even if just for 30 minutes a day. It’s an avenue for artists, writers, streamers, and content creators to express themselves. It’s also a game that takes a stance on the importance of diversity.
+
+We’ve heard stories from players all over the world about how our game has kept friends and family members connected during the pandemic and how some of our innovations, such as the ping system, have made multiplayer gaming more accessible. We’ve even heard heartfelt stories from our fans about how Apex helped save their lives.
+
+It’s you, the players, that motivate us to create games, it always has been. 
+
+Thank you for playing, Legends. Your support and love over the last two years have been an overwhelmingly positive driving force as we continue to make Apex all it can be. We hope you enjoy the launch of Season 8: Mayhem, and all the rest to come.
+
+– Chad
+
+---
+
+[Play Apex Legends™ for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S, Nintendo Switch™, and PC via the EA app, Epic, and Steam. 
+
+Follow Apex Legends on [Twitter](https://twitter.com/PlayApex) and [Instagram](https://www.instagram.com/playapex/), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/en-au/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases. 

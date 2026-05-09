@@ -1,0 +1,33 @@
+{
+  "title": "L-STAR EMG",
+  "infobox": {
+    "name": "L-STAR EMG",
+    "description": "Plasma-fueled heavy MG.",
+    "type": "Light Machine Gun",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "creator": "{{ItemLink|Wonyeon}}",
+    "barrel": "",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "",
+    "damageBody": "19",
+    "damageHead": "24",
+    "damageLegs": "16",
+    "rateOfFire": "600",
+    "dps": "190",
+    "magazineSize": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "reload": [
+      "???",
+      "???",
+      "???",
+      "???"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{{Tabs|
+{{Tabs2|Charge Rifle|Main}}
+{{Tabs1|Charge Rifle/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Charge Rifle
+| description = Charged beam Sniper Rifle. Deals damage over time to target.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Sniper Ammo
+| creator = [[File:Vinson Dynamics Icon.svg|20px]] [[Vinson Dynamics]]
+| optics = true
+| opticsMobile = true
+| stock = sniper
+| stockMobile = sniper
+| damageBody = 3×15 + 45
+| damageHead = 4×15 + 56 <small>(1.25×)</small>
+| damageLegs = 3×15 + 45
+| rateOfFire = 26 <!-- Effective Fire Rate of 0.43 RPS or 2.3026 seconds/round accounting for Charge Time. Raw value on files is 0.95 RPS, charge time is on next param -->
+| dps = 39
+| magazineSize = {{texttip|10|Consumes 2 ammo per shot}}
+| tacReload = 3.95
+| fullReload = 4.75
+}}
+
+The '''Charge Rifle''' is a directed-energy battery-fed [[sniper rifle]] that utilizes {{ItemLink|Sniper Ammo}}.
+
+Each shot from the Charge Rifle has two parts: a sustained laser, which deals 15 ticks of damage at 3 damage each, and a final discharge which deals 45 damage. The Charge Rifle is a hitscan weapon, meaning that its shots hit the target instantly and are not affected by gravity. Instead, the beam suffers from damage dropoff; starting at 150 meters, damage will decrease to as low as 50% at 400 meters. 
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} 
+* {{ItemLink|6x Sniper|text={{Common|6x Sniper}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+* {{ItemLink|4x-8x Variable Sniper|text={{Rare|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+; Others
+* {{ItemLink|Sniper Stock|image=Sniper Stock.svg}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+|damageref=<ref group="note">Does not include initial sight laser damage. Shots are from less than 150 meters.</ref>
+<!-- |damageref=<ref group="note">Assuming a full hit at less than 150 meters.</ref> -->
+<!-- Temporary solution until I add option for custom rows. Hard to display correct Charge Rifle damage profile values with the automatic template so manually doing it is necessary. -->
+| damage = 45
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+
+===Arenas===
+{{Arenas weapon costs
+| basecost= 600
+| lvl1upgrade= 150
+| lvl1total= 750
+| lvl2upgrade= 150
+| lvl2total= 900
+| lvl3upgrade= 400
+| lvl3total= 1300
+}}
+
+==Pros and Cons==
+;Pros
+* Infinite range.
+*Hitscan, so no compensation for bullet drop is required.
+* No damage reduction when firing at lower parts of the body
+*Due to the laser's continuous nature, it can be used to suppress enemies unlike other snipers.
+
+;Cons
+* Uses 2 ammo per shot (5 shots per mag).
+* Long reload time, especially with an empty mag.
+* Unlike other sniper rifles, shots do not penetrate enemies and have damage falloff over distance.
+* Beam can give away position.
+* If hip firing, while charging, the beam sways violently, but the final blast will always be 100% accurate.
+
+== Lore ==
+The Charge Rifles used in the [[Apex Games]] are manufactured by [[Vinson Dynamics]]. Notable changes from its Frontier War-era model include a smaller profile, more compact build, and a completely reworked firing system, shooting out a beam that rapidly increases in damage instead of charging for a single massive blast.
+
+== Skins ==
+There are a total of 10 skins for the Charge Rifle: 2 {{Eternal}}, 1 {{Legendary}}, 3 {{Epic}}, 3 {{Rare}}, and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Power Station Charge Rifle Mobile.png|{{Eternal|Power Station}}<br/>[[Extreme Speed]]
+Pulse Synthesizer Charge Rifle Mobile.jpg|{{Eternal|Pulse Synthesizer}}<br/>[[Rhapsody's Underground]]
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Jaws of Oblivion Charge Rifle Mobile.png|{{Legendary|Jaws of Oblivion}}<br/>[[Barbarian Invasion]]
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Charge Canon Charge Rifle Mobile.png|{{Epic|Charge Canon}}<br/>[[Mecha Strike Go!]]
+Septic Stock Charge Rifle Mobile.jpg|{{Epic|Septic Stock}}<br/>[[Neon Rebellion]]
+Castle Dungeon Charge Rifle Mobile.png|{{Epic|Castle Dungeon}}
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Skeletal Remains Charge Rifle Mobile.png|{{Symbol|Prime Time}} {{Rare|Skeletal Remains}}<br/>Level 30
+Molten Core Charge Rifle Mobile.png|{{Rare|Molten Core}}<br/>[[Conqueror of Kings]]
+Jaws of the Abyss Charge Rifle Mobile.png|{{Symbol|s3.5m}} {{Rare|Jaws of the Abyss}}<br/>{{SeasonCurrency|3.5|4,000}}
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Charge Rifle Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Skyrise Charge Rifle Mobile.png|{{Common|Skyrise}}
+</gallery>
+</tabber>
+
+== See also ==
+* [[Charge Rifle]]
+* [https://titanfall.fandom.com/wiki/Charge_Rifle#Titanfall Charge Rifle (Titanfall)]
+*[https://titanfall.fandom.com/wiki/Charge_Rifle#Titanfall_2 Charge Rifle (Titanfall 2)][https://titanfall.fandom.com/wiki/Charge_Rifle#Titanfall]
+
+{{Nav-MobileWeapons}}
+[[Category:Sniper rifles]]
+[[Category:Weapons]]

@@ -1,0 +1,163 @@
+{{MobileGameNotice|mainPage=Prowler Burst PDW}}
+{{Infobox weapon
+| name = Prowler Burst PDW
+| description = 5-round burst SMG. Attach Selectfire to change fire mode.
+| type = Sub machine gun
+| fireModes = [[File:Burst Icon.svg|20px]] Burst (5)<br>[[File:Selectfire Receiver.svg|20px]] [[File:Auto Icon.svg|20px]] Auto 
+| ammoType = Mythic Heavy Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| magType = heavy
+| optics = true
+| stock = standard
+| hopup = selectfire
+| damageBody = 15<br>per bullet
+| damageHead = 23 <small>(1.5×)</small><br>per bullet
+| damageLegs = 12 <small>(0.8×)</small><br>per bullet
+| rateOfFire = {{Texttip|669|1254 per burst}}<br>[[File:Auto Icon.svg|20px]] 795
+| dps = 167<br>[[File:Auto Icon.svg|20px]] 199
+| magazineSize = {{Level0123|25|30|35|40}}
+| tacReload = {{Level023|1.7|1.6|1.5}}
+| fullReload = {{Level023|2.2|2.1|2}}
+}}
+
+The '''Prowler Burst PDW''', '''Prowler SMG''', or '''Prowler''', is an [[SMG]] that utilizes {{ItemLink|Mythic Heavy Rounds}}. It fires in a 5-round burst or, by equipping a {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} Hop-Up, it may also be switched to a fully-automatic fire mode.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachment}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Hop-Up
+* {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}
+
+; Others
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+<tabber>
+Burst=
+{{Damage profile
+| damageref = <ref group="note">This accounts for a full burst rather than just one shot.</ref>
+| damage = 15
+| bulletsPerBurst = 5
+| headshotMdfr = 1.5
+| legMdfr = 0.8
+}}
+<references group="note"/>
+|-|
+Per bullet=
+{{Damage profile
+| damage = 15
+| headshotMdfr = 1.5
+| legMdfr = 0.8
+}}
+<references group="note" />
+</tabber>
+
+=== Arenas ===
+{{Arenas weapon costs
+| basecost= 400
+| lvl1upgrade= 200
+| lvl1total= 600
+| lvl2upgrade= 350
+| lvl2total= 950
+| lvl3upgrade= 350
+| lvl3total= 1300
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Extended Heavy Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|-
+| style="text-align:left;"| {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} || || || ✔ || ✔
+|}
+
+== Skins ==
+There are a total of 12 skins for the Prowler Burst PDW: 1 {{Eternal}}, 2 {{Legendary}}, 4 {{Epic}}, 4 {{Rare}}, and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights='300px" mode="nolines">
+Legend's Galea Prowler Mobile.png|{{Eternal|Legend's Galea}}<br/>[[Royal Regiment]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Arctic Jewel Prowler Mobile.jpg|{{Legendary|Arctic Jewel}}<br/>[[Party Animal]]
+Wing and a Prayer Prowler.png|{{Legendary|Wing and a Prayer}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Thrill of the Hunt Prowler Mobile.png|{{Epic|Thrill of the Hunt}}
+Rapid Blur Prowler Mobile.png|{{Epic|Rapid Blur}}<br/>[[Extreme Speed]]
+Racer Red Prowler Mobile.jpg|{{Symbol|Prime Time}} {{Epic|Racer Red}}<br/>{{SeasonCurrency|1|9,000}}
+Twilight Drift Prowler Mobile.jpg|{{Epic|Twilight Drift}}<br/>[[Winter Warfare]]
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Backfire Prowler.png|{{Rare|Backfire}}<!-- S0 (Mobile) BP-Premium Lv 30-->
+Foul Flock Prowler Mobile.png|{{Rare|Foul Flock}}<br/>[[Awoken Nightmares]]
+Gnashing Cerberus Prowler Mobile.png|{{Rare|Gnashing Cerberus}}
+Pressurized Prowler Mobile.png|{{Symbol|s4m}} {{Rare|Pressurized}}<br/>Level 20
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Prowler Mobile.png|{{Common|Factory Issue}}<br/>Default
+Stellar Prowler Mobile.png|{{Common|Stellar}}
+</gallery>
+</tabber>
+
+== Trivia ==
+* The Prowler is based on two real [[wikipedia:personal defense weapon|personal defense weapons]]: the [[wikipedia:FN P90|FN P90]] and the [[wikipedia:Magpul PDR|Magpul PDR-C]]. It's also an homage to Seburo, Masamune Shirow's fictional arms manufacturer from ''Ghost in the Shell'' and ''Appleseed''.
+* The Prowler's icon lacks iron sights.
+
+== See Also ==
+* [[Prowler Burst PDW]]
+
+{{Nav-MobileWeapons}}
+[[Category:Sub machine guns]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

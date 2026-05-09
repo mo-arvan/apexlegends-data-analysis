@@ -1,0 +1,14 @@
+{{Stub}}
+{{Infobox-Weapon-short
+| name = EPG-1 Launcher
+| colorPalette = mythic
+| description = 
+| icon = EPG-1 Launcher Icon.svg
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| damageBody = 
+| rateOfFire = 
+| magazineSize =
+}}
+The '''EPG-1 Launcher''' is a special weapon that was obtainable during [[Season 23]] from [[Rift Relic]]s. It later returned as part of the [[EPG Extreme]] [[Limited Time Mode]] in [[Season 24]] and it can be found {{Mythic|Mythic Bin}} in Wild Iron <!-- Might put in Wild Card#Wild Iron --> during [[Season 26]] Split 2.
+
+{{Nav-Weapons}}

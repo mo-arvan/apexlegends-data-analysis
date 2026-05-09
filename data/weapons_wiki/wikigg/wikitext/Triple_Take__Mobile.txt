@@ -1,0 +1,116 @@
+{{Tabs|
+{{Tabs2|Triple Take|Main}}
+{{Tabs1|Triple Take/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Triple Take
+| image = Triple Take.png
+| description = Triple-barrel Sniper Rifle with choke fire mode.
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single ([[File:Choke Active Icon.svg|20px|Choke]])<br>[[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Energy Ammo
+| rateOfFire = 78
+| projectileSpeed = 32000
+| creator = [[File:Burrell Defense.svg|22px]] [[Burrell Defense]]
+| id = doubletake
+| magType = energy
+| optics = true
+| stock = sniper
+| damageBody = 69 (23×3)
+| damageLegs = 63 (21×3) 
+| damageHead = 120 (40×3)
+| dps = 90
+| magazineSize= {{texttip|{{Level0123|21|24|27|33}}|Consumes 3 ammo per shot}}
+| tacReload = {{Level0123|2.6|?|?|?}}
+| fullReload = {{Level0123|3.05|?|?|?}}
+| ADSspeed = 57.5
+}}
+
+The '''Triple Take''' is a triple-barreled [[marksman rifle]] that utilizes {{ItemLink|Energy Ammo}}. It fires 3 projectiles, one at the center and two to its sides, and consumes 3 ammo each shot. The spread is gradually reduced while aiming down sights when using the choke fire mode ({{ItemLink|Choke Active Icon|noText=1}}).
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} 
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Other
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damageref = <ref group="note">Assumes all three bullets hit.</ref>
+| damage = 23
+| bulletsPerBurst = 3
+| headshotMdfr = 1.75
+| legMdfr = 0.9
+}}
+<references group="note"/>
+
+== Pros and cons ==
+; Pros
+* High theoretical damage output.
+* High projectile speed.
+* Low projectile drop.
+*Good hipfire performance due to several factors.
+** Fires 3 projectiles in a horizontal spread, which provides a higher chance of damaging evasive targets.
+**Low bullet spread.
+
+; Cons
+* Slowest fire rate out of all marksman weapons.
+**Fully choked shots are required for maximum damage at long range. As a result, the fire rate is further reduced.
+* Damage is split over 3 projectiles.
+* Consumes 3 {{ItemLink|Energy Ammo}} per shot.
+
+== Skins ==
+There are a total of 10 skins for the Triple Take: 2 {{Eternal}}, 3 {{Legendary}}, 5 {{Epic}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Wasteland Watcher Triple Take Mobile.png|{{Eternal|Wasteland Watcher}}<br/>[[Frontline Battalion]]
+Mind Jam Triple Take Mobile.png|{{Eternal|Mind Jam}}<br/>[[Future Wave]]
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Tarnished Triple Triple Take Mobile.png|{{Symbol|Distortion}} {{Legendary|Tarnished Triple}}<br/>Level 50
+Curse of the Awaken Triple Take Mobile.png|{{Legendary|Curse of the Awaken}}<br/>[[Secrets of the Tomb]]
+Gorgon's Lock Triple Take Mobile.png|{{Symbol|s3.5m}} {{Legendary|Gorgon's Lock}}<br/>Level 1
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Electric Flux Triple Take Mobile.jpg|{{Epic|Electric Flux}}<br/>{{Flux|15,000}}
+Ski Jump Triple Take Mobile.jpg|{{Epic|Ski Jump}}<br/>[[Glacial Games]]
+Fox's Sense Triple Take Mobile.png|{{Symbol|s3m}} {{Epic|Fox's Sense}}<br/>{{SeasonCurrency|3|9,000}}
+Gift Wrapped Triple Take Mobile.png|{{Epic|Gift Wrapped}}<br/>{{SG|1,600}}
+</gallery>
+* {{Epic|Rough Seas}}
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Triple Take Mobile.png|{{Common|Factory Issue}}<br/>Default 
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{Symbol|season 1 mobile}} [[May 17, 2022 Patch (Mobile)|May 17, 2022 Patch]]
+* Changed weapon type from sniper rifle to marksman weapon.
+** Can no longer equip the {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}, {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}, or {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}} optics.
+* Now utilizes {{ItemLink|Energy Ammo}} instead of {{ItemLink|Sniper Ammo}}.
+* Can now equip {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}} and {{ItemLink|Sniper Stock|text=Sniper Stocks}}.
+* Can no longer equip {{ItemLink|Extended Sniper Mag|text=Extended Sniper Mags}}.}}
+
+== See also ==
+* [[Triple Take]]
+* [[titanfall:D-2 Double Take|D-2 Double Take (Titanfall 2)]]
+
+{{Nav-MobileWeapons}}

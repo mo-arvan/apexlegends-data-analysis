@@ -1,0 +1,26 @@
+{
+  "title": "P2020",
+  "infobox": {
+    "name": "P2020",
+    "icon": "Akimbo:",
+    "description": "Semi-auto pistol.",
+    "type": "Pistol",
+    "fireModes": "Single Auto",
+    "ammoType": "Mythic Light Rounds",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "barrel": "",
+    "magType": "",
+    "optics": "true",
+    "stock": "",
+    "hopup": "kinetic_feeder",
+    "damageBody": "24",
+    "damageHead": "30",
+    "damageLegs": "22",
+    "rateOfFire": "420 480",
+    "dps": "168 192",
+    "magazineSize": "11 22",
+    "reload": "???",
+    "tacReload": "???",
+    "fullReload": "???"
+  }
+}

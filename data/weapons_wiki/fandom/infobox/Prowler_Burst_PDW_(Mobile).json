@@ -1,0 +1,28 @@
+{
+  "title": "Prowler Burst PDW (Mobile)",
+  "infobox": {
+    "name": "Prowler Burst PDW",
+    "description": "5-round burst SMG. Attach Selectfire to change fire mode.",
+    "type": "Sub machine gun",
+    "fireModes": "Burst (5)  Auto",
+    "ammoType": "Mythic Heavy Rounds",
+    "creator": "Lastimosa Armory",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "selectfire",
+    "damageBody": "15per bullet",
+    "damageHead": "23 (1.5×)per bullet",
+    "damageLegs": "12 (0.8×)per bullet",
+    "rateOfFire": "{{Texttip|669|1254 per burst}} 795",
+    "dps": "167 199",
+    "magazineSize": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "tacReload": "{{Level023|1.7|1.6|1.5}}",
+    "fullReload": "{{Level023|2.2|2.1|2}}"
+  }
+}

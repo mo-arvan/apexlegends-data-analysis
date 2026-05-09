@@ -1,0 +1,141 @@
+{{Tabs|
+{{Tabs2|G7 Scout|Main}}
+{{Tabs1|G7 Scout/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = G7 Scout
+| description = Semi-auto light Marksman Rifle. Its precision deals massive damage.
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single<br>[[File:Double Tap Trigger.svg|20px]] [[File:Burst Icon.svg|20px]] Burst (2)
+| ammoType = Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| barrel = stabilizer
+| magType = light 
+| optics = true
+| stock = sniper
+| hopup = double_tap
+| damageBody = 34
+| damageHead = 60 <small>(1.75×)</small>
+| damageLegs = 27 <small>(0.75×)</small>
+| rateOfFire = 200<br>[[File:Burst Icon.svg|20px]] 150
+| dps = 113<br>[[File:Burst Icon.svg|20px]] 85
+| magazineSize = {{Level0123|14|20|22|24}}
+| tacReload = {{Level023|2.1|2|1.9}}
+| fullReload = {{Level023|2.8|2.6|2.5}}
+}}
+
+The '''G7 Scout''' is a [[marksman rifle]] that utilizes {{ItemLink|Light Rounds}}. It fires semi-automatically or, by equipping a {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}} Hop-Up, it may also be switched to a 2-round burst fire mode.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optics]]
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 34
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+<references group="note"/>
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;"  | {{Common|★}}
+! style="width:75px;"  | {{Rare|★★}}
+! style="width:75px;"  | {{Epic|★★★}}
+! style="width:75px;"  | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Light Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Sniper Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} || || || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} || || || ✔ || ✔
+|-
+| style="text-align:left;" | {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}} || || || ✔ || ✔
+|}
+
+== Skins ==
+There are a total of 16 skins for the G7 Scout: 8 {{Epic}}, 7 {{Rare}}, and 2 {{Common}}.
+
+{{#tag:tabber|
+Epic=
+<gallery widths="200px" heights="300px" mode="nolines">
+Arachnid Assault G7 Scout Mobile.png|{{Epic|Arachnid Assault}}
+Evening Snow G7 Scout Mobile.jpg|{{Epic|Evening Snow}}<br/>[[Winter Warfare]]
+Paint the Planet G7 Scout Mobile.png|{{Epic|Paint the Planet}}
+Redline G7 Scout Mobile.png|{{Epic|Redline}}<br/>[[Future Wave]]
+Frenetic Star G7 Scout Mobile.png|{{Symbol|s2.5m}} {{Epic|Frenetic Wave}}<br/>Level 5
+Blood Scored G7 Scout Mobile.png|{{Epic|Blood Scored}}
+Law of the Planetoid G7 Scout Mobile.png|{{Symbol|s4m}} {{Epic|Law of the Planetoid}}
+</gallery>
+
+{{!}}-{{!}}
+
+Rare=
+<gallery widths="200px" heights="300px" mode="nolines">
+Mountain Pass G7 Scout Mobile.png|{{Rare|Mountain Pass}}<br>{{SG|290}}
+Frigid G7 Scout Mobile.png|{{Symbol|Cold Snap}} {{Rare|Frigid}}<br/>Level 30
+Fresh Powder G7 Scout Mobile.jpg|{{Rare|Fresh Powder}}<br/>[[Glacial Games]]
+Eye of the Tiger G7 Scout Mobile.png|{{Rare|Eye of the Tiger}}
+Dragon's Embrace G7 Scout Mobile.png|{{Rare|Dragon's Embrace}}<br/>[[Shipwrecked]]
+Flying Stallion G7 Scout Mobile.png|{{Rare|Flying Stallion}}
+</gallery>
+
+{{!}}-{{!}}
+
+Common=
+<gallery widths="200px" heights="300px" mode="nolines">
+Factory Issue G7 Scout Mobile.png|{{Common|Factory Issue}}<br/>Default
+Tagged G7 Scout Mobile.png|{{Common|Tagged}}<br/>{{Flux|1,000}}
+</gallery>
+}}
+
+== Trivia ==
+* The G7 appearance is based on the real [[wikipedia:Springfield Armory M1A#SOCOM rifles|Springfield Armory M1A SOCOM 16]] semi-automatic rifle fitted with a [http://www.jallenglobal.com/jae-100-g3-standard-orders/ J. Allen Enterprises JAE-100 chassis].
+* The G7 is [[Bangalore]]'s favorite weapon. It is seen in a few of her banner poses, her character select animation, and her lobby animations.
+
+== See also ==
+* [[G7 Scout]]
+
+{{Nav-MobileWeapons}}

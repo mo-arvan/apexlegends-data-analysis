@@ -1,0 +1,41 @@
+The '''April Fools' Weapons''' are a set of [[weapon]] variants only available on April 1st. They tend to be variants of the [[Mozambique Shotgun]] or the [[P2020]], both considered to be low-tier weapons by the community. 
+
+==Weapons==
+{| class="wikitable"
+|-
+! Year !! Weapons
+|-
+| 2020 ||
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Mozambique Shotgun.png|link=Mozambique Shotgun/April Fools'|'''[[Mozambique Shotgun/April Fools'|April Fools' Mozambique Shotgun]]'''
+</gallery>
+|-
+| 2021 || 
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Mozambique Shotgun.png|link=Mozambique Shotgun/April Fools'|'''[[Mozambique Shotgun/April Fools'|April Fools' Mozambique Shotgun]]'''
+P2020.png|link=P2020/April Fools'|'''[[P2020/April Fools'|April Fools' P2020]]'''
+</gallery>
+|-
+| 2022 || 
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Ol' Nessie.png|link=Ol' Nessie|'''[[Ol' Nessie]]'''
+</gallery>
+|-
+| 2023, 2024, 2025|| 
+<gallery mode="nolines" widths="260" heights="65" perrow="7">
+Ol' Nessie.png|link=Ol' Nessie|'''[[Ol' Nessie]]'''
+Mozambeam.png|link=Mozambeam|'''[[Mozambeam]]'''
+Mozamblam.png|link=Mozamblam|'''[[Mozamblam]]'''
+Mozambrrr.png|link=Mozambrrr|'''[[Mozambrrr]]'''
+Mozamburst.png|link=Mozamburst|'''[[Mozamburst]]'''
+Mozamboom.png|link=Mozamboom|'''[[Mozamboom]]'''
+</gallery>
+|}
+
+== See also ==
+* [[Weapon]]
+* [[Fully Kitted Weapon]]
+* [[Attachment]]
+* [[Mozambique Shotgun]]
+{{Nav-Weapons}}
+[[Category:Gameplay mechanics]]

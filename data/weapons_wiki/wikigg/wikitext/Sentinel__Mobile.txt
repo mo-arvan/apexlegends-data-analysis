@@ -1,0 +1,126 @@
+{{Tabs|
+{{Tabs2|Sentinel|Main}}
+{{Tabs1|Sentinel/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Sentinel
+| description = Bolt-action Sniper Rifle. Can be charged to deal bonus damage.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Sniper Ammo
+| creator = [[File:Paradinha Arsenal Icon.svg|22px]] [[Paradinha Arsenal]]
+| magType = sniper
+| optics = true
+| stock = sniper
+| damageBody = 70
+| damageHead = 140 <small>(2×)</small>
+| damageLegs = 63 <small>(0.9×)</small>
+| rateOfFire = 36
+| dps = 42
+| magazineSize = {{Level0123|6|7|8|9}}
+| tacReload = {{Level023|2.4|2.2|2.1}}
+| fullReload = {{Level023|3.5|3.2|3}}
+}}
+The '''Sentinel''' is a bolt-action [[sniper rifle]] that utilizes {{ItemLink|Sniper Ammo}}.
+
+It has a unique [[File:Sniper Ammo Amped.png|25px]] '''Disruptor''' mechanic: two (one with a {{ItemLink|Body Shield|text={{Legendary|Body Shield}}}}) {{ItemLink|Shield Cell|text=Shield Cells}} charge up the Sentinel, making it shots guaranteed to shatter enemy's [[Shield]] for 120 seconds, and each shot will shorten the charge by 15 seconds. Charging the Sentinel takes 5 seconds.
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} 
+* {{ItemLink|6x Sniper|text={{Common|6x Sniper}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} 
+* {{ItemLink|4x-8x Variable Sniper|text={{Rare|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+; Others
+* {{ItemLink|Extended Sniper Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+<tabber>
+Base=
+{{Damage profile
+| damage=70
+| headshotMdfr=2
+| legMdfr=0.9
+}}
+<references group="note"/>
+</tabber>
+
+===Arenas===
+{{Arenas weapon costs
+| basecost= 400
+| lvl1upgrade= 250
+| lvl1total= 650
+| lvl2upgrade= 300
+| lvl2total= 950
+| lvl3upgrade= 350
+| lvl3total= 1300
+}}
+
+== Pros and cons ==
+; Pros:
+* High damage per shot.
+* Fast projectile speed.
+* Low bullet drop.
+* Unobstructive iron sights.
+* Shattered any enemy's shields when Sentinel is charged up.
+
+; Cons:
+* Low fire-rate and DPS due to the requirement to rechamber after every shot.
+* Slow draw/holster speed.
+
+== Lore ==
+The Sentinel ESR ('''E'''lectromagnetic '''S'''niper '''R'''ifle) is a dual-stage, electromagnetic actuated sniper rifle manufactured by [[Paradinha Arsenal]]. Rounds are chambered through the rear bolt action receiver and fired with a traditional closed bolt pin. The round is then accelerated with a muzzle velocity of 5km/s through the EM Propulsion system. This delivers a projectile with highly destructive kinetic energy to defeat the immediate effects of bullet drop over distances of 2km. This gives the weapon more accessibility and a faster cycle time than the [[Kraber .50-Cal Sniper]] in exchange for a little less lethality.<ref>[https://www.artstation.com/artwork/EV6NAn Ryan Lastimosa on ArtStation]</ref>
+
+== Skins ==
+There are a total of 12 skins for the Sentinel ESR: 2 {{Eternal}}, 1 {{Legendary}}, 4 {{Epic}}, 4 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Heliocentric Grace Sentinel Mobile.png|{{Eternal|Heliocentric Grace}}<br/>[[Divinity's Blessing]]
+Marksman's Greetings Sentinel Mobile.png|{{Eternal|Marksman's Greetings}}<br/>[[Winners Wonderland]]
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+River of Styx Sentinel Mobile.png|{{Legendary|River of Styx}}
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Calibrated Sentinel Mobile.png|{{Epic|Calibrated}}
+Support Steel Sentinel Mobile.jpg|{{Epic|Support Steel}}<br/>[[Demolition Crew]]
+Verdant Firepower Sentinel Mobile.png|{{Epic|Verdant Firepower}}<br/>[[Future Wave]]
+Necromancer's Curse Sentinel Mobile.png|{{Epic|Necromancer's Curse}}
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Paper Trail Sentinel Mobile.png|{{Rare|Paper Trail}}<br/>{{SG|290}}
+Troposphere Sentinel Mobile.jpg|{{Rare|Troposphere}}<br/>{{SeasonCurrency|1.5|4,000}}
+Azure Heights Sentinel Mobile.jpg|{{Rare|Azure Heights}}<br/>[[Winter Warfare]]
+Invader's Blood Sentinel Mobile.png|{{Rare|Invader's Blood}}
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Sentinel Mobile.png|{{Common|Factory Issue}}<br/>Default 
+</gallery>
+</tabber>
+
+== See Also ==
+* [[Sentinel]]
+
+{{Nav-MobileWeapons}}
+[[Category:Sniper rifles]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

@@ -1,0 +1,108 @@
+{{DISPLAYTITLE:Kraber (Mobile)}}
+{{MobileGameNotice|mainPage=Kraber .50-Cal Sniper}}
+{{Infobox-Weapon
+| name = Kraber
+| image = Kraber .50-Cal Sniper.png
+| description = Powerful bolt-action Sniper Rifle, with 6x-10x variable zoom.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Mythic Sniper Ammo
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| damageBody = 145
+| damageLegs = 116 <small>(0.8x)</small>
+| damageHead = 435 <small>(3x)</small>
+| rateOfFire = 30
+| dps = 73
+| magazineSize = 5
+| tacReload = 3.2 seconds
+| fullReload = 4 seconds
+}}
+
+The '''Kraber''' is a bolt-action [[sniper rifle]] that utilizes {{ItemLink|Mythic Sniper Ammo}}.
+
+Being a [[Supply Drop Weapon]], it can only be found in [[Care Package]]s, and cannot be equipped with foreign ammo. It comes pre-equipped with 10 backup ammo and a [[Attachments#Optics|{{Heirloom|6x-10x Variable Sniper}}]] scope.
+
+== Stats ==
+=== Damage profile ===
+{{Damage profile
+| damage = 145
+| headshotMdfr = 3
+| legMdfr = 0.8
+}}
+<references group="note" />
+
+=== Arenas ===
+The Kraber can be purchased for {{Materials|2500}}.
+
+== Pros and Cons ==
+
+; Pros
+
+* Highest damage per bullet in the game.
+* A headshot will always down a player instantly.
+* Can cause collateral shots, as projectiles are able to pierce through multiple enemies.
+* Somewhat narrow hipfire accuracy.
+* Uses exclusive ammo, which does not take up inventory space.
+
+; Cons
+
+* Unlike the [[Sentinel (Mobile)|Sentinel]], rechambering a shot forces the player to zoom out.
+* Lowest fire rate in the game.
+* Very slow weapon animations. This includes drawing, scoping in, firing, rechambering a bullet, holstering and/or switching weapons, and reloading.
+* Slowest projectile speed and strongest bullet drop of all sniper rifles.
+* Only 10 reserve ammo (or 2 full reloads) is available per Kraber, forcing a weapon change upon depleting all of it.
+* Optics cannot be changed.
+
+== Skins ==
+There are a total of 12 skins for the Kraber: 4 {{Eternal}}, 1 {{Legendary}}, 3 {{Epic}}, 3 {{Rare}}, and 2 {{Common}}.
+
+{{#tag:tabber|
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Under Ice Kraber Mobile.jpg|{{Eternal|Under Ice}}<br/>[[Winter Warfare]]
+Beam Lancer Kraber Mobile.png|{{Eternal|Beam Lancer}}<br/>[[Mecha Strike Go!]]
+Run Rabbit Run Kraber Mobile.jpg|{{Eternal|Run Rabbit Run}}<br/>[[Party Animal]]
+Fiend's Fangs Kraber Mobile.png|{{Eternal|Fiend's Fangs}}<br/>[[Awoken Nightmares]]
+</gallery>
+
+{{!}}-{{!}}
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+The SOS Kraber Mobile.png|{{Legendary|The SOS}}
+</gallery>
+
+{{!}}-{{!}}
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Jetline Stream Kraber Mobile.png|{{Epic|Jetline Stream}}
+High-tech Hieroglyph Kraber Mobile.png|{{Epic|High-tech Hieroglyph}}<br/>[[Secrets of the Tomb]]
+Blasphemous Kraber Mobile.png|{{Epic|Blasphemous}}
+</gallery>
+* {{Epic|Hornet's Nest}}
+
+{{!}}-{{!}}
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Torpedo Kraber Mobile.png|{{Rare|Torpedo}}<br>{{SG|290}}
+Athena's Eye Kraber Mobile.png|{{Rare|Athena's Eye}}<br/>[[Divinity's Blessing]]
+</gallery>
+
+{{!}}-{{!}}
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Kraber Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Nile Kraber Mobile.png|{{Common|Nile}}
+</gallery>
+}}
+
+== Trivia ==
+* The Kraber is named after Erik Kraber, a Senior Audio Director at [[Respawn Entertainment]].
+
+== See also ==
+* [[titanfall:Kraber-AP Sniper|Kraber-AP Sniper (Titanfall 2)]]
+
+{{Nav-MobileWeapons}}

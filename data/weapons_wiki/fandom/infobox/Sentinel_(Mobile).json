@@ -1,0 +1,27 @@
+{
+  "title": "Sentinel (Mobile)",
+  "infobox": {
+    "name": "Sentinel",
+    "description": "Bolt-action Sniper Rifle. Can be charged to deal bonus damage.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "Paradinha Arsenal",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "70",
+    "damageHead": "140 (2×)",
+    "damageLegs": "63 (0.9×)",
+    "rateOfFire": "36",
+    "dps": "42",
+    "magazineSize": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "tacReload": "{{Level023|2.4|2.2|2.1}}",
+    "fullReload": "{{Level023|3.5|3.2|3}}"
+  }
+}

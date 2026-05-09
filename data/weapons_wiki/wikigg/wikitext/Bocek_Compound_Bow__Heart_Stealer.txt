@@ -1,0 +1,189 @@
+{{Game|main}}
+{{Infobox-Weapon
+| name = Heart Stealer
+| icon = [[File:Bocek Compound Bow Icon.svg|x25px]]
+| description = Damage enemies to heal yourself and nearby teammates.
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Mythic Arrows
+| optics = true
+| damageBody = 25-70<br/>{{Symbol|shatter caps}} 35-84
+| damageHead = 31-122 <small>(1.25×)</small>-<small>(1.75×)</small><br/>{{Symbol|shatter caps}} 42-105 <small>(1.25×)</small>
+| damageLegs = 20-63 <small>(0.8×)</small>-<small>(0.9×)</small><br/>{{Symbol|shatter caps}} 28-84 <small>(0.8x)</small>-<small>(1×)</small>
+| rateOfFire = 180-92
+| dps = 75-107<br/>{{Symbol|shatter caps}} 105-129
+| magazineSize = ∞
+}}
+
+The '''Heart Stealer''' is a variant of the [[Bocek Compound Bow]] introduced in {{ItemLink|Season 15}} that utilizes {{ItemLink|Mythic Arrows}}, exclusive to the [[Date Night]] Limited Time Takeover. It only spawns in specific spots of the map, marked by a magenta beam, pointing at a [[Loot Tick]]. Breaking the Tick will drop a Heart Stealer. If a [[Care Package]] would spawn a Bocek, it spawns a Heart Stealer instead.
+
+The Heart Stealer is functionally identical to the Bocek. However, dealing damage to enemy players will heal the player wielding it by half the damage dealt. If a player's teammate is inside the magenta circle created whenever the Heart Stealer is equipped, they also get healed.
+
+Being a [[Supply Drop Weapon|{{Mythic|Supply Drop Weapon}}]], it is equipped with all of its highest rarity [[attachments]], and cannot equip foreign ammo. It also comes pre-equipped with 60 {{ItemLink|Mythic Arrows|text=Ammo}}. Due to the pre-equipped {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}, hipfiring the Heart Stealer allows it to fire multiple arrows similarly to shotguns.
+
+The Heart Stealer utilizes the {{Cosmetic|Valentine's Day 2023|Epic|Cupid's Arrow}} skin and the {{Cosmetic|Valentine's Day 2020|Epic|Love Struck}} {{ItemLink|Charm|text=Weapon Charm}} by default, but it can be converted into the equipped skin and Charm combination currently in use for the Bocek.
+
+== Stats ==
+=== Attachments ===
+; Optics
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG Ranger|text={{Epic|3x HCOG "Ranger"}}}}
+
+=== Damage profile ===
+; Minimum draw
+{{Damage profile
+| damage = 25
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+
+
+; Max draw
+{{Damage profile
+| damage = 70
+| headshotMdfr = 1.75
+| legMdfr = 0.9
+}}
+
+
+; {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}, minimum draw
+{{Damage profile
+| damage = 5
+| damageref = <ref group="note">Shot consists of 7 pellets, dealing 5 damage each.</ref>
+| bulletsPerBurst = 7
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+<references group="note"/>
+
+
+; {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}, max draw
+{{Damage profile
+| damage = 12
+| damageref = <ref group="note">Shot consists of 7 pellets, dealing 11 damage each.</ref>
+| bulletsPerBurst = 7
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_bow</big>
+|-
+! Variable !! Value !! Description
+|-
+| cupid_arrow_heal_percent
+| 0.5
+| Multiplier applied to damage dealt, due to the Heart Stealer mechanic of regenerating health on target hit.
+|-
+| rowspan="2" | charge_time
+| style="text-align:center" | 0.54
+| rowspan="2" | Time to charge shots for higher damage. Expressed in seconds.
+|-
+| style="text-align:center" | <div class="invert-image">{{ItemLink|Deadeye's Tempo|noText=yes}} 0.32</div>
+|-
+| fire_rate
+| style="text-align:center" | 3
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 10000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 254 meters per second.
+|-
+| projectile_launch_speed_full_charge
+| style="text-align:center" | 28000
+| Speed at which charged projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 711 meters per second.
+|-
+| projectile_launch_speed_shatter_arrows
+| style="text-align:center" | 16000
+| Speed at which {{ItemLink|Shatter Caps}} projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 406 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.75
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3.75
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 4
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2.25
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 3.25
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.53
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.36
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.43
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.26
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.425
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 3.5
+| Spread radius when in the air and ADS.
+|}
+
+
+== History ==
+{{Patch notes|
+; February 14, 2023
+* Removed.
+
+; February 7, 2023
+* Introduced.}}
+
+
+== Trivia ==
+* The Heart Stealer fires magenta arrows.
+* The Heart Stealer is the only holiday-themed weapon to not be for April Fools.
+
+{{Nav-Weapons}}

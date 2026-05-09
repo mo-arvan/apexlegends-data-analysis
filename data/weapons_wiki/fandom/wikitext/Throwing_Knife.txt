@@ -1,0 +1,129 @@
+{{Game|main}}
+{{Infobox weapon
+| name = Throwing Knife
+| description = A finely balanced blade.
+| type = Throwing Knife
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Mythic Throwing Knife Ammo
+| damageBody = 100
+| damageHead = 300 <small>(3×)</small>
+| damageLegs = 100
+| rateOfFire = 43
+| magazineSize = 1
+}}
+
+The '''Throwing Knife''' is a throwable weapon introduced in {{ItemLink|Season 14}} that utilizes its own ammo type, exclusive to {{ItemLink|Gun Run}} and the [[Firing Range]].
+
+It automatically replenishes itself after getting thrown, essentially having unlimited ammo.
+
+== Stats ==
+=== Damage profile ===
+{| class="wikitable invert-image" style="text-align:center"
+|-
+! rowspan="2" | Target
+! rowspan="2" | Modifiers
+! rowspan="2" | [[File:Damage.svg|32px|link=]] Damage
+! colspan="6" | Shots to kill
+|-
+! 100 HP
+! {{Common|150 HP}}
+! {{Rare|175 HP}}
+! {{Epic|200 HP}}
+! {{Heirloom|225 HP}}
+|-
+| rowspan="4" | Head<br><small>(3×)</small> || - || 300 || 1 || 1 || 1 || 1 || 1
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Common|LV. 1}}}} || 260 || 1 || 1 || 1 || 1 || 1
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Rare|LV. 2}}}} || 200 || 1 || 1 || 1 || 1 || 2
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Epic|LV. 3}}}}/[[Helmet|{{Legendary|4}}]] || 170 || 1 || 1 || 2 || 2 || 2
+|-
+| rowspan="2" | Body || - || 100 || 1 || 2 || 2 || 2 || 3
+|- 
+| {{ItemLink|Fortified}} || 85 || 2 || 2 || 3 || 3 || 3
+|-
+| rowspan="2" | Leg<br><small>(1×)</small> || - || 100 || 1 || 2 || 2 || 2 || 3
+|-
+| {{ItemLink|Fortified}} || 85 || 2 || 2 || 3 || 3 || 3
+|}
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed" style="text-align:center"
+|-
+! colspan="8" | Ability Modifiers
+|-
+! rowspan="2" | Target
+! rowspan="2" | Modifiers
+! rowspan="2" | <span class="invert-image">[[File:Damage.svg|32px|link=]]</span> Damage
+! colspan="6" | Shots to kill
+|-
+! 100 HP
+! {{Common|150 HP}}
+! {{Rare|175 HP}}
+! {{Epic|200 HP}}
+! {{Heirloom|225 HP}}
+|-
+! colspan="8" | {{AbilityLink|Sniper's Mark}} <small>(1.15×)</small>
+|-
+| rowspan="4" | Head<br><small>(3×)</small> || - || 345 || 1 || 1 || 1 || 1 || 1
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Common|LV. 1}}}} || 299 || 1 || 1 || 1 || 1 || 1
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Rare|LV. 2}}}} || 230 || 1 || 1 || 1 || 1 || 1
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Epic|LV. 3}}}}/[[Helmet|{{Legendary|4}}]] || 196 || 1 || 1 || 1 || 2 || 2
+|-
+| rowspan="2" | Body || - || 115 || 1 || 2 || 2 || 2 || 2
+|- 
+| {{ItemLink|Fortified}} || 98 || 2 || 2 || 2 || 3 || 3
+|-
+| rowspan="2" | Leg<br><small>(1×)</small> || - || 115 || 1 || 2 || 2 || 2 || 2
+|-
+| {{ItemLink|Fortified}} || 98 || 2 || 2 || 2 || 3 || 3
+|}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_throwingknife</big>
+|-
+! Variable !! Value !! Description
+|-
+| max_cook_time
+| style="text-align:center" | -1
+| How long the trigger can be held before throwing the weapon. Expressed in seconds. "-1" means infinite.
+|-
+| toss_time
+| style="text-align:center" | 0.4
+| Time to throw the weapon. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 1
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 3700
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 94 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 2500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 64 meters.
+|-
+| deploy_time
+| style="text-align:center" | 0
+| Time to bring out the weapon. Expressed in seconds.
+|}
+
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Introduced.
+}}
+
+
+== Trivia ==
+* Aim assist for players utilizing a controller as input device is disabled on the Throwing Knife.
+* {{AbilityLink|Amped Cover}} has no effect on the Throwing Knife's damage.
+
+{{Nav-Weapons}}

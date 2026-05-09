@@ -1,0 +1,20 @@
+{
+  "title": "Kraber .50-Cal Sniper",
+  "infobox": {
+    "name": "Kraber .50-Cal Sniper",
+    "colorPalette": "mythic",
+    "description": "Powerful bolt-action sniper rifle.",
+    "type": "Sniper Rifle",
+    "fireModes": "Single",
+    "ammoType": "Mythic Sniper Ammo",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "damageBody": "150",
+    "damageHead": "210",
+    "damageLegs": "120",
+    "rateOfFire": "25",
+    "dps": "62",
+    "magazineSize": "4",
+    "tacReload": "3.2",
+    "fullReload": "4.3"
+  }
+}

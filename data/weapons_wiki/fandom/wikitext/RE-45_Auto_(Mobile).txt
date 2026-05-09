@@ -1,0 +1,114 @@
+{{MobileGameNotice|mainPage=RE-45 Auto}}
+{{Infobox weapon
+| name = RE-45 Auto
+| image = RE-45 Auto.png
+| description = Full-auto pistol with a high rate of fire.
+| type = Pistol
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Light Rounds
+| creator = [[File:Paradinha Arsenal Icon.svg|20px]] [[Paradinha Arsenal]]
+| barrel = stabilizer
+| magType = light
+| optics = true
+| hopup = hammerpoint
+| damageBody = 12<br>[[File:Hammerpoint Rounds.svg|20px]] 16
+| damageLegs = 11 <small>(0.9×)</small><br>[[File:Hammerpoint Rounds.svg|20px]] 14 <small>(0.9×)</small>
+| damageHead = 18 <small>(1.5×)</small><br>[[File:Hammerpoint Rounds.svg|20px]] 24 <small>(1.5×)</small>
+| rateOfFire = 780
+| dps = 156
+| magazineSize = {{Level0123|18|22|25|28}}
+| tacReload = 1.5 seconds
+| fullReload = 1.75 seconds
+}}
+
+The '''RE-45 Auto''', or '''RE-45''', is a fully automatic [[pistol]] that utilizes {{ItemLink|Light Rounds}}.
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}
+
+===Damage profile===
+{{Damage profile
+| damage = 12
+| headshotMdfr = 1.5
+| legMdfr = 1
+}}
+<references group="note" />
+
+== Pros and Cons ==
+; Pros
+* High fire rate, and automatic.
+* Controllable and predictable recoil.
+* Excellent hipfire performance.
+* Minimal movement penalty when aiming (5%).
+
+; Cons
+* Low damage per shot.
+* Low DPS.
+* Small magazine capacity for an automatic weapon.
+**Not ammo-efficient.
+* 1× headshot multiplier at 38+ meters.
+
+== Skins ==
+There are a total of 14 skins for the RE-45 Auto: 2 {{Legendary}}, 6 {{Epic}}, 4 {{Rare}} and 3 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+REmix 411 RE-45 Mobile.png|{{Legendary|REmix 411}}<br/>[[Digital Bliss Fest]]
+Vesuvius Eruption RE-45 Mobile.png|{{Legendary|Vesuvius Eruption}}
+</gallery>
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Ice Chest RE-45 Mobile.jpg|{{Epic|Ice Chest}}<br/>{{SeasonCurrency|1.5|9,000}}
+Stainless RE-45 Mobile.jpg|{{Epic|Stainless}}<br/>[[Demolition Crew]]
+Vibrant Hazard RE-45 Mobile.jpg|{{Epic|Vibrant Hazard}}<br/>[[Neon Rebellion]]
+Heart Rhythm RE-45 Mobile.jpg|{{Epic|Heart Rhythm}}<br/>[[Rhapsody's Underground]]
+Piranha RE-45 Mobile.png|{{Epic|Piranha}}
+War Paint RE-45 Mobile.png|{{Epic|War Paint}}<br/>[[Barbarian Invasion]]
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Interconnected RE-45 Mobile.png|{{Rare|Interconnected}}<br>{{SG|290}}
+Stitches RE-45 Mobile.png|{{Rare|Stitches}}
+Gnarly RE-45 Mobile.png|{{Rare|Gnarly}}
+Glory Days RE-45 Mobile.png|{{Rare|Glory Days}}
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue RE-45 Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Cold Wave RE-45 Mobile.png|{{Common|Cold Wave}}
+Stinger RE-45 Mobile.png|{{Common|Stinger}}
+</gallery>
+</tabber>
+
+== Gallery ==
+<gallery>
+ConceptArt Corwin Paradinha RE-45 01.jpg|3D Render of the RE-45 Autopistol by Corwin Paradinha.<ref>[https://www.artstation.com/artwork/YaRe2V Corwin Paradinha ArtStation]</ref>
+ConceptArt Corwin Paradinha RE-45 02.jpg
+ConceptArt Corwin Paradinha RE-45 03.jpg
+</gallery>
+
+== See also ==
+* [[titanfall:RE-45 Autopistol|RE-45 Autopistol (Titanfall 1)]]
+* [[titanfall:RE-45 Auto|RE-45 Auto (Titanfall 2)]]
+
+== References ==
+<references/>
+
+{{Nav-MobileWeapons}}

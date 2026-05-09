@@ -1,0 +1,111 @@
+---
+title: "Introducing Apex Legends Ranked Leagues"
+date: 2019-07-01
+slug: ranked-leagues-mode-details
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/ranked-leagues-mode-details
+---
+
+# Introducing Apex Legends Ranked Leagues
+
+
+Hey everyone! We’re some of the Apex team responsible for Ranked mode (Tangentiallogic, pinedsman, and SpamminBandies), and we’re here to talk about the new Ranked Leagues feature in Apex Legends. Let’s dive into our philosophy, goals, and the nuts and bolts of how Ranked Leagues will work when they launch with Season 2 on July 2.
+
+We believe that Apex is a dynamic game that takes time and effort to master. Ranked Leagues should be the place where competitive players (or players who feel competitive now and then) can go to prove their skills and gain recognition for their efforts.
+## Goals for Ranked Leagues
+
+With Ranked Leagues, we want to bring something new to Apex Legends that makes the game even more fun for our players. Let&#39;s talk a little about our goals for the Ranked League feature overall.
+
+- **Reward competitive players for the time they invest in Apex Legends.**
+
+ 
+
+We do this through a ranked ladder that shows how you stack up against the rest of the playerbase. Additionally, you will receive in-game rewards at the end of the season based on the rank you achieve.
+- **Ensure competitive integrity through skill-based matchmaking.**
+
+ 
+
+No one can really say they’re the best if all they do is stomp n00bs in Skulltown, so matchmaking in Ranked Leagues is focused on putting players of similar skill in the same match. You won’t always be playing against players of your exact tier (Silver players may compete with Gold players, for instance) but it will be as close as possible for your region and time of day.
+- **Create a space at the top of the ladder for the best players to establish a high-skill meta without forcing a playstyle.**
+
+ 
+
+We do this by rewarding match placement and kills, with some specific limits. After all, support or strategic players shouldn’t be rewarded less because they’re not getting 15 kills a game. We’re approaching scoring with an even hand that ensures the focus is on winning above all else.
+- **Create a true measure of skill in Apex Legends.**
+
+ 
+
+We’re starting out with a score-based ranked system (detailed in the Scoring section below), but we don’t intend for this to last forever. We’ll be watching Ranked players closely to see what determines success on the ladder, what types of players climb the quickest, and how the high-skill metagame plays out. Our goal is to take data from the launch of Ranked Leagues and adjust the system over time. So, players should expect seasonal soft-resets where your ranks get pushed back down for a new season, as well as changes to the scoring system, matchmaking system, and ultimately the ranked format entirely over the course of future seasons.
+
+## **How It Works**
+
+We’ve been running simulations on the scoring system using actual player data from Season 1 to calibrate our approach to Ranked Leagues. Based on that data, here’s how our first Ranked Series will work:
+### Series and Resets
+
+Ranked Leagues run in competitive periods that we’re calling “Series”. The first is scheduled to run for the duration of Season 2 (July through September). Future Ranked Series may not be in sync with the larger Apex Seasons as we may need more time for players to settle on their true skill level. We’ll talk about the Series cadence as we near the end of Season 2.
+### Ranks
+
+Ranked Leagues features six competitive tiers: Bronze, Silver, Gold, Platinum, Diamond, and Apex Predator. All of the tiers except Apex Predator have four divisions; Gold IV, Gold III, Gold II, and Gold I, for example, with Gold I being the top division in Gold tier. All players will start in Bronze IV for the launch of Ranked Leagues, but future Series should have a starting placement if you’ve climbed the ladder in previous Series.
+
+![Apex Legends ranked tiers breakdown.](https://drop-assets.ea.com/images/6lCZrpQvlBLIxt86nWBhi2/025b232d02fe1b12d46bc6994d449403/RankedLeaguesDivisions.jpg?im=AspectCrop=%2816,9%29,xPosition=0.49125,yPosition=0.31907090464547677)
+### Scoring
+
+Players climb the ladder using a set scoring system, and we’ve tried to keep the system transparent so you can focus on what it takes to rank up. Scores are tracked via Ranked Points (RP) and your score moves up and down throughout the season.
+
+Each Ranked match will cost RP to play based on your tier:
+
+- Bronze matches are free
+- Silver matches cost 1RP
+- Gold matches cost 2RP
+- Platinum matches cost 3RP
+- Diamond matches cost 4RP
+- Apex Predator matches cost 5RP
+
+
+During the match you earn RP based on performance. Kills are worth 1RP up to a maximum of 5RP per match. Placing Top 10 is worth 2RP, Top 5 is 4RP, Top 3 earns 7RP, and a win will bank 12RP. Each placement score is exclusive, so if you finish in the Top 5, you won’t earn 6RP for a Top 10 and Top 5 finish combined. That means the maximum score you can earn per match is 17RP, before the match entry fee.
+### Playing With Friends
+
+Ranked Leagues will require each player to be level 10 or higher to join. When you queue up with other friends in your lobby, the matchmaker will find a match for the highest ranked player in that lobby, but each player will pay the appropriate match cost for their current rank. This is intended to not let high-ranked players completely carry their lower-ranked friends. If you queue up with your Diamond II friend as a Bronze III player, get ready for a difficult match!
+### Ladder Movement
+
+For the launch of Ranked Leagues, we’re starting everyone in Bronze, and as you score you climb and fall within a tier. There is currently no demotion if you drop into a lower tier, so if you earn your way into Platinum IV, no amount of losses will demote you back to Gold I – you are guaranteed to finish that Series in Platinum. However, demotion is possible between divisions, so if you’re Gold II and fall below 380 RP, you will move back down to Gold III. (We may revisit demotions in the future based on data we get from our first Series.)
+
+Matches become more difficult the higher you climb, so we expect to see many players find their actual skill level and plateau towards the end of the first Series.
+
+![Apex Legends in game screenshot showing the exp path from Diamond to Apex.](https://drop-assets.ea.com/images/7w717q5LQhxvNHSoADCqUN/e7446a6d78315b04f9ba201f5844f510/videoframe_0.png?im=AspectCrop=%2816,9%29,xPosition=0.2140625,yPosition=0.48333333333333334)
+### Rewards
+
+Ultimately, the best reward in a ranked system is the recognition of your skill and the rank you achieve. That being said, we also want to reward people who really put in the time and compete on the ladder. We’ll be giving out Series 1 rank badges to every player based on the tier they reach by the end of the Series. We’re still working on other rewards that will let you show off your accomplishments, and we will share more details on the rest of the rewards later in Season 2.
+
+![Apex Legends logo along side the ranked tier icons against a blue background.](https://drop-assets.ea.com/images/BXNaQAXzHbJpVIHJjOVA5/bdf6f99ace81e828d45b7c5bfb5c6c73/ranking-icons-ca.jpg?im=AspectCrop=%2816,9%29,xPosition=0.19114583333333332,yPosition=0.4675925925925926)
+### Penalties
+
+We regard Ranked as a high-stakes, high-reward environment. This means that we are expecting players in Ranked to show a higher level of commitment to playing out their matches, even when things aren’t necessarily going their way.
+
+Players who abandon their teammates will be hit with a matchmaking penalty in both regular and Ranked matches. Penalties will result in a player being barred from joining a match for escalating amounts of time based on how often they have abandoned in Ranked. An abandon is defined as leaving the game before the match is over for you; this includes leaving during character select, leaving while you are alive, and leaving when you are dead but can still be respawned by teammates.
+
+Penalty times start out at five minutes, and repeat abandons will increase that time up to a week.
+### Loss Forgiveness
+
+Similar to the Elite queue, there will be loss forgiveness in Ranked. Loss forgiveness is defined as zeroing out any potential losses in RP for a match. For example, in a Diamond match where you came in last place but had two kills, you would normally have a -2 adjustment to your RP (-4 from the Platinum entry cost, +2 for kills, for a net loss of -2). With loss forgiveness, however, you would have a net loss adjusted to 0. However, this will only apply if you stand to lose RP from the match – if you had five kills and loss forgiveness, your RP would still be net +1.
+
+We will grant players loss forgiveness when their matchmade teammates abandon the game, and for other cases where we determine you are not to blame for leaving a game e.g. client errors. We plan to be more lenient at the start of the Series but will be vigilant in monitoring player behavior. We will become stricter about granting loss forgiveness if we detect it is being abused.
+### Matchmaking Updates
+
+We’ll be watching matchmaking data constantly and making updates on the fly. This should help us answer questions like how long players should wait for a match with only players in their own tier, how large the gap between ranks represented in a match should be, etc. We will be providing updates as and when this happens through our usual communication channels (Reddit / Twitter).
+
+That’s what we have planned for the first Series of Apex Legends Ranked Leagues. As with everything else in Apex, expect us to learn as we go and make changes to the system over time. We’re sure to learn a bunch as you all start climbing the ladder. As always, hit us up on the usual channels to ask questions or give feedback. See you in the arena!
+
+- Tangentiallogic, pinedsman, and SpamminBandies
+
+---
+
+[Play Apex Legends for free](https://www.ea.com/games/apex-legends/play-now-for-free)***** now on Xbox One, PlayStation®4, and Origin for PC.
+
+Follow Apex Legends on [Twitter](https://twitter.com/PlayApex) and [Instagram](https://www.instagram.com/playapex/), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+*Applicable platform account and platform subscription (sold separately) may be required. Persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.

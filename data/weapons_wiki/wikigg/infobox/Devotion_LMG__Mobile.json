@@ -1,0 +1,24 @@
+{
+  "title": "Devotion LMG/Mobile",
+  "infobox": {
+    "name": "Devotion LMG",
+    "description": "Full-auto energy LMG. The longer it is fired, the faster its rate of fire will become. Attach Turbocharger to reach maximum rate of fire.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "rateOfFire": "300~804",
+    "optics": "true",
+    "damageBody": "16",
+    "damageHead": "28 (1.75×)",
+    "damageLegs": "12 (0.75×)",
+    "dps": "80~214",
+    "magazineSize": [
+      "40",
+      "44",
+      "48",
+      "52"
+    ],
+    "tacReload": "{{Level023|2.4|2.2|2.1}}",
+    "fullReload": "{{Level023|3.1|2.8|2.7}}"
+  }
+}

@@ -1,0 +1,138 @@
+---
+title: "Amped Midseason Designer\u2019s Notes"
+date: 2026-01-06
+slug: 27-1-designers-notes
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/27-1-designers-notes
+---
+
+# Amped Midseason Designer’s Notes
+
+## TLDR
+
+Designer’s Notes is a new update that will provide additional context to Legend and Weapon meta changes. We will discuss our vision for each Legend or Weapon, what challenges we’ve identified, and what changes we are making in pursuit of those goals. Designer’s notes are meant to supplement Patch Notes, not replace them. 
+
+Below, we will discuss:
+
+- Why we don’t always pick the lowest-pick, lowest-win Legends
+- Changes to Octane, Newcastle, and Crypto
+- Adjustments to Amps, R-301, Flatline, and Prowler
+
+## INTRO
+
+Welcome to our first Designer’s Notes. 
+
+Our goal is to openly discuss our intention and reasoning behind changes to various parts of Apex Legends for a given update. We’ll use this opportunity to give you the “*why”* around certain Legend and weapon changes and more details about the bigger picture meta. We are looking to provide transparency into our processes, spark discussion, and gather feedback from you all as we continue to work to make Apex the best it can be.
+
+Our aim with every game update is to shake up the meta to break any staleness, address pain points around balance, and reinvigorate the ranked climb. We do that by looking at the data from all the matches played across different skill bands and various  in-game situations and by monitoring player feedback from our many community channels and online spaces. We are showing you the data here in an effort to be transparent and to further share the reasoning  behind why we pick certain parts of the game to adjust. 
+
+Give the blog a read through, play the game with your new knowledge in mind, and continue to discuss in community spaces. Your feedback is critical in helping us shape and sharpen Apex to be the best competitive game and battle royale it can be.
+### METRIC DEFINITIONS
+
+**Pick Rate** - Measure of selection preference adjusting for legend availability (total selections / total times available to be selected)
+
+**Legend Encounter Win Rate** - Measure of legend fighting strength based on downs in fights (fights won / total fights)
+
+**Share of Downs** - Measure of weapon preference based on share of downs each weapon obtains (downs with weapon / total downs)
+
+**Weapon Encounter Win Rate** - Measure of weapon fighting strength based on downs in fights (fights won / total fights)
+## LEGENDS
+
+![Image showing a graph the win rates for all the legends in the game.](https://drop-assets.ea.com/images/1b5xbdPggEgudirOG3264x/bbc515e4a9f90268d6a563a249e93f36/01_-_Legend_Pick_Rate_and_Encounter_Win_Rate.png?im=AspectCrop=%2816,9%29,xPosition=0.5598958333333334,yPosition=0.46435185185185185)
+## WHY NOT LOWEST-PICK, LOWEST-WIN?
+
+You are likely aware of some Legends and weapons that have spent significant time at the bottom of the meta. For some of you, we see peaking frustrations when they happen to be your favorites. “**So why aren’t they the priority for buffs each season?”** It’s a good question! 
+
+In these cases, the scope of the necessary changes is often so large that developing and testing requires more time than it would for smaller tweaks. For example we knew community conversations about Octane were bubbling at the start of last season - we had been actively working on his changes for a while and we just had to bite our tongue knowing that his buffs were just around the corner! 
+
+Additionally, with a game the size of Apex Legends - 27 Legends, multiple game modes and maps, and an entire arsenal of weapons - every seemingly small tweak to a weapon or character can have many unexpected ripple effects throughout the game. This means we need to move as quickly as we can while keeping the bigger picture in mind, which results in varied but often longer timelines. 
+## OCTANE
+
+Octane is a fan-favorite that has dropped in popularity over the years. We’d love to see him reclaim a place in the hearts of our players, so we’re making changes to remind everyone why you fell in love with the adrenaline chaser in the first place! 
+
+![Image showing Octane's overall pick rate from Dec. 1st, 2024, to Nov. 1st 2025.](https://drop-assets.ea.com/images/01MaLN0mK7lsNZ8YAGzvZ7/ae9110e2bafb02f813622289109ed04d/02_-_Overall_Legend_Pick_Rate_-_Octane.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+![Image showing Octane's pick rate by ranked tiers.](https://drop-assets.ea.com/images/4lZtGcvhzZojnrYA1DwpWw/6fa197ee1774c64760f13c57ba0f4ea9/03_-_Octane_Pick_Rate_by_Tier.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Octane’s pick rate is below average across all game modes and he sinks to near the bottom of the chart in Diamond/Masters. One of the main complaints about Octane we hear from our community is that, despite being fun for solo players, he lacks team utility. Additionally, Octane is often the character who runs ahead of the pack and looks for (and often finds) trouble; one small misstep can have dire consequences. 
+
+As a result, our goals are first to increase individual survivability. Second, create more team utility allowing Octane to better help squadmates. The aim is making him a more viable pick in a variety of team comps. To help achieve these goals we’ve added some new base abilities, and new upgrades to Octane’s kit.
+##### CORE CHANGES
+
+In an effort to enable a layer of survivability we are introducing a new formulation of Stim: **Stim Surge.** When already Stimmed, activate Octane’s tactical a second time to enter **Stim Surge**, extending your Stim and granting you Fortified and a Passive Heal. 
+
+- Fortified: Reduced damage and no bullet slow
+- Passive Healing: Your passive healing immediately re-engages, and continues to heal through damage
+
+##### UPGRADES
+
+To improve Octane’s team utility, we’re adding a branch of upgrades to boost squadmates who use your JumpPad:
+
+- **Squad Rush:** Everyone who uses your JumpPad gains Stim on land
+- **Triple Jump:** Gain a third jump from JumpPads
+
+
+While one branch is focused on increasing team utility, the other is centered around further improving his Stim.
+## NEWCASTLE
+
+Newcastle was having the opposite problem of Octane: higher ranked lobbies were seeing the value in this heroic protector, but the broader community was not  harnessing the value he can bring to a squad.
+
+![Image showing Newcastle's pick rate from the Platnium rank and higher from Dec. 1st 2024, to Nov. 1st 2025.](https://drop-assets.ea.com/images/4Vu1EffDfIGaebxhLwVeHH/ea482220dc6d276d0c7e598848d2deb9/04_-_Platinum__Daily_Legend_Pick_Rate_-_Newcastle.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+In buffing Newcastle, our goals are to make him feel less sluggish, hoping it makes him more appealing to play to the broader community.
+
+To help achieve this goal we have incorporated the Swift Shield and Hero’s Hustle upgrades into his base kit, increasing his base movement speed and reducing movement penalties.
+## CRYPTO
+
+Aside from potentially ALGS, Crypto has seen an extremely low pick rate across all skill bands for a long time. 
+
+![Image showing Crypto's pick rate from Dec. 1st 2024, to Nov. 1st 2025.](https://drop-assets.ea.com/images/2hIQmWCbkKrec47Pitz4Zv/9c6d7b7b4fbae4fc92b76962cada5642/05_-_Overall_Legend_Pick_Rate_-_Crypto.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+The biggest pain point we’ve identified is the feeling that he gets left behind by his team while performing his key function: flying his drone. Therefore, our main goal in buffing Crypto is to simply allow him to better keep up with his squadmates.
+
+As a result, we are speeding up Crypto’s interaction with his drone in a few key ways:
+
+- Snappier drone launch, and quicker in/out time for drone
+- Allowing him to pilot his drone while doing other things (i.e. zipline, opening a Mythic bin)
+- New upgrades that keep him in the fight by allowing him to trailblaze to allies, or earn ult charge faster
+
+## WEAPONS
+
+![Image of win rates for all weapons and their down shares vs their encounter wins. ](https://drop-assets.ea.com/images/4FIoZO56M3S4tAIkVQ861g/6f990a49e0d9b67e2fcbe202c0f46827/06_-_Weapon_Share_of_Downs_and_Encounter_Win_Rate.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+## AMPS
+
+We are pleased with the design space of most of our Amps as they have been doing a great job of allowing players to adapt to situations and customize their playstyle. However, we identified that Infinite Ammo was lagging behind other amps so we wanted to give it a bit of a boost. While there are only so many ways to buff “infinite ammo” we elected to go the route of enabling compatibility with Care Package weapons (yes, that means the Kraber.) Adding Care Package weapons into the fold this way will have a much larger impact on the Amps usefulness compared to some of the other adjustments we could make.
+## R-301 &amp; FLATLINE
+
+Over the past few seasons, the R-301 and Flatline have taken a backseat to some of the more specialized weapons in the roster. They remain beloved classics but their power has not kept up. This has caused the R-301 and Flatline to fall behind in some of our key metrics like Encounter Win Rate. 
+
+![Image showing the weapon down shares for the R-301 and Flatline from Dec. 1st 2024, to Nov. 1st 2025.](https://drop-assets.ea.com/images/2EoByh7YXFJz0Bk4GaaBBE/f0dc039299cce461f9693ea5654647f4/07_-_Overall_Weapon_Share_of_Downs_-_R-301_Flatline.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+While making changes to these two staples, our goal is to close the gap in power to the rest of the roster and ensure they remain reliable classics.
+
+To achieve this we are increasing damage on both of these weapons by one. It may seem like a small change on the surface, but it will bring down their Time to Kill across multiple shield breakpoints. We’re excited to see if this reinvigorates the community’s love for the R-301 and Flatline.
+## PROWLER
+
+At the beginning of Season 27 we equipped the Prowler with autofire burst capabilities. When we made that adjustment we also increased the delay between bursts in an effort to offset the power we thought we’d unlocked. Looking at the Prowler’s performance since, we realize we hit it a little too hard.
+
+![Image showing the encounter win rate for the Prowler from Oct. 23rd, to Nov. 20th.](https://drop-assets.ea.com/images/1a7KRRieCbbwsrqldJFbF6/05e368e5d2cb8b80646f414d151d2f1c/08_-_Daily_Weapon_Encounter_Win_Rate_-_Prowler__1_.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+Our goal in the followup changes to the Prowler is to bring it to a healthy balance now that the autofire burst has had time to settle into the meta.
+
+To do that, we’re reverting the burst fire delay changes we made at the beginning of Season 27. However, we still want to give the Prowler a little bit of a tune up and ensure the Selectfire Hop-Up’s Automatic Mode feels proportionately rewarding to unlock. That in mind, we’re increasing bullet damage while in full auto mode to 17 (up from 16).
+## IN CLOSING
+
+We hope you found this helpful in further understanding the thought process behind the decisions we’re making to shift the seasonal meta of Apex Legends. For a comprehensive guide to the changes for 27.1 be sure to check the Patch Notes! 
+
+---
+
+[Play Apex Legends for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, Nintendo Switch 2, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [Twitter](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), and [TikTok](https://www.tiktok.com/@PlayApex), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.

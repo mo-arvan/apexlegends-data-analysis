@@ -1,0 +1,39 @@
+{
+  "title": "Charge Rifle",
+  "infobox": {
+    "name": "Charge Rifle",
+    "description": "Charged beam sniper rifle.",
+    "type": "Sniper Rifle",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "{{ItemLink|Vinson Dynamics|image=Vinson Dynamics Icon.svg}}",
+    "barrel": "",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "selectfire",
+    "damageBody": "75–110 56–83",
+    "damageHead": "135–198 101–149",
+    "damageLegs": "68–99 50-74",
+    "rateOfFire": "26 84",
+    "dps": "33~48  78~116",
+    "magazineSize": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "tacReload": [
+      "3.5",
+      "3.38",
+      "3.27",
+      "3.15"
+    ],
+    "fullReload": [
+      "4.6",
+      "4.45",
+      "4.29",
+      "4.14"
+    ]
+  }
+}

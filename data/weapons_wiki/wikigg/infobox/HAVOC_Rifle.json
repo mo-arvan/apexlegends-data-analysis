@@ -1,0 +1,34 @@
+{
+  "title": "HAVOC Rifle",
+  "infobox": {
+    "name": "HAVOC Rifle",
+    "description": "Full-auto charged energy rifle.",
+    "type": "Assault Rifle",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "creator": "{{ItemLink|Siwhan Industries}}{{ItemLink|Wonyeon}}",
+    "barrel": "",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "turbocharger",
+    "hopup2": "",
+    "damageBody": "20",
+    "damageHead": "26",
+    "damageLegs": "15",
+    "rateOfFire": "672",
+    "dps": "224",
+    "magazineSize": [
+      "18",
+      "21",
+      "25",
+      "29"
+    ],
+    "reload": [
+      "3.2",
+      "3.09",
+      "2.99",
+      "2.88"
+    ]
+  }
+}

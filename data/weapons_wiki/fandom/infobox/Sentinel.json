@@ -1,0 +1,37 @@
+{
+  "title": "Sentinel",
+  "infobox": {
+    "name": "Sentinel",
+    "description": "Bolt-action sniper rifle.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "{{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "70 88",
+    "damageHead": "140 (2×) 176 (2×)",
+    "damageLegs": "63 (0.9×) 79 (0.9×)",
+    "rateOfFire": "31-38",
+    "dps": "36-45 44-58",
+    "magazineSize": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "tacReload": [
+      "2.5",
+      "2.42",
+      "2.33",
+      "2.25"
+    ],
+    "fullReload": [
+      "3.6",
+      "3.48",
+      "3.36",
+      "3.24"
+    ]
+  }
+}

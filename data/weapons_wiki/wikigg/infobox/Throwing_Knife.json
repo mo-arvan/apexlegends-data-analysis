@@ -1,0 +1,16 @@
+{
+  "title": "Throwing Knife",
+  "infobox": {
+    "name": "Throwing Knife",
+    "colorPalette": "mythic",
+    "description": "A finely balanced blade.",
+    "icon": "Throwing Knife Icon.svg",
+    "fireModes": "Single",
+    "ammoType": "Mythic Throwing Knife Ammo",
+    "damageBody": "100",
+    "damageHead": "300 (3×)",
+    "damageLegs": "100",
+    "rateOfFire": "43",
+    "magazineSize": "1"
+  }
+}

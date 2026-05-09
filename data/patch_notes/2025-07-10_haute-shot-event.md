@@ -1,0 +1,88 @@
+---
+title: "Bring the heat in the Haute Shot Event"
+date: 2025-07-10
+slug: haute-shot-event
+type: Game Updates
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/haute-shot-event
+---
+
+# Bring the heat in the Haute Shot Event
+
+
+[![Apex Legends: Haute Shot Event Trailer](https://www.youtube.com/watch?v=MAxaYJCbPFo)](https://drop-assets.ea.com/images/7GeF5I5WjThSoEEgBbhynC/ba823073e393538cd34e6f90000234db/Apex-S25-HS-Event-Trailer-Thumbnails_3840x2160.jpg?im=AspectCrop=%2816,9%29,xPosition=0.16666666666666666,yPosition=0.16666666666666666)(Youtube)(Thumbnail asset for the Haute Shot collection event YouTube trailer. )
+
+With rookies rising and fireworks exploding, all eyes are on you, Legends! This next event is sleek, stylish, and sponsored by fashion powerhouse Belva. Prove yourself worthy of the spotlight in the updated Arenas: Duels LTM—now with Legend abilities. Relax and try new beach fits with Legendary Skins for Loba (we see you), Sparrow, and more up for grabs in Haute Shot Packs†. Make a statement with fashionable firepower, featuring new Legendary Weapon Skins, like the R-301 and Wingman, to complete your beach-ready loadout. End the season with a bang: event packs† may drop the new Sky Piercer Universal Melee, usable by all Legends. Go ahead, be extra, upgrade the Sky Piercer with one of its variants to start shooting fireworks!
+## ARENAS: DUELS
+
+Let’s up the ante now that you’ve had a chance to try Arenas: Duels in its purest form. Bring on the Legend abilities! This addition adds a little more spice to switch up your match-ups and challenge your more tactical side. Will you go for the abilities you know best or let your opponent’s playstyle influence you?
+
+What stays the same? Each Legend, loadout, and spawn location are randomized, with both you and your opponent being mirrored. 
+## EVENT ITEMS
+
+[![haute-shot-event-legend-skins](https://drop-assets.ea.com/videos/4qjO0FWwtNSlhGGpoDLZOE/64178726ee632f8bc40172d60ccf92fa/Copy_of_Haute_Shot_Legend_Skins_Blog_v1.mp4)](https://drop-assets.ea.com/images/525tdBQWV0B7N6y2Aex0I7/5997f87b356382ee27df29fd36b053b7/Screenshot_2025-07-08_112442.png?im=AspectCrop=%2816,9%29,xPosition=0.49244791666666665,yPosition=0.4147252747252747)(Mp4)(Thumbnail asset for the Mp4 video showing off the event legend skins for the Haute Shot collection event in Apex. )
+
+Haute limited-time cosmetics are up for grabs as you open Haute Shot Packs† during the event, with each pack offering one event item (no duplicates!) and two standard items. Each event item received counts towards bonus rewards that are automatically unlocked at milestones along the way including up to 20 Exotic Shards. 
+
+[![haute-shot-event-weapon-skins](https://drop-assets.ea.com/videos/1ndxpXV5SUB5qVn3uAckqi/bbe7ba7ea111e805e3543d4e0c562137/Copy_of_Haute_Shot_Weapon_Skins_Blog_v1.mp4)](https://drop-assets.ea.com/images/67ouHYAUFfoe5epPP0h26L/51626c8339b97fcfecba124330507eae/Screenshot_2025-07-08_112531.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.4185022026431718)(Mp4)(Thumbnail asset for the Mp4 video showing off the event weapon skins for the Haute Shot collection event in Apex. )
+
+Each event pack† also has the chance to drop the new Sky Piercer universal melee item. Similar to other universal melee items, you can customize the Sky Piercer with upgrades in the Exotic Shop to add a little flare. Charge up this beauty as you progress through a match to shoot fireworks into the sky—your first set of fireworks each match is on us.  
+
+[![haute-shot-event-sky-piercer-heirloom](https://drop-assets.ea.com/videos/5a6G4kPmgORwIJvJPhdImu/2a4095ce16b2c3f0ebb1b0f74e05e418/Copy_of_Sceptre_Heirloom_Blog_v1.mp4)](https://drop-assets.ea.com/images/5HmmKqNb782MlRw4nfaTEF/80deeb3af76cf6db0680973d56ae8291/Screenshot_2025-07-08_112611.png?im=AspectCrop=%2816,9%29,xPosition=0.54296875,yPosition=0.42160737812911725)(Mp4)(Thumbnail asset for the Mp4 video showing off the Sky Piercer heirloom for the Haute Shot collection event in Apex. )
+## REWARD SHOP
+
+Earn Status by completing daily event challenges, then check out the Haute Shot Reward Shop to redeem for rewards like Haute Shot Packs† and see your progress with all four event badges. Offerings will rotate halfway through the event.
+
+![1st screenshot of the new item tracker for the Haute Shot collection event in Apex.](https://drop-assets.ea.com/images/196IqsOaAv5k9vxu8j7B1Y/54d0768b3cfc9a49641b30179554f45d/Copy_of_Reward_Shop_001.jpg?im=AspectCrop=%2816,9%29,xPosition=0.1171875,yPosition=0.11736111111111111)
+
+![2nd screenshot of the new item tracker for the Haute Shot collection event in Apex.](https://drop-assets.ea.com/images/4H7yIlS5KPdhZlBkuc1w6C/8c4c376c589dcf14d14b685d7797c25b/Copy_of_Reward_Shop_002.jpg?im=AspectCrop=%2816,9%29,xPosition=0.1171875,yPosition=0.11736111111111111)
+## STORE TAB
+
+Explore limited-time Haute Shot offers in the store from July 15-August 5, 2025.
+
+![Screenshot of the new items in the in-game store for the Haute Shot collection event in Apex.](https://drop-assets.ea.com/images/4PMGR7koQJ7Ep6i5jqITLG/5276b2b771d271d7e2bb52eaff3ec43f/Copy_of_Haute_Shot_Store_Offers_v1.png?im=AspectCrop=%2816,9%29,xPosition=0.3463541666666667,yPosition=0.524074074074074)
+## PATCH NOTES: PREVIOUS UPDATES &amp; FIXES
+### GAME
+
+- <u>[Arenas: Duels is now Kills = Wins, timeouts will result in draws](https://x.com/Respawn/status/1940501446921015393)</u>
+- <u>[New DMA detections](https://x.com/Respawn/status/1935744497423458677)</u>
+- Players can no longer slide or interact with Respawn Beacons farther than intended
+- Various crash fixes
+
+### LEGENDS
+###### **Caustic**
+
+- Nox Gas Trap duration extended to 22s (was 11s)
+- Enemy Nox Gas Trap is highlighted
+
+###### **Mirage**
+
+- Power Sword VFX no longer visible while cloaked
+
+###### **Wattson**
+
+- Energized Healer should now heal as intended
+- <u>[Ultimate Conductor upgrade no longer causes charging when it shouldn’t](https://x.com/Respawn/status/1938028442613846062)</u>
+
+## COMMUNITY DRIVEN BUGS
+
+Here’s a couple of the open bugs that we’ve seen some community chatter around. Our team is actively working on these bugs and more, and we’ll update our progress <u>[on our public Trello board](https://trello.com/b/ZVrHV38P/apex-tracker)</u>.
+
+- <u>[Crash after opening Apex Packs](https://trello.com/c/49hybc7k/603-crash-after-opening-apex-packs-then-immediately-switching-tabs)</u>**:** fix in progress, typically caused by switching tabs immediately after opening. In the interim, players can minimize impact by avoiding rapidly switching tabs after opening. 
+- <u>[Newcastle has no shield while reviving after drop](https://trello.com/c/L7Gh3OuP/618-newcastle-no-shield-with-first-revive-after-drop)</u>: investigating, Knockdown Shield can be dropped and picked-up to kickstart charging in the interim
+- <u>[Retro Packs Progress Bar](https://trello.com/c/zKroYjKg/612-retro-packs-visual-error-with-progress-bar-still-tracking-in-backend)</u>**:** fix in progress, visual error only. All opened Retro Packs will count towards progress and reward(s) will still be awarded. 
+
+
+---
+
+[Play Apex Legends for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [Twitter](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), and [TikTok](https://www.tiktok.com/@PlayApex), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+
+†Not available in all territories.

@@ -1,0 +1,330 @@
+{{MainGameNotice|mobilePage=Volt SMG (Mobile)}}
+{{Infobox-Weapon
+| name = Volt SMG
+| description = Energy actuated SMG.
+| type = Sub machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Energy Ammo
+| barrel = laser
+| magType = energy
+| optics = true
+| stock = standard
+| damageBody = 15
+| damageHead = 19 <small>(1.25×)</small>
+| damageLegs = 12 <small>(0.8×)</small>
+| rateOfFire = 720
+| magazineSize = {{Level0123|19|21|23|26}}
+| tacReload = {{Level0123|1.44|1.39|1.34|1.3}}
+| fullReload = {{Level0123|2.03|1.96|1.89|1.83}}
+}}
+
+The '''Volt SMG''', or '''Volt''', is a fully-automatic [[submachine gun]] introduced in {{ItemLink|Season 6}} that utilizes {{ItemLink|Energy Ammo}}.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+
+
+; Others
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 15
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_volt_smg</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 12
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 22000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 596 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4.125
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 4.875
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5.25
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 5.625
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.35
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+I’m 0.2
+0.22
+0.2
+0.75
+ movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.35
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.25
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 5
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Eagle Eye''
+| style="text-align:left" | Down an enemy at least 40 meters range while ADS with the weapon.
+| 253747 times
+|-
+| 40
+| ''Survivor''
+| style="text-align:left" | Down an enemy while you are severely injured.
+| 15 times
+|-
+| 60
+| ''Slick''
+| style="text-align:left" | Down an enemy with the weapon without releasing the trigger while sliding.
+| 10 times
+|-
+| 80
+| ''Rapid Fire''
+| style="text-align:left" | Rapidly down at least 2 enemies in one match (5 seconds window).
+| 5 times
+|-
+| 100
+| ''Onslaught''
+| style="text-align:left" | Break an enemy's armor with the weapon at least 50 meters away then get a knock within 10 meters in 8 seconds.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|The first energy-based SMG to see regular use in the Frontier, the Volt allows its operator to fire a salvo of energy-based ammunition, decreasing drag and making it possible to hit multiple targets within a short window. In the early days of Frontier exploration, expeditions were often waylaid by dense populations of local wildlife. Progress ground to a halt as settlers were ill-equipped to protect themselves in unfamiliar terrain. The IMC commissioned the Volt, which could be used quickly and effectively at multiple distances, reducing casualties from local fauna and jumpstarting excursions into untouched territory.}}
+
+
+== Skins ==
+There are a total of 79 weapon skins for the Volt SMG: 23 {{Legendary}}, 9 {{Epic}}, 32 {{Rare}} and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="300" mode="nolines">
+Luxury Finish Volt.png|{{Legendary|Luxury Finish}}<br/>{{CraftingMetals|1,200}}
+Classic Pearl Volt.png|{{Legendary|Classic Pearl}}<br/>{{CraftingMetals|1,200}}
+Fortune Teller Volt.png|{{Legendary|Fortune Teller}}<br/>{{CraftingMetals|1,200}}
+Dream Weaver Volt.png|{{Legendary|Dream Weaver}}<br/>{{CraftingMetals|1,200}}
+Inked and Infused Volt.png|{{Cosmetic|Dark Depths|Legendary|Inked and Infused}}<br/>{{CraftingMetals|1,200}}
+Autumn's Dawn Volt.png|{{Cosmetic-NI|Recolor|Legendary|Autumn's Dawn}}<br/>Needs {{Legendary|Dream Weaver}}
+The Mantlepiece Volt.png|{{Cosmetic|Mirage Edition|Legendary|The Mantlepiece}}
+Symbiotic Relationship Volt.png|{{Cosmetic|Season 10|Legendary|Symbiotic Relationship}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Fatal Injection Volt.png|{{Cosmetic|Season 10|Legendary|Fatal Injection}}<ref group="note" name="reactive"/><br/>Level 110
+Tech Noir Volt.png|{{Cosmetic|3rd Anniversary|Legendary|Tech Noir}}
+Eight Ball Volt.png|{{Cosmetic-NI|Recolor|Legendary|Eight Ball}}<br>Needs {{Legendary|Classic Pearl}}
+Backing Track Volt.png|[[File:Sale Icon.svg|22px|link=Family Business Store]] {{Legendary|Backing Track}}
+Paying It Forward Volt.png|{{Cosmetic|Celestial Sunrise|Legendary|Paying It Forward}}
+Honor Bound Volt.png|{{Cosmetic|Imperial Guard|Legendary|Honor Bound}}
+Green Surge Volt.png|[[File:Sale Icon.svg|22px|link=Weapon Recolor Store (Season 16)]] {{Legendary|Green Surge}}
+Clean Kill Volt.png|{{Cosmetic|Dressed to Kill|Legendary|Clean Kill}}
+Cyber Gradient Volt.png|[[File:Sale Icon.svg|22px|link=Fluorescent Frenzy Store]] {{Legendary|Cyber Gradient}}
+Bee Sting Volt.png|{{Cosmetic|Neon Network|Legendary|Bee Sting}}
+High Dosage Volt.png|[[File:Sale Icon.svg|22px|link=Fight or Fright Sale]] {{Legendary|High Dosage}}
+Warrior Bound Volt.png|[[File:Sale Icon.svg|22px|link=Black Friday (2023)]] {{Legendary|Warrior Bound}}
+Holiday Slay Volt.jpg|[[File:Sale Icon.svg|22px|link=Festive Frenzy Sale]] {{Legendary|Holiday Slay}}
+Void Prototype Volt.png|[[File:Sale Icon.svg|22px|link=End of Year Sale (2023)]] {{Legendary|Void Prototype}}
+</gallery>
+<references group="note"/>
+|-|
+
+Epic=
+<gallery widths="290" heights="300" mode="nolines">
+Eye of the Storm Volt.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Volt.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Volt.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Volt.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Volt.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Gold Scale Volt.png|{{Cosmetic|Genesis|Epic|Gold Scale}}
+Trailbreaker Volt.png|{{Cosmetic|Warriors|Epic|Trailbreaker}}
+Low Tide Volt.png|{{Cosmetic|Sun Squad|Epic|Low Tide}}
+Death Spark Volt.png|{{Cosmetic|Doppelgangers|Epic|Death Spark}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="300" mode="nolines">
+Chaos Theory Volt.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Volt.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Volt.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Volt.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Volt.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Volt.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Volt.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Volt.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Volt.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Volt.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Volt.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Volt.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Volt.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Volt.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Volt.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Data Protector Volt.png|{{Cosmetic|season 6|Rare|Data Protector}}<br/>Level 98
+The Outlands Job Volt.png|{{Cosmetic|aftermarket|Rare|The Outlands Job}}
+Confetti Volt.png|{{Cosmetic|Season 7|Rare|Confetti}}<br/>Level 51
+Blue Devil Volt.png|{{Cosmetic|Season 8|Rare|Blue Devil}}<br/>Level 76
+Crimson Tsunami Volt.png|{{Cosmetic|Season 9|Rare|Crimson Tsunami}}<br/>Level 57
+Special Forces Volt.png|{{Cosmetic|PlayStation+|Rare|Special Forces}}<br/>May 2021
+Vapor Trailed Volt.png|{{Rare|Vapor Trailed}}<br/>10 cans<ref group="monster" >This is tied to a [https://apexlegends.monsterenergy.com/en-us promotion] with the Monster Energy energy drinks whose rewards can be redeemed starting on September 1, 2021 until March 31, 2021.</ref>
+Accepted Theory Volt.png|{{Cosmetic|Arenas Flash Event 2|Rare|Accepted Theory}}
+Ornate Orchid Volt.png|{{Cosmetic-NI|Twitch Drop|Rare|Ornate Orchid}}<br/>October 2021
+Flirting with Death Volt.png|{{Cosmetic|Monsters Within|Rare|Flirting With Death}}
+Ante Up Volt.png|{{Cosmetic|Season 11|Rare|Ante Up}}<br/>Level 11
+Warped Impact Volt.png|{{Cosmetic|Season 12|Rare|Warped Impact}}<br/>Level 88
+Retro Ball Volt.png|{{Cosmetic|Season 13|Rare|Retro Ball}}<br/>Level 41
+Desert Rattler Volt.png|{{Cosmetic|Season 14|Rare|Desert Rattler}}<br/>Level 56
+Hallowed Prestige Volt.png|{{Cosmetic|Season 15|Rare|Hallowed Prestige}}<br/>Level 11
+Safety Protocol Volt.png|{{Cosmetic|Season 17|Rare|Desert Rattler}}<br/>Level 89
+The Dopple Gang Volt.png|{{Cosmetic|Season 18|Rare|The Dopple Gang}}<br/>Level 33
+</gallery>
+<references group="monster"/>
+|-|
+
+Common=
+<gallery widths="290" heights="300" mode="nolines">
+Factory Issue Volt.png|{{Common|Factory Issue}}<br/>Default 
+Evergreen Volt.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Lagoon Volt.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Volt.png|{{Common|Clover}}<br/>{{CraftingMetals|30}} 
+Midnight Volt.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}} 
+Cardinal Volt.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}} 
+Arctic Volt.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}} 
+Sunfire Volt.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}} 
+Clearwater Volt.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}} 
+Flamingo Volt.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}} 
+Sandstorm Volt.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}} 
+Rainforest Volt.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}} 
+Orchid Volt.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}} 
+Bengal Volt.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}} 
+Yellowjacket Volt.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}} 
+Oceanic Volt.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}} 
+</gallery>
+</tabber>
+<references group="note"/>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 18}} [[August 08, 2023 Patch]]
+* Reduced headshot damage multiplier from 1.5× to 1.25×.
+* Reduced ADS movement speed multiplier from 0.85× to 0.75×.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 17}}.
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Reduced projectile speed from 23500 to 22000.
+* Increased projectile gravity pull.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* No longer a [[Care Package#Supply Drop Weapons|{{Heirloom|Supply Drop Weapon}}]].
+** Can now be purchased in {{ItemLink|Arenas}}.
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with [[Alternator SMG]], [[P2020]], [[Prowler Burst PDW]], [[R-99 SMG]], [[RE-45 Auto]], and Volt SMG.
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Reduced damage from 17 to 15.
+* Increased hipfire spread when crouching from 2.75 to 4.125.
+* Increased hipfire spread when standing from 3.25 to 4.875.
+* Increased hipfire spread when moving from 3.25 to 5.25.
+* Increased hipfire spread when running from 2 to 3.
+* Increased hipfire spread when in midair from 3.75 to 5.625.
+* Reduced {{ItemLink|Extended Energy Mag|text={{Epic|Extended Energy Mag}}}} size from 28 to 26.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with ??? {{ItemLink|Mythic Light Rounds|text=Ammo}}.
+* Increased damage from 15 to 17.
+* Increased {{ItemLink|Extended Energy Mag|text={{Epic|Extended Energy Mag}}}} size from 26 to 28.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|500}} to {{Materials|550}}.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Reduced damage from 16 to 15.
+
+; [[September 03, 2020 Patch]]
+* Fixed an issue with audio sometimes not playing while firing.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Introduced.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 6}}.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Cliff Childs Volt SMG.jpg|Concept Art by Cliff Childs.<ref>[https://www.artstation.com/artwork/q9OgVN Cliff Childs on ArtStation]</ref>
+The Mantlepiece Volt Concept Art.jpg|Concept art for the {{Legendary|The Mantlepiece}} skin.<ref>[https://www.artstation.com/artwork/OmoJqw Gadget-Bot Productions on ArtStation]</ref>
+Symbiotic Relationship Volt Concept Art.jpg|Concept art for the {{Legendary|Symbiotic Relationship}} skin.<ref>[https://www.artstation.com/artwork/2q8Wvv Gadget-Bot Productions on ArtStation]</ref>
+Inked and Infused Volt Concept Art.jpg|Concept art for the {{Legendary|Inked and Infused}} skin.<ref>[https://www.artstation.com/artwork/9Nyoeq Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+== References ==
+<references />
+
+
+== See also ==
+* [[Volt SMG (Mobile)|Volt SMG (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/Volt Volt (''Titanfall 2'')]
+
+{{Nav-Weapons}}

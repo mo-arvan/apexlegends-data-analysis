@@ -1,0 +1,156 @@
+{{MobileGameNotice|mainPage=R-99 SMG}}
+{{Infobox weapon
+| name = R-99 SMG
+| description = A super rapid-fire SMG that requires high skill in aiming.
+| type = Sub machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| barrel = stabilizer
+| magType = light
+| optics = true
+| stock = standard
+| damageBody = 11
+| damageHead = 17 <small>(1.5×)</small>
+| damageLegs = 10 <small>(0.9×)</small>
+| rateOfFire = 1092
+| magazineSize = {{Level0123|22|25|28|32}}
+| tacReload = {{Level023|1.7|1.6|1.5}}
+| fullReload = {{Level023|2.2|2.1|2}}
+}}
+
+The '''R-99 SMG''', or '''R-99''', is a fully-automatic [[SMG]] that utilizes {{ItemLink|Light Rounds|text=Light Rounds}}.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 11
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+<references group="note"/>
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Light Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|}
+
+== Skins ==
+There are a total of 20 weapon skins for the R-99 SMG: 3 {{Eternal}}, 4 {{Legendary}}, 6 {{Epic}}, 5 {{Rare}}, and 3 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="200px" heights="300px" mode="nolines">
+Fatal Opulence R-99 Mobile.png|{{Eternal|Fatal Opulence}}<br/>[[Golden Geometry]]
+Rapid Defrag R-99 Mobile.png|{{Eternal|Rapid Defrag}}<br/>[[Pythas Error Control]]
+Rapid Amplitude R-99 Mobile.png|{{Eternal|Rapid Amplitude}}<br/>[[Future Wave]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="200px" heights="300px" mode="nolines">
+Big Air R-99 Mobile.jpg|{{Legendary|Big Air}}<br/>[[Glacial Games]]
+Flash of Fury R-99 Mobile.png|{{Legendary|Flash of Fury}}
+Anubis Wrappings R-99 Mobile.png|{{Legendary|Anubis Wrappings}}<br/>[[Secrets of the Tomb]]
+Satellite-03 R-99 Mobile.png|{{Symbol|s4m}} {{Legendary|Satellite-03}}<br/>Level 1
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200px" heights="300px" mode="nolines">
+Teeth Cutter R-99 Mobile.png|{{Epic|Teeth Cutter}}
+Rocket Commander R-99 Mobile.png|{{Epic|Rocket Commander}}
+Teal Camo R-99 Mobile.png|{{Epic|Teal Camo}}
+Shining Eagle R-99 Mobile.png|{{Epic|Shining Eagle}}<br/>[[Royal Regiment]]
+Horns Out R-99 Mobile.png|{{Symbol|s3.5m}} {{Epic|Horns Out}}<br/>{{SeasonCurrency|3.5|9,000}}
+</gallery>
+* {{Epic|Diamond Shot}}
+
+|-|
+
+Rare=
+<gallery widths="200px" heights="300px" mode="nolines">
+Cold Snap R-99 Mobile.jpg|{{Rare|Cold Snap}}<br/>{{Flux|3,000}}
+Tricky Torrent R-99 Mobile.png|{{Rare|Tricky Torrent}}<br/>[[Mecha Strike Go!]]
+Fuchsia Fury R-99 Mobile.jpg|{{Symbol|s2.5m}} {{Rare|Fuchsia Fury}}<br/>Level 30
+Sign of the Serpent R-99 Mobile.png|{{Symbol|s3m}} {{Rare|Sign of the Serpent}}<br/>{{SeasonCurrency|3|4,000}}
+North Pole R-99 Mobile.png|{{Rare|North Pole}}<br/>[[Winners Wonderland]]
+Vivid Grid R-99 Mobile.png|{{Rare|Vivid Grid}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="200px" heights="300px" mode="nolines">
+Factory Issue R-99 Mobile.png|{{Common|Factory Issue}}<br/>Default
+Nile R-99 Mobile.png|{{Common|Nile}}
+Love and Hate R-99 Mobile.png|{{Common|Love and Hate}}
+</gallery>
+</tabber>
+
+== Gallery ==
+<gallery widths="250px" heights="300px" mode="nolines">
+Rapid Defrag R-99 Mobile Concept Art.jpg|Concept art for the {{Eternal|Rapid Defrag}} skin by Jia How.<ref>https://www.artstation.com/artwork/g8lOmG</ref>
+</gallery>
+
+== See also ==
+* [[R-99 SMG]]
+* [[titanfall:R-97 Compact SMG (Titanfall_1)|R-97 Compact SMG (''Titanfall 1'')]]
+* [[titanfall:R-97 Compact SMG|R-97 Compact SMG (''Titanfall 2'')]]
+
+{{Nav-MobileWeapons}}
+[[Category:Sub machine guns]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

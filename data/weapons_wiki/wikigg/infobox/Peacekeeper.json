@@ -1,0 +1,44 @@
+{
+  "title": "Peacekeeper",
+  "infobox": {
+    "name": "Peacekeeper",
+    "description": "Lever-action shotgun.",
+    "type": "Shotgun",
+    "fireModes": "Single Single",
+    "ammoType": "Shotgun Shells",
+    "creator": "",
+    "barrel": "",
+    "magType": "bolt",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "",
+    "damageBody": "12×9 (108)",
+    "damageHead": "12×9 (108)",
+    "damageLegs": "12×9 (108)",
+    "rateOfFire": [
+      "???",
+      "???",
+      "???",
+      "???"
+    ],
+    "dps": [
+      "???",
+      "???",
+      "???",
+      "???"
+    ],
+    "magazineSize": "5",
+    "tacReload": [
+      "2.5",
+      "2.42",
+      "2.33",
+      "2.25"
+    ],
+    "fullReload": [
+      "3.5",
+      "3.38",
+      "3.27",
+      "3.15"
+    ]
+  }
+}

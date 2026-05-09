@@ -1,0 +1,479 @@
+{{Tabs|
+{{Tabs1|Mozambique Shotgun|Main}}
+{{Tabs2|Mozambique Shotgun/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Mozambique Shotgun
+| icon = Default: [[File:Mozambique Shotgun Icon.svg|x25px]]<br>Akimbo: [[File:Mozambique Shotgun Akimbo Icon.svg|x25px]]
+| description = Triple-barrel shotgun pistol.
+| type = Shotgun
+| fireModes = [[File:Auto Icon.svg|25px|link=]] Auto
+| ammoType = Shotgun Shells
+| creator = [[Altamirano Armory]]
+| barrel =
+| magType = bolt
+| optics = true
+| stock =
+| hopup =
+| damageBody = 17×3<!--<br>{{Symbol|Hammerpoint Rounds}} ??×3-->
+| damageHead = 21×3<!--<br>{{Symbol|Hammerpoint Rounds}} ??×3-->
+| damageLegs = 17×3<!--<br>{{Symbol|Hammerpoint Rounds}} 18×3-->
+| rateOfFire = {{Level0123|160|176|184|192}}<br>[[File:Mozambique Shotgun Akimbo Icon.svg|25px]] {{Level0123|175|193|201|210}}
+| dps = {{Level0123|132.6|145.8|156.06|163.2}}<br>[[File:Mozambique Shotgun Akimbo Icon.svg|25px]] {{Level0123|148.4|163.7|170.8|178.5}}
+| magazineSize = 5<br>[[File:Mozambique Shotgun Akimbo Icon.svg|25px]] 10
+| tacReload = 2.1<br>[[File:Mozambique Shotgun Akimbo Icon.svg|25px]] 2.5
+| fullReload = 2.6<br>[[File:Mozambique Shotgun Akimbo Icon.svg|25px]] 3
+}}
+The '''Mozambique Shotgun''', or '''Mozambique''', is a fully-automatic triple-barreled [[shotgun pistol]] that utilizes {{ItemLink|Shotgun Shells}}. It fires three pellets in the shape of a triangle. A second Mozambique may be equipped in the same weapon slot, enabling the [[Mozambique Shotgun#Akimbo|Akimbo]] state.
+<!--The Mozambique can be enhanced with the {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}} Hop-Up, which increases damage done to unshielded targets by 20%.-->
+
+Being a shotgun, the Mozambique affects [[Mad Maggie]]'s movement speed because of her {{AbilityLink|Warlord's Ire}} Passive ability.
+
+Six April Fools' variants exist for the Mozambique: an [[/April Fools|enhanced version]], [[Ol' Nessie]], [[Mozambrrr]], [[Mozamburst]], [[Mozambeam]], and [[Mozamblam]].
+<br>
+<br>
+
+== Akimbo ==
+The Mozambique can become '''Akimbo''' by equipping two Mozambiques in the same weapon slot. While Akimbo, the two Mozambiques:
+
+* have their fire rate increased from {{Level0123|160|176|184|192}} to {{Level0123|175|193|201|210}} RPM;
+* have their total magazine size doubled from 5 to 10;
+* have their tactical reload speed increased from 2.1 to 2.5 seconds;
+* have their full reload speed increased from 2.6 to 3 seconds;
+* share any attachment they have equipped without the need to search for another;
+* cannot be aimed down sights with as attempting to do so will instead tighten their hipfire spread, and their Optics are disabled;
+* share any skin currently equipped on the base Mozambique.
+
+The Akimbo state can be toggled on/off by pressing {{KeySet|fireMode}}, without the need to drop the second Mozambique. Toggling Akimbo off will return the Mozambique to its original single-weapon state.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Others
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Accelerator|text={{Common|Accelerator}}}}
+<br>
+<br>
+
+=== Damage Profile ===
+'''Note:''' {{AbilityLink|Fortified}} headshot damage may vary ±3. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.
+{{Damage profile
+| damageref=<ref group="note"> Shotgun damage is calculated per pellet.<br/>Correct: 15dmg/pellet x 1.25 = 18.75dmg/pellet ≈ 19dmg/pellet, resulting in 57 damage total. <br/> Incorrect: 45dmg x 1.25 = 56.25 ≈ 56 damage total.</ref>
+| damage = 16
+| bulletsPerBurst = 3
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="4" | <big>mp_weapon_semipistol</big>
+|-
+! rowspan="2" | Variable
+! colspan="2" | Value
+! rowspan="2" | Description
+|-
+! Single
+! Akimbo
+|-
+| fire_rate
+| style="text-align:center" | 2.66
+| style="text-align:center" | 2.917
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 10000
+| style="text-align:center" | 10000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 254 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while in the air.
+|-
+| spread_stand_ads
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while standing and aiming down sights.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while crouching and aiming down sights.
+|-
+| spread_air_ads
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| Hipfire spread radius while in the air and aiming down sights.
+|-
+| deployfirst_time
+| style="text-align:center" | 1
+| style="text-align:center" | 1.09
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.25
+| style="text-align:center" | 1
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.2
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.25
+| style="text-align:center" | 0.25
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.2
+| style="text-align:center" | 0.2
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.2
+| style="text-align:center" | 0.2
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.18
+| style="text-align:center" | 0.18
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''20000''' damages with the '''Mozambique'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Mozambique'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Mozambique'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''Mozambique'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''500''' enemies with the '''Mozambique'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|In the wake of the mass Frontier migration into the Outlands, regional conflicts and land-grabs created a demand for inexpensive firearms. The Mozambique Shotgun (named for [[wikipedia:Mozambique Drill|an execution technique with a similar, triangular spread]]) served that function for Pilots in the Frontier War and a new model was soon being mass-produced for civilian use. The result is a firearm with a small magazine and minimal stopping power - while useful for self-defense, a standard Mozambique will require modifications (or a lot of luck) to be useful in a real fight.}}
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|16}}
+{{#vardefine:epicskin|11}}
+{{#vardefine:rareskin|33}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="94" mode="nolines">
+Brother of the Blade Mozambique.png|{{Legendary|Brother of the Blade}}<br/>{{CraftingMetals|1,200}}
+Red Alert Mozambique.png|{{Legendary|Red Alert}}<br/>{{CraftingMetals|1,200}}
+Impulse Fire Mozambique.png|{{Legendary|Impulse Fire}}<br/>{{CraftingMetals|1,200}}
+Honor Guard Mozambique.png|{{Legendary|Honor Guard}}<br/>{{CraftingMetals|1,200}}
+Lion's Roar Mozambique.png|{{Legendary|Lion's Roar}}<br/>{{CraftingMetals|1,200}}
+The Dragon Slayer Mozambique.png|{{Cosmetic-NI|Recolor|Legendary|The Dragon Slayer}}<br/>Needs {{Legendary|Honor Guard}}
+The Divinity Mozambique.png|{{Cosmetic-NI|Recolor|Legendary|The Divinity}}<br/> Needs {{Legendary|Red Alert}}
+Bittersweet Mozambique.png|{{Cosmetic-NI|Recolor|Legendary|Bittersweet}}<br/>Needs {{Legendary|Impulse Fire}}
+Norse Code Mozambique.png|{{Cosmetic|The Old Ways|Legendary|Norse Code}}
+Monochromatic Mozambique.png|{{Cosmetic-NI|Recolor|Legendary|Monochromatic}}<br/>Needs {{Legendary|Brother of the Blade}}
+Focus Fire Mozambique.png|{{Cosmetic-NI|Recolor|Legendary|Focus Fire}}<br/>Needs {{Legendary|Impulse Fire}}
+Celestial Cannon Mozambique.png|{{Cosmetic|Void Reckoning|Legendary|Celestial Cannon}}
+Polished Punisher Mozambique.png|{{Cosmetic|Space Hunt|Legendary|Polished Punisher}}
+Phase Crusher Mozambique.png|{{Cosmetic|S23|Legendary|Phase Crusher}}<ref name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Split 1 Premium Lv 60
+Ol' Nessie Mozambique.png|{{Cosmetic|S23|Legendary|Ol' Nessie}}<ref name="reactive"/><br>Split 2 Premium Lv 60
+Prime Shot Mozambique.png|{{Cosmetic|Death by Design|Legendary|Prime Shot}}
+</gallery>
+<references />
+|-|
+
+Epic=
+<gallery widths="250" heights="94" mode="nolines">
+Eye of the Storm Mozambique.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Mozambique.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Mozambique.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Mozambique.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Mozambique.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Scavenger Hunt Mozambique.png|{{Cosmetic|Iron Crown|Epic|Scavenger Hunt}}
+Onyx Hammer Mozambique.png|{{Cosmetic|Veiled|Epic|Onyx Hammer}}
+Steady Beat Mozambique.png|{{Cosmetic|Veiled|Epic|Steady Beat}}<br>Split 2 Premium Lv 54
+Limelight Mozambique.png|{{Cosmetic|Takeover|Epic|Limelight}}<br>Split 1 Free Lv 32
+Static Discharge Mozambique.png|{{Cosmetic|Takeover|Epic|Static Discharge}}<br>Split 1 Premium Lv 43
+Corrupted Core Mozambique.png|{{Cosmetic|Showdown|Epic|Corrupted Core}}<br>Split 1 Free Lv 32
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="94" mode="nolines">
+Chaos Theory Mozambique.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Mozambique.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Mozambique.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Mozambique.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Mozambique.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Mozambique.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Mozambique.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Mozambique.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Mozambique.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Mozambique.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Mozambique.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Mozambique.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Mozambique.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Mozambique.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Mozambique.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Navigator Mozambique.png|{{Cosmetic|Season 1|Rare|Navigator}}<br/>Level 24
+Canopy Mozambique.png|{{Cosmetic|Season 2|Rare|Canopy}}<br/>Level 16
+Flamethrower Mozambique.png|{{Cosmetic|Season 3|Rare|Flamethrower}}<br/>Level 72
+Chiptech Mozambique.png|{{Cosmetic|Season 4|Rare|Chiptech}}<br/>Level 87
+Rare Find Mozambique.png|{{Cosmetic|Season 5|Rare|Rare Find}}<br/>Level 79
+Short Shifter Mozambique.png|{{Cosmetic|Season 6|Rare|Short Shifter}}<br/>Level 32
+Rattled Mozambique.png|{{Cosmetic|Season 7|Rare|Rattled}}<br/>Level 42
+Daisy Cutter Mozambique.png|{{Cosmetic|Season 8|Rare|Daisy Cutter}}<br/> Level 2
+Streaked In Blood Mozambique.png|{{Cosmetic|Season 9|Rare|Streaked In Blood}}<br/> Level 17
+Web Spinner Mozambique.png|{{Cosmetic|Season 10|Rare|Web Spinner}}<br/> Level 29
+Venom Punch Mozambique.png|{{Cosmetic|Season 11|Rare|Venom Punch}}<br/> Level 6
+Road Warrior Mozambique.png|{{Cosmetic|Season 12|Rare|Road Warrior}}<br/>Level 17
+Lion Tamer Mozambique.png|{{Cosmetic|Season 13|Rare|Lion Tamer}}<br/>Level 13
+Cinder Scales Mozambique.png|{{Cosmetic|Season 14|Rare|Cinder Scales}}<br/>Level 29
+Party Popper Mozambique.png|{{Cosmetic|S16|Rare|Party Popper}}<br/>Level 14
+Space Circuit Mozambique.png|{{Cosmetic|S17|Rare|Space Circuit}}<br/>Level 38
+Digital Camouflage Mozambique.png|{{Cosmetic|S18|Rare|Digital Camouflage}}<br/>Level 37
+Dark Infusion Mozambique.png|{{Cosmetic|S21|Rare|Dark Infusion}}<br/>{{Coins|500}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="94" mode="nolines">
+Factory Issue Mozambique.png|{{Common|Factory Issue}}<br/>Default
+Midnight Mozambique.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Mozambique.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Mozambique.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Mozambique.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Mozambique.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Mozambique.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Mozambique.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Mozambique.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Mozambique.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Mozambique.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Mozambique.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Mozambique.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Mozambique.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Mozambique.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Mozambique.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Winter Wipeout}} [[January 06, 2026 Patch]]
+* Increased projectile size at close range.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 11, 2025 Patch]]
+* Damage per pellet increased to 16 (was 15).
+* Headshot damage: 60 (all pellets).
+
+
+; [[October 10, 2024 Patch]]
+* Reduced base fire rate from 2.8 to 2.66.
+* Reduced base Akimbo fire rate from 3.125 to 2.917.
+* Reduced magazine size from 6 to 5.
+* Increased blast pattern scale.
+* Reduced projectile size when Akimbo.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Introduced Akimbo function. Compatible with Mozambique Shotgun and [[P2020]].
+* Increased base fire rate from 2.2 to 2.8.
+* Reduced {{ItemLink|Shotgun Bolt}} fire rate bonus from {{Level123|+15%|+25%|+35%}} to {{Level123|+10%|+15%|+20%}}.
+* Reduced {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}} multiplier from ×1.35 to ×1.2.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 22}}.
+
+
+; {{ItemLink|Harbingers}} [[September 19, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+
+; {{ItemLink|Season 18}} [[August 08, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}. Comes pre-equipped with {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}.
+
+
+; April 1, 2023
+* Pinging certain [[Map Feature]]s will make them disappear, spawning in their place either a [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] Mozambique, [[Mozambeam]], [[Mozamblam]], [[Mozambrrr]], [[Mozamburst]], or [[Ol' Nessie]].
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Added {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}. Compatible with Mozambique Shotgun and [[P2020]].
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Common|Level 1}} upgrade cost from {{Materials|100}} to {{Materials|150}}.
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|200}} to {{Materials|250}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|500}} to {{Materials|700}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 14}}.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Increased legshot damage multiplier from ×0.8 to ×1.
+
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Common|Level 1}} upgrade cost from {{Materials|50}} to {{Materials|100}}.
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|150}} to {{Materials|200}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|300}} to {{Materials|500}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Added {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}. Compatible with Mozambique Shotgun, [[P2020]], and [[RE-45 Auto]].
+* Reduced {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} multiplier from ×2.4 to ×1.35.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|125}} to {{Materials|150}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|200}} to {{Materials|250}}.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Increased magazine size from 4 to 6.
+* Moved the lower 2 pellets inward in the blast pattern.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+
+
+; April 1, 2021
+* Replaced all Mozambiques with an [[/April Fools'|April Fools']] version for one day only.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} for one day only.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapons|{{Legendary|Fully Kitted}}]] Mozambique Shotgun optics can now be removed and replaced with any other compatible one.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 8}}.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[August 18, 2020 Patch]]
+* Increased magazine size from 3 to 4.
+
+
+; April 1, 2020
+* Replaced all Mozambiques with an [[/April Fools'|April Fools']] version for one day only.
+* Removed {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} for one day only.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Reduced pattern spread.
+* Recoil reset will be faster, which should make it easier to track targets and see where shots land.
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}. Compatible with Mozambique Shotgun and [[P2020]].
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 2}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+Mozambique_hip_fired.png|Mozambique bullet spread when hip fired.
+Mozambique_ads.png|Mozambique bullet spread when aimed down sights.
+Mozambique Concept Art.jpg|Concept art for the Mozambique.<ref>[https://www.artstation.com/artwork/GXzaLN Danny Gardner on ArtStation]</ref>
+Norse Code Mozambique Concept Art.jpg|Concept art for the {{Legendary|Norse Code}} skin.
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The name and triangular pellet pattern of the Mozambique Shotgun is a reference to the [https://en.wikipedia.org/wiki/Mozambique_Drill Mozambique Drill] technique of shooting someone twice in the chest and once in the head.
+** [[Bangalore]] may reference this when [[Bangalore/Voice_lines#Pings|pinging]] a Mozambique.
+** The Mozambique Drill is also referenced with an {{ItemLink|Anniversary}} event challenge of the same name.
+* Requesting optics for the Mozambique will result in the Legend asking for pistol optics, instead of shotgun ones, despite the weapon being classified as a shotgun.
+** The Mozambique being a pistol was also further supported by {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}, which are shown to be compatible with "pistols, except the [[Wingman]]".
+* Since the game has been released, the Mozambique has become a popular [[wikipedia:meme|meme]] among players due to it being hardly ever useful in fights because of the low damage output and the very slow time to kill; the weapon is also memed for the line ''Mozambique here!'', said by all [[Legends]] when pinging one, with players especially mimicking [[Lifeline]] because of her unique accent. Even after the various buffs the Mozambique received through the [[Seasons]] to the point of becoming a far more viable weapon than it was originally, the meme is still popular to this day.
+** [[Respawn Entertainment]] themselves officially acknowledged the existence of this meme during the second {{ItemLink|Anniversary}} of the game, by adding a {{ItemLink|Charm|text=Weapon Charm}} as well as a {{ItemLink|Badge}}.
+** During April Fools' 2023, pinging any weapon (except the Mozambique) would transorm it into a random April Fools' variant of the Mozambique based on its original ammo type, essentially rendering impossible to ping other weapons than the Mozambique. During the same say, most [[Map Features]] such as [[Door]]s and [[Zipline]]s also served the same fate, replacing themselves with Mozambiques once pinged.
+** When Lifeline's special inspect animation with akimbo Mozambiques is triggered, she references the meme.
+* During the {{ItemLink|Preseason}} and {{ItemLink|Season 1}}, the Mozambique had a unique drop animation where the Legends would forcefully throw it on the ground instead of simply letting the weapon fall. It has been removed in {{ItemLink|Season 2}}.
+* Lifeline, [[Mad Maggie]], and [[Alter]] have some unique animations for the Mozambique as following:
+** Maggie has Mozambique akimbo tactical reload and full reload animations.
+** Lifeline has a unique inspect animation for akimbo Mozambiques, referencing the popular meme involving her and the gun.
+** Alter has her own second Mozambique pickup or Mozambique Akimbo animation, using her cybernetic tail to pick up the second gun, as well as an occasional voiceline.
+<br>
+<br>
+== See also ==
+* [[Mozambique Shotgun (Mobile)|Mozambique (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/SA-3_Mozambique SA-3 Mozambique (''Titanfall 2'')]
+
+
+{{Nav-Weapons}}
+[[pt-br:Mozambique]]

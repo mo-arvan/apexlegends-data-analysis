@@ -1,0 +1,31 @@
+{
+  "title": "RE-45 Burst",
+  "infobox": {
+    "name": "RE-45 Burst",
+    "description": "Auto-trigger 3-round burst charge pistol.",
+    "icon": "x25px",
+    "type": "Pistol",
+    "fireModes": "Burst (3)",
+    "ammoType": "Energy Ammo",
+    "creator": "{{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}While it is stated that this weapon is from Ballistics private collection, it is unclear who made the conversion. The Chassis was made by Paradinha Arsenal, however a conversion from Full Auto to Burst, as well as utilising a different ammo type, requires extensive modification to the internals, which may have been done by a third party.",
+    "barrel": "laser",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "",
+    "hopup": "",
+    "damageBody": "17",
+    "damageHead": "21",
+    "damageLegs": "15",
+    "rateOfFire": "???",
+    "dps": "???",
+    "magazineSize": [
+      "15",
+      "18",
+      "21",
+      "27"
+    ],
+    "tacReload": "1.5",
+    "fullReload": "1.95",
+    "image": "RE-45 Auto.png"
+  }
+}

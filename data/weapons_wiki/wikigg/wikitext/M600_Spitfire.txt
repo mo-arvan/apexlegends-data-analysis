@@ -1,0 +1,483 @@
+{{Tabs|
+{{Tabs1|M600 Spitfire|Main}}
+{{Tabs2|M600 Spitfire/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = M600 Spitfire
+| description = Full-auto LMG.
+| type = Light Machine Gun
+| fireModes = [[File:Auto Icon.svg|25px|link=]] Auto
+| ammoType = Light Rounds
+| creator = [[File:Siwhan Industries.svg|25px|link=]] [[Siwhan Industries]]
+| barrel = stabilizer
+| magType = light
+| optics = true
+| stock = standard
+| hopup = gun_shield
+| damageBody = 21
+| damageHead = 26
+| damageLegs = 18
+| rateOfFire = 540
+| dps = 189
+| magazineSize = {{Level0123|35|40|45|50}}
+| tacReload = {{Level0123|3.4|3.29|3.17|3.06}}
+| fullReload = {{Level0123|4.2|4.06|3.92|3.78}}
+}}
+The '''M600 Spitfire''', or '''Spitfire''', is a fully-automatic [[light machine gun]] that utilizes {{ItemLink|Light Rounds}}. Its hipfire accuracy gradually increases the longer it is continuously fired.
+
+The Spitfire can be enhanced with {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}}, which creates a shield that absorbs up to 40 damage when aiming down sights with the weapon.
+
+Being an LMG, the Spitfire is affected by [[Rampart]]'s {{AbilityLink|Modded Loader}} Passive ability.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} 
+
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}}
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 21
+| headshotMdfr = 1.25
+| legMdfr = 0.85
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_lmg</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 9
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 27500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 697 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 2250
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 57 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 6.2
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 6.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 4
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 8
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.45
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.75
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.65
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.6
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.34
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.3
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.4
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''Spitfire'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Spitfire'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''200''' enemies while ADS with the '''Spitfire'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''250''' enemies with '''50''' meters away with the '''Spitfire'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''700''' enemies with the '''Spitfire'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The Spitfire has seen a great resurgence in the years since the Frontier War. Once an essential squad-support weapon, the advent of Titan warfare saw its role diminish, as it could neither pierce a Titan's armor or effectively track fast-moving Pilots. However, when regional conflicts escalated in the early years of the Outlands, the Spitfire was rediscovered and prized for providing consistently accurate, uninterrupted fire.}}
+
+The M600 Spitfire Mk3 is a light machine gun manufactured by [[Siwhan Industries]]. Descended from the [[Frontier War]]-era Mk1 and Mk2, the design and operation of the Mk3 seems to be a mix of both of its ancestors, retaining the gas operated, rotating bolt locking mechanism of the Mk1 but using the light composite frame of the Mk2. Improvements to initial recoil and accuracy makes it a good weapon for sustained suppressive fire.
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|31}}
+{{#vardefine:epicskin|23}}
+{{#vardefine:rareskin|36}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+<tabber>
+Legendary=
+<gallery widths="290px" heights="160px" mode="nolines">
+Flying Warhawk Spitfire.png|{{Legendary|Flying Warhawk}}<br/>{{CraftingMetals|1,200}}
+Original Marauder Spitfire.png|{{Legendary|Original Marauder}}<br/>{{CraftingMetals|1,200}}
+The Continuum Spitfire.png|{{Legendary|The Continuum}}<br/>{{CraftingMetals|1,200}}
+The Heavy Construct Spitfire.png|{{Legendary|The Heavy Construct}}<br/>{{CraftingMetals|1,200}}
+Copper Claw Spitfire.png|{{Cosmetic|Monsters Within|Legendary|Copper Claw}}<br/>{{CraftingMetals|1,200}}
+Sea Stalker Spitfire.png|{{Cosmetic|Dark Depths|Legendary|Sea Stalker}}</br>{{CraftingMetals|1,200}}
+Ground Control Spitfire.png|{{Cosmetic-NI|Recolor|Legendary|Ground Control}}<br>Needs {{Legendary|Flying Warhawk}}
+Bone SAW Spitfire.png|{{Cosmetic|Legendary Hunt|Legendary|Bone SAW}}<br>{{#var:ac1}}
+The Intimidator Spitfire.png|{{Cosmetic|Season 2|Legendary|The Intimidator}}<br/>Level 1
+The Superconductor Spitfire.png|{{Cosmetic-NI|Recolor|Legendary|The Superconductor}}<br/>Needs {{Legendary|The Heavy Construct}}
+Cerulean Bandit Spitfire.png|{{Cosmetic-NI|Recolor|Legendary|Cerulean Bandit}}<br/>Needs {{Legendary|Original Marauder}}
+Endless Countdown Spitfire.png|{{Cosmetic|Grand Soirée|Legendary|Endless Countdown}}<br>{{#var:ac1}}
+Child's Play Spitfire.png|{{Cosmetic-NI|Recolor|Legendary|Child's Play}}</br>Needs {{Legendary|The Continuum}}
+Metal Maw Spitfire.png|{{Cosmetic-NI|Recolor|Legendary|Metal Maw}}</br>Needs {{Legendary|Flying Warhawk}}
+Casket Decor Spitfire.png|{{Cosmetic|Lost Treasures|Legendary|Casket Decor}}<br>{{#var:ac1}}
+Frozen Fury Spitfire.png|{{Cosmetic|Holo-Day Bash 2020|Legendary|Frozen Fury}}<br>{{#var:ac1}}
+Demon's Claw Spitfire.png|{{Cosmetic|Anniversary|Legendary|Demon's Claw}}<br>{{#var:ac1}}
+Pharoah's Fire Spitfire.png|{{Cosmetic|Chaos Theory|Legendary|{{Texttip|Pharoah's|sic}} Fire}}<br>{{#var:ac1}}
+Way of the Serpent Spitfire.png|{{Cosmetic|season 9|Legendary|Way of the Serpent}}<br/>Level 1
+Winter Soul Spitfire.png|{{Cosmetic|Season 13|Legendary|Winter Soul}}<br>Level 100<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref>
+Molten Soul Spitfire.png|{{Cosmetic|Season 13|Legendary|Molten Soul}}<br>Level 110<ref group="note" name="reactive"/>
+Arcane Intervention Spitfire.png|{{Cosmetic|Spellbound|Legendary|Arcane Intervention}}<br>{{#var:ac1}}
+Belle of the Ball Spitfire.png|{{Cosmetic|Veiled|Legendary|Belle of the Ball}}<br>{{#var:ac1}}
+High Roller Spitfire.png|{{Cosmetic|Dressed to Kill|Legendary|High Roller}}<br>{{#var:ac1}}
+Pathblazer Spitfire.png|{{Cosmetic|Doppelgangers|Legendary|Pathblazer}}<br>{{#var:ac1}}
+Fearless Leader Spitfire.png|{{Cosmetic|Final Fantasy VII|Legendary|Fearless Leader}}
+Ferocious Bite Spitfire.png|{{Cosmetic|Inner Beast|Legendary|Ferocious Bite}}<br>{{#var:ac1}}
+Volcano Powered Spitfire.png|[[File:Sale Icon.svg|22px|link=Molten Mayhem Store]] {{Legendary|Volcano Powered}}
+Silver Stinger Spitfire.png|{{Cosmetic|Techno Terror|Legendary|Silver Stinger}}<br>{{#var:ac1}}
+Ice Machine Spitfire.png|{{Cosmetic|Winter's Haunt|Legendary|Ice Machine}}
+K-Love Spitfire.png|{{Symbol|S27}} {{Legendary|K-Love}} <br> Split 1 Premium Lv 30
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="160px" mode="nolines">
+Eye of the Storm Spitfire.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Spitfire.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Spitfire.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Spitfire.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Spitfire.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Ghoulish Garden Spitfire.png|{{Cosmetic|Fight or Fright 2019|Epic|Ghoulish Garden}}<br>{{#var:ac2}}
+Cyberstripe Spitfire.png|{{Cosmetic|System Override|Epic|Cyberstripe}}<br>{{#var:ac2}}
+Bad Mojo Spitfire.png|{{Cosmetic|Season 5|Epic|Bad Mojo}}<br/>Level 99
+Team Dynamics Spitfire.png|{{Symbol|Boosted}} {{Epic|Team Dynamics}}<br>{{ItemLink|Treasure Pack|link=The First Ship|text={{Mythic|Treasure Pack #47}}}}
+Magnetic Volley Spitfire.png|{{Cosmetic|Fight Night|Epic|Magnetic Volley}}<br>{{#var:ac2}}
+Retro Soundsystem Spitfire.png|{{Cosmetic|Season 16|Epic|Retro Soundsystem}}<br/>Level 59
+Heart Attack Spitfire.png|{{Cosmetic|Anniversary|Epic|Heart Attack}}<br>{{#var:ac2}}
+Galactic Paradigm Spitfire.png|{{Cosmetic|Threat Level|Epic|Galactic Paradigm}}<br>Prize Tracker
+Dusk Detail Spitfire.png|{{Cosmetic|Neon Network|Epic|Dusk Detail}}<br>{{#var:ac2}}
+Gatekeeper Spitfire.png|{{Cosmetic|Uprising|Epic|Gatekeeper}}<br>{{#var:ac2}}
+Terminal Velocity Spitfire.png|{{Cosmetic|Shadow Society|Epic|Terminal Velocity}}<br>Week 2 - 600 pts
+Sunsetter Spitfire.png|{{Cosmetic|Urban Assault|Epic|Sunsetter}}<br>{{#var:ac2}}
+Heat of The Night Spitfire.png|{{Cosmetic|S22|Epic|Heat of The Night}}<br>Split 1 Premium - Lv 54
+Undercutter Spitfire.png|{{Cosmetic|Void Mercenaries|Epic|Undercutter}}
+Flame Spitter Spitfire.png|{{Cosmetic|Fight Force|Epic|Flame Spitter}}
+Vintage Ripper Spitfire.png|{{Cosmetic|Death by Design|Epic|Vintage Ripper}}
+Overheater Spitfire.png|{{Cosmetic|Season 24|Epic|Overheater}}<br>Split 2 Premium - Lv 26
+Champion's Tool Spitfire.png|{{Cosmetic|Season 26|Epic|Champion's Tool}}<br>Split 1 Premium - Lv 1
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="160px" mode="nolines">
+Carnivale Spitfire.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Cold Wave Spitfire.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Spitfire.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Headgames Spitfire.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Icebreaker Spitfire.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Out for Blood Spitfire.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Paper Trail Spitfire.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Recluse Spitfire.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Solar Flare Spitfire.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Surprise Party Spitfire.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Tagged Spitfire.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Trident Spitfire.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Urban Edge Spitfire.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Warm Rave Spitfire.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Wildlands Spitfire.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Patchwork Spitfire.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 19
+Dark Ocean Spitfire.png|{{Cosmetic|Season 2|Rare|Dark Ocean}}<br/>Level 86
+Water Riptide Spitfire.png|{{Cosmetic|Season 3|Rare|Water Riptide}}<br/>Level 82
+Ice Clouds Spitfire.png|{{Cosmetic-NI|PlayStation+|Rare|Ice Clouds}}<br/>Season 3
+Citric Shield Spitfire.png|{{Cosmetic|Season 4|Rare|Citric Shield}}<br/>Level 95
+Plunder Spitfire.png|{{Cosmetic|Season 5|Rare|Plunder}}<br/>Level 99
+Abstract Spitfire.png|{{Cosmetic|Season 6|Rare|Abstract}}<br/>Level 55
+Borealis Spitfire.png|{{Cosmetic|Season 7|Rare|Borealis}}<br/>Level 71
+Tangerine Dreams Spitfire.png|{{Cosmetic|Season 8|Rare|Tangerine Dreams}}<br/>Level 88
+Cherry Dreams Spitfire.png|{{Cosmetic|Season 9|Rare|Cherry Dreams}}<br/>Level 75
+Snap Decision Spitfire.png|{{Cosmetic|Season 10|Rare|Snap Decision}}<br/>Level 75
+Cover Fire Spitfire.png|{{Cosmetic|Season 11|Rare|Cover Fire}}<br/>Level 28
+Golden Touch Spitfire.png|{{Cosmetic|PlayStation+|Rare|Golden Touch}}<br>Season 12
+Knockdown Rounds Spitfire.png|{{Cosmetic|Season 14|Rare|Knockdown Rounds}}<br/>Level 73
+Knives Out Spitfire.png|{{Cosmetic|Season 15|Rare|Knives Out}}<br/>Level 34
+All Rounder Spitfire.png|{{Cosmetic-NI|Prime|Rare|All Rounder}}<br/>January 2023
+Orange Slice Spitfire.png|{{Cosmetic|Season 17|Rare|Orange Slice}}<br/>Level 10
+Face Off Spitfire.png|{{Cosmetic|Season 18|Rare|Face Off}}<br/>Level 44
+Gilded Wings Spitfire.png|{{Symbol|Season 19}} {{Rare|Gilded Wings}}<br>Level 52
+Dire Attack Spitfire.png|{{Symbol|Season 20}} {{Rare|Dire Attack}}<br>Level 26
+Tech Takeover Spitfire.png|{{Symbol|Season 21}} {{Rare|Tech Takeover}}<br>Level 10
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="160px" mode="nolines">
+Factory Issue Spitfire.png|{{Common|Factory Issue}}<br/>Default
+Midnight Spitfire.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Spitfire.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Spitfire.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Spitfire.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Spitfire.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Spitfire.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Spitfire.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Spitfire.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Spitfire.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Spitfire.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Spitfire.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Spitfire.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Spitfire.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Spitfire.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Spitfire.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 21 (was 19).
+* Headshot damage: 26.
+
+
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Increased damage from 18 to 19.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Added Reverse Hipfire function.
+** Increased hipfire spread while standing from 3 to 5.
+** Increased hipfire spread while moving from 4.2 to 6.2.
+** Increased hipfire spread while running from 4.5 to 6.5.
+** Increased hipfire spread while crouching from 2 to 4.
+** Increased hipfire spread while airborne from 6 to 8.
+** Reduced hipfire spread added on fire while standing from 0.25 to -0.2858.
+** Reduced hipfire spread added on fire while crouching from 0.25 to -0.2858.
+** Reduced hipfire spread added on fire while airborne from 0.25 to -0.1.
+** Lowest hipfire spread radius is -4.
+* Introduced {{ItemLink|Gun Shield Generator|text={{Legendary|Gun Shield Generator}}}}. Compatible with [[Devotion LMG]], [[L-STAR EMG]], M600 Spitfire, [[Rampage LMG]].
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Added {{ItemLink|Barrel Stabilizer}} compatibility.
+* Reduced recoil while ADS.
+* Reduced hipfire spread when standing from 4.5 to 3.
+* Reduced hipfire spread when crouching from 2.75 to 2.
+* Reduced hipfire spread when moving from 6.5 to 4.2.
+* Reduced hipfire spread when running from 7.5 to 4.5.
+* Reduced hipfire spread when in midair from 7.5 to 6.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 17}}.
+
+
+; {{ItemLink|Spellbound|noText=yes}} [[January 10, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Changed ammo type from {{ItemLink|Heavy Rounds|text=Heavy}} to {{ItemLink|Light Rounds|text=Light}}.
+* Increased vertical recoil.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Reduced {{ItemLink|Extended Heavy Mag|text={{Epic|Extended Heavy Mag}}}} size from 55 to 50.
+* Reduced damage from 19 to 18.
+* Reduced headshot multiplier from ×1.75 to ×1.5.
+* Increased tac reload time from 3.2 to 3.4.
+* Reduced distance upon which headshots can no longer be scored from 64m to 57m.
+* Increased draw time from 0.7 to 0.8.
+* Increased holster time from 0.65 to 0.75.
+* Increased raise time from 0.55 to 0.65.
+* Increased lower time from 0.5 to 0.6.
+* Increased hipfire spread when crouching from 1.75 to 2.75.
+* ('''Undocumented''') Increased full reload time from 3.8 to 4.2.
+* ('''Undocumented''') Increased hipfire spread when standing from 2.5 to 4.5.
+* ('''Undocumented''') Increased hipfire spread when moving from 3 to 6.5.
+* ('''Undocumented''') Increased hipfire spread when running from 3.5 to 7.5.
+* ('''Undocumented''') Increased hipfire spread when in midair from 5 to 7.5.
+* ('''Undocumented''') Increased pitch drift while aiming downsights from 0.4 to 0.5.
+* ('''Undocumented''') Increased yaw drift while aiming downsights from 0.3 to 0.4.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* ('''Undocumented''') Changed pre-equipped {{ItemLink|Barrel Stabilizer}} rarity from {{Legendary}} to {{Epic}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 300 {{ItemLink|Mythic Heavy Rounds|text=Ammo}}.
+* Increased damage from 18 to 19.
+* Increased {{ItemLink|Extended Heavy Mag|text={{Epic|Extended Heavy Mag}}}} size from 50 to 55.
+* Reduced headshot multiplier from ×2 to ×1.75.
+* Increased legshot multiplier from ×0.75 to ×0.85.
+* Reduced hipfire spread to match {{ItemLink|Season 8}}'s status.
+
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* Increased hipfire spread.
+* Updated reload animations for [[Rampart]].
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|550}} to {{Materials|600}}.
+
+
+; [[May 11, 2021 Patch]]
+* Reduced damage from 19 to 18.
+* Reduced {{ItemLink|Extended Heavy Mag|text={{Epic|Extended Heavy Mag}}}} size from 55 to 50.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Increased recoil in the early stages of the pattern.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapons|{{Legendary|Fully Kitted}}]] Spitfire now has the {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG "Bruiser"}}}} optic instead of the {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}, which can also be removed and/or replaced with any other compatible optic.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Increased damage from 18 to 19.
+* Increased tac reload time from 2.8 to 3.2 seconds.
+* Increased full reload time from 3.33 to 3.8 seconds.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 8}}.
+
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Increased hipfire spread at a base level and also increased the spread added while firing.
+* Reduced horizontal recoil.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Reduced recoil.
+
+
+; August 11, 2020
+* Introduced {{ItemLink|Graffiti Mod|text={{Common|Graffiti Mod}}}} in [[Always Be Closing Evolved]]. Compatible with the M600 Spitfire.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 5}}.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+
+
+; [[April 16, 2019 Patch]]
+* Reduced damage from 20 to 18.
+* Reduced magazine size from {{Level0123|35|45|55|60}} to {{Level0123|35|40|45|55}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Danny Gardner The Continuum.jpg|Concept art for {{Legendary|The Continuum}} skin by Danny Gardner.<ref>[https://www.artstation.com/artwork/DxN5oy Danny Gardner on ArtStation]</ref>
+Frozen Fury Spitfire Concept Art.jpg|Concept art for the {{Legendary|Frozen Fury}} skin.<ref>[https://www.artstation.com/artwork/RnEGJD Gadget-Bot on ArtStation]</ref>
+Casket Decor Spitfire Concept Art.jpg|Concept art for the {{Legendary|Casket Decor}} skin.
+Sea Stalker Spitfire Concept Art.jpg|Concept art for the {{Legendary|Sea Stalker}} skin.<ref>[https://www.artstation.com/artwork/NGae5J Gadget-Bot on ArtStation]</ref>
+Way of the Serpent Spitfire Concept Art.jpg|Concept art for the {{Legendary|Way of the Serpent}} skin.<ref>[https://www.artstation.com/artwork/8eQ3Vm Gadget-Bot on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The Spitfire's icon lacks iron sights.
+<br>
+<br>
+== See also ==
+* [https://titanfall.wiki.gg/wiki/Spitfire_LMG Spitfire LMG (''Titanfall'')]
+* [https://titanfall.wiki.gg/wiki/Spitfire_LMG#Titanfall_2 Spitfire MK2 (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

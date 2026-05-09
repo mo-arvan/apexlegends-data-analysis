@@ -1,0 +1,287 @@
+{{MainGameNotice|mobilePage=Kraber .50-Cal Sniper (Mobile)}}
+{{Infobox-Weapon
+| name = Kraber .50-Cal Sniper
+| description = Powerful bolt-action sniper rifle.
+| type = Sniper
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Mythic Sniper Ammo
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| damageBody = 140
+| damageHead = 280 <small>(2×)</small>
+| damageLegs = 112 <small>(0.8×)</small>
+| rateOfFire = 25
+| dps = 58
+| magazineSize = 4
+| tacReload = 3.2
+| fullReload = 4.3
+}}
+
+The '''Kraber .50-Cal Sniper''', or '''Kraber''', is a bolt-action [[sniper rifle]] that utilizes {{ItemLink|Mythic Sniper Ammo}}.
+
+Being a [[Supply Drop Weapon|{{Mythic|Supply Drop Weapon}}]], it can only be found in [[Care Package]]s and cannot equip foreign ammo. It also comes pre-equipped with 12 {{ItemLink|Mythic Sniper Ammo|text=Ammo}} and a unique {{Mythic|6x-10x Variable Sniper}} optic.
+
+== Stats ==
+=== Damage Profile ===
+{{Damage profile
+| damage = 140
+| headshotMdfr = 2
+| legMdfr = 0.8
+}}
+<references group="note" />
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_sniper</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 1.2
+| Rounds fired in one second.
+|-
+| rechamber_time
+| style="text-align:center" | 1.6
+| Time delay between two shots. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 29500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 749 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 29528
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 750 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 8
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 10
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 11
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 10
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.5
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 1.2
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.8
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.55
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.8
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.58
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.55
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.35
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Efficiency''
+| style="text-align:left" | Deal at least 500 damage with one magazine.
+| 20 times
+|-
+| 40
+| ''1 Shot 1 Kill''
+| style="text-align:left" | Down an enemy in 1 shot.
+| 10 times
+|-
+| 60
+| ''Happy Birthday''
+| style="text-align:left" | Land one shot on 2 different enemies.
+| 10 times
+|-
+| 80
+| ''Gooser''
+| style="text-align:left" | Down a skydiving enemy with the Kraber.
+| 5 times
+|-
+| 100
+| ''Get the Camera''
+| style="text-align:left" | Down an enemy with 360 No Scope.
+| 3 times
+|}
+
+
+== Lore ==
+{{Quote|The original [[tf:Kraber-AP Sniper|Kraber-AP sniper rifle]] was designed to take down slow-moving military vehicles. Its successor, the Kraber .50-Cal, packs the same kind of power against much smaller targets. A single long-range shot can down a human target. A close-range shot, while significantly harder to land, will obliterate them.}}
+
+
+== Skins ==
+There are a total of 59 skins for Kraber .50-Cal Sniper: 10 {{Legendary}}, 5 {{Epic}}, 28 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+The Snowpiercer Kraber.png|{{Legendary|The Snowpiercer}}<br/>{{CraftingMetals|1,200}}
+The Life Saver Kraber.png|{{Legendary|The Life Saver}}<br/>{{CraftingMetals|1,200}}
+The Pioneer Kraber.png|{{Cosmetic|Voidwalker|Legendary|The Pioneer}}<br/>{{CraftingMetals|1,200}}
+The SOS Kraber.png|{{Cosmetic-NI|Recolor|Legendary|The SOS}}<br/>Needs {{Legendary|The Snowpiercer}}
+Life of the Party Kraber.png|{{Cosmetic-NI|Recolor|Legendary|Life of the Party}}<br/>Needs {{Legendary|The Life Saver}}
+Rescue Effort Kraber.png|{{Cosmetic-NI|Recolor|Legendary|Rescue Effort}}<br/>Needs {{Legendary|The Snowpiercer}}
+Survival Instinct Kraber.png|{{Cosmetic-NI|Recolor|Legendary|Survival Instinct}}<br/>Needs {{Legendary|The Life Saver}}
+Wasteland Finery Kraber.png|{{Cosmetic-NI|Recolor|Legendary|Wasteland Finery}}<br/>Needs {{Legendary|The Pioneer}}
+Ronin's Arrow Kraber.png|{{Cosmetic|Chaos Theory|Legendary|Ronin’s Arrow}}
+Soul Splitter Kraber.png|{{Cosmetic|Imperial Guard|Legendary|Soul Splitter}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Kraber.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Kraber.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Kraber.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Kraber.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Kraber.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Solstice Kraber.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Warlord Kraber.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Shockwave Kraber.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Fun Fair Kraber.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Rock Bed Kraber.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Kaleidoscope Kraber.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork Kraber.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither Kraber.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug Kraber.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy Kraber.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile Kraber.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef Kraber.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Morning Dew Kraber.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos Kraber.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Zeal Kraber.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest Kraber.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 29
+Contour Kraber.png|{{Cosmetic|Season 2|Rare|Contour}}<br/>Level 36
+Night Watch Kraber.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Night Watch}}<br/>September 2019
+Frozen Tundra Kraber.png|{{Cosmetic|Season 3|Rare|Frozen Tundra}}<br/>Level 58
+Sapphire Protection Kraber.png|{{Cosmetic|Season 4|Rare|Sapphire Protection}}<br/>Level 11
+Magma Might Kraber.png|{{Cosmetic|Season 5|Rare|Magma Might}}<br/>Level 07
+Outside Groove Kraber.png|{{Cosmetic|Season 6|Rare|Outside Groove}}<br/>Level 82
+Strong Influence Kraber.png|{{Cosmetic|Season 7|Rare|Strong Influence}}<br/>Level 09
+Heatstroke Kraber.png|{{Cosmetic|Season 8|Rare|Heatstroke}}<br/>Level 52
+Autumn Wind Kraber.png|{{Cosmetic|Season 9|Rare|Autumn Wind}}<br/>Level 34
+King Kraber Kraber.png|{{Cosmetic|Season 11|Rare|King Kraber}}<br/>Level 66
+Regal Seals Kraber.png|{{Cosmetic|Season 13|Rare|Regal Seals}}<br/>Level 27
+The Dopple Gang Kraber.png|{{Cosmetic|Season 18|Rare|The Dopple Gang}}<br/>Level 08
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Kraber.png|{{Common|Factory Issue}}<br/>Default
+Midnight Kraber.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Kraber.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Kraber.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Kraber.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Kraber.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Kraber.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Kraber.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Kraber.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Kraber.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Kraber.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Kraber.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Kraber.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Kraber.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Kraber.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Kraber.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* ('''Undocumented''') Changed pickup animation.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Reduced damage from 145 to 140.
+* Reduced headshot multiplier from 3× to 2×.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Adjusted spawn rates in [[Care Package]]s. Now spawns more often during Round 2.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Changed rarity from {{Legendary}} to {{Mythic}}.
+
+; {{ItemLink|The Old Ways|noText=yes}} [[April 07, 2020 Patch]]
+* Increased headshot multiplier from 2.05× to 3×.
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 2|noText=no}} [[July 02, 2019 Patch]]
+* Increased damage from 125 to 145.
+* Increased headshot multiplier from 2× to 2.05×.
+* Increased legshot multiplier from 0.76× to 0.8×.
+* Adjusted spawn rates in [[Care Package]]s. Now spawns more often during Round 1.
+
+; [[February 22, 2019 Patch]]
+* Fixed an exploit where players could refill ammo in the inventory screen.
+}}
+
+
+== Trivia ==
+* The Kraber is named after Erik Kraber, a Senior Audio Director at [[Respawn Entertainment]].
+* The Kraber is the only weapon to have never been removed from the [[Care Package]] loot pool.
+
+
+== See also ==
+* [[Kraber .50-Cal Sniper (Mobile)|Kraber (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/Kraber-AP_Sniper Kraber-AP Sniper (''Titanfall'' and ''Titanfall 2'')]
+
+{{Nav-Weapons}}

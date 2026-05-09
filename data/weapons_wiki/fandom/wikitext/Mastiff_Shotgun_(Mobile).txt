@@ -1,0 +1,147 @@
+{{MobileGameNotice|mainPage=Mastiff Shotgun}}
+{{Infobox weapon
+| name = Mastiff Shotgun
+| image = Mastiff Shotgun.png
+| description = Powerful semi-auto shotgun.
+| type = Shotgun
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Shotgun Shells
+| rateOfFire = {{Level0123|60|72|80|87}}
+| projectileSpeed = 16000
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| optics = true
+| magType = bolt
+| totalCost = 1050
+| damageBody = 104 (13×8)
+| damageHead = 136 (17×8) 
+| damageLegs = 104 (13×8)
+| dps = {{Level0123|104|125|139|151}}
+| magazineSize = 8
+| tacReload = 1.03 sec/bullet
+| fullreload = ???
+| ADSspeed = 10
+}}
+The '''Mastiff Shotgun''', or '''Mastiff''', is a semi-automatic [[shotgun]] that utilizes {{ItemLink|Shotgun Shells}}. It fires 8 pellets in the shape of a horizontal line, which decreases in width while aiming down the sights, reducing the spread and thus increasing accuracy.
+
+==Stats==
+=== Attachments ===
+;[[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+=== Damage profile ===
+{{Damage profile
+|damageref=<ref group=note> Shotgun damage is calculated per pellet.<br/>Correct: 11 dmg/pellet x 1.25 = 13.75 dmg/pellet ≈ 14 dmg/pellet, resulting in 112 damage total.<br/>Incorrect: 88 dmg x 1.25 = 110 dmg.</ref>
+| damage = 14
+| bulletsPerBurst = 8
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+* Fortified head shot damages may vary ±8. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.
+
+===Arenas===
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" |Attachment
+! style="width:75px;" |{{Common|★}}
+! style="width:75px;" |{{Rare|★★}}
+! style="width:75px;" |{{Epic|★★★}}
+! style="width:75px;" |{{Legendary|★★★★}}
+|-
+| style="text-align:left;" |{{ItemLink|Shotgun Bolt}}
+| style="background-color:#a8a8a8" |✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" |✔
+| style="background-color:#b237c8" |✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ ||
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔|| ✔ ||
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔|| ✔ ||
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG “Bruiser”}}}} || || ✔ || ✔ ||
+|-
+| style="text-align:left;" | {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|-
+| style="text-align:left;" | {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}} || || || ✔ || ✔
+|}
+
+== Pros and cons ==
+; Pros
+*High damage per shot.
+*Players without a {{Mythic|Level 5}} {{ItemLink|Evo Shield}} can be downed in two shots, making the time-to-kill incredibly low.
+*1× leg shot multiplier.
+*Aiming down the sights reduces spread.
+*Ability to reload bullets between shots.
+
+; Cons
+*Animation between shots obscures vision.
+*1× head shot multiplier at 38+ meters.
+*Hipfire has increased spread.
+**This increased spread can however increase the likelihood of shots connecting.
+*Slowest empty reload of all shotguns due to each shell being loaded individually.
+<!--*Full reload takes ??? seconds.-->
+
+== Lore ==
+The M1901 Mastiff Combat Shotgun was developed specifically for low-gravity close-quarters engagements. The kinetic energy produced when fired in low-gravity can severely unbalance its user with massive recoil, so the engineers at [[Lastimosa Armory]] incorporated a muzzle velocity dampening system which mitigates that energy and greatly reduces recoil.
+
+Intended for low to zero gravity ship boarding and clearing operations, the Mastiff gained notoriety throughout [[The Frontier]] as a reliable and devastating combat shotgun. Shells can be fed through the under-mounted magazine or with the optional drum magazine upgrade. Troops from the [[IMC | IMC's]] 401st often refer to it as the "Mobile Claymore" as its high rate of fire proved to be devastating.<ref name="ArtStation">[https://www.artstation.com/artwork/l5zGV Ryan Lastimosa on ArtStation]</ref>
+
+== Skins ==
+There are a total of 12 skins for the Mastiff Shotgun: 1 {{Eternal}}, 3 {{Legendary}}, 4 {{Epic}}, 3 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Minotaur Massacre Mastiff Mobile.png|{{Eternal|Minotaur Massacre}}
+</gallery>
+|-|
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Danger Secured Mastiff Mobile.jpg|{{Legendary|Danger Secured}}<br/>[[Heat Wave]]
+Viridian Array Mastiff Mobile.jpg|{{Legendary|Viridian Array}}<br/>[[Neon Rebellion]]
+Violet Meter Mastiff Mobile.jpg|{{Symbol|s2.5m}} {{Legendary|Violet Meter}}<br/>Level 1
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Carnival Complex Mastiff Mobile.png|{{Epic|Carnival Complex}}
+Helmet Plume Mastiff Mobile.png|{{Epic|Helmet Plume}}<br/>[[Royal Regiment]]
+</gallery>
+* {{Epic|Ion Discharge}}
+* {{Epic|Burnished Frame}}
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Lily Pad Mastiff Mobile.png|{{Rare|Lily Pad}}<br/>{{SG|290}}
+Vital Pulse Mastiff Mobile.jpg|{{Rare|Vital Pulse}}<br/>[[Rhapsody's Underground]]
+Topaz Mirror Mastiff Mobile.png|{{Rare|Topaz Mirror}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Mastiff Mobile.jpg|{{Common|Factory Issue}}<br/>
+</gallery>
+</tabber>
+
+== Trivia ==
+* The Mastiff is one of only two guns in the game to reload one bullet at a time, the other one being the [[30-30 Repeater (Mobile)|30-30]].
+
+== References ==
+<references/>
+
+{{Nav-MobileWeapons}}
+
+[[Category:Shotguns]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

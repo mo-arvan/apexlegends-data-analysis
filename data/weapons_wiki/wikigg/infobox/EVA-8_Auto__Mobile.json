@@ -1,0 +1,32 @@
+{
+  "title": "EVA-8 Auto/Mobile",
+  "infobox": {
+    "name": "EVA-8 Auto",
+    "description": "Full-auto shotgun.  Shoot two bullets with a single pull of the trigger after being equipped with Double-tap Trigger.",
+    "type": "Shotgun",
+    "fireModes": "Auto  Burst (2)",
+    "ammoType": "Shotgun Shells",
+    "creator": "Wonyeon",
+    "magType": "bolt",
+    "optics": "true",
+    "hopup": "double_tap",
+    "damageBody": "7×9",
+    "damageHead": "9×9 (1.25×)",
+    "damageLegs": "7×9",
+    "rateOfFire": [
+      "120",
+      "138",
+      "150",
+      "162"
+    ],
+    "dps": [
+      "108",
+      "124",
+      "135",
+      "146"
+    ],
+    "magazineSize": "10",
+    "tacReload": "2.5 seconds",
+    "fullReload": "2.8 seconds"
+  }
+}

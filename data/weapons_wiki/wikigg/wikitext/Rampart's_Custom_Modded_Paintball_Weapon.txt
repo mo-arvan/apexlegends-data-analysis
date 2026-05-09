@@ -1,0 +1,143 @@
+{{Game|main}}
+
+'''Rampart's Custom Modded Paintball Weapons''',<ref>[https://www.ea.com/games/apex-legends/news/evolution-collection-event Evolution Collection Event Patch Notes]</ref> also referred to as '''Rampart Specials''', are variants of [[Fully Kitted Weapons]] equipped with the {{ItemLink|Splatter Rounds}} Hop-Up, which increases their reload speed by 25% and applies a purely cosmetic paintball-like effect on projectiles, varying between yellow, purple, and green randomly.
+
+Like Fully Kitted Weapons, optics can be removed and/or switched with other compatible optics, and the other [[attachments]]' rarity match the rarity of the weapon when possible. Rampart Specials also feature the typical Fully Kitted Weapons HUD look, with a number of stars based on the rarity of the weapon, but with the addition of paint splatters. The splatters are also present when viewing a Rampart Special through the inventory.
+
+Unlike Battle Royale's seasonal Fully Kitted Weapons, Rampart Specials are exclusive to [[Big Maude]]'s Vend-It Machines located on [[World's Edge]] and come in various rarities. Also, due to already being equipped with the {{ItemLink|Splatter Rounds}} Hop-Up, other Hop-Ups that a weapon can possibly have are overridden. Players can only take one weapon, and all Vend-It Machines will require some time to dispense their weapon.
+
+Rampart Specials can be stolen by [[Loba]] when using a {{AbilityLink|Black Market Boutique}}. Stealing one however triggers an alarm on Big Maude and the Black Market gets destroyed, dealing 10 damage to everyone near it.
+
+Buying or stealing a Rampart Special will trigger an announcement in the shopping area by a voice clip recorded by [[Rampart]]. Attempting to take a second one also triggers a voice clip from Rampart.
+
+Rampart Specials are not available in the Vend-it Machines during the [[Armed and Dangerous]] game mode.
+
+== Available weapons ==
+This is a list of all the possible Rampart's Custom Modded Paintball Weapons that can spawn on Big Maude. Two weapons of each rarity will spawn everytime the map is loaded, and the weapons can be duplicates ({{Texttip|e.g.|for example}} two [[R-301 Carbine|{{Legendary|R-301 Carbines}}]] may spawn). All weapons have the same chance of spawning.
+
+Reload time is expressed in seconds.
+
+{| class="wikitable sortable invert-image" style="text-align:center"
+! Weapon
+! Category
+! Rarity
+! Attachments
+! Tac reload time
+! Full reload time
+|-
+| [[File:R-301 Carbine Icon.svg|x35px]]<br><small>'''[[R-301 Carbine]]'''</small>
+| AR
+| {{Legendary}}
+| [[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer|20px]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:2x HCOG Bruiser.svg|20px|link=Optics|2x HCOG "Bruiser"]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.62
+| 2.16
+|-
+| [[File:Prowler Burst PDW Icon.svg|x35px]]<br><small>'''[[Prowler Burst PDW]]'''</small>
+| SMG
+| {{Legendary}}
+| [[File:Laser Sight.svg|20px|link=Laser Sight|Laser Sight|20px]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:1x Digital Threat.svg|20px|link=Optics|1x Digital Threat]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.35
+| 1.755
+|-
+| [[File:R-99 SMG Icon.svg|x35px]]<br><small>'''[[R-99 SMG]]'''</small>
+| SMG
+| {{Legendary}}
+| [[File:Laser Sight.svg|20px|link=Laser Sight|Laser Sight|20px]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:1x Digital Threat.svg|20px|link=Optics|1x Digital Threat]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.215
+| 1.658
+|-
+| [[File:Longbow DMR Icon.svg|x35px]]<br><small>'''[[Longbow DMR]]'''</small>
+| Sniper
+| {{Legendary}}
+| [[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer|20px]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:4x-10x Digital Sniper Threat.svg|20px|link=Optics|4x-10x Digital Sniper Threat]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|Sniper Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.793
+| 2.468
+|-
+| [[File:VK-47 Flatline Icon.svg|x35px]]<br><small>'''[[VK-47 Flatline]]'''</small>
+| AR
+| {{Epic}}
+| [[File:Spacing.png|20px]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:2x HCOG Bruiser.svg|20px|link=Optics|2x HCOG "Bruiser"]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.62
+| 2.093
+|-
+| [[File:30-30 Repeater Icon.svg|x35px]]<br><small>'''[[30-30 Repeater]]'''</small>
+| Marksman
+| {{Epic}}
+| [[File:Spacing.png|20px]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:2x-4x Variable AOG.svg|20px|link=Optics|2x-4x Variable AOG]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|Sniper Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 0.195 per round
+| 0.45 per round
+|-
+| [[File:EVA-8 Auto Icon.svg|x35px]]<br><small>'''[[EVA-8 Auto]]'''</small>
+| Shotgun
+| {{Epic}}
+| [[File:Spacing.png|20px]] [[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|Shotgun Bolt]] [[File:1x HCOG Classic.svg|20px|link=Optics|1x HCOG "Classic"]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.856
+| 2.025
+|-
+| rowspan="2" | [[File:M600 Spitfire Icon.svg|x35px]]<br><small>'''[[M600 Spitfire]]'''</small>
+| rowspan="2" | LMG
+| rowspan="2" | {{Epic}}
+| rowspan="2" | [[File:Spacing.png|20px]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:2x HCOG Bruiser.svg|20px|link=Optics|2x HCOG "Bruiser"]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 2.295
+| 2.835
+|-
+| {{Symbol|modded loader}} 1.725
+| {{Symbol|modded loader}} 2.13
+|-
+| [[File:RE-45 Auto Icon.svg|x35px]]<br><small>'''[[RE-45 Auto]]'''</small>
+| Pistol
+| {{Epic}}
+| [[File:Laser Sight.svg|20px|link=Laser Sight|Laser Sight|20px]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:1x HCOG Classic.svg|20px|link=Optics|1x HCOG "Classic"]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]] [[File:Spacing.png|20px]]
+| 1.125
+| 1.463
+|-
+| [[File:Wingman Icon.svg|x35px]]<br><small>'''[[Wingman]]'''</small>
+| Pistol
+| {{Epic}}
+| [[File:Extended Sniper Mag.svg|20px|link=Extended Sniper Mag|Extended Sniper Mag]] [[File:1x HCOG Classic.svg|20px|link=Optics|1x HCOG "Classic"]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| colspan="2" | 1.575
+|-
+| [[File:Hemlok Burst AR Icon.svg|x35px]]<br><small>'''[[Hemlok Burst AR]]'''</small>
+| AR
+| {{Rare}}
+| [[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer|20px]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:2x HCOG Bruiser.svg|20px|link=Optics|2x HCOG "Bruiser"]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.68
+| 1.995
+|-
+| [[File:Mozambique Shotgun Icon.svg|x35px]]<br><small>'''[[Mozambique Shotgun]]'''</small>
+| Shotgun
+| {{Rare}}
+| [[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|Shotgun Bolt]] [[File:1x HCOG Classic.svg|20px|link=Optics|1x HCOG "Classic"]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]]
+| 1.425
+| 1.8
+|-
+| [[File:P2020 Icon.svg|x35px]]<br><small>'''[[P2020]]'''</small>
+| Pistol
+| {{Rare}}
+| [[File:Laser Sight.svg|20px|link=Laser Sight|Laser Sight|20px]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:1x HCOG Classic.svg|20px|link=Optics|1x HCOG "Classic"]] [[File:Splatter Rounds.svg|20px|link=Hop-Up|Splatter Rounds]] [[File:Spacing.png|20px]]
+| colspan="2" | 0.938
+|}
+
+== History ==
+{{Patch notes|
+; {{Symbol|raiders}} [[December 07, 2021 Patch]]
+* {{ItemLink|Splatter Rounds}} no longer increase a weapon's mag size.
+
+; {{Symbol|evolution}} [[September 14, 2021 Patch]]
+* Introduced.
+}}
+
+== Trivia ==
+* There are no Rampart Special energy-related weapons. This is most likely due to either the projectiles made entirely out of energy ({{Texttip|e.g.|for example}} [[HAVOC Rifle]]), or due to the mod interfering with the projectiles being charged ({{Texttip|e.g.|for example}} [[Triple Take]]).
+
+== References ==
+<references/>
+
+== See also ==
+* [[Weapon]]
+* [[Fully Kitted Weapon]]
+* [[Attachment]]
+* [[Hop-Up]]
+
+{{Nav-Weapons}}
+[[Category:Gameplay mechanics]]

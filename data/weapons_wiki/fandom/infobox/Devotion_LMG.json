@@ -1,0 +1,21 @@
+{
+  "title": "Devotion LMG",
+  "infobox": {
+    "name": "Devotion LMG",
+    "description": "Full-auto energy LMG.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Energy Ammo",
+    "barrel": "stabilizer",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "turbo",
+    "damageBody": "16",
+    "damageHead": "23 (1.5×)",
+    "damageLegs": "13 (0.85×)",
+    "rateOfFire": "300–900",
+    "dps": "80–240",
+    "magazineSize": "Magazine Size = 54 / Ammo Reserve = 324"
+  }
+}

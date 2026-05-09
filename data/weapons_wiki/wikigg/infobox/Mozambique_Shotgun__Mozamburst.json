@@ -1,0 +1,20 @@
+{
+  "title": "Mozambique Shotgun/Mozamburst",
+  "infobox": {
+    "name": "Mozamburst",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "Ramya please add details",
+    "type": "Shotgun",
+    "fireModes": "Burst (3)",
+    "optics": "true",
+    "ammoType": "Heavy Rounds",
+    "damageBody": "7×3",
+    "damageHead": "9×3 (1.25×)",
+    "damageLegs": "7×3",
+    "rateOfFire": "311",
+    "dps": "109",
+    "magazineSize": "15",
+    "tacreload": "1.9 seconds",
+    "fullreload": "2.4 seconds"
+  }
+}

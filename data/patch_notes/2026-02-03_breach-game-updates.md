@@ -1,0 +1,83 @@
+---
+title: "New Updates Coming with Apex Legends\u2122: Breach"
+date: 2026-02-03
+slug: breach-game-updates
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/breach-game-updates
+---
+
+# New Updates Coming with Apex Legends™: Breach
+
+## NEW UPDATES COMING WITH APEX LEGENDS™: BREACH
+
+[![Apex Legends: Breach Gameplay Trailer](https://www.youtube.com/watch?v=XRNJoZD_nvQ)](https://drop-assets.ea.com/images/6DmUcqQowjG11HbALSIk9n/562429e95ecccc97bf9227116d4c1e6e/Copy_of_Apex_S28_Gameplay_Trailer_Thumbnail_3840x2160.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5057291666666667,yPosition=0.5203703703703704)(Youtube)(Thumbnail for the gameplay trailer for Apex Legends™: Breach.)
+
+Brace yourself: Close-quarters combat just got way more intense. Destructible Hardlight Mesh windows have hit the Outlands—smash through to open up devastating new entry points, or reinforce to hold the line. Crush enemy defenses with fresh updates to Fuse and Bloodhound, or become unbreakable with Catalyst and Controller Legend updates. 
+
+Plus, the dropship in Ranked makes a triumphant return, we have new advanced audio options for you to customize your in-game experience, Bot Royale gets a facelift, AND we’re giving you a rewards track to celebrate Apex Legends’ 7 year anniversary! 
+## NEW HARDLIGHT MESH
+
+Hardlight is the newest tactical mechanic in Apex Legends. Starting in Breach, Hardlight will appear on Broken Moon, World&#39;s Edge, and E-District, plus Firing Range.
+
+![In-game screenshot of Rampart holding up her minigun, while Catalyst repairs a broken window with her new defensive ability.](https://drop-assets.ea.com/images/5j3trc3Rr1a0uwBBJDs3EV/b54ddc11bdd7adc3e487394124d6fe48/Controller_Updates.png?im=AspectCrop=%2816,9%29,xPosition=0.6114583333333333,yPosition=0.47453703703703703)
+
+Hardlight acts as destructible windows that replace many of the open window spaces in existing structures. Players hiding behind Hardlight are safe from enemy attacks, but Hardlight can be broken and takes increased damage from specific weapon classes and Legend abilities.
+
+Controller class Legends will be able to rebuild and reinforce Hardlight and can have a total of 4 Reinforced Hardlights active at any given time.
+
+We’re excited to see you all explore and master Hardlight. Will you use Hardlight to lock down a building, or strategize the most effective way to dig your enemies out of their little hidey hole?
+## BREACH’S LEGENDS
+
+Choose your side: unstoppable aggressors or unbreakable defenders with new Legend updates.
+
+![In-game screenshot of Vantage shooting her sniper rifle on top of a cliff, while Fuse is jumping up behind her with an explosion going off behind him.](https://drop-assets.ea.com/images/fGiWdmuodIIjCUTPRhIc0/f77d40be76d891a26402d05ab2a18e37/Legend_Updates.png?im=AspectCrop=%2816,9%29,xPosition=0.26276041666666666,yPosition=0.44907407407407407)
+
+In Apex Legends: Breach, Fuse takes center stage with a juicy Legend Rework which includes a new version of his ultimate, changes to his tactical and new upgrades! But he isn’t alone. Bloodhound and Catalyst both join the party with their own updated kits - and that’s just the start for these two! 
+
+Learn about the Dev team’s design process when Designer’s Notes land on February 6th, 2026 and get ***all*** the details on Legend changes and more in the Patch Notes on February 9th. 
+## DROPSHIP RETURNS TO RANKED
+
+![Three characters in futuristic gear jump from a large dropship over a cityscape with tall buildings and neon lights, heading toward the ground below in a battle royale.](https://drop-assets.ea.com/images/3pnwTkQMBNlrlr5bTRTS86/5e483cef767c82e950dcadf43fe80992/04._Dropship_Returns_to_Ranked.png?im=AspectCrop=%2816,9%29,xPosition=0.6203007518796992,yPosition=0.34743875278396436)
+
+After a few seasons of experimentation, in alignment with player feedback, we have decided to do away with the controlled drop zones in Ranked! The initial intention was to bring the mode into closer parity with the ALGS competitive experience. However, we understand that Ranked, in this state, resulted in some players feeling like a lot was left to random chance dictated by your starting position - time pressure from the ring, starting loot pool, proximity to other teams, and optimal rotations. It also removed aspects of agency over your playstyle and, in that regard, the feature wasn’t a universal win for all players. By bringing everyone back into the dropship to start the match, we’re hoping to give you back full control and put your fate in your own hands! In the meantime, our team will continue to evaluate potential solutions to more seamlessly implement this staple from the ALGS experience.
+## NEW ADVANCED AUDIO OPTIONS
+
+Legends, we have heard you. We have new advanced audio options incoming.
+
+![Advanced audio options screen showing sliders for volume, and settings for Legend Dialogue, Ping Dialogue, and Announcer Dialogue, all set to "All."](https://drop-assets.ea.com/images/7GyFXduf0p40O61LimBPuK/ccb9eb725ee205fc220a5c4c846e0e43/all.png?im=AspectCrop=%2816,9%29,xPosition=0.14567669172932332,yPosition=0.7272727272727273)
+
+In Season 28, in response to community feedback, we’re taking it a step further by adding more audio customization options and giving you control. You can look forward to more granular customization options surrounding: Legend Dialogue, Ping Dialogue, and Announcer Dialogue. In Season 27 we added the Focused Mix to provide a more robust contextual in-game soundscape - we’re excited to continue down this path, providing you with even more options to use to customize your experience. 
+## BOT ROYALE EVOLVED
+
+Love Apex Legends but want to sidestep the sweat? Boy golly, do we have something cooking for you! 
+
+![Four futuristic characters—two robots and two armored humans—battle in a vibrant cityscape; one robot waves while others leap or prepare to attack.](https://drop-assets.ea.com/images/3iUGgwZkywQUjPfE3ZGSmH/5ebc80ec9313d8146a95e4971b76c6be/03._Bot_Royale_Evolved.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+In Apex Legends: Breach, Bot Royale Evolved lobbies will consist of 1-5 full human squads and a sea of our newly updated Apex Bots. We are removing the cap on earning XP and the restriction to Challenge progression. (Earning Badges is still restricted, and no stats will advance while playing this mode.) Bot Royale has evolved to be slightly more challenging for low- and mid-skill players, and more rewarding for *all* players. Whether you are new to Apex Legends and want to better understand the game or are a veteran who wants to take a step back and relax a bit with a friend or two, Bot Royale Evolved has something for everyone.
+## 7 YEAR ANNIVERSARY
+
+It&#39;s Apex Legends’ ***seven year*** anniversary!
+
+![Three characters from Apex Legends pose on a bright yellow background: Vantage with a green dinosaur plush, Seer with gold accents, and Ash in a blue hood.](https://drop-assets.ea.com/images/2l7IvCDnE6zlcU1L0FIhxp/e77729f96e35dbef58493c19d30438ff/06._7_Year_Anniversary.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5028645833333333,yPosition=0.1597222222222222)
+
+To celebrate this incredible journey with you, our community, we have a FREE anniversary rewards track, bursting at the seams, filled with goodies created by our tremendously talented community artists, inspired by long-time Apex content creators. Log in and dive into matches from February 10th, 2026 to March 10th, 2026 and celebrate this anniversary!
+## SEE YOU ON THE DROPSHIP
+
+New lockdown vs. breach-and-clear gameplay, beloved characters getting new buffs, enhanced game modes and features, new advanced audio options, AND MORE! (it’s always the ‘and more’ that’s most exciting. Because it could be *anything*, y’know?) Apex Legends: Breach is going to be a good, good time and we’re looking forward to seeing you on the dropship, legends. 
+
+---
+
+For the latest and greatest in status updates, bugs and patch news, dev insights, live updates, and more, be sure to follow @apexlivecomms on Twitter/X and Threads.
+
+[Play Apex Legends™ for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S, Nintendo Switch™, Nintendo Switch™ 2, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [X](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), [TikTok](https://www.tiktok.com/@PLAYAPEX), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/apex-legends/newsletter) today to receive the latest Apex Legends™ news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+
+†Not available in all territories.

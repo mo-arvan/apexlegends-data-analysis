@@ -1,0 +1,360 @@
+{{MainGameNotice|mobilePage=Rampage LMG (Mobile)}}
+{{Infobox-Weapon
+| name = Rampage LMG
+| description = Fire Powered LMG. Charge with Thermites.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px|link=]] Auto
+| ammoType = Heavy Rounds
+| creator = [[File:Rampart Icon.svg|20px|link=]] [[Rampart]] (designer)<ref>[https://www.ea.com/games/apex-legends/news/emergence-patch-notes Apex Legends - Emergence - Patch Notes]</ref><br/>[[SWCC]] (manufacturer)
+| barrel = stabilizer
+| magType = heavy
+| optics = true
+| stock = standard
+| damageBody = 26
+| damageHead = 39 <small>(1.5×)</small>
+| damageLegs = 22 <small>(0.85×)</small>
+| rateOfFire = 300<br>[[File:Heavy Rounds Revved Up.svg|25px|link=|Revved Up]] 390
+| dps = 130<br>[[File:Heavy Rounds Revved Up.svg|25px|link=|Revved Up]] 169
+| magazineSize = {{Level0123|28|32|36|40}}
+| tacReload = {{Level0123|3.1|3|2.89|2.79}}
+| fullReload = {{Level0123|4|3.87|3.73|3.6}}
+}}
+
+The '''Rampage LMG''', or '''Rampage''', is a fully-automatic [[light machine gun]] introduced in {{ItemLink|Season 10}} that utilizes {{ItemLink|Heavy Rounds}}.
+
+The Rampage can be [[File:Heavy Rounds Revved Up.svg|25px]] Revved Up with a {{ItemLink|Thermite Grenade|text={{Common|Thermite Grenade}}}}, increasing the fire rate by 30% for 2 minutes and 27 seconds, with each shot shortening the charge by 3.5 seconds. Charging the Rampage takes 4 seconds. In this state, the Rampage can also break doors in two shots, or one if the door was already damaged.
+
+Being an LMG, the Rampage is affected by [[Rampart]]'s {{AbilityLink|Modded Loader}} Passive ability.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}} 
+
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 26
+| headshotMdfr = 1.5
+| legMdfr = 0.85
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_dragon_lmg</big>
+|-
+! Variable !! Value !! Description
+|-
+| start_energized
+| style="text-align:center" | 0
+| When found the first time, the Rampage is not [[File:Heavy Rounds Revved Up.svg|25px|link=]] Revved Up.
+|-
+| energized_duration
+| style="text-align:center" | 147
+| [[File:Heavy Rounds Revved Up.svg|25px|link=]] Revved Up duration. Expressed in seconds.
+|-
+| energized_time_consumed_per_shot
+| style="text-align:center" | 3.5
+| Time detracted from [[File:Heavy Rounds Revved Up.svg|25px|link=]] Revved Up with each shot. Expressed in seconds.
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 5
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | [[File:Heavy Rounds Revved Up.svg|25px|link=|Revved Up]] 6.5
+|-
+| projectile_launch_speed
+| style="text-align:center" | 26500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 672 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 2250
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 57 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 3.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.75
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.45
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.75
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.65
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.6
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.34
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.3
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.4
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Rain Hellfire''
+| style="text-align:left" | Down an enemy with revved shots from a higher elevation than your target.
+| 20 times
+|-
+| 40
+| ''Nothing to Lose''
+| style="text-align:left" | Rev up your last magazine and down a enemy with the Rampage.
+| 15 times
+|-
+| 60
+| ''Be Prepared''
+| style="text-align:left" | Down at least 2 enemies without reloading the Rampage in one match.
+| 10 times
+|-
+| 80
+| ''Rampage!''
+| style="text-align:left" | Destroy a door and get a knock without releasing the trigger.
+| 5 times
+|-
+| 100
+| ''Revved Up''
+| style="text-align:left" | Down at least 2 enemies at least 40 meters away with revved shots in one match.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|It's like Ramya "Rampart" Parekh says: when you rise from the ashes of everything you've built, don't get mad - get heated. The Rampage LMG is the first gun she modded after a rival gang known as [[The Sisters]] burnt down her shop. Taking the [[M600 Spitfire]] as a base, it features a unique intake that can be loaded with a thermite canister to amp its fire rate. Inserting a thermite and overloading the firing mechanisms allows the user to deliver powerful shots (a distinct advantage over the base Spitfire) while increasing rate of fire for a set period of time. You could say it brings the heat.}}
+
+
+== Skins ==
+There are a total of 70 skins for the Rampage: 22 {{Legendary}}, 11 {{Epic}}, 21 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Raptor Strike Rampage.png|{{Legendary|Raptor Strike}}<br/>{{CraftingMetals|1,200}}
+Rebirth Rampage.png|{{Legendary|Rebirth}}<br/>{{CraftingMetals|1,200}}
+Dragon Chaser Rampage.png|{{Legendary|Dragon Chaser}}<br/>{{CraftingMetals|1,200}}
+Allocated Steel Rampage.png|{{Legendary|Allocated Steel}}<br/>{{CraftingMetals|1,200}}
+Pyromania Rampage.png|{{Cosmetic|Unshackled|Legendary|Pyromania}}<br/>{{CraftingMetals|1,200}}
+Hydraulic Helper Rampage.png|{{Cosmetic|Evolution|Legendary|Hydraulic Helper}}
+Plankwalker Rampage.png|{{Cosmetic|Raiders|Legendary|Plankwalker}}
+Death Blossom Rampage.png|{{Cosmetic-NI|Recolor|Legendary|Death Blossom}}<br/>Needs {{Legendary|Allocated Steel}}
+Military Made Rampage.png|{{Cosmetic|Newcastle Launch Bundle|Legendary|Military Made}}
+Uphold the Mission Rampage.png|{{Cosmetic-NI|Recolor|Legendary|Uphold the Mission}}<br/>Needs {{Legendary|Rebirth}}
+Black Rain Rampage.png|{{Cosmetic|Awakening|Legendary|Black Rain}}
+Skyfox Rampage.png|{{Cosmetic-NI|Recolor|Legendary|Skyfox}}<br/>Needs {{Legendary|Raptor Strike}}
+Secondary Jaw Rampage.png|{{Cosmetic|Beast of Prey|Legendary|Secondary Jaw}}
+Neon Nails Rampage.png|{{Cosmetic-NI|Recolor|Legendary|Neon Nails}}<br/>Needs {{Legendary|Dragon Chaser}}
+Outboard Overdrive Rampage.png|{{Cosmetic|Sun Squad|Legendary|Outboard Overdrive}}
+Deadly Decree Rampage.png|{{Cosmetic|Threat Level|Legendary|Deadly Decree}}
+Firebreather Rampage.png|[[File:Sale Icon.svg|22px|link=Project 19 Store]] {{Legendary|Firebreather}}
+Blood Rage Rampage.png|{{Cosmetic|Death Dynasty|Legendary|Blood Rage}}
+The Judge Rampage.png|{{Cosmetic|Harbingers|Legendary|The Judge}}
+Grace of Odin Rampage.png|{{Cosmetic|Season 19|Legendary|Grace of Odin}}<br>Level 100
+Wrath of Fenrir Rampage.png|{{Cosmetic|Season 19|Legendary|Wrath of Fenrir}}<br>Level 110
+Holiday Surprise Rampage.png|[[File:Sale Icon.svg|22px|link=Festive Frenzy Sale]] {{Legendary|Holiday Surprise}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Eye of the Storm Rampage.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Rampage.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Rampage.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Rampage.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Rampage.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Poison Ivy Rampage.png|{{Cosmetic|Season 10|Epic|Poison Ivy}}
+Crackling Surge Rampage.png|{{Cosmetic|3rd Anniversary|Epic|Crackling Surge}}
+Extinction Event Rampage.png|{{Cosmetic|3rd Anniversary|Epic|Extinction Event}}
+The Dragon's Clutch Rampage.png|{{Cosmetic|Season 13|Epic|The Dragon's Clutch}}<br>Level 68
+Emerald Eradicator Rampage.png|{{Cosmetic|Spellbound|Epic|Emerald Eradicator}}
+Blood Reaper Rampage.png|{{Cosmetic|Death Dynasty|Epic|Blood Reaper}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Generation X Rampage.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Outback Rampage.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Sweet 16 Rampage.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Cold Fusion Rampage.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Shattered Rampage.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Stellar Rampage.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Rampage.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+Cloudburst Rampage.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Yellow Snake Rampage.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Skyrise Rampage.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Jester Rampage.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Derez Rampage.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Chaos Theory Rampage.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Rampage.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+New Moon Rampage.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Heavy Signature Rampage.png|{{Cosmetic-NI|PlayStation+|Rare|Heavy Signature}}<br/>Season 13
+Gossamer Rampage.png|{{Cosmetic|Season 10|Rare|Gossamer}}<br>Level 01
+Flutter Rampage.png|{{Cosmetic|Season 10|Rare|Flutter}}<br>Level 49
+Shed Weakness Rampage.png|{{Cosmetic|Season 14|Rare|Shed Weakness}}<br/>Level 63
+All Eyes on Me Rampage.png|{{Cosmetic|Season 15|Rare|All Eyes on Me}}<br/>Level 72
+Candy Pain Rampage.png|{{Cosmetic-NI|Prime Gaming Loot|Rare|Candy Pain}}<br>December 2022
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Rampage.png|{{Common|Factory Issue}}<br/>Default
+Midnight Rampage.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Rampage.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Rampage.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Rampage.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Rampage.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Rampage.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Rampage.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Rampage.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Rampage.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Rampage.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Rampage.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Rampage.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Rampage.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Rampage.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Rampage.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 18}} [[August 08, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 18}}.
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Removed [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up charge when found for the first time.
+* Added [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up decay over time.
+* Reduced damage from 28 to 26.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 16}}.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Added [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up charge when found for the first time.
+* Removed [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up decay over time.
+* Can now be [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up before a previous charge has ended.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 180 {{ItemLink|Mythic Heavy Rounds|text=Ammo}}, and a {{ItemLink|Thermite Grenade}} also spawns in the same Care Package slot.
+* Increased damage from 26 to 28.
+
+; {{ItemLink|Awakening|noText=yes}} [[June 21, 2022 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+* Increased tac reload time from 2.8 to 3.2.
+* Increased draw time from 0.7 to 0.8.
+* Increased holster time from 0.65 to 0.75.
+* Increased raise time from 0.55 to 0.65.
+* Increased lower time from 0.5 to 0.6.
+* ('''Undocumented''') Increased full reload time from 3.33 to 4.
+
+; [[January 13, 2022 Patch]]
+* Returned the Rampage.
+* Reduced damage from 28 to 26.
+* Increased [[File:Heavy Rounds Revved Up.svg|20px]] Revved Up charge consumption from 2 seconds per bullet to 2.5 seconds per bullet.
+* ('''Undocumented''') Removed movement penalty when charging the Rampage.
+
+; [[January 05, 2022 Patch]]
+* Removed the Rampage temporarily from the game to fix an exploit that allowed players to charge it indefinitely at no cost.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* ('''Undocumented''') Changed name from Rampage to Rampage LMG.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Introduced.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 10}}.
+}}
+
+
+== Trivia ==  
+* The Rampage appeared in the [https://www.youtube.com/watch?v=BeeCa18YK9M Season 8 Devstream]. When the explosive holds were being displayed, the weapon can be seen on one of the weapon racks using a very early model.
+* If a Rampage has been Revved up before, then a spent Thermite Grenade will be present in the weapon when inspected, and the grenade will be ejected from the weapon at the start of the next Revved Up animation. This is true even if the weapon was Revved Up by another player.<ref>[https://www.youtube.com/watch?v=vBAY1VInFJM Mokeysniper on YouTube: Ejecting Thermites Out Of Rampage]</ref>
+* [[Rampart]] has a unique animation for picking up the Rampage, where she loads the weapon more subtly than the other legends.
+* The {{Cosmetic|3rd Anniversary|Epic|Crackling Surge}} skin for the Rampage was created as an homage to [https://www.youtube.com/c/TheGamingMerchant The Gaming Merchant], an ''Apex Legends'' YouTuber. The blue and gold color scheme references his thumbnail design, and his signature farewell "Cheerio" is written on the side.<ref>[https://twitter.com/PlayApex/status/1493647063082577923 Apex Legends on Twitter]</ref>
+* The {{Cosmetic|Season 19|Legendary|Grace of Odin}} and {{Cosmetic|Season 19|Legendary|Wrath of Fenrir}} Rampage skins are revved up with a special {{ItemLink|Thermite Grenade}} skin. These, along with the {{Cosmetic|Season 17|Legendary|Frontier Faithful}} and {{Cosmetic|Season 17|Legendary|Outlands Obliterator}} C.A.R. skins are the only reactive weapon skins to have a special cosmetic of a gun attachment.
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+Rampage Concept Art 1.jpg|Concept art for the Rampage LMG.<ref>[https://www.artstation.com/artwork/AqJoGz Stevo Chang on ArtStation]</ref>
+Rampage Concept Art 2.jpg
+Rampage Concept Art 3.jpg
+Rampage Concept Art 4.jpg
+Allocated Steel Rampage Concept Art.jpg|Concept art for the Rampage's {{Legendary|Allocated Steel}} skin.<ref>[https://www.artstation.com/artwork/4XVKXk Rachel Gagner on ArtStation]</ref>
+Dragon Chaser Rampage Concept Art.jpg|Concept art for the Rampage's {{Legendary|Dragon Chaser}} skin.<ref>[https://www.artstation.com/artwork/d0WX8e Rachel Gagner on ArtStation]</ref>
+</gallery>
+
+
+== References ==
+<references />
+
+{{Nav-Weapons}}

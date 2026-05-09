@@ -1,0 +1,375 @@
+[[File:R-301 Carbine.png|thumb|[[R-301 Carbine|R-301卡宾枪]]，一把突击步枪。]]
+在[[Apex Legends]]中，'''武器'''是造成伤害的主要方式。在大逃杀中，[[Legend|传奇]]在不配备任何武器的情况下跳入竞技场，落地之后就必须在任何合适的战利品来源中找到武器。在{{ItemLink|arenas|text=竞技场}}中，每回合开始之前，任意非[[Care Package#Supply Drop Weapons|'''{{Mythic|空投武器}}''']]都可以被购买。无论任何游戏模式，至多可携带两把枪械。
+
+可通过配件来增强一把武器的效果和火力，这些[[Attachment|附件]]可以稳定枪支，增加其弹夹容量，改变机瞄，或是解锁新的射击模式。
+
+所有武器被分为七类：突击步枪、冲锋枪、轻机枪、神射手武器、狙击枪、霰弹枪和手枪。
+
+=='''其他武器'''==
+==='''空投补给武器'''===
+空投补给武器（又名补给仓武器，定制武器，空投武器等等），是一种只在中立[[Care Package|补给仓]]中才能找到的{{Mythic}}武器。它们的[[Ammo|弹药]]有限，且无法补充。同时，它们还附带一个可替换的瞄准镜，但[[Kraber .50-Cal Sniper|克雷贝尔 .50口径狙击枪]]所自带的独特的{{Mythic|6倍至10倍可调节式瞄准镜}}是无法被移除的。
+
+==='''装备完全武器'''===
+{{Main|Fully kitted weapons}}
+装备完全武器是一种预先装备了所有[[Attachment|配件]]的武器，配件的等级取决于武器的稀有度，从{{Common}} 至 {{Legendary}}。
+
+==='''兰伯特定制化漆弹武器'''===
+{{Main|Rampart's Custom Modded Paintball Weapon|text=兰伯特定制化漆弹武器}}
+这类武器是一种配备了[[Rampart|兰伯特]]的即用配件 - {{ItemLink|Splatter Rounds|text=飞溅弹}}的定制化装备完全武器。它们的换弹速度更快，并射出具有彩色视觉效果的漆弹。它们可以从兰伯特的大改装店里的自动售货机里用{{ItemLink|Materials|text=材料}}购买，可购买 {{Rare}} 、{{Epic}} 和 {{Legendary}} 三种稀有度武器。若传奇们[[Ping|标记]]它们，则会称其为“兰伯特特供“。
+
+==='''投掷物'''===
+{{Main|Ordnance}}
+游戏里有三种[[Grenade|投掷物]]可被扔出。与枪械不同的是，它们占用物品栏，并属于消耗品类。
+
+==='''近战武器'''===
+[[Legend|传奇]]默认是没有近战武器的，他们仅使用拳头和腿。然而，在获取到该传奇的[[Heirloom|{{Mythic|传家宝套装}}]]后，玩家们可以装备上个性化近战武器皮肤。近战武器完完全全是装饰性的，并不会对游戏玩法产生任何影响。
+
+=='''武器列表'''==
+==='''突击步枪'''===
+<gallery mode="nolines" widths="260px" heights="65px" perrow="7">
+File:HAVOC_Rifle_Icon.svg|'''[[HAVOC Rifle]]''' [[File:Energy Ammo.svg|22px|link=Energy Ammo]]<br>全自动能量步枪。
+File:VK-47_Flatline_Icon.svg|'''[[VK-47 Flatline]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]]<br>全自动，火力强大。
+File:Hemlok_Burst_AR_Icon.svg|'''[[Hemlok Burst AR]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]]<br>3连发突击步枪。
+File:R-301_Carbine_Icon.svg|'''[[R-301 Carbine]]''' [[File:Light Rounds.svg|22px|link=Light Rounds]]<br>全自动，精准度高。
+</gallery>
+
+==='''冲锋枪'''===
+<small>''在英文中，"Sub machine gun"是"submachine gun"的一种'''错误'''拼写。“Sub”是一个前缀，因此它应该是单词的一部分（举例：“submarine”，潜水艇）。英文版维基故意使用错误的拼写，因为游戏中的冲锋枪缩写是“SMG”。''</small>
+<gallery mode="nolines" widths="260px" heights="65px" perrow="7">
+File:Alternator_SMG_Icon.svg|'''[[Alternator SMG]]''' [[File:Light Rounds.svg|22px|link=Light Rounds]]<br />双管全自动冲锋枪。
+File:Prowler_Burst_PDW_Icon.svg|'''[[Prowler Burst PDW]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]]<br />5连发冲锋枪。
+File:R-99_SMG_Icon.svg|'''[[R-99 SMG]]''' [[File:Light Rounds.svg|22px|link=Light Rounds]]<br />高射速全自动冲锋枪。
+File:Volt_SMG_Icon.svg|'''[[Volt SMG]]''' [[File:Supply Drop Energy Ammo.svg|22px|link=Ammo#Supply Drop Ammo]]<br />能量驱动冲锋枪。<br />([[Care Package#Supply Drop Weapons|{{Mythic|Supply Drop Weapon}}]])
+File:C.A.R._SMG_Icon.svg|'''[[C.A.R. SMG]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]][[File:Light Rounds.svg|22px|link=Light Rounds]]<br>多用途冲锋枪。可使用轻型和重型弹药。
+</gallery>
+
+==='''轻型机关枪'''===
+<gallery mode="nolines" widths="260px" heights="55px" perrow="7">
+File:Devotion_LMG_Icon.svg|'''[[Devotion LMG]]''' [[File:Energy Ammo.svg|22px|link=Energy Ammo]]<br />全自动能量轻机枪。
+File:L-STAR_EMG_Icon.svg|'''[[L-STAR EMG]]''' [[File:Energy Ammo.svg|22px|link=Energy Ammo]]<br />等离子驱动的重型机枪。
+File:M600_Spitfire_Icon.svg|'''[[M600 Spitfire]]''' [[File:Supply Drop Heavy Rounds.svg|22px|link=Ammo#Supply Drop Ammo]]<br />全自动轻机枪。<br />([[Care Package#Supply Drop Weapons|{{Mythic|Supply Drop Weapon}}]])
+File:Rampage_LMG_Icon.svg|'''[[Rampage LMG]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]][[File:Thermite Grenade.svg|15px|link=Thermite Grenade]]<br>火力轻机枪，用铝热剂充能。
+</gallery>
+
+==='''神射手武器'''===
+<gallery mode="nolines" widths="260px" heights="65px" perrow="7">
+File:G7_Scout_Icon.svg|'''[[G7 Scout]]''' [[File:Supply Drop Light Rounds.svg|22px|link=Ammo#Supply Drop Ammo]]<br>半自动轻型神射手步枪。<br />([[Care Package#Supply Drop Weapons|{{Mythic|Supply Drop Weapon}}]])
+File:Triple_Take_Icon.svg|'''[[Triple Take]]''' [[File:Energy Ammo.svg|22px|link=Energy Ammo]]<br />三管神射手步枪。<br />
+File:30-30_Repeater_Icon.svg|'''[[30-30 Repeater]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]]<br>半自动重型连发枪。
+File:Bocek_Compound_Bow_Icon.svg|'''[[Bocek Compound Bow]]''' [[File:Arrows.svg|22px|link=Arrows]]<br>按住开火即可蓄力。
+</gallery>
+
+==='''狙击步枪'''===
+<gallery mode="nolines" widths="260px" heights="45px" perrow="7">
+File:Charge_Rifle_Icon.svg|'''[[Charge Rifle]]''' [[File:Sniper Ammo.svg|22px|link=Sniper Ammo]]<br />能量充满的光束狙击步枪。
+File:Longbow_DMR_Icon.svg|'''[[Longbow DMR]]''' [[File:Sniper Ammo.svg|22px|link=Sniper Ammo]]<br />半自动狙击步枪。
+File:Kraber_.50-Cal_Sniper_Icon.svg|'''[[Kraber .50-Cal Sniper]]''' [[File:Supply Drop Sniper Ammo.svg|22px|link=Ammo#Supply Drop Ammo]]<br />强力的栓动式狙击步枪。<br>([[Care Package#Supply Drop Weapons|{{Mythic|Supply Drop Weapon}}]])
+File:Sentinel_Icon.svg|'''[[Sentinel]]''' [[File:Sniper Ammo.svg|22px|link=Sniper Ammo]][[File:Shield Cell.svg|15px|link=Shield Cell]]<br />栓动式狙击步枪。
+</gallery>
+
+==='''霰弹枪'''===
+<gallery mode="nolines" widths="260px" heights="50px" heighperrow="7">
+File:EVA-8_Auto_Icon.svg|'''[[EVA-8 Auto]]''' [[File:Shotgun Shells.svg|22px|link=Shotgun Shells]]<br />全自动霰弹枪。
+File:Mastiff_Shotgun_Icon.svg|'''[[Mastiff Shotgun]]''' [[File:Shotgun Shells.svg|22px|link=Shotgun Shells]]<br />强力的半自动霰弹枪。
+File:Mozambique_Shotgun_Icon.svg|'''[[Mozambique Shotgun]]''' [[File:Shotgun Shells.svg|22px|link=Shotgun Shells]]<br />三管霰弹手枪。
+File:Peacekeeper_Icon.svg|'''[[Peacekeeper]]''' [[File:Shotgun Shells.svg|22px|link=Shotgun Shells]]<br />杠杆式霰弹枪。
+</gallery>
+
+==='''手枪'''===
+<gallery mode="nolines" widths="260px" heights="65px" perrow="7">
+File:RE-45_Auto_Icon.svg|'''[[RE-45 Auto]]''' [[File:Light Rounds.svg|22px|link=Light Rounds]]<br />全自动手枪。
+File:P2020_Icon.svg|'''[[P2020]]''' [[File:Light Rounds.svg|22px|link=Light Rounds]]<br />半自动手枪。
+File:Wingman_Icon.svg|'''[[Wingman]]''' [[File:Heavy Rounds.svg|22px|link=Heavy Rounds]]<br />强火力左轮手枪。
+</gallery>
+
+=='''数据'''==
+*所有的伤害均无视 {{AbilityLink|Fortified|text=强化}} 和 {{ItemLink|Helmet|text=头盔}} 的伤害变动。
+*每秒造成的伤害（Damage per second，DPS）和击杀所需时间（time to kill，TTK）的计算方式是基于射击身体。
+*击杀所需时间不计算 {{ItemLink|Evo Shield|text={{Epic|进化护盾}}}}，以及位于25米/82英尺外的目标。
+*击杀所需时间的单位为秒（s）。
+*弹丸速度的单位为单位每秒（units per second，UPS）。
+*没有使用扩容弹夹。
+
+{| class="wikitable sortable" style="text-align:center; color:#1A1A1A"
+! rowspan="2" |武器
+! rowspan="2" |类型
+! rowspan="2" |所使用弹药
+! rowspan="2" |可装配配件
+! rowspan="2" data-sort-type="number" |基础弹夹容量
+! rowspan="2" data-sort-type="number" |{{Texttip|每分钟消耗弹药量|Rounds per minute，RPM}}
+! rowspan="2" data-sort-type="number" |{{Texttip|每秒伤害|Damage per second，DPS}}
+! rowspan="2" data-sort-type="number" |{{Texttip|击杀所需时间|time to kill，TTK}}
+! rowspan="2" data-sort-type="number" |子弹速度
+! rowspan="2" |射击模式
+! colspan="4" |伤害
+|-
+! rowspan="2" data-sort-type="number" |身体
+! rowspan="2" data-sort-type="number" |头
+! rowspan="2" data-sort-type="number" |腿
+|- style="background-color:#e2ee9c"
+|[[File:HAVOC Rifle Icon.svg|x35px|link=HAVOC Rifle]]<br><small>'''[[HAVOC Rifle]]'''</small>||突击步枪||{{ItemLink|Energy Ammo|text=能量}}
+|[[File:Spacing.png|20px]] [[File:Extended Energy Mag.svg|20px|link=Extended Energy Mag|加长能量弹夹]] [[File:Optics Slot.svg|20px|link=Optics|Assault rifle optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Turbocharger.svg|20px|link=Turbocharger|Turbocharger]]
+|24||672||202||0.98||30500||[[File:Auto Icon.svg|20px|Auto]]||18||32||14
+|- style="background-color:#b5e5d3"
+|[[File:VK-47 Flatline Icon.svg|x35px|link=VK-47 Flatline]]<br><small>'''[[VK-47 Flatline]]'''</small>||突击步枪||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|加长式重型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|Assault rifle optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]]
+|20||600||180||1.1||24000||[[File:Auto Icon.svg|20px|Auto]] / [[File:Single-fire Icon.svg|20px|Single]]||18||32||14
+|- style="background-color:#b5e5d3"
+|[[File:Hemlok Burst AR Icon.svg|x35px|link=Hemlok Burst AR]]<br><small>'''[[Hemlok Burst AR]]'''</small>||突击步枪||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:Optics Slot.svg|20px|link=Optics|Assault rifle optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Boosted Loader.svg|20px|link=Boosted Loader|Boosted Loader]]
+|18
+|441 [[File:Burst Icon.svg|20px]]
+----384 [[File:Single-fire Icon.svg|20px]]
+|147 [[File:Burst Icon.svg|20px]]
+----128 [[File:Single-fire Icon.svg|20px]]
+|1.3 [[File:Burst Icon.svg|20px]]
+----1.41 [[File:Single-fire Icon.svg|20px]]
+|27500||[[File:Burst Icon.svg|20px|3-round burst]] / [[File:Single-fire Icon.svg|20px|Single]]||20||35||15
+|- style="background-color:#f9cca4"
+|[[File:R-301 Carbine Icon.svg|x35px|link=R-301 Carbine]]<br><small>'''[[R-301 Carbine]]'''</small>||突击步枪||{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|加长式轻型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|Assault rifle optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+|18||810||189||1.04||29000||[[File:Auto Icon.svg|20px|Auto]] / [[File:Single-fire Icon.svg|20px|Single]]||14||25||11
+|- style="background-color:#f9cca4"
+|[[File:Alternator SMG Icon.svg|x35px|link=Alternator SMG]]<br><small>'''[[Alternator SMG]]'''</small>||冲锋枪||{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|加长式轻型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|SMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+|19||600||160||1.2||19500||[[File:Auto Icon.svg|20px|Auto]]||16||24||13
+|- style="background-color:#b5e5d3"
+|[[File:Prowler Burst PDW Icon.svg|x35px|link=Prowler Burst PDW]]<br><small>'''[[Prowler Burst PDW]]'''</small>||冲锋枪||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|加长式重型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|SMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]]
+|20||697||163||1.07||18000||[[File:Burst Icon.svg|20px|5-round burst]]||14||21||11
+|- style="background-color:#f9cca4"
+|[[File:R-99 SMG Icon.svg|x35px|link=R-99 SMG]]<br><small>'''[[R-99 SMG]]'''</small>||冲锋枪||{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|加长式轻型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|SMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+|20||1080||198||1||21000||[[File:Auto Icon.svg|20px|Auto]]||11||17||9
+|- style="background-color:#f9b2c8"
+|[[File:Volt SMG Icon.svg|x35px|link=Volt SMG]]<br><small>'''[[Volt SMG]]'''</small>||冲锋枪||{{ItemLink|Supply Drop Energy Ammo|text=能量}}
+|[[File:Optics Slot.svg|20px|link=Optics|SMG optics]]
+|28||720||204||0.92||23500||[[File:Auto Icon.svg|20px|Auto]]||17||26||14
+|- style="background-color:#b5e5d3"
+|[[File:C.A.R. SMG Icon.svg|x35px|link=C.A.R. SMG]]<br><small>'''[[C.A.R. SMG]]'''</small>||冲锋枪||{{ItemLink|Heavy Rounds|text=重型}}<br>{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|加长式重型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|SMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+----[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|加长式轻型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|SMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+||20||930||202||0.97||18500||[[File:Auto Icon.svg|20px|Auto]]||13||20||10
+|- style="background-color:#e2ee9c"
+|[[File:Devotion LMG Icon.svg|x35px|link=Devotion LMG]]<br><small>'''[[Devotion LMG]]'''</small>||轻机枪||{{ItemLink|Energy Ammo|link=Ammo#Energy Ammo|text=能量}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Energy Mag.svg|20px|link=Extended Energy Mag|加长能量弹夹]] [[File:Optics Slot.svg|20px|link=Optics|LMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Turbocharger.svg|20px|link=Turbocharger|Turbocharger]]
+|36
+----{{Symbol|modded loader}} 41
+|300~900||80-240||1.33||33500||[[File:Auto Icon.svg|20px|Auto]]||16||28||14
+|- style="background-color:#e2ee9c"
+|[[File:L-STAR EMG Icon.svg|x35px|link=L-STAR EMG]]<br><small>'''[[L-STAR EMG]]'''</small>||轻机枪||{{ItemLink|Energy Ammo|text=能量}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Energy Mag.svg|20px|link=Extended Energy Mag|加长能量弹夹]] [[File:Optics Slot.svg|20px|link=Optics|LMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|Standard Stock]] [[File:Spacing.png|20px]]
+|∞||600||170||1.1||22000||[[File:Auto Icon.svg|20px|Auto]]||17||30||14
+|- style="background-color:#f9b2c8"
+|[[File:M600 Spitfire Icon.svg|x35px|link=M600 Spitfire]]<br><small>'''[[M600 Spitfire]]'''</small>||轻机枪||{{ItemLink|Supply Drop Heavy Rounds|text=重型}}
+|[[File:Optics Slot.svg|20px|link=Optics|LMG optics]]
+|55
+----{{Symbol|modded loader}} 63
+|540||171||1.11||27500||[[File:Auto Icon.svg|20px|Auto]]||19||33||16
+|- style="background-color:#b5e5d3"
+|[[File:Rampage LMG Icon.svg|x35px|link=Rampage LMG]]<br><small>'''[[Rampage LMG]]'''</small>||轻机枪||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Heavy Mag.svg|20px|link=Extended Heavy Mag|Extended Heavy Mag]] [[File:Optics Slot.svg|20px|link=Optics|LMG optics]] [[File:Standard Stock.svg|20px|link=Standard Stock|标准枪托]] [[File:Spacing.png|20px]]
+|28
+----{{Symbol|modded loader}} 32
+|300
+----[[File:Heavy Rounds Revved Up.svg|20px]] 390
+|130
+----[[File:Heavy Rounds Revved Up.svg|20px]] 169
+|1.4
+----[[File:Heavy Rounds Revved Up.svg|20px]] 1.08
+|26500||[[File:Auto Icon.svg|20px|Auto]]||26||39||22
+|- style="background-color:#f9b2c8"
+|[[File:G7 Scout Icon.svg|x35px|link=G7 Scout]]<br><small>'''[[G7 Scout]]'''</small>||神射手<br>武器||{{ItemLink|Supply Drop Light Rounds|text=轻型}}
+|[[File:Optics Slot.svg|20px|link=Optics|Marksman optics]]
+|20
+|240
+----[[File:Double Tap Trigger.svg|20px|link=Double Tap Trigger|双发扳机]] ???
+|144
+----[[File:Double Tap Trigger.svg|20px|link=Double Tap Trigger|Double Tap Trigger]] ???
+|1.25
+----[[File:Double Tap Trigger.svg|20px|link=Double Tap Trigger|Double Tap Trigger]] 1.3
+|30000||[[File:Single-fire Icon.svg|20px|Single]] / [[File:Burst Icon.svg|20px|2-round burst]]||36||72||26
+|- style="background-color:#e2ee9c"
+|[[File:Triple Take Icon.svg|x35px|link=Triple Take]]<br><small>'''[[Triple Take]]'''</small>||神射手<br>武器||{{ItemLink|Energy Ammo|text=能量}}
+|[[File:Spacing.png|20px]] [[File:Extended Energy Mag.svg|20px|link=Extended Energy Mag|加长能量弹夹]] [[File:Optics Slot.svg|20px|link=Optics|Marksman optics]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|狙击枪托]] [[File:Kinetic Feeder.svg|20px|link=Kinetic Feeder|动能供弹器]]
+|18||78||82||2.31||32000||[[File:Single-fire Icon.svg|20px|Single]]||63<br><small>21×3</small>||111<br><small>37×3</small>||57<br><small>19×3</small>
+|- style="background-color:#b5e5d3"
+|[[File:30-30 Repeater Icon.svg|x35px|link=30-30 Repeater]]<br><small>'''[[30-30 Repeater]]'''</small>||神射手<br>武器||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Spacing.png|20px]] [[File:Extended Heavy Mag.svg|link=Extended Heavy Mag|Extended Heavy Mag|20px]] [[File:Optics Slot.svg|20px|link=Optics|Marksman optics]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|狙击枪托]] [[File:Hop Up Slot.svg|20px|link=Hop-Up|双弹装填器或粉碎帽]]
+|6||139||97||1.73||29000||[[File:Single-fire Icon.svg|20px|Single]]||42-57||74-100||36-48
+|- style="background-color:#fbf2d5"
+|[[File:Bocek Compound Bow Icon.svg|x35px|link=Bocek Compound Bow]]<br><small>'''[[Bocek Compound Bow]]'''</small>||神射手<br>武器||{{ItemLink|Arrows|text=箭矢}}
+|[[File:Spacing.png|20px]] [[File:Spacing.png|20px]] [[File:Optics Slot.svg|20px|link=Optics|Marksman optics except 2x-4x Variable AOG]] [[File:Shatter Caps.svg|20px|link=Shatter Caps|Shatter Caps]] [[File:Deadeye's Tempo.svg|20px|link=Deadeye's Tempo|Deadeye's Tempo]]
+|∞||180~107||75-107||2.33~1.68||10000-28000||[[File:Single-fire Icon.svg|20px|Single]]||25-60||31-105||20-54
+|- style="background-color:#c1c3ff"
+|[[File:Charge Rifle Icon.svg|x35px|link=Charge Rifle|]]<br><small>'''[[Charge Rifle]]'''</small>||狙击枪||{{ItemLink|Sniper Ammo|text=狙击}}
+|[[File:Spacing.png|20px]] [[File:Spacing.png|20px]] [[File:Optics Slot.svg|20px|link=Optics|狙击瞄准镜]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|狙击枪托]] [[File:Spacing.png|20px]]
+|8||26||39||4.62||即时命中||[[File:Single-fire Icon.svg|20px|Single]]||90<br><small>3×15+45</small>||116<br><small>4×15+56</small>||90<br><small>3×15+45</small>
+|- style="background-color:#c1c3ff"
+|[[File:Longbow DMR Icon.svg|x35px|link=Longbow DMR]]<br><small>'''[[Longbow DMR]]'''</small>||狙击枪||{{ItemLink|Sniper Ammo|text=狙击}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Sniper Mag.svg|20px|link=Extended Sniper Mag|加长狙击弹夹]] [[File:Optics Slot.svg|20px|link=Optics|狙击瞄准镜s]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|狙击枪托]] [[File:Spacing.png|20px]]
+|6||78||72||2.31||30500||[[File:Single-fire Icon.svg|20px|Single]]||55||129||48
+|- style="background-color:#f9b2c8"
+|[[File:Kraber .50-Cal Sniper Icon.svg|x35px|link=Kraber .50-Cal Sniper]]<br><small>'''[[Kraber .50-Cal Sniper]]'''</small>||狙击枪||{{ItemLink|Supply Drop Sniper Ammo|text=狙击}}
+| ||4||25||60||2.4||29500||[[File:Single-fire Icon.svg|20px|Single]]||145||435||116
+|- style="background-color:#c1c3ff"
+|[[File:Sentinel Icon.svg|x35px|link=Sentinel]]<br><small>'''[[Sentinel]]'''</small>||狙击枪||{{ItemLink|Sniper Ammo|text=狙击}}
+|[[File:Spacing.png|20px]] [[File:Extended Sniper Mag.svg|20px|link=Extended Sniper Mag|加长狙击弹夹]]  [[File:Optics Slot.svg|20px|link=Optics|狙击瞄准镜]] [[File:Sniper Stock.svg|20px|link=Sniper Stock|狙击枪托]] [[File:Deadeye's Tempo.svg|20px|link=Deadeye's Tempo|Deadeye's Tempo]]
+|4
+|31
+|36
+----[[File:Sniper Ammo Amped.png|20px|link=Sentinel|强化]] 46
+|3.87||31000||[[File:Single-fire Icon.svg|20px|Single]]
+|70
+----[[File:Sniper Ammo Amped.png|20px|link=Sentinel|强化]] 88
+|140
+----[[File:Sniper Ammo Amped.png|20px|link=Sentinel|强化]] 176
+|63
+----[[File:Sniper Ammo Amped.png|20px|link=Sentinel|强化]] 79
+|- style="background-color:#ff957f"
+|[[File:EVA-8 Auto Icon.svg|x35px|link=EVA-8 Auto]]<br><small>'''[[EVA-8 Auto]]'''</small>||霰弹枪||{{ItemLink|Shotgun Shells|text=霰弹枪}}
+|[[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|霰弹枪枪栓]] [[File:Optics Slot.svg|20px|link=Optics|Shotgun optics]] [[File:Spacing.png|20px]]
+|8||120||108||1.43||16000||[[File:Auto Icon.svg|20px|Auto]]||54<br><small>6×9</small>||72<br><small>8×9</small>||54<br><small>6×9</small>
+|- style="background-color:#ff957f"
+|[[File:Mastiff Shotgun Icon.svg|x35px|link=Mastiff Shotgun]]<br><small>'''[[Mastiff Shotgun]]'''</small>||霰弹枪||{{ItemLink|Shotgun Shells|text=霰弹枪}}
+|[[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|霰弹枪枪栓]] [[File:Optics Slot.svg|20px|link=Optics|Shotgun optics]] [[File:Dual Shell.svg|20px|link=Dual Shell|Dual Shell]]
+|6||66||97||1.82||16000||[[File:Single-fire Icon.svg|20px|Single]]||88<br><small>11×8</small>||112<br><small>14×8</small>||88<br><small>11×8</small>
+|- style="background-color:#ff957f"
+|[[File:Mozambique Shotgun Icon.svg|x35px|link=Mozambique Shotgun]]<br><small>'''[[Mozambique Shotgun]]'''</small>||霰弹枪||{{ItemLink|Shotgun Shells|text=霰弹枪}}
+|[[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|霰弹枪枪栓]] [[File:Optics Slot.svg|20px|link=Optics|Pistol optics]] [[File:Hammerpoint Rounds.svg|20px|link=Hammerpoint Rounds|Hammerpoint Rounds]]
+|6||132||99||1.82||10000||[[File:Auto Icon.svg|20px|Auto]]||45<br><small>15×3</small>||69<br><small>23×3</small>||42<br><small>14×3</small>
+|- style="background-color:#ff957f"
+|[[File:Peacekeeper Icon.svg|x35px|link=Peacekeeper]]<br><small>'''[[Peacekeeper]]'''</small>||霰弹枪||{{ItemLink|Shotgun Shells|text=霰弹枪}}
+|[[File:Shotgun Bolt.svg|20px|link=Shotgun Bolt|霰弹枪枪栓]] [[File:Optics Slot.svg|20px|link=Optics|Shotgun optics]] [[File:Kinetic Feeder.svg|20px|link=Kinetic Feeder|Kinetic Feeder]]
+|5||55||90||2.18||16000||[[File:Single-fire Icon.svg|20px|Single]]||99<br><small>9×11</small>||121<br><small>11×11</small>||77<br><small>7×11</small>
+|- style="background-color:#f9cca4"
+|[[File:RE-45 Auto Icon.svg|x35px|link=RE-45 Auto]]<br><small>'''[[RE-45 Auto]]'''</small>||手枪||{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Barrel Stabilizer.svg|20px|link=Barrel Stabilizer|Barrel Stabilizer]] [[File:Extended Light Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:Optics Slot.svg|20px|link=Optics|Pistol optics]] [[File:Hammerpoint Rounds.svg|20px|link=Hammerpoint Rounds|Hammerpoint Rounds]] [[File:Spacing.png|20px]]
+|16||780||169||1.23||19500||[[File:Auto Icon.svg|20px|Auto]]||12||18||11
+|- style="background-color:#f9cca4"
+|[[File:P2020 Icon.svg|x35px|link=P2020]]<br><small>'''[[P2020]]'''</small>||手枪||{{ItemLink|Light Rounds|text=轻型}}
+|[[File:Extended Light Mag.svg|20px|link=Extended Light Mag|加长式轻型弹夹]] [[File:Optics Slot.svg|20px|link=Optics|Pistol optics]] [[File:Hammerpoint Rounds.svg|20px|link=Hammerpoint Rounds|锤击点子弹]]
+|14||420||126||1.57||18500||[[File:Single-fire Icon.svg|20px|Single]]||18||27||16
+|- style="background-color:#b5e5d3"
+|[[File:Wingman Icon.svg|x35px|link=Wingman]]<br><small>'''[[Wingman]]'''</small>||手枪||{{ItemLink|Heavy Rounds|text=重型}}
+|[[File:Extended Heavy Mag.svg|20px|link=Extended Light Mag|Extended Light Mag]] [[File:Optics Slot.svg|20px|link=Optics|Pistol optics]] [[File:Boosted Loader.svg|20px|link=Boosted Loader|Boosted Loader]]
+|6||156||117||1.54||18000||[[File:Single-fire Icon.svg|20px|Single]]||45||97||41
+|}
+
+==武器属性==
+武器有着不同的属性，且有些属性会因装备了[[Attachment|配件]]而被改变。
+
+;弹药
+{{Main|Ammo}}
+每把武器都有着自己的弹药种类，表示它可以使用哪类子弹。游戏中有六种子弹：{{ItemLink|Light Rounds|text=轻型弹药}}、{{ItemLink|Heavy Rounds|text=重型弹药}}、{{ItemLink|Energy Ammo|text=能量弹药}}、{{ItemLink|Shotgun Shells|text=霰弹枪弹药}}、{{ItemLink|Sniper Ammo|text=狙击弹药}}、{{ItemLink|Arrows|text=箭矢}}。每种弹药都有不同的生成概率，且有些弹药的生成概率比其他的更低。通常来讲，在武器附近都会生成其相同子弹类型的弹药。
+
+;弹道下坠
+
+游戏里的大部分武器，在射击一段时间过后都有弹丸的下坠。使用{{ItemLink|Heavy Rounds|text=重型子弹}}的武器往往有着更明显的下坠；使用{{ItemLink|Energy Ammo|text=能量弹药}}的武器的弹道下坠最小。唯一一把没有弹道下坠的武器是充能步枪；它的光束沿直线传播，但会在过远距离时会出现伤害衰  '''伤害衰减'''
+[[Charge Rifle|充能步枪]]有伤害衰减设定，当所射击目标的距离超过预设距离时，目标所受到的伤害会降低。
+
+;子弹减速
+
+武器会对所射击目标施加0.25秒的10%减速。此减益每3秒仅会发生一次，且对具有{{ItemLink|Fortified|text=强化}}被动的传奇不生效。
+
+;射击模式
+
+武器有几种不同的射击模式：
+
+*[[File:Auto Icon.svg|23px]] 自动 – 只要按住扳机，武器就会一直射击；
+*[[File:Single-fire Icon.svg|22px]] 单发 – 按下一次扳机，武器射击一次；
+*[[File:Burst Icon.svg|22px]] 连发 – 按下一次扳机，武器射击多次。
+
+某些武器可以在多种射击模式间切换。举例：R-301卡宾枪和VK-47平行步枪都可以在自动和单发之间切换。
+
+;操控性
+
+拿出和收起武器速度的快慢。较重的武器（比如[[LMG|轻机枪]]）比起较轻的武器（比如[[pistol|手枪]]），拿出和收起的速度都更慢。此项指标可以通过{{ItemLink|Standard Stock|text=标准枪托}}和{{ItemLink|Sniper Stock|text=狙击枪托}}来改进。
+
+;头部和腿部的射击伤害倍率
+
+武器有着头部和腿部的射击伤害倍率，它们会分别增加或是减少所造成的伤害。如果计算后的结果是分数，则会四舍五入到整数。
+
+*头部：爆头会增加所造成的伤害。{{ItemLink|Helmet|text=头盔}}会减少所受到的伤害。
+*腿部：射击腿部会减少所造成的伤害。
+
+;弹夹容量
+
+武器的弹药容量。它可以通过装备弹夹配件来增加，但每类武器所使用的弹夹配件不同。
+
+*{{ItemLink|Extended Light Mag|text=加长式轻型弹夹}} 适配于使用 {{ItemLink|Light Rounds|text=轻型弹药}}的武器。
+*{{ItemLink|Extended Heavy Mag|text=加长式重型弹夹}} 适配于使用 {{ItemLink|Heavy Rounds|text=重型弹药}}的武器。
+*{{ItemLink|Extended Energy Mag|text=加长能量弹夹}} 适配于使用 {{ItemLink|Energy Ammo|text=能量弹药}}的武器。
+*{{ItemLink|Extended Sniper Mag|text=加长狙击弹夹}} 适配于使用 {{ItemLink|Sniper Ammo|text=狙击弹药}}（[[Charge Rifle|充能步枪]]除外）。
+
+; 移速惩罚
+
+所有武器都会降低玩家的移动速度（降低13.333%），无论哪一类武器。通过{{AbilityLink|Warlord's Ire|text=战争领主之怒}} ，[[Mad Maggie|疯玛吉]]可以移除[[shotguns|霰弹枪]]的移速惩罚。
+
+当使用武器瞄准时，会进一步降低移动速度，降低值取决于武器。狙击枪有着65%的瞄准移速惩罚，是游戏里最大的。
+
+; 枪口火焰
+
+当玩家使用武器射击时，会受到轻微的致盲效果影响。它可以被 {{ItemLink|Barrel Stabilizer|image=Barrel Stabilizer lvl4.svg|text={{Legendary|Barrel Stabilizer}}}}减少，但此配件已于 {{ItemLink|Season 8|text=第八赛季}}被移除。
+
+; 弹速
+
+除了那些指哪打哪的即时命中武器以外，所有武器的子弹和弹丸都有着不同的子弹速度来到达目的地。这些子弹和弹丸的速度的计算单位为单位每秒。40个单位为1米。
+
+; 射速
+
+武器射击速度的快慢。对于霰弹枪，它可以通过 {{ItemLink|Shotgun Bolt|text=霰弹枪枪栓}}来改变。
+
+; 后坐力
+
+可补偿的每次射击所产生的物理后坐力的大小。它可以通过 {{ItemLink|Barrel Stabilizer|text=枪管稳定器}}来减少。
+
+; 换弹速度
+
+武器更换弹夹的速度。除[[Wingman|辅助手枪]]，[[P2020]]和[[HAVOC Rifle|哈沃克步枪]]外，所有武器在不全空弹夹情况下的换弹速度都比全空弹夹的换弹速度快。换弹速度可通过枪托增加。  对于辅助手枪和[[Hemlok Burst AR|赫姆洛克连发突击步枪]]来说，可以通过[[Hop-Up|即用配件]] – {{ItemLink|Boosted Loader|text={{Legendary|Boosted Loader}}}}来进一步提高换弹速度。如果在接近打空弹夹时进行换弹，会增加换弹速度并往弹夹中增加额外的弹药（用“快速装填”来替换“弹药量低”的屏幕警告消息）。
+
+; 提高射速
+
+[[Devotion LMG|专注轻机枪]]有着一个特殊的机制，会使武器一开始的射速缓慢，但会在短时间内加速至全速。此缓冲时间可以被即用配件 – {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}来减少。
+
+; 扩散
+
+当武器腰射时会有子弹扩散。由准心的扩散度来指示。对于大部分的[[Shotguns|霰弹枪]]来说，瞄准会轻微减小子弹扩散。但[[Triple Take|三重击]]与[[Peacekeeper|和平捍卫者]]很特别，因为其在瞄准时会进行收束，以此来减少扩散。它们的收束器可以随意开启或关闭。
+
+; 武器偏移
+
+保持在瞄准状态下且无任何操作时所出现的武器偏移。它可以被 {{ItemLink|Standard Stock|text=标准枪托}}或是 {{ItemLink|Sniper Stock|text=狙击枪托}}减少。
+
+; 蓄力，起飞
+
+[[HAVOC Rifle|哈沃克步枪]]有着一个特殊机制，会使武器在一小段蓄力时间后开始射击。此蓄力时间可以被 {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}所移除。
+
+=='''冷知识'''==
+*在目前的28种武器种中，有21种是来自''泰坦陨落''系列。
+**7种不来自于泰坦陨落的武器是：[[HAVOC Rifle|哈沃克步枪]]、[[Prowler Burst PDW|猎兽冲锋枪]]、[[Rampage LMG|暴走轻机枪]]、[[30-30 Repeater|30-30连发枪]]、[[Bocek Compound Bow|波塞克复合弓]]、[[Sentinel|哨兵]]与[[Peacekeeper|和平捍卫者]]。
+*{{ItemLink|Season 9|text=第九赛季}}新增了神射手武器类别。在此之前，[[G7 Scout|G7侦察枪]]，[[30-30 Repeater|30-30连发枪]]属于突击步枪分类。更早之前，G7侦察枪属于狙击枪。在被移入神射手类别之前，[[Triple Take|三重击]]属于狙击枪.
+**有趣的是，[[Longbow DMR|长弓精确步枪]]（被设计为神射手武器）却没有被移入神射手类别。
+*[[Mozambique Shotgun|莫桑比克]]是一把霰弹手枪，且事实上也应归属于手枪类和霰弹枪类。
+**对于[[Challenge|挑战]]和疯玛吉的被动 - {{AbilityLink|Warlord's Ire|text=战争领主之怒}}，莫桑比克被视为霰弹枪，在武装中，它也被分类为霰弹枪。
+**但在对局中，它却被标记为手枪。如果要求一个可于装配在其槽位上的[[Optic|瞄准镜]]，传奇将会请求一个手枪瞄准镜。即用配件 - {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}可于装配在除[[Wingman|辅助手枪]]之外的任何手枪上，莫桑比克也能装上。莫桑比克和手枪一样，没有瞄准移速惩罚。
+*可以用[[Wingman|辅助手枪]]、[[L-STAR EMG|L-STAR能量机枪]]、30-30连发枪、长弓精确步枪、哨兵和[[Kraber .50-Cal Sniper|克雷贝尔 .50口径狙击枪]]射击门把手来打开门。
+**L-STAR原本的意思是破门，而不是开门。
+**一个[[File:Heavy Rounds Revved Up.svg|20px]]火力全开状态下的暴走可以破门。
+*某些[[Legend|传奇]]有着特别的武器动画：
+**'''[[Rampart|兰伯特]]:''' 所有 [[LMG|轻机枪]]（以及她的 {{AbilityLink|Emplaced Minigun "Sheila"|text=机动式转轮机枪“塞拉”}}）。
+**'''[[Fuse|暴雷]]:''' [[30-30 Repeater|30-30 连发枪]]。
+**'''[[Mad Maggie|疯玛吉]]:''' [[Mastiff Shotgun|敖犬霰弹枪]]。
+
+==另请参阅==
+*[[Ammo|弹药]]
+*[[Attachment|配件]]
+*[[Fully kitted weapon|完全装备武器]]
+*[[Grenade|手雷]]
+*[[Hop-Up|即用配件]]
+*[[Heirloom|传家宝]]
+
+{{Nav weapons}}
+
+<references />
+[[pt-br:]]
+[[Category:ZH translation]]

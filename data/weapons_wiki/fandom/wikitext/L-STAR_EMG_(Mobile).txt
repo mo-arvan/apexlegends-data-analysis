@@ -1,0 +1,147 @@
+{{MobileGameNotice|mainPage=L-STAR EMG}}
+{{Infobox weapon
+| name = L-STAR EMG
+| description = Plasma-fueled light machine gun with no magazine. Overheats after a certain number of shots.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Mythic Energy Ammo
+| creator = [[File:Wonyeon.svg|20px]] [[Wonyeon]]
+| barrel = stabilizer
+| magType = energy
+| optics = true
+| stock = standard
+| damageBody = 18
+| damageHead = 32 <small>(1.75×)</small>
+| damageLegs = 14 <small>(0.8×)</small>
+| rateOfFire = 600
+| magazineSize = ∞
+| reload = {{Level023|2.1|2|1.8}}}}
+
+The '''L-STAR EMG''', or '''L-STAR''', is a fully-automatic [[energy machine gun]] that utilizes {{ItemLink|Mythic Energy Ammo}}. It fires red plasma orb-like projectiles.
+
+The L-STAR does not have a magazine, but instead draws ammo directly from the inventory. The L-STAR has a unique overheating mechanic, which triggers after {{Level0123|22|24|26|30}} continuous shots; it only needs to reload if it overheats.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.75
+| legMdfr = 0.8
+}}
+<references group="note"/>
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Energy Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || ✔
+|-
+| style="text-align:left;"| {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} || || || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} || || || ✔ || 
+|}
+
+== Skins ==
+There are a total of 16 skins for the L-STAR EMG: 2 {{Eternal}}, 2 {{Legendary}}, 7 {{Epic}}, 3 {{Rare}} and 3 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="200px" heights="300px" mode="nolines">
+Code Crasher L-STAR Mobile.png|{{Eternal|Code Crasher}}<br/>[[Pythas Error Control]]
+Spirit Trap L-STAR Mobile.png|{{Eternal|Spirit Trap}}<br/>[[Awoken Nightmares]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="200px" heights="300px" mode="nolines">
+Polished Pulse L-STAR Mobile.jpg|{{Symbol|s2.5m}} {{Legendary|Polished Pulse}}<br/>Level 50
+Poetic Justice L-STAR Mobile.png|{{Legendary|Poetic Justice}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200px" heights="300px" mode="nolines">
+Skull Crusher L-STAR Mobile.png|{{Epic|Skull Crusher}}<br/>[[Infernal Rager]]
+Aura Atomizer L-STAR Mobile.png|{{Epic|Aura Atomizer}}<br/>[[Digital Bliss Fest]]
+Break the Enemy L-STAR Mobile.png|{{Epic|Break the Enemy}}
+Reign of Kunais L-STAR Mobile.png|{{Symbol|s3m}} {{Epic|Reign of Kunais}}<br/>{{SeasonCurrency|3|6,500}}
+Scarab Talisman L-STAR Mobile.png|{{Epic|Scarab Talisman}}<br/>[[Secrets of the Tomb]]
+Blessed Aura L-STAR Mobile.png|{{Epic|Blessed Aura}}
+</gallery>
+* {{Epic|Energy Gear}}
+
+|-|
+
+Rare=
+<gallery widths="200px" heights="300px" mode="nolines">
+Volume Crash L-STAR Mobile.jpg|{{Symbol|Distortion}} {{Rare|Volume Crash}}<br/>{{SeasonCurrency|2|3,000}}
+Emperor's Staff L-STAR Mobile.png|{{Rare|Emperor's Staff}}<br/>[[Royal Regiment]]
+</gallery>
+* {{Rare|Onboard Luxury}}
+
+|-|
+
+Common=
+<gallery widths="200px" heights="300px" mode="nolines">
+Factory Issue L-STAR Mobile.png|{{Common|Factory Issue}}<br/>Default
+Stellar L-STAR Mobile.png|{{Common|Stellar}}
+Skyrise L-STAR Mobile.png|{{Common|Skyrise}}
+</gallery>
+</tabber>
+
+== Trivia ==
+* The L-STAR's icon lacks iron sights.
+
+== See also ==
+* [[L-STAR EMG]]
+
+{{Nav-MobileWeapons}}

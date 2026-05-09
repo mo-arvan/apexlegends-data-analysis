@@ -1,0 +1,20 @@
+{
+  "title": "Mozambique Shotgun/Mozambeam",
+  "infobox": {
+    "name": "Mozambeam",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "STOP ASKING FOR HAVOC SELECT FIRE JUST LET IT GO",
+    "type": "Shotgun",
+    "fireModes": "Single",
+    "optics": "true",
+    "ammoType": "Energy Ammo",
+    "damageBody": "23×3",
+    "damageHead": "35×3 (1.5×)",
+    "damageLegs": "23×3",
+    "rateOfFire": "71",
+    "dps": "82",
+    "magazineSize": "18",
+    "tacreload": "1.9",
+    "fullreload": "2.4"
+  }
+}

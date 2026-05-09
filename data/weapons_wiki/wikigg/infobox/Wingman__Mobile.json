@@ -1,0 +1,31 @@
+{
+  "title": "Wingman/Mobile",
+  "infobox": {
+    "name": "Wingman",
+    "image": "Wingman.png",
+    "description": "High-powered revolver. Can be hard to control.",
+    "type": "Pistol",
+    "fireModes": "Single",
+    "ammoType": "Heavy Rounds",
+    "rateOfFire": "162",
+    "projectileSpeed": "18000",
+    "creator": "Brockhaurd Manufacturing",
+    "id": "wingman",
+    "magType": "heavy",
+    "optics": "true",
+    "hopup": "skullpiercer",
+    "damageBody": "45",
+    "damageLegs": "41 (0.9×)",
+    "damageHead": "90 101",
+    "dps": "122",
+    "magazineSize": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "tacReload": "2.1",
+    "fullReload": "1.9",
+    "ADSspeed": "0"
+  }
+}

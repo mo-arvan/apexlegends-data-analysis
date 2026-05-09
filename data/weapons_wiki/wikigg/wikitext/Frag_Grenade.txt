@@ -1,0 +1,37 @@
+{{Infobox item
+| name = Frag Grenade
+| imageSpace = 
+{{ItemBox
+| lvl = 1
+| size = 200px
+| image = [[File:Frag Grenade White.svg|140px|center]]
+}}
+| itemDesc = Explosive ordnance. Throw to start fuse. 
+| itemType = Grenade
+| lootTier = {{Common|Level 1}}
+| stackSize = 1
+}}
+The '''Frag Grenade''' is a [[grenade]] [[item]] which explodes and deals damage 4 seconds after being thrown. 
+
+==Function==
+When thrown, the Frag Grenade waits 4 seconds after being thrown to detonate, regardless of whether it bounces, rolls, or never touches a surface at all. The explosion has a radius of 8 meters, with a 2.4 meter inner radius where the Frag Grenade deals its maximum 100 damage - the further a target is from the inner radius, the less damage it deals. Directly hitting an enemy also deals an additional 10 damage. The explosion will also blast players away from itself. 
+
+The Frag Grenade can be used to destroy doors. [[Fuse]]'s passive ability, {{AbilityLink|Grenadier}}, allows him to carry 2 Frag Grenades per inventory slot instead of 1.
+
+== History ==
+{{Patch notes|
+; [[February 04, 2021 Patch]]
+* Fixed an exploit letting players block damage from grenades by dropping items on top of them.
+
+; [[February 02, 2021 Patch]]
+* Introduced the [[legend]] [[Fuse]], who can hold 2 grenades per inventory slot.
+
+; [[March 03, 2020 Patch]]
+* Grenade stacks reduced from 2 to 1.
+}}
+==See also==
+* [[Arc Star]]
+* [[Thermite Grenade]]
+{{Nav-Weapons}}
+{{Nav-Items}}
+[[Category:Items]]

@@ -1,0 +1,27 @@
+{
+  "title": "VK-47 Flatline (Mobile)",
+  "infobox": {
+    "name": "Flatline",
+    "description": "An Assault Rifle that has higher damage and greater recoil.",
+    "type": "Assault rifle",
+    "fireModes": "Auto Single",
+    "ammoType": "Heavy Rounds",
+    "creator": "Wonyeon",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "18",
+    "damageHead": "32 (1.75×)",
+    "damageLegs": "14 (0.75×)",
+    "rateOfFire": "600 (Auto) \n360 (Single)",
+    "magazineSize": [
+      "22",
+      "27",
+      "31",
+      "34"
+    ],
+    "tacReload": "{{Level023|2.1|1.9|1.8}}",
+    "fullReload": "{{Level023|2.8|2.6|2.5}}",
+    "dps": "180 (Auto)\n108 (Single)"
+  }
+}

@@ -1,0 +1,82 @@
+{{Infobox item
+| name = Arc Star
+| imageSpace = 
+{{ItemBox
+| lvl = 1
+| size = 200px
+| image = [[File:Arc Star white.svg|160px|center]]
+}}
+| itemDesc = Sticks, then explodes after a short delay. Causes damage and blurred vision. 
+| itemType = Grenade
+| lootTier = {{Common|Level 1}}
+| stackSize = 1
+}}
+The '''Arc Star''' is a [[grenade]] [[item]] which sticks to surfaces or enemies and explodes, dealing damage and slowing enemies. 
+
+==Function==
+When thrown, the Arc Star waits 2.8 seconds to detonate after sticking to a surface or enemy. The explosion has a radius of 8.75 meters, with a 1.8 meter inner radius where the Arc Star deals its maximum 75 damage - the further a target is from the inner radius, the less damage it deals. Directly sticking an enemy also deals an additional 10 damage. The Arc Star also causes blurred vision and slow movement speed, which lasts a maximum of 5 seconds, decreasing with distance from the inner radius. The explosion also reduces momentum of airborne or sliding enemies.
+
+The Arc Star can be used to destroy [[door]]s. It can also disable a [[Trident]] for 5 seconds, if it is stuck or caught in its blast radius. The Arc Star will bounce off of squadmates, as well as shields like the {{ItemLink|Knockdown Shield}}, [[Gibraltar]]'s {{AbilityLink|Gun Shield}}, or [[Newcastle]]'s {{AbilityLink|Mobile Shield}}. The explosion consumes the cooldown on [[Ash]]'s dash and [[Sparrow's]] double jump.
+
+[[Fuse]]'s passive ability, {{AbilityLink|Grenadier}}, allows him to carry 2 Arc Stars per inventory slot instead of 1.
+
+== History ==
+{{Patch notes|
+; {{Symbol|Future Icons}} [[June 24, 2024 Patch]]
+* Explosion reduces momentum if hit while in-air or sliding.
+* Explosion consumes the cooldown on Ash’s dash and Sparrow’s double jump.
+
+
+; {{Symbol|season 14}} [[August 09, 2022 Patch]]
+* {{ItemLink|Arc Star}}
+** Reduced stick damage on armored targets from 40 to 10.
+** Removed aim slow on stick. Remains upon detonation.
+** Increased explosion damage from 70 to 75.
+
+; [[December 07, 2021 Patch]]
+* {{ItemLink|Arc Star}}:
+** Base stick damage lowered from 30 -> 10
+** Shield Damage Multiplier increased from x3 -> x4 (stick on shielded enemy will now max out at 40 instead of 90)
+** Sticking an enemy now applies a slow debuff (reverting Legacy update change)
+** Slow duration is now driven by distance to the center of Arc Star detonation
+
+; [[May 04, 2021 Patch]]
+* {{ItemLink|Arc Star}}s no longer slow down players during the initial stick.
+
+; [[March 09, 2021 Patch]]
+* (Undocumented) Updated the model shown when an {{ItemLink|Arc Star}} is thrown near you to a more detailed version.
+
+; [[February 04, 2021 Patch]]
+* Fixed an exploit letting players block damage from grenades by dropping items on top of them.
+
+; [[February 02, 2021 Patch]]
+* Introduced the [[legend]] [[Fuse]], who can hold 2 grenades per inventory slot.
+* Removed the ability to stick {{ItemLink|Arc Star}}s to friendly {{AbilityLink|Surveillance Drone}}s.
+
+; [[November 04, 2020 Patch]]
+* The {{ItemLink|Arc Star}} now shows an Arc Star model when one is thrown near the player, instead of a {{ItemLink|Frag Grenade}}.
+
+; [[March 03, 2020 Patch]]
+* Grenade stacks reduced from 2 to 1.
+
+; [[August 13, 2019 Patch]]
+* {{ItemLink|Arc Star}}
+** Fixed a bug where sometimes Arc Stars would attach to players and some objects at a distance and appear to float off of them.
+** Fixed bug where sometimes Arc Stars would not explode or do no damage when it detonates.
+
+; [[July 02, 2019 Patch]]
+* {{ItemLink|Arc Star}}
+** Increased ignition delay from 2.5 to 2.8 seconds.
+** Sticking a full health player with no armor will now down them.
+** Players at the edge of the explosion no longer get their shields completely shredded.
+** Arc Stars that are stuck to players should no longer fail to do damage when the part of the player it is stuck to is intersecting another object.
+
+; [[February 13, 2019 Patch]]
+* {{ItemLink|Arc Star}}: Arc Star now displays a grenade warning indicator.
+}}
+==See also==
+* [[Frag Grenade]]
+* [[Thermite Grenade]]
+{{Nav-Weapons}}
+{{Nav-Items}}
+[[Category:Items]]

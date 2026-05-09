@@ -1,0 +1,27 @@
+{
+  "title": "P2020",
+  "infobox": {
+    "name": "P2020",
+    "description": "Semi-auto pistol.",
+    "type": "Pistol",
+    "fireModes": "Single",
+    "ammoType": "Light Rounds",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "barrel": "laser",
+    "magType": "light",
+    "optics": "true",
+    "hopup": "hammerpoint",
+    "damageBody": "18{{Symbol|Hammerpoint Rounds}} 27",
+    "damageHead": "27 (1.5×){{Symbol|Hammerpoint Rounds}} 41 (1.5×)",
+    "damageLegs": "16 (0.9×){{Symbol|Hammerpoint Rounds}} 24 (0.9×)",
+    "rateOfFire": "420",
+    "dps": "126",
+    "magazineSize": [
+      "14",
+      "16",
+      "18",
+      "21"
+    ],
+    "reload": "1.25"
+  }
+}

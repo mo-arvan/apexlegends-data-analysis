@@ -1,0 +1,143 @@
+{{MobileGameNotice|mainPage=P2020}}
+{{Infobox weapon
+| name = P2020
+| image = P2020.png
+| description = Basic pistol, if the accuracy is low, then a fist is more useful.
+| type = Pistol
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| magType = light
+| optics = true
+| hopup = hammerpoint
+| damageBody = 18<br>[[File:Hammerpoint Rounds.svg|20px]] 27
+| damageLegs = 16<br>[[File:Hammerpoint Rounds.svg|20px]] 24 
+| damageHead = 27 <small>(1.5×)</small><br>[[File:Hammerpoint Rounds.svg|20px]] 41 <small>(1.5×)</small>
+| rateOfFire = 516
+| dps = 155
+| magazineSize = {{Level0123|18|20|22|26}}
+| tacReload = 1.25 seconds
+| fullReload = 1.05 seconds
+}}
+
+The '''P2020''', also called '''P2020 Pistol''', is a semi-automatic [[pistol]] that utilizes {{ItemLink|Light Rounds}}. The pistol can be equipped with the {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} Hop-Up to do additional damage versus unshielded enemies.
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Extended Light Mag|image=Extended Light Mag.svg}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+
+; Hop-Up
+* {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}
+===Damage profile===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.5
+| legMdfr = 0.90
+}}
+<references group="note" />
+
+=== Arenas ===
+{{Arenas weapon costs
+| basecost= 0
+| lvl1upgrade= 50
+| lvl1total= 50
+| lvl2upgrade= 150
+| lvl2total= 200
+| lvl3upgrade= 500
+| lvl3total= 700
+}}
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Extended Light Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;"| {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;"| {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|-
+| style="text-align:left;"| {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} || || || ✔ || ✔
+|}
+
+== Pros and cons ==
+; Pros
+* Very low recoil.
+* Good hipfire.
+* Fast reload.
+*Free in Arenas, and automatically given if the player has an open weapon slot.
+**Low Material cost to upgrade in Arenas
+*Excellent unshielded damage if Hammerpoint Rounds is equipped.
+*Large magazine by default, at 18 rounds.
+*Clean iron sights.
+
+; Cons
+* Semi-auto and requires fast tapping.
+**Hipfiring while moving will cause the user to lower the weapon and raise it again as they are firing, resulting in a slightly lowered fire-rate.
+* Slow projectile speed.
+*Fair damage output.
+**Lower TTK due to semi-auto nature and aforementioned damage.
+
+== Lore ==
+The Hammond P2020, is a semi-automatic single-action small caliber pistol manufactured by [[Lastimosa Armory]]. This handgun features an integrated standoff device and a fully milled slide. It also has a fully integrated Taclight and LAM, along with varied functions for IR, LiDAR, or FLIR illumination. When dropping in hot and you need something more than your mitts, the P2020 will help you tap, rack, and bang to first place with the best [[Legends]] out there.
+
+== Skins ==
+There are a total of 9 skins for the P2020: 3 {{Epic}}, 3 {{Rare}}, and 3 {{Common}}.
+
+<tabber>
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+The Deal Breaker P2020 Mobile.png|{{Epic|The Deal Breaker}}
+Crimson Tag P2020 Mobile.png|{{Epic|Crimson Tag}}<br/>[[Infernal Rager]]
+Sacred Spirit P2020 Mobile.png|{{Epic|Sacred Spirit}}
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Flake P2020 Mobile.png|{{Rare|Flake}}<br/>{{SG|290}}
+Lion's Roar P2020 Mobile.png|{{Symbol|s3m}} {{Rare|Lion's Roar}}<br/>Level 30
+</gallery>
+* {{Rare|Pollenation}}
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue P2020 Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Scorcher P2020 Mobile.png|{{Common|Scorcher}}
+Follow Through P2020 Mobile.png|{{Common|Follow Through}}
+</gallery>
+</tabber>
+
+== Trivia ==
+* Its predecessors, the '''P2011''' and '''P2016''', were references to the year development of Titanfall 1 started and Titanfall 2's release year respectively. Following the naming scheme, the P2020 was supposed to be the P2019 but was changed before release to its current name.
+
+== See also ==
+* [[P2020]]
+* [[titanfall:Hammond P2011|Hammond P2011 (Titanfall 1)]]
+* [[titanfall:Hammond P2016|Hammond P2016 (Titanfall 2)]]
+
+{{Nav-MobileWeapons}}
+[[Category:Pistols]]
+[[Category:Weapons]]
+[[Category:Mobile weapons]]

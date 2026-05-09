@@ -1,0 +1,29 @@
+{
+  "title": "G7 Scout (Mobile)",
+  "infobox": {
+    "name": "G7 Scout",
+    "description": "Semi-auto light Marksman Rifle. Its precision deals massive damage.",
+    "type": "Marksman weapon",
+    "fireModes": "Single  Burst (2)",
+    "ammoType": "Light Rounds",
+    "creator": "Lastimosa Armory",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "double_tap",
+    "damageBody": "34",
+    "damageHead": "60 (1.75×)",
+    "damageLegs": "27 (0.75×)",
+    "rateOfFire": "200 150",
+    "dps": "113 85",
+    "magazineSize": [
+      "14",
+      "20",
+      "22",
+      "24"
+    ],
+    "tacReload": "{{Level023|2.1|2|1.9}}",
+    "fullReload": "{{Level023|2.8|2.6|2.5}}"
+  }
+}

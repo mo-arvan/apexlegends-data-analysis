@@ -1,0 +1,168 @@
+{{Tabs|
+{{Tabs2|R-301 Carbine|Main}}
+{{Tabs1|R-301 Carbine/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = R-301 Carbine
+| description = A well-balanced Assault Rifle in every aspect.
+| type = Assault rifle
+| fireModes = [[File:Auto Icon.svg|20px]] Auto<br>[[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| barrel = stabilizer
+| magType = light
+| optics = true
+| stock = standard
+| damageBody = 13
+| damageHead = 25 <small>(1.75×)</small>
+| damageLegs = 12 <small>(0.85×)</small>
+| rateOfFire = [[File:Auto Icon.svg|20px]] 816<br>[[File:Single-fire Icon.svg|20px]]408
+| magazineSize = {{Level0123|20|22|28|32}}
+| tacReload = {{Level023|1.6|1.5|1.4}}
+| fullReload = {{Level023|2.5|2.3|2.2}}
+|dps=[[File:Auto Icon.svg|20px]] 177<br>[[File:Single-fire Icon.svg|20px]]95}}
+
+The '''R-301 Carbine''', or '''R-301''', is an [[assault rifle]] that utilizes {{ItemLink|Light Rounds}}. It can be switched between fully-automatic and semi-automatic fire modes.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+| damage = 14
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+<references group="note" />
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;"  | {{Common|★}}
+! style="width:75px;"  | {{Rare|★★}}
+! style="width:75px;"  | {{Epic|★★★}}
+! style="width:75px;"  | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Barrel Stabilizer}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Extended Light Mag}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#cead21" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|Standard Stock}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || ✔
+|-
+| style="text-align:left;" | {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}} || || || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}} || || || ✔ || 
+|}
+
+== Pros and Cons ==
+'''Pros'''
+
+* Fastest reload time of all Assault Rifles
+* Recoil is minimal and mostly kicks upwards.
+* Highest fire-rate of all Assault Rifles, faster than some SMGs.
+* Ability to swap between Auto and Semi-Auto for precision shots.
+** Recoil is rendered nonexistent in Semi-Auto.
+
+'''Cons'''
+
+* Lowest damage of all Assault Rifles, comparable to some SMGs.
+* Four attachment slots, making fully kitting less convenient.
+* Semi-Auto is a slower-firing Auto mode.
+* Smallest magazine of all Assault Rifles by default, at 20 rounds.
+
+== Skins ==
+There are a total of 16 skins for the R-301 Carbine; 3 {{Eternal}}, 2 {{Legendary}}, 5 {{Epic}}, 5 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+This Way Forward R-301 Mobile.png|{{Eternal|This Way Forward}}<br/>[[Extreme Speed]]
+Frozen Chain R-301 Mobile.jpg|{{Eternal|Frozen Chain}}<br/>[[Winter Warfare]]
+Season's Destroyer R-301 Mobile.png|{{Eternal|Season's Destroyer}}<br/>[[Winners Wonderland]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Honored Prey R-301 Mobile.png|{{Legendary|Honored Prey}}
+Blast Adapter R-301 Mobile.png|{{Symbol|Distortion}} {{Legendary|Blast Adapter}}<br/>Level 1
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Vortex R-301 Mobile.jpg|{{Epic|Vortex}}<br/>{{Flux|15,000}}
+The Frozen One R-301 Mobile.png|{{Symbol|Cold Snap}} {{Epic|The Frozen One}}<br/>Level 40
+Below Zero R-301 Mobile.png|{{Epic|Below Zero}}<br/>{{SeasonCurrency|1.5|9,000}}
+Cerulean Defender R-301 Mobile.jpg|{{Symbol|Distortion}} {{Epic|Cerulean Defender}}<br/>{{SeasonCurrency|2|15,000}}
+Laser Cut R-301 Mobile.png|{{Epic|Laser Cut}}<br/>{{SG|1,499}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Torched R-301 Mobile.png|{{Rare|Torched}}
+Icicle Snap R-301 Mobile.png|{{Rare|Icicle Snap}}
+Wave of Wealth R-301 Mobile.jpg|{{Rare|Wave of Wealth}}<br/>[[Nightclub Icons]]
+Outflanked R-301 Mobile.png|{{Rare|Outflanked}}<br/>[[Shipwrecked]]
+Gourd Groove R-301 Mobile.png|{{Rare|Gourd Groove}}<br/>[[Awoken Nightmares]]
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue R-301 Mobile.png|{{Common|Factory Issue}}<br/>Default
+</gallery>
+</tabber>
+
+== Trivia ==
+* The '''R''' in the weapon's model number references the game's developer, [[Respawn Entertainment]].
+
+== See also ==
+* [[R-301 Carbine]]
+* [https://titanfall.fandom.com/wiki/R-101C_Carbine R-101 Carbine (''Titanfall'' and ''Titanfall 2'')]
+* [https://titanfall.fandom.com/wiki/R-201_Assault_Rifle R-201 Assault Rifle (''Titanfall 2'')]
+
+{{Nav-MobileWeapons}}

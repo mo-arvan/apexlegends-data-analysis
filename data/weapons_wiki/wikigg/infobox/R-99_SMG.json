@@ -1,0 +1,39 @@
+{
+  "title": "R-99 SMG",
+  "infobox": {
+    "name": "R-99 SMG",
+    "description": "Rapid-fire automatic SMG.",
+    "type": "Submachine Gun",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "barrel": "laser",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "",
+    "damageBody": "13",
+    "damageHead": "16",
+    "damageLegs": "10",
+    "rateOfFire": "1080",
+    "dps": "234",
+    "magazineSize": [
+      "18",
+      "21",
+      "24",
+      "27"
+    ],
+    "tacReload": [
+      "1.8",
+      "1.74",
+      "1.68",
+      "1.62"
+    ],
+    "fullReload": [
+      "2.45",
+      "2.37",
+      "2.29",
+      "2.21"
+    ]
+  }
+}

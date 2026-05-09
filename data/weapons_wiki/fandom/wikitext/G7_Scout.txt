@@ -1,0 +1,429 @@
+{{MainGameNotice|mobilePage=G7 Scout (Mobile)}}
+{{Infobox-Weapon
+| name = G7 Scout
+| description = Semi-auto light marksman rifle.
+| type = Marksman weapon
+| fireModes = [[File:Single-fire Icon.svg|20px|link=]] Single
+| ammoType = Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| barrel = stabilizer
+| magType = light
+| optics = true
+| stock = sniper
+| damageBody = 33
+| damageHead = 58 <small>(1.75×)</small>
+| damageLegs = 25 <small>(0.75×)</small>
+| rateOfFire = 252
+| dps = 139
+| magazineSize = {{Level0123|10|15|18|20}}
+| tacReload = {{Level0123|2.16|2.09|2.02|1.94}}
+| fullReload = {{Level0123|2.7|2.61|2.52|2.43}}
+}}
+
+The '''G7 Scout''' is a semi-automatic [[battle rifle]] that utilizes {{ItemLink|Light Rounds}}.
+
+== Stats ==
+=== Attachments ===
+; [[Optics]]
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 33
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_g2</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 4
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | <div class="invert-image">[[File:Double Tap Trigger.svg|25px|link=Double Tap Trigger]] 10</div>
+|-
+| burst_fire_delay
+| style="text-align:center" | 0.375
+| Time delay between two bursts. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 30000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 761 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 17716
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 450 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 6.25
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 7.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2.25
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.42
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.4
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.35
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.32
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_in {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|noText=yes}} {{ItemLink|1x Holo|noText=yes}} {{ItemLink|1x-2x Variable Holo|noText=yes}} {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|noText=yes}}
+| style="text-align:center" | 0.35
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_in {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|noText=yes}} {{ItemLink|2x-4x Variable AOG|noText=yes}}
+| style="text-align:center" | 0.42
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.28
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|noText=yes}} {{ItemLink|1x Holo|noText=yes}} {{ItemLink|1x-2x Variable Holo|noText=yes}} {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|noText=yes}}
+| style="text-align:center" | 0.28
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|noText=yes}} {{ItemLink|2x-4x Variable AOG|noText=yes}}
+| style="text-align:center" | 0.35
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.425
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Adaptable''
+| style="text-align:left" | Down an enemy with ADS with no optic attachment equipped.
+| 25 times
+|-
+| 40
+| ''Getting Ahead''
+| style="text-align:left" | Down an enemy with at least one headshot on the target.
+| 20 times
+|-
+| 60
+| ''Spotted''
+| style="text-align:left" | Down an enemy at least 80 meters away.
+| 15 times
+|-
+| 80
+| ''Flow State''
+| style="text-align:left" | Deal at least 500 damage at 120 meters away in one match.
+| 15 times
+|-
+| 100
+| ''Break Free''
+| style="text-align:left" | Break at least 2 enemies' armor without reloading at least 100 meters away in one match.
+| 10 times
+|}
+
+
+== Lore ==
+{{Quote|The G7 Scout comes from good stock. The successor to the [[tf:G2A4 Battle Rifle|G2A4 Assault Rifle]] and the [[tf:G2A5 Battle Rifle|G2A5 Battle Rifle]], the G7 features a simple design and parts that are easy to reproduce, making it a crowd favorite in the Outlands' most remote regions. The Scout adds a new feature to the family with its updated sniper stock, improving long-range accuracy while not sacrificing mid-range effectiveness.}}
+
+The G2A6, later renamed to the G7 Scout, has been simplified from its design in ''Titanfall 2''. Based on the M14/M1A rifle platform, the G7's drop in frame was replaced from a milled tactical stock to a solid composite body intended to serve the role as a Scout Sniper Rifle. This weapon uses 6.19x97mm LEC bullets that gives it quite a punch at mid range to long distance. When used as a DMR, your team can effectively advance and maneuver using your sight acquisition as a base of fire. It's overall mechanics haven't changed much throughout the years, as its reliability and brutal precision is a testament to its real-world inspiration.<ref name="ArtStation Lastimosa">[https://www.artstation.com/artwork/YaRLPX Ryan Lastimosa on ArtStation]</ref>
+
+
+== Skins ==
+There are a total of 87 skins for the G7 Scout: 22 {{Legendary}}, 13 {{Epic}}, 36 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+The Gold Dragon G7 Scout.png|{{Legendary|The Gold Dragon}}<br/>{{CraftingMetals|1,200}}
+The Crimson Firedrake G7 Scout.png|{{Legendary|The Crimson Firedrake}}<br/>{{CraftingMetals|1,200}}
+The Prey Stalker G7 Scout.png|{{Legendary|The Prey Stalker}}<br/>{{CraftingMetals|1,200}}
+Cold Justice G7 Scout.png|{{Legendary|Cold Justice}}<br/>{{CraftingMetals|1,200}}
+The Blue Dragon G7 Scout.png|{{Cosmetic-NI|Recolor|Legendary|The Blue Dragon}}</br>Needs {{Legendary|The Crimson}}<br>{{Legendary|Firedrake}}
+Hidden Agenda G7 Scout.png|{{Cosmetic-NI|Recolor|Legendary|Hidden Agenda}}</br>Needs {{Legendary|Cold Justice}}
+Regal Spike G7 Scout.png|{{Cosmetic|Iron Crown|Legendary|Regal Spike}}
+In The Mist G7 Scout.png|{{Cosmetic-NI|Recolor|Legendary|In The Mist}}</br>Needs {{Legendary|The Prey Stalker}}
+Marching Orders G7 Scout.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Marching Orders}}
+Verdant Wyvern G7 Scout.png|{{Cosmetic-NI|Recolor|Legendary|Verdant Wyvern}}</br>Needs {{Legendary|The Gold Dragon}}
+Bloody Bandage G7 Scout.png|{{Cosmetic-NI|Recolor|Legendary|Bloody Bandage}}</br>Needs {{Legendary|Cold Justice}}
+Tomb Guardian G7 Scout.png|{{Cosmetic|Lost Treasures|Legendary|Tomb Guardian}}
+Supersonic G7 Scout.png|{{Cosmetic|Season 6|Legendary|Supersonic}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Hypersonic G7 Scout.png|{{Cosmetic|Season 6|Legendary|Hypersonic}}<ref group="note" name="reactive"/><br/>Level 110
+Attrition G7 Scout.png|{{Cosmetic|Fight Night|Legendary|Attrition}}
+Military Grade G7 Scout.png|{{Cosmetic|Genesis|Legendary|Military Grade}}
+Trusty Sidekick G7 Scout.png|{{Cosmetic|Bangalore Edition|Legendary|Trusty Sidekick}}
+Blood Oath G7 Scout.png|{{Cosmetic|Spellbound|Legendary|Blood Oath}}
+Frenzied Frequency G7 Scout.png|{{Cosmetic|Season 16|Legendary|Frenzied Frequency}}<br>Level 1
+Cursed Guardian G7 Scout.png|{{Cosmetic|Imperial Guard|Legendary|Cursed Guardian}}
+Cyber Scout G7 Scout.png|{{Cosmetic|Fluorescent Frenzy Store|Legendary|Cyber Scout}}
+Advanced Precision G7 Scout.png|{{Cosmetic|Doppelgangers|Legendary|Advanced Precision}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm G7 Scout.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire G7 Scout.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor G7 Scout.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid G7 Scout.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy G7 Scout.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Paint the Planet G7 Scout.png|{{Cosmetic|Voidwalker|Epic|Paint the Planet}}
+Outside the Lines G7 Scout.png|{{Cosmetic|Voidwalker|Epic|Outside the Lines}}
+Lethal Injection G7 Scout.png|{{Cosmetic|System Override|Epic|Lethal Injection}}
+Arachnid Assault G7 Scout.png|{{Cosmetic|Fight or Fright 2020|Epic|Arachnid Assault}}
+Redline G7 Scout.png|{{Cosmetic|Anniversary|Epic|Redline}}
+Splash of Color G7 Scout.png|{{Cosmetic|Season 12|Epic|Splash of Color}}
+Glow Flow G7 Scout.png|{{Cosmetic|Neon Network|Epic|Glow Flow}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Out for Blood G7 Scout.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party G7 Scout.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale G7 Scout.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare G7 Scout.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands G7 Scout.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames G7 Scout.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail G7 Scout.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker G7 Scout.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident G7 Scout.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged G7 Scout.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave G7 Scout.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge G7 Scout.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse G7 Scout.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave G7 Scout.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage G7 Scout.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Patchwork G7 Scout.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 94
+The Wolfpack G7 Scout.png|{{Cosmetic|Legendary Hunt|Rare|The Wolfpack}}
+Cyclone G7 Scout.png|{{Cosmetic|Season 2|Rare|Cyclone}}<br/>Level 23
+Golden Wings G7 Scout.png|{{Cosmetic|Season 3|Rare|Golden Wings}}<br/>Level 98
+Style Points G7 Scout.png|{{Cosmetic|Grand Soirée|Rare|Style Points}}<br/>{{Coins|500}}
+Hardwired G7 Scout.png|{{Cosmetic|Season 4|Rare|Hardwired}}<br/>Level 83
+Dragon's Embrace G7 Scout.png|{{Cosmetic|Season 5|Rare|Dragon's Embrace}}<br/>Level 15
+Downforce G7 Scout.png|{{Cosmetic|Season 6|Rare|Downforce}}<br/>Level 100
+Dark Adaptation G7 Scout.png|{{Cosmetic|Season 7|Rare|Dark Adaptation}}<br/>Level 23
+Squared Up G7 Scout.png|{{Cosmetic-NI|PlayStation+|Rare|Squared Up}}<br/>November 2020
+Flurry G7 Scout.png|{{Cosmetic|Holo-Day Bash 2020|Rare|Flurry}}
+Pushing Daisies G7 Scout.png|{{Cosmetic|Season 8|Rare|Pushing Daises}}<br/>Level 23
+Blood Eagle G7 Scout.png|{{Cosmetic|Chaos Theory|Rare|Blood Eagle}}
+Textile Precision G7 Scout.png|{{Cosmetic|Season 9|Rare|Textile Precision}}<br/>Level 23
+Altered State G7 Scout.png|{{Cosmetic|Season 10|Rare|Altered State}}<br/>Level 69
+Triangulation G7 Scout.png|{{Cosmetic|Season 11|Rare|Triangulation}}<br/>Level 41
+Piston Punch G7 Scout.png|{{Cosmetic|Season 12|Rare|Piston Punch}}<br/>Level 80
+Deep Breaths G7 Scout.png|{{Cosmetic-NI|Prime Gaming|Rare|Deep Breaths}}<br/>April 2022
+Quicksilver G7 Scout.png|{{Cosmetic|Season 13|Rare|Quicksilver}}<br/>Level 69
+On My Mark G7 Scout.png|{{Cosmetic|Season 14|Rare|On My Mark}}<br/>Level 15
+Orange Slice G7 Scout.png|{{Cosmetic|Season 17|Rare|Orange Slice}}<br/>Level 13
+Heroes Past G7 Scout.png|{{Cosmetic|Season 19|Rare|Heroes Past}}<br/>Level 65
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue G7 Scout.png|{{Common|Factory Issue}}<br/>Default
+Midnight G7 Scout.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal G7 Scout.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic G7 Scout.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire G7 Scout.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater G7 Scout.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo G7 Scout.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm G7 Scout.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest G7 Scout.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen G7 Scout.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid G7 Scout.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal G7 Scout.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket G7 Scout.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon G7 Scout.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover G7 Scout.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic G7 Scout.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|{{ItemLink|Season 21|noText=yes}} [[June 25, 2024 Patch]]
+* Damage increased to 33 (was 32)
+* Rate of fire increased
+* Adjusted recoil to be more consistent when firing at max fire rate
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Removed {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* ('''Undocumented''') Changed inspect animation.
+
+; {{ItemLink|Spellbound|noText=yesnoText=yes}} [[January 10, 2023 Patch]]
+* Reduced damage from 34 to 32.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Added {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}. Compatible with [[EVA-8 Auto]] and G7 Scout.
+* Reduced damage from 36 to 34.
+* Reduced headshot damage multiplier from 2× to 1.75×.
+* Increased {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}} burst delay from 0.375 to 0.4.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 14}}.
+
+; {{ItemLink|Warriors|noText=yes}} [[March 29, 2022 Patch]]
+* Reduced burst delay from 0.475 to 0.375.
+* Reduced burst recoil.
+* Increased {{ItemLink|Mythic Light Rounds|text=Ammo}} from 120 to 140.
+
+; [[November 05, 2021 Patch]]
+* Increased {{ItemLink|Mythic Light Rounds|text=Ammo}} from 80 to 120.
+* Increased headshot damage multiplier from 1.75× to 2×.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 80 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}}.
+* Increased damage from 34 to 36.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Can now equip {{ItemLink|Sniper Stock|text=Sniper Stocks}}.
+* Can no longer equip {{ItemLink|Standard Stock|text=Standard Stocks}}.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|350}} to {{Materials|400}}.
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|250}} to {{Materials|200}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Changed weapon type from assault rifle to marksman weapon.
+* Move-speed while aiming down sights has been increased to match other marksman weapons -- faster than snipers, slower than ARs.
+* Increased hipfire spread size (reduced accuracy) to be more in line with other marksman weapons.
+* ('''Undocumented''') Fixed a bug involving {{Legendary|The Prey Stalker}}, {{Legendary|Cold Justice}}, {{Legendary|In The Mist}}, {{Legendary|Hidden Agenda}}, and {{Legendary|Bloody Bandage}} skins sharing the same magazine appearance as {{Legendary|The Gold Dragon}} skin.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Removed {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}} compatibility as it got removed from the game.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 7}}.
+
+; {{ItemLink|The Old Ways|noText=yes}} [[April 07, 2020 Patch]]
+* Reduced headshot damage multiplier from 2× to 1.75×.
+* Reduced leg damage multiplier from 0.9× to 0.75×.
+* Reduced projectile speed from 31500 to 30000.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Changed weapon type from sniper rifle to assault rifle.
+** Can now equip {{ItemLink|Standard Stock|text=Standard Stocks}}.
+** Can no longer equip the {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}, {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}, or {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}} optics.
+** Can no longer equip {{ItemLink|Sniper Stock|text=Sniper Stocks}}.
+** Contributes to progress on challenges and stats for assault rifles.
+* Reduced fire rate from 4.5 to 4.
+* Fixed bug where the G7 Scout had 0% ADS air spread, making it the only gun that was perfectly accurate on ziplines, etc.
+* {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}:
+** Increased time between bursts from 0.425 to 0.475 seconds.
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Increased damage from 30 to 34.
+* Added {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}. Compatible with [[EVA-8 Auto]] and G7 Scout.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 3}}.
+
+; {{ItemLink|Legendary Hunt|noText=yes}} [[June 04, 2019 Patch]]
+* Fixed extra sway from crosshair while moving.
+
+; [[April 16, 2019 Patch]]
+* Increased leg shot damage multiplier from 0.75× to 0.9×.
+* Reduced base weapon sway by about 33%.
+* Reduced base sway speed by about 25%.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa G2A6.jpg|Concept Art for the then G2A6 by Ryan Lastimosa.<ref name="ArtStation Lastimosa"/>
+ConceptArt Gadget-Bot G7 Tomb Guardian 1.jpg|Concept Art for the {{Legendary|Tomb Guardian}} skin by Gadget-Bot Productions.<ref name="ArtStation Gadget-Bot">[https://www.artstation.com/artwork/18N51e Gadget-Bot Productions on ArtStation]</ref>
+ConceptArt Gadget-Bot G7 Tomb Guardian 2.jpg
+Attrition G7 Scout Concept Art.jpg|Concept art for the {{Legendary|Attrition}} skin.<ref>https://www.artstation.com/artwork/B3m2xA</ref>
+</gallery>
+
+
+== Trivia ==
+* The G7 Scout is the only weapon to have a rare reload animation, where the empty magazine may be ejected and then a new one is inserted both from the top. This particular reload is a reference to the [[wikipedia:M1 Garand|M1 Garand]], which the [[wikipedia:M14 rifle|M14]] and, by extension, the G7 Scout, are based on.
+* The G7 Scout is the only weapon whose classification changed twice, first from sniper rifle to assault rifle in {{ItemLink|Season 4}}, and then from assault rifle to marksman weapon in {{ItemLink|Season 9}}.
+* It was originally designated as the G2A6, making it more in line with the naming scheme of its [[Frontier War]] ancestors.
+* The G7 Scout appearance is based on the real [[wikipedia:Springfield Armory M1A#SOCOM rifles|Springfield Armory M1A SOCOM 16]] semi-automatic rifle fitted with a [http://www.jallenglobal.com/jae-100-g3-standard-orders/ J. Allen Enterprises JAE-100 chassis].
+* {{Legendary|The Crimson Firedrake}} skin sports the phrase "You Owe Me Awe", a nod to the 1986 thriller ''[[wikipedia:Manhunter (film)|Manhunter]]'', in which the main antagonist Francis Dolarhyde says this line to his victim Freddy Lounds before murdering him.
+* The G7 Scout is [[Bangalore]]'s favorite weapon. It is seen in a few of her banner poses, her character select animation, and her lobby animations.<ref>[[Pathfinder's Quest]]</ref>
+* The {{Cosmetic|season 6|Legendary|Supersonic}} and {{Cosmetic|season 6|Legendary|Hypersonic}} skins are weapon mods designed by [[Rampart]], indicated by the presence of a Rampart Mods stamp.
+
+== See also ==
+* [[G7 Scout (Mobile)|G7 Scout (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/G2A4_Battle_Rifle G2A4 Battle Rifle (''Titanfall'')]
+* [https://titanfall.fandom.com/wiki/G2A5_Battle_Rifle G2A5 Battle Rifle (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

@@ -1,0 +1,417 @@
+{{Game|main}}
+{{Infobox-Weapon
+| name = Bocek Compound Bow
+| description = Hold fire to increase power.
+| type = Marksman Weapon
+| fireModes = [[File:Single-fire Icon.svg|25px|Single|link=]] Single
+| ammoType = Arrows
+| creator =
+| barrel =
+| magType =
+| optics = true
+| stock = sniper
+| damageBody = 35–65<br>[[File:Frag Grenade.svg|20px]] 55 + 25 (80)
+| damageHead = 56–104<br>[[File:Frag Grenade.svg|20px]] 88 + 25 (112)
+| damageLegs = 28–52<br>[[File:Frag Grenade.svg|20px]] 44 + 25 (69)
+| rateOfFire = ???
+| dps = ???
+| magazineSize = 40
+| tacReload =
+| fullReload =
+}}
+
+The '''Bocek Compound Bow''', '''Bocek''', or '''Bow''', is a [[compound bow]] introduced in {{ItemLink|Season 9}} that utilizes {{ItemLink|Arrows}}.
+
+Unlike other weapons, the Bocek fires an arrow when the Fire button (default: {{Key|Mouse|Left}} / {{Key|Xbox|RT}} / {{Key|PS4|R2}}) is released. Holding the button for longer before firing will increase its damage, arrow speed, and accuracy, at the cost of slower fire rate. Pressing Reload (default: {{Key|R}} / {{Key|Xbox|X}} / {{Key|PS4|Square}}) while charging an arrow will un-nock it without firing. The Bocek also does not have a magazine but instead draws ammo directly from its internal ammo pool.
+
+The Bocek spawns with 40 {{ItemLink|Arrows}} (50 for [[Sparrow]]), which do not take up an inventory slot and can be replenished either by retrieving Arrows that have been shot into surfaces, or looted from the [[Death Box]] of an arrow-struck player (maximum 4). Each Bocek has its own Arrow supply, and equipping two Boceks will not pool their arrows.
+
+The Bocek can be Primed using a {{ItemLink|Frag Grenade}}, which takes 2.5 seconds. At maximum draw, a Primed Bocek will fire explosive arrows that explode after 2 seconds in a 5 meter radius, dealing up to 25 damage. Explosive arrows deal less damage upon impact. The Primed charge decays over time and with each explosive arrow fired, for a maximum of 7 explosive arrows per charge (9 for [[Sparrow]]).
+
+.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; Optics
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG “Bruiser”}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|3x HCOG Ranger|text={{Epic|3x HCOG “Ranger”}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+<br>
+<br>
+<!--=== Damage Profile ===
+; Minimum draw
+{{Damage profile
+| damage = 25
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+<br>
+<br>
+; Max draw
+{{Damage profile
+| damage = 70
+| headshotMdfr = 1.75
+| legMdfr = 0.9
+}}
+<br>
+<br>
+; {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}, minimum draw
+{{Damage profile
+| damage = 5
+| damageref = <ref group="note">Shot consists of 7 pellets, dealing 5 damage each.</ref>
+| bulletsPerBurst = 7
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+<references group="note"/>
+<br>
+<br>
+; {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}, max draw
+{{Damage profile
+| damage = 12
+| damageref = <ref group="note">Shot consists of 7 pellets, dealing 11 damage each.</ref>
+| bulletsPerBurst = 7
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>-->
+<br>
+<br>
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_bow</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | charge_time
+| style="text-align:center" | 0.54
+| rowspan="2" | Time to charge shots for higher damage. Expressed in seconds.
+|-
+| style="text-align:center" | <div class="invert-image">{{ItemLink|Deadeye's Tempo|noText=yes}} 0.32</div>
+|-
+| fire_rate
+| style="text-align:center" | 3
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 10000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 254 meters per second.
+|-
+| projectile_launch_speed_full_charge
+| style="text-align:center" | 28000
+| Speed at which charged projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 711 meters per second.
+|-
+| projectile_launch_speed_shatter_arrows
+| style="text-align:center" | 16000
+| Speed at which {{ItemLink|Shatter Caps}} projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 406 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.75
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3.75
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 4
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2.25
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 3.25
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.53
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.36
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.43
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.26
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.425
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 3.5
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''25000''' damages with the '''Bocek'''
+|-
+|''Headshot Kills''
+| style="text-align:left" | Kill '''100''' enemies with '''Headshots''' with the '''Bocek'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''75''' enemies while ADS with the '''Bocek'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''100''' enemies with '''60''' meters away with the '''Bocek'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''600''' enemies with the '''Bocek'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The first compound bows to reach the Frontier (all emblazoned with the brand name "Bocek" in shades of neon) were meant for sport and leisure activity. However, many parts of the Frontier proved to be inhospitable, and in lean months, these pieces of sports equipment were found to be a silent and inexpensive means of securing wild game. The latest models have been designed for durability, precision, and power, and while the bow does not see regular use in combat where firearms are favored, it remains deadly in the hands of a skilled archer.}}
+<br>
+<br>
+== Skins ==
+There are a total of 64 skins for the Bocek Compound Bow: 13 {{Legendary}}, 11 {{Epic}}, 24 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="200" heights="300" mode="nolines">
+Night Piercer Bocek.png|{{Legendary|Night Piercer}}<br/>{{CraftingMetals|1,200}}
+Meteor Shot Bocek.png|{{Legendary|Meteor Shot}}<br/>{{CraftingMetals|1,200}}
+Ivory Fire Bocek.png|{{Legendary|Ivory Fire}}<br/>{{CraftingMetals|1,200}}
+Timeless Timber Bocek.png|{{Legendary|Timeless Timber}}<br/>{{CraftingMetals|1,200}}
+Compound Fracture Bocek.png|{{Cosmetic|Season 11|Legendary|Compound Fracture}}<br>Level 01
+Aurora Arrow Bocek.png|{{Cosmetic-NI|Recolor|Legendary|Aurora Arrow}}<br/>Needs {{Legendary|Timeless Timber}}
+Fringe Benefit Bocek.png|{{Cosmetic|Warriors|Legendary|Fringe Benefit}}
+Phantom Limb Bocek.png|{{Cosmetic-NI|Recolor|Legendary|Phantom Limb}}<br/>Needs {{Legendary|Night Piercer}}
+Widow Wing Bocek.png|{{Cosmetic|Awakening|Legendary|Widow Wing}}
+Emerald Stone Bocek.png|{{Cosmetic-NI|Recolor|Legendary|Emerald Stone}}<br/>Needs {{Legendary|Meteor Shot}}
+Freshly Minted Bocek.png|{{Cosmetic-NI|Recolor|Legendary|Freshly Minted}}<br/>Needs {{Legendary|Ivory Fire}}
+Deadly Precision Bocek.png|[[File:Sale Icon.svg|22px|link=New Moon Store]] {{Legendary|Deadly Precision}}
+Colpo di Passero Bocek.png|[[File:Sale Icon.svg|22px|link=Sparrow Launch Store]] {{Legendary|{{Texttip|Colpo di Passero|Sparrow Shot}}}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200" heights="300" mode="nolines">
+Eye of the Storm Bocek.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Bocek.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Bocek.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Bocek.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Bocek.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Cupid's Arrow Bocek.png|{{Cosmetic|Valentine's Day Sale|Epic|Cupid's Arrow}}
+Compound Interest Bocek.png|{{Cosmetic|Dressed to Kill|Epic|Compound Interest}}
+Beast Hunter Bocek.png|{{Cosmetic|Inner Beast|Epic|Beast Hunter}}
+Loch-ed On Bocek.png|{{Cosmetic|S23|Epic|Loch-ed On}}<br>Split 2 Premium Lv 43
+Deadly Class Bocek.png|{{Cosmetic|S25|Epic|Deadly Class}}
+Silent Disruption Bocek|{{Cosmetic|S25|Epic|Silent Disruption}}<br>Launch Challenge
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="200" heights="300" mode="nolines">
+Chaos Theory Bocek.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Bocek.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Bocek.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Bocek.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Bocek.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Bocek.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Bocek.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Bocek.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Bocek.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Bocek.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Bocek.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Bocek.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Bocek.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Bocek.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Bocek.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Golden Touch Bocek.png|{{Cosmetic-NI|PlayStation+|Rare|Golden Touch}}<br/>Season 12
+Fate Sealer Bocek.png|{{Cosmetic|Season 13|Rare|Fate Sealer}}<br/>Level 21
+Confetti Shot Bocek.png|{{Cosmetic-NI|PlayStation+|Rare|Confetti Shot}}<br/>Season 15
+Sunset Threat Bocek.png|{{Cosmetic|Season 16|Rare|Sunset Threat}}<br/>Level 29
+Orange Slice Bocek.png|{{Cosmetic|Season 17|Rare|Orange Slice}}<br/>Level 92
+Hotwire Frame Bocek.png|{{Cosmetic|Season 18|Rare|Hotwire Frame}}<br>Level 69
+Squared Away Bocek.png|{{Symbol|Season 19}} {{Rare|Squared Away}}<br>Level 10
+Necrotic Devourer Bocek.png|{{Symbol|Season 21}} {{Rare|Necrotic Devourer}}<br>Level 53
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="200" heights="300" mode="nolines">
+Factory Issue Bocek.png|{{Common|Factory Issue}}<br/>Default
+Midnight Bocek.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Bocek.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Bocek.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Bocek.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Bocek.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Bocek.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Bocek.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Bocek.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Bocek.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Bocek.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Bocek.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Bocek.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Bocek.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Bocek.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Bocek.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Wild Iron}} [[September 16, 2025 Patch]]
+* Decreased charge time to fully nock an arrow to 0.35s (was 0.45s)
+* Improved hipfire spread.
+
+
+; {{ItemLink|Season 25|noText=yes}} [[May 06, 2025 Patch]]
+* Removed from [[Care Package|{{Mythic|Care Packages}}]]
+* Can also be found on Sniper Arsenals
+* Added Sniper stocks as an accepted attachment
+* Uses its own reserve of 40 arrows, similar to a Care Package weapon
+** Arrows shot into the world can be retrieved to replenish supply
+** Arrows shot into players can be retrieved from top of Death Box (4 max)
+** Arrows cannot be found in floor looting
+* Max charge damage decreased to 55 (was 75)
+* Decreased rate of fire
+* Shattercaps removed
+* Frag Grenades can be used to energize the Bocek with explosive arrows
+** Must fully draw in order to fire an explosive arrow
+** Explosive arrows will stick into the world or a player on hit
+** Explosive arrow on hit damage reduced to 40 (headshot: 64)
+** Explosive arrows will explode in a 5m radius, dealing 25 extra damage after a 2s delay
+* Now comes with integrated {{ItemLink|Accelerator|text={{Common|Accelerator}}}}
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 75 (was 70).
+* Headshot damage: 120.
+* Fire rate slightly reduced.
+* Removed Deadeye’s Tempo passive.
+* Shattercaps damage per pellet increased to 13 (was 12).
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Increased initial draw speed.
+* Now {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} can be toggled on/off.
+* Reduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} blast pattern.
+
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Reduced {{ItemLink|Mythic Arrows|text=Ammo}} from 80 to 60.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 80 {{ItemLink|Mythic Arrows|text=Ammo}} and {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}.
+* Increased full charge damage from 60 to 70.
+* Integrated {{ItemLink|Deadeye's Tempo|text={{Epic|Deadeye's Tempo}}}} into the weapon.
+* Increased {{ItemLink|Deadeye's Tempo|noText=1}} Tempo draw speed from 0.32 to 0.38.
+* Increased {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} full charge pellet damage from 11 to 12.
+
+
+; {{ItemLink|Awakening|noText=yes}} [[June 21, 2022 Patch]]
+* [[Fully kitted weapon|{{Legendary|Fully Kitted}}]] Bocek Compound Bow now has the {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} optic instead of the {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Reduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} base charge pellet damage from 6 to 5.
+* Reduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} medium charge pellet damage from 9 to 8.
+* Reduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} full charge pellet damage from 12 to 11.
+
+
+; {{ItemLink|Evolution|noText=yes}} [[September 14, 2021 Patch]]
+* Reduced draw speed from 0.56 to 0.54 seconds.
+* Increased {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} base charge pellet damage from 4 to 6.
+* Increased {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} medium charge pellet damage from 7 to 9.
+* Increased {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} full charge pellet damage from 11 to 12.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|600}} to {{Materials|500}}.
+
+
+; [[May 24, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** {{Rare|Level 2}} upgrade now unlocks {{ItemLink|Shatter Caps}} instead of {{ItemLink|Deadeye's Tempo}}.
+** {{Epic|Level 3}} upgrade now unlocks {{ItemLink|Deadeye's Tempo}} instead of {{ItemLink|Shatter Caps}}.
+
+
+; [[May 11, 2021 Patch]]
+* Reduced full charge damage from 70 to 60.
+* Increased draw speed from 0.54 to 0.56 seconds.
+* Increased {{ItemLink|Deadeye's Tempo|text={{Epic|Deadeye's Tempo}}}} draw speed from 0.32 to 0.38 seconds.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Introduced.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 9}}.}}
+<br>
+<br>
+== Trivia ==
+* The Bocek Compound Bow is named after David Bocek, one of [[Respawn Entertainment]]'s ex-game designers.
+* The Bocek Compound Bow is one of two weapons in the game, the other being the [[C.A.R. SMG]], with two slightly different inspect animations. The Bocek's depends on the player having arrows in their inventory or not.
+* The arrows change color based on the active fire mode: blue for default fire mode, orange for {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}.
+* An early iteration of the Bocek can be seen equipped by [[Loba]] in Part 5 of [[The Legacy Antigen]] Quest, as the comic was completed before the Bocek's design was finalized.
+* In [[Mixtape|Mix Tape - Team Deathmatch & Control]], {{ItemLink|2x-4x Variable AOG}} is not in the scope list of Bocek Compound Bow. <!-- S27 -->
+<br>
+<br>
+
+== Gallery ==
+<gallery widths="250" heights="250">
+Bocek Concept Art.jpg|Concept art for the Bocek.<ref>[https://www.artstation.com/artwork/4XyV5q Danny Gardner on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Bugs ==
+* The Bocek lacks an animation for when un-nocking an arrow while charging it and aiming down the sights. 
+
+
+{{Nav-Weapons}}

@@ -1,0 +1,395 @@
+{{MainGameNotice|mobilePage=R-99 SMG (Mobile)}}
+{{Infobox-Weapon
+| name = R-99 SMG
+| description = Rapid-fire automatic SMG.
+| type = Sub machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Mythic Light Rounds
+| creator = [[File:Lastimosa Armory.svg|20px]] [[Lastimosa Armory]]
+| damageBody = 14
+| damageHead = 18<small>(1.25×)</small>
+| damageLegs = 12<small>(0.8×)</small>
+| rateOfFire = 1080
+| magazineSize = 30
+| tacReload = 1.62
+| fullReload = 2.21
+}}
+
+The '''R-99 SMG''', or '''R-99''', is a fully-automatic [[submachine gun]] that utilizes {{ItemLink|Mythic Light Rounds}}.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+
+
+; Others
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 14
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_r97</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 18
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 21000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 533 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.35
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.2
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.75
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.35
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.25
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 5
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Last Hop''
+| style="text-align:left" | Down an enemy with the weapon when enemy is airborne.
+| 20 times
+|-
+| 40
+| ''Relentless''
+| style="text-align:left" | Down an enemy with the weapon without releasing the trigger using hipfire.
+| 20 times
+|-
+| 60
+| ''Quick Thinking''
+| style="text-align:left" | Down at least 3 enemies within 5 seconds after switching to the R99 in one match.
+| 15 times
+|-
+| 80
+| ''Personal Space''
+| style="text-align:left" | Down at least 2 enemies within 10 meters while ['''Laser Sight'''] attachment is equipped in a match.
+| 15 times
+|-
+| 100
+| ''1 Clip''
+| style="text-align:left" | Land every bullet in a magazine with the weapon.
+| 10 times
+|}
+
+
+== Lore ==
+{{Quote|The original [[tf:R-97 Compact SMG|R-97CN]] is intrinsically linked with orbital boarding; it was designed to provide heavy fire in confined, low-gravity spaces, essential for the Colonial Navy (the military arm of the Interstellar Colonial Authority) during boarding missions in high orbit. When former members of the Colonial Navy went freelance and ultimately joined the Mercenary Syndicate, the R-97CN was still so beloved that the organization commissioned a new model. Now the virtually indistinguishable R-99 is a common sight throughout the Outlands.}}
+
+Originally designated and manufactured by the [[Lastimosa Armory]] as the '''R-97CN A3''', the R-99 SMG was intended for use with the Frontier Colonial Navy, hence the "CN" classification. Chambered in the quite old 5.8x42mm, it would often be used by the Colonial Navy when conducting Orbital Boarding Parties on hostile ships in high orbit or entering the atmosphere, so they needed a weapon platform that was compact and had the ability to spit lead downrange in low gravity or extremely confined areas such as cockpits or ship corridors.<ref name="lastimosa">[https://www.artstation.com/artwork/1nX1wX Ryan Lastimosa on ArtStation]</ref>
+
+
+== Skins ==
+There are a total of 94 weapon skins for the R-99 SMG: 31 {{Legendary}}, 11 {{Epic}}, 38 {{Rare}} and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="300" mode="nolines">
+The Problem Solver R-99.png|{{Legendary|The Problem Solver}}<br/>{{CraftingMetals|1,200}}
+The Alchemist R-99.png|{{Legendary|The Alchemist}}<br/>{{CraftingMetals|1,200}}
+Outlands Avalanche R-99.png|{{Legendary|Outlands Avalanche}}<br/>{{CraftingMetals|1,200}}
+The Kill Switch R-99.png|{{Legendary|The Kill Switch}}<br/>{{CraftingMetals|1,200}}
+Rule of Law R-99.png|{{Cosmetic|Voidwalker|Legendary|Rule of Law}}<br/>{{CraftingMetals|1,200}}
+Excavator R-99.png|{{Cosmetic|Monsters Within|Legendary|Excavator}}</br>{{CraftingMetals|1,200}}
+Sirens Song R-99.png|{{Cosmetic|Dark Depths|Legendary|Sirens Song}}</br>{{CraftingMetals|1,200}}
+Magnum Opus R-99.png|{{Cosmetic-NI|Recolor|Legendary|Magnum Opus}}<br/>Needs {{Legendary|The Alchemist}}
+The Unloader R-99.png|{{Cosmetic-NI|Recolor|Legendary|The Unloader}}<br/>Needs {{Legendary|Outlands Avalanche}}
+The Paradigm Shifter R-99.png|{{Cosmetic|Iron Crown|Legendary|The Paradigm Shifter}}
+Death Reel R-99.png|{{Cosmetic-NI|Recolor|Legendary|Death Reel}}<br/>Needs {{Legendary|The Problem Solver}}
+Sugar Rush R-99.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Sugar Rush}}
+Totally Gnarly R-99.png|{{Cosmetic-NI|Recolor|Legendary|Totally Gnarly}}<br/>Needs {{Legendary|The Kill Switch}}
+Zero Point R-99.png|{{Cosmetic|Season 4|Legendary|Zero Point}}<br/>Level 01
+Swift Justice R-99.png|{{Cosmetic-NI|Recolor|Legendary|Swift Justice}}<br/>Needs {{Legendary|Rule of Law}}
+Dangerous Game R-99.png|{{Cosmetic|Lost Treasures|Legendary|Dangerous Game}}
+Cutting Edge R-99.png|{{Cosmetic|Season 7|Legendary|Cutting Edge}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+Revolutionary R-99.png|{{Cosmetic|Season 7|Legendary|Revolutionary}}<ref group="note" name="reactive"/><br/>Level 110
+Wishbone R-99.png|{{Cosmetic|Chaos Theory|Legendary|Wishbone}}
+Flash of Fury R-99.png|{{Cosmetic|Thrillseekers|Legendary|Flash of Fury}}
+Jewel of the Gods R-99.png|{{Cosmetic|Seer Launch Bundle|Legendary|Jewel of the Gods}}
+Beat Dropper R-99.png|{{Cosmetic|Apex X Market Store|Legendary|Beat Dropper}}
+Multitool R-99.png|{{Cosmetic|3rd anniversary|Legendary|Multitool}}
+Core Fragment R-99.png|{{Cosmetic|Weapon Recolor Store (Season 12)|Legendary|Core Fragment}}
+Gilded Fang R-99.png|{{Cosmetic|Store|Legendary|Gilded Fang}}
+Symbiote R-99.png|{{Cosmetic|Dark Circuits Store|Legendary|Symbiote}}
+Freezer Burn R-99.png|{{Cosmetic|Wintertide|Legendary|Freezer Burn}}
+Solar Flair R-99.png|{{Cosmetic|Veiled|Legendary|Solar Flair}}
+Exsanguinator R-99.png|{{Cosmetic|Death Dynasty|Legendary|Exsanguinator}}
+Ku-Pow R-99.png|290x300px|{{Cosmetic|Final Fantasy VII|Legendary|Ku-Pow}}
+Wind Serpent R-99.png|{{Legendary|Wind Serpent}}<ref group="note">Store exclusive, included in the Sun Warrior Bundle.</ref>
+</gallery>
+Note:
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="300" mode="nolines">
+Eye of the Storm R-99.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire R-99.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor R-99.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid R-99.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy R-99.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Second to None R-99.png|{{Cosmetic|Anniversary|Epic|Second to None}}
+Waves of Change R-99.png|{{Cosmetic|Season 9|Epic|Waves of Change}}
+Tip the Scales R-99.png|{{Cosmetic|Awakening|Epic|Tip the Scales}}
+Floral Fireshow R-99.png|{{Symbol|Celestial Sunrise}} {{Epic|Floral Fireshow}}
+Biomechanic R-99.png|{{Cosmetic|4th Anniversary|Epic|Biomechanic}}
+Dusk Eternal R-99.png|{{Cosmetic|Uprising|Epic|Dusk Eternal}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="300" mode="nolines">
+Solstice R-99.png|{{Rare|Solstice}}<br/>{{CraftingMetals|60}}
+Shockwave R-99.png|{{Rare|Shockwave}}<br/>{{CraftingMetals|60}}
+Rock Bed R-99.png|{{Rare|Rock Bed}}<br/>{{CraftingMetals|60}}
+Morning Dew R-99.png|{{Rare|Morning Dew}}<br/>{{CraftingMetals|60}}
+Cosmos R-99.png|{{Rare|Cosmos}}<br/>{{CraftingMetals|60}}
+Warlord R-99.png|{{Rare|Warlord}}<br/>{{CraftingMetals|60}}
+Fun Fair R-99.png|{{Rare|Fun Fair}}<br/>{{CraftingMetals|60}}
+Kaleidoscope R-99.png|{{Rare|Kaleidoscope}}<br/>{{CraftingMetals|60}}
+Clockwork R-99.png|{{Rare|Clockwork}}<br/>{{CraftingMetals|60}}
+Slither R-99.png|{{Rare|Slither}}<br/>{{CraftingMetals|60}}
+Ladybug R-99.png|{{Rare|Ladybug}}<br/>{{CraftingMetals|60}}
+Envy R-99.png|{{Rare|Envy}}<br/>{{CraftingMetals|60}}
+Nile R-99.png|{{Rare|Nile}}<br/>{{CraftingMetals|60}}
+Coral Reef R-99.png|{{Rare|Coral Reef}}<br/>{{CraftingMetals|60}}
+Zeal R-99.png|{{Rare|Zeal}}<br/>{{CraftingMetals|60}}
+Harvest R-99.png|{{Cosmetic|Season 1|Rare|Harvest}}<br/>Level 74
+Jigsaw R-99.png|{{Cosmetic-NI|PlayStation+|Rare|Jigsaw}}<br/>May 2019
+Stalagmite R-99.png|{{Cosmetic|Season 2|Rare|Stalagmite}}<br/>Level 73
+Glacier R-99.png|{{Cosmetic|Season 3|Rare|Glacier}}<br/>Level 26
+Red Tiger R-99.png|{{Cosmetic|Grand Soiree|Rare|Red Tiger}}
+Deep Trace R-99.png|{{Cosmetic|Season 4|Rare|Deep Trace}}<br/>Level 98
+Shredder R-99.png|{{Cosmetic|Season 5|Rare|Shredder}}<br/>Level 55
+Carbon Cross R-99.png|{{Cosmetic|Season 6|Rare|Carbon Cross}}<br/>Level 10
+Cold Snap R-99.png|{{Cosmetic|Holo-Day Bash 2020|Rare|Cold Snap}}
+Avant Garde R-99.png|{{Cosmetic|Season 7|Rare|Avant Garde}}<br/>Level 100
+Targeting System R-99.png|{{Cosmetic|Season 8|Rare|Targeting System}}<br/>Level 81
+Diamond Cutter R-99.png|{{Cosmetic-NI|PlayStation+|Rare|Diamond Cutter}}<br/>February 2021
+Take Flight R-99.png|{{Cosmetic|Season 9|Rare|Take Flight}}<br/>Level 26
+Cell Division R-99.png|{{Cosmetic|Season 10|Rare|Cell Division}}<br/>Level 83
+Fresh Vector R-99.png|{{Cosmetic|Season 11|Rare|Fresh Vector}}<br/>Level 62
+Glam Defender R-99.png|{{Cosmetic-NI|Twitch Drop|Rare|Glam Defender}}<br/>December 2021
+Fatal Fuchsia R-99.png|{{Cosmetic|Season 12|Rare|Fatal Fuchsia}}<br/>Level 34
+Contained Corruption R-99.png|{{Cosmetic|Season 13|Rare|Contained Corruption}}<br/>Level 88
+Upstanding Animal R-99.png|{{Cosmetic|Season 14|Rare|Upstanding Animal}}<br/>Level 8
+Sealed Fate R-99.png|{{Cosmetic|Season 15|Rare|Sealed Fate}}<br/>Level 26
+Polygonal R-99.png|{{Cosmetic|Season 16|Rare|Polygonal}}<br/>Level 25
+Space Circuit R-99.png|{{Cosmetic|Season 17|Rare|Space Circuit}}<br/>Level 33
+Charbroiled R-99.png|[[File:ALGS Icon.svg|x22px|link=]] {{Rare|Charbroiled}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="300" mode="nolines">
+Factory Issue R-99.png|{{Common|Factory Issue}}<br/>Default 
+Evergreen R-99.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Lagoon R-99.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover R-99.png|{{Common|Clover}}<br/>{{CraftingMetals|30}} 
+Midnight R-99.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}} 
+Cardinal R-99.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}} 
+Arctic R-99.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}} 
+Sunfire R-99.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}} 
+Clearwater R-99.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}} 
+Flamingo R-99.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}} 
+Sandstorm R-99.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}} 
+Rainforest R-99.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}} 
+Orchid R-99.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}} 
+Bengal R-99.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}} 
+Yellowjacket R-99.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}} 
+Oceanic R-99.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; [[January 09, 2024 Patch]]
+* Damage reduced to 11 (was 12).
+
+; {{ItemLink|Season 18}} [[August 08, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Reduced magazine size from {{Level0123|19|21|24|27}} to {{Level0123|17|20|23|26}}.
+* Reduced headshot damage multiplier from 1.5× to 1.25×.
+* Reduced ADS movement speed multiplier from 0.85× to 0.75×.
+* Increased vertical recoil slightly.
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Reduced magazine size from {{Level0123|20|22|25|28}} to {{Level0123|19|21|24|27}}.
+* ('''Undocumented''') Changed inspect animation.
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Increased damage from 11 to 12.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 16}}.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Increased {{ItemLink|Extended Light Mag|text={{Rare|Extended Light Mag}}}} size from 24 to 25.
+* Increased {{ItemLink|Extended Light Mag|text={{Epic|Extended Light Mag}}}} size from 27 to 28.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with [[Alternator SMG]], [[P2020]], [[Prowler Burst PDW]], R-99 SMG, [[RE-45 Auto]], and [[Volt SMG]].
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Increased hipfire spread when crouching from .8 to 1.6.
+* Increased hipfire spread when standing from 1 to 2.
+* Increased hipfire spread when moving from 1.5 to 3.
+* Increased hipfire spread when running from 2.5 to 5.
+* Increased hipfire spread when in midair from 3.5 to 7.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|350}} to {{Materials|300}}.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|500}} to {{Materials|450}}.
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|250}} to {{Materials|300}}.
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|300}} to {{Materials|350}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 9}}.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|550}} to {{Materials|500}}.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Reduced damage from 12 to 11.
+* Reduced {{ItemLink|Extended Light Mag|text={{Epic|Extended Light Mag}}}} size from 32 to 27.
+
+; [[August 20, 2020 Patch]]
+* Fixed an issue with the kill stat tracking not displaying properly.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 160 {{ItemLink|Mythic Light Rounds|text=Ammo}}.
+* Increased damage from 11 to 12.
+* Increased {{ItemLink|Extended Light Mag|text={{Epic|Extended Light Mag}}}} size from 27 to 32.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Reduced damage from 12 to 11.
+* Increased magazine size from {{Level0123|18|20|23|27}} to {{Level0123|20|22|24|27}}.
+* Improved iron sights accuracy.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Reduced magazine size from {{Level0123|18|22|26|30}} to {{Level0123|18|20|23|27}}.
+* Added some randomness to recoil patterns.
+
+; {{ItemLink|Voidwalker|noText=yes}} [[September 03, 2019 Patch]]
+* Removed {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} and {{ItemLink|2x-4x Variable AOG|image=2x-4x Variable AOG.svg|text={{Epic|2x-4x Variable AOG}}}} compatibility.}}
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa R97CN-A3.jpeg|Concept Art for the then R97CN-A3 by Ryan Lastimosa.<ref name="lastimosa"/>
+Cutting Edge R-99 Concept Art.jpg|Concept art for the {{Legendary|Cutting Edge}} skin.
+Beat Dropper R-99 Concept Art.jpg|Concept art for the {{Legendary|Beat Dropper}} skin.<ref>[https://www.artstation.com/artwork/d08NeK Gadget-Bot Productions on ArtStation]</ref>
+Sirens Song R-99 Concept Art.jpg|Concept art for the {{Legendary|Sirens Song}} skin.<ref>[https://www.artstation.com/artwork/JeE3qn Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+== Trivia ==
+* The Thai script written on the {{Legendary|Flash of Fury}} skin says "มวยไทย", which means "[[wikipedia:Muay Thai|Muay Thai]]".
+
+
+== See also ==
+* [[R-99 SMG (Mobile)|R-99 SMG (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/R-97_Compact_SMG R-97 Compact SMG (''Titanfall'')]
+* [https://titanfall.fandom.com/wiki/R-97_Compact_SMG#Titanfall_2 R-97CN SMG (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

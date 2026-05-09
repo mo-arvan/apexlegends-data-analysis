@@ -1,0 +1,18 @@
+{
+  "title": "R-99 SMG",
+  "infobox": {
+    "name": "R-99 SMG",
+    "description": "Rapid-fire automatic SMG.",
+    "type": "Sub machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Mythic Light Rounds",
+    "creator": "Lastimosa Armory",
+    "damageBody": "14",
+    "damageHead": "18(1.25×)",
+    "damageLegs": "12(0.8×)",
+    "rateOfFire": "1080",
+    "magazineSize": "30",
+    "tacReload": "1.62",
+    "fullReload": "2.21"
+  }
+}

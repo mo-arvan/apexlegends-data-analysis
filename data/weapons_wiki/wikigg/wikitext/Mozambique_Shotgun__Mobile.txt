@@ -1,0 +1,147 @@
+{{DISPLAYTITLE:Mozambique (Mobile)}}
+{{Tabs|
+{{Tabs2|Mozambique Shotgun|Main}}
+{{Tabs1|Mozambique Shotgun/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Mozambique Shotgun
+| description = Triple-barrel shotgun pistol.
+| type = Shotgun
+| fireModes = [[File:Auto Icon.svg|20px]] Automatic
+| ammoType = Shotgun Shells
+| creator = [[Factions#Altamirano Armory|Altamirano Armory]]
+| magType = bolt
+| optics = true
+| hopup = hammerpoint
+| damageBody = 15×3<br>[[File:Hammerpoint Rounds.svg|20px]] 20×3
+| damageHeadMobile = 19×3 <small>(1.25×)</small><br>[[File:Hammerpoint Rounds.svg|20px]] 26×3 <small>(1.25×)</small>
+| damageLegs = 15×3<br>[[File:Hammerpoint Rounds.svg|20px]] 20×3
+| rateOfFire = {{Level0123|132|152|165|178}}
+| dps = {{Level0123|99|114|124|134}}
+| magazineSize = 7
+| tacReload = 1.9 seconds
+| fullReload = 2.5 seconds
+|damageHead=20×3<br>[[File:Hammerpoint Rounds.svg|20px]] 26×3}}
+
+The '''Mozambique Shotgun''', or '''Mozambique''', is a fully automatic triple-barreled [[shotgun pistol]] that utilizes {{ItemLink|Shotgun Shells}}. It shoots three pellets in the shape of a triangle.
+
+The Mozambique can be enhanced with the {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} Hop-Up, which increases damage dealt against unshielded targets by 35%.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}})
+
+; Hop-Up
+* {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}
+
+=== Damage profile ===
+{{Damage profile
+|damageref=<ref group=note> Shotgun damage is calculated per pellet.<br/>Correct: 15dmg/pellet x 1.25 = 18.75dmg/pellet ≈ 19dmg/pellet, resulting in 57 damage total. <br/> Incorrect: 45dmg x 1.25 = 56.25 ≈ 56 damage total.</ref>
+| damage = 15
+| bulletsPerBurst = 3
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+* Fortified head shot damages may vary ±3. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.<references group="note" />
+
+=== Arenas ===
+{{Arenas weapon costs
+|basecost=0}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;"  | {{Common|★}}
+! style="width:75px;"  | {{Rare|★★}}
+! style="width:75px;"  | {{Epic|★★★}}
+! style="width:75px;"  | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Shotgun Bolt}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|-
+| style="text-align:left;" | {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}} || || || ✔ || ✔
+|}
+
+== Pros and Cons ==
+'''Pros'''
+
+* Similar magazine capacity to Mastiff and Peacekeeper, and like the Peacekeeper, can reload all of its shells at once.
+* Good damage if Hammerpoint Rounds are attached.
+* Like the P2020, is free in Arenas.
+** Shares the same upgrade costs as the P2020.
+* Will fire from the hip automatically unlike other shotguns.
+
+'''Cons'''
+
+* Small pellet spread and only has three pellets.
+* Relatively slow fire-rate without Shotgun Bolts.
+* Low damage output without Hammerpoint, and can take an entire magazine to down a player.
+
+== Skins ==
+There are a total of 12 skins for the Mozambique Shotgun: 1 {{Legendary}}, 2 {{Epic}}, 7 {{Rare}}, and 3 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Nova Blast Mozambique Mobile.jpg|{{Legendary|Nova Blast}}<br/>[[Neon Rebellion]]
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Harm's Way Mozambique Mobile.jpg|{{Epic|Harm's Way}}<br/>[[Heat Wave]]
+Douglas Fir Danger Mozambique Mobile.png|{{Epic|Douglas Fir Danger}}<br/>[[Winners Wonderland]]
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Daisy Cutter Mozambique Mobile.png|{{Rare|Daisy Cutter}}<br/>{{SG|290}}
+Dusk Ember Mozambique Mobile.jpg|{{Rare|Dusk Ember}}<br/>{{Flux|3,000}}
+Cyberweave Mozambique Mobile.png|{{Symbol|Distortion}} {{Rare|Cyberweave}}<br/>Level 20
+Noisy Refrain Mozambique Mobile.jpg|{{Symbol|s2.5m}} {{Rare|Noisy Refrain}}<br/>Level 10
+Star Eyes Mozambique Mobile.jpg|{{Rare|Star Eyes}}<br/>[[Party Animal]]
+Corrugated Aim Mozambique Mobile.png|{{Rare|Corrugated Aim}}
+Namorados Mozambique Mobile.png|{{Rare|Namorados}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Mozambique Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Chiptech Mozambique Mobile.png|{{Common|Chiptech}}
+Skyrise Mozambique Mobile.png|{{Common|Skyrise}}
+</gallery>
+</tabber>
+
+== Trivia ==
+* The name and triangular pellet pattern of the Mozambique Shotgun is a reference to the [https://en.wikipedia.org/wiki/Mozambique_Drill Mozambique Drill] technique of shooting someone twice in the chest and once in the head.
+* Requesting optics for the Mozambique will result in the Legend asking for pistol optics, instead of shotgun ones, despite the weapon being classified as a shotgun.
+
+{{Nav-MobileWeapons}}

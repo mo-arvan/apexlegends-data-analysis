@@ -1,0 +1,24 @@
+{
+  "title": "M600 Spitfire/Mobile",
+  "infobox": {
+    "name": "Spitfire",
+    "image": "M600 Spitfire.png",
+    "icon": "M600 Spitfire Icon.svg",
+    "description": "Full-auto LMG with a high magazine capacity. Deals medium damage.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Heavy Rounds",
+    "creator": "Siwhan Industries",
+    "barrel": "stabilizer",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "18",
+    "damageHead": "32 (1.75×)",
+    "damageLegs": "14 (0.8×)",
+    "rateOfFire": "546",
+    "magazineSize": "60",
+    "tacReload": "2.1",
+    "fullReload": "2.7"
+  }
+}

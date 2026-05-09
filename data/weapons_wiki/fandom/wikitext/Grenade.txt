@@ -1,0 +1,178 @@
+{{Game|Main}} {{Game|Mobile}}
+
+Grenades are throwable explosive [[weapons]] that go in the inventory like items. There are currently three types of grenades: the Frag Grenade, the Thermite Grenade, and the Arc Star.
+
+Grenades can be accessed by holding {{Key|G}} or {{Xbox|Right}}/{{PS4|Right}}. You can then use the fire button on PC, {{Xbox|RT}} for Xbox or {{PS4|R2}} for the PS5 to aim and throw.
+
+== Frag Grenade ==
+{{Items
+| name = Frag Grenade
+| image = Frag Grenade.svg
+| type = Thrown
+| Time to use = 4 seconds
+| description = Explosive ordnance. Throw to start fuse.
+| info = 
+* Deals 10 impact damage and up to 100 explosion damage in an 8 m explosion radius, with a 2.4 m inner radius.
+* Damages and destroys doors.
+| tips = 
+* Frag Grenades also can bounce or roll on the environment before detonating. This can be used to hit enemies around a corner
+* Frag Grenades can be used to force enemies out of cover.
+* Looking up and throwing a Frag Grenade directly up in the sky will have it fall directly back where you're currently standing in the next 3 seconds and explode on impact. This is great if you're outside a door and someone is about to break it down on the opposite side or do this if you're being chased while running. 
+** This will not work with [[Fuse]] unless the throw power is disabled, as the grenade will explode in mid-air.
+| bugs = 
+}}
+
+== Thermite Grenade ==
+{{Items
+| name = Thermite Grenade
+| image = Thermite Grenade.svg
+| type = Thrown
+| Time to use = Instant
+| description = Creates a horizontal wall of flames.
+| info = 
+* The wall is 6 m long and is horizontal, perpendicular to the direction it was thrown from.
+* Deals 4 damage per tick when standing in the flames, and applies an over-time burn effect that lasts for 25 damage.
+* Bypasses the {{ItemLink|Knockdown Shield}}.
+* Damages and destroys doors.
+* The wall of flames lasts for 8 seconds after impact with the ground.
+* Can be used to increase the fire rate of the [[Rampage LMG]].
+| tips = 
+* It can be useful to seal off an enclosed area such as a doorway to prevent enemies from pushing a position, as well as a mild way to break the line of sight of an enemy.
+* If an enemy is body blocking a door, you can throw a Thermite at the bottom of the door. It will destroy the door and burn the enemy.
+* Can be useful against an enemy raising their {{ItemLink|Knockdown Shield}}, as raising the shield slows them and forces them to take more damage from the flames.
+| bugs = 
+}}
+
+== Arc Star ==
+{{Items
+| name = Arc Star
+| image = Arc Star.svg
+| type = Thrown
+| Time to use = 2.8 seconds
+| description = Sticks, then explodes after a short delay. Causes damage and blurred vision.
+| info = 
+* Deals 10 impact damage and up to 75 explosion damage in an 8.75 m explosion radius, with a 1.8 m inner radius. Slows those affected for up to 5 seconds.
+* Projectile launch speed is faster than the other grenades (2200 UPS instead of 1300 UPS).
+* Damages and destroys doors. Also, it disables the [[Trident]] for a very short amount of time.
+* Does not stick to squadmates, will instead bounce off them.
+| tips = 
+* The explosion's "splash" damage decreases with distance from the Arc Star itself so plan accordingly.
+* If you come across extra high-tier armor such as {{Epic}} or {{Legendary}} ones and you or your squad don't need it, equip an Arc Star, look at your feet and throw the Arc Star on the ground. You'll break your armor, but now you can swap to the new extra armor. Thus, leaving a broken armor on the ground for an enemy to potentially pick up or be forced to heal it.
+* Some legends can shake the stuck Arc Star off by activating their ability. For example, {{AbilityLink|Into the Void}} by Wraith and  {{AbilityLink|Phase Breach}} by Ash.
+| bugs = 
+}}
+
+== Frost Grenade ==
+{{Items
+| name = Frost Grenade
+| image = Frost Grenade.svg
+| type = Thrown
+| Time to use = ???
+| description = Explosion inflicts damage and speed reduction.
+| info = 
+* Mobile exclusive.
+| tips = 
+| bugs = 
+}}
+
+== Rev Shell ==
+{{Items
+| name = Rev Shell
+| image = Rev Shell.svg
+| type = Thrown & Homing
+| Time to use = On impact
+| description = Automatic target seeking grenade, throw it in the direction of enemies and watch rev shell hunt down its prey.
+| info = 
+* Exclusive to the [[Living Shell Trios]] mode.
+* Flies in a straight line until it locates a nearby enemy, after which it will lock on to them or else it vanishes after flying for a certain time.
+** Target will be marked on player's HUD.
+** The targets will know when they are is locked on the Rev Shell, as a message reading "Rev Shell Lock On" and the Rev Shell indicator will appear on their HUD.
+* After reaching its target, it stops and take 0.5 seconds to explode, dealing 58 ~ 79<!-- Not confirm --> damage.
+* It has 30 HP. Can be shot down or melee when close enough.
+| tips = 
+* It can be used as probe to seek enemy in the hiding spot to avoid being ambushed.
+* As it can be shot down easily, when it starts chasing the target, provide suppressing fire on the locked-on target so they could get distracted.
+| interactions =
+* [[Fuse]] can hold two Rev Shells per stack, but he doesn't launch them with his passive ability {{AbilityLink|Grenadier}}.
+* Rev Shells cannot be used to open the [[Explosive Holds]] doors.
+* Can be attached to the {{AbilityLink|Nox Gas Trap}}, {{AbilityLink|Riot Drill}}, {{AbilityLink|Launch Pad}}, {{AbilityLink|Gravity Lift}}, {{AbilityLink|Black Hole}}, {{AbilityLink|Exhibit}} and {{AbilityLink|Piercing Spikes}}.
+* Can be grappled with the {{AbilityLink|Grappling Hook}}.
+| bugs = 
+}}
+
+== History ==
+{{Patch notes|
+; {{Symbol|season 14}} [[August 09, 2022 Patch]]
+* {{ItemLink|Arc Star}}
+** Reduced stick damage on armored targets from 40 to 10.
+** Removed aim slow on stick. Remains upon detonation.
+** Increased explosion damage from 70 to 75.
+
+; {{Symbol|season 13}} [[May 10, 2022 Patch]]
+* {{ItemLink|Thermite Grenade}}:
+** Reduced purchase cost in {{ItemLink|Arenas}} from {{Materials|100}} to {{Materials|75}}.
+
+; [[December 07, 2021 Patch]]
+* {{ItemLink|Arc Star}}:
+** Base stick damage lowered from 30 -> 10
+** Shield Damage Multiplier increased from x3 -> x4 (stick on shielded enemy will now max out at 40 instead of 90)
+** Sticking an enemy now applies a slow debuff (reverting Legacy update change)
+** Slow duration is now driven by distance to the center of Arc Star detonation
+
+; [[May 04, 2021 Patch]]
+* {{ItemLink|Arc Star}}s no longer slow down players during the initial stick.
+
+; [[March 09, 2021 Patch]]
+* (Undocumented) Updated the model shown when an {{ItemLink|Arc Star}} is thrown near you to a more detailed version.
+
+; [[February 04, 2021 Patch]]
+* Fixed an exploit letting players block damage from grenades by dropping items on top of them.
+
+; [[February 02, 2021 Patch]]
+* Introduced the [[legend]] [[Fuse]], who can hold 2 grenades per inventory slot.
+* Removed the ability to stick {{ItemLink|Arc Star}}s to friendly {{AbilityLink|Surveillance Drone}}s.
+* Fixed an issue with {{ItemLink|Thermite Grenade}}s doing damage through certain walls on [[Olympus]].
+
+; [[November 04, 2020 Patch]]
+* The {{ItemLink|Arc Star}} now shows an Arc Star model when one is thrown near the player, instead of a {{ItemLink|Frag Grenade}}.
+
+; [[March 03, 2020 Patch]]
+* Grenade stacks reduced from 2 to 1.
+
+; [[August 13, 2019 Patch]]
+* {{ItemLink|Arc Star}}
+** Fixed a bug where sometimes Arc Stars would attach to players and some objects at a distance and appear to float off of them.
+** Fixed bug where sometimes Arc Stars would not explode or do no damage when it detonates.
+
+; [[July 02, 2019 Patch]]
+* {{ItemLink|Arc Star}}
+** Increased ignition delay from 2.5 to 2.8 seconds.
+** Sticking a full health player with no armor will now down them.
+** Players at the edge of the explosion no longer get their shields completely shredded.
+** Arc Stars that are stuck to players should no longer fail to do damage when the part of the player it is stuck to is intersecting another object.
+* {{ItemLink|Thermite Grenade}}: Fixed an issue where players downed with thermite could be invincible to thermite after being revived.
+
+; [[June 04, 2019 Patch]]
+* {{ItemLink|Thermite Grenade}}: Thermite grenades now cause damage to doors.
+
+; [[March 19, 2019 Patch]]
+* {{ItemLink|Thermite Grenade}}: Turned down the draw/holster sound slightly for thermite grenades.
+
+; [[February 13, 2019 Patch]]
+* {{ItemLink|Arc Star}}: Arc Star now displays a grenade warning indicator.
+}}
+
+== Trivia ==
+* Grenades and [[regen]] items are both classified as "consumables" in the [[Death Box]].
+* [[Fuse]] can hold two grenades, instead of one, and will take a stack of two grenades if he uses [[Loba]]'s {{AbilityLink|Black Market Boutique}}.
+
+== See also ==
+* [[Attachments]]
+* [[Weapons]]
+* [[Gear]]
+* [[Regen]]
+
+{{Nav-Weapons}}
+{{Nav-MobileWeapons}}
+
+[[Category:Items]]

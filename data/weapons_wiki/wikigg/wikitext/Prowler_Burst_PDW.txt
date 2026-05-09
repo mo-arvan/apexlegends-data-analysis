@@ -1,0 +1,468 @@
+{{Tabs|
+{{Tabs1|Prowler Burst PDW|Main}}
+{{Tabs2|Prowler Burst PDW/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Prowler Burst PDW
+| description = 5-round burst SMG.
+| type = Submachine Gun
+| fireModes = [[File:Burst Icon.svg|25px|Burst|link=]] Burst (5) [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Heavy Rounds
+| creator = {{ItemLink|Lastimosa Armory}}
+| barrel = laser
+| magType = heavy
+| optics = true
+| stock = standard
+| hopup = selectfire
+| damageBody = 16<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 17
+| damageHead = 20<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 21
+| damageLegs = 13<br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 14
+| rateOfFire = {{Texttip|579|1260 per burst}} <br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 795
+| dps = 154 <br>[[File:Selectfire Receiver.svg|25px|Single|link=Selectfire Receiver]] 225
+| magazineSize = {{Level0123|20|25|30|35}}
+| tacReload = {{Level0123|2|1.93|1.87|1.8}}
+| fullReload = {{Level0123|2.6|2.51|2.43|2.34}}
+}}
+
+The '''Prowler Burst PDW''', '''Prowler SMG''', or '''Prowler''', is a [[submachine gun]] that utilizes {{ItemLink|Heavy Rounds}}. It fires in a 5-round burst.
+
+It is equipped with a {{ItemLink|Selectfire Receiver|image=Selectfire Receiver.svg|text={{Legendary|Selectfire Receiver}}}}, which allows the Prowler to switch to full-auto mode. 375 Locked Hop-Up Points are required to unlock the {{ItemLink|Selectfire Receiver|image=Selectfire Receiver.svg|text={{Legendary|Selectfire Receiver}}}}.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+
+
+; Others
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Selectfire Receiver|text={{Legendary|Selectfire Receiver}}}}
+<br>
+<br>
+=== Damage Profile ===
+; Per round
+{{Damage profile
+| damage = 16
+| headshotMdfr = 1.2
+| legMdfr = 0.8
+}}
+<br>
+<br>
+; <span class="invert-image">[[File:Burst Icon.svg|25px|Burst|link=]] Burst</span>
+{{Damage profile
+| damage = 16
+| bulletsPerBurst = 5
+| headshotMdfr = 1.2
+| legMdfr = 0.8
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_pdw</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | 21 <span class="invert-image">[[File:Burst Icon.svg|25px|Burst|link=]]</span>
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | 13.25 <span class="invert-image">[[File:Auto Icon.svg|25px|Auto|link=]]</span>
+|-
+| burst_fire_delay
+| style="text-align:center" | 0.28
+| Time delay between two bursts. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 18000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 457 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.4
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.35
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.2
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.75
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.35
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.25
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 5
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''Prowler'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Prowler'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Prowler'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''Prowler'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''600''' enemies with the '''Prowler'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|Designed for personal defense, the Prowler Burst PDW was an essential firearm for Pilots whose Titans were compromised during battle. Its compact shape gives it the punch of an assault rifle at a much smaller size, and its burst-action design allows the operator to lay down significant cover-fire - this was particularly helpful for Pilots ejecting from their Titans. It can also be upgraded to a full-auto mode that allows the operator to put heavy fire down-range with the effective accuracy of an assault rifle.}}
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendskin|30}}
+{{#vardefine:epicskin|20}}
+{{#vardefine:rareskin|37}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' Legend skins for {{PAGENAME}}: {{#var:legendskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="160" mode="nolines">
+The Bullet Contagion Prowler.png|{{Legendary|The Bullet Contagion}}<br/>{{CraftingMetals|1,200}}
+Spacewalker Prowler.png|{{Legendary|Spacewalker}}<br/>{{CraftingMetals|1,200}}
+The Dark Realm Prowler.png|{{Legendary|The Dark Realm}}<br/>{{CraftingMetals|1,200}}
+The Lightworker Prowler.png|{{Legendary|The Lightworker}}<br/>{{CraftingMetals|1,200}}
+Dark Fright Prowler.png|{{Cosmetic|Grand Soirée|Legendary|Dark Fright}}<br/>{{CraftingMetals|1,200}}
+Liquid Cooled Prowler.png|{{Legendary|Liquid Cooled}}<ref group="note" name="reactive"/><br>{{ExoticShards|50}}
+Total Eclipse Prowler.png|{{Cosmetic-NI|Recolor|Legendary|Total Eclipse}}<br/>Needs {{Legendary|Spacewalker}}
+Wild Ride Prowler.png|{{Cosmetic|Fight or Fright 2019|Legendary|Wild Ride}}<br>{{#var:ac1}}
+Wrath Bringer Prowler.png|{{Cosmetic|Bloodhound Edition|Legendary|Wrath Bringer}}
+The Tomb Robber Prowler.png|{{Cosmetic-NI|Recolor|Legendary|The Tomb Robber}}<br/>Needs {{Legendary|The Dark Realm}}
+The Final Judgement Prowler.png|{{Cosmetic-NI|Recolor|Legendary|The Final Judgement}}<br/>Needs {{Legendary|The Lightworker}}
+Heavenly Strike Prowler.png|{{Cosmetic|Lost Treasures|Legendary|Heavenly Strike}}<br>{{#var:ac1}}
+Pathogen Prowler.png|{{Cosmetic-NI|Recolor|Legendary|Pathogen}}<br/>Needs {{Legendary|The Bullet Contagion}}
+Cherry Picker Prowler.png|{{Cosmetic-NI|Recolor|Legendary|Cherry Picker}}<br/>Needs {{Legendary|Spacewalker}}
+Polished Perfection Prowler.png|{{Cosmetic|Season 7|Legendary|Polished Perfection}}<br/>Level 1
+Burst of Courage Prowler.png|{{Cosmetic|Thrillseekers|Legendary|Burst of Courage}}<br>{{#var:ac1}}
+Pipe Dream Prowler.png|{{Cosmetic|Season 11|Legendary|Pipe Dream}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Level 100
+Fatal Attraction Prowler.png|{{Cosmetic|Season 11|Legendary|Fatal Attraction}}<ref group="note" name="reactive"/><br>Level 110
+Circle of Power Prowler.png|{{Cosmetic|Warriors|Legendary|Circle of Power}}<br>{{#var:ac1}}
+Gold Talons Prowler.png|{{Cosmetic|Beast of Prey|Legendary|Gold Talons}}<br>{{#var:ac1}}
+Ice Ranger Prowler.png|{{Cosmetic|Wintertide|Legendary|Ice Ranger}}<br>{{#var:ac1}}
+Arcane Geometry Prowler.png|{{Cosmetic|Spellbound|Legendary|Arcane Geometry}}<br>Prize Track Reward
+Owl's Prey Prowler.png|[[File:Sale Icon.svg|22px|link=Fallen Angel Store]] {{Legendary|Owl's Prey}}<br>{{#var:ac1}}
+Beetle Buster Prowler.png|{{Cosmetic|Harbingers|Legendary|Beetle Buster}}<br>{{#var:ac1}}
+The Horns Prowler.png|{{Cosmetic|Inner Beast|Legendary|The Horns}}<br>{{#var:ac1}}
+High Gear Prowler.png|[[File:Sale Icon.svg|22px|link=Double Trouble Store]] {{Legendary|High Gear}}<br>{{#var:ac1}}
+Indivisible Prowler.png|{{Cosmetic|Post Malone|Legendary|Indivisible}}
+Jade Fortune Prowler.png|[[File:Sale Icon.svg|22px|link=Lunar New Year Sale]] {{Legendary|Jade Fortune}}<br>{{#var:ac1}}
+Crystal Stalker Prowler.png|{{Cosmetic|Void Mercenaries|Legendary|Crystal Stalker}}
+Clean Sweep Prowler.png|{{Cosmetic|Wild Iron|Legendary|Clean Sweep}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="160" mode="nolines">
+Eye of the Storm Prowler.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Prowler.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Prowler.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Prowler.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Prowler.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Thrill of the Hunt Prowler.png|{{Cosmetic|Season 1|Epic|Thrill of the Hunt}}<br/>Level 50
+Ready to Pounce Prowler.png|{{Cosmetic|Iron Crown|Epic|Ready to Pounce}}<br>{{#var:ac2}}
+Raven's Watch Prowler.png|{{Cosmetic|The Old Ways|Epic|Raven's Watch}}<br>{{#var:ac2}}
+Fresh Meat Prowler.png|{{Cosmetic|Anniversary|Epic|Fresh Meat}}<br>{{#var:ac2}}
+Brood Buster Prowler.png|{{Cosmetic|Awakening|Epic|Brood Buster}}<br>{{#var:ac2}}
+Augmented Aim Prowler.png|{{Cosmetic|Doppelgangers|Epic|Augmented Aim}}<br>{{#var:ac2}}
+Flurry Fury Prowler.png|{{Cosmetic|5th Anniversary|Epic|Flurry Fury}}<ref group="story">'''{{Epic|Flurry Fury}}''': Inspired by Shiv, designed by Kohltrast</ref>
+Flagbearer Prowler.png|{{Cosmetic|Void Reckoning|Epic|Flagbearer}}
+Savage Hound Prowler.png|{{ItemLink|Season 20|link=Brighter Horizons|text={{Epic|Savage Hound}}}}<br>{{Mythic|Treasure Pack #45 Reward}}
+Spattered Canvas Prowler.png|{{Cosmetic|Techno Terror|Epic|Spattered Canvas}}<br>{{#var:ac2}}
+High Flier Prowler.png|{{Cosmetic|Space Hunt|Epic|High Flier}}
+Psychedelic Surge Prowler.png|{{Cosmetic|Astral Anomaly|Epic|Psychedelic Surge}}
+Sun Spots Prowler.png|{{Cosmetic|Takeover|Epic|Sun Spots}}
+Glitter and Gold Prowler.png|{{Cosmetic|s25|Epic|Glitter and Gold}}
+Hex Shot Prowler.png|{{Cosmetic|s25|Epic|Hex Shot}}
+</gallery>
+Story:
+<references group="story" />
+|-|
+
+Rare=
+<gallery widths="290" heights="160" mode="nolines">
+Chaos Theory Prowler.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Prowler.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Prowler.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Prowler.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Prowler.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Prowler.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Prowler.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Prowler.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Prowler.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Prowler.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Prowler.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Prowler.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Prowler.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Prowler.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Prowler.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Navigator Prowler.png|{{Cosmetic|Season 1|Rare|Navigator}}<br/>Level 9
+Stargate Prowler.png|{{Cosmetic|Season 2|Rare|Stargate}}<br/>Level 3
+Night Light Prowler.png|{{Cosmetic|Voidwalker|Rare|Night Light}}<br>{{Coins|500}}
+Flamed Out Prowler.png|{{Cosmetic|Season 3|Rare|Flamed Out}}<br/>Level 80
+All Systems Go Prowler.png|{{Cosmetic|Season 4|Rare|All Systems Go}}<br/>Level 39
+Gnarled Embrace Prowler.png|{{Cosmetic|Season 5|Rare|Gnarled Embrace}}<br/>Level 63
+Royal Streak Prowler.png|{{Cosmetic|Season 6|Rare|Royal Streak}}<br/>Level 79
+Supermassive Prowler.png|{{Cosmetic|Season 7|Rare|Supermassive}}<br/>Level 38
+Squared Up Prowler.png|{{Cosmetic|PlayStation+|Rare|Squared Up}}<br/>Season 7
+Jagged Lines Prowler.png|{{Cosmetic|Season 8|Rare|Jagged Lines}}<br/>Level 49
+Rebirth Prowler.png|{{Cosmetic|Season 9|Rare|Rebirth}}<br/>Level 9
+Monarch Prowler.png|{{Cosmetic|Season 10|Rare|Monarch}}<br/>Level 93
+Warhead Storage Prowler.png|{{Cosmetic|Season 11|Rare|Warhead Storage}}<br/>Level 93
+Stitched Up Prowler.png|{{Cosmetic|Season 12|Rare|Stitched Up}}<br/>Level 73
+Scarlet Scale Prowler.png|{{Cosmetic|ALGS Playoffs 2022|Rare|Scarlet Scale}}
+Dragon Crest Prowler.png|{{Cosmetic|Season 13|Rare|Dragon Crest}}<br/>Level 85
+Striped Striker Prowler.png|{{Cosmetic|Season 14|Rare|Striped Striker}}<br/>Level 83
+Web of Lies Prowler.png|{{Cosmetic|Season 15|Rare|Web of Lies}}<br/>Level 80
+Vibe Check Prowler.png|{{Cosmetic|Season 16|Rare|Vibe Check}}<br/>Level 46
+Face Off Prowler.png|{{Cosmetic|Season 18|Rare|Face Off}}<br/>Level 25
+Squared Away Prowler.png|{{Symbol|Season 19}} {{Rare|Squared Away}}<br>Level 37
+Tech Takeover Prowler.png|{{Symbol|Season 21}} {{Rare|Tech Takeover}}<br>Level 58
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="160" mode="nolines">
+Factory_Issue_Prowler.png|{{Common|Factory Issue}}<br/>Default
+Midnight_Prowler.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal_Prowler.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Prowler.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Prowler.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Prowler.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Prowler.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Prowler.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Prowler.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Prowler.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Prowler.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Prowler.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Prowler.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Prowler.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Prowler.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Prowler.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Winter Wipeout}} [[January 06, 2026 Patch]]
+* Decreased burst delay.
+* Damage increased to 17 while using Selectfire (was 16).
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 16 (was 15).
+* Headshot damage: 19.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Reduced damage from 16 to 15.
+* Increased burst delay from 0.24 to 0.28.
+* Increased spread delay from 0.15 to 0.28.
+* Increased projectile gravity scale from 1.15 to 1.2.
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} compatibility.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 245 {{ItemLink|Mythic Heavy Rounds|text=Ammo}} and {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+* Increased damage from 15 to 16.
+* Reduced ADS movement speed multiplier from 0.85× to 0.75×.
+* ('''Undocumented''') Reduced spread delay from 0.28 to 0.15.
+
+
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* ('''Undocumented''') Changed draw animation.
+
+
+; {{ItemLink|Spellbound|noText=yes}} [[January 10, 2023 Patch]]
+* Increased damage from 14 to 15.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 15}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with [[Alternator SMG]], [[P2020]], Prowler Burst PDW, [[R-99 SMG]], [[RE-45 Auto]], and [[Volt SMG]].
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Increased hipfire spread when crouching from 1 to 2.
+* Increased hipfire spread when standing from 1.5 to 3.
+* Increased hipfire spread when moving from 2.5 to 5.
+* Increased hipfire spread when running from 0.8 to 1.6.
+* Increased hipfire spread when in midair from 3.5 to 7.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 12}}.
+
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced {{Common|Level 1}} upgrade cost from {{Materials|200}} to {{Materials|150}}.
+** Reduced {{Rare|Level 2}} upgrade cost from {{Materials|350}} to {{Materials|300}}.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|500}} to {{Materials|400}}.
+** Increased {{Rare|Level 2}} upgrade cost from {{Materials|300}} to {{Materials|350}}.
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|400}} to {{Materials|350}}.
+
+
+; [[August 10, 2021 Patch]]
+* Reduced damage from 15 to 14.
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|450}} to {{Materials|500}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Increased burst delay from 0.2 to 0.24 seconds.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Update spawn rate in Care Packages. Spawns more frequently on Round 3.
+* Fixed an issue with the HUD not updating the fire mode icon from Burst to Auto.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* Allowed optics to be changed.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Changed pre-equipped {{ItemLink|Extended Heavy Mag}} rarity from {{Epic}} to {{Legendary}}.
+* Reduced reload time by 13%.
+
+
+; {{ItemLink|Fight Night|noText=yes}} [[January 05, 2021 Patch]]
+* Increased pre-equipped ammo from 210 to 245.
+
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 210 {{ItemLink|Mythic Heavy Rounds|text=Ammo}} and {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Reduced vertical recoil in burst mode slightly.
+* Increased horizontal recoil in auto mode.
+
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+* Added red dot to iron sights. The dot will stay properly centered during weapon sway and bob movements.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Increased damage from 14 to 15.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 4}}.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Added some slight recoil randomness while maintaining the same pattern when fired in full auto mode.
+
+
+; {{ItemLink|Voidwalker|noText=yes}} [[September 03, 2019 Patch]]
+* Removed {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} and {{ItemLink|2x-4x Variable AOG|image=2x-4x Variable AOG.svg|text={{Epic|2x-4x Variable AOG}}}} compatibility.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa Prowler Burst PDW.jpg|Concept Art for the Prowler Burst PDW by Ryan Lastimosa.<ref>[https://www.artstation.com/artwork/nQ2wZ4 Ryan Lastimosa on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The Prowler is based on two real [[wikipedia:personal defense weapon|personal defense weapons]]: the [[wikipedia:FN P90|FN P90]] and the [[wikipedia:Magpul PDR|Magpul PDR-C]]. It's also an homage to Seburo, Masamune Shirow's fictional arms manufacturer from ''Ghost in the Shell'' and ''Appleseed''.
+* The Prowler's icon lacks iron sights.
+<br>
+<br>
+== See also ==
+* [[Prowler Burst PDW (Mobile)|Prowler Burst PDW (''Apex Legends Mobile'')]]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

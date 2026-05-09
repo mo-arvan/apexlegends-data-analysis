@@ -1,0 +1,42 @@
+{
+  "title": "Peacekeeper",
+  "infobox": {
+    "name": "Peacekeeper",
+    "description": "Lever-action shotgun.",
+    "type": "Shotgun",
+    "fireModes": "Single Single",
+    "ammoType": "Shotgun Shells",
+    "magType": "bolt",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "disruptor",
+    "damageBody": "11×9{{Symbol|Disruptor Rounds}} 14×9",
+    "damageHead": "14×9(1.25×){{Symbol|Disruptor Rounds}} 18×9 (1.25×)",
+    "damageLegs": "11×9{{Symbol|Disruptor Rounds}} 14×9",
+    "rateOfFire": [
+      "44",
+      "47",
+      "50",
+      "51"
+    ],
+    "dps": [
+      "73",
+      "78",
+      "83",
+      "84"
+    ],
+    "magazineSize": "5",
+    "tacReload": [
+      "2.5",
+      "2.42",
+      "2.33",
+      "2.25"
+    ],
+    "fullReload": [
+      "3.5",
+      "3.38",
+      "3.27",
+      "3.15"
+    ]
+  }
+}

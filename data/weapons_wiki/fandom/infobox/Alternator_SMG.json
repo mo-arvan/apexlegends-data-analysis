@@ -1,0 +1,39 @@
+{
+  "title": "Alternator SMG",
+  "infobox": {
+    "name": "Alternator SMG",
+    "description": "Twin barrel full-auto SMG.",
+    "type": "Sub machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "Burrell Defense",
+    "barrel": "laser",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "disruptor",
+    "damageBody": "16{{Symbol|Disruptor Rounds}} 19",
+    "damageHead": "20 (1.25×){{Symbol|Disruptor Rounds}} 24(1.25×)",
+    "damageLegs": "13 (0.8×){{Symbol|Disruptor Rounds}} 15(0.8×)",
+    "rateOfFire": "600",
+    "dps": "160{{Symbol|Disruptor Rounds}} 190",
+    "magazineSize": [
+      "19",
+      "23",
+      "26",
+      "27"
+    ],
+    "tacReload": [
+      "1.9",
+      "1.84",
+      "1.77",
+      "1.71"
+    ],
+    "fullReload": [
+      "2.23",
+      "2.16",
+      "2.08",
+      "2.01"
+    ]
+  }
+}

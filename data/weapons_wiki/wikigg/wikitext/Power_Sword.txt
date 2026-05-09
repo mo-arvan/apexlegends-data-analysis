@@ -1,0 +1,21 @@
+{{Infobox-Weapon-short
+| name = Power Sword
+| colorPalette = mythic
+| description = Forged from a metal that exploded from a dying rift, this Power Sword unlocks each Legend's beast mode alter ego.
+| icon = Power Sword Icon.svg
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| damageBody = 40
+| rateOfFire = 118
+| magazineSize = ∞
+}}
+The '''Power Sword''' is a special melee weapon introduced in {{ItemLink|Season 24}}, exclusive to [[Power Sword Royale]] and the [[EPG Extreme]].
+
+* The Power Sword can perform rapid melee attacks dealing 40 damage.
+* The Power Sword has an energy meter which refills slowly over time, or can be more quickly charged by pressing {{KeySet|fireMode}} at the cost of reducing movement speed and preventing weapon/item use.
+** If doing manual charge, sword holder will emit a purple light beacon to the sky and the enemies can see them.
+*  Aiming down sights will block all incoming damage from the front, but will drain energy.
+** Does reflect {{ItemLink|EPG-1 Launcher|image=EPG-1 Launcher Icon.svg}}'s energy projectile back to same direction if it is a direct hit.
+** With sufficient energy, attacking while blocking launches a blade of energy, dealing 70 damage on impact, or 25-45 explosive damage to those not directly hit. This ranged attack consumes energy and has cool down before can launch another energy blade.
+** At full energy, the sword holder can activate the Ult. This breaks the shields of and slows nearby enemies, and fully recharges the sword holder's and Squadmates' shields (even they are in knocked down state) in <nowiki>[?]</nowiki>m range, also boosting their movement speed for ~8 seconds. This consumes all<!-- maybe not all, roughly 9/10, kiv --> energy.
+
+{{Nav-Weapons}}

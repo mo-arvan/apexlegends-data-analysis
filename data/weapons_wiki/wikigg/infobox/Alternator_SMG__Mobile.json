@@ -1,0 +1,28 @@
+{
+  "title": "Alternator SMG/Mobile",
+  "infobox": {
+    "name": "Alternator SMG",
+    "description": "Twin barrel full-auto SMG. High stability.",
+    "type": "Sub machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "Burrell Defense",
+    "barrel": "stabilizer",
+    "barrelMobile": "true",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "16",
+    "damageHead": "24 (1.5×)",
+    "damageLegs": "13 (0.8×)",
+    "rateOfFire": "600",
+    "magazineSize": [
+      "21",
+      "25",
+      "29",
+      "32"
+    ],
+    "tacReloadMobile": "{{Level023|1.6|1.5|1.4}}",
+    "fullReloadMobile": "{{Level023|2.1|1.9|1.8}}"
+  }
+}

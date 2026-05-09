@@ -1,0 +1,143 @@
+{{Tabs|
+{{Tabs2|Peacekeeper|Main}}
+{{Tabs1|Peacekeeper/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Peacekeeper
+| description = Lever-action shotgun with choke fire mode. Deals massive damage.
+| type = Shotgun
+| fireModes = [[File:Single-fire Icon.svg|20px]] [[File:Choke Active Icon.svg|20px]] Single<br>[[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Shotgun Shells
+| magType = bolt
+| optics = true
+| damageBody = 10×11
+| damageHead = 13×11<br><small>(1.25×)</small>
+| damageLegs = 8x11<br><small>(0.8×)</small>
+| rateOfFire = {{Level0123|48|57|63|68}}
+| dps = {{Level0123|88|105|116|125}}
+| magazineSize = 7
+| tacReload = 2.2 seconds
+| fullReload = 3.3 seconds
+}}
+
+The '''Peacekeeper''' is a lever-action energy [[shotgun]] that utilizes {{ItemLink|Shotgun Shells}}. It fires 11 pellets in the shape of a star, with one pellet in the middle and two on each outer line of the star shape. When {{ItemLink|Choke Active Icon|noText=1}} Choke is active, the spread of the pellets is greatly reduced while aiming down sights.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Other
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+|damageref=<ref group="note">Shotgun Damage is calculated per pellet.<br/>Correct: 9 dmg/pellet x 1.25 = 11.25dmg/pellet ≈ 11 dmg/pellet, resulting in 121 damage total.<br/>Incorrect: 99 dmg x 1.25 = 123.75 ≈ 124 damage total.</ref>
+| damage = 10
+| bulletsPerBurst = 11
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+<references group="note" />
+
+=== Arenas ===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" |Attachment
+! style="width:75px;" | {{Common|★}}
+! style="width:75px;" | {{Rare|★★}}
+! style="width:75px;" | {{Epic|★★★}}
+! style="width:75px;" | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" |{{ItemLink|Shotgun Bolt}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Common|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|}
+
+== Pros and Cons ==
+'''Pros'''
+
+* Excellent damage if all pellets hit, enough to break Level 3 Evo Shields.
+* When the choke is fully charged, very accurate and can hit enemies from similar ranges to Assault Rifles.
+* Traditional pellet shape allows for more conventional shotgun tactics.
+* Same magazine capacity as the Mastiff, but can reload much faster.
+* Unlike the Triple Take, the choke will remain active for a period of time after lowering your weapon.
+
+'''Cons'''
+
+* Slow fire-rate due to lever-action
+* Default iron sights are small.
+** The choke reticle's size also depends on the sight equipped. With no sight, it is extremely small and hard to aim with.
+* Punishes inaccuracy if choke is activated.
+
+== Skins ==
+There are a total of 12 skins for the Peacekeeper: 1 {{Eternal}}, 2 {{Legendary}}, 5 {{Epic}}, 5 {{Rare}}, and 1 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="250px" heights="300px" mode="nolines">
+Xenoshell Peacekeeper Mobile.png|{{Eternal|Xenoshell}}
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+The Demolisher Peacekeeper Mobile.jpg|{{Legendary|The Demolisher}}<br/>[[Demolition Crew]]
+Polar Opposition Peacekeeper Mobile.jpg|{{Legendary|Polar Opposition}}<br/>[[Nightclub Icons]]
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Wrapped Up Peacekeeper Mobile.png|{{Epic|Wrapped Up}}
+Verdant Firepower Peacekeeper Mobile.png|{{Epic|Verdant Firepower}}<br/>[[Future Wave]]
+Winged Steed Peacekeeper Mobile.png|{{Epic|Winged Steed}}
+20 Seconds to Launch Peacekeeper Mobile.png|{{Symbol|s4m}} {{Epic|20 Seconds to Launch}}<br/>Level 40
+</gallery>
+* {{Epic|Ghouls and Ghosts}}
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Frequency Peacekeeper Mobile.png|{{Rare|Frequency}}<br/>{{SG|290}}
+Pepper Shaker Peacekeeper Mobile.jpg|{{Rare|Pepper Shaker}}
+Scan Lines Peacekeeper Mobile.jpg|{{Rare|Scan Lines}}<br/>[[Neon Rebellion]]
+Seeing Stars Peacekeeper Mobile.png|{{Rare|Seeing Stars}}
+Crusader Glaive Peacekeeper Mobile.png|{{Rare|Crusader Glaive}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Peacekeeper Mobile.png|{{Common|Factory Issue}}<br/>Default 
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|}}
+
+{{Nav-MobileWeapons}}

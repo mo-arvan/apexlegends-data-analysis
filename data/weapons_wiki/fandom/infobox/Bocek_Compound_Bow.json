@@ -1,0 +1,18 @@
+{
+  "title": "Bocek Compound Bow",
+  "infobox": {
+    "name": "Bocek Compound Bow",
+    "description": "Hold fire to increase power.",
+    "type": "Marksman weapon",
+    "fireModes": "Single",
+    "ammoType": "Mythic Arrows",
+    "optics": "true",
+    "hopup": "shatter_caps",
+    "damageBody": "25-70{{Symbol|Shatter Caps}} 35-84",
+    "damageHead": "31-122 (1.25×)-(1.75×){{Symbol|Shatter Caps}} 42-105 (1.25×)",
+    "damageLegs": "20-63 (0.8×)-(0.9×){{Symbol|Shatter Caps}} 28-84 (0.8x)-(1×)",
+    "rateOfFire": "180-92",
+    "dps": "75-107{{Symbol|Shatter Caps}} 105-129",
+    "magazineSize": "∞"
+  }
+}

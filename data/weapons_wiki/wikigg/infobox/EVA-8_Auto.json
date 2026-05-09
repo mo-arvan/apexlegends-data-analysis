@@ -1,0 +1,44 @@
+{
+  "title": "EVA-8 Auto",
+  "infobox": {
+    "name": "EVA-8 Auto",
+    "description": "Full-auto shotgun.",
+    "type": "Shotgun",
+    "fireModes": "Auto",
+    "ammoType": "Shotgun Shells",
+    "creator": "{{ItemLink|Wonyeon}}",
+    "barrel": "",
+    "magType": "bolt",
+    "optics": "true",
+    "hopup": "",
+    "stock": "standard",
+    "damageBody": "7×8",
+    "damageHead": "7×8",
+    "damageLegs": "7×8",
+    "rateOfFire": [
+      "???",
+      "???",
+      "???",
+      "???"
+    ],
+    "dps": [
+      "???",
+      "???",
+      "???",
+      "???"
+    ],
+    "magazineSize": "8",
+    "tacReload": [
+      "2.75",
+      "2.65",
+      "2.56",
+      "2.48"
+    ],
+    "fullReload": [
+      "3",
+      "2.9",
+      "2.79",
+      "2.7"
+    ]
+  }
+}

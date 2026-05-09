@@ -1,0 +1,124 @@
+{{MobileGameNotice|mainPage=EVA-8 Auto}}
+{{Infobox weapon
+| name = EVA-8 Auto
+| description = Full-auto shotgun.  Shoot two bullets with a single pull of the trigger after being equipped with Double-tap Trigger.
+| type = Shotgun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto<br>[[File:Double Tap Trigger.svg|20px]] [[File:Burst Icon.svg|20px]] Burst (2)
+| ammoType = Shotgun Shells
+| creator = [[File:Wonyeon.svg|20px]] [[Wonyeon]]
+| magType = bolt
+| optics = true
+| hopup = double_tap
+| damageBody = 7×9
+| damageHead = 9×9 <small>(1.25×)</small>
+| damageLegs = 7×9
+| rateOfFire = {{Level0123|120|138|150|162}}<br>[[File:Double Tap Trigger.svg|20px]] 139
+| dps = {{Level0123|108|124|135|146}}<br>[[File:Double Tap Trigger.svg|20px]] 125
+| magazineSize = 10
+| tacReload = 2.5 seconds
+| fullReload = 2.8 seconds
+}}
+
+The '''EVA-8 Auto''', or '''EVA-8''', is a fully-automatic [[shotgun]] that utilizes {{ItemLink|Shotgun Shells|link=Shotgun Shells}}. It fires 9 pellets in the shape of the number 8.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+
+;[[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|image=1x Holo.svg|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage profile ===
+{{Damage profile
+|damageref=<ref group=note>Shotgun damage is calculated per pellet.<br/>Correct: 6 dmg/pellet x 1.25 = 7.5 dmg/pellet ≈ 8 dmg/pellet, resulting in 72 damage total.<br/>Incorrect: 54 dmg x 1.25 = 67.5 dmg ≈ 68 dmg.</ref>
+| damage = 6
+| bulletsPerBurst = 9
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+* Fortified head shot damages may vary ±9. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.
+* Non rounded, '''non Fortified''' Level 1 -> Level 3/4 Helmet damages are 7.2/6.9/6.75 respectively. They all round to 7 dmg/pellet, 63 dmg total.
+* Non rounded, '''Fortified''' No Helmet -> Level 3/4 Helmet damages are 6.375/6.12/5.865/5.7375 respectively. They all round to 6 dmg/pellet, 54 dmg total.
+
+===Arenas===
+{{Arenas weapon costs
+}}
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style="width:150px;" | Attachment
+! style="width:75px;"  | {{Common|★}}
+! style="width:75px;"  | {{Rare|★★}}
+! style="width:75px;"  | {{Epic|★★★}}
+! style="width:75px;"  | {{Legendary|★★★★}}
+|-
+| style="text-align:left;" | {{ItemLink|Shotgun Bolt}}
+| style="background-color:#a8a8a8" | ✔
+| style="background-color:#51a8d6" | ✔
+| style="background-color:#b237c8" | ✔
+| style="background-color:#b237c8" | ✔
+|-
+| style="text-align:left;" | {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Holo|text={{Common|1x Holo}}}} || ✔ || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|2x HCOG Bruiser|text={{Rare|2x HCOG “Bruiser”}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} || || ✔ || ✔ || 
+|-
+| style="text-align:left;" | {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} || || || ✔ || ✔
+|}
+
+== Skins ==
+There are a total of 14 skins for the EVA-8 Auto: 3 {{Legendary}}, 4 {{Epic}}, 4 {{Rare}}, and 3 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250px" heights="300px" mode="nolines">
+Evening Snow EVA-8 Mobile.png|{{Symbol|Cold Snap}} {{Legendary|Evening Snow}}<br/>Level 50
+Snake Bite EVA-8 Mobile.jpg|{{Legendary|Snake Bite}}<br/>[[Nightclub Icons]]
+Space Age Diplomacy EVA-8 Mobile.png|{{Symbol|s4m}} {{Legendary|Space Age Diplomacy}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Take by Storm EVA-8 Mobile.png|{{Epic|Take by Storm}}
+Crisis Alarm EVA-8 Mobile.jpg|{{Epic|Crisis Alarm}}<br/>[[Heat Wave]]
+Coral Bite EVA-8 Mobile.png|{{Epic|Coral Bite}}<br/>[[Barbarian Invasion]]
+Copperhead EVA-8 Mobile.png|{{Epic|Copperhead}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Crystalized EVA-8 Mobile.png|{{Rare|Crystalized}}<br/>{{SG|290}}
+Javelin Throw EVA-8 Mobile.png|{{Symbol|s3m}} {{Rare|Javelin Throw}}<br/>Level 20
+Ancient Eye EVA-8 Mobile.png|{{Rare|Ancient Eye}}<br/>[[Secrets of the Tomb]]
+Flesh Render EVA-8 Mobile.png|{{Symbol|s3.5m}} {{Rare|Flesh Render}}<br/>{{SeasonCurrency|3.5|4,000}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue EVA-8 Mobile.png|{{Common|Factory Issue}}<br/>Default 
+Icebreaker EVA-8 Mobile.png|{{Common|Icebreaker}}
+Cool Off EVA-8 Mobile.png|{{Common|Cool Off}}
+</gallery>
+</tabber>
+
+== See also ==
+* [[EVA-8 Auto]]
+
+{{Nav-MobileWeapons}}

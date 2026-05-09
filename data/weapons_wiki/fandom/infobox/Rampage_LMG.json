@@ -1,0 +1,38 @@
+{
+  "title": "Rampage LMG",
+  "infobox": {
+    "name": "Rampage LMG",
+    "description": "Fire Powered LMG. Charge with Thermites.",
+    "type": "Light machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Heavy Rounds",
+    "creator": "Rampart (designer)[https://www.ea.com/games/apex-legends/news/emergence-patch-notes Apex Legends - Emergence - Patch Notes]SWCC (manufacturer)",
+    "barrel": "stabilizer",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "26",
+    "damageHead": "39 (1.5×)",
+    "damageLegs": "22 (0.85×)",
+    "rateOfFire": "300 390",
+    "dps": "130 169",
+    "magazineSize": [
+      "28",
+      "32",
+      "36",
+      "40"
+    ],
+    "tacReload": [
+      "3.1",
+      "3",
+      "2.89",
+      "2.79"
+    ],
+    "fullReload": [
+      "4",
+      "3.87",
+      "3.73",
+      "3.6"
+    ]
+  }
+}

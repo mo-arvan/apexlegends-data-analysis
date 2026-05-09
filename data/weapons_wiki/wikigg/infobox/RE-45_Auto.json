@@ -1,0 +1,29 @@
+{
+  "title": "RE-45 Auto",
+  "infobox": {
+    "name": "RE-45 Auto",
+    "description": "Full-auto pistol.",
+    "type": "Pistol",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "{{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}",
+    "barrel": "laser",
+    "magType": "light",
+    "optics": "true",
+    "stock": "",
+    "hopup": "hammerpoint",
+    "damageBody": "14",
+    "damageHead": "18",
+    "damageLegs": "11",
+    "rateOfFire": "780",
+    "dps": "182",
+    "magazineSize": [
+      "20",
+      "21",
+      "23",
+      "26"
+    ],
+    "tacReload": "1.5",
+    "fullReload": "1.95"
+  }
+}

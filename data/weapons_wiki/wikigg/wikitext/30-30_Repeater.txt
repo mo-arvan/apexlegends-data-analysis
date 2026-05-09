@@ -1,0 +1,439 @@
+{{Tabs|
+{{Tabs1|30-30 Repeater|Main}}
+{{Tabs2|30-30 Repeater/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = 30-30 Repeater
+| description = Semi-auto heavy repeater.
+| type = Marksman Weapon
+| fireModes = [[File:Single-fire Icon.svg|25px|Single|link=]] Single
+| ammoType = Heavy Rounds
+| creator = [[Holdener Arms]]
+| barrel =
+| magType = heavy
+| optics = true
+| stock = sniper
+| hopup =skullpiercer 
+| damageBody = 43~65
+| damageHead = 69~104<br>{{Symbol|Skullpiercer}} 86~130
+| damageLegs = 37~55
+| rateOfFire = 139
+| dps = 100
+| magazineSize = {{Level0123|6|7|8|10}}
+| tacReload = Segmented<ref name="reload">TBA</ref>
+| fullReload = Segmented<ref name="reload"/>
+}}
+
+The '''30-30 Repeater''', '''30-30''', or '''Repeater''', is a [[lever-action repeating rifle]] introduced in {{ItemLink|Season 8}} that utilizes {{ItemLink|Heavy Rounds}}.
+
+The 30-30 has a unique charge mechanic allowing the weapon to do up to 36% more damage by aiming down the sights for longer without firing, otherwise it can simply be fired without charging at a higher fire rate. 
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG Ranger|text={{Epic|3x HCOG "Ranger"}}}}
+
+
+; Others
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+<br>
+<br>
+
+=== Damage Profile ===
+; Uncharged
+{{Damage profile
+| damage = 39
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+<br>
+<br>
+; Max charge
+{{Damage profile
+| damage = 53
+| headshotMdfr = 1.75
+| legMdfr = 0.85
+}}
+<!--
+<br>
+<br>
+; {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}, uncharged
+{{Damage profile
+| damage = 39
+| headshotMdfr = 2
+| legMdfr = 0.85
+}}
+<br>
+<br>
+; {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}, max charge
+{{Damage profile
+| damage = 53
+| headshotMdfr = 2
+| legMdfr = 0.85
+}}
+-->
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_3030</big>
+|-
+! Variable !! Value !! Description
+|-
+| charge_time
+| style="text-align:center" | 0.35
+| Time to charge shots for higher damage. Expressed in seconds.
+|-
+| charge_delay_when_triggered_by_ADS
+| style="text-align:center" | 0.3
+| Time before a shot can be charged upon entering ADS and for another shot to be charged after firing. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 3.85
+| Rounds fired in one second.
+|-
+| rechamber_time
+| style="text-align:center" | 0.685
+| Time delay between two shots. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 29000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 736 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.15
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 4.45
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 4.95
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.9
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.4
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.4
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.35
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.3
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.26
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.425
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''25000''' damages with the '''30-30'''
+|-
+|''Headshot Kills''
+| style="text-align:left" | Kill '''100''' enemies with '''Headshots''' with the '''30-30'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''200''' enemies while ADS with the '''30-30'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''250''' enemies with '''60''' meters away with the '''30-30'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''600''' enemies with the '''30-30'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|While some claim [[Fuse]]'s mullet is the finest thing to come out of [[Salvo]], most would agree it's the 30-30 Repeater. A lever action repeating rifle, it can be charged to increase the damage done by each shot. Only one bullet needs to be chambered in order for the weapon to fire, which makes the Repeater an asset in skirmishes where a single round can be the difference between victory and defeat. Originally designed to protect rural farms from beasts and poachers, and requiring minimal maintenance in the harsh sands of Salvo, the 30-30 has become a symbol of freedom to the Salvonian working class.}}
+<br>
+<br>
+== Skins ==
+There are a total of 77 skins for the 30-30 Repeater: 19 {{Legendary}}, 14 {{Epic}}, 28 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="200" mode="nolines">
+Super Speedway 30-30 Repeater.png|{{Legendary|Super Speedway}}<br/>{{CraftingMetals|1,200}}
+Sleek Unique 30-30 Repeater.png|{{Legendary|Sleek Unique}}<br/>{{CraftingMetals|1,200}}
+Bullet Train 30-30 Repeater.png|{{Legendary|Bullet Train}}<br/>{{CraftingMetals|1,200}}
+Wild West 30-30 Repeater.png|{{Legendary|Wild West}}<br/>{{CraftingMetals|1,200}}
+Winged Sun 30-30 Repeater.png|{{Cosmetic|Season 10|Legendary|Winged Sun}}<br/>Level 1
+Silver Lining 30-30 Repeater.png|{{Cosmetic|Loba Edition|Legendary|Silver Lining}}
+Dose of Madness 30-30 Repeater.png|{{Cosmetic|Warriors|Legendary|Dose of Madness}}
+Repeatron 30-30 Repeater.png|{{Cosmetic-NI|Recolor|Legendary|Repeatron}}<br/>Needs {{Legendary|Super Speedway}}
+World's Fair 30-30 Repeater.png|{{Cosmetic-NI|Recolor|Legendary|World's Fair}}<br/>Needs {{Legendary|Bullet Train}}
+Cerulean Slayer 30-30 Repeater.png|{{Cosmetic|Imperial Guard|Legendary|Cerulean Slayer}}
+Polished Power 30-30 Repeater.png|{{Cosmetic|Dressed to Kill|Legendary|Polished Power}}
+With Interest 30-30 Repeater.png|{{Cosmetic|Shadow Society|Legendary|With Interest}}
+Void Impulse 30-30 Repeater.png|{{Cosmetic|Season 21|Legendary|Void Impulse}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+Reversed Polarity 30-30 Repeater.png|{{Cosmetic|Season 21|Legendary|Reversed Polarity}}<ref group="note" name="reactive"/><br/>Level 110
+Far Orbit 30-30 Repeater.png|{{Cosmetic|Void Reckoning|Legendary|Far Orbit}}
+Top of the Class 30-30 Repeater.png|{{Symbol|Battle Academy Store 2024}} {{Legendary|Top of the Class}}
+Won the West 30-30 Repeater.png|{{Cosmetic|Space Hunt|Legendary|Won the West}}
+Blackfrost 30-30 Repeater.png|{{Cosmetic|Winter's Haunt|Legendary|Blackfrost}}
+Accented Elegance 30-30 Repeater.png|{{Cosmetic|Death by Design|Legendary|Accented Elegance}}
+</gallery>
+<references group="note"/>
+|-|
+
+Epic=
+<gallery widths="250" heights="200" mode="nolines">
+Eye of the Storm 30-30 Repeater.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire 30-30 Repeater.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor 30-30 Repeater.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid 30-30 Repeater.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy 30-30 Repeater.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Wings of Salvo 30-30 Repeater.png|{{Cosmetic|Season 8|Epic|Wings of Salvo}}<br/>Level 99
+Incan Prophecy 30-30 Repeater.png|{{Cosmetic|War Games|Epic|Incan Prophecy}}
+Time Circuit 30-30 Repeater.png|{{Cosmetic|Evolution|Epic|Time Circuit}}
+Cloudburst 30-30 Repeater.png|{{Cosmetic|Gaiden|Epic|Cloudburst}}
+Teal Ranger 30-30 Repeater.png|{{Cosmetic|Double Take|Epic|Teal Ranger}}
+Guiding Moonlight 30-30 Repeater.png|{{Cosmetic|S22|Epic|Guiding Moonlight}}<br>Split 2 Premium Lv 35
+Haze Blazer 30-30 Repeater.png|{{Cosmetic|S24|Epic|Haze Blazer}}<br>Split 2 Premium Lv 1
+Repeater Wave 30-30 Repeater.png|{{Cosmetic|Fight Force|Epic|Repeater Wave}}
+Fatal Attraction 30-30 Repeater.png|{{Symbol|S27}} {{Epic|Fatal Attraction}}<br> Split 1 Premium Lv 35
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="200" mode="nolines">
+Carnivale 30-30 Repeater.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Cold Wave 30-30 Repeater.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage 30-30 Repeater.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Headgames 30-30 Repeater.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Icebreaker 30-30 Repeater.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Out for Blood 30-30 Repeater.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Paper Trail 30-30 Repeater.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Recluse 30-30 Repeater.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Solar Flare 30-30 Repeater.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Surprise Party 30-30 Repeater.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Tagged 30-30 Repeater.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Trident 30-30 Repeater.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Urban Edge 30-30 Repeater.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Warm Rave 30-30 Repeater.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Wildlands 30-30 Repeater.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Tribal Waters 30-30 Repeater.png|{{Cosmetic|Warriors|Rare|Tribal Waters}}
+Heavy Hitter 30-30 Repeater.png|{{Cosmetic-NI|PlayStation+|Rare|Heavy Hitter}}<br/>Season 13
+Petal Power 30-30 Repeater.png|{{Cosmetic|Season 8|Rare|Petal Power}}<br/>Level 9
+Battle Blossom 30-30 Repeater.png|{{Cosmetic|Season 9|Rare|Battle Blossom}}<br/>Level 85
+Bucking Bronco 30-30 Repeater.png|{{Cosmetic|Season 11|Rare|Bucking Bronco}}<br/>Level 46
+Skull Fashion 30-30 Repeater.png|{{Cosmetic|Season 12|Rare|Skull Fashion}}<br/>Level 9
+Singed Sight 30-30 Repeater.png|{{Cosmetic|Season 13|Rare|Singed Sight}}<br/>Level 37
+Pristine Power 30-30 Repeater.png|{{Cosmetic|Season 15|Rare|Pristine Power}}<br/>Level 52
+Disco Sazzler 30-30 Repeater.png|{{Cosmetic|Season 16|Rare|Disco Sazzler}}<br/>Level 21
+Safety Protocol 30-30 Repeater.png|{{Cosmetic|Season 17|Rare|Safety Protocol}}<br/>Level 69
+Red Rumble 30-30 Repeater.png|{{Cosmetic|Season 18|Rare|Red Rumble}}<br/>Level 13
+Necrotic Devourer 30-30 Repeater.png|{{Symbol|Season 21}} {{Rare|Necrotic Devourer}}<br/>Level 25
+Summer Breeze 30-30 Repeater.png|{{Symbol|ps+}} {{Rare|Summer Breeze}}<br>Season 22
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="200" mode="nolines">
+Factory Issue 30-30 Repeater.png|{{Common|Factory Issue}}<br/>Default
+Midnight 30-30 Repeater.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal 30-30 Repeater.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic 30-30 Repeater.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire 30-30 Repeater.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater 30-30 Repeater.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo 30-30 Repeater.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm 30-30 Repeater.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest 30-30 Repeater.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen 30-30 Repeater.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid 30-30 Repeater.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal 30-30 Repeater.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket 30-30 Repeater.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon 30-30 Repeater.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover 30-30 Repeater.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic 30-30 Repeater.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Beast Mode}} [[March 25, 2025 Patch]]
+* ADS Charged shot increased to 65 (was 58).
+* ADS Charged Headshot damage increased to 104 (was 93).
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* No charge damage increased to 43 (was 39).
+* No charge headshot damage: 69.
+* Full charge damage increased to 58 (was 53).
+* Full charge headshot damage: 93.
+* Slightly increased projectile size at long range.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Reduced uncharged damage from 42 to 39.
+* Reduced magazine size from {{Level0123|6|8|10|12}} to {{Level0123|6|7|8|10}}.
+* Reduced {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}} headshot damage multiplier from ×2.1 to ×2.
+* Reduced rounds added per reload from 2 to 1.
+* Reduced {{ItemLink|Sniper Stock}}'s reload speed boost from {{Level123|5%|12.5%|20%}} to {{Level123|3.3%|6.7%|10%}}.
+* Reloading 3 rounds in a row increases the reload speed for the remaining rounds by 20%.
+* Can spawn [[Fully Kitted Weapons|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 20}}.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Increased hipfire spread.
+
+
+; {{ItemLink|Harbingers|noText=yes}} [[September 19, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Increased projectile size when fully charged.
+
+
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Fixed cases where players were unable to aim down sights until reloading is complete when done at certain times.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Added {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}. Compatible with 30-30 Repeater, [[Longbow DMR]], and [[Wingman]].
+* Increased rounds added per reload from 1 to 2.
+* Removed {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Removed {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Reduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}} pellet damage from 8 to 7.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Introduced {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}. Compatible with 30-30 Repeater and [[Mastiff Shotgun]].
+* Can spawn [[Fully Kitted Weapons|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 11}}.
+
+
+; {{ItemLink|Evolution|noText=yes}} [[September 14, 2021 Patch]]
+* {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}:
+** ADS speed increased to match those of shotgun's.
+** Increased pellet damage multiplier from 35% to 50%.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Can now equip {{ItemLink|Sniper Stock|text=Sniper Stocks}}.
+* Can no longer equip {{ItemLink|Standard Stock|text=Standard Stocks}}.
+* Increased {{ItemLink|Sniper Stock}}'s reload speed boost from {{Level123|3.3%|6.7%|10%}} to {{Level123|5%|12.5%|20%}}.
+* {{ItemLink|Arenas}}:
+** Reduced {{Common|Level 1}} upgrade cost from {{Materials|200}} to {{Materials|150}}.
+
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* Increased projectile speed from ??? to 29000.
+* Reduced charge time from 0.5 to 0.35 seconds.
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|350}} to {{Materials|400}}.
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|250}} to {{Materials|200}}.
+
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Changed weapon type from assault rifle to marksman weapon.
+* Introduced {{ItemLink|Shatter Caps|text={{Epic|Shatter Caps}}}}. Compatible with [[Bocek Compound Bow]] and 30-30 Repeater.
+* Increased legshot damage multiplier from ×0.75 to ×0.85.
+* Increased ADS movement speed penalty from -50% to -57.5%.
+* ('''Undocumented''') Increased full reload time from 0.33 to 0.75 seconds.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] 30-30 Repeater optics can now be removed and replaced with any other compatible one.
+* Fixed bug where dropping and picking it up again would cause it to be fully reloaded.
+* Added spread deviation when ADS firing and jumping.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Introduced.
+* Can spawn [[Fully Kitted Weapons|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 8}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+30-30 Skin Concept Art.jpg|Concept art for the 30-30's {{Legendary|Super Speedway}} and {{Legendary|Sleek Unique}} skins.<ref>[https://www.artstation.com/artwork/eJWn03 Rachel Gagner on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* The name is a reference to the [[wikipedia:.30-30 Winchester|.30-30 Winchester]] cartridge used by the [[wikipedia:Winchester Model 1894|Winchester Model 1894]] and Mossberg 464 rifles, on which the weapon's design is based.
+* The 30-30 Repeater is one of the two weapons in ''Apex Legends'' whose reload is segmented, the other one being the [[Mastiff Shotgun]].
+* [[Fuse]] has a unique animation when he picks up a 30-30 Repeater.
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

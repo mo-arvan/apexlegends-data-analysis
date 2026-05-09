@@ -1,0 +1,30 @@
+{
+  "title": "Peacekeeper (Mobile)",
+  "infobox": {
+    "name": "Peacekeeper",
+    "description": "Lever-action shotgun with choke fire mode. Deals massive damage.",
+    "type": "Shotgun",
+    "fireModes": "Single Single",
+    "ammoType": "Shotgun Shells",
+    "magType": "bolt",
+    "optics": "true",
+    "damageBody": "10×11",
+    "damageHead": "13×11(1.25×)",
+    "damageLegs": "8x11(0.8×)",
+    "rateOfFire": [
+      "48",
+      "57",
+      "63",
+      "68"
+    ],
+    "dps": [
+      "88",
+      "105",
+      "116",
+      "125"
+    ],
+    "magazineSize": "7",
+    "tacReload": "2.2 seconds",
+    "fullReload": "3.3 seconds"
+  }
+}

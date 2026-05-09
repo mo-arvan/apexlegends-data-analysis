@@ -1,0 +1,441 @@
+{{MainGameNotice|mobilePage=HAVOC Rifle (Mobile)}}
+{{Infobox-Weapon
+| name = HAVOC Rifle
+| description = Full-auto charged energy rifle.
+| type = Assault rifle
+| fireModes = [[File:Auto Icon.svg|25px|Auto|link=]] Auto
+| ammoType = Energy Ammo
+| creator = [[File:Siwhan Industries.svg|25px|link=Siwhan Industries]] [[Siwhan Industries]]<br>[[File:Wonyeon.svg|25px|link=Wonyeon]] [[Wonyeon]]
+| magType = energy
+| optics = true
+| stock = standard
+| hopup = turbo
+| damageBody = 18
+| damageHead = 32 <small>(1.75×)</small>
+| damageLegs = 15 <small>(0.85×)</small>
+| rateOfFire = 672
+| dps = 202
+| magazineSize = {{Level0123|20|24|28|32}}
+| reload = {{Level0123|3.2|3.09|2.99|2.88}}
+}}
+
+The '''HAVOC Rifle''', '''HAVOC''', or '''Havoc''', is a fully-automatic [[assault rifle]] that utilizes {{ItemLink|Energy Ammo|text=Energy Ammo}}.
+
+Every time the trigger is pressed, there is a spin-up delay before the weapon starts shooting. The spin-up delay can be removed by equipping a {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} Hop-Up.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+
+; Others
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}
+
+
+=== Damage Profile ===
+; Base
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.75
+| legMdfr = 0.75
+}}
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_energy_ar</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | charge_time
+| style="text-align:center" | 0.42
+| rowspan="2" | Time before the weapon starts firing after pulling the trigger. Expressed in seconds.
+|-
+| style="text-align:center" | {{ItemLink|Turbocharger|noText=yes}} 0.01
+|-
+| fire_rate
+| style="text-align:center" | 11.2
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 30500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 774 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 9.9
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 12.6
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 12.6
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.5
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Return Fire''
+| style="text-align:left" | Down an enemy within 5 seconds after being shot by them.
+| 20 times
+|-
+| 40
+| ''Low Battery''
+| style="text-align:left" | Down an enemy with the Havoc while they are charging Shields.
+| 15 times
+|-
+| 60
+| ''Bye Bye''
+| style="text-align:left" | Kill both enemies with the Havoc while they are reviving.
+| 10 times
+|-
+| 80
+| ''Go Turbo!''
+| style="text-align:left" | Kill at least 5 enemies while [{{Legendary|Turbocharger}}] is equipped with the Havoc in one match.
+| 10 times
+|-
+| 100
+| ''In a Bind''
+| style="text-align:left" | Down an enemy with the Havoc after sticking the target with an Arc Star.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|While the origin of the HAVOC is unknown, it's believed to be a custom build fashioned for a Devotion LMG fan with money to burn. A versatile energy rifle, the HAVOC is meant to mimic the behavior of a Devotion with the increased accuracy of an assault rifle and fewer attachments to reach maximum output. Some might call it "streamlined", but a certain mystery buyer would probably choose "tailor-made" instead.}}
+
+
+== Skins ==
+There are a total of 82 skins for the HAVOC Rifle: 23 {{Legendary}}, 11 {{Epic}}, 32 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="109" mode="nolines">
+Quantum Chaos Havoc.png|{{Legendary|Quantum Chaos}}<br/>{{CraftingMetals|1,200}}
+Sonic Empire Havoc.png|{{Legendary|Sonic Empire}}<br/>{{CraftingMetals|1,200}}
+The Silver Storm Havoc.png|{{Cosmetic|Season 1|Legendary|The Silver Storm}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 100
+The Golden Idol Havoc.png|{{Cosmetic|Season 1|Legendary|The Golden Idol}}<ref group="note" name="reactive"/><br/>Level 110
+The Polarizer Havoc.png|{{Cosmetic-NI|Recolor|Legendary|The Polarizer}}<br/>Needs {{Legendary|Sonic Empire}}
+The Entangler Havoc.png|{{Cosmetic-NI|Recolor|Legendary|The Entangler}}<br/>Needs {{Legendary|Quantum Chaos}}
+Living Dead Havoc.png|{{Cosmetic|Fight or Fright 2019|Legendary|Living Dead}}
+Collision Course Havoc.png|{{Cosmetic-NI|Recolor|Legendary|Collision Course}}<br/>Needs {{Legendary|Quantum Chaos}}
+Warning Signs Havoc.png|{{Cosmetic-NI|Recolor|Legendary|Warning Signs}}<br/>Needs {{Legendary|Sonic Empire}}
+Redemption Havoc.png|{{Cosmetic|The Old Ways|Legendary|Redemption}}
+First Blood Havoc.png|{{Cosmetic|Pathfinder Edition|Legendary|First Blood}}
+Maverick Havoc.png|{{Cosmetic-NI|Recolor|Legendary|Maverick}}<br/>Needs {{Legendary|Quantum Chaos}}
+Star Studded Havoc.png|{{Cosmetic|Horizon Launch Bundle|Legendary|Star Studded}}
+Emerald Abstraction Havoc.png|{{Cosmetic|Fight Night|Legendary|Emerald Abstraction}}
+Reptilian Fury Havoc.png|{{Cosmetic|Awakening|Legendary|Reptilian Fury}}
+Chunky Tech Havoc.png|{{Cosmetic|Beast of Prey|Legendary|Chunky Tech}}
+Obsidian Night Havoc.png|{{Cosmetic|Season 15|Legendary|Obsidian Night}}<br/>Level 1
+Cold Compress Havoc.png|{{Cosmetic|Wintertide|Legendary|Cold Compress}}
+Resuscitator Havoc.png|{{Cosmetic|Sun Squad|Legendary|Resuscitator}}
+Amplified Impulse Havoc.png|{{Cosmetic|Neon Network|Legendary|Amplified Impulse}}
+Soul Devourer Havoc.png|{{Cosmetic|Death Dynasty|Legendary|Soul Devourer}}
+Lightning Strike Havoc.png|{{Cosmetic|Uprising|Legendary|Lightning Strike}}
+Hellfire Havoc.png|{{Cosmetic|Final Fantasy VII|Legendary|Hellfire}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="109" mode="nolines">
+Eye of the Storm Havoc.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Havoc.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Havoc.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Havoc.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Havoc.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Rune Breaker Havoc.png|{{Cosmetic|Iron Crown|Epic|Rune Breaker}}
+Spearmint Havoc.png|{{Cosmetic|Grand Soirée|Epic|Spearmint}}
+Winter Fresh Havoc.png|{{Cosmetic|Grand Soirée|Epic|Winter Fresh}}
+Love Struck Havoc.png|{{Epic|Love Struck}}<ref group="note">Was available for a week as part of 2021's Valentine's Day (February 10 - February 16).</ref>
+Cosmic Starlight Havoc.png|{{Cosmetic|Genesis|Epic|Cosmic Starlight}}
+Chaos Prophecy Havoc.png|{{Cosmetic|Harbingers|Epic|Chaos Prophecy}}
+Celtic Thunder Havoc.png|{{Cosmetic|season 19|Epic|Celtic Thunder}}<br/>Treasure Pack Reward
+</gallery>
+<references group="note"/>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="109" mode="nolines">
+Out for Blood Havoc.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party Havoc.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale Havoc.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare Havoc.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands Havoc.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames Havoc.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail Havoc.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker Havoc.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident Havoc.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged Havoc.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave Havoc.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge Havoc.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse Havoc.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave Havoc.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Havoc.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Patchwork Havoc.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 69
+Blue Blood Havoc.png|{{Cosmetic|Season 2|Rare|Blue Blood}}<br/>Level 26
+Volcano Grounds Havoc.png|{{Cosmetic|Season 3|Rare|Volcano Grounds}}<br/>Level 96
+Seafoam Scaffold Havoc.png|{{Cosmetic|Season 4|Rare|Seafoam Scaffold}}<br/>Level 31
+Daisy Chain Havoc.png|{{Cosmetic-NI|Playstation+ Pack|Rare|Daisy Chain}}<br/>February 2020
+The Head Shrinker Havoc.png|{{Cosmetic|Season 5|Rare|The Head Shrinker}}<br/>Level 39
+Circuit Board Havoc.png|{{Cosmetic|Season 6|Rare|Circuit Board}}<br/>Level 17
+Pulsive Havoc.png|{{Cosmetic|Aftermarket|Rare|Pulsive}}
+Retrograde Havoc.png|{{Cosmetic|Season 7|Rare|Retrograde}}<br/>Level 63
+Pulse Flux Havoc.png|{{Cosmetic|Season 8|Rare|Pulse Flux}}<br/>Level 44
+Breezy Havoc.png|{{Cosmetic|Season 9|Rare|Breezy}}<br/>Level 42
+Electric Momentum HAVOC.png|{{Rare|Electric Momentum}}<ref group="note">Could only be redeemed with codes obtained from [https://en.wikipedia.org/wiki/Tesco Tesco] stores in the United Kingdom as part of the ''Apex Legends x Monster Energy'' collaboration.</ref>
+Perfect Cell Havoc.png|{{Cosmetic|Season 10|Rare|Perfect Cell}}<br/>Level 84
+Be Aggressive Havoc.png|{{Cosmetic|season 11|Rare|Be Aggressive}}<br/>Level 84
+Mouth of Metal Havoc.png|{{Cosmetic|Season 12|Rare|Mouth of Metal}}<br/>Level 82
+Scaled Tapestry Havoc.png|{{Cosmetic|Season 13|Rare|Scaled Tapestry}}<br/>Level 9
+Elephant's Touch Havoc.png|{{Cosmetic|Season 14|Rare|Elephant's Touch}}<br/>Level 96
+</gallery>
+<references group="note"/>
+
+|-|
+
+Common=
+<gallery widths="290" heights="109" mode="nolines">
+Factory Issue Havoc.png|{{Common|Factory Issue}}<br/>Default
+Midnight Havoc.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Havoc.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Havoc.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Havoc.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Havoc.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Havoc.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Havoc.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Havoc.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Havoc.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Havoc.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Havoc.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Havoc.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Havoc.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Havoc.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Havoc.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|{{ItemLink|Season 21|noText=yes}} [[June 25, 2024 Patch]]
+*All mag sizes reduced
+**No Mag: 20 (was 24)
+**White Mag: 24 (was 28)
+**Blue Mag: 28 (was 32)
+**Purple Mag: 32 (was 36)
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} no longer reduces damage.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* ('''Undocumented''') Changed inspect animation.
+* ('''Undocumented''') Added unique inspect animation for [[Wattson]].
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Increased hipfire spread when standing from 3 to 4.5.
+* Increased hipfire spread when crouching from 2.4 to 3.6.
+* Increased hipfire spread when moving from 6.6 to 9.9.
+* Increased hipfire spread when running from 8.4 to 12.6.
+* Increased hipfire spread when in midair from 8.4 to 12.6.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+* Reduced damage when {{ItemLink|Turbocharger|text={{Legendary|Turbocharged}}}} from 18 to 17.
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Increased hipfire spread when crouching from 2.5 to 3.
+* Increased hipfire spread when standing from 5.5 to 6.6.
+* Increased hipfire spread when moving from 7 to 8.4.
+* Increased hipfire spread when running from 2 to 2.4.
+* Increased hipfire spread when in midair from 7 to 8.4.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Reduced recoil early in the pattern.
+
+; {{ItemLink|Warriors|noText=yes}} [[March 29, 2022 Patch]]
+* {{ItemLink|Control}}:
+** Removed {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} from {{Epic|Ratings Tier 3}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Reduced headshot multiplier from 2× to 1.75×.
+* Reduced recoil early in the pattern.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Fixed an issue causing the HAVOC to have 100% accuracy when hipfired through [[Rampart]]'s {{AbilityLink|Amped Cover}}.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 7}}.
+* Changed recoil pattern.
+* Removed {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}.
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Changed recoil pattern.
+* Reintroduced {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}.
+* Reintroduced {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}.
+* Changed magazine size from 28 to {{Level0123|24|28|32|36}}.
+
+; {{ItemLink|Lost Treasures|noText=yes}} [[June 23, 2020 Patch]]
+* Increased horizontal recoil in the initial shots of a burst greatly.
+* Reduced magazine size from 32 to 28.
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Increased vertical recoil.
+* Increased horizontal recoil slightly.
+* Increased recoil on the first two shots.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 4}}.
+* Removed {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}}.
+* Reduced horizontal recoil and improved handling.
+* Reduced time between shots when using {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}'s single fire mode from 0.77 to 0.56 seconds.
+* Improved iron sights accuracy.
+
+; {{ItemLink|Grand Soirée|noText=yes}} [[January 14, 2020 Patch]]
+* Removed {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}.
+* Changed magazine size from {{Level0123|24|28|32|36}} to 32.
+
+; [[July 16, 2019 Patch]]
+* Fixed exploit where the player could fire full-auto without charging up.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}. Compatible with the [[Devotion LMG]], HAVOC Rifle, and [[Triple Take]].
+* Changed magazine size from 32 to {{Level0123|24|28|32|36}}.
+
+; [[June 11, 2019 Patch]]
+* Reduced magazine size after an accidental increase.
+
+; [[May 20, 2019 Patch]]
+* Fixed occlusion bug for the "wind-down" sound.
+
+; [[April 16, 2019 Patch]]
+* Increased magazine size from 25 to 32.
+* {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}}:
+** Reduced ammo consumed per shot from 5 to 4.
+** Increased close range damage from 55 to 60.
+** Increased ranged damage from 45 to 50.
+** Increased close range damage falloff from 35m to 75m.
+** Increased ranged damage falloff from 75m to 125m.
+* [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] HAVOC Rifle now has {{ItemLink|Turbocharger|text={{Legendary|Turbocharger}}}} and {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}} instead of {{ItemLink|Selectfire Receiver|text={{Epic|Selectfire Receiver}}}} and {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}.
+
+; [[March 06, 2019 Patch]]
+* Increased spawn rate in all zone tiers.
+
+; [[February 22, 2019 Patch]]
+* Fixed an issue with the HAVOC Rifle crashing the game in certain situations.
+
+; [[February 20, 2019 Patch]]
+* Introduced.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]].
+}}
+
+== Gallery ==
+=== Images ===
+<gallery widths="250" heights="250">
+ConceptArt Prog Wang HAVOC 01.jpg|Concept Art for the HAVOC Rifle by Prog Wang.<ref>[https://www.artstation.com/artwork/qAZLQn Prog Wang on ArtStation]</ref>
+ConceptArt Prog Wang HAVOC 02.jpg
+ConceptArt Prog Wang HAVOC 03.jpg
+Redemption Havoc Concept Art.jpg|Concept art for the {{Cosmetic|The Old Ways|Legendary|Redemption}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/ba99qo Gadget-Bot on ArtStation]</ref>
+ConceptArt Gadget-Bot Emerald Abstraction HAVOC.jpg|Concept art for the {{Cosmetic|Fight Night|Legendary|Emerald Abstraction}} skin by Gadget-Bot Productions.<ref>[https://www.artstation.com/artwork/xYzoXE Gadget-Bot on ArtStation]</ref>
+Cold Compress Havoc Concept Art.jpg|Concept art for the {{Legendary|Cold Compress}} skin.<ref>[https://www.artstation.com/artwork/JeLmWR Gadget-Bot on ArtStation]</ref>
+Resuscitator Havoc Concept Art.jpg|Concept art for the {{Symbol|Sun Squad}} {{legendary|Resuscitator}} skin.<ref>[https://www.artstation.com/artwork/w0OoBZ Snowy Zhang on ArtStation]</ref>
+</gallery>
+
+
+=== Videos ===
+{{#ev:youtube|1P7z-PLs8p0|480}}
+
+
+== Trivia ==
+* The HAVOC is currently the only weapon not present since the game's release that didn't get introduced at the start of a [[Season]].
+* The HAVOC has several visual similarities to the [https://titanfall.fandom.com/wiki/PR-01_Plasma_Railgun PR-01 Plasma Railgun] Titan weapon from the ''Titanfall'' series, such as a wind up time, a rotating magazine and magnetic rails which glow with the same color as the projectile.
+* The HAVOC's secondary, now removed fire mode used to shoot a beam of energy similarly to the ''Titanfall'' series version of the [https://titanfall.fandom.com/wiki/Charge_Rifle Charge Rifle].
+
+
+== See also ==
+* [[HAVOC Rifle (Mobile)|Havoc Rifle (''Apex Legends Mobile'')]]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

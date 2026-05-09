@@ -1,0 +1,28 @@
+{
+  "title": "R-301 Carbine (Mobile)",
+  "infobox": {
+    "name": "R-301 Carbine",
+    "description": "A well-balanced Assault Rifle in every aspect.",
+    "type": "Assault rifle",
+    "fireModes": "Auto Single",
+    "ammoType": "Light Rounds",
+    "creator": "Lastimosa Armory",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "13",
+    "damageHead": "25 (1.75×)",
+    "damageLegs": "12 (0.85×)",
+    "rateOfFire": "816408",
+    "magazineSize": [
+      "20",
+      "22",
+      "28",
+      "32"
+    ],
+    "tacReload": "{{Level023|1.6|1.5|1.4}}",
+    "fullReload": "{{Level023|2.5|2.3|2.2}}",
+    "dps": "17795"
+  }
+}

@@ -1,0 +1,396 @@
+{{MainGameNotice|mobilePage=EVA-8 Auto (Mobile)}}
+{{Infobox-Weapon
+| name = EVA-8 Auto
+| description = Full-auto shotgun.
+| type = Shotgun
+| fireModes = [[File:Auto Icon.svg|25px|link=]] Auto
+| ammoType = Shotgun Shells 
+| creator = {{ItemLink|Wonyeon}}
+| magType = bolt
+| optics = true
+| stock = standard
+| damageBody = 7×8
+| damageHead = 9×8 <small>(1.25×)</small>
+| damageLegs = 7×8
+| rateOfFire = 144<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Common|156}}<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Rare|166}}<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Epic|179}}
+| dps = 134<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Common|146}}<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Rare|155}}<br>[[File:Shotgun Bolt.svg|25px|Shotgun Bolt]] {{Epic|167}}
+| magazineSize = 8
+| tacReload = {{Level0123|2.75|2.65|2.56|2.475}}
+| fullReload = {{Level0123|3.0|2.9|2.79|2.7}}
+}}
+
+The '''EVA-8 Auto''', '''EVA-8''', '''EVA''', or '''EVA Shotgun''', is a fully-automatic [[shotgun]] that utilizes {{ItemLink|Shotgun Shells|link=Shotgun Shells}}. It fires 8 pellets in the shape of the number 8.
+
+Being a shotgun, the EVA-8 affects [[Mad Maggie]]'s movement speed because of her {{AbilityLink|Warlord's Ire}} Passive ability.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|image=1x Holo.svg|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Others
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+=== Damage Profile ===
+'''Note:''' {{AbilityLink|Fortified}} headshot damage may vary ±7. This is due to uncertainty over whether Fortified reduces non rounded or rounded damage numbers. This difference is negligible on non pellet based weapons.
+{{Damage profile
+| damageref = <ref group="note">Shotgun damage is calculated per pellet.<br/>Correct: 6 dmg/pellet x 1.25 = 7.5 dmg/pellet ≈ 8 dmg/pellet, resulting in 72 damage total.<br/>Incorrect: 54 dmg x 1.25 = 67.5 dmg ≈ 68 dmg.</ref>
+| damage = 7
+| bulletsPerBurst = 8
+| headshotMdfr = 1.25
+| legMdfr = 1
+}}
+<references group="note"/>
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_shotgun</big>
+|-
+! Variable !! Value !! Description
+|-
+| rowspan="2" | fire_rate
+| style="text-align:center" | <span class="invert-image">[[File:Auto Icon.svg|25px|link=|Auto]]</span> 2.4
+| rowspan="2" | Rounds fired in one second.
+|-
+| style="text-align:center" | <span class="invert-image">{{Symbol|Double Tap Trigger}}</span> 7
+|-
+| burst_fire_delay
+| style="text-align:center" | 0.8
+| Time delay between two bursts. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 16000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 406 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 0
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 0
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.35
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.45
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.25
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.9
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 0
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Full Auto''
+| style="text-align:left" | Down an enemy without releasing the trigger with EVA-8.
+| 20 times
+|-
+| 40
+| ''Hardcore''
+| style="text-align:left" | Down an enemy with hipfire while equipped with a minimum [{{Epic|Lv.3 Shotgun Bolt}}].
+| 20 times
+|-
+| 60
+| ''Knock-Knock!''
+| style="text-align:left" | Break a door with a Grenade and get a knock with the weapon.
+| 15 times
+|-
+| 80
+| ''Non-stop''
+| style="text-align:left" | Down at least 2 enemies with hipfire without releasing the trigger in one match.
+| 10 times
+|-
+| 100
+| ''Two Birds''
+| style="text-align:left" | Get a double kill with the EVA-8 with hipfire.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|With the kick of a shotgun but also a higher fire rate than the competition, the EVA-8 is an asset in close-quarters engagements against multiple or highly mobile targets. The EVA-8 was a mainstay during the Frontier War, where one was bound to make an appearance in almost all Pilot-to-Pilot engagements. However, the EVA-8 is also useful for civilians and ground troops, due to the forgiving nature of its firing pattern compared to other shotguns.}}
+
+The EVA-8 Auto is a pump-action/automatic shotgun from the Frontier War designed for extra-vehicular activity and to operate in zero gravity environments. Using 12 Gauge 00 Buckshot cartridges, this weapon was developed from the ground up by [[Wonyeon Interstellar]] to provide the [[IMC]] Orbital Guard Raiding Parties (aka Shipwreckers) with devastating CQB firepower. The EVA-8 has also been widely used by the Frontier Militia and Badlands Pirates, often acquiring the weapons by raiding remote supply convoys to the Outer Colonies. It is now used in the [[Apex Games]] where legends in need of massive firepower during the first contact can look no further than the EVA-8.<ref name="ConceptA">[https://www.artstation.com/artwork/26YEg Ryan Lastimosa on ArtStation]</ref>
+
+
+== Skins ==
+There are a total of 79 skins for the EVA-8 Auto: 18 {{Legendary}}, 12 {{Epic}}, 33 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+The Bone Collector EVA-8.png|{{Legendary|The Bone Collector}}<br/>{{CraftingMetals|1,200}}
+Noble Truth EVA-8.png|{{Legendary|Noble Truth}}<br/>{{CraftingMetals|1,200}}
+Guardian of Atlantis EVA-8.png|{{Legendary|Guardian of Atlantis}}<br/>{{CraftingMetals|1,200}}
+The Firebreather EVA-8.png|{{Legendary|The Firebreather}}<br/>{{CraftingMetals|1,200}}
+Blunderbuss EVA-8.png|{{Cosmetic|Gaiden|Legendary|Blunderbuss}}<br/>{{CraftingMetals|1,200}}
+Prime Time EVA-8.png|{{Cosmetic-NI|Recolor|Legendary|Prime Time}}<br/>Needs {{Legendary|Noble Truth}}
+Firestarter EVA-8.png|{{Cosmetic-NI|Recolor|Legendary|Firestarter}}<br/>Needs {{Legendary|Guardian of Atlantis}}
+Santa's Little Slayer EVA-8.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Santa's Little Slayer}}
+Master Key EVA-8.png|{{Cosmetic-NI|Recolor|Legendary|Master Key}}<br/>Needs {{Legendary|The Bone Collector}}
+Scaled Steel EVA-8.png|{{Cosmetic-NI|Recolor|Legendary|Scaled Steel}}<br/>Needs {{Legendary|The Firebreather}}
+Identity Theft EVA-8.png|{{Cosmetic|Aftermarket|Legendary|Identity Theft}}
+Royal Charge EVA-8.png|{{Cosmetic|Chaos Theory|Legendary|Royal Charge}}
+Kinetic Energy EVA-8.png|{{Cosmetic|Genesis|Legendary|Kinetic Energy}}
+Rolling Thunder EVA-8.png|{{Cosmetic|Season 12|Legendary|Rolling Thunder}}<br>Level 1
+Repeat Offender EVA-8.png|{{Cosmetic|Black Friday 2022|Legendary|Repeat Offender}}
+Soul Ripper EVA-8.png|{{Cosmetic|Spellbound|Legendary|Soul Ripper}}
+Heart of the Divine EVA-8.png|{{Cosmetic|S18|Legendary|Heart of the Divine}}<ref group="note" name="reactive">This skin is reactive.</ref><br/>Level 25
+Heart of Brimstone EVA-8.png|{{Cosmetic|S18|Legendary|Heart of Brimstone}}<ref group="note" name="reactive"/><br/>Level 110
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm EVA-8.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire EVA-8.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor EVA-8.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid EVA-8.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy EVA-8.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Take by Storm EVA-8.png|{{Cosmetic|Iron Crown|Epic|Take by Storm}}
+Moonlight Bash EVA-8.png|{{Cosmetic|Fight or Fright 2019|Epic|Moonlight Bash}}
+Copperhead EVA-8.png|{{Cosmetic|The Old Ways|Epic|Copperhead}}
+Sun Kissed EVA-8.png|{{Cosmetic|Season 11|Epic|Sun Kissed}}<br>{{ItemLink|Treasure Pack|text={{Mythic|Treasure Pack}}}} #45
+Skull and Crossfire EVA-8.png|{{Cosmetic|Raiders|Epic|Skull and Crossfire}}
+Fancy Fire EVA-8.png|{{Cosmetic|Warriors|Epic|Fancy Fire}}
+Blood Gripped EVA-8.png|{{Cosmetic|Death Dynasty|Epic|Blood Gripped}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Out for Blood EVA-8.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party EVA-8.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale EVA-8.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare EVA-8.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands EVA-8.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames EVA-8.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail EVA-8.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker EVA-8.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident EVA-8.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged EVA-8.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave EVA-8.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge EVA-8.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse EVA-8.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave EVA-8.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage EVA-8.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Patchwork EVA-8.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 34
+Jigsaw EVA-8.png|{{Cosmetic-NI|PlayStation+|Rare|Jigsaw}}<br/>May 2019
+Suture EVA-8.png|{{Cosmetic|Season 2|Rare|Suture}}<br/>Level 76
+Polar Bear EVA-8.png|{{Cosmetic|Season 3|Rare|Polar Bear}}<br/>Level 86
+Lime Plate EVA-8.png|{{Cosmetic|Season 4|Rare|Lime Plate}}<br/>Level 19
+Molten Ignition EVA-8.png|{{Cosmetic|Season 5|Rare|Molten Ignition}}<br/>Level 71
+Exposed Core EVA-8.png|{{Cosmetic|Season 6|Rare|Exposed Core}}<br/>Level 35
+Framework EVA-8.png|{{Cosmetic|Season 7|Rare|Framework}}<br/>Level 40
+Doppler Effect Eva-8.png|{{Cosmetic|Season 8|Rare|Doppler Effect}}<br/>Level 41
+Playing Koi EVA-8.png|{{Cosmetic|Arenas Flash Event 2|Rare|Playing Koi}}
+Petal to the Metal EVA-8.png|{{Cosmetic|Season 9|Rare|Petal to the Metal}}<br/>Level 41
+Cell Wall EVA-8.png|{{Cosmetic|Season 10|Rare|Cell Wall}}<br/>Level 38
+Face Pollution EVA-8.png|{{Cosmetic|Season 11|Rare|Face Pollution}}<br/>Level 73
+Shock and Awe EVA-8.png|{{Cosmetic-NI|PlayStation+|Rare|Shock and Awe}}<br/>November 2021
+Bush Whacker EVA-8.png|{{Cosmetic|Season 14|Rare|Bush Whacker}}<br/>Level 32
+Illumination EVA-8.png|{{Cosmetic|Season 15|Rare|Illumination}}<br/>Level 42
+DJ Nessie EVA-8.png|{{Cosmetic|Season 16|Rare|DJ Nessie}}<br/>Level 42
+Space Circuit EVA-8.png|{{Cosmetic|Season 17|Rare|Space Circuit}}<br/>Level 94
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue EVA-8.png|{{Common|Factory Issue}}<br/>Default
+Midnight EVA-8.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal EVA-8.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic EVA-8.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire EVA-8.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater EVA-8.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo EVA-8.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm EVA-8.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest EVA-8.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen EVA-8.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid EVA-8.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal EVA-8.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket EVA-8.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon EVA-8.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover EVA-8.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic EVA-8.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Removed {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}.
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Increased fire rate from 2.3 to 2.4.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Common|Shotgun Bolt}}}} fire rate from +10% to +8.33%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Rare|Shotgun Bolt}}}} fire rate from +20% to +15%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Epic|Shotgun Bolt}}}} fire rate from +30% to +24.6%.
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Added {{ItemLink|Standard Stock|text=Standard Stocks}} compatibility.
+* Increased fire rate from 2 to 2.3.
+* Reduced pellets fired from 9 to 8.
+* Increased damage per pellet from 6 to 7.
+* Added {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}. Compatible with [[G7 Scout]] and EVA-8 Auto.
+* Increased {{ItemLink|Shotgun Bolt|text={{Rare|Shotgun Bolt}}}} fire rate from +15% to +20%.
+* Increased {{ItemLink|Shotgun Bolt|text={{Epic|Shotgun Bolt}}}} fire rate from +20% to +30%.
+* ('''Undocumented''') {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}:
+** Increased fire rate from 6 to 7.
+** Increased burst delay from 0.7 to 0.8.
+** Reduced {{ItemLink|Shotgun Bolt|text={{Common|Shotgun Bolt}}}} burst delay from 0.925 to 0.91.
+** Reduced {{ItemLink|Shotgun Bolt|text={{Rare|Shotgun Bolt}}}} burst delay from 0.875 to 0.83.
+** Reduced {{ItemLink|Shotgun Bolt|text={{Epic|Shotgun Bolt}}}} burst delay from 0.825 to 0.77.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 13}}.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|350}} to {{Materials|150}}.
+
+; [[November 05, 2021 Patch]]
+* Reduced damage per pellet from 7 to 6.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Reduced fire rate from 2.1 to 2.
+
+; {{ItemLink|Evolution|noText=yes}} [[September 14, 2021 Patch]]
+* Reduced headshot multiplier from 1.5× to 1.25×.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Reduced {{ItemLink|Shotgun Bolt|text={{Common|Shotgun Bolt}}}} fire rate bonus from +15% to +10%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Rare|Shotgun Bolt}}}} fire rate bonus from +25% to +15%.
+* Reduced {{ItemLink|Shotgun Bolt|text={{Epic|Shotgun Bolt}}}} fire rate bonus from +35% to +20%.
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|300}} to {{Materials|350}}.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|250}} to {{Materials|300}}.
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Increased fire rate from 2 to 2.1.
+* Removed {{ItemLink|Double Tap Trigger|text={{Legendary|Double Tap Trigger}}}}.
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 5}}.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Reduced {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}} burst delay from 0.85 to 0.8.
+
+; [[December 05, 2019 Patch]]
+* Decreased projectile width. 
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Introduced {{ItemLink|Double Tap Trigger|text={{Epic|Double Tap Trigger}}}}. Compatible with the EVA-8 Auto and [[G7 Scout]].
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 3}}.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Now ADS recoil resettles back to starting point instead of a randomized offset of the starting point.
+}}
+
+
+== Trivia ==
+* The EVA-8 was originally a pump-action shotgun with the drum mag being the upgrade.<ref name="ConceptA"/>
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt_Ryan_Lastimosa_EVA-8_Auto.jpg|EVA-8 Auto Concept Art from Titanfall 2 by Ryan Lastimosa.
+Eva-8_auto_hip_fired.png|EVA-8 Auto bullet spread when hip fired
+Eva-8_auto_ads.png|EVA-8 Auto bullet spread when aimed down sights
+Identity Theft EVA-8 Auto Concept Art.jpg|Concept art for the {{Legendary|Identity Theft}} skin by GadgetBot Productions.<ref>[https://www.artstation.com/artwork/Omy9Eb GadgetBot Productions on ArtStation]</ref>
+</gallery>
+
+
+== See also ==
+* [[EVA-8 Auto (Mobile)]]
+* [https://titanfall.fandom.com/wiki/EVA-8_Shotgun EVA-8 Shotgun (''Titanfall'')]
+* [https://titanfall.fandom.com/wiki/EVA-8_Shotgun#Titanfall_2 EVA-8 Auto (''Titanfall 2'')]
+
+
+== References ==
+<references />
+
+{{Nav-Weapons}}

@@ -1,0 +1,170 @@
+{{Infobox-Weapon
+| name = Hemlok Breach AR
+| description = Full Auto assault rifle.
+| type = Assault Rifle
+| fireModes = [[File:Auto Icon.svg|25px|Auto|link=]] Full-auto<br>[[File:Breach Charge Icon.svg|25px|Auto|link=]]Breach Charge
+| ammoType = Heavy Rounds
+| creator = {{ItemLink|Wonyeon}}
+| barrel = silencerbreach
+| magType = heavy
+| optics = true
+| stock = standard
+| hopup = elite
+| damageBody = 22
+| damageHead = 31
+| damageLegs = 17
+| rateOfFire = 462
+| dps = 169.4
+| magazineSize = {{Level0123|18|21|24|27}}
+| tacReload = {{Level0123|2.3|2.22|2.14|2.07}}
+| fullReload = {{Level0123|2.55|2.46|2.37|2.29}}
+}}
+
+The '''{{PAGENAME}}''', also called '''Hemlok''', is an [[assault rifle]] that utilizes {{ItemLink|Heavy Rounds}}.
+
+Originally the [[Hemlok Burst AR]], the Hemlok Breach AR is a modified version from Ballistic's private elite arsenal. The main firing mode is <span class="invert">[[File:Auto Icon.svg|25px|Auto|link=]]</span> Full-auto, as opposed to the 3-round burst of the default variant. It features a built-in silencer, making it the only weapon to utilise one. The fire selector activates<span class="invert">[[File:Breach Charge Icon.svg|25px|Auto|link=]]</span> Breach Charge, a single-fire grenade launcher with 15 seconds cooldown. It deals 38 damage with a radial falloff and has a significant damage multiplier against [[Hardlight mesh]], structures (i.e. placeable objects like {{AbilityLink|Amped Cover}} or {{AbilityLink|Castle Wall}}), and [[Knockdown Shield]]s.
+
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+
+; Others
+* {{ItemLink|Silencer & Breach Launcher}}
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}}) 
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Elite Weapon}}
+
+=== Damage Profile ===
+; Per round
+{{Damage profile
+| damage = 22
+| headshotMdfr = 1.4
+| legMdfr = 0.75
+}}
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="4" | <big>mp_weapon_auto_hemlok</big>
+|-
+! Variable !! <span class="invert">[[File:Auto Icon.svg|25px|Auto|link=]]</span> Full-auto !! <span class="invert">[[File:Breach Charge Icon.svg|25px|Auto|link=]]</span> Breach Charge !! Description
+|-
+| fire_rate
+| style="text-align:center" | 7.7
+| style="text-align:center" | 0.06
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 27500
+| style="text-align:center" | 2100
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 698 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| style="text-align:center" | -
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" colspan="2" | 3
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" colspan="2" | 3.5
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" colspan="2" | 4.5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" colspan="2" | 2.75
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" colspan="2" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.25
+| style="text-align:center" | -
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" colspan="2" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" colspan="2" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" colspan="2" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" colspan="2" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" colspan="2" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" colspan="2" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" colspan="2" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" colspan="2" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" colspan="2" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" colspan="2" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+
+== Weapon Mastery ==
+{{#section-h:Hemlok Burst AR|Weapon Mastery}} 
+<!--
+== Lore ==
+-->
+
+== Skins ==
+{{#section-h:Hemlok Burst AR|Skins}}
+
+== Trivia ==
+* The shimmering weapon icon for reaching weapon mastery level 100 with the Hemlok is missing the silencer
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 28|noText=yes}} (Split 2) [[March 24, 2026 Patch]]
+* Added to floor loot
+* Also found on Heavy Arsenals
+}}
+<!--
+== Trivia ==
+-->
+
+== See also ==
+* [[Hemlok Burst AR|Hemlok Burst AR]]
+* [[Hemlok Burst AR (Mobile)|Hemlok Burst AR (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/Hemlok_BF-R Hemlok BF-R (''Titanfall'' and ''Titanfall 2'')]
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

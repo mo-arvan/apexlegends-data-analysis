@@ -1,0 +1,222 @@
+<div class="infobox weapon {{#replace:{{lc:{{{ammoType|}}}}}| |-}}">
+{| class="infobox-table"
+|- 
+! class="infobox-header" colspan="3" | A-13 Sentry
+|}
+<tabber>
+Model=
+{| class="infobox-table"
+|- 
+| colspan="3" class="infobox-centered" | [[File:A-13 Sentry.png|314x300px]]
+|}
+|-|
+Icon=
+{| class="infobox-table"
+|- 
+| colspan="3" class="infobox-centered" | [[File:A-13 Sentry Icon.svg|314x300px]]
+|}
+</tabber>
+{| class="infobox-table"
+|- 
+| colspan="3" class="infobox-centered" | {{#if: {{{description|}}}|''{{{description|}}}''|}}
+|- 
+| colspan="3" class="infobox-section" | Profile
+|- class="infobox-row"
+! class="infobox-row-name" | '''Manufacturer''' 
+| colspan="3" class="infobox-row-value; invert-image" | [[File:Paradinha Arsenal Icon.svg|22px]] [[Paradinha Arsenal]]
+|- 
+| colspan="3" class="infobox-section" | Damage & Tactical
+|- class="infobox-row"
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''BODY'''
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''HEAD''' 
+! style="background:var(--weapon-highlight-color); color:#fff; border-radius:5px; padding:0 0.5em; text-align: center;" | '''LEGS'''
+|- class="infobox-row-value{{#ifeq: {{{name|{{PAGENAME}}}}}|Sentinel||<nowiki>;</nowiki> invert-image}}" style="text-align:center;"
+| 50<br>{{Symbol|marked}}100
+| 75 <small>(1.5×)</small><br>{{Symbol|marked}}150 <small>(1.5×)</small>
+| 50<br>{{Symbol|marked}}100
+|- class="infobox-row"
+! class="infobox-row-name" | '''RPM''' 
+| colspan="3" class="infobox-row-value; invert-image" | 41
+|- class="infobox-row"
+! class="infobox-row-name" | '''DPS''' 
+| colspan="3" class="infobox-row-value{{#switch: {{{name|{{PAGENAME}}}}}|Rampage LMG=|Sentinel=|#default=<nowiki>;</nowiki> invert-image}}" | <!-- {{#iferror: {{#expr: ((1200/60) * 14 round 0)}}|{{{dps|-}}}}} --> 34<br>{{Symbol|marked}}68
+|- class="infobox-row"
+! class="infobox-row-name" | '''Magazine''' 
+| colspan="3" class="infobox-row-value; invert-image" | 5
+|- class="infobox-row"
+! class="infobox-row-name" | '''Tac reload time''' 
+| colspan="3" class="infobox-row-value; invert-image" | 40 seconds
+|- class="infobox-row"
+! class="infobox-row-name" | '''Full reload time''' 
+| colspan="3" class="infobox-row-value; invert-image" | 3 minutes, 20 seconds
+|}
+</div>
+
+This page lists advanced weapon information for [[Vantage]]'s {{AbilityLink|Sniper's Mark}}.
+
+== Stats ==
+=== Damage profile ===
+{| class="wikitable invert-image" style="text-align:center"
+|-
+! rowspan="2" | Target
+! rowspan="2" | Modifiers
+! rowspan="2" | [[File:Damage.svg|32px|link=]] Damage
+! colspan="6" | Shots to kill
+|-
+! 100 HP
+! {{Common|150 HP}}
+! {{Rare|175 HP}}
+! {{Epic|200 HP}}
+! {{Mythic|225 HP}}
+|-
+| rowspan="4" | Head<br><small>(1.5×)</small> || - || 75 || 2 || 2 || 3 || 3 || 3
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Common|LV. 1}}}} || 70 || 2 || 3 || 3 || 3 || 4
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Rare|LV. 2}}}} || 63 || 2 || 3 || 3 || 4 || 4
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Epic|LV. 3}}}}/[[Helmet|{{Legendary|4}}]] || 59 || 2 || 3 || 4 || 4 || 4
+|-
+| rowspan="2" | Body || - || 50 || 2 || 3 || 4 || 4 || 5
+|- 
+| {{ItemLink|Fortified}} || 43 || 3 || 4 || 5 || 5 || 6
+|-
+| rowspan="2" | Leg<br><small>(1×)</small> || - || 50 || 2 || 3 || 4 || 4 || 5
+|-
+| {{ItemLink|Fortified}} || 43 || 3 || 4 || 5 || 5 || 6
+|}
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed" style="text-align:center"
+|-
+! colspan="8" | Ability Modifiers
+|-
+! rowspan="2" | Target
+! rowspan="2" | Modifiers
+! rowspan="2" | [[File:Damage.svg|32px|link=]] Damage
+! colspan="6" | Shots to kill
+|-
+! 100 HP
+! {{Common|150 HP}}
+! {{Rare|175 HP}}
+! {{Epic|200 HP}}
+! {{Mythic|225 HP}}
+|-
+! colspan="8" | {{AbilityLink|Sniper's Mark}} <small>(2×)</small>
+|-
+| rowspan="4" | Head<br><small>(1.5×)</small> || - || 150 || 1 || 1 || 2 || 2 || 2
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Common|LV. 1}}}} || 140 || 1 || 2 || 2 || 2 || 2
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Rare|LV. 2}}}} || 125 || 1 || 2 || 2 || 2 || 2
+|-
+| style="text-align:left" | {{ItemLink|Helmet|text={{Epic|LV. 3}}}}/[[Helmet|{{Legendary|4}}]] || 118 || 1 || 2 || 2 || 2 || 2
+|-
+| rowspan="2" | Body || - || 100 || 1 || 2 || 2 || 2 || 3
+|- 
+| {{ItemLink|Fortified}} || 85 || 2 || 2 || 2 || 3 || 3
+|-
+| rowspan="2" | Leg<br><small>(1×)</small> || - || 100 || 1 || 2 || 2 || 2 || 3
+|-
+| {{ItemLink|Fortified}} || 85 || 2 || 2 || 2 || 3 || 3
+|}
+
+
+=== Advanced Stats ===
+{| class="wikitable"
+|-
+! Variable !! Value !! Notes
+|-
+| id
+| style="text-align:center" | ability_sniper_ult
+| Name of the weapon in the game files.
+|-
+| fire_rate
+| style="text-align:center" | 3
+| Rounds fired in one second.
+|-
+| rechamber_time
+| style="text-align:center" | 1.2
+| Time delay between two shots. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 34000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 863 meter per second.
+|-
+| headshot_distance
+| style="text-align:center" | 29528
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 750 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 15
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 18
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 20
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 15
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 20
+| Hipfire spread radius while in the air.
+|-
+| deploy_time
+| style="text-align:center" | 1.5
+| How long it takes to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.5
+| How long it takes to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 1.5
+| How long it takes to enter ADS with the weapon. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.5
+| How long it takes to exit ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.6
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.5
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.35<!-- Same as snipers, albeit not present in mp_ability_sniper_ult.txt. -->
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+|  Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+|  Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+== Lore ==
+The '''A-13 Sentry''' is a prototype sniper rifle made by [[Paradinha Arsenal]] and was the basis for the development of the [[Sentinel|Sentinel ESR]].
+
+== History ==
+{{Main|Vantage#History}}
+{{Patch notes|
+; {{Symbol|s15}} [[November 01, 2022 Patch]]
+*  Fixed a bug where Sniper's Mark damage multiplier would continue even after a player is downed.
+
+; {{Symbol|s14}} [[August 09, 2022 Patch]]
+*  Introduced.
+}}
+
+{{Nav-Weapons}}

@@ -1,0 +1,39 @@
+{
+  "title": "G7 Scout",
+  "infobox": {
+    "name": "G7 Scout",
+    "description": "Semi-auto light marksman rifle.",
+    "type": "Marksman Weapon",
+    "fireModes": "Single",
+    "ammoType": "Light Rounds",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "",
+    "damageBody": "36",
+    "damageHead": "58",
+    "damageLegs": "27",
+    "rateOfFire": "246",
+    "dps": "148",
+    "magazineSize": [
+      "10",
+      "15",
+      "18",
+      "20"
+    ],
+    "tacReload": [
+      "2.4",
+      "2.32",
+      "2.24",
+      "2.16"
+    ],
+    "fullReload": [
+      "3",
+      "2.9",
+      "2.8",
+      "2.7"
+    ]
+  }
+}

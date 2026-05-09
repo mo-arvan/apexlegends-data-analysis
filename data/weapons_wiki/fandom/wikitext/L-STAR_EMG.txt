@@ -1,0 +1,434 @@
+
+{{MainGameNotice|mobilePage=L-STAR EMG (Mobile)}}
+{{Infobox weapon
+| name = L-STAR EMG
+| description = Plasma-fueled heavy MG.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|25px|link=]] Auto
+| ammoType = Energy Ammo
+| creator = [[File:Wonyeon.svg|25px|link=]] [[Wonyeon]]
+| magType = energy
+| optics = true
+| stock = standard
+| damageBody = 19
+| damageHead = 28.5 <small>(1.5×)</small>
+| damageLegs = 16.15 <small>(0.85×)</small>
+| rateOfFire = 600
+| dps = 190
+| magazineSize = ∞
+| reload = 2.45 / {{Common|2.37}} / {{Rare|2.29}} / {{Epic|2.21}}
+|hopup=gun_shield_generator}}
+
+The '''L-STAR EMG''', or '''L-STAR''', is a fully-automatic [[energy machine gun]] introduced in {{ItemLink|Season 2}} that utilizes {{ItemLink|Energy Ammo}}. It fires red plasma orb-like projectiles and forcefully opens doors when it comes in contact.
+
+The L-STAR has a unique overheating mechanic, which triggers after {{Level0123|24|26|28|30}} continuous shots; it only needs to reload if it overheats.
+
+Being an LMG, the L-STAR is affected by [[Rampart]]'s {{AbilityLink|Modded Loader}} Passive ability.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 17
+| headshotMdfr = 1.5
+| legMdfr = 0.85
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_lstar</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 10
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 24000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 610 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 2250
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 57 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 4
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 2.25
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.45
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.75
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.65
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.6
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.34
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.3
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.4
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Up Close And Personal''
+| style="text-align:left" | Down an enemy with hipfire within 10 meters range without overheating.
+| 20 times
+|-
+| 40
+| ''I Know Your Pain''
+| style="text-align:left" | Down an enemy while both of you using the LSTAR.
+| 20 times
+|-
+| 60
+| ''Disciplined''
+| style="text-align:left" | Down an enemy, break their knockdown shield, and kill them without overheating.
+| 15 times
+|-
+| 80
+| ''U Mag Bro?''
+| style="text-align:left" | Down an enemy while they are reloading.
+| 10 times
+|-
+| 100
+| ''Super Star''
+| style="text-align:left" | Kill at least 3 enemies and never overheat in one match.
+| 5 times
+|}
+
+
+== Lore ==
+{{Quote|The L-STAR is most accurately described as an automatic superheated plasma thrower. It fires large, combustible plasma projectiles, propelled from an internal superheating chamber. A special lens focuses the projectile, and uninterrupted fire can cause this lens to overheat and shatter. "Feathering" the trigger is ideal, as it keeps the lens at a stable temperature while allowing continuous, personnel-suppressing bombardments.}}
+
+The L-STAR EMG (Lastimosa Armory Energy Machine Gun) is a cyclic particle accelerating weaponry designed by its namesake [[Lastimosa Armory]]. With a small oscillating field generator, the L-STAR can deliver a series of charged plasma bursts with a high rate of fire. The charged particles can eat away shields and melt dense materials with sustained exposure.
+
+Due to the high temperatures generated by the particle accelerator, sustained firing of the weapon makes it susceptible to overheating, melting the generator core.
+
+The model used in the [[Apex Games]] is made by [[Wonyeon Interstellar]]. A few changes were made to the silhouette of this weapon to better serve the purpose of an LMG. A front bipod was attached along with slimming down the foregrip handguard to allow for firing the weapon in a rested position.<ref name="ArtStation">[https://www.artstation.com/artwork/mqwxN1 Ryan Lastimosa on ArtStation]</ref>
+
+
+== Skins ==
+There are a total of 72 weapon skins for the L-STAR EMG: 15 {{Legendary}}, 10 {{Epic}}, 31 {{Rare}} and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="300" mode="nolines">
+The Warrior's Way L-STAR.png|{{Legendary|The Warrior's Way}}<br/>{{CraftingMetals|1,200}}
+Poetic Justice L-STAR.png|{{Legendary|Poetic Justice}}<br/>{{CraftingMetals|1,200}}
+Apex Hyperdrive L-STAR.png|{{Legendary|Apex Hyperdrive}}<br/>{{CraftingMetals|1,200}}
+Alien Invasion L-STAR.png|{{Legendary|Alien Invasion}}<br/>{{CraftingMetals|1,200}}
+Blue Giant L-STAR.png|{{Cosmetic-NI|Recolor|Legendary|Blue Giant}}<br/>Needs {{Legendary|Apex Hyperdrive}}
+The Aristocrat L-STAR.png|{{Cosmetic-NI|Recolor|Legendary|The Aristocrat}}<br/>Needs {{Legendary|The Warrior's Way}}
+Blue Carbon L-STAR.png|{{Cosmetic-NI|Recolor|Legendary|Blue Carbon}}<br/>Needs {{Legendary|Alien Invasion}}
+Bundled Up L-STAR.png|{{Cosmetic|Holo-Day Bash 2019|Legendary|Bundled Up}}
+Oxidized Envy L-STAR.png|{{Cosmetic-NI|Recolor|Legendary|Oxidized Envy}}<br/>Needs {{Legendary|Poetic Justice}}
+Fragger L-STAR.png|{{Cosmetic-NI|Recolor|Legendary|Fragger}}<br/>Needs {{Legendary|Apex Hyperdrive}}
+Road Rash L-STAR.png|{{Cosmetic|Aftermarket|Legendary|Road Rash}}
+Natural Fusion L-STAR.png|{{Cosmetic|Holo-Day Bash 2020|Legendary|Natural Fusion}}
+Beyond the Wheel L-STAR.png|{{Cosmetic|Warriors|Legendary|Beyond the Wheel}}
+Death Toll L-STAR.png|{{Cosmetic|Neon Network|Legendary|Death Toll}}
+Vortex Core L-STAR.png|{{Cosmetic|s18|Legendary|Vortex Core}}<br>Level 1
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="290" heights="300" mode="nolines">
+Eye of the Storm L-STAR.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire L-STAR.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor L-STAR.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid L-STAR.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy L-STAR.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Core Sponsor L-STAR.png|{{Cosmetic|Awakening|Epic|Core Sponsor}}
+The Dazzler L-STAR.png|{{Cosmetic|Season 16|Epic|The Dazzler}}
+Galactic Nebulizer L-STAR.png|{{Cosmetic|Threat Level|Epic|Galactic Nebulizer}}
+Scarab's Wing L-STAR.png|{{Cosmetic|Harbingers|Epic|Scarab's Winger}}
+Nouveau Style L-STAR.png|{{Cosmetic|Uprising|Epic|Nouveau Style}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="300" mode="nolines">
+Chaos Theory L-STAR.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst L-STAR.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion L-STAR.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez L-STAR.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X L-STAR.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester L-STAR.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy L-STAR.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon L-STAR.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback L-STAR.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered L-STAR.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise L-STAR.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar L-STAR.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 L-STAR.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch L-STAR.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake L-STAR.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Stellar Stallion L-STAR.png|{{Cosmetic-NI|Prime Gaming|Rare|Stellar Stallion}}<br/>July 2019
+Obliteration L-STAR.png|{{Cosmetic|Season 2|Rare|Obliteration}}<br/>Level 43
+Campfire L-STAR.png|{{Cosmetic|Season 3|Rare|Campfire}}<br/>Level 55
+Caution Tape L-STAR.png|{{Cosmetic|Season 4|Rare|Caution Tape}}<br/>Level 55
+Royal Weave L-STAR.png|{{Cosmetic|Season 5|Rare|Royal Weave}}<br/>Level 52
+Notched L-STAR.png|{{Cosmetic|Season 6|Rare|Notched}}<br/>Level 19
+Scorched L-STAR.png|{{Cosmetic|Season 7|Rare|Scorched}}<br/>Level 86
+Heat Exchange L-STAR.png|{{Cosmetic|Season 8|Rare|Heat Exchange}}<br/>Level 41
+Branch Strategy L-STAR.png|{{Cosmetic|Season 9|Rare|Branch Strategy}}<br/>Level 71
+Power Plating L-STAR.png|{{Cosmetic|Season 10|Rare|Power Plating}}<br/>Level 85
+Buzz Cutter L-STAR.png|{{Cosmetic|Season 12|Rare|Buzz Cutter}}<br/>Level 27
+Fuchsia Flushed L-STAR.png|{{Cosmetic-NI|Prime Gaming|Rare|Fuchsia Flushed}}<br/>March 2022
+Highborn L-STAR.png|{{Cosmetic|Season 13|Rare|Highborn}}<br/>Level 64
+Star Burster L-STAR.png|{{Cosmetic|Season 15|Rare|Star Burster}}<br/>Level 30
+Party Cannon L-STAR.png|{{Cosmetic-NI|PlayStation+|Rare|Party Cannon}}<br/>Season 15
+Sonic Frequency L-STAR.png|{{Cosmetic|Season 16|Rare|Sonic Frequency}}<br/>Level 54
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="300" mode="nolines">
+Factory Issue L-STAR.png|{{Common|Factory Issue}}<br/>Default
+Midnight L-STAR.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal L-STAR.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic L-STAR.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire L-STAR.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater L-STAR.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo L-STAR.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm L-STAR.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest L-STAR.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen L-STAR.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid L-STAR.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal L-STAR.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket L-STAR.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon L-STAR.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover L-STAR.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic L-STAR.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+*Returned to ground loot
+*Removed {{ItemLink|Disruptor Rounds|text={{Legendary|Disruptor Rounds}}}}
+*Projectile size reduced
+*Improved recoil pattern
+*Reduced randomness in the early part of the recoil pattern
+*Damage increased to 17 (was 16)
+*Barrel attachment improved to match other weapons
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 324 {{ItemLink|Mythic Energy Ammo|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+* Reduced damage from 17 to 16.
+* Added projectile passthrough, retaining 60% of their damage.
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Increased projectile growth.
+* Improved recoil pattern.
+* Reduced VFX brightness when hitting unarmored targets.
+* ('''Undocumented''') Increased the number of shots before overheating from {{Level0123|24|26|28|30}} to 36.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Reduced recoil at the beginning of the pattern.
+* Updated holster animations to match effective holster durations.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Increased number of projectiles that can be fired continuously before overheating from {{Level0123|20|22|24|26}} to {{Level0123|24|26|28|30}}.
+* Increased projectile speed from 22000 to 24000.
+* Removed bright red flash when hitting non-armored targets.
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Reduced headshot multiplier from 1.75× to 1.5×.
+* Increased reload time from 2.53 to 3.63.
+* Reduced distance upon which headshots can no longer be scored from 64m to 57m.
+* Increased draw time from 0.7 to 0.8.
+* Increased holster time from 0.65 to 0.75.
+* Increased raise time from 0.55 to 0.65.
+* Increased lower time from 0.5 to 0.6.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced {{Rare|Level 2}} upgrade cost from {{Materials|250}} to {{Materials|200}}.
+** Reduced {{Epic|Level 3}} upgrade cost from {{Materials|350}} to {{Materials|300}}.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Reduced effectiveness for all {{ItemLink|Barrel Stabilizer|text=Barrel Stabilizers}}.
+* Reduced projectile collision size significantly.
+* Reduced damage from 18 to 17.
+
+; {{ItemLink|Evolution|noText=yes}} [[September 14, 2021 Patch]]
+* Increased cooloff time slightly.
+* Increased cooler replacement time slightly.
+* Reduced number of projectiles that can be fired continuously before overheating:
+** Base from 22 to 20
+** {{ItemLink|Extended Energy Mag|text={{Common|Level 1}}}} from 24 to 22
+** {{ItemLink|Extended Energy Mag|text={{Rare|Level 2}}}} from 26 to 24
+** {{ItemLink|Extended Energy Mag|text={{Epic|Level 3}} / {{Legendary|Level 4}}}} from 28 to 26.
+* {{ItemLink|Arenas}} price adjustments:
+** Base: {{Materials|500}} to {{Materials|600}}.
+** {{Rare|Level 2}} upgrade: {{Materials|300}} to {{Materials|250}}.
+** {{Epic|Level 3}} upgrade: {{Materials|400}} to {{Materials|350}}.
+
+; [[August 10, 2021 Patch]]
+* Reduced movement speed while aiming down sights.
+* {{ItemLink|Arenas}}:
+** Increased {{Common|Level 1}} upgrade cost from {{Materials|100}} to {{Materials|200}}, {{Rare|Level 2}} from {{Materials|200}} to {{Materials|300}}, and {{Epic|Level 3}} from {{Materials|300}} to {{Materials|400}}.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Added {{ItemLink|Barrel Stabilizer}} and {{ItemLink|Extended Energy Mag}} compatibility.
+* Reduced headshot multiplier from 2× to 1.75×.
+* Increased legshot multiplier from 0.75× to 0.85×.
+* Reduced projectiles VFX.
+* Increased hipfire spread.
+* Reduced first-person on-hit impact effect intensity.
+* {{ItemLink|Arenas}}:
+** Increased {{Common|Level 1}} upgrade cost from {{Materials|100}} to {{Materials|150}}, {{Rare|Level 2}} from {{Materials|200}} to {{Materials|250}}, and {{Epic|Level 3}} from {{Materials|300}} to {{Materials|350}}.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* Updated reload animations for [[Rampart]].
+* {{ItemLink|Arenas}}:
+** Increased purchase cost from {{Materials|400}} to {{Materials|500}}.
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* ('''Undocumented''') The L-STAR no longer reproduces its "equipped for the first time" animation whenever an attachment is equipped.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Introduced a new recoil pattern that kicks horizontally at first and then settles into a relatively consistent upward recoil.
+* Reduced cooldown before firing again after letting go of the trigger from 0.4 seconds to 0.15.
+* Reduced cooling time when not overheated: 1.15 seconds from 99.9% to 0% charge if not overheated (blue/yellow heat); still 2.45 seconds if overheated (red heat).
+* ('''Undocumented''') Reduced the number of shots before overheating from 23 to 22.
+
+; {{ItemLink|Aftermarket|noText=yes}} [[October 06, 2020 Patch]]
+* Fixed an issue with overheating occurring when firing a single shot from the weapon multiple times.
+
+; {{ItemLink|The Old Ways|noText=yes}} [[April 07, 2020 Patch]]
+* Reduced time to reset viewkick pattern.
+* Increased the number of shots before overheating from 22 to 23.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Added red dot to iron sights. The dot will stay properly centered during weapon sway and bob movements.
+* Reduced the intensity of muzzle flash while aiming down sights.
+* ('''Undocumented''') Increased bullet travel speed.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Removed from the [[Care Package|{{Legendary|Care Package}}]].
+* Removed magazine. Forced reload after 23 continuous shots.
+* Reduced damage from 19 to 18.
+* Reduced fire rate from 12 to 10.
+* Reduced horizontal viewkick when firing.
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Reduced damage from 21 to 19.
+* Reduced horizontal recoil significantly.
+* Comes pre-equipped with a {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} optic.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]] 
+* Introduced.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+ConceptArt Ryan Lastimosa L-STAR EMG.jpg|Concept Art for the L-STAR EMG by Ryan Lastimosa.<ref name="ArtStation"/>
+Natural Fusion L-STAR Concept Art.jpg|Concept art for the {{Legendary|Natural Fusion}} skin.<ref>https://www.artstation.com/artwork/Pea3nr</ref>
+Beyond the Wheel L-STAR Concept Art.jpg|Concept art for the {{Legendary|Beyond the Wheel}} skin.<ref>[https://www.artstation.com/artwork/mzNzDa Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+
+
+== Trivia ==
+* Concept art of the L-STAR in ''Titanfall 2'' shows that the weapon was supposed to be a submachine gun called ASW (Advanced Scattering Weapon).
+* The L-STAR appeared way before its actual release in {{ItemLink|Season 2}}, in the first ever background before logging into the lobby during the {{ItemLink|Preseason}}.
+* When it was first released in Season 2, in addition to the overheat mechanics, it had a set magazine size instead of just drawing ammo from the inventory, and thus required manual reload.
+** The magazine from the L-STAR's reloadable iteration is used as the model for {{ItemLink|Extended Energy Mag|text=Extended Energy Mags}}.
+** When first shown in its trailer, the L-STAR was supposed to have a 60 round magazine, and it would have fired 30 shots before overheating. However, most likely due to game balance, the final release version had a magazine capacity of 40, and the gun overheated after firing 21-22 shots.
+** The model of the L-STAR used in ''[[Apex Legends]]'' was made by Wonyeon Interstellar, instead of Lastimosa Armory like in ''Titanfall 2''. This might explain the initial difference in behavior between the ''[[titanfall:L-STAR|Titanfall 2]]'' and ''Apex Legends''' version of the L-STAR. With the rework of the weapon that came with {{ItemLink|Season 4}}, they now function the same.
+* The L-STAR's icon lacks iron sights.
+* An {{ItemLink|Extended Energy Mag|text={{Legendary|Extended Energy Mag}}}} won't autoreload the L-STAR if its cooler has overheated and requires to be changed.
+
+
+== Bugs ==
+* In third person, half of the L-STAR model blends through a Legend's right shoulder when looking up.
+* In the Firing Range, if infinite ammo is enabled it shows that the L-STAR ammo counter is at 324, despite having unlimited ammo.
+
+== See also ==
+* [https://titanfall.fandom.com/wiki/L-STAR L-STAR (''Titanfall 2'')]
+
+
+== References==
+<references/>
+
+{{Nav-Weapons}}

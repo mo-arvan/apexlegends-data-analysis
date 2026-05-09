@@ -1,0 +1,369 @@
+{{MainGameNotice|mobilePage=RE-45 Auto (Mobile)}}
+{{Infobox-Weapon
+| name = RE-45 Auto
+| description = Full-auto pistol.
+| type = Pistol
+| fireModes = [[File:Auto Icon.svg|25px|link=]] Auto
+| ammoType = Light Rounds
+| creator = {{ItemLink|Paradinha Arsenal|image=Paradinha Arsenal Icon.svg}}
+| barrel = laser
+| magType = light
+| optics = true
+| hopup = hammerpoint
+| damageBody = 12<br>{{Symbol|Hammerpoint Rounds}} 16
+| damageHead = 18 <small>(1.5×)</small><br>{{Symbol|Hammerpoint Rounds}} 24 <small>(1.5×)</small>
+| damageLegs = 11 <small>(0.9×)</small><br>{{Symbol|Hammerpoint Rounds}} 14 <small>(0.9×)</small>
+| rateOfFire = 780
+| dps = 156<br>{{Symbol|Hammerpoint Rounds}} 208
+| magazineSize = {{Level0123|16|19|22|25}}
+| tacReload = 1.5
+| fullReload = 1.95
+}}
+
+The '''RE-45 Auto''', or '''RE-45''', is a fully-automatic [[pistol]] that utilizes {{ItemLink|Light Rounds}}.
+
+It can be enhanced with the {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}} Hop-Up, which increases damage done to unshielded targets by 35%.
+
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+; Other
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Hammerpoint Rounds|text={{Legendary|Hammerpoint Rounds}}}}
+
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 12
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_autopistol</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 13
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 19500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 495 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3.6
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.315
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.27
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.27
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.225
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.18
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.16
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 1
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|}
+
+
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:75%"
+|-
+! colspan="4" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Level !! Trial Name !! colspan="2" | Requirements
+|-
+| 20
+| ''Quickdraw''
+| style="text-align:left" | Down an enemy within 5 seconds after switching to the RE-45.
+| 20 times
+|-
+| 40
+| ''coup de grace''
+| style="text-align:left" | Finish off downed enemy with the RE-45.
+| 20 times
+|-
+| 60
+| ''Packed''
+| style="text-align:left" | Down an enemy using hipfire equiped with a minimum [{{Epic|Lv3 Extended Light Mag}}] attachment.
+| 15 times
+|-
+| 80
+| ''Rock and Roll''
+| style="text-align:left" | Down an enemy with hipfire while silding.
+| 15 times
+|-
+| 100
+| ''Trigger Happy''
+| style="text-align:left" | Down an enemy after reloading the RE-45 within 5 seconds.
+| 10 times
+|}
+
+
+== Lore ==
+{{Quote|The original AP15 Auto Pistol was manufactured by Lastimosa Armory and was favored by Pilots for its reliability, accuracy and high rate of fire. It was so renowned for its effectiveness that when the RE-45 Auto pistol (which is virtually identical to the AP15, excluding muzzle construction) was first released by Paradinha Arsenal, many believed it was a new model from Lastimosa. The RE-45 has now permeated the Outlands as demand increased for the famous "Pilot" weapon.}}
+
+
+== Skins ==
+There are a total of 77 skins for the RE-45 Auto: 14 {{Legendary}}, 11 {{Epic}}, 36 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="200" heights="300" mode="nolines">
+The Pride RE-45.png|{{Legendary|The Pride}}<br/>{{CraftingMetals|1,200}}
+The Predator RE-45.png|{{Legendary|The Predator}}<br/>{{CraftingMetals|1,200}}
+Freezing Point RE-45.png|{{Legendary|Freezing Point}}<br/>{{CraftingMetals|1,200}}
+The Regulator RE-45.png|{{Legendary|The Regulator}}<br/>{{CraftingMetals|1,200}}
+Modern Advances RE-45.png|{{Cosmetic|Grand Soirée|Legendary|Modern Advances}}<br/>{{CraftingMetals|1,200}}
+Payback RE-45.png|{{Cosmetic-NI|Recolor|Legendary|Payback}}<br/>Needs {{Legendary|Freezing Point}}
+The Blue Beast RE-45.png|{{Cosmetic-NI|Recolor|Legendary|The Blue Beast}}<br/>Needs {{Legendary|The Predator}}
+Crown Jewel RE-45.png|{{Cosmetic|Iron Crown|Legendary|Crown Jewel}}
+The Neutralizer RE-45.jpg|{{Cosmetic-NI|Recolor|Legendary|The Neutralizer}}</br>Needs {{Legendary|The Regulator}}
+Power of the Pride RE-45.png|{{Cosmetic-NI|Recolor|Legendary|Power of the Pride}}<br/>Needs {{Legendary|The Pride}}
+The King's Rage RE-45.png|{{Cosmetic-NI|Recolor|Legendary|The King's Rage}}<br/>Needs {{Legendary|The Pride}}
+Turquoise Tranquility RE-45.png|{{Cosmetic|Fight Night|Legendary|Turquoise Tranquility}}
+Lupine Luxury RE-45.png|{{Cosmetic|Dressed to Kill|Legendary|Lupine Luxury}}
+Venom Spitter RE-45.png|[[File:Sale Icon.svg|22px|link=Fight or Fright Sale]] {{Legendary|Venom Spitter}}
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200" heights="300" mode="nolines">
+Eye of the Storm RE-45.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire RE-45.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor RE-45.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid RE-45.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy RE-45.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Blue Fade RE-45.png|{{Cosmetic|Starter Pack|Epic|Blue Fade}}
+Pulse Check RE-45.png|{{Cosmetic|System Override|Epic|Pulse Check}}
+Neon Candy RE-45.png|{{Cosmetic|Season 6|Epic|Neon Candy}}<br/>Level 99
+Force Limiter RE-45.png|{{Cosmetic|Aftermarket|Epic|Force Limiter}}
+The Multipass RE-45.png|{{Cosmetic|Unshackled|Epic|The Multipass}}
+Sunken Treasure RE-45.png|{{Cosmetic|Spellbound|Epic|Sunken Treasure}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="200" heights="300" mode="nolines">
+Out for Blood RE-45.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Surprise Party RE-45.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Carnivale RE-45.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Solar Flare RE-45.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Wildlands RE-45.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Headgames RE-45.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Paper Trail RE-45.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Icebreaker RE-45.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Trident RE-45.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Tagged RE-45.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Warm Rave RE-45.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Urban Edge RE-45.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Recluse RE-45.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Cold Wave RE-45.png|{{Rare|Coldwave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage RE-45.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Deep Blue RE-45.png|{{Cosmetic-NI|PlayStation+|Rare|Deep Blue}}<ref group="note">Was originally named "Greatness Awaits".</ref><br/>February 2019
+Patchwork RE-45.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 84
+Firebrand RE-45.png|{{Cosmetic|Season 2|Rare|Firebrand}}<br/>Level 56
+Gnarly RE-45.png|{{Cosmetic|Voidwalker|Rare|Gnarly}}
+Grasshopper RE-45.png|{{Cosmetic|Season 3|Rare|Grasshopper}}<br/>Level 18
+Pewter Tangerine RE-45.png|{{Cosmetic|Season 4|Rare|Pewter Tangerine}}<br/>Level 23
+Woven Future RE-45.png|{{Cosmetic|Season 5|Rare|Woven Future}}<br/>Level 87
+Tribal Glyph RE-45.png|{{Cosmetic|Lost Treasures|Rare|Tribal Glyph}}
+Speed Trap RE-45.png|{{Cosmetic|Season 6|Rare|Speed Trap}}<br/>Level 99
+Interconnection RE-45.png|{{Cosmetic|Season 7|Rare|Interconnection}}<br/>Level 44
+Cyanide RE-45.png|{{Cosmetic|Season 8|Rare|Cyanide}}<br/>Level 47
+Gem Storm RE-45.png|{{Cosmetic|Season 9|Rare|Gem Storm}}<br/>Level 81
+Heat Burst RE-45.png|{{Cosmetic|Season 10|Rare|Heat Burst}}<br/>Level 53
+Diamond Accuracy RE-45.png|{{Cosmetic|Season 11|Rare|Diamond Accuracy}}<br/>Level 22
+Green Striker RE-45.png|{{Cosmetic|Season 12|Rare|Green Striker}}<br/>Level 21
+Served Fresh RE-45.png|{{Rare|Served Fresh}}
+Guardian's Battlecrest RE-45.png|{{Cosmetic|Season 13|Rare|Guardian's Battlecrest}}<br/>Level 29
+Circuitry RE-45.png|{{Cosmetic|Season 14|Rare|Circuitry}}<br/>Level 25
+Paint by Bullets RE-45.png|{{Cosmetic-NI|PlayStation+|Rare|Paint By Bullets}}<br/>Season 14
+Training Day RE-45.png|{{Cosmetic|Season 15|Rare|Training Day}}<br/>Level 8
+Tagged (Season 16) RE-45.png|{{Cosmetic|Season 16|Rare|Tagged}} <br/>Level 64
+Hotwire Frame RE-45.png|{{Cosmetic|Season 18|Rare|Hotwire Frame}} <br/>Level 29
+</gallery>
+<references group="note"/>
+
+|-|
+
+Common=
+<gallery widths="200" heights="300" mode="nolines">
+Factory Issue RE-45.png|{{Common|Factory Issue}}<br/>Default
+Midnight RE-45.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal RE-45.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic RE-45.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire RE-45.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater RE-45.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo RE-45.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm RE-45.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest RE-45.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen RE-45.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid RE-45.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal RE-45.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket RE-45.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon RE-45.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover RE-45.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic RE-45.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* ('''Undocumented''') Reduced damage from 14 to 12.
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 200 {{ItemLink|Mythic Light Rounds|text=Ammo}} and {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+* Increased damage from 12 to 14.
+* Reduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}} multiplier from 1.7× to 1.3×.
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Introduced {{ItemLink|Laser Sight|text=Laser Sights}}. Compatible with [[Alternator SMG]], [[P2020]], [[Prowler Burst PDW]], [[R-99 SMG]], RE-45 Auto, and [[Volt SMG]].
+* Removed {{ItemLink|Barrel Stabilizer|text=Barrel Stabilizers}} compatibility.
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}. Comes pre-equipped with {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}.
+* Increased FOV when ADS without optics equipped to 70.
+* Removed ADS speed penalty.
+
+; [[February 22, 2022 Patch]]
+* {{ItemLink|Arenas}}:
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|350}} to {{Materials|400}}.
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Added {{ItemLink|Hammerpoint Rounds|text={{Epic|Hammerpoint Rounds}}}}. Compatible with [[Mozambique Shotgun]], [[P2020]], and RE-45 Auto.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 12}}.
+* ('''Undocumented''') {{ItemLink|Arenas}}:
+** Increased {{Epic|Level 3}} upgrade cost from {{Materials|250}} to {{Materials|350}}.
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|200}} to {{Materials|150}}.
+** Reduced {{Common|Level 1}} upgrade cost from {{Materials|150}} to {{Materials|100}}.
+** Reduced {{Rare|Level 2}} upgrade cost from {{Materials|250}} to {{Materials|200}}.
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* Removed {{ItemLink|Quickdraw Holster|text={{Epic|Quickdraw Holster}}}}.
+* Increased draw speed from 0.35 to 0.315 seconds.
+* Increased holster speed from 0.3 to 0.27 seconds.
+* Increased ADS-in speed from 0.3 to 0.27 seconds.
+* Increased ADS-out speed from 0.25 to 0.225 seconds.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 10}}.
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|250}} to {{Materials|200}}.
+
+; {{ItemLink|Season 7|noText=yes}} [[November 04, 2020 Patch]]
+* Introduced {{ItemLink|Quickdraw Holster|text={{Epic|Quickdraw Holster}}}}. Compatible with RE-45 Auto and [[Wingman]].
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Increased damage from 11 to 12.
+* Reduced tactical reload time from 1.74 to 1.5 seconds.
+* Reduced full reload time from 2.12 to 1.95 seconds.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 5}}.
+
+; {{ItemLink|System Override|noText=yes}} [[March 03, 2020 Patch]]
+* Reduced the intensity of muzzle flash while aiming down sights.
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Removed {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}.
+
+; {{ItemLink|Iron Crown|noText=yes}} [[August 13, 2019 Patch]]
+* Increased magazine size from {{Level0123|15|18|21|24}} to {{Level0123|16|19|22|25}}.
+
+; [[July 05, 2019 Patch]]
+* Reduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}} damage multiplier from 2.26× to 1.7×.
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Introduced {{ItemLink|Disruptor Rounds|text={{Epic|Disruptor Rounds}}}}. Compatible with [[Alternator SMG]] and RE-45 Auto.
+* Added to the loot table of [[Fully Kitted Weapon|{{Legendary|Fully Kitted Weapons}}]] for {{ItemLink|Season 2}}.
+
+; [[May 20, 2019 Patch]]
+* Fixed bug with missing tail sounds (the echo in the environment after the shot) when in close proximity.}}
+
+
+== Gallery ==
+<gallery widths="250" heights="250">
+RE-45 Concept Art.jpg|Concept art for the RE-45.<ref>[https://www.artstation.com/artwork/4bl8e8 Danny Gardner on ArtStation]</ref>
+ConceptArt Corwin Paradinha RE-45 01.jpg|3D Render of the RE-45 Autopistol by Corwin Paradinha.<ref>[https://www.artstation.com/artwork/YaRe2V Corwin Paradinha ArtStation]</ref>
+ConceptArt Corwin Paradinha RE-45 02.jpg
+ConceptArt Corwin Paradinha RE-45 03.jpg
+Freezing Point RE-45 Concept Art.jpg|Concept art for the {{Legendary|Freezing Point}} skin.
+The Predator RE-45 Concept Art.jpg|Concept art for the {{Legendary|The Predator}} skin.
+The Pride RE-45 Concept Art.jpg|Concept art for the {{Legendary|The Pride}} skin.
+</gallery>
+
+
+== See also ==
+* [[RE-45 Auto (Mobile)|RE-45 Auto (''Apex Legends Mobile'')]]
+* [https://titanfall.fandom.com/wiki/RE-45_Autopistol RE-45 Autopistol (''Titanfall'')]
+* [https://titanfall.fandom.com/wiki/RE-45_Autopistol#Titanfall_2 RE-45 Auto (''Titanfall 2'')]
+
+
+== References ==
+<references/>
+
+{{Nav-Weapons}}

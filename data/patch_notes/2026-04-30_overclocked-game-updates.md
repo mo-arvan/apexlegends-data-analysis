@@ -1,0 +1,94 @@
+---
+title: "New Updates Coming with Apex Legends\u2122: Overclocked"
+date: 2026-04-30
+slug: overclocked-game-updates
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/overclocked-game-updates
+---
+
+# New Updates Coming with Apex Legends™: Overclocked
+
+#### Table of Contents
+
+- [New Legend: Axle](#axle)
+- [Deathbox Respawns](#deathbox-respawns)
+- [Chain Healing](#chain-healing)
+- [Legend Updates](#legend-updates)
+
+
+---
+
+[![Apex Legends: Overclocked Gameplay Trailer](https://www.youtube.com/watch?v=6_G08Q32Fpg)](https://drop-assets.ea.com/images/62jB6jD9UI5xkFFHCgAnzG/7c2bce3eb26bf5ca200d3c4ea160fe91/Apex_S29_Gameplay_Trailer_Thumbnail_3840x2160-003.jpg?im=AspectCrop=%2816,9%29,xPosition=0.4942708333333333,yPosition=0.5407407407407407)(Youtube)(Thumbnail image for the S29 Gameplay trailer for Apex Legends.)
+
+![Image showing the yearly roadmap for Apex. It shows the new updates coming in S29, and what'll be coming in Season 30, 31 and 32. There will be overhauls to weapons and looting, a legend rework, and a new legend.](https://drop-assets.ea.com/images/7lSBcMZlGGbOPnBWjQowtP/3e56504f4bd901d4e443c057c8f76ccb/Apex_2026_Roadmap_S29_16x9.jpg?im=AspectCrop=%2816,9%29,xPosition=0.465625,yPosition=0.47453703703703703)
+
+[Enlarge Image](https://drop-assets.ea.com/images/7lSBcMZlGGbOPnBWjQowtP/3e56504f4bd901d4e443c057c8f76ccb/Apex_2026_Roadmap_S29_16x9.jpg).
+## NEW UPDATES COMING WITH APEX LEGENDS™: OVERCLOCKED
+
+The start of a new season seems like a great time to check in on The Road Ahead.
+
+When we released this roadmap earlier this year, we told you that what we had on the graphic was just the start. We’re excited to announce a new addition: a **Major Ranked Update** is slated for Season 32. We hear your continued feedback and know that Ranked is an important part of your Apex Legends journey. Our team is continuously working on the Ranked mode, testing and tweaking to give you the best competitive experience possible. That work will continue and when Season 32 arrives, Ranked will have a brand new look and feel; we can’t wait to tell you more when the time is right!
+
+Now get ready to push it to the limits and redline all season in OVERCLOCKED.
+
+In Overclocked, fortune favors the fearless. Move fast and hit hard with Axle, the new hypermobile Legend who will push you to go beyond your limits. Charge into a high-risk, high-reward meta with Deathbox Respawns, Chain Healing and Legend updates to Conduit and Vantage. 
+## NEW LEGEND: AXLE**{#**axle**}**
+
+A new challenger approaches! Axle joins the Apex Games, and she’s revved up and ready to go! You’ll have to keep your head on a swivel as she transforms the battlefield into her racetrack.
+
+![In-game screenshot of Axle sliding along the ground using her Nitro Gate ability.](https://drop-assets.ea.com/images/7z260yIivfPYqjsZ7mveli/869eda5de0d3872c07b0af39f14008ba/Apex_S29-Season_Axle_Gameplay-16x9.jpg?im=AspectCrop=%2816,9%29,xPosition=0.3484375,yPosition=0.4287037037037037)
+
+Slide with increased speed and control using her Drift passive and launch into high-speed rotations with the Nitro Gate tactical. Control the pace of battle with her ultimate Kickstart, an enemy-seeking explosive drone. Use Kickstart to displace and disorient enemies, flush them out from behind cover, and zoom in to finish the job. 
+
+Axle demands the most from her teammates, while giving them the tools to keep up. We are thrilled to welcome the newest Legend to the Apex Games and even more excited to see your highlight reels!
+## DEATHBOX RESPAWNS**{#**deathbox-respawns**}**
+
+You can now respawn teammates directly from their Deathboxes.
+
+![In-game screenshot of Conduit kneeling next to a deathbox that has a green revive overlay on it.](https://drop-assets.ea.com/images/2Om9qyPT0IxXJ7KRNF2T8p/f89efb214d728779e11bffff9bd1f975/Apex_S29-Season_Deathbox-Respawns_Gameplay-16x9.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5)
+
+We’ve all been there: you and your squad dig deep, hunker down, and fight your way through multiple squads to clear an area and establish zone control. Congratulations! But… you lost a comrade or two along the way and thus begins the grand adventure of collecting banners and rushing to the nearest viable respawn beacon; a potentially long and arduous journey. 
+
+Introducing: Deathbox Respawns, a new, alternate way to get your teammates back into the fight that feels like a reward for teams that successfully clear and hold an area. 
+
+Be aware: Deathbox Respawns are risky. The process is slow, noisy, and visible to nearby enemies. Additionally, subsequent deaths cause an increasing Lockout Time penalty that temporarily disables Deathbox Respawning. 
+## CHAIN HEALING**{#**chain-healing**}**
+
+The new Chain Healing options give you the ability to, while healing, queue another healing item for use automatically after the current heal action completes.
+
+![Screenshot of the new chain healing in Apex. It shows how the player can have a heal like a shield cell queued to be used automatically after the current one.](https://drop-assets.ea.com/images/4WE3UNVcsrj3HHw5oF3lIr/fb35b67c9f484d140c3a94d105d6c8cd/chain_healing_2.png?im=AspectCrop=%2816,9%29,xPosition=0.39166666666666666,yPosition=0.5351851851851852)
+
+There are 3 options in the settings: **Off**, **Single**, and **Auto**. Single is the new default option.
+
+**Off** disables the Chain Healing feature and maintains the current healing behavior and interactions with no difference from previous versions of Apex. 
+
+**Single** lets you queue one additional heal action. 
+
+**Auto** allows you to queue another use of the active healing item, and if you have more of that healing resource and the need to use it, Auto will continuously queue that same item again. Auto will queue these items until you run out of that resource, or the related health pool is full.
+## OVERCLOCKED’S LEGENDS**{#**legend-updates**}**
+
+In addition to a brand new Legend, Overclocked also boasts buffs for Vantage and Conduit. 
+
+![POV screenshot of Vantage using her ultimate, but it now has a canted 2x sight on the side, allowing for close-range aiming.](https://drop-assets.ea.com/images/7KQQC991TfHeAg9IXOaGLo/4891c748516e1794dffb7dddbd53b73c/APEX_Legends_S29_Screenshots_Launch_LegendUpdates_VantageVsRev_A_v04.png?im=AspectCrop=%2816,9%29,xPosition=0.5770833333333333,yPosition=0.47453703703703703)
+
+We are pumping up Vantage’s passive with an added ultimate boost, and tweaking her tactical to keep her agile and fight-ready in close-quarters engagements. Vantage’s ultimate now flaunts improved handling and a new 2x optic, to enable your quick scope fantasies at any range.
+
+Conduit’s passive, tactical and upgrades are getting a little bit of love, aiming to make her a more dynamic pick as a playmaker in the fleet of Support Legends. 
+
+Learn about the Dev team’s design approach when Designer’s Notes drop on May 1st, 2026 and get all the details on Legend changes and more in the Patch Notes on May 4th.
+## SEE YOU ON THE DROPSHIP
+
+A high speed season with a brand new character, new mechanics ***and*** Legend buffs? Sign me up! Overclocked is shaping up to be another banger of a season and we can’t wait to see what you do with it all! 
+
+---
+
+[Play Apex Legends for free](https://www.ea.com/games/apex-legends/apex-legends/buy)* now on PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, Nintendo Switch 2, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [Twitter](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), and [TikTok](https://www.tiktok.com/@PlayApex), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.

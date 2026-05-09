@@ -1,0 +1,393 @@
+{{Game|main}}
+{{Infobox-Weapon
+| name = C.A.R. SMG
+| description = Adaptable SMG. Uses light and heavy ammo.
+| type = Submachine Gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = heavyLight
+| creator = [[File:Siwhan Industries.svg|20px]] [[Siwhan Industries]]
+| barrel = laser
+| magType = car
+| optics = true
+| stock = standard
+| damageBody = 14
+| damageHead = 18
+| damageLegs = 11
+| rateOfFire = 930
+| dps = 217
+| magazineSize = {{Level0123|20|23|25|28}}
+| tacReload = {{Level0123|1.7|1.64|1.59|1.53}}
+| fullReload = {{Level0123|2.13|2.06|1.99|1.92}}
+}}
+
+The '''Combat Advanced Round SMG''' (shortened '''C.A.R. SMG''', '''C.A.R.''', or '''CAR''') is a fully-automatic [[submachine gun]] introduced in {{ItemLink|Season 11}}. By default it utilizes {{ItemLink|Heavy Rounds}}, but it can be toggled to accept {{ItemLink|Light Rounds}} instead by pressing {{KeySet|fireMode}}. The CAR can equip either an {{ItemLink|Extended Heavy Mag}} or an {{ItemLink|Extended Light Mag}}, regardless of which ammo type is currently in use; either will increase the magazine capacity in the same way. 
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Others
+* {{ItemLink|Extended CAR Mag|link=Extended Mag|text=Extended Heavy or Light Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Laser Sight}} ({{Common}}, {{Rare}}, {{Epic}})
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 14
+| headshotMdfr = 1.25
+| legMdfr = 0.8
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_car</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 15.4
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 18000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 456 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 2
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 5
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 1.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 7
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.35
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.3
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.2
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.75
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0.35
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0.25
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 5
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''CAR'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''CAR'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''CAR'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''CAR'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''600''' enemies with the '''CAR'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The C.A.R. SMG was developed by Lastimosa Armory to leverage the existing success of the company's R-101 platform. A smaller barrel, lighter alloys, and other weight reductions improve the weapon's handling, while smaller ammunition affords low recoil and a higher rate of fire. Traditionally, weapons with a high rate of fire tend to jam when used for extended durations - to remove this limitation, the R&D team at Lastimosa Armory created a "shoot by wire" system where the trigger is linked to the firing mechanism via an internal CPU. This system can detect overheat conditions, adjust rate of fire, and clear jams without operator intervention - often faster than the operator can realize a jam has occurred.}}
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|27}}
+{{#vardefine:epicskin|20}}
+{{#vardefine:rareskin|25}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|{{Coins|1,800}}}}
+{{#vardefine:ac2|{{Coins|1,000}}}}
+There are a total of '''{{#expr:{{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+<tabber>
+Legendary=
+<gallery widths="290" heights="160px" mode="nolines">
+Factory New CAR.png|{{Legendary|Factory New}}<br>{{CraftingMetals|1,200}}
+Pastel Perfection CAR.png|{{Legendary|Pastel Perfection}}<br>{{CraftingMetals|1,200}}
+Rich Mahogany CAR.png|{{Legendary|Rich Mahogany}}<br>{{CraftingMetals|1,200}}
+Sour Squeeze CAR.png|{{Legendary|Sour Squeeze}}<br>{{CraftingMetals|1,200}}
+Prison Pacifier CAR.png|{{Cosmetic|Unshackled|Legendary|Prison Pacifier}}<br/>{{CraftingMetals|1,200}}
+Judgement Day CAR.png|{{Cosmetic|Ash Launch Bundle|Legendary|Judgement Day}}<br>{{#var:ac1}}
+Brigantine CAR.png|{{Cosmetic|Raiders|Legendary|Brigantine}}<br>{{#var:ac1}}
+Wyrmborn CAR.png|{{Cosmetic|Season 13|Legendary|Wyrmborn}}<br/>Level 1
+Heaven Piercer CAR.png|{{Cosmetic|Awakening|Legendary|Heaven Piercer}}<br>{{#var:ac1}}
+Shard Spitter CAR.png|{{Cosmetic|Wintertide|Legendary|Shard Spitter}}<br>{{#var:ac1}}
+Royal Gift CAR.png|{{Cosmetic|Regal Wrath Sale|Legendary|Royal Gift}}<br>{{#var:ac1}}
+Devilish Artistry CAR.png|{{Cosmetic|Veiled|Legendary|Devilish Artistry}}<br>{{#var:ac1}}
+Lady Grey CAR.png|[[File:Ballistic Icon.svg|22px|link=Locked and Loaded Store#Bundles]] {{Legendary|Lady Grey}}<ref group="Story">'''Lady Grey''': There's only two things [[Ballistic|August Brinkman]] needs in life: a zesty bergamot hit from a cup of Lady Grey tea… and the Thunderdome era gun he named after it.</ref><br>{{#var:ac1}}
+Frontier Faithful CAR.png|{{Cosmetic|Season 17|Legendary|Frontier Faithful}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Level 100
+Outlands Obliterator CAR.png|{{Cosmetic|Season 17|Legendary|Outlands Obliterator}}<ref group="note" name="reactive"/><br>Level 110
+Ethereal Heresy CAR.png|{{Cosmetic|Death Dynasty|Legendary|Ethereal Heresy}}<br>{{#var:ac1}}
+Teacher's Pet CAR.png|[[File:Sale Icon.svg|22px|link=Battle Academy Store]] {{Legendary|Teacher's Pet}}<br>{{#var:ac1}}
+Pointed Swords CAR.png|{{Cosmetic|Post Malone|Legendary|Pointed Swords}}
+Diamond Dust CAR.png|{{Cosmetic|Final Fantasy VII|Legendary|Diamond Dust}}
+Mawful CAR.png|{{Cosmetic|Inner Beast|Legendary|Mawful}}<br>{{#var:ac1}}
+The Negotiator CAR.png|{{Cosmetic|Shadow Society|Legendary|The Negotiator}}<br>{{#var:ac1}}
+Soul Shatterer CAR.png|{{Cosmetic|Void Raider|Legendary|Soul Shatterer}}<br>{{#var:ac1}}
+Time Keeper CAR.png|{{Cosmetic|Temporal Chaos|Legendary|Time Keeper}}<br>{{#var:ac1}}
+Stellar Supernova CAR.png|{{Cosmetic|Void Reckoning|Legendary|Stellar Supernova}}<br>{{#var:ac1}}
+Legend's Best Friend CAR.png|{{Cosmetic|S23|Legendary|Legend's Best Friend}}
+Alabaster Guard CAR.png|{{Cosmetic|Lunar Rebirth|Legendary|Alabaster Guard}}
+Topographic Tide CAR.png|{{Cosmetic|Fight Force|Legendary|Topographic Tide}}
+Brimstone CAR.png|{{Cosmetic|Raise Hell|Legendary|Brimstone}}
+</gallery>
+Note:
+<references group="note"/>
+Story:
+<references group="Story"/>
+|-|
+
+Epic=
+<gallery widths="290" heights="160px" mode="nolines">
+Eye of the Storm CAR.png|{{Epic|Eye of the Storm}}<br>{{CraftingMetals|400}}
+Trial by Fire CAR.png|{{Epic|Trial by Fire}}<br>{{CraftingMetals|400}}
+Code of Honor CAR.png|{{Epic|Code of Honor}}<br>{{CraftingMetals|400}}
+Off the Grid CAR.png|{{Epic|Off the Grid}}<br>{{CraftingMetals|400}}
+Break the Enemy CAR.png|{{Epic|Break the Enemy}}<br>{{CraftingMetals|400}}
+Skullcrusher CAR.png|{{Cosmetic|Season 12|Epic|Skullcrusher}}<br/>Level 84
+Navy Tactics CAR.png|{{Cosmetic|3rd Anniversary|Epic|Navy Tactics}}<br>{{#var:ac2}}
+Toxic Waste CAR.png|{{Cosmetic|Beast of Prey|Epic|Toxic Waste}}<br>{{#var:ac2}}
+Daemon Hunter CAR.png|{{Symbol|4th anniversary}} {{Epic|Daemon Hunter}}<ref group="story">'''Daemon Hunter''': Inspired by MAKINAYT, Designed by VONHEXA</ref>
+Petal Punisher CAR.png|{{Cosmetic|Imperial Guard|Epic|Petal Punisher}}
+Fatal Flow CAR.png|{{Cosmetic|Neon Network|Epic|Fatal Flow}}<br>{{#var:ac2}}
+Shard Deco CAR.png|{{Cosmetic|Uprising|Epic|Shard Deco}}<br>{{#var:ac2}}
+Stampede CAR.png|{{Cosmetic|Final Fantasy VII|Epic|Stampede}}
+Voided CAR.png|{{Epic|Voided}}<br>[[Ranked Rumble]] - Tier II
+Eldritch Maw CAR.png|{{Cosmetic|Techno Terror|Epic|Eldritch Maw}}<br>{{#var:ac2}}
+Toxic_Infuser_CAR.png|{{Cosmetic|S23|Epic|Toxic Infuser}}<br>Split 1 Premium Lv 41
+Cosmic Hit CAR.png|{{Cosmetic|Winter's Haunt|Epic|Cosmic Hit}}
+Pink Blitz CAR.png|{{Cosmetic|Takeover|Epic|Pink Blitz}}
+Attitude Adjuster CAR.png|{{Cosmetic|Future Icons|Epic|Attitude Adjuster}}
+Crane Fury CAR.png|{{Cosmetic|Showdown|Epic|Crane Fury}}<br>Split 1 Premium Lv 35
+</gallery>
+<references group="story"/>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="160px" mode="nolines">
+Chaos Theory CAR.png|{{Rare|Chaos Theory}}<br>{{CraftingMetals|60}}
+Cloudburst CAR.png|{{Rare|Cloudburst}}<br>{{CraftingMetals|60}}
+Cold Fusion CAR.png|{{Rare|Cold Fusion}}<br>{{CraftingMetals|60}}
+Derez CAR.png|{{Rare|Derez}}<br>{{CraftingMetals|60}}
+Generation X CAR.png|{{Rare|Generation X}}<br>{{CraftingMetals|60}}
+Jester CAR.png|{{Rare|Jester}}<br>{{CraftingMetals|60}}
+Jungle Frenzy CAR.png|{{Rare|Jungle Frenzy}}<br>{{CraftingMetals|60}}
+New Moon CAR.png|{{Rare|New Moon}}<br>{{CraftingMetals|60}}
+Outback CAR.png|{{Rare|Outback}}<br>{{CraftingMetals|60}}
+Shattered CAR.png|{{Rare|Shattered}}<br>{{CraftingMetals|60}}
+Skyrise CAR.png|{{Rare|Skyrise}}<br>{{CraftingMetals|60}}
+Stellar CAR.png|{{Rare|Stellar}}<br>{{CraftingMetals|60}}
+Sweet 16 CAR.png|{{Rare|Sweet 16}}<br>{{CraftingMetals|60}}
+Triumphant Arch CAR.png|{{Rare|Triumphant Arch}}<br>{{CraftingMetals|60}}
+Yellow Snake CAR.png|{{Rare|Yellow Snake}}<br>{{CraftingMetals|60}}
+Explorer's Touch CAR.png|{{Cosmetic|Season 14|Rare|Explorer's Touch}}<br/>Level 41
+Lumbar Puncture CAR.jpg|{{Cosmetic-NI|Prime Gaming Loot|Rare|Lumbar Puncture}}<br/>September 2022
+Ghost Gun CAR.png|{{Cosmetic|Season 15|Rare|Ghost Gun}}<br/>Level 62
+Little Legends CAR.png|{{Cosmetic|Season 16|Rare|Little Legends}}<br>Level 26
+Type O-bliterator CAR.png|{{Cosmetic|ps+|Rare|Type O-bliterator}}<br>Season 16
+Holographic Ember CAR.png|{{Cosmetic|Season 18|Rare|Holographic Ember}}<br>Level 47
+Wire Cutter CAR.png|{{Symbol|Season 19}} {{Rare|Wire Cutter}}<br>Level 42
+Toxic Bite CAR.png|{{Symbol|Season 20}} {{Rare|Toxic Bite}}<br>Level 34
+Necrotic Devourer CAR.png|{{Symbol|Season 21}} {{Rare|Necrotic Devourer}}<br>Level 69
+Summer Breeze CAR.png|{{Symbol|ps+}} {{Rare|Summer Breeze}}<br>Season 22
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="160px" mode="nolines">
+Factory Issue CAR.png|{{Common|Factory Issue}}<br>Default
+Midnight CAR.png|{{Common|Midnight}}<br>{{CraftingMetals|30}}
+Cardinal CAR.png|{{Common|Cardinal}}<br>{{CraftingMetals|30}}
+Arctic CAR.png|{{Common|Arctic}}<br>{{CraftingMetals|30}}
+Sunfire CAR.png|{{Common|Sunfire}}<br>{{CraftingMetals|30}}
+Clearwater CAR.png|{{Common|Clearwater}}<br>{{CraftingMetals|30}}
+Flamingo CAR.png|{{Common|Flamingo}}<br>{{CraftingMetals|30}}
+Sandstorm CAR.png|{{Common|Sandstorm}}<br>{{CraftingMetals|30}}
+Rainforest CAR.png|{{Common|Rainforest}}<br>{{CraftingMetals|30}}
+Evergreen CAR.png|{{Common|Evergreen}}<br>{{CraftingMetals|30}}
+Orchid CAR.png|{{Common|Orchid}}<br>{{CraftingMetals|30}}
+Bengal CAR.png|{{Common|Bengal}}<br>{{CraftingMetals|30}}
+Yellowjacket CAR.png|{{Common|Yellowjacket}}<br>{{CraftingMetals|30}}
+Lagoon CAR.png|{{Common|Lagoon}}<br>{{CraftingMetals|30}}
+Clover CAR.png|{{Common|Clover}}<br>{{CraftingMetals|30}}
+Oceanic CAR.png|{{Common|Oceanic}}<br>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; [[April 08, 2025 Patch]]
+* Increased headshot damage from 17 to 18.
+
+
+; {{Symbol|Beast Mode}} [[March 25, 2025 Patch]]
+* Increased magazine size from {{Level0123|19|22|24|27}} to {{Level0123|20|23|25|28}}.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 14 (was 13).
+* Headshot damage: 17.
+* Added Laser Sight barrel attachment.
+
+
+; [[January 07, 2025 Patch]]
+* Damage increased to 13 (was 12).
+
+
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 23}}.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Increased magazine size from {{Level0123|19|21|23|26}} to {{Level0123|19|22|24|27}}.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Increased projectile gravity from 1.15 to 1.2.
+* Reduced projectile speed from 18500 to 18000.
+* Removed {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}} compatibility.
+* ('''Undocumented''') Increased recoil.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 19}}.
+
+
+; {{ItemLink|Apex Legends & FINAL FANTASY VII REBIRTH|image=Final Fantasy VII.svg|noText=yes}} [[January 09, 2024 Patch]]
+* Reduced damage from 13 to 12.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Reduced headshot damage multiplier from 1.5× to 1.25×.
+* Reduced ADS movement speed multiplier from 0.85× to 0.75×.
+
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Fixed active ammo not showing in the inventory when infinite ammo was enabled.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+* Reduced magazine size from {{Level0123|20|22|24|27}} to {{Level0123|19|21|23|26}}.
+
+
+; {{ItemLink|Beast of Prey|noText=yes}} [[September 20, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+* Increased hipfire spread when crouching from 1 to 1.6.
+* Increased hipfire spread when standing from 1.8 to 2.
+* Increased hipfire spread when moving from 2 to 3.
+* Increased hipfire spread when running from 2.2 to 5.
+* Increased hipfire spread when in midair from 3.2 to 7.
+
+
+; {{ItemLink|Awakening|noText=yes}} [[June 21, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Introduced.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 11}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+Prison Pacifier CAR Concept Art.jpg|Concept art for the {{Legendary|Prison Pacifier}} skin.<ref>[https://www.artstation.com/artwork/B3b336 Gadget-Bot Productions on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* Part of the C.A.R. SMG icon appeared in an UI asset showing the weapon's stock in the buy menu for {{ItemLink|Arenas}}, indicating that the weapon might've already had an icon stylized in the ''Apex'' style in {{ItemLink|Season 9}}.<ref>[https://twitter.com/alphaINTEL/status/1386724667130621956 Apex Legends News on Twitter]</ref> The icon can be seen in [https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/introducing-arenas/apex-legends-arenas-blog-upgrade-weapon.mp4 a video] showing how to upgrade weapons in Arenas that got posted [https://www.ea.com/games/apex-legends/news/introducing-arenas on the official website].
+* The C.A.R. had a defined recoil pattern way before its release.<ref>[https://twitter.com/kralrindo/status/1394768649416806403 KralRindo on Twitter - C.A.R. recoil pattern]</ref><ref>[https://twitter.com/kralrindo/status/1394768815431553026 KralRindo on Twitter - C.A.R. recoil pattern mid and close range comparison]</ref>
+* The {{Legendary|Heaven Piercer}} skin likely references the anime series ''[[wikipedia:Gurren Lagann|Gurren Lagann]]''.
+* A bespoke C.A.R., nicknamed "Lady Grey", was owned by [[Ballistic (character)|Ballistic]].<ref>[[Stories from the Outlands]] - [[Encore (Stories from the Outlands)|Encore]]</ref>
+* The C.A.R. is one of two weapons (Bocek) to have a unique inspect animation when out of ammunition.
+* The skeletons on the {{Legendary|Outlands Obliterator}} skin change their eye color to match the current ammo setting: Blue for {{ItemLink|Heavy Rounds|text=Heavy}} and orange for {{ItemLink|Light Rounds|text=Light}}.
+<br>
+<br>
+== See also ==
+* [https://titanfall.wiki.gg/wiki/C.A.R._SMG C.A.R. SMG (''Titanfall'' and ''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

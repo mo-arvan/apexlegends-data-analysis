@@ -1,0 +1,35 @@
+{
+  "title": "Mastiff Shotgun/Mobile",
+  "infobox": {
+    "name": "Mastiff Shotgun",
+    "image": "Mastiff Shotgun.png",
+    "description": "Powerful semi-auto shotgun.",
+    "type": "Shotgun",
+    "fireModes": "Single",
+    "ammoType": "Shotgun Shells",
+    "rateOfFire": [
+      "60",
+      "72",
+      "80",
+      "87"
+    ],
+    "projectileSpeed": "16000",
+    "creator": "Lastimosa Armory",
+    "optics": "true",
+    "magType": "bolt",
+    "totalCost": "1050",
+    "damageBody": "104 (13×8)",
+    "damageHead": "136 (17×8)",
+    "damageLegs": "104 (13×8)",
+    "dps": [
+      "104",
+      "125",
+      "139",
+      "151"
+    ],
+    "magazineSize": "8",
+    "tacReload": "1.03 sec/bullet",
+    "fullreload": "???",
+    "ADSspeed": "10"
+  }
+}

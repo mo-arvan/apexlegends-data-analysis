@@ -1,0 +1,453 @@
+{{Tabs|
+{{Tabs1|Longbow DMR|Main}}
+{{Tabs2|Longbow DMR/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Longbow DMR
+| description = Semi-auto sniper rifle.
+| type = Sniper Rifle
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Sniper Ammo
+| creator = {{ItemLink|Wonyeon}}
+| barrel =
+| magType = sniper
+| optics = true
+| stock = sniper
+| hopup = skullpiercer
+| damageBody = 60
+| damageHead = 108<br>{{Symbol|Skullpiercer}} 129
+| damageLegs = 48
+| rateOfFire = 78
+| dps = 78
+| magazineSize = {{Level0123|6|8|10|12}}
+| tacReload = {{Level0123|2.66|2.57|2.48|2.39}}
+| fullReload = {{Level0123|3.66|3.54|3.41|3.29}}
+}}
+The '''Longbow DMR''', or '''Longbow''', is a semi-automatic [[designated marksman rifle]] that utilizes {{ItemLink|Sniper Ammo}}.
+
+The Longbow can be enhanced with {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}, which increases the headshot damage multiplier to 2.15x.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|6x Sniper|text={{Rare|6x Sniper}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}} 
+* {{ItemLink|4x-8x Variable Sniper|text={{Epic|4x-8x Variable Sniper}}}}
+* {{ItemLink|4x-10x Digital Sniper Threat|text={{Legendary|4x-10x Digital Sniper Threat}}}}
+
+
+; Others
+* {{ItemLink|Extended Sniper Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Sniper Stock}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}
+<br>
+<br>
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 60
+| headshotMdfr = 1.8
+| legMdfr = 0.8
+}}
+<!--
+<br>
+<br>
+; {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}
+{{Damage profile
+| damage = 60
+| headshotMdfr = 2.15
+| legMdfr = 0.8
+}}
+-->
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_dmr</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 1.3
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 30500
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 774 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 29528
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 750 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 8
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 10
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 11
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 10
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.6
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.7
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.6
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.55
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.5
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.31
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.28
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.35
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''25000''' damages with the '''Longbow'''
+|-
+|''Headshot Kills''
+| style="text-align:left" | Kill '''100''' enemies with '''Headshots''' with the '''Longbow'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Longbow'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''200''' enemies with '''80''' meters away with the '''Longbow'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''500''' enemies with the '''Longbow'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The Longbow DMR marries the effective range of a sniper rifle and a semi-automatic rate of fire. An experienced marksman can use the Longbow to defend a wide swath of territory from a single perch, then seamlessly switch to firing from the hip if flanked. The rarity of suitable hop-ups makes it difficult to modify, but nonetheless, it became a lynchpin in early civil struggles between Outlands townships before the signing of the Mercenary Syndicate accords.}}
+
+The D-101 Longbow DMR ([[wikipedia:Designated marksman rifle|Designated Marksman Rifle]]) is a semi-automatic sniper rifle made by [[Lastimosa Armory]]. Models from the [[Frontier War]] were variants of the then-current R-201 Assault Rifle,<ref>[https://www.reddit.com/r/titanfall/comments/672pcz/i_framed_my_tier_1_diecast_tf2_weapons_shiny/dip21l7/ Comment by Ryan Lastimosa (brockhaurd) on r/titanfall]</ref> the model used in the [[Apex Games]] then would most likely be a variant of the R-201's successor, the [[R-301 Carbine]].
+<br>
+<br>
+== Skins ==
+There are a total of 98 skins for the Longbow DMR: 29 {{Legendary}}, 18 {{Epic}}, 35 {{Rare}}, and 16 {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="105" mode="nolines">
+Big Game Hunter Longbow.png|{{Legendary|Big Game Hunter}}<br/>{{CraftingMetals|1,200}}
+Nocturnal Predator Longbow.png|{{Legendary|Nocturnal Predator}}<br/>{{CraftingMetals|1,200}}
+Sleeper Cell Longbow.png|{{Legendary|Sleeper Cell}}<br/>{{CraftingMetals|1,200}}
+DEFCON 1 Longbow.png|{{Legendary|DEFCON 1}}<br/>{{CraftingMetals|1,200}}
+Pharaoh's Curse Longbow.png|{{Cosmetic|Voidwalker|Legendary|Pharaoh's Curse}}<br/>{{CraftingMetals|1,200}}
+McFly Longbow.png|{{Cosmetic|Grand Soirée|Legendary|McFly}}<br/>{{CraftingMetals|1,200}}
+Reckoner Longbow.png|{{Cosmetic|Season 3|Legendary|Reckoner}}<br/>Level 1
+Frigid Longbow.png|{{Cosmetic-NI|Recolor|Legendary|Frigid}}<br/>Needs {{Legendary|DEFCON 1}}
+The Trailblazer Longbow.png|{{Cosmetic-NI|Recolor|Legendary|The Trailblazer}}<br/>Needs {{Legendary|Big Game Hunter}}
+Night Breaker Longbow.png|{{Cosmetic-NI|Recolor|Legendary|Night Breaker}}<br/>Needs {{Legendary|Sleeper Cell}}
+Longhorn Longbow.png|{{Cosmetic|The Old Ways|Legendary|Longhorn}}
+Cryogenesis Longbow.png|{{Cosmetic-NI|Recolor|Legendary|Cryogenesis}}<br/>Needs {{Legendary|Nocturnal Predator}}
+Hunter Exotica Longbow.png|{{Cosmetic-NI|Recolor|Legendary|Hunter Exotica}}<br/>Needs {{Legendary|Big Game Hunter}}
+DMR X-1 Longbow.png|{{Cosmetic|Season 8|Legendary|DMR X-1}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br/>Level 100
+Blinding Light Longbow.png|{{Cosmetic|Season 8|Legendary|Blinding Light}}<ref group="note" name="reactive"></ref><br/>Level 110
+Dawn's Awakening Longbow.png|{{Cosmetic|Valkyrie Launch Bundle|Legendary|Dawn's Awakening}}
+Supreme Lethal Longbow.png|{{Cosmetic|Awakening|Legendary|Supreme Lethal}}
+Runic Ritual Longbow.png|{{Cosmetic|Spellbound|Legendary|Runic Ritual}}
+Yellow Surge Longbow.png|[[File:Sale Icon.svg|22px|link=Weapon Recolor Store (Season 16)]] {{Legendary|Yellow Surge}}
+Blood Bolt Longbow.png|{{Cosmetic|Death Dynasty|Legendary|Blood Bolt}}
+Ruler's Reach Longbow.png|{{Cosmetic|Harbingers|Legendary|Ruler's Reach}}
+Blue Striker Longbow.png|[[File:Sale Icon.svg|22px|link=End of Year Sale (2023)]] {{Legendary|Blue Striker}}
+Tidal Wave Longbow.png|{{Cosmetic|Final Fantasy VII|Legendary|Tidal Wave}}
+Burning Obsidian_Longbow.png|[[File:Sale Icon.svg|22px|link=Molten Mayhem Store]] {{Legendary|Burning Obsidian}}
+Celestial Sniper Longbow.png|{{Cosmetic|Void Reckoning|Legendary|Celestial Sniper}}
+Metallic Thorn Longbow.png|{{Cosmetic|Techno Terror|Legendary|Metallic Thorn}}
+Crystal Piercer Longbow.png|{{Cosmetic|Void Mercenaries|Legendary|Crystal Piercer}}
+Shifting Tides Longbow.png|{{Cosmetic|Fight Force|Legendary|Shifting Tides}}
+Farsighted Precision Longbow.png|{{Cosmetic|Death by Design|Legendary|Farsighted Precision}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="105" mode="nolines">
+Eye of the Storm Longbow.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Longbow.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Longbow.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Longbow.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Longbow.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Through the Heart Longbow.png|{{Cosmetic|Valentine's Day 2020|Epic|Through the Heart}}
+Pumpkin Parlor Longbow.png|{{Cosmetic|Fight or Fright 2019|Epic|Pumpkin Parlor}}
+Entry Lane Longbow.png|{{Cosmetic|Aftermarket|Epic|Entry Lane}}
+Forward Thinker Longbow.png|{{Cosmetic|Season 7|Epic|Forward Thinker}}<br/>Level 99
+Green Ripper Longbow.png|{{Cosmetic|Fight Night|Epic|Green Ripper}}
+Dexterity Longbow.png|{{Cosmetic|Genesis|Epic|Dexterity}}
+Silicon Dream Longbow.png|{{Cosmetic|Evolution|Epic|Silicon Dream}}
+Crow's Nest Longbow.png|{{Cosmetic|Raiders|Epic|Crow's Nest}}
+Bloody Gold Longbow.png|{{Cosmetic|Beast of Prey|Epic|Bloody Gold}}
+Beta Particle Longbow.png|{{Cosmetic|Temporal Chaos|Epic|Beta Particle}}
+Butterfly Beauty Longbow.png|{{Cosmetic|S23|Epic|Butterfly Beauty}}<br>Split 2 Premium Lv 16
+Rise and Grind Longbow.png|{{Cosmetic|S25|Epic|Rise and Grind}}<br> Split 2 Premium Lv 16
+Heartache Longbow.png|{{Symbol|S27}} {{Epic|Heartache}}<br> Split 1 Premium Lv 43
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Chaos Theory Longbow.png|{{Rare|Chaos Theory}}<br/>{{CraftingMetals|60}}
+Cloudburst Longbow.png|{{Rare|Cloudburst}}<br/>{{CraftingMetals|60}}
+Cold Fusion Longbow.png|{{Rare|Cold Fusion}}<br/>{{CraftingMetals|60}}
+Derez Longbow.png|{{Rare|Derez}}<br/>{{CraftingMetals|60}}
+Generation X Longbow.png|{{Rare|Generation X}}<br/>{{CraftingMetals|60}}
+Jester Longbow.png|{{Rare|Jester}}<br/>{{CraftingMetals|60}}
+Jungle Frenzy Longbow.png|{{Rare|Jungle Frenzy}}<br/>{{CraftingMetals|60}}
+New Moon Longbow.png|{{Rare|New Moon}}<br/>{{CraftingMetals|60}}
+Outback Longbow.png|{{Rare|Outback}}<br/>{{CraftingMetals|60}}
+Shattered Longbow.png|{{Rare|Shattered}}<br/>{{CraftingMetals|60}}
+Skyrise Longbow.png|{{Rare|Skyrise}}<br/>{{CraftingMetals|60}}
+Stellar Longbow.png|{{Rare|Stellar}}<br/>{{CraftingMetals|60}}
+Sweet 16 Longbow.png|{{Rare|Sweet 16}}<br/>{{CraftingMetals|60}}
+Triumphant Arch Longbow.png|{{Rare|Triumphant Arch}}<br/>{{CraftingMetals|60}}
+Yellow Snake Longbow.png|{{Rare|Yellow Snake}}<br/>{{CraftingMetals|60}}
+Navigator Longbow.png|{{Cosmetic|Season 1|Rare|Navigator}}<br/>Level 14
+Riptide Longbow.png|{{Cosmetic|Season 2|Rare|Riptide}}<br/>Level 13
+Uprising Longbow.png|{{Cosmetic|Iron Crown|Rare|Uprising}}<br/>{{Symbol|iron crown}} 60
+Cool Heat Longbow.png|{{Cosmetic|Season 3|Rare|Cool Heat}}<br/>Level 90
+Orbital Longbow.png|{{Cosmetic|Season 4|Rare|Orbital}}<br/>Level 27
+Desert Dweller Longbow.png|{{Cosmetic|Season 5|Rare|Desert Dweller}}<br/>Level 12
+Rumble Strip Longbow.png|{{Cosmetic|Season 6|Rare|Rumble Strip}}<br/>Level 15
+Sunspot Longbow.png|{{Cosmetic|Season 7|Rare|Sunspot}}<br/>Level 17
+Triangulation Longbow.png|{{Cosmetic|Season 8|Rare|Triangulation}}<br/>Level 25
+Diamond Cutter Longbow.png|{{Cosmetic-NI|PlayStation+|Rare|Diamond Cutter}}<br/>Season 8
+Enflamed Longbow.png|{{Cosmetic|Season 9|Rare|Enflamed}}<br/>Level 7
+Emissary Longbow.png|{{Cosmetic|Season 10|Rare|Emissary}}<br/>Level 70
+New Age Maverick Longbow.png|{{Cosmetic|Season 11|Rare|New Age Maverick}}<br/>Level 54
+Hard Hearted Longbow.png|{{Cosmetic|Season 12|Rare|Hard Hearted}}<br/>Level 15
+Wings of Wrath Longbow.png|{{Cosmetic|Season 13|Rare|Wings of Wrath}}<br/>Level 98
+Covering Fire Longbow.png|{{Cosmetic|Season 14|Rare|Covering Fire}}<br/>Level 34
+Bottled Rage Longbow.png|{{Cosmetic|Season 15|Rare|Bottled Rage}}<br/>Level 45
+Pixel Perfect Longbow.png|{{Cosmetic|Season 16|Rare|Pixel Perfect}}<br/>Level 62
+Safety Protocol Longbow.png|{{Cosmetic|Season 17|Rare|Safety Protocol}}<br/>Level 72
+Necrotic Devourer Longbow.png|{{Symbol|Season 21}} {{Rare|Necrotic Devourer}}<br>Level 8
+</gallery>
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Longbow.png|{{Common|Factory Issue}}<br/>Default
+Midnight Longbow.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Longbow.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Longbow.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Longbow.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Longbow.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Longbow.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Longbow.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Longbow.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Longbow.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Longbow.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Longbow.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Longbow.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Longbow.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Longbow.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Longbow.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 25|noText=yes}} [[May 06, 2025 Patch]]
+* Increased limb damage to 0.8 (was 0.7).
+* Can now equip {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 11, 2025 Patch]]
+* Headshot damage reduced from 135 to 108.
+* Limb damage reduced to 70% (was 80%).
+
+
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Increased damage from 55 to 60.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 23}}.
+
+
+; {{ItemLink|Double Take|noText=yes}} [[June 25, 2024 Patch]]
+* Increased headshot multiplier from ×2.15 to ×2.25.
+
+
+; {{ItemLink|Season 21|noText=yes}} [[May 07, 2024 Patch]]
+* Removed {{ItemLink|Barrel Stabilizer}} compatibility.
+* Reduced ADS-in time from 0.34 to 0.31 seconds.
+* Reduced ADS-out time from 0.31 to 0.28 seconds.
+* Reduced recoil.
+* Reduced projectile gravity.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 21}}.
+
+
+; {{ItemLink|Season 19|noText=yes}} [[October 31, 2023 Patch]]
+* Increased projectile size.
+
+
+; {{ItemLink|Sun Squad|noText=yes}} [[March 28, 2023 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Added {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}. Compatible with [[30-30 Repeater]], Longbow DMR, and [[Wingman]].
+* Increased {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}} multiplier from ×2.4 to ×2.5.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 14}}.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Removed from the {{ItemLink|Materials|text=Replicator}}.
+
+
+; {{ItemLink|Season 12|noText=yes}} [[February 08, 2022 Patch]]
+* Moved in the {{ItemLink|Materials|text=Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Reduced damage from 60 to 55.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 11}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[June 29, 2021 Patch]]
+* Increased damage from 55 to 60.
+ 
+
+; {{ItemLink|Season 9|noText=yes}} [[May 04, 2021 Patch]]
+* Removed {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}.
+* Increased headshot multiplier from ×2 to ×2.15.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] Longbow DMR optics can now be removed and/or replaced with any other compatible optic.
+
+
+; {{ItemLink|Season 8|noText=yes}} [[February 02, 2021 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 8}}.
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* ('''Undocumented''') Updated the {{Cosmetic|Season 3|Legendary|Reckoner}} skin.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Added {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}. Compatible with Longbow DMR and [[Wingman]].
+* Reduced headshot multiplier from ×2.15 to ×2.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 5}}.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Changed ammo type from {{ItemLink|Heavy Rounds|text=Heavy}} to {{ItemLink|Sniper Ammo|text=Sniper}}.
+* Introduced {{ItemLink|Extended Sniper Mag|text=Extended Sniper Mags}}. Compatible with Longbow DMR, [[Sentinel]], and [[Triple Take]].
+* Removed {{ItemLink|Extended Heavy Mag|text=Extended Heavy Mags}} compatibility.
+* Improved iron-sights accuracy.
+* ('''Undocumented''') Updated the {{Cosmetic|Season 3|Legendary|Reckoner}} skin.
+
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+
+; {{ItemLink|Season 3|noText=yes}} [[October 01, 2019 Patch]]
+* Removed {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}.
+* Reduced fire rate from 1.6 to 1.3.
+* Increased headshot multiplier from ×2 to ×2.15.
+* Reduced legshot damage multiplier from ×0.9 to ×0.8.
+
+
+; [[April 16, 2019 Patch]]
+* Increased fire rate from 1.2 to 1.6.
+* Increased legshot multiplier from ×0.75 to ×0.9.
+* Reduced base weapon sway by 33%.
+* Reduced base sway speed by 25%.
+* Increased magazine size from {{Level0123|5|6|8|10}} to {{Level0123|6|8|10|12}}.}}
+<br>
+<br>
+== Gallery ==
+<gallery widths="250" heights="250">
+The Reckoner Longbow Concept Art.jpg|Concept art for the {{Legendary|The Reckoner}} skin.
+McFly Longbow Concept Art.jpg|Concept art for the {{Legendary|McFly}} skin.
+Longhorn Longbow Concept Art.jpg|Concept art for the {{Legendary|Longhorn}} skin.<ref>https://www.artstation.com/artwork/gJEEaG</ref>
+Blinding Light Longbow Concept Art.jpg|Concept art for the Longbow's {{Legendary|Blinding Light}} skin.<ref>[https://www.artstation.com/artwork/3qVNl2 Rachel Gagner on ArtStation]</ref>
+DMR-X1 Longbow Concept Art.jpg|Concept art for the Longbow's {{Legendary|DMR-X1}} skin.<ref>[https://www.artstation.com/artwork/oAPw9L Stevo Chang on ArtStation]</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* Owing to its lineage as a variant of the [[R-301 Carbine]], it shares the same magazine design with said weapon, which is also the same model used for the {{ItemLink|Extended Light Mag|text=Extended Light Mags}}.
+** [[Bangalore]] can be seen using a fully-automatic Longbow in her Stories from the Outlands.
+* Despite being a designated marksman rifle (DMR), the Longbow in-game is classified as a [[sniper rifle]] rather than a [[marksman weapon]].
+<br>
+<br>
+== See also ==
+* [[Longbow DMR (Mobile)|Longbow DMR (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/D-101_Longbow-DMR D-101 Longbow DMR (''Titanfall'')]
+* [https://titanfall.wiki.gg/wiki/D-101_Longbow-DMR#Titanfall_2 DMR (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

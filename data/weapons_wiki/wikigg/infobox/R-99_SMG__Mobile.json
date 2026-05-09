@@ -1,0 +1,27 @@
+{
+  "title": "R-99 SMG/Mobile",
+  "infobox": {
+    "name": "R-99 SMG",
+    "description": "A super rapid-fire SMG that requires high skill in aiming.",
+    "type": "Sub machine gun",
+    "fireModes": "Auto",
+    "ammoType": "Light Rounds",
+    "creator": "Lastimosa Armory",
+    "barrel": "stabilizer",
+    "magType": "light",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "11",
+    "damageHead": "17 (1.5×)",
+    "damageLegs": "10 (0.9×)",
+    "rateOfFire": "1092",
+    "magazineSize": [
+      "22",
+      "25",
+      "28",
+      "32"
+    ],
+    "tacReload": "{{Level023|1.7|1.6|1.5}}",
+    "fullReload": "{{Level023|2.2|2.1|2}}"
+  }
+}

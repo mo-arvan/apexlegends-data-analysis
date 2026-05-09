@@ -1,0 +1,142 @@
+{{Infobox weapon
+| name = Mozambeam
+| icon = Mozambique Shotgun Icon.svg
+| description = STOP ASKING FOR HAVOC SELECT FIRE JUST LET IT GO
+| type = Shotgun
+| fireModes = [[File:Single-fire Icon.svg|25px|link=|Single]] Single
+| optics = true
+| ammoType = Energy Ammo
+| damageBody = 23×3
+| damageHead = 35×3 <small>(1.5×)</small>
+| damageLegs = 23×3
+| rateOfFire = 71
+| dps = 82
+| magazineSize = 18
+| tacreload = 1.9
+| fullreload = 2.4
+}}
+
+The '''Mozambeam''' is an April Fools' variant of the [[Mozambique Shotgun]] introduced on [[April Fools' Day (2023)|2023's April Fools' Day]] that utilizes {{ItemLink|Energy Ammo}}. It fires three hitscan beams in the shape of a triangle after a short delay, consuming 3 ammo with each shot. The Mozambeam essentially acts like the [[HAVOC Rifle]]'s single-fire mode, only usable with the now-removed {{ItemLink|Selectfire Receiver}} hop-up.
+
+Being a shotgun, the Mozambeam affects [[Mad Maggie]]'s movement speed because of her {{AbilityLink|Warlord's Ire}} Passive ability.
+
+Mozambeam utilizes the {{Epic|Off the Grid}} skin by default, but it can be converted into the equipped skin and Charm combination the player is currently using for the Mozambique.
+
+This is one of the seven April Fools' weapons in ''Apex Legends'', the other six being: [[Mozambique Shotgun/April Fools'|April Fools' Mozambique Shotgun]], [[P2020/April Fools'|April Fools' P2020]], [[Mozamblam]], [[Mozambrrr]], [[Mozamburst]], and [[Ol' Nessie]].
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+
+=== Damage Profile ===
+{{Damage profile
+| damage = 23
+| bulletsPerBurst = 3
+| headshotMdfr = 1.5
+| legMdfr = 1
+}}
+
+
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_shotgun_pistol</big> &nbsp;&nbsp; <small>''hopup_april_fools_energy''</small>
+|-
+! Variable !! Value !! Description
+|-
+| charge_time
+| style="text-align:center" | 0.5
+| Time before the weapon starts firing after pulling the trigger. Expressed in seconds.
+|-
+| fire_rate
+| style="text-align:center" | 2.85
+| Rounds fired in one second.
+|-
+| headshot_distance
+| style="text-align:center" | 5905
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 150 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 3
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 3
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 3
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.8
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.25
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.9
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 3
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 3
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 3
+| Spread radius when in the air and ADS.
+|}
+
+
+== History ==
+{{Patch notes|
+; April 2, 2023
+* Removed.
+
+; April 1, 2023
+* Introduced.
+* [[Ping]]ing certain [[Map Feature]]s destroys them, dropping either a {{Legendary|Fully Kitted}} [[Mozambique]] or one of five April Fools' weapons: Mozambeam, [[Mozamblam]], [[Mozambrrr]], [[Mozamburst]], or [[Ol' Nessie]].
+* Pinging a weapon that utilizes {{ItemLink|Energy Ammo}} changes it into a Mozambeam.}}
+
+{{Nav-Weapons}}

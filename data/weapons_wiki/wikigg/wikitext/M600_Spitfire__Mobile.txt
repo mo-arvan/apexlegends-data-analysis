@@ -1,0 +1,120 @@
+{{DISPLAYTITLE:Spitfire (Mobile)}}
+{{Tabs|
+{{Tabs2|M600 Spitfire|Main}}
+{{Tabs1|M600 Spitfire/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Spitfire
+| image = M600 Spitfire.png
+| icon = M600 Spitfire Icon.svg
+| description = Full-auto LMG with a high magazine capacity. Deals medium damage.
+| type = Light machine gun
+| fireModes = [[File:Auto Icon.svg|20px]] Auto
+| ammoType = Heavy Rounds
+| creator = [[File:Siwhan Industries.svg|20px]] [[Siwhan Industries]]
+| barrel = stabilizer
+| magType = heavy
+| optics = true
+| stock = standard
+| damageBody = 18
+| damageHead = 32 <small>(1.75×)</small>
+| damageLegs = 14 <small>(0.8×)</small>
+| rateOfFire = 546
+| magazineSize = 60
+| tacReload = 2.1
+| fullReload = 2.7
+}}
+The '''Spitfire''' is a fully-automatic [[LMG]] that utilizes {{ItemLink|Heavy Rounds}}.
+
+== Stats ==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Common|2x HCOG "Bruiser"}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Common|3x HCOG "Ranger"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Rare|2x-4x Variable AOG}}}}
+
+=== Damage profile ===
+{{Damage profile
+| damage = 18
+| headshotMdfr = 1.75
+| legMdfr = 0.8
+}}
+<references group="note"/>
+
+== Pros and Cons ==
+'''Pros'''
+
+* High damage, especially when aiming for the head.
+* Only three attachments slots, making fully kitting out fairly easy.
+* Large magazine size.
+
+'''Cons'''
+
+* Moderate recoil, and no Barrel mod can be accepted.
+* Lower fire-rate than other LMGs.
+** Slower TTK compared to other LMGs.
+* Higher bullet drop than other LMGs.
+
+== Skins ==
+There are a total of 14 skins for the M600 Spitfire: 2 {{Eternal}}, 3 {{Legendary}}, 6 {{Epic}}, 2 {{Rare}}, and 2 {{Common}}.
+
+<tabber>
+Eternal=
+<gallery widths="200px" heights="300px" mode="nolines">
+Asphalt Terror Spitfire Mobile.png|{{Eternal|Asphalt Terror}}<br/>[[Extreme Speed]]
+Chrome Equalizer Spitfire Mobile.jpg|{{Eternal|Chrome Equalizer}}<br/>[[Rhapsody's Underground]]
+</gallery>
+
+|-|
+
+Legendary=
+<gallery widths="200px" heights="300px" mode="nolines">
+Bone SAW Spitfire Mobile.png|{{Legendary|Bone SAW}}
+Darkness Army Spitfire Mobile.png|{{Legendary|Darkness Army}}<br/>[[Infernal Rager]]
+Sovereign Spitfire Mobile.png|{{Symbol|s3m}} {{Legendary|Sovereign}}<br/>Level 50
+</gallery>
+
+|-|
+
+Epic=
+<gallery widths="200px" heights="300px" mode="nolines">
+Warped Inspiration Spitfire Mobile.png|{{Epic|Warped Inspiration}}
+Odious Vapor Spitfire Mobile.png|{{Symbol|Prime Time}} {{Epic|Odious Vapor}}<br>Level 40
+Bad Mojo Spitfire Mobile.png|{{Epic|Bad Mojo}}<br/>[[Shipwrecked]]
+Cyberstripe Spitfire Mobile.png|{{Epic|Cyberstripe}}
+Crown of Kings Spitfire Mobile.png|{{Epic|Crown of Kings}}
+Martian Membrane Spitfire Mobile.png|{{Epic|Martian Membrane}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="200px" heights="300px" mode="nolines">
+Synthshot Spitfire Mobile.png|{{Symbol|Distortion}} {{Rare|Synthshot}}<br/>Level 10
+Lava Light Spitfire Mobile.jpg|{{Symbol|s2.5m}} {{Rare|Lava Light}}<br/>{{SeasonCurrency|2.5|4,000}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="200px" heights="300px" mode="nolines">
+Factory Issue Spitfire Mobile.png|{{Common|Factory Issue}}<br/>Default
+Recluse Spitfire Mobile.png|{{Common|Recluse}}<br/>{{Flux|1,000}}
+</gallery>
+</tabber>
+
+== History ==
+{{Patch notes|
+
+; ???
+* Reduced damage from 19 to 18.}}
+
+== Trivia ==
+* The Spitfire's icon lacks iron sights.
+* The {{Legendary|Darkness Army}} skin may reference [[wikipedia:Ash Williams|Ash Williams]]' chainsaw arm from the ''[[wikipedia:Evil Dead|Evil Dead]]'' film series.
+
+{{Nav-MobileWeapons}}

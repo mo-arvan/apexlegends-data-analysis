@@ -1,0 +1,18 @@
+{
+  "title": "Bocek Compound Bow/Heart Stealer",
+  "infobox": {
+    "name": "Heart Stealer",
+    "icon": "",
+    "description": "Damage enemies to heal yourself and nearby teammates.",
+    "type": "Marksman weapon",
+    "fireModes": "Single",
+    "ammoType": "Mythic Arrows",
+    "optics": "true",
+    "damageBody": "25-70{{Symbol|shatter caps}} 35-84",
+    "damageHead": "31-122 (1.25×)-(1.75×){{Symbol|shatter caps}} 42-105 (1.25×)",
+    "damageLegs": "20-63 (0.8×)-(0.9×){{Symbol|shatter caps}} 28-84 (0.8x)-(1×)",
+    "rateOfFire": "180-92",
+    "dps": "75-107{{Symbol|shatter caps}} 105-129",
+    "magazineSize": "∞"
+  }
+}

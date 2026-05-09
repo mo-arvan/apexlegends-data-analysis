@@ -1,0 +1,114 @@
+{{Tabs|
+{{Tabs2|Wingman|Main}}
+{{Tabs1|Wingman/Mobile|Mobile}}
+}}
+{{Infobox weapon
+| name = Wingman
+| image = Wingman.png
+| description = High-powered revolver. Can be hard to control.
+| type = Pistol
+| fireModes = [[File:Single-fire Icon.svg|20px]] Single
+| ammoType = Heavy Rounds
+| rateOfFire = 162
+| projectileSpeed = 18000
+| creator = [[Factions#Brockhaurd Manufacturing|Brockhaurd Manufacturing]]
+| id = wingman
+| magType = heavy
+| optics = true
+| hopup = skullpiercer
+| damageBody = 45
+| damageLegs = 41 (0.9×)
+| damageHead = 90<br>[[File:Skullpiercer Rifling.svg|20px]] 101
+| dps = 122
+| magazineSize = {{Level0123|8|9|10|12}}
+| tacReload = 2.1
+| fullReload = 1.9
+| ADSspeed = 0
+}}
+The '''Wingman''' is a [[revolver]] that utilizes {{ItemLink|Heavy Rounds}}.
+
+The Wingman can be enhanced with the {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}} Hop-Up which increases damage dealt by headshots.
+
+==Stats==
+=== Attachments ===
+{{main|Attachments}}
+; [[Optic]]s
+* {{ItemLink|1x Holo|text={{Common|1x Holo}}}}
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|1x Digital Threat|text={{Legendary|1x Digital Threat}}}}
+
+;[[Hop-Up]]
+
+* {{ItemLink|Skullpiercer Rifling|text={{Legendary|Skullpiercer Rifling}}}}
+
+; Others
+* {{ItemLink|Extended Heavy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+===Damage profile===
+{{Damage profile
+| damage = 45
+| headshotMdfr = 2
+| legMdfr = 0.9
+}}
+
+==Pros and Cons==
+; Pros
+* High damage per shot for a pistol.
+**This damage is further enhanced by the Skullpiercer Hop-Up, which allows it to kill with two shots to the head.
+* Ammo efficient.
+* Headshot dropoff is 254m.
+* No movement speed penalty when aiming down sights.
+* Good performance at all ranges.
+*Shares the same unobstructive iron sights as the RE-45.
+
+; Cons
+* Slow fire rate.
+* Slow projectile speed.
+* Low DPS.
+* Small magazine capacity.
+* A strange effect occurs with the recoil. Rather than returning to the original position after the initial kick, the gun will be slightly off its original position for a few seconds after the kick is reset, leading to less accuracy if spammed.
+*Punishes inaccuracy.
+** Can be difficult to use while under the effects of {{AbilityLink|Stim}}.
+
+== Skins ==
+There are a total of 8 skins for the Wingman: 2 {{Eternal}}, 2 {{Epic}}, 2 {{Rare}}, and 3 {{Common}}.
+<tabber>
+Mythic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Luxury's Edge Wingman Mobile.png|{{Mythic|Luxury's Edge}}<br/>[[Golden Geometry]]
+Descending Spirits Wingman Mobile.png|{{Mythic|Descending Spirits}}
+</gallery>
+|-|
+Epic=
+<gallery widths="250px" heights="300px" mode="nolines">
+Ripped Asunder Wingman Mobile.png|{{Epic|Ripped Asunder}}
+Fuchsia Punk Wingman Mobile.png|{{Epic|Fuchsia Punk}}<br/>[[Mecha Strike Go!]]
+</gallery>
+|-|
+Rare=
+<gallery widths="250px" heights="300px" mode="nolines">
+Molten Fissure Wingman Mobile.png|{{Rare|Molten Fissure}}
+Exoplanet Crust Wingman Mobile.png|{{Rare|Exoplanet Crust}}
+</gallery>
+|-|
+Common=
+<gallery widths="250px" heights="300px" mode="nolines">
+Factory Issue Wingman Mobile.png|{{Common|Factory Issue}}<br/>Default 
+New Moon Wingman Mobile.png|{{Common|New Moon}}
+Plague Wingman Mobile.png|{{Common|Plague}}
+</gallery>
+</tabber>
+
+== Gallery ==
+<gallery widths="250px" heights="300px" mode="nolines">
+Luxury's Edge Wingman Mobile Concept Art.jpg|Concept art for the {{Eternal|Luxury's Edge}} skin.<ref>https://www.artstation.com/artwork/QnyE64</ref>
+</gallery>
+
+==See also==
+* [[Wingman]]
+* [[titanfall:B3 Wingman (Titanfall 1)|B3 Wingman (Titanfall 1)]]
+* [[titanfall:B3 Wingman (Titanfall 2)|B3 Wingman (Titanfall 2)]]
+* [[titanfall:Wingman Elite|Wingman Elite (Titanfall 2)]]
+
+{{Nav-MobileWeapons}}

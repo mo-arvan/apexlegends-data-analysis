@@ -1,0 +1,347 @@
+{{Game|Main}}
+{{Infobox-Weapon
+| name = Nemesis Burst AR
+| description = Auto-trigger 4-round burst energy rifle.
+| type = Assault rifle
+| fireModes = [[File:Burst Icon.svg|25px|Burst|link=]] Automatic Burst (4)
+| ammoType = Energy Ammo
+| creator = {{Symbol|Rampart}} [[Rampart]] (designer)<br/>{{ItemLink|The Sisters}} (manufacturer)
+| barrel = stabilizer
+| magType = energy
+| optics = true
+| stock = standard
+| hopup = 
+| damageBody = 17
+| damageHead = 22
+| damageLegs = 13
+| rateOfFire = 451~582
+| dps = 128~165
+| magazineSize = {{Level0123|20|24|28|32}}
+|tacReload={{Level0123|2.7|2.61|2.52|2.43}}|fullReload={{Level0123|3|2.9|2.8|2.7}}}}
+
+The '''Nemesis Burst AR''', or '''Nemesis''', is an [[assault rifle]] introduced in {{ItemLink|Season 16}} that utilizes {{ItemLink|Energy Ammo|text=Energy Ammo}}. It fires in a 4-round burst but, unlike other burst weapons, the Nemesis keeps firing as long as the trigger is held, rather than being required to pull the trigger every time.
+
+The Nemesis has an energy meter which fills up as the weapon is fired; the fire rate of the weapon will increase relative to the charge. Each burst fired will add 16.7% charge whether or not any targets are hit. After 8 seconds without being fired, charge decreases by 12.5% per second.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+* {{ItemLink|2x-4x Variable AOG|text={{Epic|2x-4x Variable AOG}}}}
+* {{ItemLink|3x HCOG "Ranger"|image=3x HCOG Ranger.svg|text={{Epic|3x HCOG "Ranger"}}}}
+
+
+; Others
+* {{ItemLink|Barrel Stabilizer}} ({{Common}}, {{Rare}}, {{Epic}})
+* {{ItemLink|Extended Energy Mag}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+<br>
+<br>
+
+=== Damage Profile ===
+; Per round
+{{Damage profile
+| damage = 17
+| headshotMdfr = 1.3
+| legMdfr = 0.75
+}}
+<br>
+<br>
+; <span class="invert-image">[[File:Burst Icon.svg|25px|link=]] Burst</span>
+{{Damage profile
+| damage = 17
+| bulletsPerBurst = 4
+| headshotMdfr = 1.3
+| legMdfr = 0.75
+}}
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_nemesis</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 18
+| Rounds fired in one second.
+|-
+|burst_fire_delay_start
+|0.31
+|Time delay between two bursts at 0% charge. Expressed in seconds.
+|-
+| burst_fire_delay_end
+| style="text-align:center" | 0.19<ref>Starts at 0.31 and ramps up to 0.19.</ref>
+| Time delay between two bursts at 100% charge. Expressed in seconds.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 31000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 812 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 11828
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 300 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 4.5
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 9.9
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 12.6
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 3.6
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 12.6
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.3
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.6
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.55
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.5
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon before performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.27
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.23
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.5
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 6
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''30000''' damages with the '''Nemesis'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Nemesis'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''200''' enemies while ADS with the '''Nemesis'''
+|-
+|''Long Range Kills''
+| style="text-align:left" | Kill '''250''' enemies with '''50''' meters away with the '''Nemesis'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''700''' enemies with the '''Nemesis'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|The Nemesis was created by the weapons mod group known as [[The Sisters]], who previously helped Rampart learn the tricks of the trade. However, when Rampart left their group and began growing more successful than them, they burned down Rampart's shop. Rampart suspected her prototype of the Nemesis was lost in the fire. Unbeknownst to her, The Sisters had stolen it, and decided to release it as their own.}}
+
+The Nemesis Burst AR was originally designed by [[Rampart (character)|Rampart]] during her time with [[The Sisters]], the gang led by [[Big Sister]].<ref>[[Rampart]] Nemesis pickup quote - "Errgh... Nickin' my design and callin' it the Neme-SIS? Bloody evil. And bloody brilliant."</ref> Its prototype was stolen during an attack on Rampart's shop, and it was later released by the Sisters as their first product as a licensed business.<ref>[[Transition]] - {{ItemLink|Season 16|noText=Yes}} {{Rare|The Modder's Corner}}</ref>
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendskin|19}}
+{{#vardefine:epicskin|16}}
+{{#vardefine:rareskin|20}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|<br>{{Coins|1,800}}}}
+{{#vardefine:ac2|<br>{{Coins|1,000}}}}
+{{#vardefine:ac3|<br>{{Coins|500}}}}
+There are {{#expr:{{#var:legendskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}} skins for the Nemesis Burst AR:  {{#var:legendskin}} {{Legendary}}, {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}}, and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="290" heights="120" mode="nolines">
+Streamlined Nemesis.png|{{Legendary|Streamlined}}<br/>{{CraftingMetals|1,200}}
+Street Legal Nemesis.png|{{Legendary|Street Legal}}<br/>{{CraftingMetals|1,200}}
+Superconductor Nemesis.png|{{Legendary|Superconductor}}<ref name="story" group="Story">{{Legendary|Superconductor}} & {{Legendary|Twisted Transistor}}: {{Symbol|Rampart}} [[Rampart]]'s prototype for the Nemesis was a (nearly functional!) thing for beauty, until the Sister stole the design, completed it, and took credit for themselves.</ref><br/>{{CraftingMetals|1,200}}
+Twisted Transistor Nemesis.png|{{Legendary|Twisted Transistor}}<ref name="story" group="Story"/><br/>{{CraftingMetals|1,200}}
+The Cleaner Nemesis.png|{{Cosmetic|Dressed to Kill|Legendary|The Cleaner}}{{#var:ac1}}
+Night Fury Nemesis.png|{{Cosmetic|New Moon Store|Legendary|Night Fury}}
+Arch Nemesis Nemesis.png|[[File:Sale Icon.svg|22px|link=Revenant's Rebirth Store]] {{Legendary|Arch Nemesis}}{{#var:ac1}}
+Tomb Maker Nemesis.png|{{Cosmetic|Harbingers|Legendary|Tomb Maker}}{{#var:ac1}}
+Gilded Age Nemesis.png|{{Cosmetic|Season 19|Legendary|Gilded Age}}<br>Level 1
+Megaflare Nemesis.png|{{Cosmetic|Final Fantasy VII|Legendary|Megaflare}}
+Longevity Nemesis.png|[[File:Sale Icon.svg|22px|link=Lunar New Year Sale]] {{Legendary|Longevity}}{{#var:ac1}}
+The Ultimatum Nemesis.png|{{Cosmetic|Shadow Society|Legendary|The Ultimatum}}{{#var:ac1}}
+Suburban Sights Nemesis.png|{{Cosmetic|Urban Assault|Legendary|Suburban Sights}}{{#var:ac1}}
+Splintered Curse Nemesis.png|[[File:Sale Icon.svg|22px|link=Golden Week (2024)]] {{Legendary|Splintered Curse}}
+Sequence Repeater Nemesis.png|{{Cosmetic|Temporal Chaos|Legendary|Sequence Repeater}}{{#var:ac1}}
+Radiance Burst Nemesis.png|{{Cosmetic|s25|Legendary|Radiance Burst}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Split 1 Premium Lv 60
+Shatter Core Nemesis.png|{{Cosmetic|s25|Legendary|Shatter Core}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Split 2 Premium Lv 60
+Citricide Nemesis.png|{{Cosmetic|Haute Shot|Legendary|Citricide}}
+Seamless Drive Nemesis.png|{{Cosmetic|Supersonic|Legendary|Seamless Drive}}
+</gallery>
+;Note
+<references group="note"/>
+
+;Story
+<references group="Story"/>
+|-|
+
+Epic=
+<gallery widths="290" heights="120" mode="nolines">
+Break the Enemy Nemesis.png|{{Epic|Break the Enemy}}<br>{{CraftingMetals|400}}
+Code of Honor Nemesis.png|{{Epic|Code of Honor}}<br>{{CraftingMetals|400}}
+Eye of the Storm Nemesis.png|{{Epic|Eye of the Storm}}<br>{{CraftingMetals|400}}
+Off the Grid Nemesis.png|{{Epic|Off the Grid}}<br>{{CraftingMetals|400}}
+Trial by Fire Nemesis.png|{{Epic|Trial By Fire}}<br>{{CraftingMetals|400}}
+Subwoofer Nemesis.png|{{Cosmetic|4th Anniversary|Epic|Subwoofer}}{{#var:ac2}}
+Accelerated Adversary Nemesis.png|{{Cosmetic|Season 18|Epic|Accelerated Adversary}}<br>Level 80
+Light Bender Nemesis.png|{{Cosmetic|Doppelgangers|Epic|Light Bender}}<br>Prize Track
+Hive Hunter Nemesis.png|{{Cosmetic|Inner Beast|Epic|Hive Hunter}}{{#var:ac1}}
+Death Rattle Nemesis.png|{{Cosmetic|Space Hunt|Epic|Death Rattle}}{{#var:ac2}}
+Glacial Shatter Nemesis.png|{{Cosmetic|Season 23|Epic|Glacial Shatter}}<br>Split 1 Premium Lv 36
+Spilled Milk Nemesis.png|{{Cosmetic|Season 24|Epic|Spilled Milk}}<br>Split 2 Premium Lv 23
+Ego Shock Nemesis.png|{{Cosmetic|Beast Mode|Epic|Ego Shock}}
+Fox's Aura Nemesis.png|{{Symbol|S27}} {{Epic|Fox's Aura}}<br> Split 1 Free Lv 32
+Reaper's Weapon Nemesis.png|{{Cosmetic|S28|Epic|Reaper's Weapon}}<br> Split 1 Premium Lv 1
+Sakura Sentry Nemesis.png|{{Cosmetic|7th Anniversary|Epic|Fox's Aura}}
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="290" heights="120" mode="nolines">
+Chaos Theory Nemesis.png|{{Rare|Chaos Theory}}<br>{{CraftingMetals|60}}
+Cloudburst Nemesis.png|{{Rare|Cloudburst}}<br>{{CraftingMetals|60}}
+Cold Fusion Nemesis.png|{{Rare|Cold Fusion}}<br>{{CraftingMetals|60}}
+Derez Nemesis.png|{{Rare|Derez}}<br>{{CraftingMetals|60}}
+Generation X Nemesis.png|{{Rare|Generation X}}<br>{{CraftingMetals|60}}
+Jester Nemesis.png|{{Rare|Jester}}<br>{{CraftingMetals|60}}
+Jungle Frenzy Nemesis.png|{{Rare|Jungle Frenzy}}<br>{{CraftingMetals|60}}
+New Moon Nemesis.png|{{Rare|New Moon}}<br>{{CraftingMetals|60}}
+Outback Nemesis.png|{{Rare|Outback}}<br>{{CraftingMetals|60}}
+Shattered Nemesis.png|{{Rare|Shattered}}<br>{{CraftingMetals|60}}
+Skyrise Nemesis.png|{{Rare|Skyrise}}<br>{{CraftingMetals|60}}
+Stellar Nemesis.png|{{Rare|Stellar}}<br>{{CraftingMetals|60}}
+Sweet 16 Nemesis.png|{{Rare|Sweet 16}}<br>{{CraftingMetals|60}}
+Triumphant Arch Nemesis.png|{{Rare|Triumphant Arch}}<br>{{CraftingMetals|60}}
+Yellow Snake Nemesis.png|{{Rare|Yellow Snake}}<br>{{CraftingMetals|60}}
+Carbon Shredder Nemesis.png|{{Cosmetic|Season 17|Rare|Carbon Shredder}}<br>Level 9
+Holographic Ember Nemesis.png|{{Cosmetic|Season 18|Rare|Holographic Ember}}<br>Level 17
+Toxic Bite Nemesis.png|{{Cosmetic|Season 20|Rare|Toxic Bite}}<br>Level 13
+Dark Infusion Nemesis.png|{{Cosmetic|Season 21|Rare|Dark Infusion}}<br>Free - Level 29
+Scarlet Fracture Nemesis.png|[[File:ALGS Icon.svg|22px|link=]] {{Rare|Scarlet Fracture}}
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="290" heights="120" mode="nolines">
+Factory Issue Nemesis.png|{{Common|Factory Issue}}<br>Default
+Arctic Nemesis.png|{{Common|Arctic}}<br>{{CraftingMetals|30}}
+Bengal Nemesis.png|{{Common|Bengal}}<br>{{CraftingMetals|30}}
+Cardinal Nemesis.png|{{Common|Cardinal}}<br>{{CraftingMetals|30}}
+Clearwater Nemesis.png|{{Common|Clearwater}}<br>{{CraftingMetals|30}}
+Clover Nemesis.png|{{Common|Clover}}<br>{{CraftingMetals|30}}
+Evergreen Nemesis.png|{{Common|Evergreen}}<br>{{CraftingMetals|30}}
+Flamingo Nemesis.png|{{Common|Flamingo}}<br>{{CraftingMetals|30}}
+Lagoon Nemesis.png|{{Common|Lagoon}}<br>{{CraftingMetals|30}}
+Midnight Nemesis.png|{{Common|Midnight}}<br>{{CraftingMetals|30}}
+Oceanic Nemesis.png|{{Common|Oceanic}}<br>{{CraftingMetals|30}}
+Orchid Nemesis.png|{{Common|Orchid}}<br>{{CraftingMetals|30}}
+Rainforest Nemesis.png|{{Common|Rainforest}}<br>{{CraftingMetals|30}}
+Sandstorm Nemesis.png|{{Common|Sandstorm}}<br>{{CraftingMetals|30}}
+Sunfire Nemesis.png|{{Common|Sunfire}}<br>{{CraftingMetals|30}}
+Yellowjacket Nemesis.png|{{Common|Yellowjacket}}<br>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{Symbol|Beast Mode}} [[March 25, 2025 Patch]]
+* Charge deplete time increased to 8s (was 6s).
+* Delay before charge starts depleting increased to 8s (was 6s).
+* Increased barrel effectiveness at all tiers.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 12, 2025 Patch]]
+* Damage increased to 17 (was 16).
+* Headshot damage: 22.
+
+; {{ItemLink|Harbingers|noText=yes}} [[September 19, 2023 Patch]]
+* Removed from the {{ItemLink|Replicator}}.
+* Reduced damage from 17 to 16.
+* ADS recoil increased.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Moved in the {{ItemLink|Replicator}}. Craftable for {{Materials|30}}.
+
+
+; {{ItemLink|Dressed to Kill|noText=yes}} [[June 20, 2023 Patch]]
+* Reduced projectile speed from 32000 to 31000.
+* Increased projectile gravity scale from 1 to 1.15.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Introduced.}}
+<br>
+<br>
+== Teasers ==
+=== Datamined and Leaked Data ===
+The Nemesis got initially leaked in both the {{ItemLink|Evolution}} Collection Event [https://youtu.be/pbnxH4AlypU trailer] and the [https://www.ea.com/games/apex-legends/news/evolution-collection-event patch notes] for the [[September 14, 2021 Patch]], appearing in the list of purchasable {{ItemLink|Arenas}} weapons using the [[R-301 Carbine]] icon as a placeholder<ref>[https://media.contentapi.ea.com/content/dam/apex-legends/common/evolution-patch-notes/rampart-shop-devo.png.adapt.1456w.png Rampart Arenas Takeover]</ref>. It has been confirmed by a developer<ref>[https://mobile.twitter.com/RKRigney/status/1435993192768409600 Ryan K. Rigney on Twitter]</ref> that this leak was accidental, and that the weapon is "not releasing anytime soon".
+
+The Nemesis Burst AR reappeared in another leak still using the R-301 as placeholder, this time without being compatible with {{ItemLink|Standard Stock|text=Standard Stocks}}, and using the <span class="invert-image">[[File:Auto Icon.svg|20px|link=]]</span> Auto fire mode, even though the latter seems to be a placeholder icon. The Nemesis also appeared with a charge bar, similar to the [[Sentinel]] and [[Rampage LMG]], although its effects were unknown at the time, but it was known that it could be charged by simply firing the weapon.
+
+On March 22, 2022, the Nemesis reappears once again, this time with a unique model and icon. Some of its stats were also shown, as well as being once again compatible with {{ItemLink|Standard Stock|text=Standard Stocks}}.
+<br>
+<br>
+== Trivia ==
+* The Nemesis bears a striking resemblance to the [[tf:Splitter Rifle|Splitter Rifle]] used by [[tf:Ion|Ion]]-class Titans in ''Titanfall 2''.
+** [https://www.youtube.com/shorts/YHl7ZD0vU7U A rare Nemesis full reload animation] also references this.
+* The name for the Nemesis' {{Legendary|Twisted Transistor}} skin is a reference to a song of the same name by the nu metal band Korn from their 2005 album ''See You on the Other Side''.
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

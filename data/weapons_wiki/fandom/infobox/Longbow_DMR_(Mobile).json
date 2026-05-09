@@ -1,0 +1,40 @@
+{
+  "title": "Longbow DMR (Mobile)",
+  "infobox": {
+    "name": "Longbow DMR",
+    "image": "Longbow DMR.png",
+    "description": "Semi-auto Sniper Rifle, slow rate of fire, but high damage.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "Wonyeon",
+    "barrel": "stabilizer",
+    "magType": "sniper",
+    "optics": "true",
+    "stock": "sniper",
+    "hopup": "skullpiercer",
+    "damageBody": "55",
+    "damageLegs": "44 (0.8x)",
+    "damageHead": "110 (2x)",
+    "rateOfFire": "78",
+    "dps": "72",
+    "magazineSize": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "tacReload": [
+      "2.5",
+      "?",
+      "?",
+      "?"
+    ],
+    "fullReload": [
+      "3.15",
+      "?",
+      "?",
+      "?"
+    ]
+  }
+}

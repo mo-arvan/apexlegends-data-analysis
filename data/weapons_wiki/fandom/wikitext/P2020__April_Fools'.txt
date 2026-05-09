@@ -1,0 +1,41 @@
+{{Infobox weapon
+| name = P2020
+| image = P2020.png
+| icon = P2020 Icon.svg
+| description = Semi-auto pistol.
+| type = Pistol
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Light Rounds
+| damageBody = 24
+| damageLegs = 21 (0.9×)
+| damageHead = 36 (1.50×)
+| rateOfFire = 510
+| dps = 108
+| magazineSize = 25
+| reload = 1.13
+}}
+
+The '''April Fools'''' variant of the [[P2020]] is a semi-automatic [[pistol]] that utilizes {{ItemLink|Light Rounds}}.
+
+When enabled, this version of the P2020 replaces the standard version.
+
+This is one of the seven April Fools' weapons in ''Apex Legends'', the other six being: [[Mozambique Shotgun/April Fools'|April Fools' Mozambique Shotgun]], [[Mozambeam]], [[Mozamblam]], [[Mozambrrr]], [[Mozamburst]], and [[Ol' Nessie]].
+
+== Damage Profile ==
+{{Damage profile
+| damage = 24
+| headshotMdfr = 1.5
+| legMdfr = 0.9
+}}
+
+
+== History ==
+{{Patch notes|
+; April 2, 2021
+* Removed.
+
+; April 1, 2021
+* Introduced.
+}}
+
+{{Nav weapons}}

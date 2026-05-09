@@ -1,0 +1,20 @@
+{
+  "title": "Mozambique Shotgun/Mozamblam",
+  "infobox": {
+    "name": "Mozamblam",
+    "icon": "Mozambique Shotgun Icon.svg",
+    "description": "Mom: We have Kraber at homeKraber at home:",
+    "type": "Shotgun",
+    "fireModes": "Single",
+    "optics": "true",
+    "ammoType": "Sniper Ammo",
+    "damageBody": "120",
+    "damageHead": "240 (2×)",
+    "damageLegs": "120",
+    "rateOfFire": "54",
+    "dps": "108",
+    "magazineSize": "1",
+    "tacreload": "1.9",
+    "fullreload": "2.4"
+  }
+}

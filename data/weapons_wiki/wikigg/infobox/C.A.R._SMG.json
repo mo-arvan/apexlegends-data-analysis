@@ -1,0 +1,38 @@
+{
+  "title": "C.A.R. SMG",
+  "infobox": {
+    "name": "C.A.R. SMG",
+    "description": "Adaptable SMG. Uses light and heavy ammo.",
+    "type": "Submachine Gun",
+    "fireModes": "Auto",
+    "ammoType": "heavyLight",
+    "creator": "Siwhan Industries",
+    "barrel": "laser",
+    "magType": "car",
+    "optics": "true",
+    "stock": "standard",
+    "damageBody": "14",
+    "damageHead": "18",
+    "damageLegs": "11",
+    "rateOfFire": "930",
+    "dps": "217",
+    "magazineSize": [
+      "20",
+      "23",
+      "25",
+      "28"
+    ],
+    "tacReload": [
+      "1.7",
+      "1.64",
+      "1.59",
+      "1.53"
+    ],
+    "fullReload": [
+      "2.13",
+      "2.06",
+      "1.99",
+      "1.92"
+    ]
+  }
+}

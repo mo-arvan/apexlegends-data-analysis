@@ -1,0 +1,48 @@
+{{Infobox item
+| name = Thermite Grenade
+| imageSpace = 
+{{ItemBox
+| lvl = 1
+| size = 200px
+| image = [[File:Thermite Grenade white.svg|140px|center]]
+}}
+| itemDesc = Creates a horizontal wall of flames. 
+| itemType = Grenade
+| lootTier = {{Common|Level 1}}
+| stackSize = 1
+}}
+The '''Thermite Grenade''' is a [[grenade]] [[item]] which creates a streak of fire across the ground. 
+
+==Function==
+When thrown, the Thermite Grenade travels and bounces off of walls until it hits a floor. At that point, it creates a 6 meter long line of flame across the ground, perpendicular to the direction it was thrown from, which lasts 8 seconds. Enemies take 4 damage per tick (8 damage/sec) when standing in the flames, and receive an afterburn effect which deals 25 damage whether or not they leave the flames. 
+
+The Thermite Grenade will deal damage to [[door]]s. A Thermite Grenade can be expended to rev up the [[Rampage LMG]], boosting its fire rate. [[Fuse]]'s passive ability, {{AbilityLink|Grenadier}}, allows him to carry 2 Thermite Grenades per inventory slot instead of 1.
+
+== History ==
+{{Patch notes|
+; {{Symbol|season 13}} [[May 10, 2022 Patch]]
+* {{ItemLink|Thermite Grenade}}:
+** Reduced purchase cost in {{ItemLink|Arenas}} from {{Materials|100}} to {{Materials|75}}.
+
+; [[February 02, 2021 Patch]]
+* Introduced the [[legend]] [[Fuse]], who can hold 2 grenades per inventory slot.
+* Fixed an issue with {{ItemLink|Thermite Grenade}}s doing damage through certain walls on [[Olympus]].
+
+; [[March 03, 2020 Patch]]
+* Grenade stacks reduced from 2 to 1.
+
+; [[July 02, 2019 Patch]]
+* {{ItemLink|Thermite Grenade}}: Fixed an issue where players downed with thermite could be invincible to thermite after being revived.
+
+; [[June 04, 2019 Patch]]
+* {{ItemLink|Thermite Grenade}}: Thermite grenades now cause damage to doors.
+
+; [[March 19, 2019 Patch]]
+* {{ItemLink|Thermite Grenade}}: Turned down the draw/holster sound slightly for thermite grenades.
+}}
+==See also==
+* [[Frag Grenade]]
+* [[Arc Star]]
+{{Nav-Weapons}}
+{{Nav-Items}}
+[[Category:Items]]

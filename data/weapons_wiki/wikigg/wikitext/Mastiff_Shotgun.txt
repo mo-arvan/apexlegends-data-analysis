@@ -1,0 +1,479 @@
+{{Tabs|
+{{Tabs1|Mastiff Shotgun|Main}}
+{{Tabs2|Mastiff Shotgun/Mobile|Mobile}}
+}}
+{{Infobox-Weapon
+| name = Mastiff Shotgun
+| description = Powerful semi-auto shotgun.
+| type = Shotgun
+| fireModes = [[File:Single-fire Icon.svg|25px|link=]] Single
+| ammoType = Shotgun Shells
+| creator = {{ItemLink|Lastimosa Armory}}
+| barrel =
+| magType = bolt
+| optics = true
+| stock = standard
+| hopup =
+| damageBody = 16×6 (96)
+| damageHead = 16×6 (96)
+| damageLegs = 16×6 (96)
+| rateOfFire = {{Level0123|66|73|76|79}}
+| dps = {{Level0123|106|117|122|126}}
+| magazineSize = 5
+| tacReload = Segmented<ref name="reload">The Mastiff reloads its rounds one by one; its reload times vary depending on how many rounds are inserted. Tactical reload animation for the first round lasts {{Level0123|0.9|0.87|0.84|0.81}} seconds. Full reload animation for the first round lasts {{Level0123|1.6|1.55|1.49|1.44}} seconds. Each subsequent round is loaded after the first one, every {{Level0123|0.51|0.49|0.48|0.46}} seconds. After ending the reload, a final animation lasting 0.55 seconds is played.<br>
+* 1 round: {{Level0123|1.45|1.42|1.39|1.36}} seconds (tactical), {{Level0123|2.15|2.1|2.04|1.99}} seconds (full)
+* 2 rounds: {{Level0123|1.96|1.93|1.9|1.87}} seconds (tactical), {{Level0123|2.66|2.61|2.55|2.5}} seconds (full)
+* 3 rounds: {{Level0123|2.47|2.44|2.41|2.38}} seconds (tactical), {{Level0123|3.17|3.12|3.06|3.01}} seconds (full)
+* 4 rounds: {{Level0123|2.98|2.95|2.92|2.89}} seconds (tactical), {{Level0123|3.68|3.63|3.57|3.52}} seconds (full)
+* 5 rounds: {{Level0123|4.19|4.14|4.08|4.03}} seconds.</ref>
+| fullReload = Segmented<ref name="reload"/>
+}}
+The '''Mastiff Shotgun''', or '''Mastiff''', is a semi-automatic [[shotgun]] that utilizes {{ItemLink|Shotgun Shells}}. It fires five pellets in a horizontal line that narrows as the sights are aimed down, reducing spread and thus increasing accuracy.
+
+Being a shotgun, the Mastiff affects [[Mad Maggie]]'s movement speed because of her {{AbilityLink|Warlord's Ire}} Passive ability.
+<br>
+<br>
+== Stats ==
+=== Attachments ===
+; [[Optic]]s
+* {{ItemLink|1x HCOG "Classic"|image=1x HCOG Classic.svg|text={{Common|1x HCOG "Classic"}}}}
+* {{ItemLink|1x-2x Variable Holo|image=1x-2x Variable Holo.svg|text={{Rare|1x-2x Variable Holo}}}}
+* {{ItemLink|2x HCOG "Bruiser"|image=2x HCOG Bruiser.svg|text={{Rare|2x HCOG "Bruiser"}}}}
+
+
+; Other
+* {{ItemLink|Shotgun Bolt}} ({{Common}}, {{Rare}}, {{Epic}}, {{Legendary}})
+* {{ItemLink|Standard Stock}} ({{Common}}, {{Rare}}, {{Epic}})
+<br>
+<br>
+
+=== Damage Profile ===
+'''Note:''' {{AbilityLink|Fortified}} headshot damage may vary ±8. This is due to uncertainty about whether Fortified reduces non-rounded or rounded damage. This difference is negligible on non-pellet-based weapons.
+{{Damage profile
+|damageref=<ref group="note"> Shotgun damage is calculated per pellet.<br/>Correct: 11 dmg/pellet x 1.25 = 13.75 dmg/pellet ≈ 14 dmg/pellet, resulting in 112 damage total.<br/>Incorrect: 88 dmg x 1.25 = 110 dmg.</ref>
+| damage = 19
+| bulletsPerBurst = 5
+| headshotMdfr = 1
+| legMdfr = 1
+}}
+<references group="note"/>
+<br>
+<br>
+=== Advanced Stats ===
+{| class="wikitable mw-collapsible mw-collapsed" style="text-align:left; width:75%"
+|-
+! colspan="3" | <big>mp_weapon_mastiff</big>
+|-
+! Variable !! Value !! Description
+|-
+| fire_rate
+| style="text-align:center" | 1.1
+| Rounds fired in one second.
+|-
+| projectile_launch_speed
+| style="text-align:center" | 16000
+| Speed at which projectiles travel.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units] per second, equals to 305 meters per second.
+|-
+| headshot_distance
+| style="text-align:center" | 1500
+| Distance at which shots can no longer deal headshots.<br>Expressed in [https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Hammer_unit hammer units], equals to 38 meters.
+|-
+| spread_stand_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while standing.
+|-
+| spread_stand_hip_run
+| style="text-align:center" | 0
+| Hipfire spread radius while walking.
+|-
+| spread_stand_hip_sprint
+| style="text-align:center" | 0
+| Hipfire spread radius while sprinting.
+|-
+| spread_crouch_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while crouching.
+|-
+| spread_air_hip
+| style="text-align:center" | 0
+| Hipfire spread radius while in the air.
+|-
+| deployfirst_time
+| style="text-align:center" | 1.25
+| Time before the weapon can be fired after picking it up for the first time. Expressed in seconds.
+|-
+| deploy_time
+| style="text-align:center" | 0.45
+| Time to bring out the weapon. Expressed in seconds.
+|-
+| holster_time
+| style="text-align:center" | 0.4
+| Time to holster the weapon. Expressed in seconds.
+|-
+| raise_time
+| style="text-align:center" | 0.3
+| Time to bring out the weapon after performing an action. Expressed in seconds.
+|-
+| lower_time
+| style="text-align:center" | 0.25
+| Time to holster the weapon after performing an action. Expressed in seconds.
+|-
+| zoom_time_in
+| style="text-align:center" | 0.22
+| Time to enter ADS with the weapon. Expressed in seconds.
+|-
+| zoom_time_out
+| style="text-align:center" | 0.2
+| Time to exit ADS with the weapon. Expressed in seconds.
+|-
+| ads_move_speed_scale
+| style="text-align:center" | 0.9
+| Multiplier applied to the Legend's movement speed while ADS with the weapon.
+|-
+| spread_stand_ads
+| style="text-align:center" | 0
+| Spread radius when standing and ADS.
+|-
+| spread_crouch_ads
+| style="text-align:center" | 0
+| Spread radius when crouching and ADS.
+|-
+| spread_air_ads
+| style="text-align:center" | 0
+| Spread radius when in the air and ADS.
+|}
+<br>
+<br>
+== Weapon Mastery ==
+{| class="wikitable" style="text-align:center; width:50%"
+|-
+! colspan="2" | <span class="invert-image">[[File:{{PAGENAME}} Icon.svg|x30px|link=]]</span> <big>MASTERY TRIALS</big>
+|-
+! Trial Name !! colspan="2" | Requirements
+|-
+|''Damage Done''
+| style="text-align:left" | Deal '''20000''' damages with the '''Mastiff'''
+|-
+|''Hipfire Kills''
+| style="text-align:left" | Kill '''100''' enemies with hipfire with the '''Mastiff'''
+|-
+|''ADS Kills''
+| style="text-align:left" | Kill '''150''' enemies while ADS with the '''Mastiff'''
+|-
+|''Close Range Kills''
+| style="text-align:left" | Kill '''200''' enemies within '''10''' meters with the '''Mastiff'''
+|-
+|''Kills''
+| style="text-align:left" | Kill '''500''' enemies with the '''Mastiff'''
+|}
+<br>
+<br>
+
+== Lore ==
+{{Quote|Originally designed as an anti-Pilot shotgun for ground troops, the Mastiff is a powerhouse against even the toughest adversaries. Each Mastiff shell separates into "microslugs" when fired, spreading in a predictable and deadly horizontal pattern. Given the intricate nature of its design, the cost and time associated with creating a Mastiff makes it a rare but prized firearm.}}
+
+The M1901 Mastiff Combat Shotgun was developed specifically for low-gravity close-quarters engagements. The kinetic energy produced when fired in low-gravity can severely unbalance its user with massive recoil, so the engineers at [[Lastimosa Armory]] incorporated a muzzle velocity dampening system which mitigates that energy and greatly reduces recoil.
+
+Intended for low to zero gravity ship boarding and clearing operations, the Mastiff gained notoriety throughout [[The Frontier]] as a reliable and devastating combat shotgun. Shells can be fed through the under-mounted magazine or with the optional drum magazine upgrade. Troops from the [[IMC | IMC's]] 401st often refer to it as the "Mobile Claymore" as its high rate of fire proved to be devastating.<ref name="ArtStation">[https://www.artstation.com/artwork/l5zGV Ryan Lastimosa on ArtStation]</ref>
+<br>
+<br>
+== Skins ==
+{{#vardefine:legendaryskin|22}}
+{{#vardefine:epicskin|17}}
+{{#vardefine:rareskin|34}}
+{{#vardefine:commonskin|16}}
+{{#vardefine:ac1|<br>{{Coins|1,800}}}}
+{{#vardefine:ac2|<br>{{Coins|1,000}}}}
+{{#vardefine:ac3|<br>{{Coins|500}}}}
+There are a total of '''{{#expr: {{#var:legendaryskin}} + {{#var:epicskin}} + {{#var:rareskin}} + {{#var:commonskin}}}}''' skins for {{PAGENAME}}: {{#var:legendaryskin}} {{Legendary}},  {{#var:epicskin}} {{Epic}}, {{#var:rareskin}} {{Rare}} and {{#var:commonskin}} {{Common}}.
+
+<tabber>
+Legendary=
+<gallery widths="250" heights="300" mode="nolines">
+Warp Zone Mastiff.png|{{Legendary|Warp Zone}}<br/>{{CraftingMetals|1,200}}
+The Pest Controller Mastiff.png|{{Legendary|The Pest Controller}}<br/>{{CraftingMetals|1,200}}
+Boom Stick Mastiff.png|{{Cosmetic|Fight or Fright 2019|Legendary|Boom Stick}}
+Final Boss Mastiff.png|{{Cosmetic-NI|Recolor|Legendary|Final Boss}}<br/>Needs {{Legendary|The Pest Controller}}
+Pixel Hunter Mastiff.png|{{Cosmetic-NI|Recolor|Legendary|Pixel Hunter}}<br/>Needs {{Legendary|Warp Zone}}
+Tombstick Mastiff.png|{{Cosmetic|Lost Treasures|Legendary|Tombstick}}
+No Time to Bleed Mastiff.png|{{Cosmetic|Fuse Launch Bundle|Legendary|No Time to Bleed}}
+Athena's Grace Mastiff.png|{{Cosmetic|Chaos Theory|Legendary|Athena's Grace}}
+Master Blaster Mastiff.png|{{Cosmetic|Evolution|Legendary|Master Blaster}}
+Game Over Mastiff.png|{{Cosmetic-NI|Recolor|Legendary|Game Over}}<br>Needs {{Legendary|The Pest Controller}}
+Crooked Steps Mastiff.png|{{Cosmetic|Warriors|Legendary|Crooked Steps}}
+Headliner Mastiff.png|{{Cosmetic|Season 16|Legendary|Headliner}}<ref group="note" name="reactive">This skin is [[Reactive Weapon|reactive]].</ref><br>Level 100
+Afterparty Mastiff.png|{{Cosmetic|Season 16|Legendary|Afterparty}}<ref group="note" name="reactive"/><br>Level 110
+Howling Vengeance Mastiff.png|{{Cosmetic|Imperial Guard|Legendary|Howling Vengeance}}
+Gold and Venom Mastiff.png|{{Cosmetic|Dressed to Kill|Legendary|Gold and Venom}}
+Energized Anvil Mastiff.png|{{Cosmetic|Doppelgangers|Legendary|Energized Anvil}}
+Bone Breaker Mastiff.png|{{Cosmetic|Techno Terror|Legendary|Bone Breaker}}
+Shardblaster Mastiff.png|{{Cosmetic|Void Mercenaries|Legendary|Shardblaster}}
+Keylime Kick Mastiff.png|{{Cosmetic|Fight Force|Legendary|Keylime Kick}}
+Peaches and Cream Mastiff.png|{{Cosmetic|s25|Legendary|Peaches and Cream}}
+Ice Blaster Mastiff.png|{{Cosmetic|Winter Wipeout|Legendary|Ice Blaster}}
+Epyon SG Mastiff.png|{{Cosmetic|Apex Legends X Gundam|Legendary|Epyon SG}}
+</gallery>
+<references group="note"/>
+
+|-|
+
+Epic=
+<gallery widths="250" heights="300" mode="nolines">
+Eye of the Storm Mastiff.png|{{Epic|Eye of the Storm}}<br/>{{CraftingMetals|400}}
+Trial by Fire Mastiff.png|{{Epic|Trial by Fire}}<br/>{{CraftingMetals|400}}
+Code of Honor Mastiff.png|{{Epic|Code of Honor}}<br/>{{CraftingMetals|400}}
+Off the Grid Mastiff.png|{{Epic|Off the Grid}}<br/>{{CraftingMetals|400}}
+Break the Enemy Mastiff.png|{{Epic|Break the Enemy}}<br/>{{CraftingMetals|400}}
+Underwater Love Mastiff.png|{{Cosmetic|Awakening|Epic|Underwater Love}}{{#var:ac2}}
+Signature Solution Mastiff.png|{{Cosmetic|4th Anniversary|Epic|Signature Solution}}{{#var:ac2}}
+Electric Heatwave Mastiff.png|[[File:Season 17.svg|22px|link=What's Past is Prologue]] {{Epic|Electric Heatwave}}<br>Treasure Pack Reward
+Moogle Blast Mastiff.png|{{Cosmetic|Final Fantasy VII|Epic|Moogle Blast}}
+Shadow Pack Mastiff.png|{{Epic|Shadow Pack}}<br>[[Apex Rumble|Urban Assault Rumble: Round 1]] - Tier I
+Money Maker Mastiff.png|{{Cosmetic|S22|Epic|The Equalizer}}{{#var:ac2}}
+The Equalizer Mastiff.png|{{Cosmetic|S22|Epic|The Equalizer}}<br>Split 1 - Premium Lv 2
+Paw Powered Mastiff.png|{{Cosmetic|S23|Epic|Paw Powered}}<br>Split 2 - Premium Lv 8
+Gale Enforcer Mastiff.png|{{Cosmetic|Lunar Rebirth|Epic|Gale Enforcer}}{{#var:ac2}}
+Plaid Existence Mastiff.png|{{Cosmetic|Season 26|Epic|Plaid Existence}}<br>Split 2 - Free Lv 32
+Death Swarm Mastiff.png|{{Cosmetic|Supersonic|Epic|Death Swarm}}
+Death Metal Mastiff.png|{{Cosmetic|Season 28|Epic|Death Metal}}<br>Split 2 - Premium Lv 54
+</gallery>
+
+|-|
+
+Rare=
+<gallery widths="250" heights="300" mode="nolines">
+Carnivale Mastiff.png|{{Rare|Carnivale}}<br/>{{CraftingMetals|60}}
+Cold Wave Mastiff.png|{{Rare|Cold Wave}}<br/>{{CraftingMetals|60}}
+Digital Afterimage Mastiff.png|{{Rare|Digital Afterimage}}<br/>{{CraftingMetals|60}}
+Headgames Mastiff.png|{{Rare|Headgames}}<br/>{{CraftingMetals|60}}
+Icebreaker Mastiff.png|{{Rare|Icebreaker}}<br/>{{CraftingMetals|60}}
+Out for Blood Mastiff.png|{{Rare|Out for Blood}}<br/>{{CraftingMetals|60}}
+Paper Trail Mastiff.png|{{Rare|Paper Trail}}<br/>{{CraftingMetals|60}}
+Recluse Mastiff.png|{{Rare|Recluse}}<br/>{{CraftingMetals|60}}
+Solar Flare Mastiff.png|{{Rare|Solar Flare}}<br/>{{CraftingMetals|60}}
+Surprise Party Mastiff.png|{{Rare|Surprise Party}}<br/>{{CraftingMetals|60}}
+Tagged Mastiff.png|{{Rare|Tagged}}<br/>{{CraftingMetals|60}}
+Trident Mastiff.png|{{Rare|Trident}}<br/>{{CraftingMetals|60}}
+Urban Edge Mastiff.png|{{Rare|Urban Edge}}<br/>{{CraftingMetals|60}}
+Warm Rave Mastiff.png|{{Rare|Warm Rave}}<br/>{{CraftingMetals|60}}
+Wildlands Mastiff.png|{{Rare|Wildlands}}<br/>{{CraftingMetals|60}}
+Patchwork Mastiff.png|{{Cosmetic|Season 1|Rare|Patchwork}}<br/>Level 59
+Molten Mastiff.png|{{Cosmetic|Season 2|Rare|Molten}}<br/>Level 83
+Fractured Cove Mastiff.png|{{Cosmetic|Season 3|Rare|Fractured Cove}}<br/>Level 83
+Bullet Bike Mastiff.png|{{Cosmetic|Season 4|Rare|Bullet Bike}}<br/>Level 43
+Gift of Power Mastiff.png|{{Cosmetic|Season 5|Rare|Gift of Power}}<br/>Level 68
+Rune Awakening Mastiff.png|{{Cosmetic-NI|PlayStation+|Rare|Rune Awakening}}<br/>Season 5
+Acid Burn Mastiff.png|{{Cosmetic|Season 6|Rare|Acid Burn}}<br/>Level 26
+Throwin Down Mastiff.png|{{Cosmetic|Aftermarket|Rare|Throwin Down}}{{#var:ac3}}
+Scaled Up Mastiff.png|{{Cosmetic|Season 7|Rare|Scaled Up}}<br/>Level 39
+Pepperminted Mastiff.png|{{Cosmetic|Fight Night|Rare|Pepperminted}}{{#var:ac3}}
+Under the Microscope Mastiff.png|{{Cosmetic|Season 8|Rare|Under the Microscope}}<br/>Level 57
+Fractured Surface Mastiff.png|{{Cosmetic|Season 9|Rare|Fractured Surface}}<br/>Level 73
+Erosion Mastiff.png|{{Cosmetic|Season 10|Rare|Erosion}}<br/>Level 86
+Pellet Sunrise Mastiff.png|{{Cosmetic|Season 11|Rare|Pellet Sunrise}}<br/>Level 65
+Bottled Fury Mastiff.png|{{Cosmetic|Season 12|Rare|Bottled Fury}}<br/>Level 65
+Zig Zag Mastiff.png|{{Cosmetic|Season 14|Rare|Zig Zag}}<br/>Level 67
+Stained Glass Cannon Mastiff.png|{{Cosmetic-NI|PlayStation+|Rare|Stained Glass Cannon}}<br/>Season 14
+Ruby Rundown Mastiff.png|{{Cosmetic|Season 15|Rare|Ruby Rundown}}<br/>Level 29
+Safety Protocol Mastiff.png|{{Cosmetic|Season 17|Rare|Safety Protocol}}<br/>Level 63
+</gallery>
+
+|-|
+
+Common=
+<gallery widths="250" heights="300" mode="nolines">
+Factory Issue Mastiff.png|{{Common|Factory Issue}}<br/>Default
+Midnight Mastiff.png|{{Common|Midnight}}<br/>{{CraftingMetals|30}}
+Cardinal Mastiff.png|{{Common|Cardinal}}<br/>{{CraftingMetals|30}}
+Arctic Mastiff.png|{{Common|Arctic}}<br/>{{CraftingMetals|30}}
+Sunfire Mastiff.png|{{Common|Sunfire}}<br/>{{CraftingMetals|30}}
+Clearwater Mastiff.png|{{Common|Clearwater}}<br/>{{CraftingMetals|30}}
+Flamingo Mastiff.png|{{Common|Flamingo}}<br/>{{CraftingMetals|30}}
+Sandstorm Mastiff.png|{{Common|Sandstorm}}<br/>{{CraftingMetals|30}}
+Rainforest Mastiff.png|{{Common|Rainforest}}<br/>{{CraftingMetals|30}}
+Evergreen Mastiff.png|{{Common|Evergreen}}<br/>{{CraftingMetals|30}}
+Orchid Mastiff.png|{{Common|Orchid}}<br/>{{CraftingMetals|30}}
+Bengal Mastiff.png|{{Common|Bengal}}<br/>{{CraftingMetals|30}}
+Yellowjacket Mastiff.png|{{Common|Yellowjacket}}<br/>{{CraftingMetals|30}}
+Lagoon Mastiff.png|{{Common|Lagoon}}<br/>{{CraftingMetals|30}}
+Clover Mastiff.png|{{Common|Clover}}<br/>{{CraftingMetals|30}}
+Oceanic Mastiff.png|{{Common|Oceanic}}<br/>{{CraftingMetals|30}}
+</gallery>
+</tabber>
+<br>
+<br>
+
+== History ==
+{{Patch notes|
+; {{ItemLink|Season 28}}
+* Pellets per shot decreased from 6 to 5.
+* Damage per pellet increased from 16 to 19.
+* Adjusted blast pattern.
+
+; {{Symbol|Wild Iron}} [[September 16, 2025 Patch]]
+* Increased delay before firing when drawing the weapon to better match other shotguns.
+
+
+; {{ItemLink|Season 24|noText=yes}} [[February 11, 2025 Patch]]
+* Damage per pellet increased from 14 to 16.
+* No longer deals increased headshot damage.
+
+
+; {{ItemLink|Astral Anomaly|noText=yes}} [[January 07, 2025 Patch]]
+* Aim down sights blast pattern tightening reduced
+* Blast Pattern size increased
+* Increased the time before the Mastiff is ready to fire when raising
+* Raise and lower times slightly increased
+
+
+; {{ItemLink|Season 23|noText=yes}} [[November 05, 2024 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 23}}.
+
+
+; {{ItemLink|Season 22|noText=yes}} [[August 06, 2024 Patch]]
+* Increased damage per pellet from 11 to 15.
+* Reduced pellets fired from 8 to 6.
+
+
+; {{ItemLink|Season 20|noText=yes}} [[February 13, 2024 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 20}}.
+
+
+; {{ItemLink|Apex Legends & FINAL FANTASY VII REBIRTH|image=Final Fantasy VII.svg|noText=yes}} [[January 09, 2024 Patch]]
+* Reduced tactical reload time from 1.03 to 0.9 seconds.
+* Reduced empty reload time from 1.7 to 1.6 seconds.
+* Reduced draw time from 0.8 to 0.45 seconds.
+
+
+; {{ItemLink|Season 18|noText=yes}} [[August 08, 2023 Patch]]
+* Reduced blast pattern.
+
+
+; {{ItemLink|Season 17|noText=yes}} [[May 09, 2023 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 17}}.
+
+
+; {{ItemLink|Season 16|noText=yes}} [[February 14, 2023 Patch]]
+* Added {{ItemLink|Standard Stock|text=Standard Stocks}} compatibility.
+* Reduced blast pattern.
+* Increased projectile size at close range.
+
+
+; {{ItemLink|Season 15|noText=yes}} [[November 01, 2022 Patch]]
+* Removed from the [[Care Package|{{Mythic|Care Package}}]].
+* Increased magazine size from 4 to 5.
+* Reduced damage per pellet from 14 to 11.
+* Reload can now be canceled by aiming downsights.
+* Increased blast pattern width.
+* Reduced projectile growth.
+* Fixed cases where players were unable to aim down sights until reloading is complete when done at certain times.
+* ('''Undocumented''') Increased projectile speed from 12000 to 16000.
+
+
+; {{ItemLink|Season 14|noText=yes}} [[August 09, 2022 Patch]]
+* Reduced fire rate from 1.2 to 1.1.
+* Removed pre-equipped {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}.
+* Reduced projectile growth.
+
+
+; {{ItemLink|Season 13|noText=yes}} [[May 10, 2022 Patch]]
+* Moved in the [[Care Package|{{Mythic|Care Package}}]]. Comes pre-equipped with 32 {{ItemLink|Mythic Shotgun Shells|text=Ammo}} and {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}.
+* Increased damage per pellet from 11 to 14.
+* Increased fire rate from 1.1 to 1.2.
+* Reduced magazine size from 6 to 4.
+* Increased projectile size.
+* Reduced projectile spread when aiming downsights from 0.55 to 0.5.
+* ('''Undocumented''') Reduced projectile speed from 16000 to 12000.
+
+
+; {{ItemLink|Season 11|noText=yes}} [[November 02, 2021 Patch]]
+* Introduced {{ItemLink|Dual Shell|text={{Epic|Dual Shell}}}}. Compatible with [[30-30 Repeater]] and Mastiff Shotgun.
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 11}}.
+
+
+; {{ItemLink|Season 10|noText=yes}} [[August 03, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|400}} to {{Materials|350}}.
+
+
+; {{ItemLink|Genesis|noText=yes}} [[June 29, 2021 Patch]]
+* {{ItemLink|Arenas}}:
+** Reduced purchase cost from {{Materials|500}} to {{Materials|400}}.
+
+
+; {{ItemLink|Chaos Theory|noText=yes}} [[March 09, 2021 Patch]]
+* Reduced damage per pellet from 13 to 11.
+* Increased fire rate from 1 to 1.1.
+* Fixed an issue involving dropping the Mastiff to the ground and then picking it back up, causing the weapon to be fully reloaded.
+
+
+; {{ItemLink|Fight Night|noText=yes}} [[January 05, 2021 Patch]]
+* Spread out third and fourth pellets to decrease max range of 4 pellet hits (was ±7.5°, now ±10°).
+
+
+; {{ItemLink|Season 6|noText=yes}} [[August 18, 2020 Patch]]
+* Can spawn [[Fully Kitted Weapon|{{Legendary|Fully Kitted}}]] during {{ItemLink|Season 6}}.
+
+
+; [[May 27, 2020 Patch]]
+* Reduced spawn rate in all zone tiers.
+
+
+; {{ItemLink|Season 5|noText=yes}} [[May 12, 2020 Patch]]
+* Removed from the [[Care Package|{{Legendary|Care Package}}]].
+* Reduced damage per pellet from 18 to 13.
+* Reduced headshot multiplier from 2× to 1.25×.
+* Reduced fire rate from 1.3 to 1.0.
+* Increased magazine size from 4 to 6.
+* Increased projectile speed from 10000 to 16000.
+* Increased blast pattern distances for the outer pairs of pellets.
+* Increased blast pattern scale ADS multiplier from 0.5× to 0.55×.
+* Reduced projectile width to be more in line with the other shotguns.
+
+
+; {{ItemLink|Season 4|noText=yes}} [[February 04, 2020 Patch]]
+* Improved iron sights accuracy.
+* Fixed an exploit that allowed players to fire the weapon rapidly.
+
+
+; [[November 05, 2019 Patch]]
+* Increased projectile width.
+
+
+; {{ItemLink|Season 2|noText=yes}} [[July 02, 2019 Patch]]
+* Adjusted spawn rates in [[Care Package]]s. Now spawns more often during Round 3.
+
+
+; [[February 22, 2019 Patch]]
+* Fixed an exploit where players could refill ammo in the inventory screen.}}
+<br>
+<br>
+
+== Gallery ==
+<gallery widths="250" heights="250">
+Mastiff_hip_fired.png|Mastiff bullet spread when hip fired.
+Mastiff_ads.png|Mastiff bullet spread when aimed down sights.
+Boom Stick Mastiff Concept Art.jpg|Concept art for the {{Legendary|Boom Stick}} skin.
+Master Blaster Mastiff Concept Art.jpg|Concept art for the {{Legendary|Master Blaster}} skin.<ref>https://www.artstation.com/artwork/18dKkZ</ref>
+</gallery>
+<br>
+<br>
+== Trivia ==
+* According to [[Bangalore]], the Mastiff fires incendiary rounds.
+* [[Mad Maggie]] has a unique animation when she picks up a Mastiff, along with some voice lines.
+* The Mastiff is the first weapon that got placed inside [[Care Packages]] more than once.
+* The Mastiff is one of the two guns in the game to reload one or two bullets at a time rather than its entire magazine, the other being the [[30-30 Repeater]].
+* The Mastiff was named after Respawn's IT Manager, Roni Papouban's, dog.<ref name="ArtStation" />
+* The fire mode selector seen on the {{Legendary|Warp Zone}}, {{Legendary|The Pest Controller}}, {{Legendary|Final Boss}}, {{Legendary|Pixel Hunter}}, and {{Legendary|Game Over}} skins displays the options for a burst and full auto mode, which the Mastiff is unable to switch to in game.
+<br>
+<br>
+== See also ==
+* [[Mastiff Shotgun (Mobile)|Mastiff Shotgun (''Apex Legends Mobile'')]]
+* [https://titanfall.wiki.gg/wiki/Mastiff Mastiff (''Titanfall 2'')]
+<br>
+<br>
+== References ==
+<references/>
+
+
+{{Nav-Weapons}}

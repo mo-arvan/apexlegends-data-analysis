@@ -1,0 +1,39 @@
+{
+  "title": "Nemesis Burst AR",
+  "infobox": {
+    "name": "Nemesis Burst AR",
+    "description": "Auto-trigger 4-round burst energy rifle.",
+    "type": "Assault rifle",
+    "fireModes": "Automatic Burst (4)",
+    "ammoType": "Energy Ammo",
+    "creator": "{{Symbol|Rampart}} Rampart (designer){{ItemLink|The Sisters}} (manufacturer)",
+    "barrel": "stabilizer",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "",
+    "damageBody": "17",
+    "damageHead": "22",
+    "damageLegs": "13",
+    "rateOfFire": "451~582",
+    "dps": "128~165",
+    "magazineSize": [
+      "20",
+      "24",
+      "28",
+      "32"
+    ],
+    "tacReload": [
+      "2.7",
+      "2.61",
+      "2.52",
+      "2.43"
+    ],
+    "fullReload": [
+      "3",
+      "2.9",
+      "2.8",
+      "2.7"
+    ]
+  }
+}

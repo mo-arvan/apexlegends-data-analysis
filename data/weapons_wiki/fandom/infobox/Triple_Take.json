@@ -1,0 +1,37 @@
+{
+  "title": "Triple Take",
+  "infobox": {
+    "name": "Triple Take",
+    "description": "Triple-barrel marksman rifle.",
+    "type": "Marksman weapon",
+    "fireModes": "Single",
+    "ammoType": "Energy Ammo",
+    "creator": "Burrell Defense",
+    "magType": "energy",
+    "optics": "true",
+    "stock": "sniper",
+    "damageBody": "21×3",
+    "damageHead": "37×3 (1.75×)",
+    "damageLegs": "19×3 (0.9×)",
+    "rateOfFire": "81",
+    "dps": "85",
+    "magazineSize": [
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "tacReload": [
+      "2.34",
+      "2.26",
+      "2.18",
+      "2.11"
+    ],
+    "fullReload": [
+      "3.06",
+      "2.96",
+      "2.85",
+      "2.75"
+    ]
+  }
+}

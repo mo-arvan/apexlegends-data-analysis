@@ -1,0 +1,39 @@
+{
+  "title": "Hemlok Breach AR",
+  "infobox": {
+    "name": "Hemlok Breach AR",
+    "description": "Full Auto assault rifle.",
+    "type": "Assault Rifle",
+    "fireModes": "Full-autoBreach Charge",
+    "ammoType": "Heavy Rounds",
+    "creator": "{{ItemLink|Wonyeon}}",
+    "barrel": "silencerbreach",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "elite",
+    "damageBody": "22",
+    "damageHead": "31",
+    "damageLegs": "17",
+    "rateOfFire": "462",
+    "dps": "169.4",
+    "magazineSize": [
+      "18",
+      "21",
+      "24",
+      "27"
+    ],
+    "tacReload": [
+      "2.3",
+      "2.22",
+      "2.14",
+      "2.07"
+    ],
+    "fullReload": [
+      "2.55",
+      "2.46",
+      "2.37",
+      "2.29"
+    ]
+  }
+}

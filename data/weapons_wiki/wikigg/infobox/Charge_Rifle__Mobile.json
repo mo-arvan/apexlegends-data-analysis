@@ -1,0 +1,23 @@
+{
+  "title": "Charge Rifle/Mobile",
+  "infobox": {
+    "name": "Charge Rifle",
+    "description": "Charged beam Sniper Rifle. Deals damage over time to target.",
+    "type": "Sniper",
+    "fireModes": "Single",
+    "ammoType": "Sniper Ammo",
+    "creator": "Vinson Dynamics",
+    "optics": "true",
+    "opticsMobile": "true",
+    "stock": "sniper",
+    "stockMobile": "sniper",
+    "damageBody": "3×15 + 45",
+    "damageHead": "4×15 + 56 (1.25×)",
+    "damageLegs": "3×15 + 45",
+    "rateOfFire": "26",
+    "dps": "39",
+    "magazineSize": "{{texttip|10|Consumes 2 ammo per shot}}",
+    "tacReload": "3.95",
+    "fullReload": "4.75"
+  }
+}

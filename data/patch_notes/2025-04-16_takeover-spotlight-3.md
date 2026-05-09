@@ -1,0 +1,73 @@
+---
+title: "Apex Legends\u2122: Community Cosplay Spotlight"
+date: 2025-04-16
+slug: takeover-spotlight-3
+type: News Article
+tags: []
+source: https://www.ea.com/en/games/apex-legends/apex-legends/news/takeover-spotlight-3
+---
+
+# Apex Legends™: Community Cosplay Spotlight
+
+
+![Apex Community Spotlight for Cosplay featuring Ina, Kyfolam, Lonkuuu, and Unbroken Medusa (Enya N.).](https://drop-assets.ea.com/images/6Kyztr0GcfcuZtHwM9Se4K/e9ceaaf224fb2e1ef4655a788411e9ff/S24_-_Spotlight_3_-_cosplay.jpg?im=AspectCrop=%2816,9%29,xPosition=0.38912886969042476,yPosition=0.40115163147792704)
+
+Next up for our community spotlight is a cornucopia of cosplayers. From start to finish, each build is unique with an incredible attention to detail. These creative community leaders have truly brought our Legends out of the Outlands and into the real world.
+## INA
+
+![Apex Community Spotlight for Cosplay featuring Ina with photos of her Valkyrie cosplay in a range of seasons.](https://drop-assets.ea.com/images/3B5AjGL8pAIgCtaaRnDk9A/5973f1c04043a9c054c730b3631b692c/S24_-_Spotlight_3_-_cosplay_ina.jpg?im=AspectCrop=%2816,9%29,xPosition=0.2847372210223182,yPosition=0.42994241842610365)
+
+<u>[Instagram](https://www.instagram.com/maokoushi?igsh=N2FqbjN6YXNsMWV3&utm_source=qr)</u> | <u>[TikTok](https://www.tiktok.com/@ina_pe17?_t=ZS-8upmY3yXBOq&_r=1)</u> | <u>[X/Twitter](https://x.com/koushimao?s=21&t=Mec5wKuKuP49fKWxXYmYow)</u>
+
+Ina is an established contributor in the Apex Legends cosplay community both in Japan and globally. They are perhaps most well known by players for various portrayals of Valkyrie with appearances at a few official Apex Legends events including the recent ALGS Champs in Sapporo. With credits to both od (costumer designer) and Bon (photographer) as contributors, you can see more of Ina’s incredible work on their linked pages above. 
+
+**Favorite Piece:** “All of the cosplay photos are unedited! The spring and autumn photos in particular have the colors of the seasons and I think they really express the world of Imahara Kairi in Japan!! I like them because they allow me to express &quot;what if the characters were in this world...&quot; together with nature!”
+
+**Fun Fact:** “I traveled through the four seasons of Japan in the Valkyrie Cloud Marauder skin. It was a lot of fun to be able to take photos while feeling the seasons, spring, summer, autumn and winter!” 
+## KYFOLAM
+
+![Apex Community Spotlight for Cosplay featuring Kyfolam with photos of his "Hellcat," "Voidwalker," and "Apex Voidshifter" Wraith cosplays.](https://drop-assets.ea.com/images/zc91CAIF149uHFzEkKCr7/e5ae697e07bdb462d2bf8439bdb7fad9/S24_-_Spotlight_3_-_cosplay_kyoflam_v2.jpg?im=AspectCrop=%2816,9%29,xPosition=0.36825053995680346,yPosition=0.42610364683301344)
+
+<u>[Instagram](https://www.instagram.com/kyfolam/)</u> | <u>[TikTok](https://www.tiktok.com/@kyfolam)</u> | <u>[X/Twitter](https://x.com/kyfolam1)</u>
+
+Kyfolam is a cosplayer and creator from Germany who can also often be found as Wraith both in and out of the Outlands. His love for the moody runner is evident in his creative and detailed builds of a variety of her skins including detailed builds of her “Voidwalker” and Prestige, “Apex Voidshifter” in Tier 3. And if that wasn’t impressive enough—Kyfolam also has builds for “Hellcat” and “Street Smart,” and “Airship Assassin” is nearing completion with a few other Legends may be joining the collection soon. 
+
+With credits to bard.shots, cospixcreation, and moped1 for photography.
+
+**Favorite Piece:** “That&#39;s a hard question. Besides the idea with the Hellcat - Masks I really like the Hemlock and Wingman I made. The Hemlock gives the Voidwalker Cosplay the final touch (bc of Voidwalker Intro) and everyone connects the Wingman with Wraith, so just had to make them.”
+
+**Fun Fact:** &quot;I have 3 different kinds of masks for Hellcat. One just to be able to walk around at Cons and see something, another one to put on for (Fan-)pictures and one for photoshoots. Also, I was the very first Voidwalker Cosplayer and still plan at least a Wraith Skin to cosplay from Apex Mobile.&quot; 
+## LONKUUU
+
+![Apex Community Spotlight for Cosplay featuring Lonkuuu with photos of their Vantage and Loba cosplays.](https://drop-assets.ea.com/images/1Y0gurUVGyERJ9NGM7k1E6/cbab0b1dc235aacdf3e0f5c0de8adda7/S24_-_Spotlight_3_-_cosplay_lonkuuu.jpg?im=AspectCrop=%2816,9%29,xPosition=0.398488120950324,yPosition=0.42994241842610365)
+
+<u>[Instagram](https://www.instagram.com/lonkyuusei)</u> | <u>[TikTok](https://www.tiktok.com/@lonkuuu)</u> | <u>[X/Twitter](https://x.com/lonkuuu)</u>
+
+Lonkuuu is an artist and award-winning cosplayer who has brought a couple of Apex Legends to life. They have continued to work on their Vantage and Loba builds, which they’ve continued to iterate on to improve the already incredibly detailed pieces. With an Echo and Sniper’s Mark, you may just spot them at a convention in the future.
+
+**Favorite Piece:** “I have made so many fond memories in these cosplays. Vantage is so fun to wear, primarily because she is my main [Legend] and has a bubbly personality that radiates genuineness. I met BoppyPea/Fuse&#39;s VA and recorded a small video together. He also signed my Sniper&#39;s Mark which I now hang on my wall as a lil momento. I won my first award in a cosplay competition with said cosplay and met another Vantage cosplayer from a different country purely because we love this character so much--and that&#39;s just off the top of my head. On the other hand, Loba is a really raw, beautiful example of femininity, and wearing this cosplay was an entirely new experience for me, since I had to get into a performative zone for it. Her feminine charm and independent nature was something new I had to try to channel. I had the opportunity to meet Nicholas and Mela, Octane and Lifeline&#39;s VAs in this cosplay and that was beyond delightful for me. I learnt a lot from both my Apex cosplays since both provided big challenges, but I also felt so achieved when I crossed those hurdles. To be honest I am still adding to these cosplays, they&#39;re not quite perfect just yet, but I love them and the process all the same.”
+
+**Fun Fact:** “My passion for how the characters present themselves being the driving motivation for my desire to cosplay them. I have to come up with innovative ideas to bring these characters to life. For example, in my Vantage cosplay, the caps on the bullets can be twisted and removed. My headset is functional, as it can swivel and allow for the sniper lens to pull out, just like hers does. My jetpack also lights up! Alas though, it&#39;s not canon enough; I&#39;m unable to fly.” 
+## UNBROKEN MEDUSA BY ENYA N.
+
+![Apex Community Spotlight for Cosplay featuring Unbroken Medusa/Enya with photos of a couple of Bloodhound head pieces, a Revenant mask, and Bloodhound's heirloom.](https://drop-assets.ea.com/images/1hdlKapIBeZeE2PZKvEo1p/8241d03f163dcedea105e7a6de475529/S24_-_Spotlight_3_-_unbrokenmedusa.jpg?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5252719129878439)
+
+<u>[Instagram](https://www.instagram.com/unbrokenmedusa/?next=%2F)</u> | <u>[TikTok](https://www.tiktok.com/@unbrokenmedusa)</u>
+
+Enya is an Indigenous American artist that has been creating and building in the cosplay world under the banner of Unbroken Medusa for over five years. Spanning across various gaming IPs and materials, her work has expanded to include cosplays, props, and other art forms. One highlight of Enya’s work is the 30+ Apex Legends helmet recreations, a plethora of which are based on Bloodhound’s skins like their Prestige skin, “Apex Hunter.” 
+
+**Favorite Piece:** “My favorite piece would have to be my first Apex Build, my Bloodline Bloodhound cosplay. It was the cosplay that really kickstarted my crafting career and opened so many doors and created a lot of opportunities for me! Bloodhound is a very special character to me and bringing them to life was an amazing experience!”
+
+**Fun Fact:** “I’m an Indigenous American artist and I like reflecting my culture in my builds! I also work almost exclusively with different types of foam to make all of my costumes and props!” 
+
+---
+
+[Play Apex Legends for free](/games/apex-legends/apex-legends/buy)* now on PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via the EA app, Epic, and Steam.
+
+Follow Apex Legends™ on [Twitter](https://twitter.com/PlayApex), [Instagram](https://www.instagram.com/playapex/), and [TikTok](https://www.tiktok.com/@PlayApex), subscribe to our [YouTube channel](https://www.youtube.com/playapex%20), and check out our [forums](https://forums.ea.com/category/ea-forums-en).
+
+Sign up for our [newsletter](https://www.ea.com/games/apex-legends/newsletter) today to receive the latest Apex Legends news, updates, behind-the-scenes content, exclusive offers, and more (including other EA news, products, events, and promotions) by email.
+
+This announcement may change as we listen to community feedback and continue developing and evolving our Live Service &amp; Content. We will always strive to keep our community as informed as possible. For more information, please refer to EA’s Online Service Updates at [https://www.ea.com/service-updates](https://www.ea.com/service-updates).
+
+*Applicable platform account and platform subscription (sold separately) may be required. A persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases. 

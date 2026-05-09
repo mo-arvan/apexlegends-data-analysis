@@ -1,0 +1,39 @@
+{
+  "title": "Prowler Burst PDW",
+  "infobox": {
+    "name": "Prowler Burst PDW",
+    "description": "5-round burst SMG.",
+    "type": "Submachine Gun",
+    "fireModes": "Burst (5)  Auto",
+    "ammoType": "Heavy Rounds",
+    "creator": "{{ItemLink|Lastimosa Armory}}",
+    "barrel": "laser",
+    "magType": "heavy",
+    "optics": "true",
+    "stock": "standard",
+    "hopup": "selectfire",
+    "damageBody": "16 17",
+    "damageHead": "20 21",
+    "damageLegs": "13 14",
+    "rateOfFire": "{{Texttip|579|1260 per burst}}  795",
+    "dps": "154  225",
+    "magazineSize": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "tacReload": [
+      "2",
+      "1.93",
+      "1.87",
+      "1.8"
+    ],
+    "fullReload": [
+      "2.6",
+      "2.51",
+      "2.43",
+      "2.34"
+    ]
+  }
+}
