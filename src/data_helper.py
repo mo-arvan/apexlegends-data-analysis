@@ -45,13 +45,13 @@ def load_damage_data(selected_tournament):
 #     weapons_data_df["accuracy"] = weapons_data_df["hits"] / weapons_data_df["shots"] * 100
 #
 #     # def map_weapon_name(name):
-#     #     relpace_dict = {
+#     #     replace_dict = {
 #     #         # "R-99": "R99",
 #     #         "HAVOC": "HAVOC Turbo",
 #     #     }
 #     #     if name != "Charge Rifle":
-#     #         if name in relpace_dict:
-#     #             name = relpace_dict[name]
+#     #         if name in replace_dict:
+#     #             name = replace_dict[name]
 #     #     return name
 #     # weapons_data_df["weapon_name"] = weapons_data_df["weapon_name"].apply(map_weapon_name)
 #
